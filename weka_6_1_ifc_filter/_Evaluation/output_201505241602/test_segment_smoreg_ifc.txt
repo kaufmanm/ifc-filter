@@ -1,0 +1,84 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'segment-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R20,22-26-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z33.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute region-centroid-col numeric
+@attribute region-centroid-row numeric
+@attribute region-pixel-count numeric
+@attribute short-line-density-5 numeric
+@attribute short-line-density-2 numeric
+@attribute vedge-mean numeric
+@attribute vegde-sd numeric
+@attribute hedge-mean numeric
+@attribute hedge-sd numeric
+@attribute intensity-mean numeric
+@attribute rawred-mean numeric
+@attribute rawblue-mean numeric
+@attribute rawgreen-mean numeric
+@attribute exred-mean numeric
+@attribute exblue-mean numeric
+@attribute exgreen-mean numeric
+@attribute value-mean numeric
+@attribute saturation-mean numeric
+@attribute hue-mean numeric
+@attribute class=sky numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ +       0.0008 * (normalized) region-centroid-col
+ +       0.0002 * (normalized) region-centroid-row
+ +       0      * (normalized) region-pixel-count
+ +       0.0008 * (normalized) short-line-density-5
+ -       0.0002 * (normalized) short-line-density-2
+ +       0.0002 * (normalized) vedge-mean
+ -       0.0005 * (normalized) vegde-sd
+ -       0.0002 * (normalized) hedge-mean
+ +       0.0004 * (normalized) hedge-sd
+ -       0.2404 * (normalized) intensity-mean
+ -       0.5917 * (normalized) rawred-mean
+ +       0.7709 * (normalized) rawblue-mean
+ +       0.2934 * (normalized) rawgreen-mean
+ -       0.0021 * (normalized) exred-mean
+ -       0.0001 * (normalized) exblue-mean
+ -       0.0006 * (normalized) exgreen-mean
+ +       0.7709 * (normalized) value-mean
+ -       0.0014 * (normalized) saturation-mean
+ +       0.0008 * (normalized) hue-mean
+ -       0.0009
+
+
+
+Number of kernel evaluations: 290406 (99.024% cached)
+
+Time taken to build model: 3.6 seconds
+Time taken to test model on training data: 1 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9941
+Mean absolute error                      0.0107
+Root mean squared error                  0.0378
+Relative absolute error                  4.6714 %
+Root relative squared error             11.1456 %
+Total Number of Instances              762     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6258
+Mean absolute error                      0.128 
+Root mean squared error                  0.2649
+Relative absolute error                 55.6067 %
+Root relative squared error             78.0494 %
+Total Number of Instances              762     
+

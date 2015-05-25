@@ -1,0 +1,73 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+ALBUMIN <= 3.859 : LM1 (72/96.922%)
+ALBUMIN >  3.859 : 
+|   SPIDERS=no <= 0.5 : LM2 (18/74.169%)
+|   SPIDERS=no >  0.5 : LM3 (65/0%)
+
+LM num: 1
+Class=LIVE = 
+	-0.0006 * AGE 
+	+ 0.2806 * SEX=male 
+	+ 0.0132 * STEROID=yes 
+	- 0.0151 * LIVER_FIRM=no 
+	+ 0.2048 * SPLEEN_PALPABLE=no 
+	+ 0.0344 * SPIDERS=no 
+	+ 0.37 * ASCITES=no 
+	- 0.0884 * BILIRUBIN 
+	+ 0.0184 * ALBUMIN 
+	+ 0.2637
+
+LM num: 2
+Class=LIVE = 
+	-0.0005 * AGE 
+	+ 0.0273 * SEX=male 
+	+ 0.0117 * STEROID=yes 
+	- 0.0134 * LIVER_FIRM=no 
+	+ 0.0984 * SPIDERS=no 
+	+ 0.0414 * ASCITES=no 
+	- 0.1292 * BILIRUBIN 
+	+ 0.0033 * ALK_PHOSPHATE 
+	+ 0.0163 * ALBUMIN 
+	+ 0.5441
+
+LM num: 3
+Class=LIVE = 
+	-0.0005 * AGE 
+	+ 0.0273 * SEX=male 
+	+ 0.0117 * STEROID=yes 
+	- 0.0134 * LIVER_FIRM=no 
+	+ 0.0585 * SPIDERS=no 
+	+ 0.0414 * ASCITES=no 
+	- 0.0198 * BILIRUBIN 
+	+ 0.0002 * ALK_PHOSPHATE 
+	+ 0.0163 * ALBUMIN 
+	+ 0.8535
+
+Number of Rules : 3
+
+Time taken to build model: 0.13 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7088
+Mean absolute error                      0.1823
+Root mean squared error                  0.2858
+Relative absolute error                 55.6275 %
+Root relative squared error             70.6183 %
+Total Number of Instances              155     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4322
+Mean absolute error                      0.2439
+Root mean squared error                  0.3737
+Relative absolute error                 73.8375 %
+Root relative squared error             91.5127 %
+Total Number of Instances              155     
+

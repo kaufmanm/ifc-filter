@@ -1,0 +1,75 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=    0     ;  df=19;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      0.0486*region-centroid-col
++      0.0272*region-centroid-row
++     -3.1835*region-pixel-count
++    -10.751 *short-line-density-5
++     -1.3405*short-line-density-2
++     -0.2383*vedge-mean
++      0.0188*vegde-sd
++     -0.8916*hedge-mean
++      0.0486*hedge-sd
++      0.185 *intensity-mean
++      0.2061*rawred-mean
++      0.1377*rawblue-mean
++      0.2232*rawgreen-mean
++     -0.3799*exred-mean
++     -0.0578*exblue-mean
++      0.5236*exgreen-mean
++      0.142 *value-mean
++     60.7465*saturation-mean
++      0.2312*hue-mean
++   -65.4774))
+
+Odds Ratios...
+Variable         O.R.
+       1       1.0498
+       2       1.0275
+       3       0.0414
+       4       0     
+       5       0.2617
+       6       0.788 
+       7       1.019 
+       8       0.41  
+       9       1.0498
+      10       1.2032
+      11       1.2288
+      12       1.1476
+      13       1.2501
+      14       0.684 
+      15       0.9439
+      16       1.6881
+      17       1.1526
+      18 2.409158807243759E26
+      19       1.2601
+
+
+Time taken to build model: 0.09 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              762     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9954
+Mean absolute error                      0.0015
+Root mean squared error                  0.0327
+Relative absolute error                  0.6529 %
+Root relative squared error              9.6461 %
+Total Number of Instances              762     
+

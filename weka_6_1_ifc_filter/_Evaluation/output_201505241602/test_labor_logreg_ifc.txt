@@ -1,0 +1,98 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation labor-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R17-weka.filters.unsupervised.attribute.NominalToBinary-R17-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute duration numeric
+@attribute wage-increase-first-year numeric
+@attribute wage-increase-second-year numeric
+@attribute wage-increase-third-year numeric
+@attribute cost-of-living-adjustment numeric
+@attribute working-hours numeric
+@attribute pension numeric
+@attribute standby-pay numeric
+@attribute shift-differential numeric
+@attribute education-allowance numeric
+@attribute statutory-holidays numeric
+@attribute vacation numeric
+@attribute longterm-disability-assistance numeric
+@attribute contribution-to-dental-plan numeric
+@attribute bereavement-assistance numeric
+@attribute contribution-to-health-plan numeric
+@attribute class numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=    0     ;  df=16;  p=      0   
+
+SQL:
+
+1-1/(1+exp(     18.6245*duration
++     48.3865*wage-increase-first-year
++     22.3035*wage-increase-second-year
++     43.6165*wage-increase-third-year
++     -1.002 *cost-of-living-adjustment
++     35.868 *working-hours
++     22.0155*pension
++      5.1531*standby-pay
++      8.013 *shift-differential
++    175.7869*education-allowance
++      6.3726*statutory-holidays
++    -33.7722*vacation
++     69.434 *longterm-disability-assistance
++     35.7556*contribution-to-dental-plan
++    -59.6543*bereavement-assistance
++     33.8917*contribution-to-health-plan
++  -217.2877))
+
+Odds Ratios...
+Variable         O.R.
+       1 122607879.5558
+       2 1.0327119276566087E21
+       3 4855995095.0593
+       4 8.7582046631741174E18
+       5       0.3671
+       6 3.778288875208888E15
+       7 3640868070.5966
+       8     172.9645
+       9    3019.8373
+      10 2.2044393277949768E76
+      11     585.5728
+      12       0     
+      13 1.4281844707188334E30
+      14 3.376521209846798E15
+      15       0     
+      16 5.236000882806719E14
+
+
+Time taken to build model: 0.09 seconds
+Time taken to test model on training data: 0.08 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances               57     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7762
+Mean absolute error                      0.1134
+Root mean squared error                  0.3155
+Relative absolute error                 24.4738 %
+Root relative squared error             64.9227 %
+Total Number of Instances               57     
+

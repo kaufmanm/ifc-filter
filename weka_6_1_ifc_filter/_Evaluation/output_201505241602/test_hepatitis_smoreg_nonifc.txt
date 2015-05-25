@@ -1,0 +1,52 @@
+
+SMOreg
+
+weights (not support vectors):
+ -       0.0008 * (normalized) AGE
+ -       0.0009 * (normalized) SEX
+ +       0.0002 * (normalized) STEROID
+ +       0.0004 * (normalized) ANTIVIRALS
+ +       0      * (normalized) FATIGUE
+ -       0.0008 * (normalized) MALAISE
+ +       0.0002 * (normalized) ANOREXIA
+ -       0.0008 * (normalized) LIVER_BIG
+ +       0.0003 * (normalized) LIVER_FIRM
+ -       0.001  * (normalized) SPLEEN_PALPABLE
+ -       0.0008 * (normalized) SPIDERS
+ -       0.9961 * (normalized) ASCITES
+ -       0.0002 * (normalized) VARICES
+ -       0.003  * (normalized) BILIRUBIN
+ +       0.0011 * (normalized) ALK_PHOSPHATE
+ +       0.0008 * (normalized) SGOT
+ +       0.0029 * (normalized) ALBUMIN
+ +       0.0007 * (normalized) PROTIME
+ -       0.0004 * (normalized) HISTOLOGY
+ +       1     
+
+
+
+Number of kernel evaluations: 11945 (99.2% cached)
+
+Time taken to build model: 0.16 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.4711
+Mean absolute error                      0.1551
+Root mean squared error                  0.3926
+Relative absolute error                 47.3475 %
+Root relative squared error             97.0021 %
+Total Number of Instances              155     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4705
+Mean absolute error                      0.1555
+Root mean squared error                  0.3927
+Relative absolute error                 47.0591 %
+Root relative squared error             96.1752 %
+Total Number of Instances              155     
+

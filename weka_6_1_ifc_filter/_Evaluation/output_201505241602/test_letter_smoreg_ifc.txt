@@ -1,0 +1,78 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'letter-weka.filters.unsupervised.instance.Resample-S1-Z11.0-no-replacement-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R17-26,28-42-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute x-box numeric
+@attribute y-box numeric
+@attribute width numeric
+@attribute high numeric
+@attribute onpix numeric
+@attribute x-bar numeric
+@attribute y-bar numeric
+@attribute x2bar numeric
+@attribute y2bar numeric
+@attribute xybar numeric
+@attribute x2ybr numeric
+@attribute xy2br numeric
+@attribute x-ege numeric
+@attribute xegvy numeric
+@attribute y-ege numeric
+@attribute yegvx numeric
+@attribute class=K numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ -       0.0022 * (normalized) x-box
+ +       0.0002 * (normalized) y-box
+ +       0.0004 * (normalized) width
+ +       0.0005 * (normalized) high
+ -       0.0001 * (normalized) onpix
+ +       0.0016 * (normalized) x-bar
+ +       0.0004 * (normalized) y-bar
+ +       0.0013 * (normalized) x2bar
+ +       0.0005 * (normalized) y2bar
+ +       0.0003 * (normalized) xybar
+ +       0.0009 * (normalized) x2ybr
+ +       0.0009 * (normalized) xy2br
+ +       0.0009 * (normalized) x-ege
+ +       0.0004 * (normalized) xegvy
+ +       0.0002 * (normalized) y-ege
+ +       0.0009 * (normalized) yegvx
+ -       0.0037
+
+
+
+Number of kernel evaluations: 31181781 (85.506% cached)
+
+Time taken to build model: 40.61 seconds
+Time taken to test model on training data: 1.4 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5659
+Mean absolute error                      0.0435
+Root mean squared error                  0.2074
+Relative absolute error                 52.5943 %
+Root relative squared error            102.0243 %
+Total Number of Instances             2200     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4688
+Mean absolute error                      0.0435
+Root mean squared error                  0.2075
+Relative absolute error                 52.6071 %
+Root relative squared error            102.021  %
+Total Number of Instances             2200     
+

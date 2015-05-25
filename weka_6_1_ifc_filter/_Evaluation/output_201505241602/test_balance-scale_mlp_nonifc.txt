@@ -1,0 +1,48 @@
+
+Linear Node 0
+    Inputs    Weights
+    Threshold    -1.0283224570898772
+    Node 1    2.031283261575486
+    Node 2    -1.4490813379135203
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -1.133405503313773
+    Attrib left-weight    9.136641121623791
+    Attrib left-distance    8.866896940283512
+    Attrib right-weight    -8.499851246540318
+    Attrib right-distance    -9.570722000397064
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -8.979015242846646
+    Attrib left-weight    0.5167397815543775
+    Attrib left-distance    -6.7805171710516365
+    Attrib right-weight    -0.007057499953910773
+    Attrib right-distance    -0.34081654657773397
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 0.34 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9175
+Mean absolute error                      0.0853
+Root mean squared error                  0.2009
+Relative absolute error                 17.1723 %
+Root relative squared error             40.2942 %
+Total Number of Instances              625     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8835
+Mean absolute error                      0.1374
+Root mean squared error                  0.2387
+Relative absolute error                 27.5981 %
+Root relative squared error             47.8144 %
+Total Number of Instances              625     
+

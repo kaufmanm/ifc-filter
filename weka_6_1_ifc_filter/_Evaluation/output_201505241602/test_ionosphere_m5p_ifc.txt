@@ -1,0 +1,373 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation ionosphere-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R36-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute a01 numeric
+@attribute a02 numeric
+@attribute a03 numeric
+@attribute a04 numeric
+@attribute a05 numeric
+@attribute a06 numeric
+@attribute a07 numeric
+@attribute a08 numeric
+@attribute a09 numeric
+@attribute a10 numeric
+@attribute a11 numeric
+@attribute a12 numeric
+@attribute a13 numeric
+@attribute a14 numeric
+@attribute a15 numeric
+@attribute a16 numeric
+@attribute a17 numeric
+@attribute a18 numeric
+@attribute a19 numeric
+@attribute a20 numeric
+@attribute a21 numeric
+@attribute a22 numeric
+@attribute a23 numeric
+@attribute a24 numeric
+@attribute a25 numeric
+@attribute a26 numeric
+@attribute a27 numeric
+@attribute a28 numeric
+@attribute a29 numeric
+@attribute a30 numeric
+@attribute a31 numeric
+@attribute a32 numeric
+@attribute a33 numeric
+@attribute a34 numeric
+@attribute class=b numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+a05 <= 0.585 : 
+|   a21 <= 0.214 : LM1 (102/0%)
+|   a21 >  0.214 : 
+|   |   a03 <= 0.234 : LM2 (56/0%)
+|   |   a03 >  0.234 : 
+|   |   |   a04 <= 0.765 : 
+|   |   |   |   a14 <= 0.233 : LM3 (19/0%)
+|   |   |   |   a14 >  0.233 : 
+|   |   |   |   |   a26 <= 0.269 : LM4 (19/46.549%)
+|   |   |   |   |   a26 >  0.269 : 
+|   |   |   |   |   |   a08 <= 0.497 : 
+|   |   |   |   |   |   |   a20 <= 0.356 : LM5 (13/0%)
+|   |   |   |   |   |   |   a20 >  0.356 : 
+|   |   |   |   |   |   |   |   a04 <= 0.175 : LM6 (5/0%)
+|   |   |   |   |   |   |   |   a04 >  0.175 : 
+|   |   |   |   |   |   |   |   |   a08 <= 0.276 : LM7 (6/0%)
+|   |   |   |   |   |   |   |   |   a08 >  0.276 : 
+|   |   |   |   |   |   |   |   |   |   a10 <= 0.476 : LM8 (5/0%)
+|   |   |   |   |   |   |   |   |   |   a10 >  0.476 : LM9 (3/0%)
+|   |   |   |   |   |   a08 >  0.497 : 
+|   |   |   |   |   |   |   a10 <= 0.508 : LM10 (9/0%)
+|   |   |   |   |   |   |   a10 >  0.508 : LM11 (3/98.271%)
+|   |   |   a04 >  0.765 : 
+|   |   |   |   a07 <= 0.548 : 
+|   |   |   |   |   a25 <= 0.623 : LM12 (3/0%)
+|   |   |   |   |   a25 >  0.623 : LM13 (5/0%)
+|   |   |   |   a07 >  0.548 : LM14 (31/0%)
+a05 >  0.585 : 
+|   a04 <= 0.383 : 
+|   |   a04 <= 0.219 : 
+|   |   |   a04 <= 0.166 : LM15 (2/0%)
+|   |   |   a04 >  0.166 : LM16 (2/0%)
+|   |   a04 >  0.219 : LM17 (11/0%)
+|   a04 >  0.383 : LM18 (57/0%)
+
+LM num: 1
+class=b = 
+	0.0526 * a03 
+	+ 0.0388 * a04 
+	+ 0.0252 * a05 
+	+ 0.0234 * a06 
+	+ 0.0058 * a07 
+	+ 0.0355 * a08 
+	+ 0.0602 * a14 
+	+ 0.0315 * a21 
+	+ 0.0234 * a25 
+	+ 0.0179 * a26 
+	- 0.0896
+
+LM num: 2
+class=b = 
+	0.1317 * a03 
+	+ 0.0283 * a04 
+	+ 0.0252 * a05 
+	+ 0.0691 * a06 
+	+ 0.0058 * a07 
+	+ 0.0854 * a08 
+	+ 0.1247 * a14 
+	+ 0.0484 * a20 
+	+ 0.024 * a21 
+	+ 0.0167 * a25 
+	+ 0.0109 * a26 
+	- 0.1571
+
+LM num: 3
+class=b = 
+	0.1431 * a03 
+	+ 0.0283 * a04 
+	+ 0.0252 * a05 
+	+ 0.0735 * a06 
+	+ 0.0058 * a07 
+	+ 0.2219 * a08 
+	+ 0.3744 * a14 
+	+ 0.054 * a20 
+	+ 0.024 * a21 
+	+ 0.0167 * a25 
+	+ 0.0109 * a26 
+	- 0.2393
+
+LM num: 4
+class=b = 
+	0.1431 * a03 
+	+ 0.0283 * a04 
+	+ 0.0252 * a05 
+	+ 0.0735 * a06 
+	+ 0.0058 * a07 
+	+ 0.3131 * a08 
+	+ 0.243 * a14 
+	+ 0.054 * a20 
+	+ 0.024 * a21 
+	+ 0.0167 * a25 
+	+ 0.0109 * a26 
+	- 0.1765
+
+LM num: 5
+class=b = 
+	0.1431 * a03 
+	+ 0.0283 * a04 
+	+ 0.0252 * a05 
+	+ 0.0735 * a06 
+	+ 0.0058 * a07 
+	+ 0.3423 * a08 
+	+ 0.1766 * a10 
+	+ 0.243 * a14 
+	+ 0.054 * a20 
+	+ 0.024 * a21 
+	+ 0.0167 * a25 
+	+ 0.0109 * a26 
+	- 0.2204
+
+LM num: 6
+class=b = 
+	0.1431 * a03 
+	+ 0.0283 * a04 
+	+ 0.0252 * a05 
+	+ 0.0735 * a06 
+	+ 0.0058 * a07 
+	+ 0.3423 * a08 
+	+ 0.1455 * a10 
+	+ 0.243 * a14 
+	+ 0.054 * a20 
+	+ 0.024 * a21 
+	+ 0.0167 * a25 
+	+ 0.0109 * a26 
+	- 0.1604
+
+LM num: 7
+class=b = 
+	0.1431 * a03 
+	+ 0.0283 * a04 
+	+ 0.0252 * a05 
+	+ 0.0735 * a06 
+	+ 0.0058 * a07 
+	+ 0.2113 * a08 
+	+ 0.1455 * a10 
+	+ 0.243 * a14 
+	+ 0.054 * a20 
+	+ 0.024 * a21 
+	+ 0.0167 * a25 
+	+ 0.0109 * a26 
+	- 0.0817
+
+LM num: 8
+class=b = 
+	0.1431 * a03 
+	+ 0.0283 * a04 
+	+ 0.0252 * a05 
+	+ 0.0735 * a06 
+	+ 0.0058 * a07 
+	+ 0.2227 * a08 
+	+ 0.2171 * a10 
+	+ 0.243 * a14 
+	+ 0.054 * a20 
+	+ 0.024 * a21 
+	+ 0.0167 * a25 
+	+ 0.0109 * a26 
+	- 0.1336
+
+LM num: 9
+class=b = 
+	0.1431 * a03 
+	+ 0.0283 * a04 
+	+ 0.0252 * a05 
+	+ 0.0735 * a06 
+	+ 0.0058 * a07 
+	+ 0.2227 * a08 
+	+ 0.2251 * a10 
+	+ 0.243 * a14 
+	+ 0.054 * a20 
+	+ 0.024 * a21 
+	+ 0.0167 * a25 
+	+ 0.0109 * a26 
+	- 0.1321
+
+LM num: 10
+class=b = 
+	0.1431 * a03 
+	+ 0.0283 * a04 
+	+ 0.0252 * a05 
+	+ 0.0735 * a06 
+	+ 0.0058 * a07 
+	+ 0.4124 * a08 
+	+ 0.243 * a14 
+	+ 0.054 * a20 
+	+ 0.024 * a21 
+	+ 0.0167 * a25 
+	+ 0.0109 * a26 
+	- 0.0163
+
+LM num: 11
+class=b = 
+	0.1431 * a03 
+	+ 0.0283 * a04 
+	+ 0.0252 * a05 
+	+ 0.0735 * a06 
+	+ 0.0058 * a07 
+	+ 0.4124 * a08 
+	+ 0.243 * a14 
+	+ 0.054 * a20 
+	+ 0.024 * a21 
+	+ 0.0167 * a25 
+	+ 0.0109 * a26 
+	- 0.042
+
+LM num: 12
+class=b = 
+	0.1882 * a03 
+	+ 0.0283 * a04 
+	+ 0.0252 * a05 
+	+ 0.0978 * a06 
+	+ 0.1259 * a07 
+	+ 0.1514 * a08 
+	+ 0.1863 * a14 
+	+ 0.0768 * a20 
+	+ 0.024 * a21 
+	+ 0.5655 * a25 
+	+ 0.0109 * a26 
+	- 0.2023
+
+LM num: 13
+class=b = 
+	0.1882 * a03 
+	+ 0.0283 * a04 
+	+ 0.0252 * a05 
+	+ 0.0978 * a06 
+	+ 0.1259 * a07 
+	+ 0.1514 * a08 
+	+ 0.1863 * a14 
+	+ 0.0768 * a20 
+	+ 0.024 * a21 
+	+ 0.5378 * a25 
+	+ 0.0109 * a26 
+	- 0.1475
+
+LM num: 14
+class=b = 
+	0.1882 * a03 
+	+ 0.0283 * a04 
+	+ 0.0252 * a05 
+	+ 0.0978 * a06 
+	+ 0.0658 * a07 
+	+ 0.1514 * a08 
+	+ 0.1863 * a14 
+	+ 0.0768 * a20 
+	+ 0.024 * a21 
+	+ 0.1529 * a25 
+	+ 0.0109 * a26 
+	+ 0.1958
+
+LM num: 15
+class=b = 
+	0.0448 * a03 
+	+ 2.099 * a04 
+	+ 0.0851 * a05 
+	+ 0.0196 * a07 
+	+ 0.0331 * a08 
+	+ 0.0505 * a14 
+	+ 0.0418 * a21 
+	+ 0.0212 * a25 
+	+ 0.1552
+
+LM num: 16
+class=b = 
+	0.0448 * a03 
+	+ 2.099 * a04 
+	+ 0.0851 * a05 
+	+ 0.0196 * a07 
+	+ 0.0331 * a08 
+	+ 0.0505 * a14 
+	+ 0.0418 * a21 
+	+ 0.0212 * a25 
+	+ 0.1654
+
+LM num: 17
+class=b = 
+	0.0448 * a03 
+	+ 1.0188 * a04 
+	+ 0.0851 * a05 
+	+ 0.0196 * a07 
+	+ 0.0331 * a08 
+	+ 0.0505 * a14 
+	+ 0.0418 * a21 
+	+ 0.0212 * a25 
+	+ 0.4169
+
+LM num: 18
+class=b = 
+	0.0448 * a03 
+	+ 0.0747 * a04 
+	+ 0.0851 * a05 
+	+ 0.0196 * a07 
+	+ 0.0331 * a08 
+	+ 0.0505 * a14 
+	+ 0.0418 * a21 
+	+ 0.0212 * a25 
+	+ 0.7083
+
+Number of Rules : 18
+
+Time taken to build model: 0.52 seconds
+Time taken to test model on training data: 1.12 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9308
+Mean absolute error                      0.0875
+Root mean squared error                  0.1777
+Relative absolute error                 19.0102 %
+Root relative squared error             37.0419 %
+Total Number of Instances              351     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7162
+Mean absolute error                      0.3479
+Root mean squared error                  0.4051
+Relative absolute error                 75.1014 %
+Root relative squared error             83.8694 %
+Total Number of Instances              351     
+

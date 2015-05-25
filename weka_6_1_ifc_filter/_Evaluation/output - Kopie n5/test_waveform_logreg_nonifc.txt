@@ -1,0 +1,117 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -200.6484;  df=40;  p=      0   
+
+SQL:
+
+1-1/(1+exp(     -0.0463*x1
++      0.1759*x2
++     -0.2868*x3
++      0.1599*x4
++      0.3069*x5
++      0.1367*x6
++      0.267 *x7
++      0.1645*x8
++      0.5243*x9
++      0.5508*x10
++      0.898 *x11
++      0.2695*x12
++      0.2175*x13
++     -0.3435*x14
++     -0.7517*x15
++     -0.7327*x16
++     -0.5661*x17
++     -0.2292*x18
++     -0.2902*x19
++     -0.0776*x20
++     -0.1863*x21
++      0.0682*x22
++      0.3653*x23
++     -0.2922*x24
++     -0.3271*x25
++      0.1287*x26
++     -0.5269*x27
++      0.2186*x28
++     -0.2336*x29
++      0.1177*x30
++      0.0761*x31
++      0.2405*x32
++     -0.3374*x33
++      0.2881*x34
++      0.1675*x35
++     -0.3051*x36
++      0.1123*x37
++      0.0918*x38
++      0.1768*x39
++      0.174 *x40
++    -8.46  ))
+
+Odds Ratios...
+Variable         O.R.
+       1       0.9547
+       2       1.1923
+       3       0.7507
+       4       1.1734
+       5       1.3592
+       6       1.1464
+       7       1.306 
+       8       1.1787
+       9       1.6892
+      10       1.7347
+      11       2.4546
+      12       1.3093
+      13       1.243 
+      14       0.7093
+      15       0.4716
+      16       0.4806
+      17       0.5677
+      18       0.7951
+      19       0.7481
+      20       0.9253
+      21       0.83  
+      22       1.0706
+      23       1.4409
+      24       0.7466
+      25       0.721 
+      26       1.1374
+      27       0.5904
+      28       1.2444
+      29       0.7916
+      30       1.1249
+      31       1.0791
+      32       1.2718
+      33       0.7136
+      34       1.3338
+      35       1.1824
+      36       0.737 
+      37       1.1189
+      38       1.0961
+      39       1.1933
+      40       1.19  
+
+
+Time taken to build model: 0.06 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8429
+Mean absolute error                      0.1283
+Root mean squared error                  0.251 
+Relative absolute error                 29.4695 %
+Root relative squared error             53.8045 %
+Total Number of Instances              484     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.74  
+Mean absolute error                      0.1637
+Root mean squared error                  0.3172
+Relative absolute error                 37.4551 %
+Root relative squared error             67.7055 %
+Total Number of Instances              484     
+

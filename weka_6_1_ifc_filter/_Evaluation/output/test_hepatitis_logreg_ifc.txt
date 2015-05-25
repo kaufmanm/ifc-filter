@@ -1,0 +1,107 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation hepatitis-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R20-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute AGE numeric
+@attribute SEX numeric
+@attribute STEROID numeric
+@attribute ANTIVIRALS numeric
+@attribute FATIGUE numeric
+@attribute MALAISE numeric
+@attribute ANOREXIA numeric
+@attribute LIVER_BIG numeric
+@attribute LIVER_FIRM numeric
+@attribute SPLEEN_PALPABLE numeric
+@attribute SPIDERS numeric
+@attribute ASCITES numeric
+@attribute VARICES numeric
+@attribute BILIRUBIN numeric
+@attribute ALK_PHOSPHATE numeric
+@attribute SGOT numeric
+@attribute ALBUMIN numeric
+@attribute PROTIME numeric
+@attribute HISTOLOGY numeric
+@attribute Class=LIVE numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=  -68.1251;  df=19;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      3.6211*AGE
++     30.5396*SEX
++      6.6764*STEROID
++     -0.169 *ANTIVIRALS
++      2.7835*FATIGUE
++      0.8419*MALAISE
++    -10.0587*ANOREXIA
++      5.7843*LIVER_BIG
++    -41.4398*LIVER_FIRM
++      0.9026*SPLEEN_PALPABLE
++      3.9407*SPIDERS
++      2.5261*ASCITES
++      1.573 *VARICES
++      4.7239*BILIRUBIN
++      2.3879*ALK_PHOSPHATE
++      0.3018*SGOT
++      0.821 *ALBUMIN
++      2.0166*PROTIME
++     -0.1275*HISTOLOGY
++    -6.5942))
+
+Odds Ratios...
+Variable         O.R.
+       1      37.3783
+       2 1.8330940460851625E13
+       3     793.4964
+       4       0.8445
+       5      16.1763
+       6       2.3208
+       7       0     
+       8     325.1387
+       9       0     
+      10       2.4661
+      11      51.4549
+      12      12.5049
+      13       4.8212
+      14     112.6041
+      15      10.8901
+      16       1.3523
+      17       2.2727
+      18       7.5125
+      19       0.8803
+
+
+Time taken to build model: 0.17 seconds
+Time taken to test model on training data: 0.28 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7656
+Mean absolute error                      0.1352
+Root mean squared error                  0.2604
+Relative absolute error                 41.2759 %
+Root relative squared error             64.3324 %
+Total Number of Instances              155     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4286
+Mean absolute error                      0.2077
+Root mean squared error                  0.3826
+Relative absolute error                 62.8668 %
+Root relative squared error             93.6854 %
+Total Number of Instances              155     
+

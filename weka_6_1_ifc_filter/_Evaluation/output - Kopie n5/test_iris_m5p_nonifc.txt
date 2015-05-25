@@ -1,0 +1,42 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+petallength <= 2.45 : LM1 (50/0%)
+petallength >  2.45 : LM2 (100/0%)
+
+LM num: 1
+iris-setosa = 
+	-0.0571 * petallength 
+	+ 1.0607
+
+LM num: 2
+iris-setosa = 
+	-0.0323 * petallength 
+	+ 0.1647
+
+Number of Rules : 2
+
+Time taken to build model: 0.08 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9988
+Mean absolute error                      0.0225
+Root mean squared error                  0.0265
+Relative absolute error                  5.0652 %
+Root relative squared error              5.6222 %
+Total Number of Instances              150     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9985
+Mean absolute error                      0.0253
+Root mean squared error                  0.0297
+Relative absolute error                  5.632  %
+Root relative squared error              6.2433 %
+Total Number of Instances              150     
+

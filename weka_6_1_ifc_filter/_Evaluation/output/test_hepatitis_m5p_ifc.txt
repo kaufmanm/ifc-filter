@@ -1,0 +1,71 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation hepatitis-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R20-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute AGE numeric
+@attribute SEX numeric
+@attribute STEROID numeric
+@attribute ANTIVIRALS numeric
+@attribute FATIGUE numeric
+@attribute MALAISE numeric
+@attribute ANOREXIA numeric
+@attribute LIVER_BIG numeric
+@attribute LIVER_FIRM numeric
+@attribute SPLEEN_PALPABLE numeric
+@attribute SPIDERS numeric
+@attribute ASCITES numeric
+@attribute VARICES numeric
+@attribute BILIRUBIN numeric
+@attribute ALK_PHOSPHATE numeric
+@attribute SGOT numeric
+@attribute ALBUMIN numeric
+@attribute PROTIME numeric
+@attribute HISTOLOGY numeric
+@attribute Class=LIVE numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+LM1 (155/76.209%)
+
+LM num: 1
+Class=LIVE = 
+	0.3042 * AGE 
+	+ 0.2855 * SPIDERS 
+	+ 0.6017 * ASCITES 
+	+ 0.4571 * BILIRUBIN 
+	+ 0.2128 * ALBUMIN 
+	- 0.2691
+
+Number of Rules : 1
+
+Time taken to build model: 0.23 seconds
+Time taken to test model on training data: 0.17 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.6563
+Mean absolute error                      0.2045
+Root mean squared error                  0.3062
+Relative absolute error                 62.4039 %
+Root relative squared error             75.6602 %
+Total Number of Instances              155     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.419 
+Mean absolute error                      0.2382
+Root mean squared error                  0.3741
+Relative absolute error                 72.1067 %
+Root relative squared error             91.5985 %
+Total Number of Instances              155     
+

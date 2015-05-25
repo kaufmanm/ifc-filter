@@ -1,0 +1,80 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation sick-weka.filters.unsupervised.instance.Resample-S1-Z22.0-no-replacement-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R31-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute age numeric
+@attribute sex numeric
+@attribute 'on thyroxine' numeric
+@attribute 'query on thyroxine' numeric
+@attribute 'on antithyroid medication' numeric
+@attribute sick numeric
+@attribute pregnant numeric
+@attribute 'thyroid surgery' numeric
+@attribute 'I131 treatment' numeric
+@attribute 'query hypothyroid' numeric
+@attribute 'query hyperthyroid' numeric
+@attribute lithium numeric
+@attribute goitre numeric
+@attribute tumor numeric
+@attribute hypopituitary numeric
+@attribute psych numeric
+@attribute 'TSH measured' numeric
+@attribute TSH numeric
+@attribute 'T3 measured' numeric
+@attribute T3 numeric
+@attribute 'TT4 measured' numeric
+@attribute TT4 numeric
+@attribute 'T4U measured' numeric
+@attribute T4U numeric
+@attribute 'FTI measured' numeric
+@attribute FTI numeric
+@attribute 'TBG measured' numeric
+@attribute TBG numeric
+@attribute 'referral source' numeric
+@attribute Class=negative numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+Class=negative =
+
+      0.093  * TSH measured +
+     -0.0859 * T3 measured +
+      0.6001 * T3 +
+     -0.0608 * TT4 +
+      0.0816 * T4U +
+     -0.2128 * FTI +
+      0.0539 * referral source +
+      0.5311
+
+Time taken to build model: 0.3 seconds
+Time taken to test model on training data: 2.68 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.6904
+Mean absolute error                      0.0762
+Root mean squared error                  0.1705
+Relative absolute error                 69.8611 %
+Root relative squared error             72.9943 %
+Total Number of Instances              829     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6546
+Mean absolute error                      0.08  
+Root mean squared error                  0.1776
+Relative absolute error                 73.2608 %
+Root relative squared error             75.946  %
+Total Number of Instances              829     
+

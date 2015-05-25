@@ -1,0 +1,45 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.lazy.IBk 
+
+FilteredClassifier using weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation balance-scale-weka.filters.unsupervised.attribute.NominalToBinary-R5-weka.filters.unsupervised.attribute.Remove-R6-7-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute left-weight numeric
+@attribute left-distance numeric
+@attribute right-weight numeric
+@attribute right-distance numeric
+@attribute class=L numeric
+
+@data
+
+
+Classifier Model
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.09 seconds
+Time taken to test model on training data: 0.19 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              625     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7878
+Mean absolute error                      0.1056
+Root mean squared error                  0.325 
+Relative absolute error                 21.2164 %
+Root relative squared error             65.0822 %
+Total Number of Instances              625     
+

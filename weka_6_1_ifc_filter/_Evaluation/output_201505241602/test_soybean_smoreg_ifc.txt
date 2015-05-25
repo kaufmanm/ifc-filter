@@ -1,0 +1,116 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'soybean-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R36-49,51-54-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z55.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute date numeric
+@attribute plant-stand numeric
+@attribute precip numeric
+@attribute temp numeric
+@attribute hail numeric
+@attribute crop-hist numeric
+@attribute area-damaged numeric
+@attribute severity numeric
+@attribute seed-tmt numeric
+@attribute germination numeric
+@attribute plant-growth numeric
+@attribute leaves numeric
+@attribute leafspots-halo numeric
+@attribute leafspots-marg numeric
+@attribute leafspot-size numeric
+@attribute leaf-shread numeric
+@attribute leaf-malf numeric
+@attribute leaf-mild numeric
+@attribute stem numeric
+@attribute lodging numeric
+@attribute stem-cankers numeric
+@attribute canker-lesion numeric
+@attribute fruiting-bodies numeric
+@attribute external-decay numeric
+@attribute mycelium numeric
+@attribute int-discolor numeric
+@attribute sclerotia numeric
+@attribute fruit-pods numeric
+@attribute fruit-spots numeric
+@attribute seed numeric
+@attribute mold-growth numeric
+@attribute seed-discolor numeric
+@attribute seed-size numeric
+@attribute shriveling numeric
+@attribute roots numeric
+@attribute class=frog-eye-leaf-spot numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ +       0.0008 * (normalized) date
+ +       0.0006 * (normalized) plant-stand
+ -       0.0006 * (normalized) precip
+ -       0.0051 * (normalized) temp
+ +       0.0025 * (normalized) hail
+ -       0.0012 * (normalized) crop-hist
+ +       0.0006 * (normalized) area-damaged
+ -       0.0014 * (normalized) severity
+ +       0.0026 * (normalized) seed-tmt
+ +       0.0012 * (normalized) germination
+ -       0.0267 * (normalized) plant-growth
+ -       0.0024 * (normalized) leaves
+ -       0.0055 * (normalized) leafspots-halo
+ -       0.0153 * (normalized) leafspots-marg
+ +       0.0261 * (normalized) leafspot-size
+ +       0.0007 * (normalized) leaf-shread
+ +       0.0001 * (normalized) leaf-malf
+ -       0.0032 * (normalized) leaf-mild
+ +       0.0061 * (normalized) stem
+ -       0.0007 * (normalized) lodging
+ -       0.0008 * (normalized) stem-cankers
+ +       0.0159 * (normalized) canker-lesion
+ +       0.007  * (normalized) fruiting-bodies
+ +       0.4018 * (normalized) external-decay
+ +       0.0005 * (normalized) mycelium
+ +       0.0023 * (normalized) int-discolor
+ -       0.2797 * (normalized) sclerotia
+ +       0.0332 * (normalized) fruit-pods
+ +       0.9848 * (normalized) fruit-spots
+ +       0.0038 * (normalized) seed
+ +       0.0046 * (normalized) mold-growth
+ -       0.0039 * (normalized) seed-discolor
+ -       0.0277 * (normalized) seed-size
+ +       0.0268 * (normalized) shriveling
+ +       0.0403 * (normalized) roots
+ -       0.188 
+
+
+
+Number of kernel evaluations: 70500 (99.84% cached)
+
+Time taken to build model: 2.34 seconds
+Time taken to test model on training data: 1.12 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7344
+Mean absolute error                      0.0704
+Root mean squared error                  0.2344
+Relative absolute error                 30.9782 %
+Root relative squared error             69.5335 %
+Total Number of Instances              375     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7284
+Mean absolute error                      0.0749
+Root mean squared error                  0.2365
+Relative absolute error                 32.8892 %
+Root relative squared error             69.9927 %
+Total Number of Instances              375     
+

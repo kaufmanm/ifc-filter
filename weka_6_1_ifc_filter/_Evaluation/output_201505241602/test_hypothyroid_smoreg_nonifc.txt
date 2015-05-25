@@ -1,0 +1,66 @@
+
+SMOreg
+
+weights (not support vectors):
+ -       0      * (normalized) age
+ +       0.0002 * (normalized) sex
+ -       0.0006 * (normalized) on thyroxine
+ -       0.0017 * (normalized) query on thyroxine
+ -       0.0011 * (normalized) on antithyroid medication
+ +       0.0002 * (normalized) sick
+ -       0.0002 * (normalized) pregnant
+ +       0      * (normalized) thyroid surgery
+ -       0.0002 * (normalized) I131 treatment
+ +       0.0006 * (normalized) query hypothyroid
+ -       0.0005 * (normalized) query hyperthyroid
+ +       0.0025 * (normalized) lithium
+ +       0.0001 * (normalized) goitre
+ -       0.0009 * (normalized) tumor
+ +       0      * (normalized) hypopituitary
+ -       0      * (normalized) psych
+ +       0.0106 * (normalized) TSH measured
+ -       1.1288 * (normalized) TSH
+ +       0.0002 * (normalized) T3 measured
+ -       0.0006 * (normalized) T3
+ -       0.0005 * (normalized) TT4 measured
+ -       0.0022 * (normalized) TT4
+ +       0.0015 * (normalized) T4U measured
+ +       0.0013 * (normalized) T4U
+ -       0.001  * (normalized) FTI measured
+ -       0.0017 * (normalized) FTI
+ +       0      * (normalized) TBG measured
+ +       0      * (normalized) TBG
+ +       0.0007 * (normalized) referral source=SVHC
+ -       0.0004 * (normalized) referral source=other
+ -       0.0003 * (normalized) referral source=SVI
+ +       0.0001 * (normalized) referral source=STMW
+ +       0      * (normalized) referral source=SVHD
+ +       1.0037
+
+
+
+Number of kernel evaluations: 2005252 (99.34% cached)
+
+Time taken to build model: 33.81 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.4015
+Mean absolute error                      0.0687
+Root mean squared error                  0.2508
+Relative absolute error                 50.1368 %
+Root relative squared error             95.8258 %
+Total Number of Instances             1244     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4012
+Mean absolute error                      0.0688
+Root mean squared error                  0.2508
+Relative absolute error                 50.1532 %
+Root relative squared error             95.7392 %
+Total Number of Instances             1244     
+

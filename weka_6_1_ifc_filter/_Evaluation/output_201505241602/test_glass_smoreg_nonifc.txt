@@ -1,0 +1,42 @@
+
+SMOreg
+
+weights (not support vectors):
+ +       0.0016 * (normalized) RI
+ -       0.0559 * (normalized) Na
+ -       0.0367 * (normalized) Mg
+ -       0.0237 * (normalized) Al
+ -       0.0476 * (normalized) Si
+ -       0.0535 * (normalized) K
+ -       0.0875 * (normalized) Ca
+ -       0.0273 * (normalized) Ba
+ +       0.0083 * (normalized) Fe
+ +       0.1124
+
+
+
+Number of kernel evaluations: 23005 (95.472% cached)
+
+Time taken to build model: 0.09 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.3015
+Mean absolute error                      0.3552
+Root mean squared error                  0.5941
+Relative absolute error                 77.5503 %
+Root relative squared error            124.1356 %
+Total Number of Instances              214     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.0255
+Mean absolute error                      0.3607
+Root mean squared error                  0.586 
+Relative absolute error                 78.2384 %
+Root relative squared error            121.6209 %
+Total Number of Instances              214     
+

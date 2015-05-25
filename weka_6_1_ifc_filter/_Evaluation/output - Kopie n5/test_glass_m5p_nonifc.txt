@@ -1,0 +1,264 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+Na <= 13.985 : 
+|   Ca <= 8.315 : 
+|   |   Al <= 1.405 : 
+|   |   |   Na <= 13.315 : LM1 (5/0%)
+|   |   |   Na >  13.315 : 
+|   |   |   |   RI <= 1.518 : 
+|   |   |   |   |   RI <= 1.517 : LM2 (2/0%)
+|   |   |   |   |   RI >  1.517 : LM3 (3/0%)
+|   |   |   |   RI >  1.518 : LM4 (4/0%)
+|   |   Al >  1.405 : 
+|   |   |   RI <= 1.516 : 
+|   |   |   |   Al <= 1.53 : LM5 (7/0%)
+|   |   |   |   Al >  1.53 : 
+|   |   |   |   |   RI <= 1.516 : LM6 (4/0%)
+|   |   |   |   |   RI >  1.516 : 
+|   |   |   |   |   |   K <= 0.66 : LM7 (2/0%)
+|   |   |   |   |   |   K >  0.66 : LM8 (4/0%)
+|   |   |   RI >  1.516 : LM9 (21/0%)
+|   Ca >  8.315 : 
+|   |   Mg <= 3.29 : 
+|   |   |   RI <= 1.524 : 
+|   |   |   |   Ca <= 11.205 : 
+|   |   |   |   |   Al <= 1.75 : 
+|   |   |   |   |   |   Al <= 1.325 : LM10 (10/78.943%)
+|   |   |   |   |   |   Al >  1.325 : LM11 (8/0%)
+|   |   |   |   |   Al >  1.75 : LM12 (5/0%)
+|   |   |   |   Ca >  11.205 : LM13 (7/0%)
+|   |   |   RI >  1.524 : LM14 (9/0%)
+|   |   Mg >  3.29 : 
+|   |   |   Na <= 12.845 : LM15 (17/0%)
+|   |   |   Na >  12.845 : 
+|   |   |   |   Mg <= 3.605 : 
+|   |   |   |   |   Al <= 1.395 : LM16 (28/0%)
+|   |   |   |   |   Al >  1.395 : 
+|   |   |   |   |   |   K <= 0.525 : LM17 (2/0%)
+|   |   |   |   |   |   K >  0.525 : LM18 (6/0%)
+|   |   |   |   Mg >  3.605 : 
+|   |   |   |   |   K <= 0.385 : LM19 (12/0%)
+|   |   |   |   |   K >  0.385 : LM20 (12/0%)
+Na >  13.985 : 
+|   K <= 0.09 : LM21 (32/0%)
+|   K >  0.09 : 
+|   |   Si <= 71.83 : LM22 (9/0%)
+|   |   Si >  71.83 : LM23 (5/102.37%)
+
+LM num: 1
+Type=build wind non-float = 
+	30.812 * RI 
+	- 0.013 * Na 
+	+ 0.4483 * Al 
+	- 0.1691 * K 
+	- 46.6049
+
+LM num: 2
+Type=build wind non-float = 
+	9.0298 * RI 
+	- 0.013 * Na 
+	+ 0.4483 * Al 
+	- 0.1691 * K 
+	- 13.4988
+
+LM num: 3
+Type=build wind non-float = 
+	10.2399 * RI 
+	- 0.013 * Na 
+	+ 0.4483 * Al 
+	- 0.1691 * K 
+	- 15.339
+
+LM num: 4
+Type=build wind non-float = 
+	30.812 * RI 
+	- 0.013 * Na 
+	+ 0.4483 * Al 
+	- 0.1691 * K 
+	- 46.5282
+
+LM num: 5
+Type=build wind non-float = 
+	92.2416 * RI 
+	- 0.013 * Na 
+	+ 0.2713 * Al 
+	- 0.1234 * K 
+	- 139.2914
+
+LM num: 6
+Type=build wind non-float = 
+	100.5723 * RI 
+	- 0.013 * Na 
+	+ 0.2713 * Al 
+	- 0.1234 * K 
+	- 151.9763
+
+LM num: 7
+Type=build wind non-float = 
+	99.3308 * RI 
+	- 0.013 * Na 
+	+ 0.2713 * Al 
+	- 0.0362 * K 
+	- 150.1359
+
+LM num: 8
+Type=build wind non-float = 
+	99.3308 * RI 
+	- 0.013 * Na 
+	+ 0.2713 * Al 
+	- 0.0454 * K 
+	- 150.1254
+
+LM num: 9
+Type=build wind non-float = 
+	49.0146 * RI 
+	- 0.013 * Na 
+	+ 0.2713 * Al 
+	- 0.1214 * K 
+	- 73.7168
+
+LM num: 10
+Type=build wind non-float = 
+	27.4464 * RI 
+	- 0.013 * Na 
+	- 0.2236 * Al 
+	- 0.015 * K 
+	- 0.0439 * Ca 
+	- 40.3416
+
+LM num: 11
+Type=build wind non-float = 
+	27.4464 * RI 
+	- 0.013 * Na 
+	- 0.1522 * Al 
+	- 0.015 * K 
+	- 0.0439 * Ca 
+	- 40.3929
+
+LM num: 12
+Type=build wind non-float = 
+	27.4464 * RI 
+	- 0.013 * Na 
+	- 0.1791 * Al 
+	- 0.015 * K 
+	- 0.0439 * Ca 
+	- 40.4181
+
+LM num: 13
+Type=build wind non-float = 
+	27.4464 * RI 
+	- 0.013 * Na 
+	- 0.1588 * Al 
+	- 0.015 * K 
+	- 0.0577 * Ca 
+	- 40.3574
+
+LM num: 14
+Type=build wind non-float = 
+	42.3245 * RI 
+	- 0.013 * Na 
+	- 0.1098 * Al 
+	- 0.015 * K 
+	- 0.047 * Ca 
+	- 62.9461
+
+LM num: 15
+Type=build wind non-float = 
+	6.1295 * RI 
+	- 0.013 * Na 
+	+ 0.323 * Mg 
+	+ 0.0294 * Al 
+	+ 0.202 * K 
+	- 10.2554
+
+LM num: 16
+Type=build wind non-float = 
+	6.1295 * RI 
+	- 0.013 * Na 
+	+ 0.3084 * Mg 
+	+ 0.0928 * Al 
+	+ 0.1411 * K 
+	- 10.2398
+
+LM num: 17
+Type=build wind non-float = 
+	6.1295 * RI 
+	- 0.013 * Na 
+	+ 0.3084 * Mg 
+	+ 0.1479 * Al 
+	- 0.1609 * K 
+	- 10.108
+
+LM num: 18
+Type=build wind non-float = 
+	6.1295 * RI 
+	- 0.013 * Na 
+	+ 0.3084 * Mg 
+	+ 0.1479 * Al 
+	- 0.1175 * K 
+	- 10.1512
+
+LM num: 19
+Type=build wind non-float = 
+	6.1295 * RI 
+	- 0.013 * Na 
+	+ 0.3609 * Mg 
+	+ 0.0294 * Al 
+	+ 0.6701 * K 
+	- 10.454
+
+LM num: 20
+Type=build wind non-float = 
+	6.1295 * RI 
+	- 0.013 * Na 
+	+ 0.3609 * Mg 
+	+ 0.0294 * Al 
+	+ 0.6701 * K 
+	- 10.3051
+
+LM num: 21
+Type=build wind non-float = 
+	-0.039 * Na 
+	+ 0.6255
+
+LM num: 22
+Type=build wind non-float = 
+	-12.3967 * RI 
+	- 0.039 * Na 
+	+ 0.0451 * Si 
+	+ 16.2974
+
+LM num: 23
+Type=build wind non-float = 
+	-14.8761 * RI 
+	- 0.039 * Na 
+	+ 0.0541 * Si 
+	+ 19.4844
+
+Number of Rules : 23
+
+Time taken to build model: 0.11 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8245
+Mean absolute error                      0.2454
+Root mean squared error                  0.2985
+Relative absolute error                 53.5843 %
+Root relative squared error             62.3676 %
+Total Number of Instances              214     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5593
+Mean absolute error                      0.3168
+Root mean squared error                  0.3973
+Relative absolute error                 68.7067 %
+Root relative squared error             82.4565 %
+Total Number of Instances              214     
+

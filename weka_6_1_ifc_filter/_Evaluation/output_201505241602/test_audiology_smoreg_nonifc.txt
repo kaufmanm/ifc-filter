@@ -1,0 +1,134 @@
+
+SMOreg
+
+weights (not support vectors):
+ +       0.624  * (normalized) age_gt_60
+ +       0.0304 * (normalized) air=mild
+ -       0.0273 * (normalized) air=moderate
+ -       0.0297 * (normalized) air=normal
+ +       0.0387 * (normalized) air=profound
+ -       0.0121 * (normalized) air=severe
+ -       0.0896 * (normalized) airBoneGap
+ +       0.0013 * (normalized) ar_c=absent
+ -       0.0283 * (normalized) ar_c=elevated
+ +       0.0269 * (normalized) ar_c=normal
+ +       0      * (normalized) ar_c=?
+ -       0.0291 * (normalized) ar_u=absent
+ +       0.0371 * (normalized) ar_u=elevated
+ -       0.008  * (normalized) ar_u=normal
+ +       0      * (normalized) ar_u=?
+ +       0.0348 * (normalized) bone=mild
+ -       0.0364 * (normalized) bone=moderate
+ +       0.0245 * (normalized) bone=normal
+ -       0.0228 * (normalized) bone=unmeasured
+ +       0      * (normalized) bone=?
+ -       0.0001 * (normalized) boneAbnormal
+ -       0      * (normalized) bser=degraded
+ +       0      * (normalized) bser=normal
+ +       0      * (normalized) bser=?
+ +       0.1641 * (normalized) history_buzzing
+ -       0.1223 * (normalized) history_dizziness
+ -       0.229  * (normalized) history_fluctuating
+ +       0.1641 * (normalized) history_fullness
+ -       0.2311 * (normalized) history_heredity
+ -       0.2598 * (normalized) history_nausea
+ -       0.3627 * (normalized) history_noise
+ +       0.0839 * (normalized) history_recruitment
+ +       0.0714 * (normalized) history_ringing
+ +       0.1228 * (normalized) history_roaring
+ -       0.068  * (normalized) history_vomiting
+ +       0      * (normalized) late_wave_poor
+ +       0.0568 * (normalized) m_at_2k
+ -       0.0888 * (normalized) m_cond_lt_1k
+ +       0.0322 * (normalized) m_gt_1k
+ +       0.0958 * (normalized) m_m_gt_2k
+ +       0.103  * (normalized) m_m_sn
+ -       0.1915 * (normalized) m_m_sn_gt_1k
+ +       0.116  * (normalized) m_m_sn_gt_2k
+ -       0.3177 * (normalized) m_m_sn_gt_500
+ -       0.1277 * (normalized) m_p_sn_gt_2k
+ -       0.1278 * (normalized) m_s_gt_500
+ -       0.4039 * (normalized) m_s_sn
+ +       0.2311 * (normalized) m_s_sn_gt_1k
+ -       0.7235 * (normalized) m_s_sn_gt_2k
+ +       0.4202 * (normalized) m_s_sn_gt_3k
+ +       0.5365 * (normalized) m_s_sn_gt_4k
+ -       0.3028 * (normalized) m_sn_2_3k
+ -       0.0049 * (normalized) m_sn_gt_1k
+ +       0.105  * (normalized) m_sn_gt_2k
+ +       0.0599 * (normalized) m_sn_gt_3k
+ +       0.119  * (normalized) m_sn_gt_4k
+ -       0.036  * (normalized) m_sn_gt_500
+ +       0.1626 * (normalized) m_sn_gt_6k
+ +       0.17   * (normalized) m_sn_lt_1k
+ -       0.3173 * (normalized) m_sn_lt_2k
+ -       0.3173 * (normalized) m_sn_lt_3k
+ +       0      * (normalized) middle_wave_poor
+ +       0.0699 * (normalized) mod_gt_4k
+ -       0.0359 * (normalized) mod_mixed
+ -       0.4988 * (normalized) mod_s_mixed
+ -       0.4478 * (normalized) mod_s_sn_gt_500
+ +       0.153  * (normalized) mod_sn
+ -       0.3311 * (normalized) mod_sn_gt_1k
+ -       0.0505 * (normalized) mod_sn_gt_2k
+ -       0.0744 * (normalized) mod_sn_gt_3k
+ +       0.1609 * (normalized) mod_sn_gt_4k
+ -       0.1807 * (normalized) mod_sn_gt_500
+ -       0.1868 * (normalized) notch_4k
+ -       0.0004 * (normalized) notch_at_4k
+ -       0.1188 * (normalized) o_ar_c=absent
+ -       0.0321 * (normalized) o_ar_c=elevated
+ +       0.1508 * (normalized) o_ar_c=normal
+ +       0      * (normalized) o_ar_c=?
+ -       0.0154 * (normalized) o_ar_u=absent
+ +       0.0075 * (normalized) o_ar_u=elevated
+ +       0.008  * (normalized) o_ar_u=normal
+ +       0      * (normalized) o_ar_u=?
+ +       0      * (normalized) s_sn_gt_1k
+ +       0.2785 * (normalized) s_sn_gt_2k
+ +       0.0423 * (normalized) s_sn_gt_4k
+ +       0.0309 * (normalized) speech=good
+ +       0.0192 * (normalized) speech=normal
+ +       0.0746 * (normalized) speech=poor
+ -       0.0157 * (normalized) speech=unmeasured
+ +       0.0756 * (normalized) speech=very_good
+ -       0.1846 * (normalized) speech=very_poor
+ +       0      * (normalized) speech=?
+ +       0.0451 * (normalized) static_normal
+ -       0.1089 * (normalized) tymp=a
+ +       0.2238 * (normalized) tymp=ad
+ +       0.0009 * (normalized) tymp=as
+ -       0.023  * (normalized) tymp=b
+ -       0.0928 * (normalized) tymp=c
+ -       0.0016 * (normalized) viith_nerve_signs
+ -       0.2681 * (normalized) wave_V_delayed
+ +       0.0449 * (normalized) waveform_ItoV_prolonged
+ +       0.1205
+
+
+
+Number of kernel evaluations: 25649 (99.685% cached)
+
+Time taken to build model: 0.53 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9102
+Mean absolute error                      0.0992
+Root mean squared error                  0.1864
+Relative absolute error                 26.2939 %
+Root relative squared error             42.9272 %
+Total Number of Instances              226     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8157
+Mean absolute error                      0.1932
+Root mean squared error                  0.2698
+Relative absolute error                 50.9632 %
+Root relative squared error             61.8023 %
+Total Number of Instances              226     
+

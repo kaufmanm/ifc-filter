@@ -1,0 +1,134 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'splice-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R1,62-63-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z22.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute attribute_1 numeric
+@attribute attribute_2 numeric
+@attribute attribute_3 numeric
+@attribute attribute_4 numeric
+@attribute attribute_5 numeric
+@attribute attribute_6 numeric
+@attribute attribute_7 numeric
+@attribute attribute_8 numeric
+@attribute attribute_9 numeric
+@attribute attribute_10 numeric
+@attribute attribute_11 numeric
+@attribute attribute_12 numeric
+@attribute attribute_13 numeric
+@attribute attribute_14 numeric
+@attribute attribute_15 numeric
+@attribute attribute_16 numeric
+@attribute attribute_17 numeric
+@attribute attribute_18 numeric
+@attribute attribute_19 numeric
+@attribute attribute_20 numeric
+@attribute attribute_21 numeric
+@attribute attribute_22 numeric
+@attribute attribute_23 numeric
+@attribute attribute_24 numeric
+@attribute attribute_25 numeric
+@attribute attribute_26 numeric
+@attribute attribute_27 numeric
+@attribute attribute_28 numeric
+@attribute attribute_29 numeric
+@attribute attribute_30 numeric
+@attribute attribute_31 numeric
+@attribute attribute_32 numeric
+@attribute attribute_33 numeric
+@attribute attribute_34 numeric
+@attribute attribute_35 numeric
+@attribute attribute_36 numeric
+@attribute attribute_37 numeric
+@attribute attribute_38 numeric
+@attribute attribute_39 numeric
+@attribute attribute_40 numeric
+@attribute attribute_41 numeric
+@attribute attribute_42 numeric
+@attribute attribute_43 numeric
+@attribute attribute_44 numeric
+@attribute attribute_45 numeric
+@attribute attribute_46 numeric
+@attribute attribute_47 numeric
+@attribute attribute_48 numeric
+@attribute attribute_49 numeric
+@attribute attribute_50 numeric
+@attribute attribute_51 numeric
+@attribute attribute_52 numeric
+@attribute attribute_53 numeric
+@attribute attribute_54 numeric
+@attribute attribute_55 numeric
+@attribute attribute_56 numeric
+@attribute attribute_57 numeric
+@attribute attribute_58 numeric
+@attribute attribute_59 numeric
+@attribute attribute_60 numeric
+@attribute Class=N numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+Class=N =
+
+      0.3272 * attribute_3 +
+      0.5213 * attribute_7 +
+      0.4002 * attribute_10 +
+      0.5284 * attribute_15 +
+      0.474  * attribute_17 +
+      0.3028 * attribute_18 +
+      0.199  * attribute_20 +
+      0.3174 * attribute_21 +
+      0.4155 * attribute_22 +
+      0.212  * attribute_24 +
+      0.2597 * attribute_25 +
+      0.2732 * attribute_26 +
+      0.3656 * attribute_28 +
+      0.4538 * attribute_29 +
+      0.4614 * attribute_30 +
+      0.3364 * attribute_31 +
+      0.4849 * attribute_32 +
+      0.2448 * attribute_33 +
+      0.4731 * attribute_34 +
+      0.5234 * attribute_35 +
+      0.7451 * attribute_36 +
+      0.3433 * attribute_38 +
+      0.4304 * attribute_39 +
+      0.3741 * attribute_41 +
+      0.2997 * attribute_44 +
+      0.4545 * attribute_46 +
+      0.4555 * attribute_49 +
+      0.4701 * attribute_51 +
+      0.3474 * attribute_56 +
+      0.8747 * attribute_57 +
+     -5.6749
+
+Time taken to build model: 0.52 seconds
+Time taken to test model on training data: 7.44 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8784
+Mean absolute error                      0.1703
+Root mean squared error                  0.2471
+Relative absolute error                 34.2273 %
+Root relative squared error             49.5327 %
+Total Number of Instances              701     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8337
+Mean absolute error                      0.1994
+Root mean squared error                  0.2815
+Relative absolute error                 40.0061 %
+Root relative squared error             56.3228 %
+Total Number of Instances              701     
+

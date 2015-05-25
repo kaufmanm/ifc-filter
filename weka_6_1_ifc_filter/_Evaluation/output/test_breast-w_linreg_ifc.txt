@@ -1,0 +1,62 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation wisconsin-breast-cancer-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R11-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute Clump_Thickness numeric
+@attribute Cell_Size_Uniformity numeric
+@attribute Cell_Shape_Uniformity numeric
+@attribute Marginal_Adhesion numeric
+@attribute Single_Epi_Cell_Size numeric
+@attribute Bare_Nuclei numeric
+@attribute Bland_Chromatin numeric
+@attribute Normal_Nucleoli numeric
+@attribute Mitoses numeric
+@attribute Class=benign numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+Class=benign =
+
+      0.2157 * Clump_Thickness +
+      0.2048 * Cell_Size_Uniformity +
+      0.1764 * Cell_Shape_Uniformity +
+      0.0486 * Marginal_Adhesion +
+      0.0896 * Single_Epi_Cell_Size +
+      0.3239 * Bare_Nuclei +
+      0.1894 * Bland_Chromatin +
+      0.0788 * Normal_Nucleoli +
+      0.099  * Mitoses +
+     -0.2279
+
+Time taken to build model: 0.22 seconds
+Time taken to test model on training data: 0.39 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9338
+Mean absolute error                      0.0906
+Root mean squared error                  0.1737
+Relative absolute error                 20.0463 %
+Root relative squared error             36.5447 %
+Total Number of Instances              699     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9274
+Mean absolute error                      0.0944
+Root mean squared error                  0.181 
+Relative absolute error                 20.8706 %
+Root relative squared error             38.0157 %
+Total Number of Instances              699     
+

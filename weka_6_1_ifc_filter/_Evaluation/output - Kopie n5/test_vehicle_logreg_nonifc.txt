@@ -1,0 +1,73 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -593.0883;  df=18;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      0.1465*COMPACTNESS
++     -0.3342*CIRCULARITY
++     -0.0633*DISTANCE CIRCULARITY
++      0.1262*RADIUS RATIO
++     -0.3536*PR.AXIS ASPECT RATIO
++     -0.3939*MAX.LENGTH ASPECT RATIO
++      0.2453*SCATTER RATIO
++      0.0775*ELONGATEDNESS
++      0.7894*PR.AXIS RECTANGULARITY
++     -0.0911*MAX.LENGTH RECTANGULARITY
++     -0.0586*SCALED VARIANCE_MAJOR
++     -0.05  *SCALED VARIANCE_MINOR
++      0.0617*SCALED RADIUS OF GYRATION
++     -0.1635*SKEWNESS ABOUT_MAJOR
++      0.0808*SKEWNESS ABOUT_MINOR
++     -0.0224*KURTOSIS ABOUT_MAJOR
++     -0.6553*KURTOSIS ABOUT_MINOR
++      0.3726*HOLLOWS RATIO
++    45.567 ))
+
+Odds Ratios...
+Variable         O.R.
+       1       1.1578
+       2       0.7159
+       3       0.9387
+       4       1.1345
+       5       0.7022
+       6       0.6744
+       7       1.278 
+       8       1.0805
+       9       2.202 
+      10       0.9129
+      11       0.943 
+      12       0.9513
+      13       1.0637
+      14       0.8492
+      15       1.0841
+      16       0.9778
+      17       0.5193
+      18       1.4515
+
+
+Time taken to build model: 0.08 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.6245
+Mean absolute error                      0.2281
+Root mean squared error                  0.3412
+Relative absolute error                 59.8066 %
+Root relative squared error             78.1267 %
+Total Number of Instances              846     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5873
+Mean absolute error                      0.2364
+Root mean squared error                  0.3544
+Relative absolute error                 61.8796 %
+Root relative squared error             81.0347 %
+Total Number of Instances              846     
+

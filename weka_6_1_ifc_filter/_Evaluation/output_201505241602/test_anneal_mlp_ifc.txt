@@ -1,0 +1,881 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.MultilayerPerceptron 
+
+FilteredClassifier using weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'anneal-weka.filters.unsupervised.attribute.NominalToBinary-A-R39-weka.filters.unsupervised.attribute.Remove-R39,41-44-weka.filters.unsupervised.instance.Resample-S1-Z77.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute family numeric
+@attribute product-type numeric
+@attribute steel numeric
+@attribute carbon numeric
+@attribute hardness numeric
+@attribute temper_rolling numeric
+@attribute condition numeric
+@attribute formability numeric
+@attribute strength numeric
+@attribute non-ageing numeric
+@attribute surface-finish numeric
+@attribute surface-quality numeric
+@attribute enamelability numeric
+@attribute bc numeric
+@attribute bf numeric
+@attribute bt numeric
+@attribute bw/me numeric
+@attribute bl numeric
+@attribute m numeric
+@attribute chrom numeric
+@attribute phos numeric
+@attribute cbond numeric
+@attribute marvi numeric
+@attribute exptl numeric
+@attribute ferro numeric
+@attribute corr numeric
+@attribute blue/bright/varn/clean numeric
+@attribute lustre numeric
+@attribute jurofm numeric
+@attribute s numeric
+@attribute p numeric
+@attribute shape numeric
+@attribute thick numeric
+@attribute width numeric
+@attribute len numeric
+@attribute oil numeric
+@attribute bore numeric
+@attribute packing numeric
+@attribute class=2 numeric
+
+@data
+
+
+Classifier Model
+Linear Node 0
+    Inputs    Weights
+    Threshold    1.0831736139031525
+    Node 1    0.03772745515762293
+    Node 2    -2.041387026433378
+    Node 3    0.11787024720895145
+    Node 4    -0.0017020017237321463
+    Node 5    0.42101661643239513
+    Node 6    -0.16808509386436152
+    Node 7    0.06880921193612173
+    Node 8    -0.030368701297196397
+    Node 9    -0.07378611036920008
+    Node 10    0.0418401728981633
+    Node 11    -0.2671269953870443
+    Node 12    0.11016142897202502
+    Node 13    0.029735285568641863
+    Node 14    -2.084310629194075
+    Node 15    -0.08637190647215967
+    Node 16    0.8164571964358399
+    Node 17    0.2553902978841774
+    Node 18    -2.0420172148482636
+    Node 19    -0.019339594050335192
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.27527484713584954
+    Attrib family    -0.11069442330086018
+    Attrib product-type    0.013221703039662039
+    Attrib steel    -0.09057169619060695
+    Attrib carbon    -0.1972470627014082
+    Attrib hardness    -0.06071001928475679
+    Attrib temper_rolling    -0.05012404978701645
+    Attrib condition    -0.18676561773593928
+    Attrib formability    -0.12830757741832421
+    Attrib strength    -0.10913581875709201
+    Attrib non-ageing    -0.2228754443910392
+    Attrib surface-finish    0.16161926697603443
+    Attrib surface-quality    -0.10762137063933089
+    Attrib enamelability    -0.037276276249804945
+    Attrib bc    -0.1959404226679982
+    Attrib bf    -0.17950695907010586
+    Attrib bt    0.13259167180428877
+    Attrib bw/me    -0.1860331885585594
+    Attrib bl    0.16323293674296813
+    Attrib m    0.019660473829186065
+    Attrib chrom    -0.28779729129267273
+    Attrib phos    -0.2333868254943646
+    Attrib cbond    -0.16316222410144593
+    Attrib marvi    0.00462621819892782
+    Attrib exptl    -0.26461814384485494
+    Attrib ferro    -0.26301880196060445
+    Attrib corr    -0.015670891004047074
+    Attrib blue/bright/varn/clean    -0.007667183833198676
+    Attrib lustre    -0.15235004289127893
+    Attrib jurofm    -0.006195217621604944
+    Attrib s    0.042864409058024744
+    Attrib p    0.020876507516438686
+    Attrib shape    -0.058898524322114655
+    Attrib thick    0.02608622715269382
+    Attrib width    0.06383512024026461
+    Attrib len    0.03307910291320966
+    Attrib oil    -0.22582273187544227
+    Attrib bore    -0.20495718864425827
+    Attrib packing    -0.21230346591494287
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -1.3688214514693309
+    Attrib family    1.5481734677385697
+    Attrib product-type    0.028324564010398942
+    Attrib steel    0.6240671606752209
+    Attrib carbon    0.5066915338435187
+    Attrib hardness    -0.7673394500892358
+    Attrib temper_rolling    -0.03334794820256075
+    Attrib condition    -0.6517782027442486
+    Attrib formability    -0.7344440472065995
+    Attrib strength    4.844191856692876
+    Attrib non-ageing    -1.0717516008315948
+    Attrib surface-finish    -2.4413739868411333
+    Attrib surface-quality    4.124375560563104
+    Attrib enamelability    -1.8598048317093756
+    Attrib bc    -1.3586885918627456
+    Attrib bf    0.037438649166274936
+    Attrib bt    -0.12424053356032518
+    Attrib bw/me    -0.34203166551662556
+    Attrib bl    0.11034390668268776
+    Attrib m    0.01579067543752065
+    Attrib chrom    -0.22871812135624597
+    Attrib phos    -0.6474454052183091
+    Attrib cbond    -1.214604396218658
+    Attrib marvi    0.0358050568545695
+    Attrib exptl    -1.5702268532357861
+    Attrib ferro    -0.20498701838106062
+    Attrib corr    0.0065311422016651535
+    Attrib blue/bright/varn/clean    -0.5311687573384094
+    Attrib lustre    -1.087998928516346
+    Attrib jurofm    -0.012660435925407013
+    Attrib s    0.002272243895683368
+    Attrib p    -0.038895690527150355
+    Attrib shape    1.2500413740744347
+    Attrib thick    -0.3852479969212257
+    Attrib width    -0.059359422171328696
+    Attrib len    0.3936956621890288
+    Attrib oil    -1.2298321140659376
+    Attrib bore    -0.9736872191775956
+    Attrib packing    -1.1997513394232195
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.23592574823331122
+    Attrib family    -0.16458270892729754
+    Attrib product-type    -0.013863454817805425
+    Attrib steel    0.002660191641902304
+    Attrib carbon    -0.22126437239472777
+    Attrib hardness    0.005148916146668623
+    Attrib temper_rolling    -0.13597570303201822
+    Attrib condition    -0.28330997507871186
+    Attrib formability    -0.13387656826933805
+    Attrib strength    -0.11798622768537854
+    Attrib non-ageing    -0.2078597802342148
+    Attrib surface-finish    0.1302077019460629
+    Attrib surface-quality    -0.05754549244969466
+    Attrib enamelability    -0.05672182480287949
+    Attrib bc    -0.2394784766749231
+    Attrib bf    -0.13719312842572207
+    Attrib bt    0.13001634596011838
+    Attrib bw/me    -0.2250172487474677
+    Attrib bl    0.09218664128394982
+    Attrib m    0.04973465515711889
+    Attrib chrom    -0.27930961558397416
+    Attrib phos    -0.32266616096140704
+    Attrib cbond    -0.20012766703586918
+    Attrib marvi    0.029158604359352927
+    Attrib exptl    -0.2430890862516096
+    Attrib ferro    -0.2760299236699107
+    Attrib corr    -0.047494041421521874
+    Attrib blue/bright/varn/clean    -0.010014620243039958
+    Attrib lustre    -0.15162303427145052
+    Attrib jurofm    0.04523460323689292
+    Attrib s    0.027137651020276196
+    Attrib p    0.0315410452237002
+    Attrib shape    0.08406431217101197
+    Attrib thick    0.03783777752297821
+    Attrib width    0.12562738500884582
+    Attrib len    0.0996664066072752
+    Attrib oil    -0.2002149986312559
+    Attrib bore    -0.1454500556304167
+    Attrib packing    -0.18361201628088855
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.22463781848258565
+    Attrib family    -0.07967076820575775
+    Attrib product-type    -0.0351125198849061
+    Attrib steel    -0.01215295172595763
+    Attrib carbon    -0.190418572716299
+    Attrib hardness    -0.05431474807734429
+    Attrib temper_rolling    -0.08950508645295673
+    Attrib condition    -0.1957247032507483
+    Attrib formability    -0.08283914322691843
+    Attrib strength    -0.07928605819460034
+    Attrib non-ageing    -0.2203105869163536
+    Attrib surface-finish    0.17599930659654509
+    Attrib surface-quality    -0.1034295570550311
+    Attrib enamelability    0.04707002442805271
+    Attrib bc    -0.2217228768208331
+    Attrib bf    -0.19871070454611914
+    Attrib bt    0.11225843232963677
+    Attrib bw/me    -0.12044303934899062
+    Attrib bl    0.1202473858028957
+    Attrib m    -0.002704550262388958
+    Attrib chrom    -0.2723479336986284
+    Attrib phos    -0.3445066783907206
+    Attrib cbond    -0.20129587436622878
+    Attrib marvi    0.02865991435453384
+    Attrib exptl    -0.2085440629431099
+    Attrib ferro    -0.2843977816930585
+    Attrib corr    0.022925858235491245
+    Attrib blue/bright/varn/clean    -0.03675834773111995
+    Attrib lustre    -0.13129266904049094
+    Attrib jurofm    0.04405311950808133
+    Attrib s    1.467448488392739E-4
+    Attrib p    0.01415868011953289
+    Attrib shape    -0.06320612806294036
+    Attrib thick    -0.09377181538062666
+    Attrib width    0.11587994252960987
+    Attrib len    0.05382997328919479
+    Attrib oil    -0.23894991280875535
+    Attrib bore    -0.1562363632875858
+    Attrib packing    -0.19008120160817973
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.2606782746012205
+    Attrib family    -0.175788052002875
+    Attrib product-type    0.008446885642786783
+    Attrib steel    -0.017454929461120892
+    Attrib carbon    -0.4302164937442411
+    Attrib hardness    -0.18776673001785316
+    Attrib temper_rolling    -0.1091240133683002
+    Attrib condition    -0.4778774080330328
+    Attrib formability    -0.4240665597083703
+    Attrib strength    -0.27395998320126214
+    Attrib non-ageing    -0.1699382475435121
+    Attrib surface-finish    0.34915982826679065
+    Attrib surface-quality    0.1577777120927953
+    Attrib enamelability    0.269158190927838
+    Attrib bc    -0.22184658124666495
+    Attrib bf    -0.13360545725129777
+    Attrib bt    -0.07619871740898236
+    Attrib bw/me    -0.14617997004379638
+    Attrib bl    0.22749531123038658
+    Attrib m    -0.030569868369969735
+    Attrib chrom    -0.5708068378379529
+    Attrib phos    -0.5680497348030422
+    Attrib cbond    -0.13962777635404766
+    Attrib marvi    0.026160617594710583
+    Attrib exptl    -0.1710699880119739
+    Attrib ferro    -0.6036485164115716
+    Attrib corr    -0.02916991213037942
+    Attrib blue/bright/varn/clean    0.0066801222985174045
+    Attrib lustre    -0.32919021421297223
+    Attrib jurofm    -0.02759422472561255
+    Attrib s    0.018020574579960855
+    Attrib p    -0.018334571597442298
+    Attrib shape    -0.14569957367338707
+    Attrib thick    0.44077159852559566
+    Attrib width    0.13617252910026714
+    Attrib len    -0.013366245477350745
+    Attrib oil    -0.30870951282458986
+    Attrib bore    -0.09119995601583704
+    Attrib packing    -0.2986385731460946
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.24801891217346028
+    Attrib family    -0.299730898134373
+    Attrib product-type    0.03333189475916118
+    Attrib steel    0.11410650353366296
+    Attrib carbon    -0.08092183721582297
+    Attrib hardness    -0.07199530251822342
+    Attrib temper_rolling    -0.18931451475807992
+    Attrib condition    -0.2623046276932491
+    Attrib formability    -0.1589280121977277
+    Attrib strength    -0.021406583552367506
+    Attrib non-ageing    -0.17615588597416615
+    Attrib surface-finish    0.16030872371651214
+    Attrib surface-quality    -0.03374625266703919
+    Attrib enamelability    -0.0013729597315199264
+    Attrib bc    -0.25259539080120424
+    Attrib bf    -0.20413481335609115
+    Attrib bt    0.178575962163412
+    Attrib bw/me    -0.21102173193722676
+    Attrib bl    0.07213141433554146
+    Attrib m    -0.02721056666118088
+    Attrib chrom    -0.25258264650209394
+    Attrib phos    -0.13113216226121188
+    Attrib cbond    -0.21543465182792532
+    Attrib marvi    0.0082309709440751
+    Attrib exptl    -0.22085489512489812
+    Attrib ferro    -0.1871236641377072
+    Attrib corr    0.03379285161549897
+    Attrib blue/bright/varn/clean    0.03417340737492501
+    Attrib lustre    -0.16938565649170198
+    Attrib jurofm    -0.010141709240483895
+    Attrib s    -0.009162233098803298
+    Attrib p    -0.04957900982336956
+    Attrib shape    -0.09889371556992166
+    Attrib thick    -0.1227577990518811
+    Attrib width    0.13452227641248812
+    Attrib len    0.014746285078723359
+    Attrib oil    -0.19983539131852143
+    Attrib bore    -0.21759892501059022
+    Attrib packing    -0.26144377669047314
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.24113716026286153
+    Attrib family    -0.09984157871232885
+    Attrib product-type    0.017129809691063314
+    Attrib steel    0.0910641577418675
+    Attrib carbon    -0.3187783049696489
+    Attrib hardness    0.09044961321951869
+    Attrib temper_rolling    -0.1414330910607675
+    Attrib condition    -0.25376940463405057
+    Attrib formability    -0.04970012842959223
+    Attrib strength    -0.029525883026657544
+    Attrib non-ageing    -0.1727572913436873
+    Attrib surface-finish    0.08895827550547317
+    Attrib surface-quality    -0.11099517789028704
+    Attrib enamelability    -0.13830131026259126
+    Attrib bc    -0.2078927270064986
+    Attrib bf    -0.26786429200692036
+    Attrib bt    0.20091140776440233
+    Attrib bw/me    -0.2064358810268515
+    Attrib bl    0.16141643335104694
+    Attrib m    -0.041064610861084754
+    Attrib chrom    -0.2929430488372113
+    Attrib phos    -0.28437897168404475
+    Attrib cbond    -0.2495616768749838
+    Attrib marvi    0.0219572643451926
+    Attrib exptl    -0.28485303674965173
+    Attrib ferro    -0.27811414297374215
+    Attrib corr    -0.04204164319746415
+    Attrib blue/bright/varn/clean    -0.02435368589269094
+    Attrib lustre    -0.10104016010218748
+    Attrib jurofm    0.036349705754946685
+    Attrib s    -0.008077748986356971
+    Attrib p    0.019841789160052054
+    Attrib shape    0.028439487092152015
+    Attrib thick    0.08185218174308506
+    Attrib width    0.0933343379351981
+    Attrib len    0.13049554455547505
+    Attrib oil    -0.14232788232631713
+    Attrib bore    -0.21112338680323803
+    Attrib packing    -0.1807095547853042
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.21936959950202012
+    Attrib family    0.13245255138288065
+    Attrib product-type    -0.009819950887176167
+    Attrib steel    -0.01061299282571733
+    Attrib carbon    -0.1850694404230673
+    Attrib hardness    -0.09418654386836274
+    Attrib temper_rolling    -0.07432554429761444
+    Attrib condition    -0.254884798296627
+    Attrib formability    -0.123159018385875
+    Attrib strength    0.20882144433789604
+    Attrib non-ageing    -0.230492630206389
+    Attrib surface-finish    0.2853337293454139
+    Attrib surface-quality    -0.3013325801064051
+    Attrib enamelability    -0.031166372681179385
+    Attrib bc    -0.2544102033081446
+    Attrib bf    -0.08197441833611262
+    Attrib bt    0.18571859333408464
+    Attrib bw/me    -0.054311590117139735
+    Attrib bl    0.1334416648763191
+    Attrib m    0.04202876030255624
+    Attrib chrom    -0.3420444597773187
+    Attrib phos    -0.3327401657758478
+    Attrib cbond    -0.13730155645812428
+    Attrib marvi    0.005261847857598589
+    Attrib exptl    -0.25475008178711445
+    Attrib ferro    -0.39267192941864787
+    Attrib corr    0.01536458982310733
+    Attrib blue/bright/varn/clean    -0.015872882798589755
+    Attrib lustre    -0.1470662969754375
+    Attrib jurofm    0.029148653230814878
+    Attrib s    0.045413070009902426
+    Attrib p    0.0039055497047639914
+    Attrib shape    0.05717549688168736
+    Attrib thick    -0.1782217362422284
+    Attrib width    0.1690001541835693
+    Attrib len    0.13118327237216457
+    Attrib oil    -0.1663875106886261
+    Attrib bore    -0.05495685385042739
+    Attrib packing    -0.2552003396267667
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -0.23448445800585407
+    Attrib family    -0.15385845585578498
+    Attrib product-type    -0.009719214760523419
+    Attrib steel    0.046617526395004716
+    Attrib carbon    -0.1437944190746017
+    Attrib hardness    -0.08012639587036109
+    Attrib temper_rolling    -0.11753315694442491
+    Attrib condition    -0.2128777281910736
+    Attrib formability    -0.1779573393236549
+    Attrib strength    -0.05574693215829286
+    Attrib non-ageing    -0.196612249809812
+    Attrib surface-finish    0.19909418762550884
+    Attrib surface-quality    -0.10725642262146748
+    Attrib enamelability    -0.03434653706920104
+    Attrib bc    -0.2602241770082066
+    Attrib bf    -0.22868108204754287
+    Attrib bt    0.11887888484494351
+    Attrib bw/me    -0.15369130467749717
+    Attrib bl    0.15102555646231774
+    Attrib m    0.02652658541784468
+    Attrib chrom    -0.2943939525239107
+    Attrib phos    -0.2174859009847462
+    Attrib cbond    -0.16590645374027427
+    Attrib marvi    -0.027886625419233226
+    Attrib exptl    -0.1996159407365888
+    Attrib ferro    -0.27567010998740143
+    Attrib corr    0.021848575543466794
+    Attrib blue/bright/varn/clean    -0.03680267485006138
+    Attrib lustre    -0.1831559046074586
+    Attrib jurofm    -0.02190442831470605
+    Attrib s    -6.939102867823399E-4
+    Attrib p    -0.01238809410098407
+    Attrib shape    -0.05135453257211046
+    Attrib thick    -0.09958837721650801
+    Attrib width    0.0894241885814239
+    Attrib len    0.08678857277613905
+    Attrib oil    -0.17926402427897378
+    Attrib bore    -0.1596913092506624
+    Attrib packing    -0.2049488029639241
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -0.25324622040026296
+    Attrib family    -0.15088858668000568
+    Attrib product-type    0.007630414803502808
+    Attrib steel    0.008268263255552105
+    Attrib carbon    -0.1818027194542924
+    Attrib hardness    -0.09683129961888327
+    Attrib temper_rolling    -0.16873074010362543
+    Attrib condition    -0.2308061453749493
+    Attrib formability    -0.06521264899052084
+    Attrib strength    -0.06314994830926436
+    Attrib non-ageing    -0.24228862196699946
+    Attrib surface-finish    0.17410888844972724
+    Attrib surface-quality    -0.06476874176064495
+    Attrib enamelability    0.030710981168102804
+    Attrib bc    -0.26017193285170787
+    Attrib bf    -0.14670950411048592
+    Attrib bt    0.12888977123635237
+    Attrib bw/me    -0.15431253015695662
+    Attrib bl    0.11281831877881403
+    Attrib m    -0.01920353448492699
+    Attrib chrom    -0.2399419274894525
+    Attrib phos    -0.27980789740195766
+    Attrib cbond    -0.1793721345658756
+    Attrib marvi    -0.024443446392799606
+    Attrib exptl    -0.20328603525186165
+    Attrib ferro    -0.2145879027451701
+    Attrib corr    0.01844605670224872
+    Attrib blue/bright/varn/clean    -0.03970824962744249
+    Attrib lustre    -0.21352702843720175
+    Attrib jurofm    -6.212719676687573E-4
+    Attrib s    0.03391464065987873
+    Attrib p    -0.010126113811275303
+    Attrib shape    -0.056311584908415646
+    Attrib thick    0.005235312618482235
+    Attrib width    0.07607662420664492
+    Attrib len    0.044806533408933494
+    Attrib oil    -0.22569669341232726
+    Attrib bore    -0.19608925310994713
+    Attrib packing    -0.19791298906756194
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -0.23400410417546005
+    Attrib family    -0.165158954921526
+    Attrib product-type    -0.027852634379715826
+    Attrib steel    0.4117999809821585
+    Attrib carbon    -0.16819993372779876
+    Attrib hardness    0.12404563721763057
+    Attrib temper_rolling    -0.02694706438856465
+    Attrib condition    -0.25302269771337477
+    Attrib formability    -0.06922909295909392
+    Attrib strength    0.08534698501573591
+    Attrib non-ageing    -0.20488090531022107
+    Attrib surface-finish    0.13771435057292694
+    Attrib surface-quality    0.05559269244267441
+    Attrib enamelability    0.09531953811774016
+    Attrib bc    -0.2545560349427709
+    Attrib bf    -0.1664932445016489
+    Attrib bt    0.21346616074358607
+    Attrib bw/me    -0.006883940760353085
+    Attrib bl    0.1517673678108531
+    Attrib m    -0.01209950941585338
+    Attrib chrom    -0.24204425207659674
+    Attrib phos    -0.09591183403610025
+    Attrib cbond    -0.14208361645645
+    Attrib marvi    -0.04198912873052161
+    Attrib exptl    -0.30318998384940254
+    Attrib ferro    -0.31297145399753573
+    Attrib corr    -0.008702242697560016
+    Attrib blue/bright/varn/clean    0.04957603620815202
+    Attrib lustre    -0.11301777428490113
+    Attrib jurofm    -0.01499598808830157
+    Attrib s    -0.010670768877813964
+    Attrib p    -0.009000354994177208
+    Attrib shape    0.1913612052451911
+    Attrib thick    0.3303302549492236
+    Attrib width    -0.025422918935972753
+    Attrib len    0.08103829858400377
+    Attrib oil    -0.1606324573952465
+    Attrib bore    -0.07368337099755334
+    Attrib packing    -0.2077656244372745
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -0.22519472876374783
+    Attrib family    -0.054712067453497604
+    Attrib product-type    0.042100472908888395
+    Attrib steel    -0.07436438612830973
+    Attrib carbon    -0.24011479451714599
+    Attrib hardness    -0.06507048068501392
+    Attrib temper_rolling    -0.050712275145195836
+    Attrib condition    -0.2629930203227981
+    Attrib formability    -0.09302292318584654
+    Attrib strength    -0.14150698712975646
+    Attrib non-ageing    -0.20862591344543358
+    Attrib surface-finish    0.20926839031160688
+    Attrib surface-quality    -0.05501596037973529
+    Attrib enamelability    0.030689675491920768
+    Attrib bc    -0.20146304450555402
+    Attrib bf    -0.16409780483507203
+    Attrib bt    0.10087320014167864
+    Attrib bw/me    -0.17895881678959275
+    Attrib bl    0.07653485376458578
+    Attrib m    -0.012750256737513732
+    Attrib chrom    -0.30895079514304286
+    Attrib phos    -0.35032613518110456
+    Attrib cbond    -0.16911188806629698
+    Attrib marvi    -0.04136310202324098
+    Attrib exptl    -0.2398244252035476
+    Attrib ferro    -0.40518706247808345
+    Attrib corr    0.009060992563172332
+    Attrib blue/bright/varn/clean    -0.06933712544272531
+    Attrib lustre    -0.21563417199187968
+    Attrib jurofm    -0.009996762133407298
+    Attrib s    -0.013172897413678157
+    Attrib p    0.031587330809892414
+    Attrib shape    0.05826445182819977
+    Attrib thick    -0.016968183610218096
+    Attrib width    0.07362948576411976
+    Attrib len    0.07642770575987125
+    Attrib oil    -0.25013819059047304
+    Attrib bore    -0.11845953550343995
+    Attrib packing    -0.21526245684654105
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -0.283219750462905
+    Attrib family    -0.20986335288169106
+    Attrib product-type    -0.0207035395667752
+    Attrib steel    0.0773542677561698
+    Attrib carbon    -0.24760099286885726
+    Attrib hardness    0.06463717125247176
+    Attrib temper_rolling    -0.09936940964946508
+    Attrib condition    -0.3034281616473858
+    Attrib formability    -0.04203520527488549
+    Attrib strength    -0.0374124817490893
+    Attrib non-ageing    -0.22176670545511987
+    Attrib surface-finish    0.07524227252204989
+    Attrib surface-quality    -0.11383350287327361
+    Attrib enamelability    -0.0481032106033014
+    Attrib bc    -0.2634424161576332
+    Attrib bf    -0.19597281201058092
+    Attrib bt    0.15538826073801432
+    Attrib bw/me    -0.14728395623219206
+    Attrib bl    0.15206652141466925
+    Attrib m    0.004080880829519448
+    Attrib chrom    -0.322006355369418
+    Attrib phos    -0.25169713417775025
+    Attrib cbond    -0.21058427516872796
+    Attrib marvi    0.03757147752190171
+    Attrib exptl    -0.2386465653652839
+    Attrib ferro    -0.2639823983280861
+    Attrib corr    0.015326661291569593
+    Attrib blue/bright/varn/clean    -0.05741273325937884
+    Attrib lustre    -0.14671168971544551
+    Attrib jurofm    0.026964393082829982
+    Attrib s    -0.04348649525075652
+    Attrib p    0.037381499737567464
+    Attrib shape    0.06969244000216519
+    Attrib thick    0.05660686068166589
+    Attrib width    0.10490602949741054
+    Attrib len    0.10396043767355205
+    Attrib oil    -0.17332190240717046
+    Attrib bore    -0.15802800831014754
+    Attrib packing    -0.23013797572238268
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    1.2897193555748903
+    Attrib family    -1.4723737913039538
+    Attrib product-type    0.03307619514734793
+    Attrib steel    -4.462276041722375
+    Attrib carbon    -1.366464640678914
+    Attrib hardness    0.6862098171158167
+    Attrib temper_rolling    -1.48581578289911
+    Attrib condition    -1.973333325209295
+    Attrib formability    -1.7366162041823627
+    Attrib strength    -6.0561860031676025
+    Attrib non-ageing    0.23539390672152294
+    Attrib surface-finish    -1.7945443677596133
+    Attrib surface-quality    -5.263987490897998
+    Attrib enamelability    -5.397056090556513
+    Attrib bc    1.2611961970341874
+    Attrib bf    0.12055293936289155
+    Attrib bt    -0.0831378492716664
+    Attrib bw/me    -0.4808077311299951
+    Attrib bl    -0.13504516953663329
+    Attrib m    -0.039176697168135516
+    Attrib chrom    0.34173413173164147
+    Attrib phos    1.04591938919385
+    Attrib cbond    -0.13903145938284053
+    Attrib marvi    -0.03155080757696436
+    Attrib exptl    0.7485581534310948
+    Attrib ferro    0.2236186901295767
+    Attrib corr    0.02886185152173748
+    Attrib blue/bright/varn/clean    -0.5151198292524709
+    Attrib lustre    0.8764493729009631
+    Attrib jurofm    0.03220868529280965
+    Attrib s    -0.020005805160379
+    Attrib p    0.04740888162550268
+    Attrib shape    0.013822842265312385
+    Attrib thick    -1.6897165081951007
+    Attrib width    -0.27213230842487157
+    Attrib len    -0.40668836772263345
+    Attrib oil    0.8546384780143973
+    Attrib bore    1.1525998519253946
+    Attrib packing    1.2413899070912613
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -0.8003167043092344
+    Attrib family    0.891370863104767
+    Attrib product-type    -0.041523984521753
+    Attrib steel    0.6729070923965531
+    Attrib carbon    0.44082231398323696
+    Attrib hardness    -0.678859486063042
+    Attrib temper_rolling    0.5141373019393536
+    Attrib condition    1.9771629785429015
+    Attrib formability    1.8987937363086744
+    Attrib strength    -1.673887213220694
+    Attrib non-ageing    0.2492396220791266
+    Attrib surface-finish    2.575740285192074
+    Attrib surface-quality    2.4733702022575237
+    Attrib enamelability    2.867734201730631
+    Attrib bc    -0.8023235825297547
+    Attrib bf    -0.01550699610355648
+    Attrib bt    0.34980915524121303
+    Attrib bw/me    -0.009442201311854605
+    Attrib bl    -0.08171114983726283
+    Attrib m    -0.009277201243936453
+    Attrib chrom    -0.45799362825033035
+    Attrib phos    -0.7480206485430448
+    Attrib cbond    0.041199434763142265
+    Attrib marvi    0.016674817176684634
+    Attrib exptl    -0.39055598408805536
+    Attrib ferro    0.008114459287249604
+    Attrib corr    0.0172572197599557
+    Attrib blue/bright/varn/clean    0.8178315416411017
+    Attrib lustre    -0.4872907546065814
+    Attrib jurofm    0.013496893311561148
+    Attrib s    -0.0390242682996462
+    Attrib p    0.012550437021989602
+    Attrib shape    -0.15189611097819733
+    Attrib thick    0.9568136478526692
+    Attrib width    0.23539736281280668
+    Attrib len    0.7016089152633435
+    Attrib oil    -0.34823244829635447
+    Attrib bore    -0.8768009795880919
+    Attrib packing    -0.8016584685601603
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    -0.4028857406965611
+    Attrib family    0.1098241448093067
+    Attrib product-type    0.02696177324618157
+    Attrib steel    1.3952066815873836
+    Attrib carbon    -0.24375890397638933
+    Attrib hardness    -0.2696075137999863
+    Attrib temper_rolling    -0.015300839257041001
+    Attrib condition    -0.6024203277189558
+    Attrib formability    -0.5810567834466568
+    Attrib strength    1.4923257999509933
+    Attrib non-ageing    -0.2514915539849203
+    Attrib surface-finish    1.0260386586698562
+    Attrib surface-quality    -0.6776187594752024
+    Attrib enamelability    -0.014225784122625191
+    Attrib bc    -0.3222993355275097
+    Attrib bf    0.09421170413387779
+    Attrib bt    -0.08895159055711778
+    Attrib bw/me    0.025678946291303028
+    Attrib bl    0.18507996557700235
+    Attrib m    0.04088499811658457
+    Attrib chrom    -0.4277664038875924
+    Attrib phos    -0.6171508213278692
+    Attrib cbond    -0.1795904679745899
+    Attrib marvi    0.021596230245821954
+    Attrib exptl    -0.34559462117128364
+    Attrib ferro    -0.5814080105437829
+    Attrib corr    -0.028597583878789957
+    Attrib blue/bright/varn/clean    -0.47402792092544777
+    Attrib lustre    -0.010042027394829548
+    Attrib jurofm    0.034356382902088256
+    Attrib s    0.014597285379643471
+    Attrib p    0.037511813826741125
+    Attrib shape    -0.30022757238167025
+    Attrib thick    0.2147938218711028
+    Attrib width    0.2159963441129836
+    Attrib len    0.24782196593537725
+    Attrib oil    -0.18965622757314754
+    Attrib bore    -0.11297230511197702
+    Attrib packing    -0.3017866538268293
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    -0.19578040319228815
+    Attrib family    -0.05913770063919805
+    Attrib product-type    0.004586366792482199
+    Attrib steel    0.008328886154065724
+    Attrib carbon    -0.27354475469982464
+    Attrib hardness    0.03244795769879186
+    Attrib temper_rolling    -0.12604087635251446
+    Attrib condition    -0.36834768025962966
+    Attrib formability    -0.11085600852519455
+    Attrib strength    -0.09575804797585623
+    Attrib non-ageing    -0.1859084745846267
+    Attrib surface-finish    0.09482329038633806
+    Attrib surface-quality    -0.00686003545822965
+    Attrib enamelability    -0.06481190764889593
+    Attrib bc    -0.19843136943719183
+    Attrib bf    -0.2309433814974815
+    Attrib bt    0.12227778143600054
+    Attrib bw/me    -0.13805574776963248
+    Attrib bl    0.06118258236603438
+    Attrib m    0.026541302013375942
+    Attrib chrom    -0.38393125434767544
+    Attrib phos    -0.3758039055531415
+    Attrib cbond    -0.16639605002682106
+    Attrib marvi    -0.015130128887934212
+    Attrib exptl    -0.17732525953875916
+    Attrib ferro    -0.35831925448930846
+    Attrib corr    -0.042885577811945255
+    Attrib blue/bright/varn/clean    -0.06763131162418404
+    Attrib lustre    -0.22158858135459628
+    Attrib jurofm    -0.018699835658448252
+    Attrib s    0.023281705826528803
+    Attrib p    -0.03090966959251701
+    Attrib shape    0.2326689116655033
+    Attrib thick    -0.03820773811023782
+    Attrib width    0.08338390265184238
+    Attrib len    0.22148097438946387
+    Attrib oil    -0.13689056546628334
+    Attrib bore    -0.21156324999574633
+    Attrib packing    -0.18716554225865276
+Sigmoid Node 18
+    Inputs    Weights
+    Threshold    -1.3693518294234794
+    Attrib family    1.3411664683236955
+    Attrib product-type    0.0025602705245912905
+    Attrib steel    1.2292640823037746
+    Attrib carbon    0.5077358039556287
+    Attrib hardness    -0.620877140592319
+    Attrib temper_rolling    -0.490465322866324
+    Attrib condition    -0.8027968849510242
+    Attrib formability    -0.6179071058800549
+    Attrib strength    4.680691724838534
+    Attrib non-ageing    -1.1014855503129284
+    Attrib surface-finish    -1.6202678000997404
+    Attrib surface-quality    4.323200685892298
+    Attrib enamelability    -4.500893262098222
+    Attrib bc    -1.4142542979039348
+    Attrib bf    -0.008457571111114094
+    Attrib bt    0.05198100075866867
+    Attrib bw/me    -0.14815133744628253
+    Attrib bl    -0.08409107881506252
+    Attrib m    0.04647594954438074
+    Attrib chrom    -0.3446817684635331
+    Attrib phos    -0.7291164502172771
+    Attrib cbond    -1.3942324721397177
+    Attrib marvi    0.04178630944420331
+    Attrib exptl    -1.552379993522557
+    Attrib ferro    -0.4226525565471167
+    Attrib corr    -0.04747127078245997
+    Attrib blue/bright/varn/clean    -0.1718682852485705
+    Attrib lustre    -0.669621280284979
+    Attrib jurofm    0.03929553473983251
+    Attrib s    -0.021379657360566295
+    Attrib p    0.047624224987252314
+    Attrib shape    -0.74926910067317
+    Attrib thick    1.7373902020343095
+    Attrib width    0.6492131515530029
+    Attrib len    -0.5125403945595557
+    Attrib oil    -1.3554305857609534
+    Attrib bore    -0.6112660519711329
+    Attrib packing    -1.2159979802863479
+Sigmoid Node 19
+    Inputs    Weights
+    Threshold    -0.1774993246512546
+    Attrib family    -0.1404326204074729
+    Attrib product-type    0.009353390997023182
+    Attrib steel    -0.04039990527311366
+    Attrib carbon    -0.2369744962538028
+    Attrib hardness    -0.07672436065154153
+    Attrib temper_rolling    -0.07741382208404282
+    Attrib condition    -0.2201107185495991
+    Attrib formability    -0.11211892843968736
+    Attrib strength    -0.029923235434184015
+    Attrib non-ageing    -0.1621904062491307
+    Attrib surface-finish    0.20385537243555793
+    Attrib surface-quality    -0.11525587205733591
+    Attrib enamelability    -0.007714305528457574
+    Attrib bc    -0.20146968357134482
+    Attrib bf    -0.17414029966102615
+    Attrib bt    0.10265016352853353
+    Attrib bw/me    -0.19727651513076827
+    Attrib bl    0.13020996788803635
+    Attrib m    -0.03863920755286985
+    Attrib chrom    -0.2433261763388924
+    Attrib phos    -0.22240760682863206
+    Attrib cbond    -0.22694164017519336
+    Attrib marvi    -0.021145687957051143
+    Attrib exptl    -0.2582995046035534
+    Attrib ferro    -0.28179097066608805
+    Attrib corr    0.0037324991279472225
+    Attrib blue/bright/varn/clean    0.025354445599154278
+    Attrib lustre    -0.1952457923442767
+    Attrib jurofm    0.024773420592453715
+    Attrib s    -0.03486370850065092
+    Attrib p    0.024940412124693903
+    Attrib shape    -0.027383766245613343
+    Attrib thick    -0.021559430994829633
+    Attrib width    0.09188366236714879
+    Attrib len    0.02424651680759088
+    Attrib oil    -0.22897765799829006
+    Attrib bore    -0.1868069915678016
+    Attrib packing    -0.23861746569245523
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 10.56 seconds
+Time taken to test model on training data: 1.9 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0.0016
+Root mean squared error                  0.0029
+Relative absolute error                  0.8004 %
+Root relative squared error              0.9118 %
+Total Number of Instances              691     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.988 
+Mean absolute error                      0.0057
+Root mean squared error                  0.0484
+Relative absolute error                  2.9114 %
+Root relative squared error             15.4412 %
+Total Number of Instances              691     
+

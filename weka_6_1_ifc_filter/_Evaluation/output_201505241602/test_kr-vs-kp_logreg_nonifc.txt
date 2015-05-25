@@ -1,0 +1,117 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -121.338 ;  df=40;  p=      0   
+
+SQL:
+
+1-1/(1+exp(     -8.0845*bkblk
++    -12.0721*bknwy
++      8.9878*bkon8
++      5.2677*bkona
++     -0.8212*bkspr
++     -4.3225*bkxbq
++      2.5814*bkxcr
++     -2.2221*bkxwp
++      3.8894*blxwp
++     42.5503*bxqsq
++     -0.4476*cntxt
++     -1.4659*dsopp
++     -0.3279*dwipd
++     24.5813*hdchk
++     -6.8393*case when katri in('b') then 1 else 0 end
++     -1.2436*case when katri in('n') then 1 else 0 end
++      5.5411*case when katri in('w') then 1 else 0 end
++     15.8496*mulch
++     -2.6716*qxmsq
++      0.55  *r2ar8
++      5.3849*reskd
++     -0.047 *reskr
++   -117.0725*rimmx
++     -2.6882*rkxwp
++      4.9135*rxmsq
++      0.0927*simpl
++      5.0333*skach
++     -0.8354*skewr
++      2.97  *skrxp
++      3.8021*spcop
++    -12.8145*stlmt
++      1.6397*thrsk
++     -0.4866*wkcti
++     35.6358*wkna8
++     11.8061*wknck
++      3.8764*wkovl
++     -7.1351*wkpos
++     -0.1577*case when wtoeg in('n') then 1 else 0 end
++      0.1577*case when wtoeg in('t') then 1 else 0 end
++      0     *case when wtoeg in('f') then 1 else 0 end
++    -2.9686))
+
+Odds Ratios...
+Variable         O.R.
+       1       0.0003
+       2       0     
+       3    8004.7379
+       4     193.9691
+       5       0.4399
+       6       0.0133
+       7      13.216 
+       8       0.1084
+       9      48.8814
+      10 3.0156298255196508E18
+      11       0.6392
+      12       0.2309
+      13       0.7205
+      14 4.737355863912244E10
+      15       0.0011
+      16       0.2883
+      17     254.97  
+      18 7645069.2912
+      19       0.0691
+      20       1.7333
+      21     218.0873
+      22       0.9541
+      23       0     
+      24       0.068 
+      25     136.121 
+      26       1.0971
+      27     153.4347
+      28       0.4337
+      29      19.4915
+      30      44.7965
+      31       0     
+      32       5.1535
+      33       0.6147
+      34 2.995301239160445E15
+      35  134063.4754
+      36      48.2491
+      37       0.0008
+      38       0.8541
+      39       1.1708
+      40       1     
+
+
+Time taken to build model: 0.13 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9679
+Mean absolute error                      0.0325
+Root mean squared error                  0.1256
+Relative absolute error                  6.4988 %
+Root relative squared error             25.1324 %
+Total Number of Instances             1054     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9441
+Mean absolute error                      0.0441
+Root mean squared error                  0.1651
+Relative absolute error                  8.825  %
+Root relative squared error             32.9953 %
+Total Number of Instances             1054     
+

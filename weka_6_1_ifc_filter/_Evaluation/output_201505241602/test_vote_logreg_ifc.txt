@@ -1,0 +1,98 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation vote-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R17-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute handicapped-infants numeric
+@attribute water-project-cost-sharing numeric
+@attribute adoption-of-the-budget-resolution numeric
+@attribute physician-fee-freeze numeric
+@attribute el-salvador-aid numeric
+@attribute religious-groups-in-schools numeric
+@attribute anti-satellite-test-ban numeric
+@attribute aid-to-nicaraguan-contras numeric
+@attribute mx-missile numeric
+@attribute immigration numeric
+@attribute synfuels-corporation-cutback numeric
+@attribute education-spending numeric
+@attribute superfund-right-to-sue numeric
+@attribute crime numeric
+@attribute duty-free-exports numeric
+@attribute export-administration-act-south-africa numeric
+@attribute Class numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=  -68.1964;  df=16;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      0.0809*handicapped-infants
++    -52.0379*water-project-cost-sharing
++      4.5111*adoption-of-the-budget-resolution
++      7.7379*physician-fee-freeze
++      3.2154*el-salvador-aid
++     -0.6751*religious-groups-in-schools
++     -3.2719*anti-satellite-test-ban
++     -3.8308*aid-to-nicaraguan-contras
++      2.3151*mx-missile
++     28.0557*immigration
++      9.3911*synfuels-corporation-cutback
++      0.8135*education-spending
++      0.7099*superfund-right-to-sue
++      0.0861*crime
++      4.0796*duty-free-exports
++     -1.5833*export-administration-act-south-africa
++     1.0203))
+
+Odds Ratios...
+Variable         O.R.
+       1       1.0843
+       2       0     
+       3      91.0213
+       4    2293.7297
+       5      24.9121
+       6       0.5091
+       7       0.0379
+       8       0.0217
+       9      10.1255
+      10 1.5290950386766768E12
+      11   11981.4279
+      12       2.2558
+      13       2.0338
+      14       1.0899
+      15      59.1236
+      16       0.2053
+
+
+Time taken to build model: 0.08 seconds
+Time taken to test model on training data: 0.3 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9551
+Mean absolute error                      0.0428
+Root mean squared error                  0.1442
+Relative absolute error                  9.0215 %
+Root relative squared error             29.6209 %
+Total Number of Instances              435     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9327
+Mean absolute error                      0.0506
+Root mean squared error                  0.176 
+Relative absolute error                 10.6491 %
+Root relative squared error             36.0645 %
+Total Number of Instances              435     
+

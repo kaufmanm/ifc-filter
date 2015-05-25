@@ -1,0 +1,54 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.lazy.IBk 
+
+FilteredClassifier using weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation heart-statlog-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R15-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute age numeric
+@attribute sex numeric
+@attribute chest numeric
+@attribute resting_blood_pressure numeric
+@attribute serum_cholestoral numeric
+@attribute fasting_blood_sugar numeric
+@attribute resting_electrocardiographic_results numeric
+@attribute maximum_heart_rate_achieved numeric
+@attribute exercise_induced_angina numeric
+@attribute oldpeak numeric
+@attribute slope numeric
+@attribute number_of_major_vessels numeric
+@attribute thal numeric
+@attribute class=absent numeric
+
+@data
+
+
+Classifier Model
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.11 seconds
+Time taken to test model on training data: 0.19 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              270     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5866
+Mean absolute error                      0.2037
+Root mean squared error                  0.4513
+Relative absolute error                 41.0776 %
+Root relative squared error             90.4297 %
+Total Number of Instances              270     
+

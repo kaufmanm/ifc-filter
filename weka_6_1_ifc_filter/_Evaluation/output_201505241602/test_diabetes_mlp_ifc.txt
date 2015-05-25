@@ -1,0 +1,101 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.MultilayerPerceptron 
+
+FilteredClassifier using weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation pima_diabetes-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R10-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute preg numeric
+@attribute plas numeric
+@attribute pres numeric
+@attribute skin numeric
+@attribute insu numeric
+@attribute mass numeric
+@attribute pedi numeric
+@attribute age numeric
+@attribute class=tested_negative numeric
+
+@data
+
+
+Classifier Model
+Linear Node 0
+    Inputs    Weights
+    Threshold    -0.8902386874844789
+    Node 1    1.7458720140986095
+    Node 2    1.3314338533379881
+    Node 3    -1.1077096475758152
+    Node 4    -1.5731043387365355
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -1.3221192606719718
+    Attrib preg    -0.6773757824159721
+    Attrib plas    4.438734541428777
+    Attrib pres    0.013703861862450985
+    Attrib skin    0.11748709329136668
+    Attrib insu    1.2113811873489437
+    Attrib mass    3.0205739939610314
+    Attrib pedi    4.926014248626279
+    Attrib age    3.385492012023036
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -8.253325498052675
+    Attrib preg    -0.9379816029927897
+    Attrib plas    -0.31540054490206276
+    Attrib pres    11.098281434540304
+    Attrib skin    -9.823558591675217
+    Attrib insu    0.7281901307541758
+    Attrib mass    0.6233601004217425
+    Attrib pedi    -14.900304115873498
+    Attrib age    -5.210895727940283
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -13.158409560118946
+    Attrib preg    -6.6174585502124765
+    Attrib plas    -0.31157498610641987
+    Attrib pres    0.7614723382958822
+    Attrib skin    1.5810528413162555
+    Attrib insu    -5.531848662184549
+    Attrib mass    -2.488574934728405
+    Attrib pedi    -1.939667542158042
+    Attrib age    -4.226226987211651
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -9.324775742727237
+    Attrib preg    -4.383610997681006
+    Attrib plas    -8.475677505470728
+    Attrib pres    9.617500505398324
+    Attrib skin    -9.031738168020446
+    Attrib insu    0.42939271560504055
+    Attrib mass    -7.680112988025444
+    Attrib pedi    -7.9505988378719055
+    Attrib age    4.153924467549939
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 0.83 seconds
+Time taken to test model on training data: 0.23 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.6105
+Mean absolute error                      0.2881
+Root mean squared error                  0.4152
+Relative absolute error                 63.3967 %
+Root relative squared error             87.1105 %
+Total Number of Instances              768     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4658
+Mean absolute error                      0.3285
+Root mean squared error                  0.4408
+Relative absolute error                 72.239  %
+Root relative squared error             92.3852 %
+Total Number of Instances              768     
+

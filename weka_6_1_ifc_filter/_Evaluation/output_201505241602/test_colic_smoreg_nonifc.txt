@@ -1,0 +1,90 @@
+
+SMOreg
+
+weights (not support vectors):
+ -       0.0084 * (normalized) surgery
+ +       0.012  * (normalized) Age
+ +       0.0293 * (normalized) rectal_temperature
+ -       0.2825 * (normalized) pulse
+ +       0.0773 * (normalized) respiratory_rate
+ +       0.0117 * (normalized) temp_extremities=normal
+ +       0.0639 * (normalized) temp_extremities=warm
+ -       0.0135 * (normalized) temp_extremities=cool
+ -       0.0621 * (normalized) temp_extremities=cold
+ +       0.1064 * (normalized) peripheral_pulse=normal
+ +       0.017  * (normalized) peripheral_pulse=increased
+ +       0.0941 * (normalized) peripheral_pulse=reduced
+ -       0.2175 * (normalized) peripheral_pulse=absent
+ +       0.1701 * (normalized) mucous_membranes=normal pink
+ +       0.1952 * (normalized) mucous_membranes=bright pink
+ +       0.1584 * (normalized) mucous_membranes=pale pink
+ -       0.0917 * (normalized) mucous_membranes=pale cyanotic
+ -       0.3483 * (normalized) mucous_membranes=bright red
+ -       0.0837 * (normalized) mucous_membranes=dark cyanotic
+ -       0.009  * (normalized) capillary_refill_time=<3
+ +       0.009  * (normalized) capillary_refill_time=>=3
+ +       0      * (normalized) capillary_refill_time=meaning unknown
+ +       0.1782 * (normalized) pain=alert no pain
+ +       0.17   * (normalized) pain=depressed
+ +       0.2133 * (normalized) pain=intermittent mild pain
+ -       0.2325 * (normalized) pain=intermittent severe pain
+ -       0.3289 * (normalized) pain=continuous severe pain
+ -       0.004  * (normalized) peristalsis=hypermotile
+ +       0.0394 * (normalized) peristalsis=normal
+ -       0.0154 * (normalized) peristalsis=hypomotile
+ -       0.02   * (normalized) peristalsis=absent
+ +       0.0317 * (normalized) abdominal_distension=none
+ +       0.0259 * (normalized) abdominal_distension=slight
+ -       0.0731 * (normalized) abdominal_distension=moderate
+ +       0.0155 * (normalized) abdominal_distension=severe
+ -       0.0452 * (normalized) nasogastric_tube=none
+ -       0.004  * (normalized) nasogastric_tube=slight
+ +       0.0492 * (normalized) nasogastric_tube=significant
+ +       0.0073 * (normalized) nasogastric_reflux=none
+ -       0.0375 * (normalized) nasogastric_reflux=>1l
+ +       0.0301 * (normalized) nasogastric_reflux=<1l
+ -       0.0687 * (normalized) nasogastric_reflux_PH
+ +       0.0063 * (normalized) rectal_examination=normal
+ -       0.0352 * (normalized) rectal_examination=increased
+ +       0.0191 * (normalized) rectal_examination=decreased
+ +       0.0098 * (normalized) rectal_examination=absent
+ -       0.0099 * (normalized) abdomen=normal
+ +       0.0343 * (normalized) abdomen=other
+ +       0.0018 * (normalized) abdomen=firm feces in large intestine
+ -       0.0159 * (normalized) abdomen=distended small intestine
+ -       0.0104 * (normalized) abdomen=distended large intestine
+ -       0.283  * (normalized) packed_cell_volume
+ +       0.0137 * (normalized) total_protein
+ +       0.0259 * (normalized) abdominocentesis_appearance=clear
+ +       0.0159 * (normalized) abdominocentesis_appearance=cloudy
+ -       0.0418 * (normalized) abdominocentesis_appearance=serosanguinous
+ -       0.0552 * (normalized) abdomcentesis_total_protein
+ +       0.6978
+
+
+
+Number of kernel evaluations: 67896 (99.454% cached)
+
+Time taken to build model: 1.19 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5539
+Mean absolute error                      0.2765
+Root mean squared error                  0.4241
+Relative absolute error                 58.4964 %
+Root relative squared error             87.2351 %
+Total Number of Instances              368     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.438 
+Mean absolute error                      0.3189
+Root mean squared error                  0.475 
+Relative absolute error                 67.3054 %
+Root relative squared error             97.4854 %
+Total Number of Instances              368     
+

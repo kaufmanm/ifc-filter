@@ -1,0 +1,158 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation kr-vs-kp-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R38-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z33.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute bkblk numeric
+@attribute bknwy numeric
+@attribute bkon8 numeric
+@attribute bkona numeric
+@attribute bkspr numeric
+@attribute bkxbq numeric
+@attribute bkxcr numeric
+@attribute bkxwp numeric
+@attribute blxwp numeric
+@attribute bxqsq numeric
+@attribute cntxt numeric
+@attribute dsopp numeric
+@attribute dwipd numeric
+@attribute hdchk numeric
+@attribute katri numeric
+@attribute mulch numeric
+@attribute qxmsq numeric
+@attribute r2ar8 numeric
+@attribute reskd numeric
+@attribute reskr numeric
+@attribute rimmx numeric
+@attribute rkxwp numeric
+@attribute rxmsq numeric
+@attribute simpl numeric
+@attribute skach numeric
+@attribute skewr numeric
+@attribute skrxp numeric
+@attribute spcop numeric
+@attribute stlmt numeric
+@attribute thrsk numeric
+@attribute wkcti numeric
+@attribute wkna8 numeric
+@attribute wknck numeric
+@attribute wkovl numeric
+@attribute wkpos numeric
+@attribute wtoeg numeric
+@attribute class=won numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -130.0916;  df=36;  p=      0   
+
+SQL:
+
+1-1/(1+exp(    149.8505*bkblk
++   -251.3892*bknwy
++     32.2702*bkon8
++   -296.05  *bkona
++    -29.8138*bkspr
++     37.9719*bkxbq
++     11.8439*bkxcr
++     -7.7115*bkxwp
++     47.0439*blxwp
++     95.5572*bxqsq
++     -9.4905*cntxt
++   9070.7051*dsopp
++     -2.6168*dwipd
++     45.6169*hdchk
++     28.1681*katri
++     45.075 *mulch
++    -25.4165*qxmsq
++      2.4114*r2ar8
++    -63.1559*reskd
++     -0.8094*reskr
++    187.2671*rimmx
++     17.6138*rkxwp
++     22.1751*rxmsq
++     -1.9023*simpl
++     10.3302*skach
++    -24.2593*skewr
++      7.5771*skrxp
++      2.7451*spcop
++    -16.3828*stlmt
++     -7.9641*thrsk
++      4.243 *wkcti
++     77.3642*wkna8
++     32.2053*wknck
++    159.5115*wkovl
++     40.8357*wkpos
++      5.673 *wtoeg
++ -4692.8567))
+
+Odds Ratios...
+Variable         O.R.
+       1 1.2001175028045412E65
+       2       0     
+       3 1.034587662969575E14
+       4       0     
+       5       0     
+       6 3.0974233472409292E16
+       7  139231.4122
+       8       0.0004
+       9 2.6972030140444525E20
+      10 3.161920445660058E41
+      11       0.0001
+      12 Infinity
+      13       0.073 
+      14 6.474023621334848E19
+      15 1.7109411546182866E12
+      16 3.765484306207612E19
+      17       0     
+      18      11.1498
+      19       0     
+      20       0.4451
+      21 2.1332814333880864E81
+      22 44624044.738
+      23 4270839536.9391
+      24       0.1492
+      25   30645.0423
+      26       0     
+      27    1953.023 
+      28      15.5654
+      29       0     
+      30       0.0003
+      31      69.6132
+      32 3.9704255585161215E33
+      33 9.69564135675383E13
+      34 1.8835821136984227E69
+      35 5.429115619439575E17
+      36     290.902 
+
+
+Time taken to build model: 0.38 seconds
+Time taken to test model on training data: 4.13 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9656
+Mean absolute error                      0.0348
+Root mean squared error                  0.13  
+Relative absolute error                  6.968  %
+Root relative squared error             26.0069 %
+Total Number of Instances             1054     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9423
+Mean absolute error                      0.0464
+Root mean squared error                  0.1676
+Relative absolute error                  9.2831 %
+Root relative squared error             33.4838 %
+Total Number of Instances             1054     
+

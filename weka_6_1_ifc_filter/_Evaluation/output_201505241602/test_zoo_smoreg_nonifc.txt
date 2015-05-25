@@ -1,0 +1,149 @@
+
+SMOreg
+
+weights (not support vectors):
+ +       0      * (normalized) animal=aardvark
+ +       0.0047 * (normalized) animal=antelope
+ -       0.0032 * (normalized) animal=bass
+ +       0      * (normalized) animal=bear
+ +       0.0032 * (normalized) animal=boar
+ +       0.0047 * (normalized) animal=buffalo
+ +       0.0019 * (normalized) animal=calf
+ -       0.0056 * (normalized) animal=carp
+ -       0.0029 * (normalized) animal=catfish
+ +       0.0243 * (normalized) animal=cavy
+ +       0.0032 * (normalized) animal=cheetah
+ +       0.0132 * (normalized) animal=chicken
+ -       0.0042 * (normalized) animal=chub
+ +       0.0439 * (normalized) animal=clam
+ +       0.0401 * (normalized) animal=crab
+ +       0.047  * (normalized) animal=crayfish
+ +       0.0147 * (normalized) animal=crow
+ +       0.0047 * (normalized) animal=deer
+ -       0.031  * (normalized) animal=dogfish
+ +       0.1005 * (normalized) animal=dolphin
+ +       0.0131 * (normalized) animal=dove
+ +       0.0013 * (normalized) animal=duck
+ +       0.0057 * (normalized) animal=elephant
+ -       0.0074 * (normalized) animal=flamingo
+ +       0.0208 * (normalized) animal=flea
+ -       0.0374 * (normalized) animal=frog
+ +       0.0514 * (normalized) animal=fruitbat
+ +       0.0055 * (normalized) animal=giraffe
+ -       0.009  * (normalized) animal=girl
+ +       0.0461 * (normalized) animal=gnat
+ +       0.0016 * (normalized) animal=goat
+ -       0.0027 * (normalized) animal=gorilla
+ +       0      * (normalized) animal=gull
+ -       0.0016 * (normalized) animal=haddock
+ +       0.0285 * (normalized) animal=hamster
+ +       0.0328 * (normalized) animal=hare
+ +       0.015  * (normalized) animal=hawk
+ -       0.004  * (normalized) animal=herring
+ -       0.0803 * (normalized) animal=honeybee
+ -       0.08   * (normalized) animal=housefly
+ -       0.0086 * (normalized) animal=kiwi
+ +       0.0435 * (normalized) animal=ladybird
+ +       0.0173 * (normalized) animal=lark
+ +       0.002  * (normalized) animal=leopard
+ +       0.0025 * (normalized) animal=lion
+ +       0.0467 * (normalized) animal=lobster
+ +       0.0025 * (normalized) animal=lynx
+ -       0.012  * (normalized) animal=mink
+ +       0.0291 * (normalized) animal=mole
+ +       0.0027 * (normalized) animal=mongoose
+ -       0.08   * (normalized) animal=moth
+ -       0.035  * (normalized) animal=newt
+ +       0.0263 * (normalized) animal=octopus
+ +       0.0295 * (normalized) animal=opossum
+ +       0.0051 * (normalized) animal=oryx
+ -       0.0327 * (normalized) animal=ostrich
+ +       0.0133 * (normalized) animal=parakeet
+ -       0.0521 * (normalized) animal=penguin
+ +       0.0176 * (normalized) animal=pheasant
+ -       0.0312 * (normalized) animal=pike
+ -       0.004  * (normalized) animal=piranha
+ -       0.0277 * (normalized) animal=pitviper
+ +       0.1497 * (normalized) animal=platypus
+ +       0.0031 * (normalized) animal=polecat
+ +       0.0011 * (normalized) animal=pony
+ +       0.0998 * (normalized) animal=porpoise
+ +       0.0018 * (normalized) animal=puma
+ +       0      * (normalized) animal=pussycat
+ +       0.0019 * (normalized) animal=raccoon
+ +       0.0017 * (normalized) animal=reindeer
+ -       0.0352 * (normalized) animal=rhea
+ -       0.1435 * (normalized) animal=scorpion
+ -       0.0015 * (normalized) animal=seahorse
+ -       0.0299 * (normalized) animal=seal
+ -       0.0198 * (normalized) animal=sealion
+ -       0.1753 * (normalized) animal=seasnake
+ +       0.0314 * (normalized) animal=seawasp
+ +       0      * (normalized) animal=skimmer
+ +       0      * (normalized) animal=skua
+ -       0.0313 * (normalized) animal=slowworm
+ +       0.0015 * (normalized) animal=slug
+ -       0.0014 * (normalized) animal=sole
+ +       0.0174 * (normalized) animal=sparrow
+ +       0.0264 * (normalized) animal=squirrel
+ +       0.0434 * (normalized) animal=starfish
+ -       0.0271 * (normalized) animal=stingray
+ -       0.0241 * (normalized) animal=swan
+ +       0.0202 * (normalized) animal=termite
+ -       0.0356 * (normalized) animal=toad
+ -       0.0567 * (normalized) animal=tortoise
+ -       0.0184 * (normalized) animal=tuatara
+ -       0.0312 * (normalized) animal=tuna
+ +       0.0516 * (normalized) animal=vampire
+ +       0.0326 * (normalized) animal=vole
+ -       0.0098 * (normalized) animal=vulture
+ +       0      * (normalized) animal=wallaby
+ -       0.0769 * (normalized) animal=wasp
+ +       0.0027 * (normalized) animal=wolf
+ +       0.0003 * (normalized) animal=worm
+ +       0.0172 * (normalized) animal=wren
+ +       0.128  * (normalized) hair
+ -       0.0298 * (normalized) feathers
+ -       0.1768 * (normalized) eggs
+ +       0.6453 * (normalized) milk
+ -       0.0258 * (normalized) airborne
+ +       0.0162 * (normalized) aquatic
+ +       0.0028 * (normalized) predator
+ -       0.014  * (normalized) toothed
+ +       0.0492 * (normalized) backbone
+ +       0.0452 * (normalized) breathes
+ -       0.0036 * (normalized) venomous
+ +       0.0017 * (normalized) fins
+ -       0.0256 * (normalized) legs
+ -       0.0039 * (normalized) tail
+ +       0.0039 * (normalized) domestic
+ +       0.0271 * (normalized) catsize
+ +       0.1295
+
+
+
+Number of kernel evaluations: 5151 (97.148% cached)
+
+Time taken to build model: 0.08 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0.001 
+Root mean squared error                  0.0011
+Relative absolute error                  0.1994 %
+Root relative squared error              0.2178 %
+Total Number of Instances              101     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9901
+Mean absolute error                      0.0389
+Root mean squared error                  0.0699
+Relative absolute error                  8.0369 %
+Root relative squared error             14.1699 %
+Total Number of Instances              101     
+

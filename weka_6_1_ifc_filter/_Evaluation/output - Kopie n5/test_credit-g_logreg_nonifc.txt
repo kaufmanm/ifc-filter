@@ -1,0 +1,159 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -545.2204;  df=61;  p=      0   
+
+SQL:
+
+1-1/(1+exp(     -0.968 *case when checking_status in('<0') then 1 else 0 end
++     -0.6429*case when checking_status in('0< in('X<200') then 1 else 0 end
++      0.9399*case when checking_status in('> in('200') then 1 else 0 end
++      1.1349*case when checking_status in('no checking') then 1 else 0 end
++     -0.0286*duration
++     -0.8656*case when credit_history in('no credits/all paid') then 1 else 0 end
++     -1.1921*case when credit_history in('all paid') then 1 else 0 end
++     -0.5248*case when credit_history in('existing paid') then 1 else 0 end
++      0.5135*case when credit_history in('delayed previously') then 1 else 0 end
++      0.9215*case when credit_history in('critical/other existing credit') then 1 else 0 end
++     -0.9659*case when purpose in('new car') then 1 else 0 end
++      1.3115*case when purpose in('used car') then 1 else 0 end
++      0.2014*case when purpose in('furniture/equipment') then 1 else 0 end
++      0.0442*case when purpose in('radio/tv') then 1 else 0 end
++     -0.033 *case when purpose in('domestic appliance') then 1 else 0 end
++      0.2384*case when purpose in('repairs') then 1 else 0 end
++     -1.0897*case when purpose in('education') then 1 else 0 end
++      0     *case when purpose in('vacation') then 1 else 0 end
++      1.2053*case when purpose in('retraining') then 1 else 0 end
++      0.328 *case when purpose in('business') then 1 else 0 end
++      1.3147*case when purpose in('other') then 1 else 0 end
++     -0.0001*credit_amount
++     -0.3706*case when savings_status in('<100') then 1 else 0 end
++     -0.1021*case when savings_status in('100< in('X<500') then 1 else 0 end
++     -0.3053*case when savings_status in('500< in('X<1000') then 1 else 0 end
++      0.7118*case when savings_status in('> in('1000') then 1 else 0 end
++      0.5539*case when savings_status in('no known savings') then 1 else 0 end
++     -0.6061*case when employment in('unemployed') then 1 else 0 end
++     -0.4668*case when employment in('<1') then 1 else 0 end
++     -0.1406*case when employment in('1< in('X<4') then 1 else 0 end
++      0.76  *case when employment in('4< in('X<7') then 1 else 0 end
++      0.0874*case when employment in('> in('7') then 1 else 0 end
++     -0.2612*installment_commitment
++     -0.2582*case when personal_status in('male div/sep') then 1 else 0 end
++     -0.1171*case when personal_status in('female div/dep/mar') then 1 else 0 end
++      0.2114*case when personal_status in('male single') then 1 else 0 end
++     -0.1743*case when personal_status in('male mar/wid') then 1 else 0 end
++      0     *case when personal_status in('female single') then 1 else 0 end
++     -0.1632*case when other_parties in('none') then 1 else 0 end
++     -0.6982*case when other_parties in('co applicant') then 1 else 0 end
++      0.8563*case when other_parties in('guarantor') then 1 else 0 end
++     -0.1297*residence_since
++      0.4998*case when property_magnitude in('real estate') then 1 else 0 end
++     -0.0578*case when property_magnitude in('life insurance') then 1 else 0 end
++      0.0033*case when property_magnitude in('car') then 1 else 0 end
++     -0.6578*case when property_magnitude in('no known property') then 1 else 0 end
++      0.0137*age
++     -0.4816*case when other_payment_plans in('bank') then 1 else 0 end
++      0.0697*case when other_payment_plans in('stores') then 1 else 0 end
++      0.3509*case when other_payment_plans in('none') then 1 else 0 end
++     -0.2963*case when housing in('rent') then 1 else 0 end
++      0.1525*case when housing in('own') then 1 else 0 end
++      0.1332*case when housing in('for free') then 1 else 0 end
++     -0.6273*existing_credits
++      0.773 *case when job in('unemp/unskilled non res') then 1 else 0 end
++      0.1267*case when job in('unskilled resident') then 1 else 0 end
++     -0.0271*case when job in('skilled') then 1 else 0 end
++     -0.2203*case when job in('high qualif/self emp/mgmt') then 1 else 0 end
++      0.1151*num_dependents
++      0.5498*own_telephone
++      2.3467*foreign_worker
++     3.3772))
+
+Odds Ratios...
+Variable         O.R.
+       1       0.3799
+       2       0.5258
+       3       2.5597
+       4       3.1109
+       5       0.9719
+       6       0.4208
+       7       0.3036
+       8       0.5917
+       9       1.6711
+      10       2.513 
+      11       0.3806
+      12       3.7117
+      13       1.2231
+      14       1.0452
+      15       0.9676
+      16       1.2693
+      17       0.3363
+      18       1     
+      19       3.3379
+      20       1.3881
+      21       3.7237
+      22       0.9999
+      23       0.6903
+      24       0.9029
+      25       0.7369
+      26       2.0376
+      27       1.74  
+      28       0.5455
+      29       0.627 
+      30       0.8688
+      31       2.1383
+      32       1.0913
+      33       0.7702
+      34       0.7724
+      35       0.8895
+      36       1.2354
+      37       0.84  
+      38       1     
+      39       0.8494
+      40       0.4975
+      41       2.3543
+      42       0.8784
+      43       1.6485
+      44       0.9438
+      45       1.0034
+      46       0.518 
+      47       1.0138
+      48       0.6178
+      49       1.0722
+      50       1.4204
+      51       0.7436
+      52       1.1648
+      53       1.1424
+      54       0.534 
+      55       2.1663
+      56       1.1351
+      57       0.9733
+      58       0.8023
+      59       1.1219
+      60       1.7328
+      61      10.4513
+
+
+Time taken to build model: 0.09 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.6144
+Mean absolute error                      0.2668
+Root mean squared error                  0.3656
+Relative absolute error                 62.144  %
+Root relative squared error             78.8998 %
+Total Number of Instances              660     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4862
+Mean absolute error                      0.2984
+Root mean squared error                  0.4104
+Relative absolute error                 69.4497 %
+Root relative squared error             88.493  %
+Total Number of Instances              660     
+

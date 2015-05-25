@@ -1,0 +1,51 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+Class=negative =
+
+      0.0005 * age +
+      0.0401 * sex=M +
+      0.0328 * on thyroxine=t +
+      0.0892 * query on thyroxine=f +
+      0.0845 * on antithyroid medication=t +
+      0.0824 * query hypothyroid=f +
+      0.0987 * goitre=t +
+      0.07   * tumor=f +
+      0.094  * TSH measured=f +
+     -0.0025 * TSH +
+      0.0149 * T3 +
+      0.1166 * T4U measured=f +
+     -0.122  * FTI measured=f +
+      0.0022 * FTI +
+      0.0787 * referral source=STMW,SVHD,other,SVHC +
+     -0.0924 * referral source=SVHD,other,SVHC +
+      0.0237 * referral source=other,SVHC +
+      0.0373 * referral source=SVHC +
+      0.3699
+
+Time taken to build model: 0.14 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5045
+Mean absolute error                      0.1267
+Root mean squared error                  0.226 
+Relative absolute error                 92.4894 %
+Root relative squared error             86.3434 %
+Total Number of Instances             1244     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.466 
+Mean absolute error                      0.1295
+Root mean squared error                  0.2318
+Relative absolute error                 94.4785 %
+Root relative squared error             88.5066 %
+Total Number of Instances             1244     
+

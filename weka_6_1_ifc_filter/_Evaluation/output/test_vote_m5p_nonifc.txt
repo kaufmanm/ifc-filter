@@ -1,0 +1,110 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+physician-fee-freeze=n <= 0.5 : 
+|   immigration=n <= 0.5 : 
+|   |   adoption-of-the-budget-resolution=y <= 0.5 : LM1 (74/0%)
+|   |   adoption-of-the-budget-resolution=y >  0.5 : 
+|   |   |   synfuels-corporation-cutback=y <= 0.5 : LM2 (15/0%)
+|   |   |   synfuels-corporation-cutback=y >  0.5 : LM3 (6/0%)
+|   immigration=n >  0.5 : LM4 (82/54.264%)
+physician-fee-freeze=n >  0.5 : 
+|   synfuels-corporation-cutback=y <= 0.5 : LM5 (140/36.131%)
+|   synfuels-corporation-cutback=y >  0.5 : LM6 (118/0%)
+
+LM num: 1
+Class = 
+	0.0532 * adoption-of-the-budget-resolution=y 
+	+ 0.0561 * physician-fee-freeze=n 
+	- 0.0354 * anti-satellite-test-ban=y 
+	+ 0.0256 * mx-missile=y 
+	+ 0.0168 * immigration=n 
+	+ 0.0666 * synfuels-corporation-cutback=y 
+	+ 0.0144 * education-spending=n 
+	- 0.0062
+
+LM num: 2
+Class = 
+	0.0816 * adoption-of-the-budget-resolution=y 
+	+ 0.0561 * physician-fee-freeze=n 
+	- 0.1202 * anti-satellite-test-ban=y 
+	+ 0.0256 * mx-missile=y 
+	+ 0.0168 * immigration=n 
+	+ 0.2101 * synfuels-corporation-cutback=y 
+	+ 0.0144 * education-spending=n 
+	+ 0.0342
+
+LM num: 3
+Class = 
+	0.0816 * adoption-of-the-budget-resolution=y 
+	+ 0.0561 * physician-fee-freeze=n 
+	- 0.2822 * anti-satellite-test-ban=y 
+	+ 0.0256 * mx-missile=y 
+	+ 0.0168 * immigration=n 
+	+ 0.2569 * synfuels-corporation-cutback=y 
+	+ 0.0144 * education-spending=n 
+	+ 0.1845
+
+LM num: 4
+Class = 
+	0.037 * adoption-of-the-budget-resolution=y 
+	+ 0.0561 * physician-fee-freeze=n 
+	- 0.1582 * anti-satellite-test-ban=y 
+	+ 0.3672 * mx-missile=y 
+	+ 0.0185 * immigration=n 
+	+ 0.307 * synfuels-corporation-cutback=y 
+	+ 0.1387 * education-spending=n 
+	+ 0.0124
+
+LM num: 5
+Class = 
+	0.0423 * handicapped-infants=y 
+	+ 0.1313 * adoption-of-the-budget-resolution=y 
+	+ 0.0395 * physician-fee-freeze=n 
+	+ 0.0676 * el-salvador-aid=n 
+	- 0.0033 * anti-satellite-test-ban=y 
+	+ 0.004 * mx-missile=y 
+	+ 0.0028 * immigration=n 
+	+ 0.0108 * synfuels-corporation-cutback=y 
+	+ 0.0028 * education-spending=n 
+	+ 0.714
+
+LM num: 6
+Class = 
+	0.0031 * handicapped-infants=y 
+	+ 0.0136 * adoption-of-the-budget-resolution=y 
+	+ 0.0395 * physician-fee-freeze=n 
+	+ 0.0039 * el-salvador-aid=n 
+	- 0.0033 * anti-satellite-test-ban=y 
+	+ 0.004 * mx-missile=y 
+	+ 0.0028 * immigration=n 
+	+ 0.0115 * synfuels-corporation-cutback=y 
+	+ 0.0028 * education-spending=n 
+	+ 0.9306
+
+Number of Rules : 6
+
+Time taken to build model: 0.16 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9456
+Mean absolute error                      0.0627
+Root mean squared error                  0.1584
+Relative absolute error                 13.2179 %
+Root relative squared error             32.5312 %
+Total Number of Instances              435     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9098
+Mean absolute error                      0.0758
+Root mean squared error                  0.2027
+Relative absolute error                 15.9505 %
+Root relative squared error             41.5485 %
+Total Number of Instances              435     
+

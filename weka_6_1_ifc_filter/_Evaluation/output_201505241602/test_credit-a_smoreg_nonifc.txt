@@ -1,0 +1,76 @@
+
+SMOreg
+
+weights (not support vectors):
+ +       0.0002 * (normalized) A1
+ +       0.0002 * (normalized) A2
+ -       0.0006 * (normalized) A3
+ -       0.1116 * (normalized) A4=u
+ -       0.1118 * (normalized) A4=y
+ +       0.2234 * (normalized) A4=l
+ +       0      * (normalized) A4=t
+ -       0.1116 * (normalized) A5=g
+ -       0.1118 * (normalized) A5=p
+ +       0.2234 * (normalized) A5=gg
+ +       0.0003 * (normalized) A6=c
+ -       0.0005 * (normalized) A6=d
+ +       0.0003 * (normalized) A6=cc
+ +       0.0001 * (normalized) A6=i
+ -       0.0006 * (normalized) A6=j
+ -       0.0002 * (normalized) A6=k
+ +       0.0003 * (normalized) A6=m
+ +       0      * (normalized) A6=r
+ +       0.0002 * (normalized) A6=q
+ +       0.0004 * (normalized) A6=w
+ +       0.0006 * (normalized) A6=x
+ +       0.0006 * (normalized) A6=e
+ -       0      * (normalized) A6=aa
+ -       0.0015 * (normalized) A6=ff
+ +       0.0002 * (normalized) A7=v
+ +       0.0001 * (normalized) A7=h
+ +       0.0001 * (normalized) A7=bb
+ +       0.0012 * (normalized) A7=j
+ +       0      * (normalized) A7=n
+ -       0.0003 * (normalized) A7=z
+ -       0      * (normalized) A7=dd
+ +       0.0005 * (normalized) A7=ff
+ -       0.0018 * (normalized) A7=o
+ +       0.0012 * (normalized) A8
+ -       0.9982 * (normalized) A9
+ -       0.0002 * (normalized) A10
+ +       0.0027 * (normalized) A11
+ +       0.0001 * (normalized) A12
+ -       0.1117 * (normalized) A13=g
+ +       0.2234 * (normalized) A13=p
+ -       0.1117 * (normalized) A13=s
+ -       0.0019 * (normalized) A14
+ -       0.0006 * (normalized) A15
+ +       1.3336
+
+
+
+Number of kernel evaluations: 236638 (99.558% cached)
+
+Time taken to build model: 5.96 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7321
+Mean absolute error                      0.1424
+Root mean squared error                  0.373 
+Relative absolute error                 28.8354 %
+Root relative squared error             75.0516 %
+Total Number of Instances              690     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7189
+Mean absolute error                      0.1486
+Root mean squared error                  0.3841
+Relative absolute error                 30.0054 %
+Root relative squared error             77.1028 %
+Total Number of Instances              690     
+

@@ -1,0 +1,206 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'Glass-weka.filters.unsupervised.attribute.NominalToBinary-R10-weka.filters.unsupervised.attribute.Remove-R10,12-16-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute RI numeric
+@attribute Na numeric
+@attribute Mg numeric
+@attribute Al numeric
+@attribute Si numeric
+@attribute K numeric
+@attribute Ca numeric
+@attribute Ba numeric
+@attribute Fe numeric
+@attribute 'Type=build wind non-float' numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+RI <= 0.168 : LM1 (50/0%)
+RI >  0.168 : 
+|   Ca <= 0.542 : 
+|   |   Al <= 0.265 : LM2 (32/0%)
+|   |   Al >  0.265 : 
+|   |   |   K <= 0.281 : LM3 (21/44.5%)
+|   |   |   K >  0.281 : 
+|   |   |   |   RI <= 0.742 : LM4 (43/92.149%)
+|   |   |   |   RI >  0.742 : LM5 (11/0%)
+|   Ca >  0.542 : 
+|   |   Ca <= 0.864 : 
+|   |   |   Al <= 0.746 : 
+|   |   |   |   Mg <= 0.522 : 
+|   |   |   |   |   Al <= 0.576 : 
+|   |   |   |   |   |   RI <= 0.641 : 
+|   |   |   |   |   |   |   Al <= 0.499 : LM6 (3/0%)
+|   |   |   |   |   |   |   Al >  0.499 : LM7 (2/0%)
+|   |   |   |   |   |   RI >  0.641 : LM8 (5/0%)
+|   |   |   |   |   Al >  0.576 : LM9 (5/0%)
+|   |   |   |   Mg >  0.522 : LM10 (10/62.689%)
+|   |   |   Al >  0.746 : LM11 (11/0%)
+|   |   Ca >  0.864 : LM12 (21/0%)
+
+LM num: 1
+Type=build wind non-float = 
+	0.1433 * RI 
+	+ 0.0898 * Mg 
+	+ 0.0915 * Al 
+	+ 0.0878 * Si 
+	+ 0.0457 * K 
+	+ 0.1166 * Ca 
+	+ 0.1397 * Fe 
+	- 0.2539
+
+LM num: 2
+Type=build wind non-float = 
+	0.191 * RI 
+	+ 0.0326 * Mg 
+	+ 0.251 * Al 
+	+ 0.1941 * Si 
+	+ 0.1482 * K 
+	+ 0.3191 * Ca 
+	+ 0.4545 * Fe 
+	- 0.5654
+
+LM num: 3
+Type=build wind non-float = 
+	0.2744 * RI 
+	+ 0.0326 * Mg 
+	+ 0.1767 * Al 
+	+ 0.2747 * Si 
+	+ 0.2791 * K 
+	+ 0.4287 * Ca 
+	+ 0.752 * Fe 
+	- 0.7729
+
+LM num: 4
+Type=build wind non-float = 
+	0.2801 * RI 
+	+ 0.0326 * Mg 
+	+ 0.1767 * Al 
+	+ 0.3022 * Si 
+	+ 0.1923 * K 
+	+ 0.3275 * Ca 
+	+ 1.6876 * Fe 
+	- 1.0512
+
+LM num: 5
+Type=build wind non-float = 
+	0.3605 * RI 
+	+ 0.0326 * Mg 
+	+ 0.1767 * Al 
+	+ 0.415 * Si 
+	+ 0.1923 * K 
+	+ 0.3275 * Ca 
+	+ 1.1221 * Fe 
+	- 0.7085
+
+LM num: 6
+Type=build wind non-float = 
+	0.6423 * RI 
+	+ 0.0326 * Mg 
+	+ 0.15 * Al 
+	+ 0.1164 * Si 
+	+ 0.0601 * K 
+	+ 0.1494 * Ca 
+	+ 0.202 * Fe 
+	- 0.1205
+
+LM num: 7
+Type=build wind non-float = 
+	0.6423 * RI 
+	+ 0.0326 * Mg 
+	+ 0.1538 * Al 
+	+ 0.1164 * Si 
+	+ 0.0601 * K 
+	+ 0.1494 * Ca 
+	+ 0.202 * Fe 
+	- 0.12
+
+LM num: 8
+Type=build wind non-float = 
+	0.6423 * RI 
+	+ 0.0326 * Mg 
+	+ 0.0851 * Al 
+	+ 0.1164 * Si 
+	+ 0.0601 * K 
+	+ 0.1494 * Ca 
+	+ 0.202 * Fe 
+	- 0.0806
+
+LM num: 9
+Type=build wind non-float = 
+	0.6423 * RI 
+	+ 0.0326 * Mg 
+	+ 0.0491 * Al 
+	+ 0.1164 * Si 
+	+ 0.0601 * K 
+	+ 0.1494 * Ca 
+	+ 0.202 * Fe 
+	- 0.1011
+
+LM num: 10
+Type=build wind non-float = 
+	0.6688 * RI 
+	+ 0.0326 * Mg 
+	+ 0.229 * Al 
+	+ 0.1164 * Si 
+	+ 0.0601 * K 
+	+ 0.1494 * Ca 
+	+ 0.202 * Fe 
+	- 0.1272
+
+LM num: 11
+Type=build wind non-float = 
+	0.6045 * RI 
+	+ 0.0326 * Mg 
+	+ 0.229 * Al 
+	+ 0.1164 * Si 
+	+ 0.0601 * K 
+	+ 0.1494 * Ca 
+	+ 0.202 * Fe 
+	- 0.0345
+
+LM num: 12
+Type=build wind non-float = 
+	0.414 * RI 
+	+ 0.0326 * Mg 
+	+ 0.2667 * Al 
+	+ 0.1164 * Si 
+	+ 0.0601 * K 
+	+ 0.1494 * Ca 
+	+ 0.202 * Fe 
+	+ 0.1176
+
+Number of Rules : 12
+
+Time taken to build model: 0.27 seconds
+Time taken to test model on training data: 0.14 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8384
+Mean absolute error                      0.1639
+Root mean squared error                  0.263 
+Relative absolute error                 35.7766 %
+Root relative squared error             54.9549 %
+Total Number of Instances              214     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.3897
+Mean absolute error                      0.3629
+Root mean squared error                  0.4445
+Relative absolute error                 78.6996 %
+Root relative squared error             92.2458 %
+Total Number of Instances              214     
+

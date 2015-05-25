@@ -1,0 +1,55 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -236.958 ;  df=9;  p=      0   
+
+SQL:
+
+1-1/(1+exp(     84.7016*RI
++     -5.8448*Na
++     -4.9395*Mg
++     -3.9722*Al
++     -5.4353*Si
++     -5.685 *K
++     -5.184 *Ca
++     -6.4489*Ba
++      0.3689*Fe
++   413.1909))
+
+Odds Ratios...
+Variable         O.R.
+       1 6.101572141365402E36
+       2       0.0029
+       3       0.0072
+       4       0.0188
+       5       0.0044
+       6       0.0034
+       7       0.0056
+       8       0.0016
+       9       1.4461
+
+
+Time taken to build model: 0.05 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.4265
+Mean absolute error                      0.3769
+Root mean squared error                  0.4329
+Relative absolute error                 82.2972 %
+Root relative squared error             90.4548 %
+Total Number of Instances              214     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.3164
+Mean absolute error                      0.3957
+Root mean squared error                  0.457 
+Relative absolute error                 85.8292 %
+Root relative squared error             94.8456 %
+Total Number of Instances              214     
+

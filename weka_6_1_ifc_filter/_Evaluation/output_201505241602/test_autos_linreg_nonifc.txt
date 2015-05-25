@@ -1,0 +1,67 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+symboling=0 =
+
+      0.0016 * normalized-losses +
+      0.3926 * make=mercury,saab,volvo,porsche,alfa-romero,dodge,audi,mercedes-benz,volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot +
+     -0.4796 * make=saab,volvo,porsche,alfa-romero,dodge,audi,mercedes-benz,volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot +
+      0.4714 * make=porsche,alfa-romero,dodge,audi,mercedes-benz,volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot +
+      0.2345 * make=alfa-romero,dodge,audi,mercedes-benz,volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot +
+     -0.5928 * make=dodge,audi,mercedes-benz,volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot +
+     -0.2709 * make=audi,mercedes-benz,volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot +
+      0.4985 * make=volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot +
+      0.2887 * make=toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot +
+      0.1819 * make=chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot +
+     -0.1749 * make=mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot +
+      0.1548 * make=isuzu,honda,subaru,bmw,jaguar,peugot +
+      0.9409 * fuel-type=diesel +
+      0.3853 * num-of-doors=four +
+      0.165  * body-style=hardtop,sedan,wagon +
+     -0.2418 * body-style=sedan,wagon +
+     -0.3288 * drive-wheels=rwd,4wd +
+      0.4672 * drive-wheels=4wd +
+      0.5736 * engine-location=front +
+      0.0126 * length +
+     -0.0818 * width +
+      0.0004 * curb-weight +
+      0.357  * engine-type=ohc,ohcv,ohcf,l +
+     -0.6562 * num-of-cylinders=three,eight,five,four,six,twelve +
+      0.4434 * num-of-cylinders=eight,five,four,six,twelve +
+     -0.2135 * num-of-cylinders=four,six,twelve +
+      0.0037 * engine-size +
+      0.1671 * fuel-system=2bbl,1bbl,idi +
+      0.9409 * fuel-system=idi +
+     -0.2394 * stroke +
+     -0.1257 * compression-ratio +
+      0.0003 * peak-rpm +
+     -0.019  * city-mpg +
+      0.0275 * highway-mpg +
+      0.7408
+
+Time taken to build model: 0.16 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.817 
+Mean absolute error                      0.2158
+Root mean squared error                  0.2705
+Relative absolute error                 49.0528 %
+Root relative squared error             57.6615 %
+Total Number of Instances              205     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5969
+Mean absolute error                      0.3184
+Root mean squared error                  0.4022
+Relative absolute error                 71.9566 %
+Root relative squared error             85.2643 %
+Total Number of Instances              205     
+

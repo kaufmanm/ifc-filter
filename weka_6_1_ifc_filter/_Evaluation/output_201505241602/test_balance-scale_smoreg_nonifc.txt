@@ -1,0 +1,37 @@
+
+SMOreg
+
+weights (not support vectors):
+ +       0.5721 * (normalized) left-weight
+ +       0.5716 * (normalized) left-distance
+ -       0.5706 * (normalized) right-weight
+ -       0.571  * (normalized) right-distance
+ +       0.4283
+
+
+
+Number of kernel evaluations: 195625 (89.77% cached)
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7921
+Mean absolute error                      0.2586
+Root mean squared error                  0.306 
+Relative absolute error                 52.0344 %
+Root relative squared error             61.3871 %
+Total Number of Instances              625     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.792 
+Mean absolute error                      0.2587
+Root mean squared error                  0.3061
+Relative absolute error                 51.9726 %
+Root relative squared error             61.3026 %
+Total Number of Instances              625     
+

@@ -1,0 +1,43 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+num=<50 =
+
+      0.1535 * sex=female +
+      0.2249 * cp=typ_angina,non_anginal,atyp_angina +
+     -0.0018 * trestbps +
+      0.0018 * thalach +
+      0.1216 * exang=no +
+     -0.0453 * oldpeak +
+      0.1225 * slope=down,up +
+     -0.1301 * ca +
+      0.1439 * thal=fixed_defect,normal +
+      0.0656 * thal=normal +
+      0.2038
+
+Time taken to build model: 0.05 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7454
+Mean absolute error                      0.2533
+Root mean squared error                  0.332 
+Relative absolute error                 51.072  %
+Root relative squared error             66.6604 %
+Total Number of Instances              303     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6946
+Mean absolute error                      0.2739
+Root mean squared error                  0.3596
+Relative absolute error                 55.1257 %
+Root relative squared error             72.0739 %
+Total Number of Instances              303     
+

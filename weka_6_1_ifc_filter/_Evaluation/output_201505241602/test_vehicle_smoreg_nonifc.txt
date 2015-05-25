@@ -1,0 +1,51 @@
+
+SMOreg
+
+weights (not support vectors):
+ +       0.0091 * (normalized) COMPACTNESS
+ -       0.0074 * (normalized) CIRCULARITY
+ -       0.0027 * (normalized) DISTANCE CIRCULARITY
+ +       0.0225 * (normalized) RADIUS RATIO
+ -       0.02   * (normalized) PR.AXIS ASPECT RATIO
+ +       0.0002 * (normalized) MAX.LENGTH ASPECT RATIO
+ +       0.0601 * (normalized) SCATTER RATIO
+ +       0.0119 * (normalized) ELONGATEDNESS
+ +       0.0076 * (normalized) PR.AXIS RECTANGULARITY
+ -       0.0124 * (normalized) MAX.LENGTH RECTANGULARITY
+ +       0.0066 * (normalized) SCALED VARIANCE_MAJOR
+ -       0.0662 * (normalized) SCALED VARIANCE_MINOR
+ +       0.0134 * (normalized) SCALED RADIUS OF GYRATION
+ -       0.0076 * (normalized) SKEWNESS ABOUT_MAJOR
+ +       0.0007 * (normalized) SKEWNESS ABOUT_MINOR
+ -       0.0013 * (normalized) KURTOSIS ABOUT_MAJOR
+ -       0.0139 * (normalized) KURTOSIS ABOUT_MINOR
+ +       0.0086 * (normalized) HOLLOWS RATIO
+ -       0.0087
+
+
+
+Number of kernel evaluations: 358281 (97.149% cached)
+
+Time taken to build model: 1.01 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5713
+Mean absolute error                      0.2566
+Root mean squared error                  0.5043
+Relative absolute error                 67.2876 %
+Root relative squared error            115.4877 %
+Total Number of Instances              846     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4933
+Mean absolute error                      0.2568
+Root mean squared error                  0.5043
+Relative absolute error                 67.2355 %
+Root relative squared error            115.2939 %
+Total Number of Instances              846     
+

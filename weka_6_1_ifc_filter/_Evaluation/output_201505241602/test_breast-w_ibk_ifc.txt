@@ -1,0 +1,50 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.lazy.IBk 
+
+FilteredClassifier using weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation wisconsin-breast-cancer-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R11-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute Clump_Thickness numeric
+@attribute Cell_Size_Uniformity numeric
+@attribute Cell_Shape_Uniformity numeric
+@attribute Marginal_Adhesion numeric
+@attribute Single_Epi_Cell_Size numeric
+@attribute Bare_Nuclei numeric
+@attribute Bland_Chromatin numeric
+@attribute Normal_Nucleoli numeric
+@attribute Mitoses numeric
+@attribute Class=benign numeric
+
+@data
+
+
+Classifier Model
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.14 seconds
+Time taken to test model on training data: 0.27 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              699     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9081
+Mean absolute error                      0.0415
+Root mean squared error                  0.2037
+Relative absolute error                  9.1677 %
+Root relative squared error             42.7814 %
+Total Number of Instances              699     
+

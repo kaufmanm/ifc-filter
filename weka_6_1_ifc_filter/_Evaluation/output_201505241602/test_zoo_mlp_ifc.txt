@@ -1,0 +1,251 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.MultilayerPerceptron 
+
+FilteredClassifier using weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation zoo-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R19-24-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute animal numeric
+@attribute hair numeric
+@attribute feathers numeric
+@attribute eggs numeric
+@attribute milk numeric
+@attribute airborne numeric
+@attribute aquatic numeric
+@attribute predator numeric
+@attribute toothed numeric
+@attribute backbone numeric
+@attribute breathes numeric
+@attribute venomous numeric
+@attribute fins numeric
+@attribute legs numeric
+@attribute tail numeric
+@attribute domestic numeric
+@attribute catsize numeric
+@attribute type=mammal numeric
+
+@data
+
+
+Classifier Model
+Linear Node 0
+    Inputs    Weights
+    Threshold    0.3801230900175532
+    Node 1    0.4081491157536651
+    Node 2    -0.263926578128785
+    Node 3    -0.12422665273926549
+    Node 4    0.5485525962300551
+    Node 5    -1.4156620660433343
+    Node 6    -0.04968061814272796
+    Node 7    0.329879115469857
+    Node 8    -0.04506640087233895
+    Node 9    -0.11055568714320661
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.11732357069090488
+    Attrib animal    0.4859782769579972
+    Attrib hair    -0.03950554246562583
+    Attrib feathers    -0.009990420667722271
+    Attrib eggs    -0.1564139468959506
+    Attrib milk    0.45444377524113233
+    Attrib airborne    -0.021586416843529327
+    Attrib aquatic    0.06027078311252867
+    Attrib predator    0.04178775045896839
+    Attrib toothed    0.0362265616025378
+    Attrib backbone    -0.06627493902710624
+    Attrib breathes    -0.06769471339394963
+    Attrib venomous    -0.1555305899178521
+    Attrib fins    0.014326582284242906
+    Attrib legs    -0.05582944131715333
+    Attrib tail    0.03190837838001151
+    Attrib domestic    0.03875133804339112
+    Attrib catsize    0.004503985836827445
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.025992988305206362
+    Attrib animal    -0.43151482988816076
+    Attrib hair    -0.0023882960271935276
+    Attrib feathers    0.05074167408050838
+    Attrib eggs    -0.10775406596778961
+    Attrib milk    -0.454263956883782
+    Attrib airborne    0.0069370213148977995
+    Attrib aquatic    -0.05892880198929422
+    Attrib predator    -0.015415640175749099
+    Attrib toothed    0.02452794682873025
+    Attrib backbone    -0.0637801749362235
+    Attrib breathes    -0.05492720607177689
+    Attrib venomous    -0.11660126144972932
+    Attrib fins    -0.0025374858593738923
+    Attrib legs    -0.008991291052170006
+    Attrib tail    -8.630694581222171E-4
+    Attrib domestic    -0.027143547127339247
+    Attrib catsize    0.03774205902681441
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.1712759865986911
+    Attrib animal    -0.3190417371630947
+    Attrib hair    -0.051261499222728185
+    Attrib feathers    -0.010992476400024317
+    Attrib eggs    -0.0605788065566499
+    Attrib milk    -0.33610699369279684
+    Attrib airborne    -0.030565737825604712
+    Attrib aquatic    -0.05568607982636407
+    Attrib predator    -0.062061378656722115
+    Attrib toothed    0.006212183079034601
+    Attrib backbone    -0.12033763859039825
+    Attrib breathes    -0.10821432410485482
+    Attrib venomous    -0.09722953438023846
+    Attrib fins    -0.02500899138652915
+    Attrib legs    0.028349672464986608
+    Attrib tail    -0.08360842814178623
+    Attrib domestic    0.031072856005414526
+    Attrib catsize    0.0030183411487111943
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.11730716795035903
+    Attrib animal    0.6638496190516816
+    Attrib hair    -0.013907897350273505
+    Attrib feathers    0.08458912439375404
+    Attrib eggs    -0.015383430612100148
+    Attrib milk    0.6354789593185133
+    Attrib airborne    0.04630751641159009
+    Attrib aquatic    -0.07678297711045914
+    Attrib predator    0.025979366067249397
+    Attrib toothed    0.09800442173169825
+    Attrib backbone    -0.018403991282501895
+    Attrib breathes    -0.039632749895940234
+    Attrib venomous    0.04118313410513842
+    Attrib fins    -0.05941057295885044
+    Attrib legs    0.008973917635299098
+    Attrib tail    -0.07560031338344232
+    Attrib domestic    -0.05772816449062788
+    Attrib catsize    0.046759845885810114
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    0.1166976365972665
+    Attrib animal    -1.1762120086253347
+    Attrib hair    -0.5333224292719599
+    Attrib feathers    0.007304293975956641
+    Attrib eggs    -0.5794518440038716
+    Attrib milk    -1.1837186115415133
+    Attrib airborne    0.03479393769005203
+    Attrib aquatic    0.13323646090019955
+    Attrib predator    0.006905274003388229
+    Attrib toothed    -0.07643743677444186
+    Attrib backbone    -0.09397240130601449
+    Attrib breathes    -0.26215431329300015
+    Attrib venomous    -0.10165721944069839
+    Attrib fins    0.21272137957375023
+    Attrib legs    -0.1649069637365601
+    Attrib tail    -0.13626958734558597
+    Attrib domestic    -0.1332623365097943
+    Attrib catsize    -0.2289427960834939
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.18399833987098085
+    Attrib animal    -0.20020320059850474
+    Attrib hair    0.02532409926916143
+    Attrib feathers    -0.10024076602091303
+    Attrib eggs    0.01852305686828302
+    Attrib milk    -0.1986483084514121
+    Attrib airborne    -0.05421386298374095
+    Attrib aquatic    -0.10644648223966059
+    Attrib predator    -0.04409841606459884
+    Attrib toothed    -0.036455674618709
+    Attrib backbone    -0.15500262392613073
+    Attrib breathes    -0.16003925506361324
+    Attrib venomous    -0.2123513349432135
+    Attrib fins    -0.1109284571244455
+    Attrib legs    -0.027973377262492494
+    Attrib tail    -0.08491153275233099
+    Attrib domestic    0.12169156831024909
+    Attrib catsize    -0.022975022538386614
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.09828139426974596
+    Attrib animal    0.30465606628975594
+    Attrib hair    -0.1194203593969475
+    Attrib feathers    -0.07222332445482614
+    Attrib eggs    -0.19827857045652802
+    Attrib milk    0.2897702901640735
+    Attrib airborne    -0.0846189730615596
+    Attrib aquatic    -0.03914447634015746
+    Attrib predator    -0.130891550093799
+    Attrib toothed    -0.15866864868018407
+    Attrib backbone    -0.11418866980704936
+    Attrib breathes    -0.13866790460367667
+    Attrib venomous    -0.18131997900457097
+    Attrib fins    0.049936656614479207
+    Attrib legs    -0.009735563340197172
+    Attrib tail    -0.06450505935641897
+    Attrib domestic    0.034897471162617606
+    Attrib catsize    -0.14071716983959204
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.20890509486958173
+    Attrib animal    0.05472439378836792
+    Attrib hair    0.022090447637618253
+    Attrib feathers    -0.1494402782854695
+    Attrib eggs    0.00650483806521092
+    Attrib milk    0.036817688592116496
+    Attrib airborne    -0.16602244107998365
+    Attrib aquatic    -0.125349798950326
+    Attrib predator    -0.10449456427932986
+    Attrib toothed    -0.05097053488920168
+    Attrib backbone    -0.14933684712592796
+    Attrib breathes    -0.2031435966467152
+    Attrib venomous    -0.2481233666722265
+    Attrib fins    -0.180799247301286
+    Attrib legs    0.013145611993617008
+    Attrib tail    -0.16032605602515868
+    Attrib domestic    0.23373241472285047
+    Attrib catsize    -0.11780374430529646
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -0.22917195698955253
+    Attrib animal    -0.1830660724354302
+    Attrib hair    0.07177143920844312
+    Attrib feathers    0.0034754487168699687
+    Attrib eggs    -0.024140807642338294
+    Attrib milk    -0.28109488664880816
+    Attrib airborne    -0.10567312255792503
+    Attrib aquatic    -0.08276148652990586
+    Attrib predator    -0.03536253056242615
+    Attrib toothed    0.04234385669825941
+    Attrib backbone    -0.11915353465254386
+    Attrib breathes    -0.10054763141324724
+    Attrib venomous    -0.16706804543366197
+    Attrib fins    -0.08407785773023307
+    Attrib legs    0.032286490584955536
+    Attrib tail    -0.057421746147856494
+    Attrib domestic    0.15725282855923603
+    Attrib catsize    0.05296817075104175
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 0.39 seconds
+Time taken to test model on training data: 0.11 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0.0004
+Root mean squared error                  0.0009
+Relative absolute error                  0.0878 %
+Root relative squared error              0.1932 %
+Total Number of Instances              101     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9921
+Mean absolute error                      0.1591
+Root mean squared error                  0.1647
+Relative absolute error                 32.8298 %
+Root relative squared error             33.3719 %
+Total Number of Instances              101     
+

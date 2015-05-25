@@ -1,0 +1,801 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.MultilayerPerceptron 
+
+FilteredClassifier using weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation kr-vs-kp-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R38-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z33.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute bkblk numeric
+@attribute bknwy numeric
+@attribute bkon8 numeric
+@attribute bkona numeric
+@attribute bkspr numeric
+@attribute bkxbq numeric
+@attribute bkxcr numeric
+@attribute bkxwp numeric
+@attribute blxwp numeric
+@attribute bxqsq numeric
+@attribute cntxt numeric
+@attribute dsopp numeric
+@attribute dwipd numeric
+@attribute hdchk numeric
+@attribute katri numeric
+@attribute mulch numeric
+@attribute qxmsq numeric
+@attribute r2ar8 numeric
+@attribute reskd numeric
+@attribute reskr numeric
+@attribute rimmx numeric
+@attribute rkxwp numeric
+@attribute rxmsq numeric
+@attribute simpl numeric
+@attribute skach numeric
+@attribute skewr numeric
+@attribute skrxp numeric
+@attribute spcop numeric
+@attribute stlmt numeric
+@attribute thrsk numeric
+@attribute wkcti numeric
+@attribute wkna8 numeric
+@attribute wknck numeric
+@attribute wkovl numeric
+@attribute wkpos numeric
+@attribute wtoeg numeric
+@attribute class=won numeric
+
+@data
+
+
+Classifier Model
+Linear Node 0
+    Inputs    Weights
+    Threshold    0.08812396785807179
+    Node 1    0.8622677784877041
+    Node 2    0.14860670461948347
+    Node 3    0.443097696640676
+    Node 4    -1.2353583495225073
+    Node 5    1.421822793014856
+    Node 6    2.4609830929690304
+    Node 7    -1.1444109582283433
+    Node 8    1.3176996174943834
+    Node 9    -1.1772196364594405
+    Node 10    1.3596476965122255
+    Node 11    1.637297876666138
+    Node 12    0.5113135260583388
+    Node 13    -2.2446908026140253
+    Node 14    -1.7188717300408218
+    Node 15    0.7893549049566897
+    Node 16    -0.26669109747656333
+    Node 17    -0.7470539651601389
+    Node 18    0.24784897373917725
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -3.085590006882811
+    Attrib bkblk    2.994361465501205
+    Attrib bknwy    -0.25614963136489904
+    Attrib bkon8    3.402358639052154
+    Attrib bkona    -2.087972235156214
+    Attrib bkspr    -0.6365510154247228
+    Attrib bkxbq    3.627985590250355
+    Attrib bkxcr    1.6976986556996823
+    Attrib bkxwp    -0.2720930858384909
+    Attrib blxwp    0.9425758848478776
+    Attrib bxqsq    12.084864284428422
+    Attrib cntxt    -0.6717615835053188
+    Attrib dsopp    -0.31423198637281646
+    Attrib dwipd    -0.18273497773020592
+    Attrib hdchk    2.726819066601978
+    Attrib katri    7.639424110483708
+    Attrib mulch    1.9018355696099627
+    Attrib qxmsq    -2.4922470258128486
+    Attrib r2ar8    -0.23351770561912552
+    Attrib reskd    -0.6610493879404642
+    Attrib reskr    0.36551588013667075
+    Attrib rimmx    19.77409295762148
+    Attrib rkxwp    0.4861507007241668
+    Attrib rxmsq    3.319787486964697
+    Attrib simpl    0.14451177961456646
+    Attrib skach    0.1185098922281433
+    Attrib skewr    -0.19622129290944684
+    Attrib skrxp    -0.9949967817720194
+    Attrib spcop    -0.009401288179277711
+    Attrib stlmt    -1.2553731256958849
+    Attrib thrsk    -0.06526713138144986
+    Attrib wkcti    -1.1973792988290457
+    Attrib wkna8    5.978468706858701
+    Attrib wknck    7.429969988867594
+    Attrib wkovl    1.9332617087780417
+    Attrib wkpos    2.8017807474041434
+    Attrib wtoeg    -0.027440915701660188
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.48604316778897283
+    Attrib bkblk    0.28680339877046235
+    Attrib bknwy    -0.16974271188604614
+    Attrib bkon8    -0.40157977040477527
+    Attrib bkona    0.10402147734541725
+    Attrib bkspr    -0.1342973169321218
+    Attrib bkxbq    -0.23016455940313083
+    Attrib bkxcr    -0.3391196546880581
+    Attrib bkxwp    -0.45241047649143673
+    Attrib blxwp    -0.022259188699188054
+    Attrib bxqsq    -0.20814012199497606
+    Attrib cntxt    0.06817299963311829
+    Attrib dsopp    0.28191029875511175
+    Attrib dwipd    -0.14228181662888334
+    Attrib hdchk    -0.38302701456221805
+    Attrib katri    0.1255359092402093
+    Attrib mulch    -0.23739595266722263
+    Attrib qxmsq    -0.7392252143743191
+    Attrib r2ar8    0.3074238276719724
+    Attrib reskd    0.16729731778684487
+    Attrib reskr    0.12843246840482014
+    Attrib rimmx    -0.18469998866501172
+    Attrib rkxwp    0.08085144139923131
+    Attrib rxmsq    -0.6147201133797578
+    Attrib simpl    0.2596679663107291
+    Attrib skach    -0.29552649543899107
+    Attrib skewr    0.16237933034786783
+    Attrib skrxp    -0.2175071068714605
+    Attrib spcop    -0.01511756565150213
+    Attrib stlmt    -0.3180601125403451
+    Attrib thrsk    0.04395862740690711
+    Attrib wkcti    0.7096488939070514
+    Attrib wkna8    -0.36174979867336604
+    Attrib wknck    0.12373919749957296
+    Attrib wkovl    0.22984981566118634
+    Attrib wkpos    -0.17741233500190182
+    Attrib wtoeg    0.30339966725687917
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.33057470555628543
+    Attrib bkblk    -0.08419206441557185
+    Attrib bknwy    0.032553651521860995
+    Attrib bkon8    -0.2048407796823285
+    Attrib bkona    0.09861415991908418
+    Attrib bkspr    -0.524534824957693
+    Attrib bkxbq    0.22039667887063683
+    Attrib bkxcr    0.13539826147296521
+    Attrib bkxwp    -0.4682702973024431
+    Attrib blxwp    0.033997011298319044
+    Attrib bxqsq    -0.03631341867263376
+    Attrib cntxt    0.13819786183656832
+    Attrib dsopp    0.2089023657473731
+    Attrib dwipd    0.024520115532636312
+    Attrib hdchk    -0.34199441050994284
+    Attrib katri    -0.18341205358882487
+    Attrib mulch    -0.18197086856414332
+    Attrib qxmsq    0.22101771954332491
+    Attrib r2ar8    -0.0935379089991875
+    Attrib reskd    0.3913004712890964
+    Attrib reskr    0.37172318027839807
+    Attrib rimmx    -0.3821970134124501
+    Attrib rkxwp    -0.01797136938773905
+    Attrib rxmsq    -0.9659328855985159
+    Attrib simpl    0.08724382696981103
+    Attrib skach    -0.27722734678602234
+    Attrib skewr    0.20330362030420013
+    Attrib skrxp    0.16705481862742766
+    Attrib spcop    0.03827664316938266
+    Attrib stlmt    0.07322405875474776
+    Attrib thrsk    0.08733827367739722
+    Attrib wkcti    0.2418531659262664
+    Attrib wkna8    -0.2891319855498792
+    Attrib wknck    -0.3761815816872338
+    Attrib wkovl    0.07811100930681929
+    Attrib wkpos    -0.18719058436357408
+    Attrib wtoeg    0.12493021295740041
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -4.132553455104957
+    Attrib bkblk    -7.404170407254356
+    Attrib bknwy    0.02878770404928891
+    Attrib bkon8    -2.3735207415351973
+    Attrib bkona    1.0525341126063334
+    Attrib bkspr    -0.34234759336640497
+    Attrib bkxbq    -6.5750272791094995
+    Attrib bkxcr    -1.037225512111191
+    Attrib bkxwp    0.6116008496964525
+    Attrib blxwp    -0.8116583595341424
+    Attrib bxqsq    9.14119126271337
+    Attrib cntxt    0.299488316161615
+    Attrib dsopp    -1.3099750838833297
+    Attrib dwipd    -0.10384103989302619
+    Attrib hdchk    -6.002936890005374
+    Attrib katri    -10.500140679533
+    Attrib mulch    -3.383153500023355
+    Attrib qxmsq    3.7341658264933772
+    Attrib r2ar8    -1.9000924815526268
+    Attrib reskd    3.642516327405393
+    Attrib reskr    -0.15672124470572293
+    Attrib rimmx    0.3951819196418033
+    Attrib rkxwp    -0.6905182707927908
+    Attrib rxmsq    -5.771829385691309
+    Attrib simpl    0.4922909012472913
+    Attrib skach    -3.5486873389954656
+    Attrib skewr    -0.23066504236046323
+    Attrib skrxp    -1.7303804564073229
+    Attrib spcop    0.04344932495420867
+    Attrib stlmt    -4.345972038694087
+    Attrib thrsk    0.8546413745825334
+    Attrib wkcti    -2.1124195516963153
+    Attrib wkna8    -11.309132313320374
+    Attrib wknck    9.192959952226367
+    Attrib wkovl    -1.0987674643737533
+    Attrib wkpos    -6.374436450457643
+    Attrib wtoeg    -0.29789255405046183
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -1.6483783041843958
+    Attrib bkblk    -0.14855572417028015
+    Attrib bknwy    0.2414328841578198
+    Attrib bkon8    -2.08008044781593
+    Attrib bkona    2.382245322909129
+    Attrib bkspr    1.598976688002798
+    Attrib bkxbq    -0.37682946300127035
+    Attrib bkxcr    -0.1538423122212318
+    Attrib bkxwp    -1.9092224708399024
+    Attrib blxwp    -1.0381716420001086
+    Attrib bxqsq    -3.775321218559638
+    Attrib cntxt    0.582479183041807
+    Attrib dsopp    0.18685801170512809
+    Attrib dwipd    1.1584966549797646
+    Attrib hdchk    -1.2645202427926112
+    Attrib katri    -2.5564179556946285
+    Attrib mulch    0.20443641833662862
+    Attrib qxmsq    -0.58035348323117
+    Attrib r2ar8    -1.3807754296232118
+    Attrib reskd    1.560778643690528
+    Attrib reskr    1.1173045915133433
+    Attrib rimmx    3.085581883261762
+    Attrib rkxwp    0.1021597874460089
+    Attrib rxmsq    -0.19645437993209325
+    Attrib simpl    -0.31046960825337366
+    Attrib skach    -1.796510272963176
+    Attrib skewr    -0.8192140609681938
+    Attrib skrxp    -0.9501524934772191
+    Attrib spcop    -0.017675825183708214
+    Attrib stlmt    0.02285996601782557
+    Attrib thrsk    1.9310838076993904
+    Attrib wkcti    -1.9390800487779838
+    Attrib wkna8    -4.787515013601169
+    Attrib wknck    1.20423223958728
+    Attrib wkovl    -1.4588995319082034
+    Attrib wkpos    -0.29632244795902823
+    Attrib wtoeg    -0.6251349110618084
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -1.1270159389002234
+    Attrib bkblk    -0.8523926961711581
+    Attrib bknwy    -0.6084444158999336
+    Attrib bkon8    -0.7647596720216248
+    Attrib bkona    0.5401217063568258
+    Attrib bkspr    -0.36942603709872013
+    Attrib bkxbq    2.8149687335205393
+    Attrib bkxcr    -1.1611977091666386
+    Attrib bkxwp    0.7549692703249608
+    Attrib blxwp    0.2894010491860233
+    Attrib bxqsq    1.2241603120289415
+    Attrib cntxt    1.2826737922906526
+    Attrib dsopp    1.0704614221233437
+    Attrib dwipd    -1.6100033213006195
+    Attrib hdchk    -1.0949528139968117
+    Attrib katri    -1.0064463980725047
+    Attrib mulch    -0.4199458235110148
+    Attrib qxmsq    -0.421726573030901
+    Attrib r2ar8    -0.03580550318933161
+    Attrib reskd    1.0769679255427422
+    Attrib reskr    0.49587555891445706
+    Attrib rimmx    2.0190911987752567
+    Attrib rkxwp    0.7220796333317048
+    Attrib rxmsq    -1.9114671526195963
+    Attrib simpl    -0.22525571188926388
+    Attrib skach    -1.1398577732728628
+    Attrib skewr    0.5510246222917423
+    Attrib skrxp    -1.0260216986266746
+    Attrib spcop    0.011166466690798738
+    Attrib stlmt    0.013458814249941574
+    Attrib thrsk    0.9702662224977383
+    Attrib wkcti    -1.2554557459864772
+    Attrib wkna8    -0.46143266375890124
+    Attrib wknck    0.5634192887797956
+    Attrib wkovl    -0.7054190537215037
+    Attrib wkpos    -1.014829488086945
+    Attrib wtoeg    0.6740814602814686
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    0.23958327280084046
+    Attrib bkblk    -0.8777504449883068
+    Attrib bknwy    -1.0936548571547535
+    Attrib bkon8    -3.262253045216127
+    Attrib bkona    4.384144062681053
+    Attrib bkspr    -0.04167070993854009
+    Attrib bkxbq    -0.11023368157826263
+    Attrib bkxcr    -4.373387235594601
+    Attrib bkxwp    0.17090141065569023
+    Attrib blxwp    0.04562923735390926
+    Attrib bxqsq    -13.03376097734814
+    Attrib cntxt    0.7920705198166978
+    Attrib dsopp    0.36411098496379674
+    Attrib dwipd    -0.24377066585048307
+    Attrib hdchk    0.9164868127210832
+    Attrib katri    -4.527340772653112
+    Attrib mulch    -3.863664420419446
+    Attrib qxmsq    -1.0412317556912536
+    Attrib r2ar8    0.0887927498586214
+    Attrib reskd    0.12672166435249735
+    Attrib reskr    -0.9463915449512129
+    Attrib rimmx    -21.565855632077497
+    Attrib rkxwp    -0.26596747644466207
+    Attrib rxmsq    -0.6324946861829855
+    Attrib simpl    0.621203728021646
+    Attrib skach    0.5181604780085614
+    Attrib skewr    0.08134065953498888
+    Attrib skrxp    -2.6817339954239614
+    Attrib spcop    0.020026717274659322
+    Attrib stlmt    2.1734522262911242
+    Attrib thrsk    3.281483746741717
+    Attrib wkcti    0.04287563485083151
+    Attrib wkna8    0.6484189819391569
+    Attrib wknck    -8.712507014733765
+    Attrib wkovl    -4.038454265120086
+    Attrib wkpos    0.14210838031025927
+    Attrib wtoeg    0.23580700088267753
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -4.147622075223861
+    Attrib bkblk    -0.7129365543623978
+    Attrib bknwy    -0.2901961281772145
+    Attrib bkon8    -0.4829473953995382
+    Attrib bkona    -0.8884923061012103
+    Attrib bkspr    0.7670021788606521
+    Attrib bkxbq    -1.0512692531106445
+    Attrib bkxcr    2.828396653432738
+    Attrib bkxwp    -1.6594962968616151
+    Attrib blxwp    1.4045677873633506
+    Attrib bxqsq    1.1009022070177
+    Attrib cntxt    -0.7374456393648441
+    Attrib dsopp    0.6656682337461212
+    Attrib dwipd    0.15109982081960416
+    Attrib hdchk    -3.814503902512661
+    Attrib katri    -0.4223276113165166
+    Attrib mulch    2.8860501566455836
+    Attrib qxmsq    -0.44071485827258483
+    Attrib r2ar8    1.6363315947929473
+    Attrib reskd    0.5071015565549795
+    Attrib reskr    -1.5047762319786913
+    Attrib rimmx    -2.563786249760937
+    Attrib rkxwp    1.7474359332279192
+    Attrib rxmsq    -0.3444429465368597
+    Attrib simpl    0.16341030113904276
+    Attrib skach    -1.123548949589342
+    Attrib skewr    0.10053672123502728
+    Attrib skrxp    0.7292278718285595
+    Attrib spcop    0.03336948341844377
+    Attrib stlmt    -3.7873398179566724
+    Attrib thrsk    -0.5973756121751244
+    Attrib wkcti    1.2540262336657215
+    Attrib wkna8    -1.2248432545125671
+    Attrib wknck    -1.7521569087764977
+    Attrib wkovl    1.6126023676133636
+    Attrib wkpos    -0.6669231776669134
+    Attrib wtoeg    0.21200627979696007
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -0.619576213437852
+    Attrib bkblk    1.1712960486129558
+    Attrib bknwy    -0.3823208877357834
+    Attrib bkon8    -0.047828692679859806
+    Attrib bkona    0.8607918855485998
+    Attrib bkspr    0.18020669190858626
+    Attrib bkxbq    -0.07945280013305898
+    Attrib bkxcr    -0.1427110825675044
+    Attrib bkxwp    -0.08965548293728166
+    Attrib blxwp    -0.6424196300033401
+    Attrib bxqsq    1.0536889696961833
+    Attrib cntxt    -0.9343032517324842
+    Attrib dsopp    0.10951723259758236
+    Attrib dwipd    -0.22360835553986197
+    Attrib hdchk    -1.3738280696204082
+    Attrib katri    1.6539351369821271
+    Attrib mulch    -0.507117297041887
+    Attrib qxmsq    -0.4206158884337265
+    Attrib r2ar8    1.080581860720608
+    Attrib reskd    1.5202317421950429
+    Attrib reskr    -1.1214046530009878
+    Attrib rimmx    -0.9495798621222936
+    Attrib rkxwp    -0.32783852515394374
+    Attrib rxmsq    0.2748623580494932
+    Attrib simpl    0.11773849630720391
+    Attrib skach    -0.36011424148882437
+    Attrib skewr    -0.4082402437244463
+    Attrib skrxp    -0.15370282924934067
+    Attrib spcop    0.0010548181135554974
+    Attrib stlmt    -0.8440743815830688
+    Attrib thrsk    0.3681233305628981
+    Attrib wkcti    -0.5133270216519668
+    Attrib wkna8    -1.3900664707698296
+    Attrib wknck    0.32059453447085506
+    Attrib wkovl    0.602326753468648
+    Attrib wkpos    -0.4651319248199202
+    Attrib wtoeg    0.5742353809898058
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -1.049769426186187
+    Attrib bkblk    -0.2792291762516529
+    Attrib bknwy    -0.6342056171484398
+    Attrib bkon8    -0.969109975369474
+    Attrib bkona    -0.8863863041890123
+    Attrib bkspr    -0.7640657614327149
+    Attrib bkxbq    0.48246764272568515
+    Attrib bkxcr    0.7342000502617455
+    Attrib bkxwp    0.6101865271443454
+    Attrib blxwp    0.52718009030735
+    Attrib bxqsq    -1.39549133193043
+    Attrib cntxt    -0.5396802438913884
+    Attrib dsopp    0.42290377792712613
+    Attrib dwipd    -0.4493880893891854
+    Attrib hdchk    -0.09873805971749286
+    Attrib katri    0.5989477300911976
+    Attrib mulch    -0.7848598005871211
+    Attrib qxmsq    -0.7863505914103609
+    Attrib r2ar8    -0.5324443400898643
+    Attrib reskd    0.8884814981731313
+    Attrib reskr    1.1274811310267951
+    Attrib rimmx    0.8176925671674646
+    Attrib rkxwp    0.9285505148560772
+    Attrib rxmsq    -0.168966933422748
+    Attrib simpl    -0.2660918104273667
+    Attrib skach    -1.3078596384543633
+    Attrib skewr    0.26413098526985845
+    Attrib skrxp    -0.42529387584762396
+    Attrib spcop    0.012348608921387748
+    Attrib stlmt    0.2255864838723034
+    Attrib thrsk    0.2371067341314628
+    Attrib wkcti    -0.4735356359069894
+    Attrib wkna8    -2.323960080021815
+    Attrib wknck    2.480998346801543
+    Attrib wkovl    0.8420150479437974
+    Attrib wkpos    -0.7878448068968996
+    Attrib wtoeg    0.8398469363325134
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -1.7806431521101806
+    Attrib bkblk    0.4870283610333283
+    Attrib bknwy    -0.9549325758100033
+    Attrib bkon8    0.2577601990405763
+    Attrib bkona    -0.3335914770570642
+    Attrib bkspr    -2.4544204146817465
+    Attrib bkxbq    -1.3321322571224445
+    Attrib bkxcr    1.1175399656669138
+    Attrib bkxwp    -0.6420540703482508
+    Attrib blxwp    1.278474206148839
+    Attrib bxqsq    0.5422062167950166
+    Attrib cntxt    1.1728681747433658
+    Attrib dsopp    1.466677867121037
+    Attrib dwipd    1.273281080454468
+    Attrib hdchk    -1.864559284408314
+    Attrib katri    -0.7549893917896554
+    Attrib mulch    0.7218682302807936
+    Attrib qxmsq    -2.6522507858724866
+    Attrib r2ar8    0.7045596619566709
+    Attrib reskd    0.8277724772107261
+    Attrib reskr    -2.355753875303012
+    Attrib rimmx    -0.06699270501347698
+    Attrib rkxwp    -0.23440329200672033
+    Attrib rxmsq    -2.4198360984750438
+    Attrib simpl    2.724512161493
+    Attrib skach    -0.8670385691835963
+    Attrib skewr    0.6627462043720613
+    Attrib skrxp    -2.257344033646977
+    Attrib spcop    0.038075730796711296
+    Attrib stlmt    -0.8539700879362713
+    Attrib thrsk    0.22752592846811853
+    Attrib wkcti    1.0971865268441756
+    Attrib wkna8    -0.9915769987873674
+    Attrib wknck    1.1923176253187158
+    Attrib wkovl    0.7248029693557764
+    Attrib wkpos    1.3938021954361832
+    Attrib wtoeg    0.4087430609959595
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -0.8094705953311062
+    Attrib bkblk    1.124681773243525
+    Attrib bknwy    -0.7033608102139701
+    Attrib bkon8    -0.8843251192080349
+    Attrib bkona    0.856072733929887
+    Attrib bkspr    -0.02040974725435333
+    Attrib bkxbq    -0.522265329765876
+    Attrib bkxcr    0.7463339857555743
+    Attrib bkxwp    0.0015750003084144667
+    Attrib blxwp    0.594082843467546
+    Attrib bxqsq    0.1704504480304839
+    Attrib cntxt    -0.39218968022862344
+    Attrib dsopp    0.7148029050008917
+    Attrib dwipd    0.4032475391048632
+    Attrib hdchk    -0.3019400210973576
+    Attrib katri    -1.0119537516764938
+    Attrib mulch    -0.41679526869686495
+    Attrib qxmsq    -0.3194095428079984
+    Attrib r2ar8    -0.5249223508061297
+    Attrib reskd    0.3259238132487564
+    Attrib reskr    -0.2931344435514911
+    Attrib rimmx    0.11792697820294658
+    Attrib rkxwp    1.0365927512558195
+    Attrib rxmsq    -0.5270735785758315
+    Attrib simpl    -0.02566393161879673
+    Attrib skach    -0.004209191099484352
+    Attrib skewr    0.029489441461032648
+    Attrib skrxp    -0.9578384831478857
+    Attrib spcop    0.04950024262952314
+    Attrib stlmt    0.045145945025409064
+    Attrib thrsk    -0.33181687349907873
+    Attrib wkcti    -0.0741167143604209
+    Attrib wkna8    -1.1678466490274089
+    Attrib wknck    1.0697427684725236
+    Attrib wkovl    -0.45527005559370615
+    Attrib wkpos    -1.7840104875087501
+    Attrib wtoeg    0.38073757089391164
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -1.7382819715792204
+    Attrib bkblk    3.0552668256930695
+    Attrib bknwy    0.6908799466279144
+    Attrib bkon8    -0.9835208420145305
+    Attrib bkona    -0.08961157961973398
+    Attrib bkspr    2.195696803637448
+    Attrib bkxbq    0.8999773521581933
+    Attrib bkxcr    2.2209791302158406
+    Attrib bkxwp    -0.11842611843932817
+    Attrib blxwp    -0.4289447852050338
+    Attrib bxqsq    0.07575697834406983
+    Attrib cntxt    -0.679279237980415
+    Attrib dsopp    0.7133908178606931
+    Attrib dwipd    -0.4834731848451886
+    Attrib hdchk    -1.5284895519841957
+    Attrib katri    0.2744339890805883
+    Attrib mulch    0.6777122302261558
+    Attrib qxmsq    0.03310838384712005
+    Attrib r2ar8    2.7708622009399244
+    Attrib reskd    2.353635819185478
+    Attrib reskr    0.8873403853203597
+    Attrib rimmx    -3.0156704735295228
+    Attrib rkxwp    1.8542381624485327
+    Attrib rxmsq    -2.094615750637262
+    Attrib simpl    0.20720800321162103
+    Attrib skach    -1.0851189078276637
+    Attrib skewr    1.403043435300344
+    Attrib skrxp    0.1824277545582704
+    Attrib spcop    -0.017304349164842504
+    Attrib stlmt    -2.0752008922421794
+    Attrib thrsk    -0.6208202021443594
+    Attrib wkcti    0.08908485021814537
+    Attrib wkna8    -2.1153017780896617
+    Attrib wknck    -0.8861416690027368
+    Attrib wkovl    1.4011053545394807
+    Attrib wkpos    -0.35244644772823547
+    Attrib wtoeg    1.9313689678675618
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -3.7707028962392246
+    Attrib bkblk    -3.5889201185756843
+    Attrib bknwy    -1.2343135263062752
+    Attrib bkon8    -1.4060486856229772
+    Attrib bkona    -0.48803714946865717
+    Attrib bkspr    -1.72632895929452
+    Attrib bkxbq    -2.4892897734679065
+    Attrib bkxcr    3.077976474708232
+    Attrib bkxwp    -1.3288796924302835
+    Attrib blxwp    2.0525473086255848
+    Attrib bxqsq    1.864668050718677
+    Attrib cntxt    3.6392407188465827
+    Attrib dsopp    0.8855491756781865
+    Attrib dwipd    0.4497790063791705
+    Attrib hdchk    -1.4404175355396074
+    Attrib katri    -2.3009695180048633
+    Attrib mulch    0.600471339605048
+    Attrib qxmsq    -2.3521848724860424
+    Attrib r2ar8    0.7387659578422211
+    Attrib reskd    2.089508302570894
+    Attrib reskr    -0.04176778948475836
+    Attrib rimmx    -1.0752378029459266
+    Attrib rkxwp    0.27454963632088497
+    Attrib rxmsq    -0.4524974948415839
+    Attrib simpl    2.384618437435043
+    Attrib skach    -2.503634085464639
+    Attrib skewr    0.33118356046316344
+    Attrib skrxp    -1.5660022347039053
+    Attrib spcop    0.040551440376847867
+    Attrib stlmt    -2.797659035506686
+    Attrib thrsk    -0.6475500670906811
+    Attrib wkcti    -2.0047868958506903
+    Attrib wkna8    -2.2144130913037743
+    Attrib wknck    0.21962523422099325
+    Attrib wkovl    1.5044117107071584
+    Attrib wkpos    0.8687311492946286
+    Attrib wtoeg    0.6515722883614244
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -1.1718821399366979
+    Attrib bkblk    -1.1560523519691595
+    Attrib bknwy    -1.0585622557346868
+    Attrib bkon8    -0.6219655213715635
+    Attrib bkona    1.4095621274971446
+    Attrib bkspr    0.11657098719644814
+    Attrib bkxbq    -1.740884479363962
+    Attrib bkxcr    -1.1900766449181366
+    Attrib bkxwp    -0.2264645261383952
+    Attrib blxwp    -0.058313902473122826
+    Attrib bxqsq    1.92710198777081
+    Attrib cntxt    0.5988943907868625
+    Attrib dsopp    -0.18867598325734486
+    Attrib dwipd    -0.0669979584182509
+    Attrib hdchk    -1.030975162058327
+    Attrib katri    -0.8168705986999677
+    Attrib mulch    -1.1716357265929949
+    Attrib qxmsq    -1.1814091586118447
+    Attrib r2ar8    -0.2215314386720921
+    Attrib reskd    1.00071620536556
+    Attrib reskr    -0.19532793911847626
+    Attrib rimmx    0.1211103103108742
+    Attrib rkxwp    -0.11519489999117634
+    Attrib rxmsq    0.14193700354231056
+    Attrib simpl    0.21727279447629866
+    Attrib skach    -1.381200725937121
+    Attrib skewr    -0.6954616096914212
+    Attrib skrxp    -0.16220431993967296
+    Attrib spcop    -0.03744171000135909
+    Attrib stlmt    -0.496498976967989
+    Attrib thrsk    -0.18711054265997323
+    Attrib wkcti    -0.9453560442162513
+    Attrib wkna8    -0.0386343076692756
+    Attrib wknck    0.866550258950412
+    Attrib wkovl    -0.4457751684764722
+    Attrib wkpos    0.23821584051108344
+    Attrib wtoeg    0.5889545596238672
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    -0.5053022147468281
+    Attrib bkblk    0.9558362380761294
+    Attrib bknwy    -0.4730440282354733
+    Attrib bkon8    -0.10217049187745898
+    Attrib bkona    0.017878454710912352
+    Attrib bkspr    -0.1679610790488102
+    Attrib bkxbq    0.7328846888575633
+    Attrib bkxcr    -0.6084302689702423
+    Attrib bkxwp    -0.5715171686437964
+    Attrib blxwp    0.7174631636448339
+    Attrib bxqsq    -0.14018957504613788
+    Attrib cntxt    -0.18140528751697454
+    Attrib dsopp    0.22748802232709384
+    Attrib dwipd    -0.575551653665911
+    Attrib hdchk    -0.43181724867108373
+    Attrib katri    0.2376793823744384
+    Attrib mulch    -0.29255159833063055
+    Attrib qxmsq    -1.1986251760550066
+    Attrib r2ar8    -0.7127520252294578
+    Attrib reskd    0.6107737720450971
+    Attrib reskr    0.6678704040151525
+    Attrib rimmx    1.4582221042737211
+    Attrib rkxwp    -1.3009340108013994
+    Attrib rxmsq    -0.5706737024102008
+    Attrib simpl    -0.48534090826592907
+    Attrib skach    -0.5380796940741571
+    Attrib skewr    0.370142732468106
+    Attrib skrxp    -0.397229363036812
+    Attrib spcop    0.04933710130105559
+    Attrib stlmt    -0.19011038499595537
+    Attrib thrsk    0.5084604527365468
+    Attrib wkcti    0.255774239411166
+    Attrib wkna8    0.2702570222078262
+    Attrib wknck    0.7986778654229354
+    Attrib wkovl    -0.546930962915214
+    Attrib wkpos    -0.13310296868178995
+    Attrib wtoeg    0.13665359350900902
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    -0.37292074391292573
+    Attrib bkblk    -0.028496504640531946
+    Attrib bknwy    -0.4992385659957619
+    Attrib bkon8    -0.6235486713825459
+    Attrib bkona    0.4910752188789375
+    Attrib bkspr    -0.12151775156847358
+    Attrib bkxbq    -0.13687085605913865
+    Attrib bkxcr    0.40950177075858296
+    Attrib bkxwp    0.12624959808552072
+    Attrib blxwp    0.11009647406718746
+    Attrib bxqsq    -0.5557498830540193
+    Attrib cntxt    0.026286440833673683
+    Attrib dsopp    0.3394224364120688
+    Attrib dwipd    -0.6545798317679961
+    Attrib hdchk    -0.9753460142697693
+    Attrib katri    0.36075968795304975
+    Attrib mulch    0.20059045146039625
+    Attrib qxmsq    -0.1705847640280706
+    Attrib r2ar8    -0.2697685414074465
+    Attrib reskd    0.4520889815764561
+    Attrib reskr    0.3185599767936153
+    Attrib rimmx    -0.5261107584320628
+    Attrib rkxwp    0.20952246310499817
+    Attrib rxmsq    -0.30899834336601273
+    Attrib simpl    -0.7847716686454249
+    Attrib skach    -0.36874335433525085
+    Attrib skewr    0.10326187001599955
+    Attrib skrxp    -0.18521269306355131
+    Attrib spcop    0.03331316749637904
+    Attrib stlmt    -0.6515853288900066
+    Attrib thrsk    -0.16170241886628542
+    Attrib wkcti    -0.19926907489704715
+    Attrib wkna8    -0.1182516154738329
+    Attrib wknck    -0.3202939196926245
+    Attrib wkovl    0.6595952938394162
+    Attrib wkpos    -0.7682563777845097
+    Attrib wtoeg    0.6539530490021859
+Sigmoid Node 18
+    Inputs    Weights
+    Threshold    -0.7959969714345629
+    Attrib bkblk    -0.14403318370527596
+    Attrib bknwy    -0.024939607626498755
+    Attrib bkon8    0.06194105979410283
+    Attrib bkona    -0.06478488370252686
+    Attrib bkspr    0.33715197822860954
+    Attrib bkxbq    -0.0207888096700377
+    Attrib bkxcr    -0.13705714238649927
+    Attrib bkxwp    0.18491169464455695
+    Attrib blxwp    0.0939152113955894
+    Attrib bxqsq    -0.614220748644572
+    Attrib cntxt    -0.02371087243477505
+    Attrib dsopp    -0.0751476958621681
+    Attrib dwipd    -0.2961371220362526
+    Attrib hdchk    -0.45902070342378604
+    Attrib katri    -0.17176788098364
+    Attrib mulch    0.027958111397474728
+    Attrib qxmsq    -0.0504267336953158
+    Attrib r2ar8    0.027447867465932405
+    Attrib reskd    0.8989034440273275
+    Attrib reskr    -0.307364351736069
+    Attrib rimmx    -0.3486928344306663
+    Attrib rkxwp    0.3976035866847934
+    Attrib rxmsq    0.027775151792988714
+    Attrib simpl    -0.17451618396500962
+    Attrib skach    -0.8532836272364145
+    Attrib skewr    -0.09096553021845717
+    Attrib skrxp    -0.3038189266877339
+    Attrib spcop    -0.043804278874430204
+    Attrib stlmt    -0.025356024381963264
+    Attrib thrsk    -0.06398962515990636
+    Attrib wkcti    -0.5961079424334391
+    Attrib wkna8    0.03753521613376994
+    Attrib wknck    -0.00515592399125397
+    Attrib wkovl    0.03266460115917774
+    Attrib wkpos    0.034542628932106044
+    Attrib wtoeg    0.08655322090045438
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 12.39 seconds
+Time taken to test model on training data: 2.48 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9981
+Mean absolute error                      0.0186
+Root mean squared error                  0.0355
+Relative absolute error                  3.7222 %
+Root relative squared error              7.1057 %
+Total Number of Instances             1054     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9459
+Mean absolute error                      0.0442
+Root mean squared error                  0.1626
+Relative absolute error                  8.8364 %
+Root relative squared error             32.4926 %
+Total Number of Instances             1054     
+

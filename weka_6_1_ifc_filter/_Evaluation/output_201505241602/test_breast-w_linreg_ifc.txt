@@ -1,0 +1,61 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation wisconsin-breast-cancer-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R11-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute Clump_Thickness numeric
+@attribute Cell_Size_Uniformity numeric
+@attribute Cell_Shape_Uniformity numeric
+@attribute Marginal_Adhesion numeric
+@attribute Single_Epi_Cell_Size numeric
+@attribute Bare_Nuclei numeric
+@attribute Bland_Chromatin numeric
+@attribute Normal_Nucleoli numeric
+@attribute Mitoses numeric
+@attribute Class=benign numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+Class=benign =
+
+      0.1938 * Clump_Thickness +
+      0.2062 * Cell_Size_Uniformity +
+      0.2006 * Cell_Shape_Uniformity +
+      0.0893 * Single_Epi_Cell_Size +
+      0.3031 * Bare_Nuclei +
+      0.181  * Bland_Chromatin +
+      0.0955 * Normal_Nucleoli +
+      0.1002 * Mitoses +
+     -0.1809
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0.33 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.934 
+Mean absolute error                      0.0869
+Root mean squared error                  0.1727
+Relative absolute error                 19.2281 %
+Root relative squared error             36.3249 %
+Total Number of Instances              699     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9276
+Mean absolute error                      0.091 
+Root mean squared error                  0.1801
+Relative absolute error                 20.1147 %
+Root relative squared error             37.8183 %
+Total Number of Instances              699     
+

@@ -1,0 +1,94 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+wage-increase-first-year <= 4.55 : 
+|   pension=ret_allw,empl_contr <= 0.5 : LM1 (11/0%)
+|   pension=ret_allw,empl_contr >  0.5 : 
+|   |   working-hours <= 36.5 : LM2 (9/0%)
+|   |   working-hours >  36.5 : 
+|   |   |   shift-differential <= 3.5 : LM3 (5/0%)
+|   |   |   shift-differential >  3.5 : 
+|   |   |   |   wage-increase-first-year <= 2.75 : LM4 (5/83.814%)
+|   |   |   |   wage-increase-first-year >  2.75 : LM5 (14/0%)
+wage-increase-first-year >  4.55 : LM6 (13/0%)
+
+LM num: 1
+class = 
+	0.0767 * duration 
+	+ 0.1349 * wage-increase-first-year 
+	- 0.0341 * working-hours 
+	+ 0.3259 * pension=ret_allw,empl_contr 
+	+ 0.0183 * shift-differential 
+	+ 0.7253
+
+LM num: 2
+class = 
+	0.0515 * duration 
+	+ 0.1851 * wage-increase-first-year 
+	- 0.0443 * working-hours 
+	+ 0.236 * pension=ret_allw,empl_contr 
+	+ 0.0225 * shift-differential 
+	+ 1.3402
+
+LM num: 3
+class = 
+	0.1125 * duration 
+	+ 0.2172 * wage-increase-first-year 
+	- 0.0364 * working-hours 
+	+ 0.236 * pension=ret_allw,empl_contr 
+	+ 0.0261 * shift-differential 
+	+ 0.6416
+
+LM num: 4
+class = 
+	0.1156 * duration 
+	+ 0.2331 * wage-increase-first-year 
+	- 0.0364 * working-hours 
+	+ 0.236 * pension=ret_allw,empl_contr 
+	+ 0.023 * shift-differential 
+	+ 0.6352
+
+LM num: 5
+class = 
+	0.1068 * duration 
+	+ 0.2195 * wage-increase-first-year 
+	- 0.0364 * working-hours 
+	+ 0.236 * pension=ret_allw,empl_contr 
+	+ 0.023 * shift-differential 
+	+ 0.7497
+
+LM num: 6
+class = 
+	0.0461 * duration 
+	+ 0.0867 * wage-increase-first-year 
+	- 0.0238 * working-hours 
+	+ 0.2735 * pension=ret_allw,empl_contr 
+	+ 0.0109 * shift-differential 
+	+ 1.0142
+
+Number of Rules : 6
+
+Time taken to build model: 0.17 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8919
+Mean absolute error                      0.1604
+Root mean squared error                  0.2163
+Relative absolute error                 35.2126 %
+Root relative squared error             45.3153 %
+Total Number of Instances               57     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6792
+Mean absolute error                      0.2669
+Root mean squared error                  0.3671
+Relative absolute error                 57.5891 %
+Root relative squared error             75.5358 %
+Total Number of Instances               57     
+

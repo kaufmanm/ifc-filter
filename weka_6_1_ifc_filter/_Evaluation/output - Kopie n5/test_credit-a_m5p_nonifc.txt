@@ -1,0 +1,43 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+LM1 (690/63.942%)
+
+LM num: 1
+class = 
+	0.0758 * A4=t,u,l 
+	+ 0.1067 * A6=m,c,w,e,q,r,cc,x 
+	+ 0.1305 * A6=r,cc,x 
+	+ 0.006 * A8 
+	+ 0.5683 * A9=t 
+	+ 0.1087 * A10=t 
+	+ 0.0072 * A11 
+	- 0.0002 * A14 
+	+ 0 * A15 
+	- 0.045
+
+Number of Rules : 1
+
+Time taken to build model: 0.33 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7689
+Mean absolute error                      0.22  
+Root mean squared error                  0.3178
+Relative absolute error                 44.5475 %
+Root relative squared error             63.9416 %
+Total Number of Instances              690     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7579
+Mean absolute error                      0.1992
+Root mean squared error                  0.325 
+Relative absolute error                 40.2333 %
+Root relative squared error             65.2368 %
+Total Number of Instances              690     
+

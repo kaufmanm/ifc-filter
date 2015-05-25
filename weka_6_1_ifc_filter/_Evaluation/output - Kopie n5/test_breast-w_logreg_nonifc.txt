@@ -1,0 +1,55 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -116.3206;  df=9;  p=      0   
+
+SQL:
+
+1-1/(1+exp(     -0.5313*Clump_Thickness
++     -0.0069*Cell_Size_Uniformity
++     -0.3301*Cell_Shape_Uniformity
++     -0.2393*Marginal_Adhesion
++     -0.0676*Single_Epi_Cell_Size
++     -0.4068*Bare_Nuclei
++     -0.4093*Bland_Chromatin
++     -0.1463*Normal_Nucleoli
++     -0.5488*Mitoses
++     9.6728))
+
+Odds Ratios...
+Variable         O.R.
+       1       0.5879
+       2       0.9931
+       3       0.7189
+       4       0.7872
+       5       0.9347
+       6       0.6658
+       7       0.6641
+       8       0.8639
+       9       0.5776
+
+
+Time taken to build model: 0.05 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9472
+Mean absolute error                      0.0446
+Root mean squared error                  0.1523
+Relative absolute error                  9.8818 %
+Root relative squared error             32.0527 %
+Total Number of Instances              699     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9396
+Mean absolute error                      0.0476
+Root mean squared error                  0.1628
+Relative absolute error                 10.5172 %
+Root relative squared error             34.1973 %
+Total Number of Instances              699     
+

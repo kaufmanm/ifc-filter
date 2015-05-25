@@ -1,0 +1,40 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+LM1 (768/83.559%)
+
+LM num: 1
+class=tested_negative = 
+	-0.0209 * preg 
+	- 0.0057 * plas 
+	+ 0.0024 * pres 
+	- 0.0131 * mass 
+	- 0.1403 * pedi 
+	- 0.0028 * age 
+	+ 1.8363
+
+Number of Rules : 1
+
+Time taken to build model: 0.25 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5494
+Mean absolute error                      0.3326
+Root mean squared error                  0.3983
+Relative absolute error                 73.1929 %
+Root relative squared error             83.5591 %
+Total Number of Instances              768     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5275
+Mean absolute error                      0.3333
+Root mean squared error                  0.4052
+Relative absolute error                 73.2919 %
+Root relative squared error             84.92   %
+Total Number of Instances              768     
+

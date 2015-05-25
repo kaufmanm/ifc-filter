@@ -1,0 +1,61 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation breast-cancer-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R11-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute age numeric
+@attribute menopause numeric
+@attribute tumor-size numeric
+@attribute inv-nodes numeric
+@attribute node-caps numeric
+@attribute deg-malig numeric
+@attribute breast numeric
+@attribute breast-quad numeric
+@attribute irradiat numeric
+@attribute Class=no-recurrence-events numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+LM1 (286/89.753%)
+
+LM num: 1
+Class=no-recurrence-events = 
+	0.6823 * age 
+	+ 0.3753 * tumor-size 
+	+ 0.6331 * inv-nodes 
+	+ 0.6226 * deg-malig 
+	+ 0.6127 * breast-quad 
+	- 0.7996
+
+Number of Rules : 1
+
+Time taken to build model: 0.31 seconds
+Time taken to test model on training data: 0.17 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.4422
+Mean absolute error                      0.339 
+Root mean squared error                  0.4099
+Relative absolute error                 81.1398 %
+Root relative squared error             89.6978 %
+Total Number of Instances              286     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.2305
+Mean absolute error                      0.3783
+Root mean squared error                  0.4537
+Relative absolute error                 90.2317 %
+Root relative squared error             98.9139 %
+Total Number of Instances              286     
+

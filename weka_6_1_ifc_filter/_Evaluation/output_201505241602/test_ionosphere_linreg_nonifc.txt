@@ -1,0 +1,50 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+class=b =
+
+     -0.3606 * a01 +
+     -0.2    * a03 +
+     -0.117  * a04 +
+     -0.142  * a05 +
+     -0.1078 * a06 +
+     -0.127  * a07 +
+     -0.2102 * a08 +
+     -0.162  * a09 +
+      0.1216 * a19 +
+      0.1757 * a22 +
+     -0.1198 * a23 +
+     -0.091  * a25 +
+     -0.1314 * a26 +
+      0.1743 * a27 +
+     -0.0961 * a30 +
+     -0.1002 * a31 +
+      0.1795 * a34 +
+      1.0502
+
+Time taken to build model: 0.08 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7764
+Mean absolute error                      0.2244
+Root mean squared error                  0.3023
+Relative absolute error                 48.7654 %
+Root relative squared error             63.0289 %
+Total Number of Instances              351     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6655
+Mean absolute error                      0.2652
+Root mean squared error                  0.3723
+Relative absolute error                 57.2512 %
+Root relative squared error             77.084  %
+Total Number of Instances              351     
+

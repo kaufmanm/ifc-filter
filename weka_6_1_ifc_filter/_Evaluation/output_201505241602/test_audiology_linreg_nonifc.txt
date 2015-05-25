@@ -1,0 +1,65 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+class=cochlear_age =
+
+      0.544  * age_gt_60=t +
+      0.0651 * air=mild +
+      0.0484 * ar_c=?,normal +
+      0.0484 * ar_c=normal +
+     -0.0675 * ar_u=?,normal +
+      0.2314 * history_dizziness=f +
+      0.3329 * history_nausea=f +
+      0.2974 * history_noise=f +
+     -0.1414 * history_ringing=f +
+     -0.3086 * history_roaring=f +
+      0.3044 * m_m_sn_gt_1k=f +
+      0.2628 * m_m_sn_gt_2k=t +
+      0.3725 * m_s_sn=f +
+      0.6415 * m_s_sn_gt_2k=f +
+      0.4252 * m_s_sn_gt_3k=t +
+      0.5562 * m_s_sn_gt_4k=t +
+      0.1296 * m_sn_gt_2k=t +
+      0.1877 * m_sn_gt_4k=t +
+      0.4796 * mod_s_mixed=f +
+      0.3725 * mod_s_sn_gt_500=f +
+      0.4515 * mod_sn_gt_1k=f +
+      0.1599 * mod_sn_gt_3k=f +
+      0.2126 * mod_sn_gt_500=f +
+      0.2022 * notch_4k=f +
+      0.1303 * o_ar_c=elevated,?,normal +
+      0.0663 * o_ar_c=?,normal +
+      0.0663 * o_ar_c=normal +
+      0.2337 * s_sn_gt_1k=f +
+      0.1398 * speech=normal,poor,?,very_good,good,unmeasured +
+      0.0658 * speech=poor,?,very_good,good,unmeasured +
+      0.2773 * tymp=ad,a +
+     -0.2418 * tymp=a +
+     -4.1124
+
+Time taken to build model: 0.27 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9114
+Mean absolute error                      0.1345
+Root mean squared error                  0.1787
+Relative absolute error                 35.6614 %
+Root relative squared error             41.1589 %
+Total Number of Instances              226     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8146
+Mean absolute error                      0.1909
+Root mean squared error                  0.2572
+Relative absolute error                 50.349  %
+Root relative squared error             58.9122 %
+Total Number of Instances              226     
+

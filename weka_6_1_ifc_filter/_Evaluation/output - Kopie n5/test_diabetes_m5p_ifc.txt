@@ -1,0 +1,61 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation pima_diabetes-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R10-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute preg numeric
+@attribute plas numeric
+@attribute pres numeric
+@attribute skin numeric
+@attribute insu numeric
+@attribute mass numeric
+@attribute pedi numeric
+@attribute age numeric
+@attribute class=tested_negative numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+LM1 (768/79.928%)
+
+LM num: 1
+class=tested_negative = 
+	0.2722 * preg 
+	+ 0.6593 * plas 
+	+ 0.1461 * insu 
+	+ 0.4717 * mass 
+	+ 0.5424 * pedi 
+	+ 0.428 * age 
+	- 0.655
+
+Number of Rules : 1
+
+Time taken to build model: 0.33 seconds
+Time taken to test model on training data: 0.3 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.6149
+Mean absolute error                      0.3037
+Root mean squared error                  0.3773
+Relative absolute error                 66.8294 %
+Root relative squared error             79.1493 %
+Total Number of Instances              768     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5362
+Mean absolute error                      0.3314
+Root mean squared error                  0.4028
+Relative absolute error                 72.8686 %
+Root relative squared error             84.4181 %
+Total Number of Instances              768     
+

@@ -1,0 +1,72 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'Glass-weka.filters.unsupervised.attribute.NominalToBinary-R10-weka.filters.unsupervised.attribute.Remove-R10,12-16-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute RI numeric
+@attribute Na numeric
+@attribute Mg numeric
+@attribute Al numeric
+@attribute Si numeric
+@attribute K numeric
+@attribute Ca numeric
+@attribute Ba numeric
+@attribute Fe numeric
+@attribute 'Type=build wind non-float' numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+RI <= 0.168 : LM1 (50/0%)
+RI >  0.168 : LM2 (164/69.813%)
+
+LM num: 1
+Type=build wind non-float = 
+	0.1547 * RI 
+	+ 0.2036 * Mg 
+	+ 0.1014 * Al 
+	+ 0.1282 * Ca 
+	+ 0.153 * Fe 
+	- 0.2655
+
+LM num: 2
+Type=build wind non-float = 
+	0.54 * RI 
+	+ 0.9326 * Mg 
+	+ 0.5509 * Al 
+	+ 0.6088 * Ca 
+	+ 0.8421 * Fe 
+	- 1.2644
+
+Number of Rules : 2
+
+Time taken to build model: 0.2 seconds
+Time taken to test model on training data: 0.08 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7967
+Mean absolute error                      0.1853
+Root mean squared error                  0.2901
+Relative absolute error                 40.4449 %
+Root relative squared error             60.6213 %
+Total Number of Instances              214     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.3974
+Mean absolute error                      0.3594
+Root mean squared error                  0.443 
+Relative absolute error                 77.9418 %
+Root relative squared error             91.9509 %
+Total Number of Instances              214     
+

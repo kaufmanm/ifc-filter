@@ -1,0 +1,78 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation vote-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R17-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute handicapped-infants numeric
+@attribute water-project-cost-sharing numeric
+@attribute adoption-of-the-budget-resolution numeric
+@attribute physician-fee-freeze numeric
+@attribute el-salvador-aid numeric
+@attribute religious-groups-in-schools numeric
+@attribute anti-satellite-test-ban numeric
+@attribute aid-to-nicaraguan-contras numeric
+@attribute mx-missile numeric
+@attribute immigration numeric
+@attribute synfuels-corporation-cutback numeric
+@attribute education-spending numeric
+@attribute superfund-right-to-sue numeric
+@attribute crime numeric
+@attribute duty-free-exports numeric
+@attribute export-administration-act-south-africa numeric
+@attribute Class numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ -       0.0002 * (normalized) handicapped-infants
+ -       0      * (normalized) water-project-cost-sharing
+ +       0.0005 * (normalized) adoption-of-the-budget-resolution
+ +       0.9982 * (normalized) physician-fee-freeze
+ +       0.0001 * (normalized) el-salvador-aid
+ -       0.0005 * (normalized) religious-groups-in-schools
+ -       0.0001 * (normalized) anti-satellite-test-ban
+ -       0.0004 * (normalized) aid-to-nicaraguan-contras
+ +       0.0009 * (normalized) mx-missile
+ +       0.0006 * (normalized) immigration
+ +       0.0011 * (normalized) synfuels-corporation-cutback
+ +       0.0003 * (normalized) education-spending
+ -       0.0001 * (normalized) superfund-right-to-sue
+ +       0.0004 * (normalized) crime
+ +       0.0002 * (normalized) duty-free-exports
+ -       0.0004 * (normalized) export-administration-act-south-africa
+ +       0.0004
+
+
+
+Number of kernel evaluations: 94389 (99.49% cached)
+
+Time taken to build model: 1.37 seconds
+Time taken to test model on training data: 0.33 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9098
+Mean absolute error                      0.044 
+Root mean squared error                  0.2086
+Relative absolute error                  9.2857 %
+Root relative squared error             42.8502 %
+Total Number of Instances              435     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9098
+Mean absolute error                      0.044 
+Root mean squared error                  0.2087
+Relative absolute error                  9.2563 %
+Root relative squared error             42.7702 %
+Total Number of Instances              435     
+

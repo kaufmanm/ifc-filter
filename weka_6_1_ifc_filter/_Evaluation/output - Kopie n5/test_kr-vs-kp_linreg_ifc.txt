@@ -1,0 +1,98 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation kr-vs-kp-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R38-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z33.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute bkblk numeric
+@attribute bknwy numeric
+@attribute bkon8 numeric
+@attribute bkona numeric
+@attribute bkspr numeric
+@attribute bkxbq numeric
+@attribute bkxcr numeric
+@attribute bkxwp numeric
+@attribute blxwp numeric
+@attribute bxqsq numeric
+@attribute cntxt numeric
+@attribute dsopp numeric
+@attribute dwipd numeric
+@attribute hdchk numeric
+@attribute katri numeric
+@attribute mulch numeric
+@attribute qxmsq numeric
+@attribute r2ar8 numeric
+@attribute reskd numeric
+@attribute reskr numeric
+@attribute rimmx numeric
+@attribute rkxwp numeric
+@attribute rxmsq numeric
+@attribute simpl numeric
+@attribute skach numeric
+@attribute skewr numeric
+@attribute skrxp numeric
+@attribute spcop numeric
+@attribute stlmt numeric
+@attribute thrsk numeric
+@attribute wkcti numeric
+@attribute wkna8 numeric
+@attribute wknck numeric
+@attribute wkovl numeric
+@attribute wkpos numeric
+@attribute wtoeg numeric
+@attribute class=won numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+class=won =
+
+      2.7452 * bkblk +
+      0.3989 * bkon8 +
+     -3.9357 * bkona +
+      0.7715 * bkxbq +
+      0.2134 * bkxwp +
+      0.9983 * bxqsq +
+      0.7483 * cntxt +
+      0.9025 * hdchk +
+      0.5011 * katri +
+      0.3461 * mulch +
+     -0.8742 * qxmsq +
+      1.1076 * rimmx +
+     -0.4244 * rkxwp +
+      0.8506 * rxmsq +
+      0.6026 * stlmt +
+      0.3789 * wkna8 +
+      1.0903 * wknck +
+      1.2232 * wkpos +
+     -3.3154
+
+Time taken to build model: 0.27 seconds
+Time taken to test model on training data: 3.06 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8543
+Mean absolute error                      0.2249
+Root mean squared error                  0.2803
+Relative absolute error                 45.0393 %
+Root relative squared error             56.0938 %
+Total Number of Instances             1054     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8412
+Mean absolute error                      0.2317
+Root mean squared error                  0.2888
+Relative absolute error                 46.3389 %
+Root relative squared error             57.6966 %
+Total Number of Instances             1054     
+

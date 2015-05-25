@@ -1,0 +1,257 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'audiology-weka.filters.unsupervised.attribute.NominalToBinary-R70-weka.filters.unsupervised.attribute.NominalToBinary-R70-weka.filters.unsupervised.attribute.Remove-R70-71,73-93-weka.filters.unsupervised.attribute.AddValues-C4-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C5-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C6-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C8-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C59-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C60-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C64-L\'?\'-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute age_gt_60 numeric
+@attribute air numeric
+@attribute airBoneGap numeric
+@attribute ar_c numeric
+@attribute ar_u numeric
+@attribute bone numeric
+@attribute boneAbnormal numeric
+@attribute bser numeric
+@attribute history_buzzing numeric
+@attribute history_dizziness numeric
+@attribute history_fluctuating numeric
+@attribute history_fullness numeric
+@attribute history_heredity numeric
+@attribute history_nausea numeric
+@attribute history_noise numeric
+@attribute history_recruitment numeric
+@attribute history_ringing numeric
+@attribute history_roaring numeric
+@attribute history_vomiting numeric
+@attribute late_wave_poor numeric
+@attribute m_at_2k numeric
+@attribute m_cond_lt_1k numeric
+@attribute m_gt_1k numeric
+@attribute m_m_gt_2k numeric
+@attribute m_m_sn numeric
+@attribute m_m_sn_gt_1k numeric
+@attribute m_m_sn_gt_2k numeric
+@attribute m_m_sn_gt_500 numeric
+@attribute m_p_sn_gt_2k numeric
+@attribute m_s_gt_500 numeric
+@attribute m_s_sn numeric
+@attribute m_s_sn_gt_1k numeric
+@attribute m_s_sn_gt_2k numeric
+@attribute m_s_sn_gt_3k numeric
+@attribute m_s_sn_gt_4k numeric
+@attribute m_sn_2_3k numeric
+@attribute m_sn_gt_1k numeric
+@attribute m_sn_gt_2k numeric
+@attribute m_sn_gt_3k numeric
+@attribute m_sn_gt_4k numeric
+@attribute m_sn_gt_500 numeric
+@attribute m_sn_gt_6k numeric
+@attribute m_sn_lt_1k numeric
+@attribute m_sn_lt_2k numeric
+@attribute m_sn_lt_3k numeric
+@attribute middle_wave_poor numeric
+@attribute mod_gt_4k numeric
+@attribute mod_mixed numeric
+@attribute mod_s_mixed numeric
+@attribute mod_s_sn_gt_500 numeric
+@attribute mod_sn numeric
+@attribute mod_sn_gt_1k numeric
+@attribute mod_sn_gt_2k numeric
+@attribute mod_sn_gt_3k numeric
+@attribute mod_sn_gt_4k numeric
+@attribute mod_sn_gt_500 numeric
+@attribute notch_4k numeric
+@attribute notch_at_4k numeric
+@attribute o_ar_c numeric
+@attribute o_ar_u numeric
+@attribute s_sn_gt_1k numeric
+@attribute s_sn_gt_2k numeric
+@attribute s_sn_gt_4k numeric
+@attribute speech numeric
+@attribute static_normal numeric
+@attribute tymp numeric
+@attribute viith_nerve_signs numeric
+@attribute wave_V_delayed numeric
+@attribute waveform_ItoV_prolonged numeric
+@attribute class=cochlear_age numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=    0     ;  df=69;  p=      0   
+
+SQL:
+
+1-1/(1+exp(     44.3326*age_gt_60
++     27.953 *air
++     24.5613*airBoneGap
++     17.5392*ar_c
++   -103.5501*ar_u
++     17.8007*bone
++    -53.2635*boneAbnormal
++      1.4481*bser
++    -21.8411*history_buzzing
++     51.3983*history_dizziness
++     -9.0781*history_fluctuating
++    -21.8411*history_fullness
++    -40.9724*history_heredity
++     14.0592*history_nausea
++     70.6756*history_noise
++    -33.1577*history_recruitment
++    -39.1357*history_ringing
++     -2.778 *history_roaring
++     20.0368*history_vomiting
++      1.4481*late_wave_poor
++    -87.8532*m_at_2k
++    -70.1805*m_cond_lt_1k
++   -106.6175*m_gt_1k
++    141.6788*m_m_gt_2k
++     19.4875*m_m_sn
++      2.4347*m_m_sn_gt_1k
++     56.8596*m_m_sn_gt_2k
++     -6.1059*m_m_sn_gt_500
++    -26.5041*m_p_sn_gt_2k
++    -20.1556*m_s_gt_500
++    -10.1952*m_s_sn
++     26.365 *m_s_sn_gt_1k
++     41.4774*m_s_sn_gt_2k
++     55.2554*m_s_sn_gt_3k
++     79.7671*m_s_sn_gt_4k
++      4.4687*m_sn_2_3k
++     57.7006*m_sn_gt_1k
++     57.2362*m_sn_gt_2k
++    -40.0042*m_sn_gt_3k
++     73.0372*m_sn_gt_4k
++    -65.1753*m_sn_gt_500
++     16.585 *m_sn_gt_6k
++     25.0127*m_sn_lt_1k
++     -0.8005*m_sn_lt_2k
++     -0.8005*m_sn_lt_3k
++      1.4481*middle_wave_poor
++    -87.1194*mod_gt_4k
++    -65.1753*mod_mixed
++    -28.8718*mod_s_mixed
++    -18.9238*mod_s_sn_gt_500
++   -109.9019*mod_sn
++     49.4576*mod_sn_gt_1k
++     13.0019*mod_sn_gt_2k
++      8.3396*mod_sn_gt_3k
++    -49.9339*mod_sn_gt_4k
++    -12.535 *mod_sn_gt_500
++     37.2203*notch_4k
++    -21.8429*notch_at_4k
++     51.3413*o_ar_c
++    -28.4883*o_ar_u
++     -3.5676*s_sn_gt_1k
++     75.0299*s_sn_gt_2k
++    -72.6081*s_sn_gt_4k
++     16.0896*speech
++  -2332.2682*static_normal
++     50.346 *tymp
++     -1.33  *viith_nerve_signs
++     57.1418*wave_V_delayed
++    -40.7185*waveform_ItoV_prolonged
++  1158.4366))
+
+Odds Ratios...
+Variable         O.R.
+       1 1.7922787066598134E19
+       2 1.3798608894934656E12
+       3 4.643358464650483E10
+       4 41415477.8662
+       5       0     
+       6 53796541.6877
+       7       0     
+       8       4.2548
+       9       0     
+      10 2.099015272422737E22
+      11       0.0001
+      12       0     
+      13       0     
+      14 1276010.8996
+      15 4.9432012761108324E30
+      16       0     
+      17       0     
+      18       0.0622
+      19 503348160.5572
+      20       4.2548
+      21       0     
+      22       0     
+      23       0     
+      24 3.391029867096437E61
+      25 290600722.8621
+      26      11.412 
+      27 4.941123840169714E24
+      28       0.0022
+      29       0     
+      30       0     
+      31       0     
+      32 2.8195002095848895E11
+      33 1.03132503362120294E18
+      34 9.933558988090581E23
+      35 4.38955055360874E34
+      36      87.2473
+      37 1.1456942033076355E25
+      38 7.200306662154271E24
+      39       0     
+      40 5.244069672145498E31
+      41       0     
+      42 15950499.6313
+      43 7.292472119140425E10
+      44       0.4491
+      45       0.4491
+      46       4.2548
+      47       0     
+      48       0     
+      49       0     
+      50       0     
+      51       0     
+      52 3.014249568149211E21
+      53  443235.7366
+      54    4186.2558
+      55       0     
+      56       0     
+      57 1.46068068439339E16
+      58       0     
+      59 1.9825542459072128E22
+      60       0     
+      61       0.0282
+      62 3.846506066931189E32
+      63       0     
+      64 9719104.5531
+      65       0     
+      66 7.32834857774153E21
+      67       0.2645
+      68 6.551650456133778E24
+      69       0     
+
+
+Time taken to build model: 0.25 seconds
+Time taken to test model on training data: 3.59 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              226     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.751 
+Mean absolute error                      0.103 
+Root mean squared error                  0.3155
+Relative absolute error                 27.1731 %
+Root relative squared error             72.2533 %
+Total Number of Instances              226     
+

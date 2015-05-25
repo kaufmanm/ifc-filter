@@ -1,0 +1,318 @@
+
+Linear Node 0
+    Inputs    Weights
+    Threshold    -1.3323062449493444
+    Node 1    0.3269236567865068
+    Node 2    1.9853608285091529
+    Node 3    1.2467903949001666
+    Node 4    -0.7951132041067371
+    Node 5    -2.2503319750712385
+    Node 6    1.967511681053251
+    Node 7    1.7762826146502757
+    Node 8    1.9806682478975275
+    Node 9    -0.929107880025738
+    Node 10    -1.8786834710376994
+    Node 11    -1.981144891247916
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -1.9584696107088697
+    Attrib age    5.5247305219299525
+    Attrib sex    -1.0142719769250013
+    Attrib cp=typ_angina    3.6956308323883507
+    Attrib cp=asympt    0.9880333992691614
+    Attrib cp=non_anginal    -1.136407541198985
+    Attrib cp=atyp_angina    0.35361240655141124
+    Attrib trestbps    2.74500928136455
+    Attrib chol    0.11988444865393166
+    Attrib fbs    0.4921279170387426
+    Attrib restecg=left_vent_hyper    -0.12530602783661066
+    Attrib restecg=normal    0.31808620801410065
+    Attrib restecg=st_t_wave_abnormality    1.7611295645796543
+    Attrib thalach    -8.508595404818095
+    Attrib exang    3.5149901234542162
+    Attrib oldpeak    -3.5657151235775757
+    Attrib slope=up    0.9849922371434605
+    Attrib slope=flat    -0.8820886010695549
+    Attrib slope=down    1.876697894542275
+    Attrib ca    0.23749430840201782
+    Attrib thal=fixed_defect    1.8080306539736648
+    Attrib thal=normal    -2.871821488183328
+    Attrib thal=reversable_defect    2.98540482089893
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -3.1470781707500937
+    Attrib age    -3.439733340223696
+    Attrib sex    0.1943786766354049
+    Attrib cp=typ_angina    -1.310274574366777
+    Attrib cp=asympt    1.7732203626237413
+    Attrib cp=non_anginal    4.953482893123177
+    Attrib cp=atyp_angina    0.945915420120001
+    Attrib trestbps    0.593615795585798
+    Attrib chol    4.689604478390904
+    Attrib fbs    -3.839598644020344
+    Attrib restecg=left_vent_hyper    1.5395796057531472
+    Attrib restecg=normal    -0.44555110092040484
+    Attrib restecg=st_t_wave_abnormality    2.0536190161323518
+    Attrib thalach    3.614480861143305
+    Attrib exang    2.548692916905626
+    Attrib oldpeak    -4.141848092124716
+    Attrib slope=up    -3.3117314905294437
+    Attrib slope=flat    2.8114001927708254
+    Attrib slope=down    3.6135988976363573
+    Attrib ca    3.2782591667579815
+    Attrib thal=fixed_defect    2.0393162767641226
+    Attrib thal=normal    3.356413051402539
+    Attrib thal=reversable_defect    -2.157865723533235
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -6.781783355758876
+    Attrib age    -2.2998130427707313
+    Attrib sex    -4.957414504183579
+    Attrib cp=typ_angina    6.466227548346308
+    Attrib cp=asympt    -0.048914298553325034
+    Attrib cp=non_anginal    5.9987094800617795
+    Attrib cp=atyp_angina    1.025862596548836
+    Attrib trestbps    -8.756170246284599
+    Attrib chol    -2.8551474063305466
+    Attrib fbs    1.6372107330347427
+    Attrib restecg=left_vent_hyper    1.1988204265985911
+    Attrib restecg=normal    -0.30595170075607897
+    Attrib restecg=st_t_wave_abnormality    5.8600768358405935
+    Attrib thalach    5.7874926599190175
+    Attrib exang    2.878343467381593
+    Attrib oldpeak    -8.870332630761014
+    Attrib slope=up    4.472614344102876
+    Attrib slope=flat    -0.15861560411414394
+    Attrib slope=down    2.350706047557193
+    Attrib ca    -29.262023485201265
+    Attrib thal=fixed_defect    8.900772269965925
+    Attrib thal=normal    1.6776938361663272
+    Attrib thal=reversable_defect    -3.807794884874863
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.8367265617951232
+    Attrib age    -7.293953154387012
+    Attrib sex    6.6091110326453855
+    Attrib cp=typ_angina    -3.021882042180259
+    Attrib cp=asympt    7.086366244299551
+    Attrib cp=non_anginal    -4.885653122029268
+    Attrib cp=atyp_angina    4.339608866811896
+    Attrib trestbps    6.3971922041844165
+    Attrib chol    2.7584211461419796
+    Attrib fbs    -2.7467261897349333
+    Attrib restecg=left_vent_hyper    0.8338176133089709
+    Attrib restecg=normal    -1.1385221327639883
+    Attrib restecg=st_t_wave_abnormality    2.160307412465631
+    Attrib thalach    -5.603750881014519
+    Attrib exang    0.7432610604148795
+    Attrib oldpeak    -2.1606676033278545
+    Attrib slope=up    0.13575484021005108
+    Attrib slope=flat    -3.6419502692929813
+    Attrib slope=down    5.343614603630261
+    Attrib ca    9.641353015817316
+    Attrib thal=fixed_defect    -2.4814463230292336
+    Attrib thal=normal    1.1681161612929785
+    Attrib thal=reversable_defect    3.098523572238107
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -1.509127605770225
+    Attrib age    -2.383092307292582
+    Attrib sex    0.3179823603710701
+    Attrib cp=typ_angina    0.6728554155965569
+    Attrib cp=asympt    -2.221672399279567
+    Attrib cp=non_anginal    2.177801796398684
+    Attrib cp=atyp_angina    2.274037791401208
+    Attrib trestbps    1.033459417492313
+    Attrib chol    2.5476401404421956
+    Attrib fbs    -0.30964513072136973
+    Attrib restecg=left_vent_hyper    0.5353475183732924
+    Attrib restecg=normal    -0.32294995270833954
+    Attrib restecg=st_t_wave_abnormality    1.234017045900466
+    Attrib thalach    -0.48709283159396644
+    Attrib exang    3.2563634400516355
+    Attrib oldpeak    0.31777915443380683
+    Attrib slope=up    -0.9356448979869032
+    Attrib slope=flat    0.4313786048845708
+    Attrib slope=down    1.9717444244534503
+    Attrib ca    0.83530502154472
+    Attrib thal=fixed_defect    2.7175573562567092
+    Attrib thal=normal    -0.6372879035040637
+    Attrib thal=reversable_defect    -0.7135635613211126
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -2.154845744875582
+    Attrib age    -5.806881859344386
+    Attrib sex    0.11471087852315545
+    Attrib cp=typ_angina    2.9282141177959
+    Attrib cp=asympt    -2.3252283334092123
+    Attrib cp=non_anginal    0.6876085649691582
+    Attrib cp=atyp_angina    2.9562136363567566
+    Attrib trestbps    5.366209463777179
+    Attrib chol    1.4396262167318656
+    Attrib fbs    1.7751778708203318
+    Attrib restecg=left_vent_hyper    0.5608623521277125
+    Attrib restecg=normal    -0.9941357751811426
+    Attrib restecg=st_t_wave_abnormality    2.637454426732707
+    Attrib thalach    4.2390868976358975
+    Attrib exang    0.2764156753072596
+    Attrib oldpeak    1.8389119468803243
+    Attrib slope=up    -0.9657605972112062
+    Attrib slope=flat    -1.7889472984648258
+    Attrib slope=down    4.849889202892018
+    Attrib ca    3.421826479086305
+    Attrib thal=fixed_defect    -0.6170557198323025
+    Attrib thal=normal    2.60972999241079
+    Attrib thal=reversable_defect    0.13660346697910306
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -1.8121047344464791
+    Attrib age    4.47859509065786
+    Attrib sex    0.24340577213191716
+    Attrib cp=typ_angina    -2.8573226568486554
+    Attrib cp=asympt    1.5472642834668076
+    Attrib cp=non_anginal    1.7988047799716622
+    Attrib cp=atyp_angina    3.2241739211997666
+    Attrib trestbps    -3.1829466763571617
+    Attrib chol    1.60580768357228
+    Attrib fbs    -1.964036442936188
+    Attrib restecg=left_vent_hyper    -3.924204601787253
+    Attrib restecg=normal    3.588979556943618
+    Attrib restecg=st_t_wave_abnormality    2.189614711332459
+    Attrib thalach    -4.386180107325352
+    Attrib exang    -0.5736128575765373
+    Attrib oldpeak    10.257507296363869
+    Attrib slope=up    2.3753438978778516
+    Attrib slope=flat    -1.8392041814653095
+    Attrib slope=down    1.3117876743674997
+    Attrib ca    9.297561777871273
+    Attrib thal=fixed_defect    1.8053625760121972
+    Attrib thal=normal    4.011473284815134
+    Attrib thal=reversable_defect    -3.896990382384937
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -6.595774360193371
+    Attrib age    22.259165312635783
+    Attrib sex    2.613651913430624
+    Attrib cp=typ_angina    5.957584645183307
+    Attrib cp=asympt    2.307060330167882
+    Attrib cp=non_anginal    2.2705708909345663
+    Attrib cp=atyp_angina    2.5710589860398616
+    Attrib trestbps    -1.7904098357964555
+    Attrib chol    -2.2119335240796336
+    Attrib fbs    -6.399535550446235
+    Attrib restecg=left_vent_hyper    -1.9760698345748324
+    Attrib restecg=normal    4.322066300092986
+    Attrib restecg=st_t_wave_abnormality    4.246080414110387
+    Attrib thalach    -0.10171784923157953
+    Attrib exang    -2.555980605413441
+    Attrib oldpeak    -10.022838504731231
+    Attrib slope=up    -0.2665920516102319
+    Attrib slope=flat    4.260413612334418
+    Attrib slope=down    2.5062048678285547
+    Attrib ca    0.6102642600640625
+    Attrib thal=fixed_defect    7.265875268955678
+    Attrib thal=normal    -4.585502056365306
+    Attrib thal=reversable_defect    3.914995543194658
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -3.1231922976540276
+    Attrib age    0.37805023380306063
+    Attrib sex    -5.996376746654005
+    Attrib cp=typ_angina    5.641350004863234
+    Attrib cp=asympt    -1.105591086082966
+    Attrib cp=non_anginal    0.6968503661502764
+    Attrib cp=atyp_angina    1.0217253182736332
+    Attrib trestbps    0.42718897056408695
+    Attrib chol    0.5194679534643131
+    Attrib fbs    2.5582707413954116
+    Attrib restecg=left_vent_hyper    -2.164748667316784
+    Attrib restecg=normal    1.9309075187130973
+    Attrib restecg=st_t_wave_abnormality    3.30853181096006
+    Attrib thalach    -0.972386849541463
+    Attrib exang    4.329679139640386
+    Attrib oldpeak    2.09340247760723
+    Attrib slope=up    -1.0582175092034285
+    Attrib slope=flat    3.708002316393459
+    Attrib slope=down    0.35065147010835024
+    Attrib ca    -1.837781407868673
+    Attrib thal=fixed_defect    1.738952157688258
+    Attrib thal=normal    -2.127315502127118
+    Attrib thal=reversable_defect    3.438492369789027
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -1.8980518062391607
+    Attrib age    3.594019221286328
+    Attrib sex    -1.4861491938932783
+    Attrib cp=typ_angina    0.6024024984785028
+    Attrib cp=asympt    2.6333235012251137
+    Attrib cp=non_anginal    1.0249892617874525
+    Attrib cp=atyp_angina    -0.35913385460143743
+    Attrib trestbps    -0.8302857761782296
+    Attrib chol    0.3267620856382013
+    Attrib fbs    -7.0345628257359945
+    Attrib restecg=left_vent_hyper    -3.6167842622355826
+    Attrib restecg=normal    3.38359067876096
+    Attrib restecg=st_t_wave_abnormality    2.053599780362236
+    Attrib thalach    -2.4205034456864176
+    Attrib exang    4.3253258557664
+    Attrib oldpeak    -0.720486450298509
+    Attrib slope=up    -2.0995385161645705
+    Attrib slope=flat    1.843146705402099
+    Attrib slope=down    2.1827869590246425
+    Attrib ca    -1.1225182184596885
+    Attrib thal=fixed_defect    5.1820587560669376
+    Attrib thal=normal    -0.6084615007424339
+    Attrib thal=reversable_defect    -2.624233222370025
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -2.312264158460889
+    Attrib age    3.5082261563658705
+    Attrib sex    2.7655101903862755
+    Attrib cp=typ_angina    -3.206683356658294
+    Attrib cp=asympt    -2.6132635767946013
+    Attrib cp=non_anginal    5.021714071996528
+    Attrib cp=atyp_angina    5.442544637421825
+    Attrib trestbps    4.015844909989113
+    Attrib chol    -0.22855889013083133
+    Attrib fbs    -0.5365514336894354
+    Attrib restecg=left_vent_hyper    1.9632360702475387
+    Attrib restecg=normal    -1.0134721550887826
+    Attrib restecg=st_t_wave_abnormality    1.2841843436549298
+    Attrib thalach    -0.9924071787284577
+    Attrib exang    0.5497327023152216
+    Attrib oldpeak    7.36335847408185
+    Attrib slope=up    -1.3289615813815985
+    Attrib slope=flat    -0.2131935101763482
+    Attrib slope=down    3.8774894815551755
+    Attrib ca    -1.4483445887497601
+    Attrib thal=fixed_defect    2.3181257901725423
+    Attrib thal=normal    0.747895772951846
+    Attrib thal=reversable_defect    -0.7783207705557191
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 1.39 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9078
+Mean absolute error                      0.4187
+Root mean squared error                  0.453 
+Relative absolute error                 84.4039 %
+Root relative squared error             90.9709 %
+Total Number of Instances              303     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4498
+Mean absolute error                      0.4075
+Root mean squared error                  0.5877
+Relative absolute error                 82.0122 %
+Root relative squared error            117.7985 %
+Total Number of Instances              303     
+

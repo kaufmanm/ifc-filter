@@ -1,0 +1,43 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+LM1 (270/68.06%)
+
+LM num: 1
+class=absent = 
+	-0.1418 * sex 
+	- 0.099 * chest 
+	- 0.0018 * resting_blood_pressure 
+	- 0.0448 * resting_electrocardiographic_results 
+	+ 0.0027 * maximum_heart_rate_achieved 
+	- 0.1235 * exercise_induced_angina 
+	- 0.0582 * oldpeak 
+	- 0.126 * number_of_major_vessels 
+	- 0.0617 * thal 
+	+ 1.328
+
+Number of Rules : 1
+
+Time taken to build model: 0.2 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7327
+Mean absolute error                      0.2629
+Root mean squared error                  0.3382
+Relative absolute error                 53.2337 %
+Root relative squared error             68.0598 %
+Total Number of Instances              270     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6473
+Mean absolute error                      0.2851
+Root mean squared error                  0.3822
+Relative absolute error                 57.4847 %
+Root relative squared error             76.5858 %
+Total Number of Instances              270     
+

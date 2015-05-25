@@ -1,0 +1,122 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'anneal-weka.filters.unsupervised.attribute.NominalToBinary-A-R39-weka.filters.unsupervised.attribute.Remove-R39,41-44-weka.filters.unsupervised.instance.Resample-S1-Z77.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute family numeric
+@attribute product-type numeric
+@attribute steel numeric
+@attribute carbon numeric
+@attribute hardness numeric
+@attribute temper_rolling numeric
+@attribute condition numeric
+@attribute formability numeric
+@attribute strength numeric
+@attribute non-ageing numeric
+@attribute surface-finish numeric
+@attribute surface-quality numeric
+@attribute enamelability numeric
+@attribute bc numeric
+@attribute bf numeric
+@attribute bt numeric
+@attribute bw/me numeric
+@attribute bl numeric
+@attribute m numeric
+@attribute chrom numeric
+@attribute phos numeric
+@attribute cbond numeric
+@attribute marvi numeric
+@attribute exptl numeric
+@attribute ferro numeric
+@attribute corr numeric
+@attribute blue/bright/varn/clean numeric
+@attribute lustre numeric
+@attribute jurofm numeric
+@attribute s numeric
+@attribute p numeric
+@attribute shape numeric
+@attribute thick numeric
+@attribute width numeric
+@attribute len numeric
+@attribute oil numeric
+@attribute bore numeric
+@attribute packing numeric
+@attribute class=2 numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ -       0.1929 * (normalized) family
+ +       0      * (normalized) product-type
+ +       0.0013 * (normalized) steel
+ +       0.3593 * (normalized) carbon
+ -       0.0577 * (normalized) hardness
+ +       0.1317 * (normalized) temper_rolling
+ +       0.1956 * (normalized) condition
+ +       0.1916 * (normalized) formability
+ +       0.1973 * (normalized) strength
+ +       0.024  * (normalized) non-ageing
+ +       0.5289 * (normalized) surface-finish
+ +       0.481  * (normalized) surface-quality
+ +       0.9981 * (normalized) enamelability
+ -       0      * (normalized) bc
+ -       0.0006 * (normalized) bf
+ -       0      * (normalized) bt
+ +       0.0012 * (normalized) bw/me
+ -       0      * (normalized) bl
+ +       0      * (normalized) m
+ +       0.6097 * (normalized) chrom
+ +       0.3134 * (normalized) phos
+ -       0.0001 * (normalized) cbond
+ +       0      * (normalized) marvi
+ +       0.4658 * (normalized) exptl
+ +       0.6106 * (normalized) ferro
+ +       0      * (normalized) corr
+ +       0.0003 * (normalized) blue/bright/varn/clean
+ +       0.0007 * (normalized) lustre
+ +       0      * (normalized) jurofm
+ +       0      * (normalized) s
+ +       0      * (normalized) p
+ +       0.0008 * (normalized) shape
+ +       0.0009 * (normalized) thick
+ +       0.0074 * (normalized) width
+ +       0.0005 * (normalized) len
+ +       0.0007 * (normalized) oil
+ -       0.0005 * (normalized) bore
+ +       0.0009 * (normalized) packing
+ -       3.2027
+
+
+
+Number of kernel evaluations: 238687 (99.178% cached)
+
+Time taken to build model: 3.68 seconds
+Time taken to test model on training data: 2.67 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8301
+Mean absolute error                      0.073 
+Root mean squared error                  0.1887
+Relative absolute error                 37.2625 %
+Root relative squared error             60.3228 %
+Total Number of Instances              691     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8005
+Mean absolute error                      0.0774
+Root mean squared error                  0.1935
+Relative absolute error                 39.5109 %
+Root relative squared error             61.756  %
+Total Number of Instances              691     
+

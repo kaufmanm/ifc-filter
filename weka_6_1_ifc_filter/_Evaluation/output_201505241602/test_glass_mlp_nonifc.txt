@@ -1,0 +1,97 @@
+
+Linear Node 0
+    Inputs    Weights
+    Threshold    0.49383721178759077
+    Node 1    -3.164814439496274
+    Node 2    -1.4981213814072343
+    Node 3    -2.3582032194260134
+    Node 4    2.0119543883173603
+    Node 5    -2.1008101738026848
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -4.547001426536228
+    Attrib RI    -5.847156896990382
+    Attrib Na    -2.260319549232097
+    Attrib Mg    6.448088364376414
+    Attrib Al    6.973116527068105
+    Attrib Si    5.777341137497075
+    Attrib K    3.0399684742541635
+    Attrib Ca    -3.9424610937192752
+    Attrib Ba    3.758744477133261
+    Attrib Fe    5.90943966378273
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -4.241802994866805
+    Attrib RI    11.260924044612722
+    Attrib Na    5.986749000501035
+    Attrib Mg    0.6425169475716315
+    Attrib Al    -14.089641514618705
+    Attrib Si    5.659650050347903
+    Attrib K    -8.192076888066746
+    Attrib Ca    19.296914824249388
+    Attrib Ba    -1.3090263420913602
+    Attrib Fe    -7.156053955157723
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -5.889285958051314
+    Attrib RI    -2.852192825068554
+    Attrib Na    0.3638096330859346
+    Attrib Mg    1.1964415894891949
+    Attrib Al    8.764417522765312
+    Attrib Si    13.018587155291637
+    Attrib K    2.408629876797469
+    Attrib Ca    -2.829908263229581
+    Attrib Ba    -4.01630801304213
+    Attrib Fe    6.308871889530953
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.347835053979146
+    Attrib RI    13.320681530443569
+    Attrib Na    6.037653634285643
+    Attrib Mg    -6.936726785148742
+    Attrib Al    3.0683366945658714
+    Attrib Si    -12.73937789989579
+    Attrib K    -0.34470236099946955
+    Attrib Ca    5.9050012741666675
+    Attrib Ba    2.4504850181049367
+    Attrib Fe    -2.188109132767192
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -2.1179081832297553
+    Attrib RI    -2.1176044291641443
+    Attrib Na    5.961791738051822
+    Attrib Mg    -9.614195560991776
+    Attrib Al    1.5855160987927188
+    Attrib Si    -9.084639583246085
+    Attrib K    12.487596164762344
+    Attrib Ca    -0.7539498249899802
+    Attrib Ba    2.1378201604945857
+    Attrib Fe    -7.275403132374712
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 0.31 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.6675
+Mean absolute error                      0.2613
+Root mean squared error                  0.3746
+Relative absolute error                 57.041  %
+Root relative squared error             78.2767 %
+Total Number of Instances              214     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.3017
+Mean absolute error                      0.4236
+Root mean squared error                  0.5429
+Relative absolute error                 91.8665 %
+Root relative squared error            112.6872 %
+Total Number of Instances              214     
+

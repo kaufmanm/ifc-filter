@@ -1,0 +1,155 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'soybean-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R36-49,51-54-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z55.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute date numeric
+@attribute plant-stand numeric
+@attribute precip numeric
+@attribute temp numeric
+@attribute hail numeric
+@attribute crop-hist numeric
+@attribute area-damaged numeric
+@attribute severity numeric
+@attribute seed-tmt numeric
+@attribute germination numeric
+@attribute plant-growth numeric
+@attribute leaves numeric
+@attribute leafspots-halo numeric
+@attribute leafspots-marg numeric
+@attribute leafspot-size numeric
+@attribute leaf-shread numeric
+@attribute leaf-malf numeric
+@attribute leaf-mild numeric
+@attribute stem numeric
+@attribute lodging numeric
+@attribute stem-cankers numeric
+@attribute canker-lesion numeric
+@attribute fruiting-bodies numeric
+@attribute external-decay numeric
+@attribute mycelium numeric
+@attribute int-discolor numeric
+@attribute sclerotia numeric
+@attribute fruit-pods numeric
+@attribute fruit-spots numeric
+@attribute seed numeric
+@attribute mold-growth numeric
+@attribute seed-discolor numeric
+@attribute seed-size numeric
+@attribute shriveling numeric
+@attribute roots numeric
+@attribute class=frog-eye-leaf-spot numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=  -39.5725;  df=35;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      6.2939*date
++      5.7396*plant-stand
++      0.8318*precip
++    -32.1965*temp
++     -3.2369*hail
++      4.5132*crop-hist
++      3.2088*area-damaged
++      2.849 *severity
++     11.4029*seed-tmt
++      1.2938*germination
++    -11.0905*plant-growth
++    -32.2854*leaves
++     30.4466*leafspots-halo
++     37.0625*leafspots-marg
++     24.1498*leafspot-size
++     35.4733*leaf-shread
++     39.8819*leaf-malf
++     14.0075*leaf-mild
++   -128.3223*stem
++    -96.7997*lodging
++     17.4744*stem-cankers
++     26.4137*canker-lesion
++     47.333 *fruiting-bodies
++     52.5768*external-decay
++     55.6686*mycelium
++     71.3959*int-discolor
++   -137.0905*sclerotia
++      4.4997*fruit-pods
++     -8.1769*fruit-spots
++    -12.398 *seed
++     55.6768*mold-growth
++     53.0645*seed-discolor
++     12.6439*seed-size
++   -170.902 *shriveling
++     37.9895*roots
++   -22.2634))
+
+Odds Ratios...
+Variable         O.R.
+       1     541.2629
+       2     310.9496
+       3       2.2974
+       4       0     
+       5       0.0393
+       6      91.2159
+       7      24.7483
+       8      17.271 
+       9   89581.3184
+      10       3.6467
+      11       0     
+      12       0     
+      13 1.6703557085364363E13
+      14 1.2474692627917406E16
+      15 3.076832386298314E10
+      16 2.54602595706326E15
+      17 2.09161791786135168E17
+      18 1211606.2782
+      19       0     
+      20       0     
+      21 38816326.914
+      22 2.9603185709661005E11
+      23 3.6013720089343505E20
+      24 6.820424858166492E22
+      25 1.5015830958475187E24
+      26 1.0158845042162823E31
+      27       0     
+      28      89.9884
+      29       0.0003
+      30       0     
+      31 1.5140333949280418E24
+      32 1.1107037781184863E23
+      33  309860.9734
+      34       0     
+      35 3.152165621251562E16
+
+
+Time taken to build model: 0.13 seconds
+Time taken to test model on training data: 1.53 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9178
+Mean absolute error                      0.0349
+Root mean squared error                  0.1338
+Relative absolute error                 15.3673 %
+Root relative squared error             39.702  %
+Total Number of Instances              375     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7654
+Mean absolute error                      0.0627
+Root mean squared error                  0.2232
+Relative absolute error                 27.5165 %
+Root relative squared error             66.0446 %
+Total Number of Instances              375     
+

@@ -1,0 +1,264 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation heart-statlog-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R15-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute age numeric
+@attribute sex numeric
+@attribute chest numeric
+@attribute resting_blood_pressure numeric
+@attribute serum_cholestoral numeric
+@attribute fasting_blood_sugar numeric
+@attribute resting_electrocardiographic_results numeric
+@attribute maximum_heart_rate_achieved numeric
+@attribute exercise_induced_angina numeric
+@attribute oldpeak numeric
+@attribute slope numeric
+@attribute number_of_major_vessels numeric
+@attribute thal numeric
+@attribute class=absent numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+thal <= 0.559 : 
+|   number_of_major_vessels <= 0.501 : LM1 (65/53.305%)
+|   number_of_major_vessels >  0.501 : LM2 (53/72.579%)
+thal >  0.559 : 
+|   maximum_heart_rate_achieved <= 0.714 : 
+|   |   chest <= 0.725 : 
+|   |   |   number_of_major_vessels <= 0.501 : 
+|   |   |   |   serum_cholestoral <= 0.427 : LM3 (9/0%)
+|   |   |   |   serum_cholestoral >  0.427 : 
+|   |   |   |   |   age <= 0.379 : LM4 (5/0%)
+|   |   |   |   |   age >  0.379 : 
+|   |   |   |   |   |   sex <= 0.564 : LM5 (6/0%)
+|   |   |   |   |   |   sex >  0.564 : LM6 (4/0%)
+|   |   |   number_of_major_vessels >  0.501 : 
+|   |   |   |   age <= 0.399 : 
+|   |   |   |   |   oldpeak <= 0.445 : 
+|   |   |   |   |   |   resting_electrocardiographic_results <= 0.458 : LM7 (3/0%)
+|   |   |   |   |   |   resting_electrocardiographic_results >  0.458 : LM8 (2/0%)
+|   |   |   |   |   oldpeak >  0.445 : LM9 (5/0%)
+|   |   |   |   age >  0.399 : LM10 (15/0%)
+|   |   chest >  0.725 : 
+|   |   |   age <= 0.566 : LM11 (31/72.053%)
+|   |   |   age >  0.566 : LM12 (25/0%)
+|   maximum_heart_rate_achieved >  0.714 : LM13 (47/29.041%)
+
+LM num: 1
+class=absent = 
+	0.0311 * age 
+	+ 0.0502 * sex 
+	+ 0.1273 * chest 
+	+ 0.1896 * serum_cholestoral 
+	+ 0.6778 * resting_electrocardiographic_results 
+	+ 0.0207 * maximum_heart_rate_achieved 
+	+ 0.0759 * exercise_induced_angina 
+	+ 0.3221 * oldpeak 
+	+ 0.1298 * number_of_major_vessels 
+	+ 0.0434 * thal 
+	- 0.6184
+
+LM num: 2
+class=absent = 
+	0.0311 * age 
+	+ 0.0502 * sex 
+	+ 0.5596 * chest 
+	+ 1.2959 * serum_cholestoral 
+	+ 0.0207 * maximum_heart_rate_achieved 
+	+ 0.4941 * exercise_induced_angina 
+	+ 0.441 * oldpeak 
+	+ 0.1437 * number_of_major_vessels 
+	+ 0.0434 * thal 
+	- 1.0637
+
+LM num: 3
+class=absent = 
+	0.6721 * age 
+	+ 0.9968 * sex 
+	+ 0.6369 * chest 
+	+ 0.4792 * serum_cholestoral 
+	+ 1.8091 * fasting_blood_sugar 
+	+ 0.0564 * maximum_heart_rate_achieved 
+	+ 0.0203 * exercise_induced_angina 
+	+ 0.0613 * oldpeak 
+	+ 0.3416 * number_of_major_vessels 
+	+ 0.0346 * thal 
+	- 2.0797
+
+LM num: 4
+class=absent = 
+	0.8258 * age 
+	+ 1.1687 * sex 
+	+ 0.7472 * chest 
+	+ 0.4792 * serum_cholestoral 
+	+ 1.8091 * fasting_blood_sugar 
+	+ 0.0564 * maximum_heart_rate_achieved 
+	+ 0.0203 * exercise_induced_angina 
+	+ 0.0613 * oldpeak 
+	+ 0.3416 * number_of_major_vessels 
+	+ 0.0346 * thal 
+	- 2.2362
+
+LM num: 5
+class=absent = 
+	0.7886 * age 
+	+ 1.235 * sex 
+	+ 0.837 * chest 
+	+ 0.4792 * serum_cholestoral 
+	+ 1.8091 * fasting_blood_sugar 
+	+ 0.0564 * maximum_heart_rate_achieved 
+	+ 0.0203 * exercise_induced_angina 
+	+ 0.0613 * oldpeak 
+	+ 0.3416 * number_of_major_vessels 
+	+ 0.0346 * thal 
+	- 2.2634
+
+LM num: 6
+class=absent = 
+	0.7886 * age 
+	+ 1.2474 * sex 
+	+ 0.7979 * chest 
+	+ 0.4792 * serum_cholestoral 
+	+ 1.8091 * fasting_blood_sugar 
+	+ 0.0564 * maximum_heart_rate_achieved 
+	+ 0.0203 * exercise_induced_angina 
+	+ 0.0613 * oldpeak 
+	+ 0.3416 * number_of_major_vessels 
+	+ 0.0346 * thal 
+	- 2.2421
+
+LM num: 7
+class=absent = 
+	0.905 * age 
+	+ 0.5764 * sex 
+	+ 0.3691 * chest 
+	+ 0.4733 * serum_cholestoral 
+	+ 1.8091 * fasting_blood_sugar 
+	- 0.5445 * resting_electrocardiographic_results 
+	+ 0.0564 * maximum_heart_rate_achieved 
+	+ 0.0203 * exercise_induced_angina 
+	- 0.0645 * oldpeak 
+	+ 0.3382 * number_of_major_vessels 
+	+ 0.0346 * thal 
+	- 1.3977
+
+LM num: 8
+class=absent = 
+	0.905 * age 
+	+ 0.5764 * sex 
+	+ 0.3691 * chest 
+	+ 0.4733 * serum_cholestoral 
+	+ 1.8091 * fasting_blood_sugar 
+	- 0.5559 * resting_electrocardiographic_results 
+	+ 0.0564 * maximum_heart_rate_achieved 
+	+ 0.0203 * exercise_induced_angina 
+	- 0.0645 * oldpeak 
+	+ 0.3382 * number_of_major_vessels 
+	+ 0.0346 * thal 
+	- 1.3976
+
+LM num: 9
+class=absent = 
+	0.905 * age 
+	+ 0.5764 * sex 
+	+ 0.3691 * chest 
+	+ 0.4733 * serum_cholestoral 
+	+ 1.8091 * fasting_blood_sugar 
+	- 0.3515 * resting_electrocardiographic_results 
+	+ 0.0564 * maximum_heart_rate_achieved 
+	+ 0.0203 * exercise_induced_angina 
+	- 0.0645 * oldpeak 
+	+ 0.3382 * number_of_major_vessels 
+	+ 0.0346 * thal 
+	- 1.5132
+
+LM num: 10
+class=absent = 
+	0.8378 * age 
+	+ 0.5764 * sex 
+	+ 0.3691 * chest 
+	+ 0.4733 * serum_cholestoral 
+	+ 1.8091 * fasting_blood_sugar 
+	+ 0.0564 * maximum_heart_rate_achieved 
+	+ 0.0203 * exercise_induced_angina 
+	+ 0.0613 * oldpeak 
+	+ 0.3382 * number_of_major_vessels 
+	+ 0.0346 * thal 
+	- 1.5824
+
+LM num: 11
+class=absent = 
+	0.3612 * age 
+	+ 0.7023 * sex 
+	+ 0.177 * chest 
+	+ 0.2288 * serum_cholestoral 
+	+ 3.1067 * fasting_blood_sugar 
+	+ 0.0564 * maximum_heart_rate_achieved 
+	+ 0.0203 * exercise_induced_angina 
+	+ 0.5493 * oldpeak 
+	+ 0.1932 * number_of_major_vessels 
+	+ 0.0346 * thal 
+	- 2.0661
+
+LM num: 12
+class=absent = 
+	0.3814 * age 
+	+ 0.3709 * sex 
+	+ 0.177 * chest 
+	+ 0.2288 * serum_cholestoral 
+	+ 3.3183 * fasting_blood_sugar 
+	+ 0.0564 * maximum_heart_rate_achieved 
+	+ 0.0203 * exercise_induced_angina 
+	+ 0.1555 * oldpeak 
+	+ 0.1932 * number_of_major_vessels 
+	+ 0.0346 * thal 
+	- 1.6775
+
+LM num: 13
+class=absent = 
+	0.1472 * age 
+	+ 0.177 * sex 
+	+ 0.1238 * chest 
+	+ 0.155 * serum_cholestoral 
+	+ 1.2876 * fasting_blood_sugar 
+	+ 0.0938 * maximum_heart_rate_achieved 
+	+ 0.0203 * exercise_induced_angina 
+	+ 0.0869 * oldpeak 
+	+ 0.1545 * number_of_major_vessels 
+	+ 0.0346 * thal 
+	- 0.2823
+
+Number of Rules : 13
+
+Time taken to build model: 0.23 seconds
+Time taken to test model on training data: 0.14 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8342
+Mean absolute error                      0.183 
+Root mean squared error                  0.2769
+Relative absolute error                 37.0622 %
+Root relative squared error             55.7232 %
+Total Number of Instances              270     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6224
+Mean absolute error                      0.2809
+Root mean squared error                  0.3905
+Relative absolute error                 56.6501 %
+Root relative squared error             78.2374 %
+Total Number of Instances              270     
+

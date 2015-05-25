@@ -1,0 +1,87 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation hypothyroid-weka.filters.unsupervised.instance.Resample-S1-Z33.0-no-replacement-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R31-33-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute age numeric
+@attribute sex numeric
+@attribute 'on thyroxine' numeric
+@attribute 'query on thyroxine' numeric
+@attribute 'on antithyroid medication' numeric
+@attribute sick numeric
+@attribute pregnant numeric
+@attribute 'thyroid surgery' numeric
+@attribute 'I131 treatment' numeric
+@attribute 'query hypothyroid' numeric
+@attribute 'query hyperthyroid' numeric
+@attribute lithium numeric
+@attribute goitre numeric
+@attribute tumor numeric
+@attribute hypopituitary numeric
+@attribute psych numeric
+@attribute 'TSH measured' numeric
+@attribute TSH numeric
+@attribute 'T3 measured' numeric
+@attribute T3 numeric
+@attribute 'TT4 measured' numeric
+@attribute TT4 numeric
+@attribute 'T4U measured' numeric
+@attribute T4U numeric
+@attribute 'FTI measured' numeric
+@attribute FTI numeric
+@attribute 'TBG measured' numeric
+@attribute TBG numeric
+@attribute 'referral source' numeric
+@attribute Class=negative numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+Class=negative =
+
+      0.1648 * age +
+      0.12   * sex +
+      0.3397 * on thyroxine +
+      0.7023 * query on thyroxine +
+      0.159  * on antithyroid medication +
+     15.7318 * thyroid surgery +
+      0.4732 * TSH measured +
+      0.9353 * TSH +
+     -0.2232 * T3 measured +
+      0.103  * T3 +
+     -0.1783 * TT4 measured +
+      0.5697 * T4U measured +
+     -0.4293 * FTI measured +
+      0.0436 * FTI +
+     -8.7298
+
+Time taken to build model: 0.47 seconds
+Time taken to test model on training data: 2.36 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8008
+Mean absolute error                      0.064 
+Root mean squared error                  0.1576
+Relative absolute error                 46.7203 %
+Root relative squared error             60.2166 %
+Total Number of Instances             1244     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6029
+Mean absolute error                      0.0839
+Root mean squared error                  0.2105
+Relative absolute error                 61.2163 %
+Root relative squared error             80.3531 %
+Total Number of Instances             1244     
+

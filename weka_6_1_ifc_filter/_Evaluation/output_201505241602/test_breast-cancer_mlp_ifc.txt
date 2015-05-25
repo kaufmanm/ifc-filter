@@ -1,0 +1,119 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.MultilayerPerceptron 
+
+FilteredClassifier using weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation breast-cancer-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R11-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute age numeric
+@attribute menopause numeric
+@attribute tumor-size numeric
+@attribute inv-nodes numeric
+@attribute node-caps numeric
+@attribute deg-malig numeric
+@attribute breast numeric
+@attribute breast-quad numeric
+@attribute irradiat numeric
+@attribute Class=no-recurrence-events numeric
+
+@data
+
+
+Classifier Model
+Linear Node 0
+    Inputs    Weights
+    Threshold    1.0428495089630136
+    Node 1    -4.10620261637526
+    Node 2    -0.7295323297652618
+    Node 3    -0.6404624851654881
+    Node 4    -1.9063508865358523
+    Node 5    -1.4807858369036544
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -12.723463994123042
+    Attrib age    8.139580818840884
+    Attrib menopause    -3.875945615059696
+    Attrib tumor-size    1.6900616514253595
+    Attrib inv-nodes    -7.480910754435723
+    Attrib node-caps    2.4749620794791
+    Attrib deg-malig    -0.13952308326489507
+    Attrib breast    -7.375165818331165
+    Attrib breast-quad    -10.698442944826247
+    Attrib irradiat    -0.5054327650669319
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -10.242293624773197
+    Attrib age    17.928213452420454
+    Attrib menopause    1.8962028049044801
+    Attrib tumor-size    -12.648254569878361
+    Attrib inv-nodes    -9.370827827063351
+    Attrib node-caps    4.437628292426578
+    Attrib deg-malig    -13.340923731801874
+    Attrib breast    -6.176768006762188
+    Attrib breast-quad    0.12176834622702885
+    Attrib irradiat    -10.16121005438521
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -17.48648623885715
+    Attrib age    -6.731056716136304
+    Attrib menopause    -6.104003376860766
+    Attrib tumor-size    -0.8355314377691666
+    Attrib inv-nodes    -7.278996421694137
+    Attrib node-caps    -4.213993002945074
+    Attrib deg-malig    -5.655185455164095
+    Attrib breast    -0.6269254341298852
+    Attrib breast-quad    -4.544661123967108
+    Attrib irradiat    8.9228901393208
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -13.81671679060561
+    Attrib age    -2.2485696856355215
+    Attrib menopause    3.844023475269849
+    Attrib tumor-size    -1.0682457607021012
+    Attrib inv-nodes    -8.170673117745691
+    Attrib node-caps    4.374562653735351
+    Attrib deg-malig    -1.5127208205601488
+    Attrib breast    4.003298445659627
+    Attrib breast-quad    2.3302381300923862
+    Attrib irradiat    3.861983398023438
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -10.251441382584147
+    Attrib age    1.717880270526209
+    Attrib menopause    3.3936899209665428
+    Attrib tumor-size    5.623209173982713
+    Attrib inv-nodes    -2.087317845093573
+    Attrib node-caps    -2.0118928269863217
+    Attrib deg-malig    -6.390934172701363
+    Attrib breast    2.579414823925936
+    Attrib breast-quad    -5.875047332553656
+    Attrib irradiat    -1.163437629249999
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 0.55 seconds
+Time taken to test model on training data: 0.13 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5702
+Mean absolute error                      0.2352
+Root mean squared error                  0.4332
+Relative absolute error                 56.3052 %
+Root relative squared error             94.777  %
+Total Number of Instances              286     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.1615
+Mean absolute error                      0.4381
+Root mean squared error                  0.5278
+Relative absolute error                104.5122 %
+Root relative squared error            115.0721 %
+Total Number of Instances              286     
+

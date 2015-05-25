@@ -1,0 +1,74 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation pima_diabetes-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R10-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute preg numeric
+@attribute plas numeric
+@attribute pres numeric
+@attribute skin numeric
+@attribute insu numeric
+@attribute mass numeric
+@attribute pedi numeric
+@attribute age numeric
+@attribute class=tested_negative numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -663.0523;  df=8;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      1.9281*preg
++      4.1098*plas
++     -0.2544*pres
++      0.9077*skin
++      0.0733*insu
++      3.6552*mass
++      3.8735*pedi
++      3.0277*age
++    -7.9625))
+
+Odds Ratios...
+Variable         O.R.
+       1       6.8762
+       2      60.9373
+       3       0.7754
+       4       2.4785
+       5       1.076 
+       6      38.675 
+       7      48.1086
+       8      20.6494
+
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0.3 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.6196
+Mean absolute error                      0.2796
+Root mean squared error                  0.3741
+Relative absolute error                 61.5302 %
+Root relative squared error             78.4955 %
+Total Number of Instances              768     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5256
+Mean absolute error                      0.3122
+Root mean squared error                  0.4067
+Relative absolute error                 68.6424 %
+Root relative squared error             85.2436 %
+Total Number of Instances              768     
+

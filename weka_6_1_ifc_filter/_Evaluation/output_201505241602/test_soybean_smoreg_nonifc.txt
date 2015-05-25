@@ -1,0 +1,117 @@
+
+SMOreg
+
+weights (not support vectors):
+ -       0.0001 * (normalized) date=april
+ -       0.0004 * (normalized) date=may
+ -       0.0001 * (normalized) date=june
+ +       0.0003 * (normalized) date=july
+ +       0.0004 * (normalized) date=august
+ +       0.0001 * (normalized) date=september
+ -       0.0003 * (normalized) date=october
+ -       0.0006 * (normalized) plant-stand
+ -       0.0005 * (normalized) precip=lt-norm
+ +       0.0001 * (normalized) precip=norm
+ +       0.0004 * (normalized) precip=gt-norm
+ +       0.0004 * (normalized) temp=lt-norm
+ -       0.0001 * (normalized) temp=norm
+ -       0.0003 * (normalized) temp=gt-norm
+ -       0.0004 * (normalized) hail
+ +       0.0002 * (normalized) crop-hist=diff-lst-year
+ -       0.0001 * (normalized) crop-hist=same-lst-yr
+ -       0.0001 * (normalized) crop-hist=same-lst-two-yrs
+ -       0      * (normalized) crop-hist=same-lst-sev-yrs
+ +       0      * (normalized) area-damaged=scattered
+ -       0.0005 * (normalized) area-damaged=low-areas
+ +       0.0002 * (normalized) area-damaged=upper-areas
+ +       0.0003 * (normalized) area-damaged=whole-field
+ +       0.0003 * (normalized) severity=minor
+ +       0.0001 * (normalized) severity=pot-severe
+ -       0.0005 * (normalized) severity=severe
+ -       0.0003 * (normalized) seed-tmt=none
+ +       0.0002 * (normalized) seed-tmt=fungicide
+ +       0.0001 * (normalized) seed-tmt=other
+ +       0      * (normalized) germination=90-100
+ +       0      * (normalized) germination=80-89
+ -       0      * (normalized) germination=lt-80
+ -       0.0008 * (normalized) plant-growth
+ -       0.0009 * (normalized) leaves
+ -       0.0003 * (normalized) leafspots-halo=absent
+ +       0.0011 * (normalized) leafspots-halo=yellow-halos
+ -       0.0009 * (normalized) leafspots-halo=no-yellow-halos
+ +       0      * (normalized) leafspots-marg=w-s-marg
+ +       0.0002 * (normalized) leafspots-marg=no-w-s-marg
+ -       0.0003 * (normalized) leafspots-marg=dna
+ -       0.0008 * (normalized) leafspot-size=lt-1/8
+ +       0.0011 * (normalized) leafspot-size=gt-1/8
+ -       0.0003 * (normalized) leafspot-size=dna
+ -       0.0006 * (normalized) leaf-shread
+ +       0.001  * (normalized) leaf-malf
+ +       0.0005 * (normalized) leaf-mild=absent
+ +       0.001  * (normalized) leaf-mild=upper-surf
+ -       0.0015 * (normalized) leaf-mild=lower-surf
+ -       0.0013 * (normalized) stem
+ -       0.0002 * (normalized) lodging
+ +       0.0006 * (normalized) stem-cankers=absent
+ -       0.0006 * (normalized) stem-cankers=below-soil
+ -       0.0004 * (normalized) stem-cankers=above-soil
+ +       0.0004 * (normalized) stem-cankers=above-sec-nde
+ -       0.0008 * (normalized) canker-lesion=dna
+ +       0.0003 * (normalized) canker-lesion=brown
+ +       0.0021 * (normalized) canker-lesion=dk-brown-blk
+ -       0.0016 * (normalized) canker-lesion=tan
+ -       0.0007 * (normalized) fruiting-bodies
+ -       0.001  * (normalized) external-decay=absent
+ +       0.0019 * (normalized) external-decay=firm-and-dry
+ -       0.0008 * (normalized) external-decay=watery
+ -       0.0008 * (normalized) mycelium
+ -       0.002  * (normalized) int-discolor=none
+ +       0.0006 * (normalized) int-discolor=brown
+ +       0.0014 * (normalized) int-discolor=black
+ +       0.0014 * (normalized) sclerotia
+ -       0.2492 * (normalized) fruit-pods=norm
+ +       0.7433 * (normalized) fruit-pods=diseased
+ -       0.2456 * (normalized) fruit-pods=few-present
+ -       0.2485 * (normalized) fruit-pods=dna
+ +       0.2482 * (normalized) fruit-spots=absent
+ +       0.2494 * (normalized) fruit-spots=colored
+ -       0.7456 * (normalized) fruit-spots=brown-w/blk-specks
+ +       0      * (normalized) fruit-spots=distort
+ +       0.248  * (normalized) fruit-spots=dna
+ -       0.0012 * (normalized) seed
+ +       0.0008 * (normalized) mold-growth
+ +       0      * (normalized) seed-discolor
+ -       0.0001 * (normalized) seed-size
+ +       0.0013 * (normalized) shriveling
+ +       0.0005 * (normalized) roots=norm
+ +       0.0006 * (normalized) roots=rotted
+ -       0.001  * (normalized) roots=galls-cysts
+ +       0.0047
+
+
+
+Number of kernel evaluations: 70156 (99.912% cached)
+
+Time taken to build model: 4.31 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7248
+Mean absolute error                      0.0592
+Root mean squared error                  0.2414
+Relative absolute error                 26.0577 %
+Root relative squared error             71.6133 %
+Total Number of Instances              375     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7239
+Mean absolute error                      0.0605
+Root mean squared error                  0.2418
+Relative absolute error                 26.554  %
+Root relative squared error             71.5444 %
+Total Number of Instances              375     
+

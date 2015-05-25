@@ -1,0 +1,177 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.MultilayerPerceptron 
+
+FilteredClassifier using weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation cleveland-14-heart-disease-weka.filters.unsupervised.attribute.NominalToBinary-R14-weka.filters.unsupervised.attribute.NominalToBinary-R14-weka.filters.unsupervised.attribute.Remove-R15-18-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute age numeric
+@attribute sex numeric
+@attribute cp numeric
+@attribute trestbps numeric
+@attribute chol numeric
+@attribute fbs numeric
+@attribute restecg numeric
+@attribute thalach numeric
+@attribute exang numeric
+@attribute oldpeak numeric
+@attribute slope numeric
+@attribute ca numeric
+@attribute thal numeric
+@attribute num=<50 numeric
+
+@data
+
+
+Classifier Model
+Linear Node 0
+    Inputs    Weights
+    Threshold    0.03444864789185745
+    Node 1    -1.8704130152952687
+    Node 2    0.6981626881227594
+    Node 3    -1.9090743516013247
+    Node 4    -3.468523902005942
+    Node 5    3.1564887715360848
+    Node 6    -1.8035526434897449
+    Node 7    -1.4932823978850394
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -15.896697487810851
+    Attrib age    -7.261906031178917
+    Attrib sex    -3.5887834444285045
+    Attrib cp    3.608372833973044
+    Attrib trestbps    1.3811571428219076
+    Attrib chol    -5.914592518999037
+    Attrib fbs    0.9568377281680976
+    Attrib restecg    -2.78258365793102
+    Attrib thalach    0.13592961908048187
+    Attrib exang    1.3889964800001853
+    Attrib oldpeak    -3.7152540964682155
+    Attrib slope    1.6387538539221407
+    Attrib ca    -3.0803773841352355
+    Attrib thal    5.127564776716363
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    0.7634985109961786
+    Attrib age    3.652533610307905
+    Attrib sex    6.326585537048548
+    Attrib cp    -0.14183367948165476
+    Attrib trestbps    8.062776345251601
+    Attrib chol    11.976429943432798
+    Attrib fbs    -6.287302866759496
+    Attrib restecg    -3.688689111775213
+    Attrib thalach    6.430940699703727
+    Attrib exang    6.441354233331426
+    Attrib oldpeak    7.111195745630096
+    Attrib slope    0.4137797868660545
+    Attrib ca    4.207250669956703
+    Attrib thal    -0.4305690456270745
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -11.814325494154728
+    Attrib age    7.230992125836923
+    Attrib sex    0.13750456307033512
+    Attrib cp    -1.8258149769376695
+    Attrib trestbps    -0.24543332943163104
+    Attrib chol    -7.124501721196538
+    Attrib fbs    -4.258924648708235
+    Attrib restecg    -0.3432106915306388
+    Attrib thalach    10.569834336596998
+    Attrib exang    -5.159016071440599
+    Attrib oldpeak    2.841370655790049
+    Attrib slope    2.1430135001286854
+    Attrib ca    1.7723949371793037
+    Attrib thal    0.3326529626415856
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -14.762846355771655
+    Attrib age    -3.096101772535209
+    Attrib sex    5.714520265937445
+    Attrib cp    9.226101206620855
+    Attrib trestbps    2.6983653696355328
+    Attrib chol    6.001615347059662
+    Attrib fbs    -1.1046791097935915
+    Attrib restecg    -3.4689174092513455
+    Attrib thalach    0.4596662270425446
+    Attrib exang    -3.468231835887818
+    Attrib oldpeak    -0.926639099601781
+    Attrib slope    -1.2658833552977873
+    Attrib ca    -1.4720090938738222
+    Attrib thal    -0.9743533453517157
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -8.007832554742508
+    Attrib age    0.7650267891607162
+    Attrib sex    3.8854731795213255
+    Attrib cp    0.20981181255568412
+    Attrib trestbps    0.6254112232806525
+    Attrib chol    -0.32931579965236946
+    Attrib fbs    1.354381731059384
+    Attrib restecg    -6.032189692696733
+    Attrib thalach    6.010776602468828
+    Attrib exang    -7.14088587203095
+    Attrib oldpeak    5.754806405675081
+    Attrib slope    2.481371745900881
+    Attrib ca    1.523155393536963
+    Attrib thal    -1.508017058959322
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -10.440594120568015
+    Attrib age    -3.0190386714239956
+    Attrib sex    4.435587966627018
+    Attrib cp    -2.3606505706212744
+    Attrib trestbps    0.43964968267017507
+    Attrib chol    -2.5224226533185545
+    Attrib fbs    2.6271731427655847
+    Attrib restecg    -3.928093683591582
+    Attrib thalach    1.6419479665896648
+    Attrib exang    -3.442781779358277
+    Attrib oldpeak    3.049636154142375
+    Attrib slope    0.9031812461945345
+    Attrib ca    3.9027503479156866
+    Attrib thal    -1.6809851780050271
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -4.94118590689084
+    Attrib age    8.379084941803939
+    Attrib sex    -5.066347518428438
+    Attrib cp    -16.415274392513403
+    Attrib trestbps    -8.661593430156353
+    Attrib chol    2.258066485624751
+    Attrib fbs    -5.452195977481076
+    Attrib restecg    -7.527777251740849
+    Attrib thalach    4.128278515584197
+    Attrib exang    -1.9212479020039044
+    Attrib oldpeak    -1.7226990051052824
+    Attrib slope    -4.067029126272291
+    Attrib ca    -19.14506135606015
+    Attrib thal    -12.465492637801246
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 0.94 seconds
+Time taken to test model on training data: 0.23 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9182
+Mean absolute error                      0.136 
+Root mean squared error                  0.2234
+Relative absolute error                 27.4138 %
+Root relative squared error             44.8567 %
+Total Number of Instances              303     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5229
+Mean absolute error                      0.28  
+Root mean squared error                  0.4511
+Relative absolute error                 56.3566 %
+Root relative squared error             90.4115 %
+Total Number of Instances              303     
+

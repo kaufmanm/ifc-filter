@@ -1,0 +1,58 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation pima_diabetes-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R10-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute preg numeric
+@attribute plas numeric
+@attribute pres numeric
+@attribute skin numeric
+@attribute insu numeric
+@attribute mass numeric
+@attribute pedi numeric
+@attribute age numeric
+@attribute class=tested_negative numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+class=tested_negative =
+
+      0.2722 * preg +
+      0.6593 * plas +
+      0.1461 * insu +
+      0.4717 * mass +
+      0.5424 * pedi +
+      0.428  * age +
+     -0.655 
+
+Time taken to build model: 0.2 seconds
+Time taken to test model on training data: 0.34 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.6149
+Mean absolute error                      0.3037
+Root mean squared error                  0.3773
+Relative absolute error                 66.8294 %
+Root relative squared error             79.1493 %
+Total Number of Instances              768     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5358
+Mean absolute error                      0.3318
+Root mean squared error                  0.4029
+Relative absolute error                 72.9653 %
+Root relative squared error             84.4523 %
+Total Number of Instances              768     
+

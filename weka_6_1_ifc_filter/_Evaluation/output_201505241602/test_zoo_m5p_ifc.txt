@@ -1,0 +1,65 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation zoo-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R19-24-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute animal numeric
+@attribute hair numeric
+@attribute feathers numeric
+@attribute eggs numeric
+@attribute milk numeric
+@attribute airborne numeric
+@attribute aquatic numeric
+@attribute predator numeric
+@attribute toothed numeric
+@attribute backbone numeric
+@attribute breathes numeric
+@attribute venomous numeric
+@attribute fins numeric
+@attribute legs numeric
+@attribute tail numeric
+@attribute domestic numeric
+@attribute catsize numeric
+@attribute type=mammal numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+LM1 (101/0%)
+
+LM num: 1
+type=mammal = 
+	1 * animal 
+	+ 0
+
+Number of Rules : 1
+
+Time taken to build model: 0.22 seconds
+Time taken to test model on training data: 0.11 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              101     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.0749
+Mean absolute error                      0.4766
+Root mean squared error                  0.4902
+Relative absolute error                 98.3518 %
+Root relative squared error             99.3365 %
+Total Number of Instances              101     
+

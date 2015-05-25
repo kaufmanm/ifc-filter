@@ -1,0 +1,41 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+Class=benign =
+
+     -0.0329 * Clump_Thickness +
+     -0.0227 * Cell_Size_Uniformity +
+     -0.0163 * Cell_Shape_Uniformity +
+     -0.0066 * Marginal_Adhesion +
+     -0.0085 * Single_Epi_Cell_Size +
+     -0.0456 * Bare_Nuclei +
+     -0.0204 * Bland_Chromatin +
+     -0.0175 * Normal_Nucleoli +
+      1.2512
+
+Time taken to build model: 0.08 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9147
+Mean absolute error                      0.1263
+Root mean squared error                  0.1921
+Relative absolute error                 27.9559 %
+Root relative squared error             40.4126 %
+Total Number of Instances              699     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9096
+Mean absolute error                      0.1296
+Root mean squared error                  0.1975
+Relative absolute error                 28.6405 %
+Root relative squared error             41.4779 %
+Total Number of Instances              699     
+

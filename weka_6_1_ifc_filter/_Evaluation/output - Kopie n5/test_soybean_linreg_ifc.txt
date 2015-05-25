@@ -1,0 +1,98 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'soybean-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R36-49,51-54-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z55.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute date numeric
+@attribute plant-stand numeric
+@attribute precip numeric
+@attribute temp numeric
+@attribute hail numeric
+@attribute crop-hist numeric
+@attribute area-damaged numeric
+@attribute severity numeric
+@attribute seed-tmt numeric
+@attribute germination numeric
+@attribute plant-growth numeric
+@attribute leaves numeric
+@attribute leafspots-halo numeric
+@attribute leafspots-marg numeric
+@attribute leafspot-size numeric
+@attribute leaf-shread numeric
+@attribute leaf-malf numeric
+@attribute leaf-mild numeric
+@attribute stem numeric
+@attribute lodging numeric
+@attribute stem-cankers numeric
+@attribute canker-lesion numeric
+@attribute fruiting-bodies numeric
+@attribute external-decay numeric
+@attribute mycelium numeric
+@attribute int-discolor numeric
+@attribute sclerotia numeric
+@attribute fruit-pods numeric
+@attribute fruit-spots numeric
+@attribute seed numeric
+@attribute mold-growth numeric
+@attribute seed-discolor numeric
+@attribute seed-size numeric
+@attribute shriveling numeric
+@attribute roots numeric
+@attribute class=frog-eye-leaf-spot numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+class=frog-eye-leaf-spot =
+
+      0.1038 * date +
+      0.2441 * plant-stand +
+     -0.1518 * temp +
+      0.2043 * area-damaged +
+      0.1294 * severity +
+      0.2675 * seed-tmt +
+      0.1802 * germination +
+      0.2573 * leafspot-size +
+      0.2027 * leaf-shread +
+      0.1574 * leaf-mild +
+      0.0779 * stem-cankers +
+      0.3494 * canker-lesion +
+      0.517  * fruiting-bodies +
+      0.401  * external-decay +
+     -0.3499 * sclerotia +
+      0.4295 * fruit-spots +
+      0.3502 * seed +
+     -0.3261 * seed-size +
+      0.2164 * roots +
+     -1.2509
+
+Time taken to build model: 0.11 seconds
+Time taken to test model on training data: 1.22 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8404
+Mean absolute error                      0.097 
+Root mean squared error                  0.1856
+Relative absolute error                 42.6857 %
+Root relative squared error             55.0794 %
+Total Number of Instances              375     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.808 
+Mean absolute error                      0.1054
+Root mean squared error                  0.2007
+Relative absolute error                 46.2591 %
+Root relative squared error             59.3882 %
+Total Number of Instances              375     
+

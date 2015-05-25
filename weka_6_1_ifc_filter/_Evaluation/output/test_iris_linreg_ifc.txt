@@ -1,0 +1,52 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation iris-weka.filters.unsupervised.attribute.NominalToBinary-R5-weka.filters.unsupervised.attribute.Remove-R6-7-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute sepallength numeric
+@attribute sepalwidth numeric
+@attribute petallength numeric
+@attribute petalwidth numeric
+@attribute iris-setosa numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+iris-setosa =
+
+     -0.1029 * sepallength +
+      0.0393 * sepalwidth +
+      0.8529 * petallength +
+      0.2235 * petalwidth +
+     -0.0161
+
+Time taken to build model: 0.17 seconds
+Time taken to test model on training data: 0.09 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9953
+Mean absolute error                      0.0163
+Root mean squared error                  0.0472
+Relative absolute error                  3.6682 %
+Root relative squared error             10.0219 %
+Total Number of Instances              150     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9712
+Mean absolute error                      0.0401
+Root mean squared error                  0.1139
+Relative absolute error                  8.9393 %
+Root relative squared error             23.9258 %
+Total Number of Instances              150     
+

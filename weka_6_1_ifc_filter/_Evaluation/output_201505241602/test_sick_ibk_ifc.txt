@@ -1,0 +1,70 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.lazy.IBk 
+
+FilteredClassifier using weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation sick-weka.filters.unsupervised.instance.Resample-S1-Z22.0-no-replacement-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R31-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute age numeric
+@attribute sex numeric
+@attribute 'on thyroxine' numeric
+@attribute 'query on thyroxine' numeric
+@attribute 'on antithyroid medication' numeric
+@attribute sick numeric
+@attribute pregnant numeric
+@attribute 'thyroid surgery' numeric
+@attribute 'I131 treatment' numeric
+@attribute 'query hypothyroid' numeric
+@attribute 'query hyperthyroid' numeric
+@attribute lithium numeric
+@attribute goitre numeric
+@attribute tumor numeric
+@attribute hypopituitary numeric
+@attribute psych numeric
+@attribute 'TSH measured' numeric
+@attribute TSH numeric
+@attribute 'T3 measured' numeric
+@attribute T3 numeric
+@attribute 'TT4 measured' numeric
+@attribute TT4 numeric
+@attribute 'T4U measured' numeric
+@attribute T4U numeric
+@attribute 'FTI measured' numeric
+@attribute FTI numeric
+@attribute 'TBG measured' numeric
+@attribute TBG numeric
+@attribute 'referral source' numeric
+@attribute Class=negative numeric
+
+@data
+
+
+Classifier Model
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.2 seconds
+Time taken to test model on training data: 2.51 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              829     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5577
+Mean absolute error                      0.0483
+Root mean squared error                  0.2197
+Relative absolute error                 44.1841 %
+Root relative squared error             93.952  %
+Total Number of Instances              829     
+

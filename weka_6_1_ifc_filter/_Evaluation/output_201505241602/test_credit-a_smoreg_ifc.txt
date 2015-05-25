@@ -1,0 +1,76 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation credit-rating-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R16-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute A1 numeric
+@attribute A2 numeric
+@attribute A3 numeric
+@attribute A4 numeric
+@attribute A5 numeric
+@attribute A6 numeric
+@attribute A7 numeric
+@attribute A8 numeric
+@attribute A9 numeric
+@attribute A10 numeric
+@attribute A11 numeric
+@attribute A12 numeric
+@attribute A13 numeric
+@attribute A14 numeric
+@attribute A15 numeric
+@attribute class numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ -       0.0001 * (normalized) A1
+ +       0.0006 * (normalized) A2
+ +       0.001  * (normalized) A3
+ +       0.0003 * (normalized) A4
+ +       0.0003 * (normalized) A5
+ +       0.001  * (normalized) A6
+ -       0.0005 * (normalized) A7
+ +       0.0007 * (normalized) A8
+ +       0.9979 * (normalized) A9
+ +       0.0002 * (normalized) A10
+ +       0.0006 * (normalized) A11
+ -       0.0001 * (normalized) A12
+ +       0.0004 * (normalized) A13
+ +       0.001  * (normalized) A14
+ +       0.0012 * (normalized) A15
+ -       0.0023
+
+
+
+Number of kernel evaluations: 236908 (99.312% cached)
+
+Time taken to build model: 3.25 seconds
+Time taken to test model on training data: 0.44 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7208
+Mean absolute error                      0.1451
+Root mean squared error                  0.3802
+Relative absolute error                 29.382  %
+Root relative squared error             76.4966 %
+Total Number of Instances              690     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7207
+Mean absolute error                      0.1453
+Root mean squared error                  0.3801
+Relative absolute error                 29.3431 %
+Root relative squared error             76.301  %
+Total Number of Instances              690     
+

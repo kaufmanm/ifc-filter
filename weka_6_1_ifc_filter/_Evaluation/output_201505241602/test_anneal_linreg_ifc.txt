@@ -1,0 +1,103 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'anneal-weka.filters.unsupervised.attribute.NominalToBinary-A-R39-weka.filters.unsupervised.attribute.Remove-R39,41-44-weka.filters.unsupervised.instance.Resample-S1-Z77.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute family numeric
+@attribute product-type numeric
+@attribute steel numeric
+@attribute carbon numeric
+@attribute hardness numeric
+@attribute temper_rolling numeric
+@attribute condition numeric
+@attribute formability numeric
+@attribute strength numeric
+@attribute non-ageing numeric
+@attribute surface-finish numeric
+@attribute surface-quality numeric
+@attribute enamelability numeric
+@attribute bc numeric
+@attribute bf numeric
+@attribute bt numeric
+@attribute bw/me numeric
+@attribute bl numeric
+@attribute m numeric
+@attribute chrom numeric
+@attribute phos numeric
+@attribute cbond numeric
+@attribute marvi numeric
+@attribute exptl numeric
+@attribute ferro numeric
+@attribute corr numeric
+@attribute blue/bright/varn/clean numeric
+@attribute lustre numeric
+@attribute jurofm numeric
+@attribute s numeric
+@attribute p numeric
+@attribute shape numeric
+@attribute thick numeric
+@attribute width numeric
+@attribute len numeric
+@attribute oil numeric
+@attribute bore numeric
+@attribute packing numeric
+@attribute class=2 numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+class=2 =
+
+     -0.2663 * family +
+      0.1505 * steel +
+      0.6067 * carbon +
+     -0.1534 * hardness +
+      0.2281 * temper_rolling +
+      0.4686 * condition +
+      0.2147 * formability +
+      0.3942 * strength +
+      0.1617 * non-ageing +
+      0.2987 * surface-finish +
+      0.6815 * surface-quality +
+      0.8527 * enamelability +
+      0.1102 * bw/me +
+      0.8918 * chrom +
+      0.8835 * phos +
+      1.038  * exptl +
+      0.9653 * ferro +
+      0.2365 * blue/bright/varn/clean +
+      0.1134 * thick +
+      0.3107 * width +
+      0.1688 * len +
+     -3.7821
+
+Time taken to build model: 0.28 seconds
+Time taken to test model on training data: 2.36 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9002
+Mean absolute error                      0.0779
+Root mean squared error                  0.1436
+Relative absolute error                 39.8041 %
+Root relative squared error             45.9104 %
+Total Number of Instances              691     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8884
+Mean absolute error                      0.0823
+Root mean squared error                  0.1505
+Relative absolute error                 41.9763 %
+Root relative squared error             48.0387 %
+Total Number of Instances              691     
+

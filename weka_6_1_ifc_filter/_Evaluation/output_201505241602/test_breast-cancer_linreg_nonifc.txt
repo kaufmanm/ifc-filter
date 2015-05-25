@@ -1,0 +1,37 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+Class=no-recurrence-events =
+
+      0.0805 * menopause=ge40 +
+      0.1798 * tumor-size=10-14,5-9 +
+      0.2278 * inv-nodes=30-32,18-20,21-23,0-2 +
+      0.2598 * deg-malig=2,1 +
+      0.2941
+
+Time taken to build model: 0.09 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.4265
+Mean absolute error                      0.3459
+Root mean squared error                  0.4134
+Relative absolute error                 82.7907 %
+Root relative squared error             90.4471 %
+Total Number of Instances              286     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.2621
+Mean absolute error                      0.3745
+Root mean squared error                  0.4513
+Relative absolute error                 89.3333 %
+Root relative squared error             98.3949 %
+Total Number of Instances              286     
+

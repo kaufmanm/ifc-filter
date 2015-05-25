@@ -1,0 +1,347 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation sonar-weka.filters.unsupervised.attribute.NominalToBinary-R61-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute attribute_1 numeric
+@attribute attribute_2 numeric
+@attribute attribute_3 numeric
+@attribute attribute_4 numeric
+@attribute attribute_5 numeric
+@attribute attribute_6 numeric
+@attribute attribute_7 numeric
+@attribute attribute_8 numeric
+@attribute attribute_9 numeric
+@attribute attribute_10 numeric
+@attribute attribute_11 numeric
+@attribute attribute_12 numeric
+@attribute attribute_13 numeric
+@attribute attribute_14 numeric
+@attribute attribute_15 numeric
+@attribute attribute_16 numeric
+@attribute attribute_17 numeric
+@attribute attribute_18 numeric
+@attribute attribute_19 numeric
+@attribute attribute_20 numeric
+@attribute attribute_21 numeric
+@attribute attribute_22 numeric
+@attribute attribute_23 numeric
+@attribute attribute_24 numeric
+@attribute attribute_25 numeric
+@attribute attribute_26 numeric
+@attribute attribute_27 numeric
+@attribute attribute_28 numeric
+@attribute attribute_29 numeric
+@attribute attribute_30 numeric
+@attribute attribute_31 numeric
+@attribute attribute_32 numeric
+@attribute attribute_33 numeric
+@attribute attribute_34 numeric
+@attribute attribute_35 numeric
+@attribute attribute_36 numeric
+@attribute attribute_37 numeric
+@attribute attribute_38 numeric
+@attribute attribute_39 numeric
+@attribute attribute_40 numeric
+@attribute attribute_41 numeric
+@attribute attribute_42 numeric
+@attribute attribute_43 numeric
+@attribute attribute_44 numeric
+@attribute attribute_45 numeric
+@attribute attribute_46 numeric
+@attribute attribute_47 numeric
+@attribute attribute_48 numeric
+@attribute attribute_49 numeric
+@attribute attribute_50 numeric
+@attribute attribute_51 numeric
+@attribute attribute_52 numeric
+@attribute attribute_53 numeric
+@attribute attribute_54 numeric
+@attribute attribute_55 numeric
+@attribute attribute_56 numeric
+@attribute attribute_57 numeric
+@attribute attribute_58 numeric
+@attribute attribute_59 numeric
+@attribute attribute_60 numeric
+@attribute Class numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+attribute_12 <= 0.636 : 
+|   attribute_49 <= 0.292 : LM1 (29/0%)
+|   attribute_49 >  0.292 : 
+|   |   attribute_5 <= 0.52 : 
+|   |   |   attribute_6 <= 0.516 : LM2 (30/0%)
+|   |   |   attribute_6 >  0.516 : 
+|   |   |   |   attribute_1 <= 0.503 : LM3 (5/0%)
+|   |   |   |   attribute_1 >  0.503 : LM4 (3/0%)
+|   |   attribute_5 >  0.52 : 
+|   |   |   attribute_54 <= 0.53 : 
+|   |   |   |   attribute_57 <= 0.544 : 
+|   |   |   |   |   attribute_4 <= 0.566 : LM5 (19/0%)
+|   |   |   |   |   attribute_4 >  0.566 : 
+|   |   |   |   |   |   attribute_45 <= 0.608 : 
+|   |   |   |   |   |   |   attribute_18 <= 0.572 : LM6 (6/0%)
+|   |   |   |   |   |   |   attribute_18 >  0.572 : LM7 (2/0%)
+|   |   |   |   |   |   attribute_45 >  0.608 : LM8 (8/0%)
+|   |   |   |   attribute_57 >  0.544 : LM9 (12/0%)
+|   |   |   attribute_54 >  0.53 : LM10 (20/0%)
+attribute_12 >  0.636 : 
+|   attribute_48 <= 0.542 : 
+|   |   attribute_2 <= 0.502 : 
+|   |   |   attribute_26 <= 0.455 : LM11 (6/0%)
+|   |   |   attribute_26 >  0.455 : 
+|   |   |   |   attribute_1 <= 0.559 : LM12 (7/0%)
+|   |   |   |   attribute_1 >  0.559 : LM13 (3/94.495%)
+|   |   attribute_2 >  0.502 : LM14 (8/0%)
+|   attribute_48 >  0.542 : LM15 (50/0%)
+
+LM num: 1
+Class = 
+	0.0935 * attribute_4 
+	+ 0.2045 * attribute_5 
+	+ 0.1342 * attribute_6 
+	+ 0.0732 * attribute_12 
+	+ 0.0525 * attribute_26 
+	+ 0.181 * attribute_45 
+	+ 0.024 * attribute_48 
+	+ 0.2086 * attribute_49 
+	+ 0.3462 * attribute_54 
+	+ 0.2654 * attribute_57 
+	- 0.6218
+
+LM num: 2
+Class = 
+	0.1041 * attribute_1 
+	+ 0.1394 * attribute_4 
+	+ 0.2517 * attribute_5 
+	+ 0.3905 * attribute_6 
+	+ 0.0732 * attribute_12 
+	+ 0.0525 * attribute_26 
+	+ 0.2551 * attribute_45 
+	+ 0.024 * attribute_48 
+	+ 0.103 * attribute_49 
+	+ 0.3727 * attribute_54 
+	+ 0.3477 * attribute_57 
+	- 0.8302
+
+LM num: 3
+Class = 
+	0.5348 * attribute_1 
+	+ 0.1394 * attribute_4 
+	+ 0.2517 * attribute_5 
+	+ 0.6161 * attribute_6 
+	+ 0.0732 * attribute_12 
+	+ 0.0525 * attribute_26 
+	+ 0.2551 * attribute_45 
+	+ 0.024 * attribute_48 
+	+ 0.103 * attribute_49 
+	+ 0.3727 * attribute_54 
+	+ 0.3477 * attribute_57 
+	- 1.0706
+
+LM num: 4
+Class = 
+	0.5716 * attribute_1 
+	+ 0.1394 * attribute_4 
+	+ 0.2517 * attribute_5 
+	+ 0.6161 * attribute_6 
+	+ 0.0732 * attribute_12 
+	+ 0.0525 * attribute_26 
+	+ 0.2551 * attribute_45 
+	+ 0.024 * attribute_48 
+	+ 0.103 * attribute_49 
+	+ 0.3727 * attribute_54 
+	+ 0.3477 * attribute_57 
+	- 1.0503
+
+LM num: 5
+Class = 
+	0.5718 * attribute_4 
+	+ 0.1986 * attribute_5 
+	+ 0.1237 * attribute_6 
+	+ 0.0732 * attribute_12 
+	+ 0.0525 * attribute_26 
+	+ 0.6314 * attribute_45 
+	+ 0.024 * attribute_48 
+	+ 0.103 * attribute_49 
+	+ 0.4367 * attribute_54 
+	+ 0.8315 * attribute_57 
+	- 1.182
+
+LM num: 6
+Class = 
+	0.5869 * attribute_4 
+	+ 0.1986 * attribute_5 
+	+ 0.1237 * attribute_6 
+	+ 0.0732 * attribute_12 
+	+ 0.3372 * attribute_18 
+	+ 0.0525 * attribute_26 
+	+ 0.8329 * attribute_45 
+	+ 0.024 * attribute_48 
+	+ 0.103 * attribute_49 
+	+ 0.4367 * attribute_54 
+	+ 0.8315 * attribute_57 
+	- 1.4044
+
+LM num: 7
+Class = 
+	0.5869 * attribute_4 
+	+ 0.1986 * attribute_5 
+	+ 0.1237 * attribute_6 
+	+ 0.0732 * attribute_12 
+	+ 0.4165 * attribute_18 
+	+ 0.0525 * attribute_26 
+	+ 0.8329 * attribute_45 
+	+ 0.024 * attribute_48 
+	+ 0.103 * attribute_49 
+	+ 0.4367 * attribute_54 
+	+ 0.8315 * attribute_57 
+	- 1.4376
+
+LM num: 8
+Class = 
+	0.5869 * attribute_4 
+	+ 0.1986 * attribute_5 
+	+ 0.1237 * attribute_6 
+	+ 0.0732 * attribute_12 
+	+ 0.0525 * attribute_26 
+	+ 0.8329 * attribute_45 
+	+ 0.024 * attribute_48 
+	+ 0.103 * attribute_49 
+	+ 0.4367 * attribute_54 
+	+ 0.8315 * attribute_57 
+	- 1.1715
+
+LM num: 9
+Class = 
+	0.5751 * attribute_4 
+	+ 0.1986 * attribute_5 
+	+ 0.1237 * attribute_6 
+	+ 0.0732 * attribute_12 
+	+ 0.0525 * attribute_26 
+	+ 0.577 * attribute_45 
+	+ 0.024 * attribute_48 
+	+ 0.103 * attribute_49 
+	+ 0.4367 * attribute_54 
+	+ 1.1685 * attribute_57 
+	- 1.0959
+
+LM num: 10
+Class = 
+	0.3267 * attribute_4 
+	+ 0.1986 * attribute_5 
+	+ 0.1237 * attribute_6 
+	+ 0.0732 * attribute_12 
+	+ 0.0525 * attribute_26 
+	+ 0.4292 * attribute_45 
+	+ 0.024 * attribute_48 
+	+ 0.103 * attribute_49 
+	+ 0.5437 * attribute_54 
+	+ 0.5567 * attribute_57 
+	- 0.5386
+
+LM num: 11
+Class = 
+	0.3934 * attribute_2 
+	+ 0.0703 * attribute_5 
+	+ 0.0477 * attribute_6 
+	+ 0.1226 * attribute_12 
+	+ 1.2407 * attribute_26 
+	+ 0.0472 * attribute_45 
+	+ 0.262 * attribute_48 
+	+ 0.0702 * attribute_49 
+	+ 0.0903 * attribute_54 
+	+ 0.1525 * attribute_57 
+	- 0.6143
+
+LM num: 12
+Class = 
+	-0.1874 * attribute_1 
+	+ 0.3934 * attribute_2 
+	+ 0.0703 * attribute_5 
+	+ 0.0477 * attribute_6 
+	+ 0.1226 * attribute_12 
+	+ 1.1614 * attribute_26 
+	+ 0.0472 * attribute_45 
+	+ 0.262 * attribute_48 
+	+ 0.0702 * attribute_49 
+	+ 0.0903 * attribute_54 
+	+ 0.1525 * attribute_57 
+	- 0.4064
+
+LM num: 13
+Class = 
+	-0.229 * attribute_1 
+	+ 0.3934 * attribute_2 
+	+ 0.0703 * attribute_5 
+	+ 0.0477 * attribute_6 
+	+ 0.1226 * attribute_12 
+	+ 1.1614 * attribute_26 
+	+ 0.0472 * attribute_45 
+	+ 0.262 * attribute_48 
+	+ 0.0702 * attribute_49 
+	+ 0.0903 * attribute_54 
+	+ 0.1525 * attribute_57 
+	- 0.4005
+
+LM num: 14
+Class = 
+	0.5303 * attribute_2 
+	+ 0.0703 * attribute_5 
+	+ 0.0477 * attribute_6 
+	+ 0.1226 * attribute_12 
+	+ 0.9018 * attribute_26 
+	+ 0.0472 * attribute_45 
+	+ 0.262 * attribute_48 
+	+ 0.0702 * attribute_49 
+	+ 0.0903 * attribute_54 
+	+ 0.1525 * attribute_57 
+	- 0.3793
+
+LM num: 15
+Class = 
+	0.0703 * attribute_5 
+	+ 0.0477 * attribute_6 
+	+ 0.1226 * attribute_12 
+	+ 0.2114 * attribute_26 
+	+ 0.0472 * attribute_45 
+	+ 0.1733 * attribute_48 
+	+ 0.0702 * attribute_49 
+	+ 0.0903 * attribute_54 
+	+ 0.1525 * attribute_57 
+	+ 0.3915
+
+Number of Rules : 15
+
+Time taken to build model: 0.37 seconds
+Time taken to test model on training data: 1.87 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9233
+Mean absolute error                      0.1359
+Root mean squared error                  0.2032
+Relative absolute error                 27.312  %
+Root relative squared error             40.7358 %
+Total Number of Instances              208     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.0819
+Mean absolute error                      0.4908
+Root mean squared error                  0.5069
+Relative absolute error                 98.1036 %
+Root relative squared error            101.0635 %
+Total Number of Instances              208     
+

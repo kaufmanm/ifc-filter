@@ -1,0 +1,69 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation cleveland-14-heart-disease-weka.filters.unsupervised.attribute.NominalToBinary-R14-weka.filters.unsupervised.attribute.NominalToBinary-R14-weka.filters.unsupervised.attribute.Remove-R15-18-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute age numeric
+@attribute sex numeric
+@attribute cp numeric
+@attribute trestbps numeric
+@attribute chol numeric
+@attribute fbs numeric
+@attribute restecg numeric
+@attribute thalach numeric
+@attribute exang numeric
+@attribute oldpeak numeric
+@attribute slope numeric
+@attribute ca numeric
+@attribute thal numeric
+@attribute num=<50 numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+LM1 (303/64.93%)
+
+LM num: 1
+num=<50 = 
+	0.2323 * age 
+	+ 0.4749 * sex 
+	+ 0.4189 * cp 
+	+ 0.5035 * chol 
+	+ 0.2661 * exang 
+	+ 0.2786 * oldpeak 
+	+ 0.3011 * slope 
+	+ 0.5008 * ca 
+	+ 0.36 * thal 
+	- 1.1476
+
+Number of Rules : 1
+
+Time taken to build model: 0.25 seconds
+Time taken to test model on training data: 0.16 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7706
+Mean absolute error                      0.228 
+Root mean squared error                  0.3193
+Relative absolute error                 45.9748 %
+Root relative squared error             64.1167 %
+Total Number of Instances              303     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6493
+Mean absolute error                      0.2645
+Root mean squared error                  0.3803
+Relative absolute error                 53.23   %
+Root relative squared error             76.2253 %
+Total Number of Instances              303     
+

@@ -1,0 +1,782 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.MultilayerPerceptron 
+
+FilteredClassifier using weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'soybean-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R36-49,51-54-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z55.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute date numeric
+@attribute plant-stand numeric
+@attribute precip numeric
+@attribute temp numeric
+@attribute hail numeric
+@attribute crop-hist numeric
+@attribute area-damaged numeric
+@attribute severity numeric
+@attribute seed-tmt numeric
+@attribute germination numeric
+@attribute plant-growth numeric
+@attribute leaves numeric
+@attribute leafspots-halo numeric
+@attribute leafspots-marg numeric
+@attribute leafspot-size numeric
+@attribute leaf-shread numeric
+@attribute leaf-malf numeric
+@attribute leaf-mild numeric
+@attribute stem numeric
+@attribute lodging numeric
+@attribute stem-cankers numeric
+@attribute canker-lesion numeric
+@attribute fruiting-bodies numeric
+@attribute external-decay numeric
+@attribute mycelium numeric
+@attribute int-discolor numeric
+@attribute sclerotia numeric
+@attribute fruit-pods numeric
+@attribute fruit-spots numeric
+@attribute seed numeric
+@attribute mold-growth numeric
+@attribute seed-discolor numeric
+@attribute seed-size numeric
+@attribute shriveling numeric
+@attribute roots numeric
+@attribute class=frog-eye-leaf-spot numeric
+
+@data
+
+
+Classifier Model
+Linear Node 0
+    Inputs    Weights
+    Threshold    -0.9390156685786321
+    Node 1    -0.2511985850339402
+    Node 2    -0.49243433371924095
+    Node 3    0.4919551102896037
+    Node 4    2.203073277964469
+    Node 5    -1.7549471777453036
+    Node 6    -0.4460193355949724
+    Node 7    -0.5537741216706847
+    Node 8    2.2787552639665587
+    Node 9    -1.2062181273657937
+    Node 10    1.8840835167400456
+    Node 11    0.5971400498242109
+    Node 12    0.9456231169679125
+    Node 13    -1.6215543873002594
+    Node 14    1.78628040335369
+    Node 15    -1.0345165653758694
+    Node 16    -1.9188601020953733
+    Node 17    -0.634956682574048
+    Node 18    -0.30418415199417975
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.9033689524251867
+    Attrib date    -0.8714705540872433
+    Attrib plant-stand    0.5775431043131347
+    Attrib precip    -0.4267335014219659
+    Attrib temp    -0.6082959611864615
+    Attrib hail    0.4240820639816734
+    Attrib crop-hist    -0.33542562568678097
+    Attrib area-damaged    0.42510810015773565
+    Attrib severity    0.5845237971453818
+    Attrib seed-tmt    0.7179555454551563
+    Attrib germination    -0.3128920760949023
+    Attrib plant-growth    -0.0028502658698259264
+    Attrib leaves    -1.1627970754443402
+    Attrib leafspots-halo    0.1115950618133593
+    Attrib leafspots-marg    0.3397605604074071
+    Attrib leafspot-size    -0.1432046162144884
+    Attrib leaf-shread    -1.2744619190016122
+    Attrib leaf-malf    0.45912626342260277
+    Attrib leaf-mild    -0.01767100518446876
+    Attrib stem    -0.5807605942140743
+    Attrib lodging    -0.5741934472736128
+    Attrib stem-cankers    0.08138605649447894
+    Attrib canker-lesion    0.09414973700571543
+    Attrib fruiting-bodies    0.10183616662456052
+    Attrib external-decay    0.002695428342922139
+    Attrib mycelium    -0.3649374543731833
+    Attrib int-discolor    -0.4756116895370542
+    Attrib sclerotia    -0.4698174965918296
+    Attrib fruit-pods    -0.0979904985903347
+    Attrib fruit-spots    0.5578207452969959
+    Attrib seed    -0.37786817526507754
+    Attrib mold-growth    0.21065779651089642
+    Attrib seed-discolor    -0.400451505086262
+    Attrib seed-size    -0.026046684747724248
+    Attrib shriveling    0.06133178661224865
+    Attrib roots    -0.13855429936614402
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -1.4849550539727303
+    Attrib date    0.8338959434229855
+    Attrib plant-stand    1.0819615895893242
+    Attrib precip    -0.0675731801182821
+    Attrib temp    0.7119597763820278
+    Attrib hail    -0.07799548300607168
+    Attrib crop-hist    -1.2570625588702258
+    Attrib area-damaged    0.37221835736725417
+    Attrib severity    -0.47793245346058577
+    Attrib seed-tmt    0.2575562510544547
+    Attrib germination    -1.12793906250181
+    Attrib plant-growth    -0.11938722379402683
+    Attrib leaves    0.1043408309543197
+    Attrib leafspots-halo    0.16832104091756686
+    Attrib leafspots-marg    -0.09306554180503575
+    Attrib leafspot-size    0.14409583877992707
+    Attrib leaf-shread    0.3535237945883175
+    Attrib leaf-malf    -0.1252692333080373
+    Attrib leaf-mild    -0.5708375421438244
+    Attrib stem    -0.3105609340442692
+    Attrib lodging    -0.26335399001148474
+    Attrib stem-cankers    0.39975743410312387
+    Attrib canker-lesion    1.0890510677971301
+    Attrib fruiting-bodies    -1.371498639581751
+    Attrib external-decay    -0.2940035681175628
+    Attrib mycelium    -1.2453219383770022
+    Attrib int-discolor    -0.8811497876375832
+    Attrib sclerotia    -0.6150511904502731
+    Attrib fruit-pods    -0.030024712463777584
+    Attrib fruit-spots    0.3501775890890877
+    Attrib seed    -0.5057246778037501
+    Attrib mold-growth    0.2413010385433601
+    Attrib seed-discolor    -0.08947729890185616
+    Attrib seed-size    0.25678073141390184
+    Attrib shriveling    0.1413704942398025
+    Attrib roots    -0.8519514540305666
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.5181069490075759
+    Attrib date    0.01339636015622738
+    Attrib plant-stand    0.26029296121536877
+    Attrib precip    -0.33788513922458335
+    Attrib temp    0.12390840319615126
+    Attrib hail    -0.28363473572728903
+    Attrib crop-hist    -0.43086753299143693
+    Attrib area-damaged    -0.1581392453183985
+    Attrib severity    -0.24777310057196716
+    Attrib seed-tmt    0.21285824914924203
+    Attrib germination    0.36506782361540013
+    Attrib plant-growth    -0.011410314690355609
+    Attrib leaves    -0.11087826524061206
+    Attrib leafspots-halo    0.033906458176343746
+    Attrib leafspots-marg    0.2982804764289679
+    Attrib leafspot-size    0.20469331260646778
+    Attrib leaf-shread    -0.331323364634907
+    Attrib leaf-malf    -0.49231444893038034
+    Attrib leaf-mild    -0.48308926898637017
+    Attrib stem    -0.5047953778892991
+    Attrib lodging    -0.264141998173885
+    Attrib stem-cankers    -0.19106191338712464
+    Attrib canker-lesion    -0.2571867786134768
+    Attrib fruiting-bodies    -0.016716953094839275
+    Attrib external-decay    0.05187622302555111
+    Attrib mycelium    -0.40897879634582923
+    Attrib int-discolor    -0.5335025538933641
+    Attrib sclerotia    -0.3735391451989924
+    Attrib fruit-pods    -0.15810670127334228
+    Attrib fruit-spots    0.10459114055726267
+    Attrib seed    0.00483786848522991
+    Attrib mold-growth    -0.37330334500264006
+    Attrib seed-discolor    0.07240594120957505
+    Attrib seed-size    -0.1264927354659219
+    Attrib shriveling    -0.16226986446041297
+    Attrib roots    -0.2630917356781375
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -3.968631428243521
+    Attrib date    0.8940443796862871
+    Attrib plant-stand    -1.5404576272920243
+    Attrib precip    0.09168809044970057
+    Attrib temp    -1.978460702461122
+    Attrib hail    -0.7408434859535101
+    Attrib crop-hist    8.813456592764828
+    Attrib area-damaged    3.6782307354539916
+    Attrib severity    -4.844539081085739
+    Attrib seed-tmt    -2.8813979017346147
+    Attrib germination    -3.906142167205245
+    Attrib plant-growth    0.19976542706853406
+    Attrib leaves    -1.2306508750502785
+    Attrib leafspots-halo    1.0377400645576282
+    Attrib leafspots-marg    0.9843660374175579
+    Attrib leafspot-size    0.41798604585200727
+    Attrib leaf-shread    2.4829044250672054
+    Attrib leaf-malf    0.47674660519013107
+    Attrib leaf-mild    -1.5881108742706258
+    Attrib stem    -3.9241731543159135
+    Attrib lodging    -1.0198251854414995
+    Attrib stem-cankers    0.008325819445739277
+    Attrib canker-lesion    0.3861376172083345
+    Attrib fruiting-bodies    -0.6603586847984964
+    Attrib external-decay    0.5389789997822753
+    Attrib mycelium    -3.650817372306025
+    Attrib int-discolor    -2.495895225920407
+    Attrib sclerotia    -2.559647645631335
+    Attrib fruit-pods    0.2189310008069527
+    Attrib fruit-spots    1.68615127037659
+    Attrib seed    2.7278496579613214
+    Attrib mold-growth    0.7014529179621881
+    Attrib seed-discolor    -0.5872116148427832
+    Attrib seed-size    -1.4707149055351427
+    Attrib shriveling    -1.7744851549914977
+    Attrib roots    -1.506583777075362
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -3.8832970463342265
+    Attrib date    1.5812408570897283
+    Attrib plant-stand    -1.2359720448750728
+    Attrib precip    -0.35408841766915045
+    Attrib temp    0.08601846780654611
+    Attrib hail    -0.9368150756589032
+    Attrib crop-hist    4.679858109694223
+    Attrib area-damaged    -0.9928410568179218
+    Attrib severity    3.8846588709279177
+    Attrib seed-tmt    7.667826056939488
+    Attrib germination    5.581554314592078
+    Attrib plant-growth    1.084458866834787
+    Attrib leaves    -0.992584955214733
+    Attrib leafspots-halo    1.8060214102341352
+    Attrib leafspots-marg    1.2857144566854712
+    Attrib leafspot-size    0.1377444101750604
+    Attrib leaf-shread    -0.5144649506233463
+    Attrib leaf-malf    0.5486620760562689
+    Attrib leaf-mild    -1.5069757688026018
+    Attrib stem    -3.069760434591032
+    Attrib lodging    -2.59039654500757
+    Attrib stem-cankers    -1.5639843998480174
+    Attrib canker-lesion    -0.11893770532866044
+    Attrib fruiting-bodies    -0.6290441996018575
+    Attrib external-decay    -0.10157294890532206
+    Attrib mycelium    -3.5013443779816114
+    Attrib int-discolor    -2.6326027768933904
+    Attrib sclerotia    -2.7404161615232643
+    Attrib fruit-pods    -2.319066939192307
+    Attrib fruit-spots    0.29181401767800336
+    Attrib seed    1.3288108058214347
+    Attrib mold-growth    -0.5852728363515541
+    Attrib seed-discolor    -1.4306548803242038
+    Attrib seed-size    -1.1781077112801155
+    Attrib shriveling    -1.1758934475025586
+    Attrib roots    -2.03115112964181
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.7271807556387138
+    Attrib date    -0.012176648405158981
+    Attrib plant-stand    0.24538469834227405
+    Attrib precip    0.15240804041746905
+    Attrib temp    -0.5020554343050284
+    Attrib hail    3.0167494014919193E-4
+    Attrib crop-hist    0.2207371663854407
+    Attrib area-damaged    -0.9352135698904647
+    Attrib severity    -0.2308913684099011
+    Attrib seed-tmt    -0.16144846571350108
+    Attrib germination    0.6602625825210393
+    Attrib plant-growth    -0.39528591687168957
+    Attrib leaves    -0.01681411574069901
+    Attrib leafspots-halo    -0.04665282292329122
+    Attrib leafspots-marg    -0.023662316816350823
+    Attrib leafspot-size    0.07808266656176359
+    Attrib leaf-shread    -0.26013526549687194
+    Attrib leaf-malf    -0.646055661864863
+    Attrib leaf-mild    -0.7981776354592207
+    Attrib stem    0.4067296040960452
+    Attrib lodging    0.23094832948945912
+    Attrib stem-cankers    -0.1207014882524181
+    Attrib canker-lesion    0.19241202174884978
+    Attrib fruiting-bodies    -0.18437496131700068
+    Attrib external-decay    0.3318770604912248
+    Attrib mycelium    0.1430913733208163
+    Attrib int-discolor    -0.605909986416282
+    Attrib sclerotia    -0.2326584165597313
+    Attrib fruit-pods    0.06805226704092408
+    Attrib fruit-spots    0.8177701573109072
+    Attrib seed    -0.03536620145311434
+    Attrib mold-growth    0.049519236311261886
+    Attrib seed-discolor    0.12397270582755633
+    Attrib seed-size    -0.1701254517574501
+    Attrib shriveling    0.15874364511009417
+    Attrib roots    -0.2794137013846721
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -2.385782146890557
+    Attrib date    -0.8169394824250676
+    Attrib plant-stand    -1.490295793064195
+    Attrib precip    0.21430691391174314
+    Attrib temp    3.3946351964067154
+    Attrib hail    0.19812710857112506
+    Attrib crop-hist    -2.456457177100307
+    Attrib area-damaged    -0.003450922813977619
+    Attrib severity    0.7466830700630823
+    Attrib seed-tmt    -0.7556408439101425
+    Attrib germination    1.2899429064359815
+    Attrib plant-growth    0.9594210489353958
+    Attrib leaves    -1.0258813808505904
+    Attrib leafspots-halo    -0.11431996372369119
+    Attrib leafspots-marg    0.003921373072401676
+    Attrib leafspot-size    0.12492405739801586
+    Attrib leaf-shread    0.6994172359772195
+    Attrib leaf-malf    -0.9692569621428357
+    Attrib leaf-mild    -0.32833750106663007
+    Attrib stem    0.24793085486809885
+    Attrib lodging    -0.4838014487891924
+    Attrib stem-cankers    0.5964756133432219
+    Attrib canker-lesion    -1.2832059577499186
+    Attrib fruiting-bodies    0.7232650950641324
+    Attrib external-decay    -0.65405838481274
+    Attrib mycelium    -2.0333251649882507
+    Attrib int-discolor    -1.153746582394958
+    Attrib sclerotia    -0.49140225564653
+    Attrib fruit-pods    -0.1432824981890877
+    Attrib fruit-spots    3.0769971254918005
+    Attrib seed    0.9279771525328167
+    Attrib mold-growth    -0.37300782618961836
+    Attrib seed-discolor    0.4035728410634379
+    Attrib seed-size    -0.2011019732523541
+    Attrib shriveling    -1.4256450479049347
+    Attrib roots    0.47738457431178505
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -1.7411144341516513
+    Attrib date    3.9631624709110493
+    Attrib plant-stand    -1.8939547783738298
+    Attrib precip    1.166482489316546
+    Attrib temp    0.5999086599315485
+    Attrib hail    -2.64944807687247
+    Attrib crop-hist    -0.651790080799112
+    Attrib area-damaged    0.7561694485646675
+    Attrib severity    -1.6959233261746423
+    Attrib seed-tmt    -1.3868535879288986
+    Attrib germination    0.5459184771389701
+    Attrib plant-growth    -2.2969159520575366
+    Attrib leaves    -1.0075144514020857
+    Attrib leafspots-halo    0.6674063131034117
+    Attrib leafspots-marg    0.289753237475686
+    Attrib leafspot-size    0.18184186386616089
+    Attrib leaf-shread    0.22668057715880024
+    Attrib leaf-malf    -0.9573221302117947
+    Attrib leaf-mild    -1.146126722850532
+    Attrib stem    -2.0990974531061495
+    Attrib lodging    -0.6218127179103257
+    Attrib stem-cankers    -0.09166703498156188
+    Attrib canker-lesion    0.07344962728873668
+    Attrib fruiting-bodies    -0.595845966661003
+    Attrib external-decay    -0.07613857318032873
+    Attrib mycelium    -0.8721694680727484
+    Attrib int-discolor    -0.366366010487047
+    Attrib sclerotia    -1.116241246392625
+    Attrib fruit-pods    0.06472295803934311
+    Attrib fruit-spots    0.5810653282603246
+    Attrib seed    1.0992040915829544
+    Attrib mold-growth    -0.7759793490687436
+    Attrib seed-discolor    0.21825245152923675
+    Attrib seed-size    -0.8872341695593611
+    Attrib shriveling    -1.3811945375020214
+    Attrib roots    -0.7084455106119266
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -1.1957414442764727
+    Attrib date    -0.7677160993511142
+    Attrib plant-stand    -0.17238744821780994
+    Attrib precip    -0.5918731281535908
+    Attrib temp    0.01008378052834842
+    Attrib hail    -1.3968719001361616
+    Attrib crop-hist    -1.2962627551222443
+    Attrib area-damaged    -1.348358254733787
+    Attrib severity    0.29543997583498116
+    Attrib seed-tmt    -2.074524542589337
+    Attrib germination    -0.8297463274161607
+    Attrib plant-growth    -2.0686728620833996
+    Attrib leaves    0.5200985570195161
+    Attrib leafspots-halo    0.3620519374923042
+    Attrib leafspots-marg    -0.3423795010574286
+    Attrib leafspot-size    -0.39123816251065574
+    Attrib leaf-shread    -0.6914609260612387
+    Attrib leaf-malf    1.1460255858020532
+    Attrib leaf-mild    -2.3004889596558593
+    Attrib stem    -0.08916799954342912
+    Attrib lodging    0.2967304221522006
+    Attrib stem-cankers    0.6160175430761666
+    Attrib canker-lesion    0.2412219686461068
+    Attrib fruiting-bodies    -0.6940917115288362
+    Attrib external-decay    -0.11842345404664276
+    Attrib mycelium    -0.9075491150499584
+    Attrib int-discolor    -1.505493721061227
+    Attrib sclerotia    0.0960698605533965
+    Attrib fruit-pods    0.35366982219176146
+    Attrib fruit-spots    1.0935689469428118
+    Attrib seed    0.3299987099466434
+    Attrib mold-growth    0.19590345390474387
+    Attrib seed-discolor    -0.13014800597109763
+    Attrib seed-size    -1.0217540880113043
+    Attrib shriveling    -0.8629628157611282
+    Attrib roots    0.3540675684281656
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -3.876797547047406
+    Attrib date    0.24721929817950047
+    Attrib plant-stand    -1.794940436934241
+    Attrib precip    -2.4960889063792293
+    Attrib temp    -5.21906535992432
+    Attrib hail    -0.3007971036757834
+    Attrib crop-hist    5.061826032808195
+    Attrib area-damaged    2.9174099835365217
+    Attrib severity    8.280136200765645
+    Attrib seed-tmt    7.124552976015491
+    Attrib germination    5.243279498093236
+    Attrib plant-growth    1.6647471076684393
+    Attrib leaves    -0.7291144031944081
+    Attrib leafspots-halo    2.609870589138336
+    Attrib leafspots-marg    2.5810857638828018
+    Attrib leafspot-size    3.9722344722682665
+    Attrib leaf-shread    2.8572947559526978
+    Attrib leaf-malf    0.9479240015230811
+    Attrib leaf-mild    0.23132446717715985
+    Attrib stem    -0.11647783399151265
+    Attrib lodging    -2.715057743594153
+    Attrib stem-cankers    2.0819112453433766
+    Attrib canker-lesion    5.102722969799379
+    Attrib fruiting-bodies    1.8191152491733549
+    Attrib external-decay    4.07279216149403
+    Attrib mycelium    -3.796344050702863
+    Attrib int-discolor    -2.1280247418367626
+    Attrib sclerotia    -3.918464815628055
+    Attrib fruit-pods    1.7460217620766283
+    Attrib fruit-spots    3.071815355381732
+    Attrib seed    1.3283285403489902
+    Attrib mold-growth    0.9304652568120381
+    Attrib seed-discolor    0.33291138733763376
+    Attrib seed-size    -1.893626887217923
+    Attrib shriveling    -2.467162095930175
+    Attrib roots    -2.9687193146413513
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -1.392822201676263
+    Attrib date    1.7185958567335238
+    Attrib plant-stand    0.89296090552366
+    Attrib precip    -0.30873822878337753
+    Attrib temp    -0.9770284158358901
+    Attrib hail    0.811174400772089
+    Attrib crop-hist    0.16924888722773257
+    Attrib area-damaged    -1.0950499557187285
+    Attrib severity    2.0048823354033973
+    Attrib seed-tmt    -1.3574059708271895
+    Attrib germination    -1.0938999502492048
+    Attrib plant-growth    0.07969670827278455
+    Attrib leaves    -0.5601864151863993
+    Attrib leafspots-halo    0.312273428664897
+    Attrib leafspots-marg    0.30473611077655893
+    Attrib leafspot-size    0.615340570167783
+    Attrib leaf-shread    0.012730837163799271
+    Attrib leaf-malf    -0.7217122472517449
+    Attrib leaf-mild    -0.5783261233473324
+    Attrib stem    -1.1205115916177855
+    Attrib lodging    -0.595140837319991
+    Attrib stem-cankers    -0.6162340201854981
+    Attrib canker-lesion    -0.291349639384127
+    Attrib fruiting-bodies    -0.25826198760765384
+    Attrib external-decay    0.18948479468799725
+    Attrib mycelium    -1.2054241823679885
+    Attrib int-discolor    -1.0079479196763586
+    Attrib sclerotia    -0.8420868531127295
+    Attrib fruit-pods    0.04692077090533137
+    Attrib fruit-spots    0.6143478061274967
+    Attrib seed    0.7073764229779179
+    Attrib mold-growth    0.034719483458828866
+    Attrib seed-discolor    -0.17163287302487604
+    Attrib seed-size    -0.3291056767469279
+    Attrib shriveling    -0.7003397387265912
+    Attrib roots    -0.5763757524142038
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -0.5491856675489782
+    Attrib date    -0.3307446923716867
+    Attrib plant-stand    -1.1580316191492508
+    Attrib precip    -0.7397194448136347
+    Attrib temp    0.7324024104390834
+    Attrib hail    0.6900106361734951
+    Attrib crop-hist    -0.2678602061498842
+    Attrib area-damaged    0.6531104295984479
+    Attrib severity    0.49877470393109863
+    Attrib seed-tmt    -0.5023219144992572
+    Attrib germination    0.5158889957182706
+    Attrib plant-growth    -0.5576860207235194
+    Attrib leaves    -0.21798489292583118
+    Attrib leafspots-halo    -0.057651220575672936
+    Attrib leafspots-marg    0.13414418922571264
+    Attrib leafspot-size    -0.14359145984831218
+    Attrib leaf-shread    -0.21965764106632293
+    Attrib leaf-malf    -0.5023950555233775
+    Attrib leaf-mild    -0.3231997590158115
+    Attrib stem    -0.7190058385840628
+    Attrib lodging    -0.5231781700671257
+    Attrib stem-cankers    0.21843361423395555
+    Attrib canker-lesion    -0.3237711834678238
+    Attrib fruiting-bodies    -0.3751276369681631
+    Attrib external-decay    0.06107454824273374
+    Attrib mycelium    -0.5724181827477687
+    Attrib int-discolor    -0.6224402954284749
+    Attrib sclerotia    -0.36537368466588577
+    Attrib fruit-pods    0.009144523088958632
+    Attrib fruit-spots    0.09819218033122257
+    Attrib seed    -0.006568353911164398
+    Attrib mold-growth    0.17116169427391772
+    Attrib seed-discolor    -1.1242828825645956
+    Attrib seed-size    -0.9362726364129093
+    Attrib shriveling    -0.3759973328177008
+    Attrib roots    -0.790887445564975
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -2.755231470188928
+    Attrib date    -0.5069384798781059
+    Attrib plant-stand    0.8172167682577494
+    Attrib precip    0.03971955883239839
+    Attrib temp    -0.2837381425942882
+    Attrib hail    0.6136508506438836
+    Attrib crop-hist    1.6197429406030897
+    Attrib area-damaged    1.7290111846769896
+    Attrib severity    0.015038946185133463
+    Attrib seed-tmt    2.4650084285811027
+    Attrib germination    0.8548494024430624
+    Attrib plant-growth    0.37945170886965984
+    Attrib leaves    1.5168893394306462
+    Attrib leafspots-halo    0.7494051430587712
+    Attrib leafspots-marg    -0.052884810169073246
+    Attrib leafspot-size    0.24596453835189888
+    Attrib leaf-shread    0.9623922051270457
+    Attrib leaf-malf    -2.051403806696719
+    Attrib leaf-mild    -1.4946069530466635
+    Attrib stem    0.5428704924553579
+    Attrib lodging    -0.2134207926879131
+    Attrib stem-cankers    0.8181045864623491
+    Attrib canker-lesion    1.549408488056611
+    Attrib fruiting-bodies    0.4946281047923772
+    Attrib external-decay    1.8722145121933926
+    Attrib mycelium    -1.4143608800566658
+    Attrib int-discolor    -0.49735182215376195
+    Attrib sclerotia    -1.5345289576819616
+    Attrib fruit-pods    1.3354795942110453
+    Attrib fruit-spots    2.7434687239768616
+    Attrib seed    1.6904653550778816
+    Attrib mold-growth    0.3657579817412523
+    Attrib seed-discolor    0.35038720882107255
+    Attrib seed-size    -0.969051937159982
+    Attrib shriveling    -1.3259319788587423
+    Attrib roots    0.08016767898590452
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -4.876183249918825
+    Attrib date    9.8574222087986
+    Attrib plant-stand    2.554182764709203
+    Attrib precip    -6.929335987023056
+    Attrib temp    -1.7279720051984218
+    Attrib hail    -2.5913209243855273
+    Attrib crop-hist    0.10473770417064815
+    Attrib area-damaged    -4.175585234440223
+    Attrib severity    1.0447224142405325
+    Attrib seed-tmt    7.96889597300983
+    Attrib germination    4.088569729478176
+    Attrib plant-growth    3.6914500693675194
+    Attrib leaves    -1.9424657168815915
+    Attrib leafspots-halo    2.7941292493817436
+    Attrib leafspots-marg    2.6612860349519427
+    Attrib leafspot-size    4.546459879929535
+    Attrib leaf-shread    2.2210204259867186
+    Attrib leaf-malf    -0.24612037973268522
+    Attrib leaf-mild    -1.856388808648985
+    Attrib stem    -0.06907087590798273
+    Attrib lodging    -4.259849473338289
+    Attrib stem-cankers    4.055793430810143
+    Attrib canker-lesion    5.019438575587811
+    Attrib fruiting-bodies    2.8612497909432184
+    Attrib external-decay    6.280229496459265
+    Attrib mycelium    -4.728597340623118
+    Attrib int-discolor    0.15112332767122913
+    Attrib sclerotia    -4.549617832468555
+    Attrib fruit-pods    3.4469490255066844
+    Attrib fruit-spots    5.180538581903185
+    Attrib seed    2.2603814955722368
+    Attrib mold-growth    2.3336786598955985
+    Attrib seed-discolor    -0.20556318488119854
+    Attrib seed-size    -1.309548839754822
+    Attrib shriveling    -3.7142249874894158
+    Attrib roots    -0.9066197238601186
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -1.487770047997528
+    Attrib date    0.6929325090322821
+    Attrib plant-stand    -0.4246629214795016
+    Attrib precip    0.7162484420858939
+    Attrib temp    0.6038169294898212
+    Attrib hail    0.6875527332861497
+    Attrib crop-hist    1.4433614592017694
+    Attrib area-damaged    1.4799660152118286
+    Attrib severity    -3.2700923669321313
+    Attrib seed-tmt    1.2459368110907623
+    Attrib germination    1.2067346068130436
+    Attrib plant-growth    -0.5150672704036898
+    Attrib leaves    -0.5767875298812261
+    Attrib leafspots-halo    -0.298474682838873
+    Attrib leafspots-marg    0.930227634467046
+    Attrib leafspot-size    -0.787693501443996
+    Attrib leaf-shread    -0.4660431849189516
+    Attrib leaf-malf    0.3582338428793321
+    Attrib leaf-mild    -1.6105066088768418
+    Attrib stem    -1.4855955466870092
+    Attrib lodging    -0.4460072008596905
+    Attrib stem-cankers    0.016252692532784774
+    Attrib canker-lesion    -0.1271698775813344
+    Attrib fruiting-bodies    0.1105683912643489
+    Attrib external-decay    0.012735731644112
+    Attrib mycelium    -0.580172703134766
+    Attrib int-discolor    -0.8343591936104662
+    Attrib sclerotia    -0.4350409877751142
+    Attrib fruit-pods    0.22304146386879736
+    Attrib fruit-spots    0.17215222836732164
+    Attrib seed    -0.0610554576499192
+    Attrib mold-growth    -0.27360273147705083
+    Attrib seed-discolor    -0.8167009498164413
+    Attrib seed-size    0.292249342923296
+    Attrib shriveling    -0.653710241695004
+    Attrib roots    -0.9424353128199351
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    -0.9837303369987831
+    Attrib date    2.0858615847338418
+    Attrib plant-stand    -2.174133828911793
+    Attrib precip    -3.2088782093296313
+    Attrib temp    -2.710347579074688
+    Attrib hail    -2.161871920875007
+    Attrib crop-hist    0.4422060256762741
+    Attrib area-damaged    0.1033357194863284
+    Attrib severity    1.4683881131421104
+    Attrib seed-tmt    0.5595798232210383
+    Attrib germination    1.046073448512507
+    Attrib plant-growth    -0.25176831675442507
+    Attrib leaves    0.19035240714045393
+    Attrib leafspots-halo    1.7847734167210763
+    Attrib leafspots-marg    1.0025014098755392
+    Attrib leafspot-size    1.6702210420230557
+    Attrib leaf-shread    -0.24418183610500444
+    Attrib leaf-malf    -0.1777469322777146
+    Attrib leaf-mild    -1.2750770465040568
+    Attrib stem    0.7202260972665909
+    Attrib lodging    -0.24013750640738388
+    Attrib stem-cankers    -0.16381415103409075
+    Attrib canker-lesion    0.048048970686490965
+    Attrib fruiting-bodies    -2.090938451072226
+    Attrib external-decay    1.3153415558202155
+    Attrib mycelium    -0.8223826441912316
+    Attrib int-discolor    -2.1101345504826647
+    Attrib sclerotia    0.009218098362848379
+    Attrib fruit-pods    0.02121179734112789
+    Attrib fruit-spots    0.05367248997286826
+    Attrib seed    -1.8905849740429637
+    Attrib mold-growth    0.1440266259728209
+    Attrib seed-discolor    0.2044420186903576
+    Attrib seed-size    0.5639908321266512
+    Attrib shriveling    0.5131002415890453
+    Attrib roots    -0.7034696311855284
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    -1.2501837460971186
+    Attrib date    2.167190783235886
+    Attrib plant-stand    -0.6993988607992346
+    Attrib precip    0.9090247116183512
+    Attrib temp    -0.4731825757161148
+    Attrib hail    -0.18819643970782485
+    Attrib crop-hist    0.8881678918667341
+    Attrib area-damaged    -0.24077200049749214
+    Attrib severity    -2.31994457738092
+    Attrib seed-tmt    -1.2915304108073566
+    Attrib germination    -0.30115442401349524
+    Attrib plant-growth    0.16621555519886222
+    Attrib leaves    -0.8098180967166696
+    Attrib leafspots-halo    0.19367789593842602
+    Attrib leafspots-marg    0.4292866999455657
+    Attrib leafspot-size    0.2645634561555609
+    Attrib leaf-shread    -0.9822385116323382
+    Attrib leaf-malf    -0.45830960028789414
+    Attrib leaf-mild    -0.6361512220111206
+    Attrib stem    -0.8039578666075212
+    Attrib lodging    -0.1059952731102041
+    Attrib stem-cankers    -1.3109440962711727
+    Attrib canker-lesion    0.22046235566864447
+    Attrib fruiting-bodies    0.7726985785554378
+    Attrib external-decay    0.24444949029703153
+    Attrib mycelium    0.4505457610242539
+    Attrib int-discolor    -0.49841605707240705
+    Attrib sclerotia    -0.7359140307506368
+    Attrib fruit-pods    0.09502537021098995
+    Attrib fruit-spots    0.7960022843915776
+    Attrib seed    0.5952509981274144
+    Attrib mold-growth    0.2453884675615007
+    Attrib seed-discolor    -0.49480078190302357
+    Attrib seed-size    -0.45911617166407387
+    Attrib shriveling    -0.16879125820509144
+    Attrib roots    -0.9121428790100566
+Sigmoid Node 18
+    Inputs    Weights
+    Threshold    -1.5197256722470678
+    Attrib date    1.6495991904233347
+    Attrib plant-stand    0.04274760515370012
+    Attrib precip    0.17085946126300733
+    Attrib temp    -0.5658083731805109
+    Attrib hail    -0.5244141147512003
+    Attrib crop-hist    1.1917049679635092
+    Attrib area-damaged    -0.1135898066360139
+    Attrib severity    -2.032560714398211
+    Attrib seed-tmt    -0.93648284056699
+    Attrib germination    1.6700084838086953
+    Attrib plant-growth    -0.23313591584480622
+    Attrib leaves    -0.11567807013911824
+    Attrib leafspots-halo    0.2171844062321861
+    Attrib leafspots-marg    0.39015360083194167
+    Attrib leafspot-size    0.40738794645313714
+    Attrib leaf-shread    0.5949158865455154
+    Attrib leaf-malf    -0.19831565993263733
+    Attrib leaf-mild    -0.49691134826968497
+    Attrib stem    -1.204203105474235
+    Attrib lodging    -0.7183487741416215
+    Attrib stem-cankers    0.5832539903585808
+    Attrib canker-lesion    0.3569882566693618
+    Attrib fruiting-bodies    0.6641478187955554
+    Attrib external-decay    -0.08048225494136026
+    Attrib mycelium    -1.1262493224605266
+    Attrib int-discolor    -0.9622203362368168
+    Attrib sclerotia    -0.915039001751317
+    Attrib fruit-pods    0.7959041443844838
+    Attrib fruit-spots    0.9029234434556211
+    Attrib seed    -0.3149181528217004
+    Attrib mold-growth    0.09963859943137462
+    Attrib seed-discolor    0.037995491487912036
+    Attrib seed-size    0.019787345784838598
+    Attrib shriveling    0.4364940631201623
+    Attrib roots    -1.0619126984968663
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 4.88 seconds
+Time taken to test model on training data: 1.33 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9884
+Mean absolute error                      0.0128
+Root mean squared error                  0.0528
+Relative absolute error                  5.6169 %
+Root relative squared error             15.6778 %
+Total Number of Instances              375     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6762
+Mean absolute error                      0.1101
+Root mean squared error                  0.2734
+Relative absolute error                 48.3468 %
+Root relative squared error             80.9237 %
+Total Number of Instances              375     
+

@@ -1,0 +1,254 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+Cell_Size_Uniformity <= 1.5 : 
+|   Clump_Thickness <= 3.5 : LM1 (252/0%)
+|   Clump_Thickness >  3.5 : 
+|   |   Bland_Chromatin <= 1.5 : LM2 (41/0%)
+|   |   Bland_Chromatin >  1.5 : 
+|   |   |   Bland_Chromatin <= 2.5 : LM3 (48/27.039%)
+|   |   |   Bland_Chromatin >  2.5 : 
+|   |   |   |   Normal_Nucleoli <= 1.5 : LM4 (32/0%)
+|   |   |   |   Normal_Nucleoli >  1.5 : 
+|   |   |   |   |   Clump_Thickness <= 5.5 : LM5 (8/0%)
+|   |   |   |   |   Clump_Thickness >  5.5 : LM6 (3/0%)
+Cell_Size_Uniformity >  1.5 : 
+|   Clump_Thickness <= 8.5 : 
+|   |   Bare_Nuclei <= 8.5 : 
+|   |   |   Cell_Shape_Uniformity <= 2.5 : 
+|   |   |   |   Single_Epi_Cell_Size <= 2.5 : LM7 (39/0%)
+|   |   |   |   Single_Epi_Cell_Size >  2.5 : 
+|   |   |   |   |   Clump_Thickness <= 5.5 : LM8 (9/0%)
+|   |   |   |   |   Clump_Thickness >  5.5 : LM9 (3/99.181%)
+|   |   |   Cell_Shape_Uniformity >  2.5 : 
+|   |   |   |   Normal_Nucleoli <= 9.5 : 
+|   |   |   |   |   Marginal_Adhesion <= 3.5 : LM10 (34/74.316%)
+|   |   |   |   |   Marginal_Adhesion >  3.5 : LM11 (33/75.437%)
+|   |   |   |   Normal_Nucleoli >  9.5 : LM12 (20/0%)
+|   |   Bare_Nuclei >  8.5 : 
+|   |   |   Cell_Shape_Uniformity <= 4.5 : 
+|   |   |   |   Bland_Chromatin <= 3.5 : LM13 (7/73.555%)
+|   |   |   |   Bland_Chromatin >  3.5 : LM14 (15/0%)
+|   |   |   Cell_Shape_Uniformity >  4.5 : LM15 (74/0%)
+|   Clump_Thickness >  8.5 : LM16 (81/0%)
+
+LM num: 1
+Class=benign = 
+	-0.0016 * Clump_Thickness 
+	- 0.0009 * Cell_Size_Uniformity 
+	- 0.0006 * Cell_Shape_Uniformity 
+	- 0.0009 * Marginal_Adhesion 
+	+ 0.0007 * Single_Epi_Cell_Size 
+	- 0.0017 * Bare_Nuclei 
+	- 0.0013 * Bland_Chromatin 
+	- 0.0045 * Normal_Nucleoli 
+	+ 1.0144
+
+LM num: 2
+Class=benign = 
+	-0.0131 * Clump_Thickness 
+	- 0.0009 * Cell_Size_Uniformity 
+	- 0.0006 * Cell_Shape_Uniformity 
+	- 0.006 * Marginal_Adhesion 
+	+ 0.0155 * Single_Epi_Cell_Size 
+	- 0.0017 * Bare_Nuclei 
+	- 0.0069 * Bland_Chromatin 
+	- 0.0287 * Normal_Nucleoli 
+	+ 1.08
+
+LM num: 3
+Class=benign = 
+	-0.0174 * Clump_Thickness 
+	- 0.0009 * Cell_Size_Uniformity 
+	- 0.0006 * Cell_Shape_Uniformity 
+	- 0.0286 * Marginal_Adhesion 
+	+ 0.102 * Single_Epi_Cell_Size 
+	- 0.0017 * Bare_Nuclei 
+	- 0.0133 * Bland_Chromatin 
+	- 0.034 * Normal_Nucleoli 
+	+ 0.9718
+
+LM num: 4
+Class=benign = 
+	-0.0374 * Clump_Thickness 
+	- 0.0009 * Cell_Size_Uniformity 
+	- 0.0006 * Cell_Shape_Uniformity 
+	- 0.0094 * Marginal_Adhesion 
+	+ 0.0268 * Single_Epi_Cell_Size 
+	- 0.0017 * Bare_Nuclei 
+	- 0.014 * Bland_Chromatin 
+	- 0.0497 * Normal_Nucleoli 
+	+ 1.2186
+
+LM num: 5
+Class=benign = 
+	-0.0826 * Clump_Thickness 
+	- 0.0009 * Cell_Size_Uniformity 
+	- 0.0006 * Cell_Shape_Uniformity 
+	- 0.0094 * Marginal_Adhesion 
+	+ 0.0268 * Single_Epi_Cell_Size 
+	- 0.0017 * Bare_Nuclei 
+	- 0.014 * Bland_Chromatin 
+	- 0.0612 * Normal_Nucleoli 
+	+ 1.4287
+
+LM num: 6
+Class=benign = 
+	-0.0908 * Clump_Thickness 
+	- 0.0009 * Cell_Size_Uniformity 
+	- 0.0006 * Cell_Shape_Uniformity 
+	- 0.0094 * Marginal_Adhesion 
+	+ 0.0268 * Single_Epi_Cell_Size 
+	- 0.0017 * Bare_Nuclei 
+	- 0.014 * Bland_Chromatin 
+	- 0.0612 * Normal_Nucleoli 
+	+ 1.4242
+
+LM num: 7
+Class=benign = 
+	-0.017 * Clump_Thickness 
+	- 0.001 * Cell_Size_Uniformity 
+	- 0.0085 * Cell_Shape_Uniformity 
+	- 0.005 * Marginal_Adhesion 
+	- 0.0231 * Single_Epi_Cell_Size 
+	- 0.0149 * Bare_Nuclei 
+	- 0.012 * Bland_Chromatin 
+	- 0.0076 * Normal_Nucleoli 
+	+ 1.1492
+
+LM num: 8
+Class=benign = 
+	-0.0374 * Clump_Thickness 
+	- 0.001 * Cell_Size_Uniformity 
+	- 0.0085 * Cell_Shape_Uniformity 
+	- 0.005 * Marginal_Adhesion 
+	- 0.0378 * Single_Epi_Cell_Size 
+	- 0.0149 * Bare_Nuclei 
+	- 0.012 * Bland_Chromatin 
+	- 0.0076 * Normal_Nucleoli 
+	+ 1.2313
+
+LM num: 9
+Class=benign = 
+	-0.043 * Clump_Thickness 
+	- 0.001 * Cell_Size_Uniformity 
+	- 0.0085 * Cell_Shape_Uniformity 
+	- 0.005 * Marginal_Adhesion 
+	- 0.0378 * Single_Epi_Cell_Size 
+	- 0.0149 * Bare_Nuclei 
+	- 0.012 * Bland_Chromatin 
+	- 0.0076 * Normal_Nucleoli 
+	+ 1.2143
+
+LM num: 10
+Class=benign = 
+	-0.0389 * Clump_Thickness 
+	- 0.001 * Cell_Size_Uniformity 
+	- 0.0067 * Cell_Shape_Uniformity 
+	- 0.0154 * Marginal_Adhesion 
+	- 0.0065 * Single_Epi_Cell_Size 
+	- 0.0506 * Bare_Nuclei 
+	- 0.0537 * Bland_Chromatin 
+	- 0.0106 * Normal_Nucleoli 
+	- 0.0105 * Mitoses 
+	+ 1.2786
+
+LM num: 11
+Class=benign = 
+	-0.0153 * Clump_Thickness 
+	- 0.001 * Cell_Size_Uniformity 
+	- 0.0067 * Cell_Shape_Uniformity 
+	- 0.0155 * Marginal_Adhesion 
+	- 0.0065 * Single_Epi_Cell_Size 
+	- 0.0202 * Bare_Nuclei 
+	- 0.0227 * Bland_Chromatin 
+	- 0.0106 * Normal_Nucleoli 
+	- 0.0107 * Mitoses 
+	+ 0.7672
+
+LM num: 12
+Class=benign = 
+	-0.0208 * Clump_Thickness 
+	- 0.001 * Cell_Size_Uniformity 
+	- 0.0067 * Cell_Shape_Uniformity 
+	- 0.0137 * Marginal_Adhesion 
+	- 0.0065 * Single_Epi_Cell_Size 
+	- 0.0126 * Bare_Nuclei 
+	- 0.022 * Bland_Chromatin 
+	- 0.0168 * Normal_Nucleoli 
+	+ 0.7025
+
+LM num: 13
+Class=benign = 
+	-0.0389 * Clump_Thickness 
+	- 0.001 * Cell_Size_Uniformity 
+	- 0.004 * Cell_Shape_Uniformity 
+	- 0.0008 * Marginal_Adhesion 
+	- 0.0038 * Single_Epi_Cell_Size 
+	- 0.0101 * Bare_Nuclei 
+	- 0.0252 * Bland_Chromatin 
+	- 0.0039 * Normal_Nucleoli 
+	+ 0.6637
+
+LM num: 14
+Class=benign = 
+	-0.0079 * Clump_Thickness 
+	- 0.001 * Cell_Size_Uniformity 
+	- 0.004 * Cell_Shape_Uniformity 
+	- 0.0008 * Marginal_Adhesion 
+	- 0.0038 * Single_Epi_Cell_Size 
+	- 0.0101 * Bare_Nuclei 
+	- 0.0213 * Bland_Chromatin 
+	- 0.0039 * Normal_Nucleoli 
+	+ 0.3813
+
+LM num: 15
+Class=benign = 
+	-0.0079 * Clump_Thickness 
+	- 0.001 * Cell_Size_Uniformity 
+	- 0.004 * Cell_Shape_Uniformity 
+	- 0.0008 * Marginal_Adhesion 
+	- 0.0038 * Single_Epi_Cell_Size 
+	- 0.0101 * Bare_Nuclei 
+	- 0.0081 * Bland_Chromatin 
+	- 0.0039 * Normal_Nucleoli 
+	+ 0.2856
+
+LM num: 16
+Class=benign = 
+	-0.0076 * Clump_Thickness 
+	- 0.001 * Cell_Size_Uniformity 
+	- 0.0038 * Cell_Shape_Uniformity 
+	- 0.0017 * Marginal_Adhesion 
+	- 0.0022 * Single_Epi_Cell_Size 
+	- 0.0079 * Bare_Nuclei 
+	- 0.0044 * Bland_Chromatin 
+	- 0.0028 * Normal_Nucleoli 
+	+ 0.2296
+
+Number of Rules : 16
+
+Time taken to build model: 0.3 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.957 
+Mean absolute error                      0.0568
+Root mean squared error                  0.1381
+Relative absolute error                 12.5826 %
+Root relative squared error             29.0613 %
+Total Number of Instances              699     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9251
+Mean absolute error                      0.0719
+Root mean squared error                  0.1807
+Relative absolute error                 15.894  %
+Root relative squared error             37.9582 %
+Total Number of Instances              699     
+

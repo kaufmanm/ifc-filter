@@ -1,0 +1,231 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation credit-rating-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R16-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute A1 numeric
+@attribute A2 numeric
+@attribute A3 numeric
+@attribute A4 numeric
+@attribute A5 numeric
+@attribute A6 numeric
+@attribute A7 numeric
+@attribute A8 numeric
+@attribute A9 numeric
+@attribute A10 numeric
+@attribute A11 numeric
+@attribute A12 numeric
+@attribute A13 numeric
+@attribute A14 numeric
+@attribute A15 numeric
+@attribute class numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+A9 <= 0.454 : 
+|   A6 <= 0.44 : 
+|   |   A14 <= 0.44 : LM1 (86/0%)
+|   |   A14 >  0.44 : LM2 (75/41.923%)
+|   A6 >  0.44 : 
+|   |   A3 <= 0.507 : 
+|   |   |   A4 <= 0.436 : LM3 (36/0%)
+|   |   |   A4 >  0.436 : 
+|   |   |   |   A2 <= 0.495 : 
+|   |   |   |   |   A10 <= 0.522 : 
+|   |   |   |   |   |   A8 <= 0.59 : LM4 (24/55.615%)
+|   |   |   |   |   |   A8 >  0.59 : 
+|   |   |   |   |   |   |   A3 <= 0.372 : LM5 (6/0%)
+|   |   |   |   |   |   |   A3 >  0.372 : LM6 (3/0%)
+|   |   |   |   |   A10 >  0.522 : LM7 (15/0%)
+|   |   |   |   A2 >  0.495 : LM8 (25/0%)
+|   |   A3 >  0.507 : LM9 (59/79.272%)
+A9 >  0.454 : 
+|   A15 <= 0.645 : LM10 (242/77.856%)
+|   A15 >  0.645 : LM11 (119/25.501%)
+
+LM num: 1
+class = 
+	0.0297 * A3 
+	+ 0.0448 * A4 
+	+ 0.0366 * A6 
+	+ 0.0355 * A8 
+	+ 0.0279 * A9 
+	- 0.0111 * A10 
+	+ 0.0127 * A11 
+	+ 0.0652 * A13 
+	+ 0.0113 * A14 
+	+ 0.0372 * A15 
+	- 0.1079
+
+LM num: 2
+class = 
+	0.0297 * A3 
+	+ 0.0448 * A4 
+	+ 0.0366 * A6 
+	+ 0.216 * A8 
+	+ 0.0279 * A9 
+	- 0.0111 * A10 
+	+ 0.0127 * A11 
+	+ 0.5681 * A13 
+	+ 0.0113 * A14 
+	+ 0.2561 * A15 
+	- 0.4871
+
+LM num: 3
+class = 
+	0.0687 * A3 
+	+ 0.2626 * A4 
+	+ 0.0358 * A6 
+	+ 0.0399 * A8 
+	+ 0.0279 * A9 
+	- 0.0793 * A10 
+	+ 0.0127 * A11 
+	+ 0.0164 * A13 
+	- 0.0681 * A14 
+	+ 0.0142 * A15 
+	- 0.1152
+
+LM num: 4
+class = 
+	0.0687 * A3 
+	+ 0.1983 * A4 
+	+ 0.0358 * A6 
+	+ 0.0399 * A8 
+	+ 0.0279 * A9 
+	- 0.1447 * A10 
+	+ 0.0127 * A11 
+	+ 0.0164 * A13 
+	- 0.0462 * A14 
+	+ 0.0142 * A15 
+	- 0.0063
+
+LM num: 5
+class = 
+	0.4129 * A3 
+	+ 0.1983 * A4 
+	+ 0.0358 * A6 
+	+ 0.0399 * A8 
+	+ 0.0279 * A9 
+	- 0.1447 * A10 
+	+ 0.0127 * A11 
+	+ 0.0164 * A13 
+	- 0.0462 * A14 
+	+ 0.0142 * A15 
+	- 0.0974
+
+LM num: 6
+class = 
+	0.4703 * A3 
+	+ 0.1983 * A4 
+	+ 0.0358 * A6 
+	+ 0.0399 * A8 
+	+ 0.0279 * A9 
+	- 0.1447 * A10 
+	+ 0.0127 * A11 
+	+ 0.0164 * A13 
+	- 0.0462 * A14 
+	+ 0.0142 * A15 
+	- 0.0908
+
+LM num: 7
+class = 
+	0.0687 * A3 
+	+ 0.1983 * A4 
+	+ 0.0358 * A6 
+	+ 0.0399 * A8 
+	+ 0.0279 * A9 
+	- 0.1748 * A10 
+	+ 0.0127 * A11 
+	+ 0.0164 * A13 
+	- 0.0462 * A14 
+	+ 0.0142 * A15 
+	- 0.0204
+
+LM num: 8
+class = 
+	0.0687 * A3 
+	+ 0.1983 * A4 
+	+ 0.0358 * A6 
+	+ 0.0399 * A8 
+	+ 0.0279 * A9 
+	- 0.1143 * A10 
+	+ 0.0127 * A11 
+	+ 0.0164 * A13 
+	- 0.0462 * A14 
+	+ 0.0142 * A15 
+	- 0.0658
+
+LM num: 9
+class = 
+	-1.973 * A3 
+	+ 0.1543 * A4 
+	+ 0.0358 * A6 
+	+ 0.0529 * A8 
+	+ 0.0279 * A9 
+	- 0.0487 * A10 
+	+ 0.0127 * A11 
+	+ 0.0164 * A13 
+	- 0.0344 * A14 
+	+ 0.0142 * A15 
+	+ 1.2835
+
+LM num: 10
+class = 
+	0.2994 * A3 
+	+ 0.4727 * A4 
+	+ 0.4239 * A6 
+	+ 0.0163 * A8 
+	+ 0.0255 * A9 
+	+ 0.4477 * A11 
+	+ 0.015 * A13 
+	+ 0.8025 * A14 
+	+ 0.4904 * A15 
+	- 0.8285
+
+LM num: 11
+class = 
+	-1.2012 * A1 
+	+ 0.0099 * A3 
+	+ 0.0477 * A4 
+	+ 0.0549 * A6 
+	+ 0.0241 * A8 
+	+ 0.0255 * A9 
+	+ 0.0504 * A11 
+	+ 0.015 * A13 
+	+ 0.0787 * A14 
+	+ 0.0612 * A15 
+	+ 1.3502
+
+Number of Rules : 11
+
+Time taken to build model: 0.33 seconds
+Time taken to test model on training data: 0.39 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8273
+Mean absolute error                      0.1679
+Root mean squared error                  0.2796
+Relative absolute error                 33.9952 %
+Root relative squared error             56.2544 %
+Total Number of Instances              690     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7733
+Mean absolute error                      0.215 
+Root mean squared error                  0.3172
+Relative absolute error                 43.4174 %
+Root relative squared error             63.6585 %
+Total Number of Instances              690     
+

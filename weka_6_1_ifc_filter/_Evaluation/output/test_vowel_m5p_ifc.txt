@@ -1,0 +1,532 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'vowel-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R1-2,14-23-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute Sex numeric
+@attribute 'Feature 0' numeric
+@attribute 'Feature 1' numeric
+@attribute 'Feature 2' numeric
+@attribute 'Feature 3' numeric
+@attribute 'Feature 4' numeric
+@attribute 'Feature 5' numeric
+@attribute 'Feature 6' numeric
+@attribute 'Feature 7' numeric
+@attribute 'Feature 8' numeric
+@attribute 'Feature 9' numeric
+@attribute Class=hed numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+Feature 0 <= 0.319 : LM1 (397/0%)
+Feature 0 >  0.319 : 
+|   Feature 1 <= 0.24 : LM2 (185/0%)
+|   Feature 1 >  0.24 : 
+|   |   Feature 3 <= 0.286 : LM3 (89/36.664%)
+|   |   Feature 3 >  0.286 : 
+|   |   |   Feature 2 <= 0.296 : 
+|   |   |   |   Feature 1 <= 0.693 : LM4 (52/0%)
+|   |   |   |   Feature 1 >  0.693 : 
+|   |   |   |   |   Feature 7 <= 0.688 : LM5 (11/0%)
+|   |   |   |   |   Feature 7 >  0.688 : LM6 (3/0%)
+|   |   |   Feature 2 >  0.296 : 
+|   |   |   |   Feature 4 <= 0.427 : 
+|   |   |   |   |   Feature 5 <= 0.523 : LM7 (36/0%)
+|   |   |   |   |   Feature 5 >  0.523 : 
+|   |   |   |   |   |   Feature 4 <= 0.342 : LM8 (11/0%)
+|   |   |   |   |   |   Feature 4 >  0.342 : 
+|   |   |   |   |   |   |   Feature 3 <= 0.62 : 
+|   |   |   |   |   |   |   |   Feature 9 <= 0.507 : LM9 (9/90.207%)
+|   |   |   |   |   |   |   |   Feature 9 >  0.507 : 
+|   |   |   |   |   |   |   |   |   Feature 0 <= 0.478 : LM10 (5/0%)
+|   |   |   |   |   |   |   |   |   Feature 0 >  0.478 : 
+|   |   |   |   |   |   |   |   |   |   Feature 0 <= 0.618 : LM11 (2/0%)
+|   |   |   |   |   |   |   |   |   |   Feature 0 >  0.618 : LM12 (2/0%)
+|   |   |   |   |   |   |   Feature 3 >  0.62 : LM13 (6/0%)
+|   |   |   |   Feature 4 >  0.427 : 
+|   |   |   |   |   Feature 1 <= 0.61 : 
+|   |   |   |   |   |   Feature 3 <= 0.453 : LM14 (25/0%)
+|   |   |   |   |   |   Feature 3 >  0.453 : LM15 (70/134.917%)
+|   |   |   |   |   Feature 1 >  0.61 : 
+|   |   |   |   |   |   Feature 7 <= 0.604 : 
+|   |   |   |   |   |   |   Feature 8 <= 0.495 : 
+|   |   |   |   |   |   |   |   Feature 9 <= 0.431 : LM16 (8/0%)
+|   |   |   |   |   |   |   |   Feature 9 >  0.431 : 
+|   |   |   |   |   |   |   |   |   Feature 5 <= 0.569 : LM17 (13/92.319%)
+|   |   |   |   |   |   |   |   |   Feature 5 >  0.569 : 
+|   |   |   |   |   |   |   |   |   |   Feature 1 <= 0.688 : 
+|   |   |   |   |   |   |   |   |   |   |   Feature 0 <= 0.499 : LM18 (3/0%)
+|   |   |   |   |   |   |   |   |   |   |   Feature 0 >  0.499 : 
+|   |   |   |   |   |   |   |   |   |   |   |   Feature 8 <= 0.476 : LM19 (3/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   Feature 8 >  0.476 : LM20 (2/0%)
+|   |   |   |   |   |   |   |   |   |   Feature 1 >  0.688 : LM21 (6/0%)
+|   |   |   |   |   |   |   Feature 8 >  0.495 : 
+|   |   |   |   |   |   |   |   Feature 2 <= 0.629 : 
+|   |   |   |   |   |   |   |   |   Feature 4 <= 0.697 : 
+|   |   |   |   |   |   |   |   |   |   Feature 6 <= 0.612 : 
+|   |   |   |   |   |   |   |   |   |   |   Feature 3 <= 0.543 : LM22 (5/0%)
+|   |   |   |   |   |   |   |   |   |   |   Feature 3 >  0.543 : 
+|   |   |   |   |   |   |   |   |   |   |   |   Feature 2 <= 0.56 : LM23 (2/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   Feature 2 >  0.56 : LM24 (4/0%)
+|   |   |   |   |   |   |   |   |   |   Feature 6 >  0.612 : LM25 (5/0%)
+|   |   |   |   |   |   |   |   |   Feature 4 >  0.697 : LM26 (5/0%)
+|   |   |   |   |   |   |   |   Feature 2 >  0.629 : LM27 (7/0%)
+|   |   |   |   |   |   Feature 7 >  0.604 : 
+|   |   |   |   |   |   |   Feature 5 <= 0.449 : 
+|   |   |   |   |   |   |   |   Feature 1 <= 0.626 : LM28 (3/0%)
+|   |   |   |   |   |   |   |   Feature 1 >  0.626 : LM29 (2/0%)
+|   |   |   |   |   |   |   Feature 5 >  0.449 : LM30 (19/0%)
+
+LM num: 1
+Class=hed = 
+	0.0082 * Feature 0 
+	+ 0.0058 * Feature 1 
+	+ 0.0053 * Feature 2 
+	+ 0.0072 * Feature 3 
+	+ 0.0087 * Feature 4 
+	+ 0.0066 * Feature 5 
+	+ 0.0047 * Feature 6 
+	+ 0.008 * Feature 7 
+	+ 0.0097 * Feature 8 
+	+ 0.0063 * Feature 9 
+	- 0.0272
+
+LM num: 2
+Class=hed = 
+	0.0244 * Feature 0 
+	+ 0.0205 * Feature 1 
+	+ 0.0214 * Feature 2 
+	+ 0.0242 * Feature 3 
+	+ 0.0279 * Feature 4 
+	+ 0.0269 * Feature 5 
+	+ 0.0172 * Feature 6 
+	+ 0.0292 * Feature 7 
+	+ 0.0302 * Feature 8 
+	+ 0.0319 * Feature 9 
+	- 0.1021
+
+LM num: 3
+Class=hed = 
+	0.0691 * Feature 0 
+	+ 0.0718 * Feature 1 
+	+ 0.0428 * Feature 2 
+	+ 0.059 * Feature 3 
+	+ 0.0663 * Feature 4 
+	+ 0.0687 * Feature 5 
+	+ 0.0482 * Feature 6 
+	+ 0.083 * Feature 7 
+	+ 0.0622 * Feature 8 
+	+ 0.0825 * Feature 9 
+	- 0.2694
+
+LM num: 4
+Class=hed = 
+	0.1042 * Feature 0 
+	+ 0.1125 * Feature 1 
+	+ 0.0893 * Feature 2 
+	+ 0.089 * Feature 3 
+	+ 0.1013 * Feature 4 
+	+ 0.1022 * Feature 5 
+	+ 0.098 * Feature 6 
+	+ 0.1718 * Feature 7 
+	+ 0.1113 * Feature 8 
+	+ 0.153 * Feature 9 
+	- 0.4879
+
+LM num: 5
+Class=hed = 
+	0.1042 * Feature 0 
+	+ 0.1125 * Feature 1 
+	+ 0.0893 * Feature 2 
+	+ 0.089 * Feature 3 
+	+ 0.1013 * Feature 4 
+	+ 0.1022 * Feature 5 
+	+ 0.098 * Feature 6 
+	+ 0.7831 * Feature 7 
+	+ 0.1113 * Feature 8 
+	+ 0.153 * Feature 9 
+	- 0.7807
+
+LM num: 6
+Class=hed = 
+	0.1042 * Feature 0 
+	+ 0.1125 * Feature 1 
+	+ 0.0893 * Feature 2 
+	+ 0.089 * Feature 3 
+	+ 0.1013 * Feature 4 
+	+ 0.1022 * Feature 5 
+	+ 0.098 * Feature 6 
+	+ 1.0188 * Feature 7 
+	+ 0.1113 * Feature 8 
+	+ 0.153 * Feature 9 
+	- 0.8404
+
+LM num: 7
+Class=hed = 
+	-0.0294 * Feature 0 
+	+ 0.1177 * Feature 1 
+	+ 0.1254 * Feature 2 
+	+ 0.0996 * Feature 3 
+	+ 0.1978 * Feature 4 
+	+ 0.204 * Feature 5 
+	+ 0.137 * Feature 6 
+	+ 0.1439 * Feature 7 
+	+ 0.1692 * Feature 8 
+	+ 0.2894 * Feature 9 
+	- 0.5886
+
+LM num: 8
+Class=hed = 
+	-0.3873 * Feature 0 
+	+ 0.1177 * Feature 1 
+	+ 0.1254 * Feature 2 
+	+ 0.0996 * Feature 3 
+	+ 0.3582 * Feature 4 
+	+ 0.2055 * Feature 5 
+	+ 0.137 * Feature 6 
+	+ 0.1439 * Feature 7 
+	+ 0.1692 * Feature 8 
+	+ 0.5104 * Feature 9 
+	- 0.4619
+
+LM num: 9
+Class=hed = 
+	-0.5723 * Feature 0 
+	+ 0.1177 * Feature 1 
+	+ 0.1254 * Feature 2 
+	- 0.0241 * Feature 3 
+	+ 0.3052 * Feature 4 
+	+ 0.2055 * Feature 5 
+	+ 0.137 * Feature 6 
+	+ 0.1439 * Feature 7 
+	+ 0.1692 * Feature 8 
+	+ 0.765 * Feature 9 
+	- 0.3314
+
+LM num: 10
+Class=hed = 
+	-0.5723 * Feature 0 
+	+ 0.1177 * Feature 1 
+	+ 0.1254 * Feature 2 
+	+ 0.0996 * Feature 3 
+	+ 0.3052 * Feature 4 
+	+ 0.2055 * Feature 5 
+	+ 0.137 * Feature 6 
+	+ 0.1439 * Feature 7 
+	+ 0.1692 * Feature 8 
+	+ 0.765 * Feature 9 
+	- 0.347
+
+LM num: 11
+Class=hed = 
+	-0.5191 * Feature 0 
+	+ 0.1177 * Feature 1 
+	+ 0.1254 * Feature 2 
+	+ 0.0996 * Feature 3 
+	+ 0.3052 * Feature 4 
+	+ 0.2055 * Feature 5 
+	+ 0.137 * Feature 6 
+	+ 0.1439 * Feature 7 
+	+ 0.1692 * Feature 8 
+	+ 0.765 * Feature 9 
+	- 0.3875
+
+LM num: 12
+Class=hed = 
+	-0.5191 * Feature 0 
+	+ 0.1177 * Feature 1 
+	+ 0.1254 * Feature 2 
+	+ 0.0996 * Feature 3 
+	+ 0.3052 * Feature 4 
+	+ 0.2055 * Feature 5 
+	+ 0.137 * Feature 6 
+	+ 0.1439 * Feature 7 
+	+ 0.1692 * Feature 8 
+	+ 0.765 * Feature 9 
+	- 0.386
+
+LM num: 13
+Class=hed = 
+	-0.5368 * Feature 0 
+	+ 0.1177 * Feature 1 
+	+ 0.1254 * Feature 2 
+	+ 0.0996 * Feature 3 
+	+ 0.3052 * Feature 4 
+	+ 0.2055 * Feature 5 
+	+ 0.137 * Feature 6 
+	+ 0.1439 * Feature 7 
+	+ 0.1692 * Feature 8 
+	+ 0.7175 * Feature 9 
+	- 0.4119
+
+LM num: 14
+Class=hed = 
+	0.1455 * Feature 0 
+	+ 0.1387 * Feature 1 
+	+ 0.1375 * Feature 2 
+	+ 0.3396 * Feature 3 
+	+ 0.1359 * Feature 4 
+	+ 0.138 * Feature 5 
+	+ 0.2862 * Feature 6 
+	+ 0.1641 * Feature 7 
+	+ 0.4622 * Feature 8 
+	+ 0.3739 * Feature 9 
+	- 1.0145
+
+LM num: 15
+Class=hed = 
+	0.1455 * Feature 0 
+	+ 0.1387 * Feature 1 
+	+ 0.1375 * Feature 2 
+	+ 0.2246 * Feature 3 
+	+ 0.1359 * Feature 4 
+	+ 0.138 * Feature 5 
+	+ 0.7306 * Feature 6 
+	+ 0.1641 * Feature 7 
+	+ 1.1299 * Feature 8 
+	+ 0.7417 * Feature 9 
+	- 1.5106
+
+LM num: 16
+Class=hed = 
+	0.5223 * Feature 0 
+	+ 0.1431 * Feature 1 
+	+ 0.6 * Feature 2 
+	+ 0.1265 * Feature 3 
+	+ 0.1401 * Feature 4 
+	+ 0.7546 * Feature 5 
+	+ 0.4576 * Feature 6 
+	+ 0.3952 * Feature 7 
+	+ 0.3411 * Feature 8 
+	+ 0.8278 * Feature 9 
+	- 1.9264
+
+LM num: 17
+Class=hed = 
+	0.5223 * Feature 0 
+	+ 0.1431 * Feature 1 
+	+ 0.6 * Feature 2 
+	+ 0.1265 * Feature 3 
+	+ 0.1401 * Feature 4 
+	+ 0.8581 * Feature 5 
+	+ 0.4576 * Feature 6 
+	+ 0.3952 * Feature 7 
+	+ 0.3411 * Feature 8 
+	+ 1.6671 * Feature 9 
+	- 2.4028
+
+LM num: 18
+Class=hed = 
+	0.7013 * Feature 0 
+	+ 0.5582 * Feature 1 
+	+ 0.6 * Feature 2 
+	+ 0.1265 * Feature 3 
+	+ 0.1401 * Feature 4 
+	+ 0.8488 * Feature 5 
+	+ 0.4576 * Feature 6 
+	+ 0.3952 * Feature 7 
+	+ 0.3411 * Feature 8 
+	+ 1.1563 * Feature 9 
+	- 2.4609
+
+LM num: 19
+Class=hed = 
+	0.6935 * Feature 0 
+	+ 0.5582 * Feature 1 
+	+ 0.6 * Feature 2 
+	+ 0.1265 * Feature 3 
+	+ 0.1401 * Feature 4 
+	+ 0.8488 * Feature 5 
+	+ 0.4576 * Feature 6 
+	+ 0.3952 * Feature 7 
+	+ 0.269 * Feature 8 
+	+ 1.1563 * Feature 9 
+	- 2.4183
+
+LM num: 20
+Class=hed = 
+	0.6935 * Feature 0 
+	+ 0.5582 * Feature 1 
+	+ 0.6 * Feature 2 
+	+ 0.1265 * Feature 3 
+	+ 0.1401 * Feature 4 
+	+ 0.8488 * Feature 5 
+	+ 0.4576 * Feature 6 
+	+ 0.3952 * Feature 7 
+	+ 0.2648 * Feature 8 
+	+ 1.1563 * Feature 9 
+	- 2.4178
+
+LM num: 21
+Class=hed = 
+	0.6327 * Feature 0 
+	+ 0.5977 * Feature 1 
+	+ 0.6 * Feature 2 
+	+ 0.1265 * Feature 3 
+	+ 0.1401 * Feature 4 
+	+ 0.8488 * Feature 5 
+	+ 0.4576 * Feature 6 
+	+ 0.3952 * Feature 7 
+	+ 0.3411 * Feature 8 
+	+ 1.1563 * Feature 9 
+	- 2.4248
+
+LM num: 22
+Class=hed = 
+	0.5557 * Feature 0 
+	+ 0.1431 * Feature 1 
+	+ 1.7062 * Feature 2 
+	+ 0.6166 * Feature 3 
+	+ 0.5489 * Feature 4 
+	+ 0.407 * Feature 5 
+	+ 1.0765 * Feature 6 
+	+ 0.3952 * Feature 7 
+	+ 0.3641 * Feature 8 
+	+ 0.4641 * Feature 9 
+	- 2.9308
+
+LM num: 23
+Class=hed = 
+	0.5557 * Feature 0 
+	+ 0.1431 * Feature 1 
+	+ 1.7387 * Feature 2 
+	+ 0.6123 * Feature 3 
+	+ 0.5489 * Feature 4 
+	+ 0.407 * Feature 5 
+	+ 1.0765 * Feature 6 
+	+ 0.3952 * Feature 7 
+	+ 0.3641 * Feature 8 
+	+ 0.4641 * Feature 9 
+	- 2.939
+
+LM num: 24
+Class=hed = 
+	0.5557 * Feature 0 
+	+ 0.1431 * Feature 1 
+	+ 1.7347 * Feature 2 
+	+ 0.6123 * Feature 3 
+	+ 0.5489 * Feature 4 
+	+ 0.407 * Feature 5 
+	+ 1.0765 * Feature 6 
+	+ 0.3952 * Feature 7 
+	+ 0.3641 * Feature 8 
+	+ 0.4641 * Feature 9 
+	- 2.935
+
+LM num: 25
+Class=hed = 
+	0.5557 * Feature 0 
+	+ 0.1431 * Feature 1 
+	+ 1.6528 * Feature 2 
+	+ 0.5528 * Feature 3 
+	+ 0.5489 * Feature 4 
+	+ 0.407 * Feature 5 
+	+ 1.1159 * Feature 6 
+	+ 0.3952 * Feature 7 
+	+ 0.3641 * Feature 8 
+	+ 0.4641 * Feature 9 
+	- 2.865
+
+LM num: 26
+Class=hed = 
+	0.5557 * Feature 0 
+	+ 0.1431 * Feature 1 
+	+ 1.5402 * Feature 2 
+	+ 0.5214 * Feature 3 
+	+ 0.6708 * Feature 4 
+	+ 0.407 * Feature 5 
+	+ 1.0665 * Feature 6 
+	+ 0.3952 * Feature 7 
+	+ 0.3641 * Feature 8 
+	+ 0.4641 * Feature 9 
+	- 2.8098
+
+LM num: 27
+Class=hed = 
+	0.5557 * Feature 0 
+	+ 0.1431 * Feature 1 
+	+ 1.3523 * Feature 2 
+	+ 0.3634 * Feature 3 
+	+ 0.4464 * Feature 4 
+	+ 0.407 * Feature 5 
+	+ 0.875 * Feature 6 
+	+ 0.3952 * Feature 7 
+	+ 0.3641 * Feature 8 
+	+ 0.4641 * Feature 9 
+	- 2.3606
+
+LM num: 28
+Class=hed = 
+	0.4842 * Feature 0 
+	- 0.9357 * Feature 1 
+	+ 0.427 * Feature 2 
+	+ 0.1265 * Feature 3 
+	+ 0.1401 * Feature 4 
+	+ 0.7661 * Feature 5 
+	+ 0.3905 * Feature 6 
+	+ 0.6209 * Feature 7 
+	+ 0.1997 * Feature 8 
+	+ 0.4342 * Feature 9 
+	- 0.6803
+
+LM num: 29
+Class=hed = 
+	0.4842 * Feature 0 
+	- 0.9991 * Feature 1 
+	+ 0.427 * Feature 2 
+	+ 0.1265 * Feature 3 
+	+ 0.1401 * Feature 4 
+	+ 0.7661 * Feature 5 
+	+ 0.3905 * Feature 6 
+	+ 0.6209 * Feature 7 
+	+ 0.1997 * Feature 8 
+	+ 0.4342 * Feature 9 
+	- 0.654
+
+LM num: 30
+Class=hed = 
+	0.4842 * Feature 0 
+	+ 0.1431 * Feature 1 
+	+ 0.427 * Feature 2 
+	+ 0.1265 * Feature 3 
+	+ 0.1401 * Feature 4 
+	+ 0.6007 * Feature 5 
+	+ 0.3905 * Feature 6 
+	+ 0.6209 * Feature 7 
+	+ 0.1997 * Feature 8 
+	+ 0.4342 * Feature 9 
+	- 1.2338
+
+Number of Rules : 30
+
+Time taken to build model: 0.52 seconds
+Time taken to test model on training data: 0.5 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8405
+Mean absolute error                      0.0681
+Root mean squared error                  0.159 
+Relative absolute error                 41.1704 %
+Root relative squared error             55.308  %
+Total Number of Instances              990     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.1404
+Mean absolute error                      0.1399
+Root mean squared error                  0.2935
+Relative absolute error                 84.5873 %
+Root relative squared error            102.0128 %
+Total Number of Instances              990     
+

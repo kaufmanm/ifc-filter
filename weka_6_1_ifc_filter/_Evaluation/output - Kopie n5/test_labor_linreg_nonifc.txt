@@ -1,0 +1,42 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+class =
+
+      0.0782 * wage-increase-first-year +
+      0.1809 * wage-increase-second-year +
+     -0.0275 * working-hours +
+      0.1896 * pension=empl_contr +
+     -0.0213 * shift-differential +
+      0.2021 * education-allowance=yes +
+      0.1516 * vacation=average,generous +
+      0.3809 * longterm-disability-assistance=yes +
+      0.3514 * contribution-to-health-plan=full,half +
+     -0.1077
+
+Time taken to build model: 0.05 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8915
+Mean absolute error                      0.1674
+Root mean squared error                  0.2162
+Relative absolute error                 36.7523 %
+Root relative squared error             45.3092 %
+Total Number of Instances               57     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7734
+Mean absolute error                      0.248 
+Root mean squared error                  0.309 
+Relative absolute error                 53.5133 %
+Root relative squared error             63.5918 %
+Total Number of Instances               57     
+

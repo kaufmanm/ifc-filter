@@ -1,0 +1,132 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation sonar-weka.filters.unsupervised.attribute.NominalToBinary-R61-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute attribute_1 numeric
+@attribute attribute_2 numeric
+@attribute attribute_3 numeric
+@attribute attribute_4 numeric
+@attribute attribute_5 numeric
+@attribute attribute_6 numeric
+@attribute attribute_7 numeric
+@attribute attribute_8 numeric
+@attribute attribute_9 numeric
+@attribute attribute_10 numeric
+@attribute attribute_11 numeric
+@attribute attribute_12 numeric
+@attribute attribute_13 numeric
+@attribute attribute_14 numeric
+@attribute attribute_15 numeric
+@attribute attribute_16 numeric
+@attribute attribute_17 numeric
+@attribute attribute_18 numeric
+@attribute attribute_19 numeric
+@attribute attribute_20 numeric
+@attribute attribute_21 numeric
+@attribute attribute_22 numeric
+@attribute attribute_23 numeric
+@attribute attribute_24 numeric
+@attribute attribute_25 numeric
+@attribute attribute_26 numeric
+@attribute attribute_27 numeric
+@attribute attribute_28 numeric
+@attribute attribute_29 numeric
+@attribute attribute_30 numeric
+@attribute attribute_31 numeric
+@attribute attribute_32 numeric
+@attribute attribute_33 numeric
+@attribute attribute_34 numeric
+@attribute attribute_35 numeric
+@attribute attribute_36 numeric
+@attribute attribute_37 numeric
+@attribute attribute_38 numeric
+@attribute attribute_39 numeric
+@attribute attribute_40 numeric
+@attribute attribute_41 numeric
+@attribute attribute_42 numeric
+@attribute attribute_43 numeric
+@attribute attribute_44 numeric
+@attribute attribute_45 numeric
+@attribute attribute_46 numeric
+@attribute attribute_47 numeric
+@attribute attribute_48 numeric
+@attribute attribute_49 numeric
+@attribute attribute_50 numeric
+@attribute attribute_51 numeric
+@attribute attribute_52 numeric
+@attribute attribute_53 numeric
+@attribute attribute_54 numeric
+@attribute attribute_55 numeric
+@attribute attribute_56 numeric
+@attribute attribute_57 numeric
+@attribute attribute_58 numeric
+@attribute attribute_59 numeric
+@attribute attribute_60 numeric
+@attribute Class numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+Class =
+
+      0.2488 * attribute_3 +
+      0.3246 * attribute_5 +
+      0.1651 * attribute_7 +
+      0.3824 * attribute_12 +
+     -0.1504 * attribute_13 +
+     -0.158  * attribute_14 +
+      0.319  * attribute_15 +
+      0.2585 * attribute_21 +
+      0.5898 * attribute_23 +
+      0.5837 * attribute_27 +
+      0.2769 * attribute_29 +
+      0.4104 * attribute_31 +
+      0.154  * attribute_35 +
+      0.2093 * attribute_36 +
+      0.3059 * attribute_37 +
+      0.2952 * attribute_38 +
+      0.3259 * attribute_39 +
+      0.449  * attribute_40 +
+      0.2523 * attribute_41 +
+      0.3721 * attribute_43 +
+     -0.2438 * attribute_44 +
+      0.2628 * attribute_45 +
+      0.1498 * attribute_46 +
+      0.332  * attribute_48 +
+      0.2656 * attribute_54 +
+      0.4203 * attribute_55 +
+     -0.7143 * attribute_56 +
+      0.672  * attribute_60 +
+     -2.8663
+
+Time taken to build model: 0.27 seconds
+Time taken to test model on training data: 2.65 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9466
+Mean absolute error                      0.115 
+Root mean squared error                  0.1742
+Relative absolute error                 23.0973 %
+Root relative squared error             34.9174 %
+Total Number of Instances              208     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.0632
+Mean absolute error                      0.4924
+Root mean squared error                  0.501 
+Relative absolute error                 98.4206 %
+Root relative squared error             99.8781 %
+Total Number of Instances              208     
+

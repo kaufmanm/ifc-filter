@@ -1,0 +1,88 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'horse-colic-weka.filters.unsupervised.attribute.AddValues-C22-L\'?\'-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R22-weka.filters.unsupervised.attribute.Remove-R23-25-weka.filters.unsupervised.attribute.Remove-R23-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute surgery numeric
+@attribute Age numeric
+@attribute rectal_temperature numeric
+@attribute pulse numeric
+@attribute respiratory_rate numeric
+@attribute temp_extremities numeric
+@attribute peripheral_pulse numeric
+@attribute mucous_membranes numeric
+@attribute capillary_refill_time numeric
+@attribute pain numeric
+@attribute peristalsis numeric
+@attribute abdominal_distension numeric
+@attribute nasogastric_tube numeric
+@attribute nasogastric_reflux numeric
+@attribute nasogastric_reflux_PH numeric
+@attribute rectal_examination numeric
+@attribute abdomen numeric
+@attribute packed_cell_volume numeric
+@attribute total_protein numeric
+@attribute abdominocentesis_appearance numeric
+@attribute abdomcentesis_total_protein numeric
+@attribute outcome=lived numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ -       0.0459 * (normalized) surgery
+ +       0.0034 * (normalized) Age
+ +       0.2339 * (normalized) rectal_temperature
+ +       0.34   * (normalized) pulse
+ -       0.0146 * (normalized) respiratory_rate
+ +       0.1095 * (normalized) temp_extremities
+ -       0.0242 * (normalized) peripheral_pulse
+ +       0.29   * (normalized) mucous_membranes
+ +       0.055  * (normalized) capillary_refill_time
+ +       0.1703 * (normalized) pain
+ -       0.0385 * (normalized) peristalsis
+ +       0.1611 * (normalized) abdominal_distension
+ +       0.0754 * (normalized) nasogastric_tube
+ +       0.0104 * (normalized) nasogastric_reflux
+ +       0.0665 * (normalized) nasogastric_reflux_PH
+ -       0.0609 * (normalized) rectal_examination
+ -       0.0018 * (normalized) abdomen
+ +       0.3549 * (normalized) packed_cell_volume
+ +       0.1473 * (normalized) total_protein
+ -       0.042  * (normalized) abdominocentesis_appearance
+ +       0.1566 * (normalized) abdomcentesis_total_protein
+ -       0.5827
+
+
+
+Number of kernel evaluations: 67896 (95.791% cached)
+
+Time taken to build model: 0.39 seconds
+Time taken to test model on training data: 0.62 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.6124
+Mean absolute error                      0.2718
+Root mean squared error                  0.3861
+Relative absolute error                 57.493  %
+Root relative squared error             79.4215 %
+Total Number of Instances              368     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4768
+Mean absolute error                      0.3239
+Root mean squared error                  0.4355
+Relative absolute error                 68.3771 %
+Root relative squared error             89.362  %
+Total Number of Instances              368     
+

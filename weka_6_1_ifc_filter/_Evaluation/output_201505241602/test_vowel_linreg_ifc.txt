@@ -1,0 +1,65 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'vowel-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R1-2,14-23-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute Sex numeric
+@attribute 'Feature 0' numeric
+@attribute 'Feature 1' numeric
+@attribute 'Feature 2' numeric
+@attribute 'Feature 3' numeric
+@attribute 'Feature 4' numeric
+@attribute 'Feature 5' numeric
+@attribute 'Feature 6' numeric
+@attribute 'Feature 7' numeric
+@attribute 'Feature 8' numeric
+@attribute 'Feature 9' numeric
+@attribute Class=hed numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+Class=hed =
+
+      0.2266 * Feature 0 +
+      0.1595 * Feature 1 +
+      0.1443 * Feature 2 +
+      0.1967 * Feature 3 +
+      0.2381 * Feature 4 +
+      0.1811 * Feature 5 +
+      0.1288 * Feature 6 +
+      0.2184 * Feature 7 +
+      0.2663 * Feature 8 +
+      0.172  * Feature 9 +
+     -0.7462
+
+Time taken to build model: 0.23 seconds
+Time taken to test model on training data: 0.44 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.6126
+Mean absolute error                      0.1444
+Root mean squared error                  0.2355
+Relative absolute error                 87.3458 %
+Root relative squared error             81.9188 %
+Total Number of Instances              990     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.2049
+Mean absolute error                      0.1749
+Root mean squared error                  0.2821
+Relative absolute error                105.7446 %
+Root relative squared error             98.042  %
+Total Number of Instances              990     
+

@@ -1,0 +1,89 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation heart-statlog-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R15-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute age numeric
+@attribute sex numeric
+@attribute chest numeric
+@attribute resting_blood_pressure numeric
+@attribute serum_cholestoral numeric
+@attribute fasting_blood_sugar numeric
+@attribute resting_electrocardiographic_results numeric
+@attribute maximum_heart_rate_achieved numeric
+@attribute exercise_induced_angina numeric
+@attribute oldpeak numeric
+@attribute slope numeric
+@attribute number_of_major_vessels numeric
+@attribute thal numeric
+@attribute class=absent numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -156.8901;  df=13;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      2.8164*age
++      4.7359*sex
++      3.6754*chest
++      3.5102*resting_blood_pressure
++      5.9228*serum_cholestoral
++     37.2345*fasting_blood_sugar
++      2.2084*resting_electrocardiographic_results
++      0.989 *maximum_heart_rate_achieved
++      1.948 *exercise_induced_angina
++      2.5309*oldpeak
++      1.7687*slope
++      3.9401*number_of_major_vessels
++      2.2965*thal
++   -36.6546))
+
+Odds Ratios...
+Variable         O.R.
+       1      16.7171
+       2     113.9627
+       3      39.4639
+       4      33.4536
+       5     373.4643
+       6 1.4816272837908336E16
+       7       9.1011
+       8       2.6887
+       9       7.0148
+      10      12.5651
+      11       5.863 
+      12      51.4218
+      13       9.9394
+
+
+Time taken to build model: 0.16 seconds
+Time taken to test model on training data: 0.23 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7999
+Mean absolute error                      0.1784
+Root mean squared error                  0.2982
+Relative absolute error                 36.1317 %
+Root relative squared error             60.0176 %
+Total Number of Instances              270     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.69  
+Mean absolute error                      0.2265
+Root mean squared error                  0.3627
+Relative absolute error                 45.6812 %
+Root relative squared error             72.6614 %
+Total Number of Instances              270     
+

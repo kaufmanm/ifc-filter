@@ -1,0 +1,49 @@
+
+SMOreg
+
+weights (not support vectors):
+ -       0.0017 * (normalized) x-box
+ +       0.0005 * (normalized) y-box
+ +       0.0016 * (normalized) width
+ -       0.0014 * (normalized) high
+ -       0.0004 * (normalized) onpix
+ -       0.0028 * (normalized) x-bar
+ +       0.0002 * (normalized) y-bar
+ -       0.0011 * (normalized) x2bar
+ +       0.0007 * (normalized) y2bar
+ +       0.0002 * (normalized) xybar
+ -       0.0007 * (normalized) x2ybr
+ +       0.0015 * (normalized) xy2br
+ +       0.0016 * (normalized) x-ege
+ +       0.0003 * (normalized) xegvy
+ +       0.0001 * (normalized) y-ege
+ +       0.0023 * (normalized) yegvx
+ -       0.0005
+
+
+
+Number of kernel evaluations: 13794118 (82.331% cached)
+
+Time taken to build model: 17.16 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.3233
+Mean absolute error                      0.0436
+Root mean squared error                  0.2076
+Relative absolute error                 52.7579 %
+Root relative squared error            102.1126 %
+Total Number of Instances             2200     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.2774
+Mean absolute error                      0.0437
+Root mean squared error                  0.2076
+Relative absolute error                 52.8103 %
+Root relative squared error            102.0631 %
+Total Number of Instances             2200     
+

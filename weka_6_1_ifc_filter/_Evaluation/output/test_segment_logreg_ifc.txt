@@ -1,0 +1,107 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'segment-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R20,22-26-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z33.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute region-centroid-col numeric
+@attribute region-centroid-row numeric
+@attribute region-pixel-count numeric
+@attribute short-line-density-5 numeric
+@attribute short-line-density-2 numeric
+@attribute vedge-mean numeric
+@attribute vegde-sd numeric
+@attribute hedge-mean numeric
+@attribute hedge-sd numeric
+@attribute intensity-mean numeric
+@attribute rawred-mean numeric
+@attribute rawblue-mean numeric
+@attribute rawgreen-mean numeric
+@attribute exred-mean numeric
+@attribute exblue-mean numeric
+@attribute exgreen-mean numeric
+@attribute value-mean numeric
+@attribute saturation-mean numeric
+@attribute hue-mean numeric
+@attribute class=sky numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=    0     ;  df=19;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      5.0163*region-centroid-col
++     -3.6148*region-centroid-row
++      0     *region-pixel-count
++      4.4464*short-line-density-5
++      1.798 *short-line-density-2
++      0.2283*vedge-mean
++     -3.338 *vegde-sd
++      0.3085*hedge-mean
++     -1.5311*hedge-sd
++     16.0178*intensity-mean
++     -5.8773*rawred-mean
++     27.1206*rawblue-mean
++      5.8962*rawgreen-mean
++     -1.9331*exred-mean
++    -11.072 *exblue-mean
++      2.2969*exgreen-mean
++     27.1206*value-mean
++     -0.8647*saturation-mean
++      1.2371*hue-mean
++   -23.2527))
+
+Odds Ratios...
+Variable         O.R.
+       1     150.8453
+       2       0.0269
+       3       1     
+       4      85.3164
+       5       6.0376
+       6       1.2564
+       7       0.0355
+       8       1.3613
+       9       0.2163
+      10 9045695.1253
+      11       0.0028
+      12 6.00251750834876E11
+      13     363.6426
+      14       0.1447
+      15       0     
+      16       9.9437
+      17 6.002517508349677E11
+      18       0.4212
+      19       3.4457
+
+
+Time taken to build model: 0.45 seconds
+Time taken to test model on training data: 1.51 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              762     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6208
+Mean absolute error                      0.0772
+Root mean squared error                  0.2774
+Relative absolute error                 33.532  %
+Root relative squared error             81.7375 %
+Total Number of Instances              762     
+

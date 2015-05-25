@@ -1,0 +1,57 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.lazy.IBk 
+
+FilteredClassifier using weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation labor-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R17-weka.filters.unsupervised.attribute.NominalToBinary-R17-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute duration numeric
+@attribute wage-increase-first-year numeric
+@attribute wage-increase-second-year numeric
+@attribute wage-increase-third-year numeric
+@attribute cost-of-living-adjustment numeric
+@attribute working-hours numeric
+@attribute pension numeric
+@attribute standby-pay numeric
+@attribute shift-differential numeric
+@attribute education-allowance numeric
+@attribute statutory-holidays numeric
+@attribute vacation numeric
+@attribute longterm-disability-assistance numeric
+@attribute contribution-to-dental-plan numeric
+@attribute bereavement-assistance numeric
+@attribute contribution-to-health-plan numeric
+@attribute class numeric
+
+@data
+
+
+Classifier Model
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.09 seconds
+Time taken to test model on training data: 0.06 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances               57     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8058
+Mean absolute error                      0.0877
+Root mean squared error                  0.2962
+Relative absolute error                 18.928  %
+Root relative squared error             60.9451 %
+Total Number of Instances               57     
+

@@ -1,0 +1,341 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.MultilayerPerceptron 
+
+FilteredClassifier using weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'horse-colic-weka.filters.unsupervised.attribute.AddValues-C22-L\'?\'-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R22-weka.filters.unsupervised.attribute.Remove-R23-25-weka.filters.unsupervised.attribute.Remove-R23-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute surgery numeric
+@attribute Age numeric
+@attribute rectal_temperature numeric
+@attribute pulse numeric
+@attribute respiratory_rate numeric
+@attribute temp_extremities numeric
+@attribute peripheral_pulse numeric
+@attribute mucous_membranes numeric
+@attribute capillary_refill_time numeric
+@attribute pain numeric
+@attribute peristalsis numeric
+@attribute abdominal_distension numeric
+@attribute nasogastric_tube numeric
+@attribute nasogastric_reflux numeric
+@attribute nasogastric_reflux_PH numeric
+@attribute rectal_examination numeric
+@attribute abdomen numeric
+@attribute packed_cell_volume numeric
+@attribute total_protein numeric
+@attribute abdominocentesis_appearance numeric
+@attribute abdomcentesis_total_protein numeric
+@attribute outcome=lived numeric
+
+@data
+
+
+Classifier Model
+Linear Node 0
+    Inputs    Weights
+    Threshold    0.27146978334336924
+    Node 1    -3.077838676477986
+    Node 2    2.2438605110503995
+    Node 3    1.9500308266361472
+    Node 4    -1.9683178995785955
+    Node 5    0.5979378155988331
+    Node 6    -2.5466817118119667
+    Node 7    -2.061648177579293
+    Node 8    -2.1572184742488156
+    Node 9    -2.1388106388900674
+    Node 10    1.8910026160197042
+    Node 11    -1.2157744017133854
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -4.797375173265593
+    Attrib surgery    1.5726981996389893
+    Attrib Age    -4.977745167989196
+    Attrib rectal_temperature    -7.307844817549335
+    Attrib pulse    -1.451293565610966
+    Attrib respiratory_rate    3.8383209280160995
+    Attrib temp_extremities    -2.847124626305373
+    Attrib peripheral_pulse    -5.232082868226926
+    Attrib mucous_membranes    1.7342102499338512
+    Attrib capillary_refill_time    2.0994737105623096
+    Attrib pain    2.44926755079823
+    Attrib peristalsis    -0.4985894172009536
+    Attrib abdominal_distension    -3.476836236298746
+    Attrib nasogastric_tube    -5.7706649490845034
+    Attrib nasogastric_reflux    3.434241218424091
+    Attrib nasogastric_reflux_PH    -3.244734374822328
+    Attrib rectal_examination    3.6713004065552926
+    Attrib abdomen    -0.23931889274724602
+    Attrib packed_cell_volume    0.6585404564794294
+    Attrib total_protein    6.03086979209407
+    Attrib abdominocentesis_appearance    -0.6267978458076241
+    Attrib abdomcentesis_total_protein    -1.3166023145092118
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -2.015957496469268
+    Attrib surgery    1.3205214827240381
+    Attrib Age    1.172919150141307
+    Attrib rectal_temperature    -7.067709855877742
+    Attrib pulse    0.6244522122171929
+    Attrib respiratory_rate    5.837140762735496
+    Attrib temp_extremities    -0.397293013272839
+    Attrib peripheral_pulse    -6.4912050871109015
+    Attrib mucous_membranes    -2.7561885847883905
+    Attrib capillary_refill_time    -2.2790444541286123
+    Attrib pain    3.172376416897125
+    Attrib peristalsis    -7.211470391246243
+    Attrib abdominal_distension    4.268201084890685
+    Attrib nasogastric_tube    0.8271962760603035
+    Attrib nasogastric_reflux    -3.990039821853612
+    Attrib nasogastric_reflux_PH    -4.744179998182931
+    Attrib rectal_examination    4.38531318472117
+    Attrib abdomen    0.42034864488483165
+    Attrib packed_cell_volume    1.3869271402241878
+    Attrib total_protein    8.142092391271255
+    Attrib abdominocentesis_appearance    -7.015336533375703
+    Attrib abdomcentesis_total_protein    -1.0568084530340887
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -8.222589779498273
+    Attrib surgery    -0.667000410356302
+    Attrib Age    0.40171731078180545
+    Attrib rectal_temperature    3.3454584218077343
+    Attrib pulse    -0.010966070427510063
+    Attrib respiratory_rate    -4.193435409408492
+    Attrib temp_extremities    -1.516876268083591
+    Attrib peripheral_pulse    -8.608656002740776
+    Attrib mucous_membranes    3.6085644399861674
+    Attrib capillary_refill_time    6.222324551226435
+    Attrib pain    5.923720852489833
+    Attrib peristalsis    2.040750397749262
+    Attrib abdominal_distension    -9.012884819107697
+    Attrib nasogastric_tube    0.5557342369579965
+    Attrib nasogastric_reflux    1.1675887367425715
+    Attrib nasogastric_reflux_PH    -7.146081984482167
+    Attrib rectal_examination    -0.6992387137295693
+    Attrib abdomen    0.8992507309903596
+    Attrib packed_cell_volume    -1.1195801992143475
+    Attrib total_protein    2.143323239746477
+    Attrib abdominocentesis_appearance    0.10836456689977193
+    Attrib abdomcentesis_total_protein    2.642968232518836
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -5.817202266849473
+    Attrib surgery    -1.6230052804082684
+    Attrib Age    -2.3738251335389444
+    Attrib rectal_temperature    0.6558725146149597
+    Attrib pulse    0.03940190963086306
+    Attrib respiratory_rate    -1.1741245370556077
+    Attrib temp_extremities    -2.1251143919295283
+    Attrib peripheral_pulse    -11.102764544124891
+    Attrib mucous_membranes    -2.4696768516509278
+    Attrib capillary_refill_time    0.5848666841104052
+    Attrib pain    0.6812146337898797
+    Attrib peristalsis    3.030552742801203
+    Attrib abdominal_distension    5.820491116415019
+    Attrib nasogastric_tube    0.015930729862150148
+    Attrib nasogastric_reflux    -8.737816861418679
+    Attrib nasogastric_reflux_PH    0.6163206907153403
+    Attrib rectal_examination    3.412400842402152
+    Attrib abdomen    2.2951951471645313
+    Attrib packed_cell_volume    1.6203077699389372
+    Attrib total_protein    3.4463800207279816
+    Attrib abdominocentesis_appearance    -3.0312503596074256
+    Attrib abdomcentesis_total_protein    -2.847305778293068
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    3.6424671924246086
+    Attrib surgery    -0.020942726816197778
+    Attrib Age    -7.165918801249982
+    Attrib rectal_temperature    4.814902717614062
+    Attrib pulse    4.122201143299626
+    Attrib respiratory_rate    -2.8663260801543196
+    Attrib temp_extremities    2.8930745704886096
+    Attrib peripheral_pulse    2.8981753197226627
+    Attrib mucous_membranes    7.1248344096253025
+    Attrib capillary_refill_time    -8.226314639054687
+    Attrib pain    3.5891819563279257
+    Attrib peristalsis    2.365391536663954
+    Attrib abdominal_distension    1.9580678594581205
+    Attrib nasogastric_tube    -1.3678298244781184
+    Attrib nasogastric_reflux    5.350460113478005
+    Attrib nasogastric_reflux_PH    -4.417055083390129
+    Attrib rectal_examination    -1.968780472440829
+    Attrib abdomen    14.441643915945587
+    Attrib packed_cell_volume    5.416503839817892
+    Attrib total_protein    5.317523014285209
+    Attrib abdominocentesis_appearance    14.624805181484401
+    Attrib abdomcentesis_total_protein    13.5971860115877
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -13.103289994190094
+    Attrib surgery    -3.814376424643556
+    Attrib Age    -6.88796954510509
+    Attrib rectal_temperature    -10.5206337235805
+    Attrib pulse    -6.166590363308016
+    Attrib respiratory_rate    7.691347321022943
+    Attrib temp_extremities    -1.6253423766482469
+    Attrib peripheral_pulse    -0.5409049951290419
+    Attrib mucous_membranes    -4.178911238232703
+    Attrib capillary_refill_time    -4.076383969559712
+    Attrib pain    -2.1057441480166985
+    Attrib peristalsis    -1.5445572982262532
+    Attrib abdominal_distension    8.437435439454882
+    Attrib nasogastric_tube    -1.368838080577288
+    Attrib nasogastric_reflux    -1.2926983296550425
+    Attrib nasogastric_reflux_PH    -2.3385382142970728
+    Attrib rectal_examination    -5.652723173022941
+    Attrib abdomen    3.9529739309594936
+    Attrib packed_cell_volume    4.548739483268829
+    Attrib total_protein    -2.136877917830624
+    Attrib abdominocentesis_appearance    2.7766913702649005
+    Attrib abdomcentesis_total_protein    2.5901715949166366
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -19.292974613411968
+    Attrib surgery    -7.59957262371093
+    Attrib Age    -0.4278599961950611
+    Attrib rectal_temperature    -6.478992750239025
+    Attrib pulse    0.7579036765819658
+    Attrib respiratory_rate    -7.744584786827252
+    Attrib temp_extremities    -0.4524294946760394
+    Attrib peripheral_pulse    3.746575277302655
+    Attrib mucous_membranes    3.395681776305273
+    Attrib capillary_refill_time    -2.9010239258853567
+    Attrib pain    -8.340656697028516
+    Attrib peristalsis    7.785429562923099
+    Attrib abdominal_distension    0.36861429006459073
+    Attrib nasogastric_tube    -0.5088090457623633
+    Attrib nasogastric_reflux    0.9953002033557903
+    Attrib nasogastric_reflux_PH    -2.106976784797122
+    Attrib rectal_examination    1.2815373158981835
+    Attrib abdomen    -2.8941057589010084
+    Attrib packed_cell_volume    -6.071436497055032
+    Attrib total_protein    -0.33964574798737773
+    Attrib abdominocentesis_appearance    -5.4334361497699595
+    Attrib abdomcentesis_total_protein    -4.545247088602356
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -8.382150968425817
+    Attrib surgery    0.10894072580150824
+    Attrib Age    2.0341991170930895
+    Attrib rectal_temperature    -2.8257298907161092
+    Attrib pulse    1.2979728992700437
+    Attrib respiratory_rate    -0.26962515039370105
+    Attrib temp_extremities    3.326674985647032
+    Attrib peripheral_pulse    -2.1596498372180077
+    Attrib mucous_membranes    1.0154566471066784
+    Attrib capillary_refill_time    4.513195482211175
+    Attrib pain    1.3728112030929123
+    Attrib peristalsis    -2.067071986551616
+    Attrib abdominal_distension    -8.691013973440247
+    Attrib nasogastric_tube    1.6380110205938165
+    Attrib nasogastric_reflux    2.560755310838538
+    Attrib nasogastric_reflux_PH    -9.590009259720574
+    Attrib rectal_examination    0.12310815467854767
+    Attrib abdomen    2.5452089012682455
+    Attrib packed_cell_volume    -2.9849663946477354
+    Attrib total_protein    -4.621462449794095
+    Attrib abdominocentesis_appearance    3.022217916034992
+    Attrib abdomcentesis_total_protein    -2.4691494044492193
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -7.889434303119075
+    Attrib surgery    2.054204510172752
+    Attrib Age    -2.108026158330306
+    Attrib rectal_temperature    0.6316859863847707
+    Attrib pulse    0.256174713349218
+    Attrib respiratory_rate    0.291812118046194
+    Attrib temp_extremities    -0.5152814442017754
+    Attrib peripheral_pulse    0.9297103168534206
+    Attrib mucous_membranes    -5.3046810228837336
+    Attrib capillary_refill_time    -6.8908001089705815
+    Attrib pain    6.100998847841649
+    Attrib peristalsis    4.3740919389193715
+    Attrib abdominal_distension    -4.171820847637029
+    Attrib nasogastric_tube    6.496860648932232
+    Attrib nasogastric_reflux    -5.849755674371507
+    Attrib nasogastric_reflux_PH    -2.0781514134843406
+    Attrib rectal_examination    2.869662283067409
+    Attrib abdomen    1.4840262788404084
+    Attrib packed_cell_volume    -1.0857161117691692
+    Attrib total_protein    1.8076984441476218
+    Attrib abdominocentesis_appearance    -3.2404019088657243
+    Attrib abdomcentesis_total_protein    3.5445985642343767
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -5.388513951443064
+    Attrib surgery    -4.7431339258207315
+    Attrib Age    -0.09281325492465782
+    Attrib rectal_temperature    0.5016764624561242
+    Attrib pulse    1.3928664110326119
+    Attrib respiratory_rate    4.565464158450803
+    Attrib temp_extremities    2.671914455754383
+    Attrib peripheral_pulse    0.0031062679754898914
+    Attrib mucous_membranes    -2.910564830250894
+    Attrib capillary_refill_time    -4.657367255424042
+    Attrib pain    -0.33319923189475986
+    Attrib peristalsis    2.3718528383899513
+    Attrib abdominal_distension    -2.369326078063011
+    Attrib nasogastric_tube    -1.9738386286573226
+    Attrib nasogastric_reflux    -0.181033310329076
+    Attrib nasogastric_reflux_PH    -0.716307300775492
+    Attrib rectal_examination    0.3846670595494645
+    Attrib abdomen    -2.801191889594327
+    Attrib packed_cell_volume    -7.440172870451937
+    Attrib total_protein    -3.2489166612876517
+    Attrib abdominocentesis_appearance    -2.0557649095443593
+    Attrib abdomcentesis_total_protein    -6.141843010843661
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -7.485884465057197
+    Attrib surgery    7.40526738387323
+    Attrib Age    2.2752134672749755
+    Attrib rectal_temperature    -4.760273274579136
+    Attrib pulse    -10.194617990128748
+    Attrib respiratory_rate    -3.055632192612723
+    Attrib temp_extremities    -4.0677739493571305
+    Attrib peripheral_pulse    -6.639951852904691
+    Attrib mucous_membranes    -5.231487621310251
+    Attrib capillary_refill_time    3.587946081594766
+    Attrib pain    0.9762108623078869
+    Attrib peristalsis    -0.3984490284625348
+    Attrib abdominal_distension    -10.95506337969685
+    Attrib nasogastric_tube    -2.1266869311828502
+    Attrib nasogastric_reflux    1.8003349206722201
+    Attrib nasogastric_reflux_PH    -1.2510212660354896
+    Attrib rectal_examination    -1.374825295628256
+    Attrib abdomen    -1.2310621276252642
+    Attrib packed_cell_volume    -4.5123159686045815
+    Attrib total_protein    -0.567210272944576
+    Attrib abdominocentesis_appearance    6.397305065884744
+    Attrib abdomcentesis_total_protein    3.579204339841929
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 2.14 seconds
+Time taken to test model on training data: 0.44 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9117
+Mean absolute error                      0.1208
+Root mean squared error                  0.2046
+Relative absolute error                 25.5522 %
+Root relative squared error             42.0947 %
+Total Number of Instances              368     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.2241
+Mean absolute error                      0.3866
+Root mean squared error                  0.5556
+Relative absolute error                 81.6106 %
+Root relative squared error            114.0202 %
+Total Number of Instances              368     
+

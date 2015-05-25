@@ -1,0 +1,57 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.lazy.IBk 
+
+FilteredClassifier using weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation vote-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R17-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute handicapped-infants numeric
+@attribute water-project-cost-sharing numeric
+@attribute adoption-of-the-budget-resolution numeric
+@attribute physician-fee-freeze numeric
+@attribute el-salvador-aid numeric
+@attribute religious-groups-in-schools numeric
+@attribute anti-satellite-test-ban numeric
+@attribute aid-to-nicaraguan-contras numeric
+@attribute mx-missile numeric
+@attribute immigration numeric
+@attribute synfuels-corporation-cutback numeric
+@attribute education-spending numeric
+@attribute superfund-right-to-sue numeric
+@attribute crime numeric
+@attribute duty-free-exports numeric
+@attribute export-administration-act-south-africa numeric
+@attribute Class numeric
+
+@data
+
+
+Classifier Model
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.05 seconds
+Time taken to test model on training data: 0.36 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9943
+Mean absolute error                      0.0054
+Root mean squared error                  0.0518
+Relative absolute error                  1.1314 %
+Root relative squared error             10.6367 %
+Total Number of Instances              435     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8745
+Mean absolute error                      0.0763
+Root mean squared error                  0.2421
+Relative absolute error                 16.0615 %
+Root relative squared error             49.6079 %
+Total Number of Instances              435     
+

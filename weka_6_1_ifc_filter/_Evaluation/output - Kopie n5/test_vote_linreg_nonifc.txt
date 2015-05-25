@@ -1,0 +1,42 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+Class =
+
+      0.1486 * adoption-of-the-budget-resolution=y +
+      0.7067 * physician-fee-freeze=n +
+      0.0689 * el-salvador-aid=n +
+     -0.0526 * anti-satellite-test-ban=y +
+     -0.0704 * aid-to-nicaraguan-contras=y +
+      0.065  * mx-missile=y +
+      0.0488 * immigration=n +
+      0.1201 * synfuels-corporation-cutback=y +
+      0.0515 * education-spending=n +
+      0.013 
+
+Time taken to build model: 0.06 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9269
+Mean absolute error                      0.0985
+Root mean squared error                  0.1827
+Relative absolute error                 20.7682 %
+Root relative squared error             37.5219 %
+Total Number of Instances              435     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9198
+Mean absolute error                      0.1014
+Root mean squared error                  0.1912
+Relative absolute error                 21.3519 %
+Root relative squared error             39.1782 %
+Total Number of Instances              435     
+

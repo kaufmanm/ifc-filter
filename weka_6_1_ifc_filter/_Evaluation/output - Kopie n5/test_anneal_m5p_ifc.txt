@@ -1,0 +1,167 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'anneal-weka.filters.unsupervised.attribute.NominalToBinary-A-R39-weka.filters.unsupervised.attribute.Remove-R39,41-44-weka.filters.unsupervised.instance.Resample-S1-Z77.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute family numeric
+@attribute product-type numeric
+@attribute steel numeric
+@attribute carbon numeric
+@attribute hardness numeric
+@attribute temper_rolling numeric
+@attribute condition numeric
+@attribute formability numeric
+@attribute strength numeric
+@attribute non-ageing numeric
+@attribute surface-finish numeric
+@attribute surface-quality numeric
+@attribute enamelability numeric
+@attribute bc numeric
+@attribute bf numeric
+@attribute bt numeric
+@attribute bw/me numeric
+@attribute bl numeric
+@attribute m numeric
+@attribute chrom numeric
+@attribute phos numeric
+@attribute cbond numeric
+@attribute marvi numeric
+@attribute exptl numeric
+@attribute ferro numeric
+@attribute corr numeric
+@attribute blue/bright/varn/clean numeric
+@attribute lustre numeric
+@attribute jurofm numeric
+@attribute s numeric
+@attribute p numeric
+@attribute shape numeric
+@attribute thick numeric
+@attribute width numeric
+@attribute len numeric
+@attribute oil numeric
+@attribute bore numeric
+@attribute packing numeric
+@attribute class=2 numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+steel <= 0.228 : LM1 (398/0%)
+steel >  0.228 : 
+|   thick <= 0.37 : LM2 (142/0%)
+|   thick >  0.37 : 
+|   |   surface-quality <= 0.167 : LM3 (40/0%)
+|   |   surface-quality >  0.167 : 
+|   |   |   condition <= 0.477 : 
+|   |   |   |   strength <= 0.796 : LM4 (29/0%)
+|   |   |   |   strength >  0.796 : 
+|   |   |   |   |   steel <= 0.836 : LM5 (11/0%)
+|   |   |   |   |   steel >  0.836 : LM6 (11/0%)
+|   |   |   condition >  0.477 : LM7 (60/36.655%)
+
+LM num: 1
+class=2 = 
+	0.0093 * steel 
+	+ 0.028 * condition 
+	+ 0.0192 * strength 
+	+ 0.0161 * surface-quality 
+	+ 0.0057 * thick 
+	+ 0.0096 * len 
+	- 0.0318
+
+LM num: 2
+class=2 = 
+	0.0446 * steel 
+	+ 0.0999 * condition 
+	+ 0.0733 * strength 
+	+ 0.0862 * surface-quality 
+	+ 0.031 * thick 
+	+ 0.0468 * len 
+	- 0.1413
+
+LM num: 3
+class=2 = 
+	0.0429 * steel 
+	+ 0.5057 * condition 
+	+ 0.281 * strength 
+	+ 0.3199 * surface-quality 
+	+ 0.0297 * thick 
+	+ 0.1435 * len 
+	- 0.4973
+
+LM num: 4
+class=2 = 
+	-0.1647 * steel 
+	+ 0.605 * condition 
+	+ 0.6626 * strength 
+	+ 0.1863 * surface-quality 
+	+ 0.1443 * shape 
+	+ 0.0297 * thick 
+	+ 0.088 * len 
+	- 0.5146
+
+LM num: 5
+class=2 = 
+	-0.7034 * steel 
+	+ 0.605 * condition 
+	+ 0.7423 * strength 
+	+ 0.1863 * surface-quality 
+	+ 0.1443 * shape 
+	+ 0.0297 * thick 
+	+ 0.088 * len 
+	- 0.0007
+
+LM num: 6
+class=2 = 
+	-0.1907 * steel 
+	+ 0.605 * condition 
+	+ 0.7423 * strength 
+	+ 0.1863 * surface-quality 
+	+ 0.1443 * shape 
+	+ 0.0297 * thick 
+	+ 0.088 * len 
+	- 0.2343
+
+LM num: 7
+class=2 = 
+	-0.5017 * steel 
+	+ 0.5654 * condition 
+	+ 0.2318 * strength 
+	+ 0.1863 * surface-quality 
+	+ 0.2826 * shape 
+	+ 0.0297 * thick 
+	+ 0.088 * len 
+	+ 0.5044
+
+Number of Rules : 7
+
+Time taken to build model: 0.31 seconds
+Time taken to test model on training data: 2.61 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9675
+Mean absolute error                      0.0267
+Root mean squared error                  0.0814
+Relative absolute error                 13.6361 %
+Root relative squared error             26.021  %
+Total Number of Instances              691     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9637
+Mean absolute error                      0.0275
+Root mean squared error                  0.0852
+Relative absolute error                 14.0105 %
+Root relative squared error             27.1895 %
+Total Number of Instances              691     
+

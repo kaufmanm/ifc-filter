@@ -1,0 +1,77 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation wisconsin-breast-cancer-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R11-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute Clump_Thickness numeric
+@attribute Cell_Size_Uniformity numeric
+@attribute Cell_Shape_Uniformity numeric
+@attribute Marginal_Adhesion numeric
+@attribute Single_Epi_Cell_Size numeric
+@attribute Bare_Nuclei numeric
+@attribute Bland_Chromatin numeric
+@attribute Normal_Nucleoli numeric
+@attribute Mitoses numeric
+@attribute Class=benign numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -118.0388;  df=9;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      3.3995*Clump_Thickness
++      1.4913*Cell_Size_Uniformity
++      2.4805*Cell_Shape_Uniformity
++      1.5378*Marginal_Adhesion
++     -0.0976*Single_Epi_Cell_Size
++      3.4759*Bare_Nuclei
++      2.1785*Bland_Chromatin
++      0.4701*Normal_Nucleoli
++      4.0991*Mitoses
++    -9.7218))
+
+Odds Ratios...
+Variable         O.R.
+       1      29.9478
+       2       4.4427
+       3      11.9474
+       4       4.6545
+       5       0.907 
+       6      32.328 
+       7       8.8329
+       8       1.6002
+       9      60.2871
+
+
+Time taken to build model: 0.22 seconds
+Time taken to test model on training data: 0.55 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9479
+Mean absolute error                      0.0453
+Root mean squared error                  0.1515
+Relative absolute error                 10.028  %
+Root relative squared error             31.8662 %
+Total Number of Instances              699     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9399
+Mean absolute error                      0.0489
+Root mean squared error                  0.1623
+Relative absolute error                 10.8072 %
+Root relative squared error             34.0939 %
+Total Number of Instances              699     
+

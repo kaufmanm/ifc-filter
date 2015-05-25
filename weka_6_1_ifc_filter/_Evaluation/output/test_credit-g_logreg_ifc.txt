@@ -1,0 +1,110 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation german_credit-weka.filters.unsupervised.instance.Resample-S1-Z66.0-no-replacement-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R22-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute checking_status numeric
+@attribute duration numeric
+@attribute credit_history numeric
+@attribute purpose numeric
+@attribute credit_amount numeric
+@attribute savings_status numeric
+@attribute employment numeric
+@attribute installment_commitment numeric
+@attribute personal_status numeric
+@attribute other_parties numeric
+@attribute residence_since numeric
+@attribute property_magnitude numeric
+@attribute age numeric
+@attribute other_payment_plans numeric
+@attribute housing numeric
+@attribute existing_credits numeric
+@attribute job numeric
+@attribute num_dependents numeric
+@attribute own_telephone numeric
+@attribute foreign_worker numeric
+@attribute class=good numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -557.5006;  df=20;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      3.747 *checking_status
++      3.6139*duration
++      3.7587*credit_history
++      5.078 *purpose
++      4.7299*credit_amount
++      2.7853*savings_status
++      4.07  *employment
++      6.5187*installment_commitment
++      2.966 *personal_status
++      3.8715*other_parties
++      6.8089*residence_since
++      2.0474*property_magnitude
++      3.5568*age
++      4.2875*other_payment_plans
++      1.6359*housing
++     -4.2853*existing_credits
++      1.5664*job
++      1.8119*num_dependents
++      8.885 *own_telephone
++      4.7901*foreign_worker
++   -35.2634))
+
+Odds Ratios...
+Variable         O.R.
+       1      42.3934
+       2      37.1115
+       3      42.8932
+       4     160.4553
+       5     113.2856
+       6      16.2042
+       7      58.5596
+       8     677.6986
+       9      19.4145
+      10      48.0124
+      11     905.8952
+      12       7.7477
+      13      35.0501
+      14      72.7837
+      15       5.1341
+      16       0.0138
+      17       4.7892
+      18       6.1222
+      19    7223.1071
+      20     120.3094
+
+
+Time taken to build model: 0.25 seconds
+Time taken to test model on training data: 1.15 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.6028
+Mean absolute error                      0.273 
+Root mean squared error                  0.3697
+Relative absolute error                 63.5685 %
+Root relative squared error             79.786  %
+Total Number of Instances              660     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4774
+Mean absolute error                      0.3039
+Root mean squared error                  0.4111
+Relative absolute error                 70.7122 %
+Root relative squared error             88.6484 %
+Total Number of Instances              660     
+

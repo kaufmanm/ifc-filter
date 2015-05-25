@@ -1,0 +1,75 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'segment-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R20,22-26-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z33.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute region-centroid-col numeric
+@attribute region-centroid-row numeric
+@attribute region-pixel-count numeric
+@attribute short-line-density-5 numeric
+@attribute short-line-density-2 numeric
+@attribute vedge-mean numeric
+@attribute vegde-sd numeric
+@attribute hedge-mean numeric
+@attribute hedge-sd numeric
+@attribute intensity-mean numeric
+@attribute rawred-mean numeric
+@attribute rawblue-mean numeric
+@attribute rawgreen-mean numeric
+@attribute exred-mean numeric
+@attribute exblue-mean numeric
+@attribute exgreen-mean numeric
+@attribute value-mean numeric
+@attribute saturation-mean numeric
+@attribute hue-mean numeric
+@attribute class=sky numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+class=sky =
+
+      0.0342 * region-centroid-col +
+     -0.0152 * region-centroid-row +
+      0.0616 * short-line-density-5 +
+     -0.013  * vegde-sd +
+     -0.4146 * intensity-mean +
+     -1.3309 * rawred-mean +
+      0.8831 * rawblue-mean +
+      1.0542 * rawgreen-mean +
+     -0.0568 * exred-mean +
+     -0.0241 * exblue-mean +
+      0.8831 * value-mean +
+      0.0094 * hue-mean +
+     -0.0372
+
+Time taken to build model: 0.45 seconds
+Time taken to test model on training data: 1.86 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9964
+Mean absolute error                      0.0098
+Root mean squared error                  0.0298
+Relative absolute error                  4.2588 %
+Root relative squared error              8.778  %
+Total Number of Instances              762     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5675
+Mean absolute error                      0.1411
+Root mean squared error                  0.2804
+Relative absolute error                 61.3314 %
+Root relative squared error             82.6196 %
+Total Number of Instances              762     
+

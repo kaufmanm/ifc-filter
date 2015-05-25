@@ -1,0 +1,195 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation sick-weka.filters.unsupervised.instance.Resample-S1-Z22.0-no-replacement-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R31-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute age numeric
+@attribute sex numeric
+@attribute 'on thyroxine' numeric
+@attribute 'query on thyroxine' numeric
+@attribute 'on antithyroid medication' numeric
+@attribute sick numeric
+@attribute pregnant numeric
+@attribute 'thyroid surgery' numeric
+@attribute 'I131 treatment' numeric
+@attribute 'query hypothyroid' numeric
+@attribute 'query hyperthyroid' numeric
+@attribute lithium numeric
+@attribute goitre numeric
+@attribute tumor numeric
+@attribute hypopituitary numeric
+@attribute psych numeric
+@attribute 'TSH measured' numeric
+@attribute TSH numeric
+@attribute 'T3 measured' numeric
+@attribute T3 numeric
+@attribute 'TT4 measured' numeric
+@attribute TT4 numeric
+@attribute 'T4U measured' numeric
+@attribute T4U numeric
+@attribute 'FTI measured' numeric
+@attribute FTI numeric
+@attribute 'TBG measured' numeric
+@attribute TBG numeric
+@attribute 'referral source' numeric
+@attribute Class=negative numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+TT4 <= 0.715 : 
+|   T3 <= 0.704 : 
+|   |   T3 <= 0.266 : 
+|   |   |   FTI <= 0.331 : 
+|   |   |   |   TSH <= 0.664 : LM1 (12/0%)
+|   |   |   |   TSH >  0.664 : 
+|   |   |   |   |   age <= 0.486 : LM2 (2/0%)
+|   |   |   |   |   age >  0.486 : LM3 (2/0%)
+|   |   |   FTI >  0.331 : 
+|   |   |   |   referral source <= 0.724 : LM4 (36/92.334%)
+|   |   |   |   referral source >  0.724 : LM5 (12/121.417%)
+|   |   T3 >  0.266 : LM6 (76/0%)
+|   T3 >  0.704 : 
+|   |   FTI <= 0.499 : 
+|   |   |   TSH <= 0.543 : 
+|   |   |   |   TSH <= 0.472 : LM7 (41/0%)
+|   |   |   |   TSH >  0.472 : LM8 (33/148.177%)
+|   |   |   TSH >  0.543 : LM9 (70/0%)
+|   |   FTI >  0.499 : LM10 (312/0%)
+TT4 >  0.715 : LM11 (233/0%)
+
+LM num: 1
+Class=negative = 
+	-0.2722 * age 
+	- 0.0434 * TSH 
+	+ 0.2829 * T3 
+	- 0.0084 * TT4 
+	- 0.6821 * FTI 
+	+ 0.2672 * referral source 
+	+ 0.8953
+
+LM num: 2
+Class=negative = 
+	-0.5781 * age 
+	- 0.1157 * TSH 
+	+ 0.2829 * T3 
+	- 0.0084 * TT4 
+	- 0.6821 * FTI 
+	+ 0.2672 * referral source 
+	+ 1.0384
+
+LM num: 3
+Class=negative = 
+	-0.5781 * age 
+	- 0.1157 * TSH 
+	+ 0.2829 * T3 
+	- 0.0084 * TT4 
+	- 0.6821 * FTI 
+	+ 0.2672 * referral source 
+	+ 1.0293
+
+LM num: 4
+Class=negative = 
+	0.0833 * age 
+	+ 0.1299 * TSH 
+	+ 0.2829 * T3 
+	+ 0.2333 * TT4 
+	- 0.4207 * FTI 
+	+ 0.2824 * referral source 
+	+ 0.0689
+
+LM num: 5
+Class=negative = 
+	0.5899 * age 
+	+ 0.4441 * TSH 
+	+ 0.2829 * T3 
+	+ 0.1305 * TT4 
+	- 0.4207 * FTI 
+	+ 0.3911 * referral source 
+	- 0.1917
+
+LM num: 6
+Class=negative = 
+	0.2555 * T3 
+	- 0.0084 * TT4 
+	- 0.149 * FTI 
+	+ 0.0503 * referral source 
+	+ 0.8862
+
+LM num: 7
+Class=negative = 
+	0.0693 * age 
+	- 0.1685 * TSH 
+	+ 0.0347 * T3 
+	- 0.0028 * TT4 
+	+ 0.1566 * FTI 
+	+ 0.0044 * referral source 
+	+ 0.9156
+
+LM num: 8
+Class=negative = 
+	0.3158 * age 
+	- 0.1966 * TSH 
+	+ 0.0347 * T3 
+	- 0.0028 * TT4 
+	+ 0.183 * FTI 
+	+ 0.0044 * referral source 
+	+ 0.7046
+
+LM num: 9
+Class=negative = 
+	0.0227 * age 
+	+ 0.0347 * T3 
+	- 0.0028 * TT4 
+	- 0.0018 * FTI 
+	+ 0.0044 * referral source 
+	+ 0.9494
+
+LM num: 10
+Class=negative = 
+	0.0017 * age 
+	+ 0.0347 * T3 
+	- 0.0028 * TT4 
+	- 0.0074 * FTI 
+	+ 0.0044 * referral source 
+	+ 0.9703
+
+LM num: 11
+Class=negative = 
+	0.0362 * T3 
+	- 0.014 * FTI 
+	+ 0.004 * referral source 
+	+ 0.9729
+
+Number of Rules : 11
+
+Time taken to build model: 0.53 seconds
+Time taken to test model on training data: 2.51 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8983
+Mean absolute error                      0.0311
+Root mean squared error                  0.1046
+Relative absolute error                 28.5356 %
+Root relative squared error             44.7732 %
+Total Number of Instances              829     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7481
+Mean absolute error                      0.0464
+Root mean squared error                  0.1576
+Relative absolute error                 42.4592 %
+Root relative squared error             67.3992 %
+Total Number of Instances              829     
+

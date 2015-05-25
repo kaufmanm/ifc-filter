@@ -1,0 +1,35 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+LM1 (101/0%)
+
+LM num: 1
+type=mammal = 
+	1 * animal=sealion,vampire,squirrel,raccoon,reindeer,vole,wallaby,seal,wolf,elephant,fruitbat,deer,dolphin,goat,gorilla,giraffe,girl,bear,boar,aardvark,antelope,cavy,cheetah,buffalo,calf,platypus,polecat,opossum,oryx,puma,pussycat,pony,porpoise,leopard,lion,hamster,hare,mole,mongoose,lynx,mink 
+	+ 0
+
+Number of Rules : 1
+
+Time taken to build model: 0.09 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              101     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.1175
+Mean absolute error                      0.5743
+Root mean squared error                  0.7578
+Relative absolute error                118.5162 %
+Root relative squared error            153.562  %
+Total Number of Instances              101     
+

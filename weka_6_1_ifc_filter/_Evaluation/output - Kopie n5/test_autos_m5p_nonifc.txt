@@ -1,0 +1,243 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+make=audi,mercedes-benz,volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot <= 0.5 : LM1 (55/0%)
+make=audi,mercedes-benz,volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot >  0.5 : 
+|   num-of-doors=four <= 0.5 : 
+|   |   wheel-base <= 96.3 : LM2 (36/0%)
+|   |   wheel-base >  96.3 : 
+|   |   |   make=renault,isuzu,honda,subaru,bmw,jaguar,peugot <= 0.5 : LM3 (18/0%)
+|   |   |   make=renault,isuzu,honda,subaru,bmw,jaguar,peugot >  0.5 : 
+|   |   |   |   curb-weight <= 2552.5 : 
+|   |   |   |   |   normalized-losses <= 106.5 : LM4 (2/0%)
+|   |   |   |   |   normalized-losses >  106.5 : LM5 (2/0%)
+|   |   |   |   curb-weight >  2552.5 : LM6 (3/0%)
+|   num-of-doors=four >  0.5 : 
+|   |   bore <= 3.595 : 
+|   |   |   make=renault,isuzu,honda,subaru,bmw,jaguar,peugot <= 0.5 : 
+|   |   |   |   wheel-base <= 101.4 : 
+|   |   |   |   |   bore <= 3.23 : 
+|   |   |   |   |   |   height <= 53.25 : LM7 (6/0%)
+|   |   |   |   |   |   height >  53.25 : 
+|   |   |   |   |   |   |   curb-weight <= 2277.5 : LM8 (10/0%)
+|   |   |   |   |   |   |   curb-weight >  2277.5 : 
+|   |   |   |   |   |   |   |   body-style=wagon <= 0.5 : 
+|   |   |   |   |   |   |   |   |   wheel-base <= 100.1 : LM9 (4/0%)
+|   |   |   |   |   |   |   |   |   wheel-base >  100.1 : LM10 (2/0%)
+|   |   |   |   |   |   |   |   body-style=wagon >  0.5 : LM11 (4/0%)
+|   |   |   |   |   bore >  3.23 : LM12 (11/0%)
+|   |   |   |   wheel-base >  101.4 : 
+|   |   |   |   |   stroke <= 3.59 : LM13 (11/0%)
+|   |   |   |   |   stroke >  3.59 : LM14 (4/57.048%)
+|   |   |   make=renault,isuzu,honda,subaru,bmw,jaguar,peugot >  0.5 : LM15 (16/34.381%)
+|   |   bore >  3.595 : LM16 (21/0%)
+
+LM num: 1
+symboling=0 = 
+	0.0687 * make=volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.0748 * make=renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.0856 * num-of-doors=four 
+	- 0.0026 * wheel-base 
+	+ 0.0001 * curb-weight 
+	+ 0.0692
+
+LM num: 2
+symboling=0 = 
+	0.0894 * make=volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.1544 * make=renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	- 0.1259 * aspiration=std 
+	+ 0.125 * num-of-doors=four 
+	+ 0.0052 * wheel-base 
+	+ 0.0001 * curb-weight 
+	- 0.578
+
+LM num: 3
+symboling=0 = 
+	0.0894 * make=volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.3204 * make=renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	- 0.6165 * aspiration=std 
+	+ 0.125 * num-of-doors=four 
+	+ 0.0069 * wheel-base 
+	+ 0.0001 * curb-weight 
+	- 0.2532
+
+LM num: 4
+symboling=0 = 
+	0.0894 * make=volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.3945 * make=renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	- 0.4714 * aspiration=std 
+	+ 0.125 * num-of-doors=four 
+	+ 0.0069 * wheel-base 
+	+ 0.0001 * curb-weight 
+	- 0.2994
+
+LM num: 5
+symboling=0 = 
+	0.0894 * make=volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.3945 * make=renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	- 0.4714 * aspiration=std 
+	+ 0.125 * num-of-doors=four 
+	+ 0.0069 * wheel-base 
+	+ 0.0001 * curb-weight 
+	- 0.303
+
+LM num: 6
+symboling=0 = 
+	0.0894 * make=volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.3945 * make=renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	- 0.4714 * aspiration=std 
+	+ 0.125 * num-of-doors=four 
+	+ 0.0069 * wheel-base 
+	+ 0.0001 * curb-weight 
+	- 0.2877
+
+LM num: 7
+symboling=0 = 
+	0.0732 * make=volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.197 * make=renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.1011 * num-of-doors=four 
+	- 0.0224 * wheel-base 
+	+ 0.0002 * curb-weight 
+	+ 0.7111 * bore 
+	- 0.1843 * stroke 
+	- 0 * price 
+	+ 0.5498
+
+LM num: 8
+symboling=0 = 
+	0.0732 * make=volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.197 * make=renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.1011 * num-of-doors=four 
+	+ 0.0326 * body-style=wagon 
+	- 0.0224 * wheel-base 
+	+ 0.0002 * curb-weight 
+	+ 0.7111 * bore 
+	- 0.1843 * stroke 
+	- 0 * price 
+	+ 0.3348
+
+LM num: 9
+symboling=0 = 
+	0.0732 * make=volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.197 * make=renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.1011 * num-of-doors=four 
+	+ 0.0569 * body-style=wagon 
+	- 0.0195 * wheel-base 
+	+ 0.0002 * curb-weight 
+	+ 0.7111 * bore 
+	- 0.1843 * stroke 
+	- 0 * price 
+	+ 0.0668
+
+LM num: 10
+symboling=0 = 
+	0.0732 * make=volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.197 * make=renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.1011 * num-of-doors=four 
+	+ 0.0569 * body-style=wagon 
+	- 0.0192 * wheel-base 
+	+ 0.0002 * curb-weight 
+	+ 0.7111 * bore 
+	- 0.1843 * stroke 
+	- 0 * price 
+	+ 0.0355
+
+LM num: 11
+symboling=0 = 
+	0.0732 * make=volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.197 * make=renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.1011 * num-of-doors=four 
+	+ 0.0594 * body-style=wagon 
+	- 0.0224 * wheel-base 
+	+ 0.0002 * curb-weight 
+	+ 0.7111 * bore 
+	- 0.1843 * stroke 
+	- 0 * price 
+	+ 0.359
+
+LM num: 12
+symboling=0 = 
+	0.0732 * make=volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.197 * make=renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.1011 * num-of-doors=four 
+	- 0.0224 * wheel-base 
+	+ 0.0002 * curb-weight 
+	+ 0.8332 * bore 
+	- 0.1843 * stroke 
+	- 0 * price 
+	+ 0.2173
+
+LM num: 13
+symboling=0 = 
+	0.0732 * make=volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.197 * make=renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.1011 * num-of-doors=four 
+	- 0.0307 * wheel-base 
+	+ 0.0002 * curb-weight 
+	+ 0.6954 * bore 
+	- 0.282 * stroke 
+	- 0 * price 
+	+ 1.4908
+
+LM num: 14
+symboling=0 = 
+	0.0732 * make=volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.197 * make=renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.1011 * num-of-doors=four 
+	- 0.0307 * wheel-base 
+	- 0.0116 * height 
+	+ 0.0002 * curb-weight 
+	+ 0.6954 * bore 
+	- 0.282 * stroke 
+	- 0 * price 
+	+ 2.1643
+
+LM num: 15
+symboling=0 = 
+	0.0013 * normalized-losses 
+	+ 0.0732 * make=volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.2748 * make=renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.1011 * num-of-doors=four 
+	- 0.0193 * wheel-base 
+	+ 0.0002 * curb-weight 
+	+ 0.3936 * bore 
+	- 0.1104 * stroke 
+	- 0 * price 
+	+ 1.1362
+
+LM num: 16
+symboling=0 = 
+	0.0732 * make=volkswagen,nissan,toyota,chevrolet,mazda,renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.2038 * make=renault,isuzu,honda,subaru,bmw,jaguar,peugot 
+	+ 0.1011 * num-of-doors=four 
+	- 0.0079 * wheel-base 
+	+ 0 * curb-weight 
+	+ 0.2153 * bore 
+	+ 0.528
+
+Number of Rules : 16
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8852
+Mean absolute error                      0.1466
+Root mean squared error                  0.2218
+Relative absolute error                 33.3054 %
+Root relative squared error             47.2923 %
+Total Number of Instances              205     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7332
+Mean absolute error                      0.2063
+Root mean squared error                  0.3195
+Relative absolute error                 46.6349 %
+Root relative squared error             67.7234 %
+Total Number of Instances              205     
+

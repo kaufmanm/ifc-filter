@@ -1,0 +1,217 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=    0     ;  df=90;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      7.8983*case when family in('?') then 1 else 0 end
++      0     *case when family in('GB') then 1 else 0 end
++      0     *case when family in('GK') then 1 else 0 end
++      0     *case when family in('GS') then 1 else 0 end
++    -23.1926*case when family in('TN') then 1 else 0 end
++      0     *case when family in('ZA') then 1 else 0 end
++      0     *case when family in('ZF') then 1 else 0 end
++      0     *case when family in('ZH') then 1 else 0 end
++      0     *case when family in('ZM') then 1 else 0 end
++     10.5215*case when family in('ZS') then 1 else 0 end
++    -11.3667*case when product-type in('C') then 1 else 0 end
++      0     *case when product-type in('H') then 1 else 0 end
++      0     *case when product-type in('G') then 1 else 0 end
++    -45.6049*case when steel in('?') then 1 else 0 end
++      1.4156*case when steel in('R') then 1 else 0 end
++     -1.3507*case when steel in('A') then 1 else 0 end
++      0     *case when steel in('U') then 1 else 0 end
++     27.6885*case when steel in('K') then 1 else 0 end
++     55.1216*case when steel in('M') then 1 else 0 end
++     11.8295*case when steel in('S') then 1 else 0 end
++     51.744 *case when steel in('W') then 1 else 0 end
++     -4.3595*case when steel in('V') then 1 else 0 end
++      0.5146*carbon
++      0.953 *hardness
++     14.3333*temper_rolling
++    -25.5254*case when condition in('?') then 1 else 0 end
++     21.2097*case when condition in('S') then 1 else 0 end
++     15.1298*case when condition in('A') then 1 else 0 end
++      0     *case when condition in('X') then 1 else 0 end
++    -33.0253*case when formability in('?') then 1 else 0 end
++     25.0366*case when formability in('1') then 1 else 0 end
++     16.6412*case when formability in('2') then 1 else 0 end
++     16.9836*case when formability in('3') then 1 else 0 end
++      0     *case when formability in('4') then 1 else 0 end
++     16.2611*case when formability in('5') then 1 else 0 end
++      0.1248*strength
++      0.3478*non-ageing
++    -41.1225*case when surface-finish in('?') then 1 else 0 end
++     41.1225*case when surface-finish in('P') then 1 else 0 end
++      0     *case when surface-finish in('M') then 1 else 0 end
++     25.826 *case when surface-quality in('?') then 1 else 0 end
++     -2.998 *case when surface-quality in('D') then 1 else 0 end
++    -12.2774*case when surface-quality in('E') then 1 else 0 end
++    -10.4881*case when surface-quality in('F') then 1 else 0 end
++     -7.5845*case when surface-quality in('G') then 1 else 0 end
++      4.3595*case when enamelability in('?') then 1 else 0 end
++    -27.6769*case when enamelability in('1') then 1 else 0 end
++     15.1637*case when enamelability in('2') then 1 else 0 end
++      0     *case when enamelability in('3') then 1 else 0 end
++      0     *case when enamelability in('4') then 1 else 0 end
++      0     *case when enamelability in('5') then 1 else 0 end
++      3.1013*bc
++      0.3017*bf
++     -0.154 *bt
++      0.4857*case when bw/me in('?') then 1 else 0 end
++      0.3733*case when bw/me in('B') then 1 else 0 end
++     -2.5537*case when bw/me in('M') then 1 else 0 end
++      0.0547*bl
++      0     *m
++     38.8232*chrom
++     37.6128*phos
++      0.2797*cbond
++      0     *marvi
++     18.6805*exptl
++     38.1697*ferro
++      0     *corr
++     -6.1933*case when blue/bright/varn/clean in('?') then 1 else 0 end
++     11.4329*case when blue/bright/varn/clean in('B') then 1 else 0 end
++      0     *case when blue/bright/varn/clean in('R') then 1 else 0 end
++     -7.4008*case when blue/bright/varn/clean in('V') then 1 else 0 end
++     -1.2412*case when blue/bright/varn/clean in('C') then 1 else 0 end
++      0.5158*lustre
++      0     *jurofm
++      0     *s
++      0     *p
++      1.6872*shape
++      0.0878*thick
++      0     *width
++     -0.0001*len
++      0.028 *case when oil in('?') then 1 else 0 end
++      0.755 *case when oil in('Y') then 1 else 0 end
++     -1.3807*case when oil in('N') then 1 else 0 end
++     -1.8661*case when bore in('0') then 1 else 0 end
++      1.0147*case when bore in('500') then 1 else 0 end
++      2.1119*case when bore in('600') then 1 else 0 end
++      0     *case when bore in('760') then 1 else 0 end
++      0.0239*case when packing in('?') then 1 else 0 end
++      0     *case when packing in('1') then 1 else 0 end
++      3.1465*case when packing in('2') then 1 else 0 end
++     -0.8198*case when packing in('3') then 1 else 0 end
++    -0.5387))
+
+Odds Ratios...
+Variable         O.R.
+       1    2692.5879
+       2       1     
+       3       1     
+       4       1     
+       5       0     
+       6       1     
+       7       1     
+       8       1     
+       9       1     
+      10   37103.2738
+      11       0     
+      12       1     
+      13       1     
+      14       0     
+      15       4.119 
+      16       0.2591
+      17       1     
+      18 1.0591966321762819E12
+      19 8.689767351945774E23
+      20  137242.2021
+      21 2.965700996393045E22
+      22       0.0128
+      23       1.6729
+      24       2.5936
+      25 1678240.0895
+      26       0     
+      27 1626449054.2439
+      28 3722187.5591
+      29       1     
+      30       0     
+      31 7.469169772981999E10
+      32 16872565.8258
+      33 23763058.901
+      34       1     
+      35 11536823.7094
+      36       1.133 
+      37       1.416 
+      38       0     
+      39 7.2319181075120346E17
+      40       1     
+      41 1.644735510996008E11
+      42       0.0499
+      43       0     
+      44       0     
+      45       0.0005
+      46      78.2149
+      47       0     
+      48 3850630.2804
+      49       1     
+      50       1     
+      51       1     
+      52      22.2274
+      53       1.3522
+      54       0.8573
+      55       1.6253
+      56       1.4525
+      57       0.0778
+      58       1.0562
+      59       1     
+      60 7.2563634659133152E16
+      61 2.1627699933262236E16
+      62       1.3228
+      63       1     
+      64 129663928.8659
+      65 3.7748440531342392E16
+      66       1     
+      67       0.002 
+      68   92308.9534
+      69       1     
+      70       0.0006
+      71       0.289 
+      72       1.675 
+      73       1     
+      74       1     
+      75       1     
+      76       5.4042
+      77       1.0918
+      78       1     
+      79       0.9999
+      80       1.0284
+      81       2.1277
+      82       0.2514
+      83       0.1547
+      84       2.7584
+      85       8.2639
+      86       1     
+      87       1.0241
+      88       1     
+      89      23.2536
+      90       0.4405
+
+
+Time taken to build model: 0.3 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              691     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9855
+Mean absolute error                      0.0029
+Root mean squared error                  0.0538
+Relative absolute error                  1.4766 %
+Root relative squared error             17.1728 %
+Total Number of Instances              691     
+

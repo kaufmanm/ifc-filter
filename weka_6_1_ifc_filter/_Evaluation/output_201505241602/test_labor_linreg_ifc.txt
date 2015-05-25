@@ -1,0 +1,68 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation labor-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R17-weka.filters.unsupervised.attribute.NominalToBinary-R17-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute duration numeric
+@attribute wage-increase-first-year numeric
+@attribute wage-increase-second-year numeric
+@attribute wage-increase-third-year numeric
+@attribute cost-of-living-adjustment numeric
+@attribute working-hours numeric
+@attribute pension numeric
+@attribute standby-pay numeric
+@attribute shift-differential numeric
+@attribute education-allowance numeric
+@attribute statutory-holidays numeric
+@attribute vacation numeric
+@attribute longterm-disability-assistance numeric
+@attribute contribution-to-dental-plan numeric
+@attribute bereavement-assistance numeric
+@attribute contribution-to-health-plan numeric
+@attribute class numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+class =
+
+      0.4766 * wage-increase-first-year +
+      0.3364 * wage-increase-second-year +
+      0.2163 * pension +
+      2.0602 * education-allowance +
+      0.3644 * statutory-holidays +
+      0.299  * vacation +
+      0.5068 * longterm-disability-assistance +
+      0.2454 * contribution-to-health-plan +
+     -1.7248
+
+Time taken to build model: 0.17 seconds
+Time taken to test model on training data: 0.09 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9335
+Mean absolute error                      0.1079
+Root mean squared error                  0.1794
+Relative absolute error                 23.6974 %
+Root relative squared error             37.5919 %
+Total Number of Instances               57     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7261
+Mean absolute error                      0.2407
+Root mean squared error                  0.331 
+Relative absolute error                 51.9376 %
+Root relative squared error             68.1135 %
+Total Number of Instances               57     
+

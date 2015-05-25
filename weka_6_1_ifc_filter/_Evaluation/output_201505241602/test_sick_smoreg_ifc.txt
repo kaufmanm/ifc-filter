@@ -1,0 +1,104 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation sick-weka.filters.unsupervised.instance.Resample-S1-Z22.0-no-replacement-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R31-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute age numeric
+@attribute sex numeric
+@attribute 'on thyroxine' numeric
+@attribute 'query on thyroxine' numeric
+@attribute 'on antithyroid medication' numeric
+@attribute sick numeric
+@attribute pregnant numeric
+@attribute 'thyroid surgery' numeric
+@attribute 'I131 treatment' numeric
+@attribute 'query hypothyroid' numeric
+@attribute 'query hyperthyroid' numeric
+@attribute lithium numeric
+@attribute goitre numeric
+@attribute tumor numeric
+@attribute hypopituitary numeric
+@attribute psych numeric
+@attribute 'TSH measured' numeric
+@attribute TSH numeric
+@attribute 'T3 measured' numeric
+@attribute T3 numeric
+@attribute 'TT4 measured' numeric
+@attribute TT4 numeric
+@attribute 'T4U measured' numeric
+@attribute T4U numeric
+@attribute 'FTI measured' numeric
+@attribute FTI numeric
+@attribute 'TBG measured' numeric
+@attribute TBG numeric
+@attribute 'referral source' numeric
+@attribute Class=negative numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ -       0.0006 * (normalized) age
+ -       0.0003 * (normalized) sex
+ +       0      * (normalized) on thyroxine
+ -       0.0009 * (normalized) query on thyroxine
+ +       0.0002 * (normalized) on antithyroid medication
+ +       0.0002 * (normalized) sick
+ -       0.0008 * (normalized) pregnant
+ +       0.0006 * (normalized) thyroid surgery
+ -       0.0004 * (normalized) I131 treatment
+ -       0.0003 * (normalized) query hypothyroid
+ -       0      * (normalized) query hyperthyroid
+ +       0.0011 * (normalized) lithium
+ -       0.0003 * (normalized) goitre
+ -       0.0004 * (normalized) tumor
+ +       0      * (normalized) hypopituitary
+ -       0.0001 * (normalized) psych
+ -       0.0001 * (normalized) TSH measured
+ +       0.0003 * (normalized) TSH
+ -       0.0007 * (normalized) T3 measured
+ +       0.0129 * (normalized) T3
+ +       0.0004 * (normalized) TT4 measured
+ -       0.0017 * (normalized) TT4
+ -       0.0002 * (normalized) T4U measured
+ +       0.0009 * (normalized) T4U
+ -       0.0002 * (normalized) FTI measured
+ +       0.0007 * (normalized) FTI
+ +       0      * (normalized) TBG measured
+ +       0      * (normalized) TBG
+ +       0.0007 * (normalized) referral source
+ +       0.99  
+
+
+
+Number of kernel evaluations: 343347 (99.25% cached)
+
+Time taken to build model: 6.04 seconds
+Time taken to test model on training data: 1.5 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7349
+Mean absolute error                      0.0581
+Root mean squared error                  0.2383
+Relative absolute error                 53.2241 %
+Root relative squared error            102.0503 %
+Total Number of Instances              829     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6266
+Mean absolute error                      0.0582
+Root mean squared error                  0.2389
+Relative absolute error                 53.2865 %
+Root relative squared error            102.1861 %
+Total Number of Instances              829     
+

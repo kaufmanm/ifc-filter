@@ -1,0 +1,611 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=    0     ;  df=287;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      4.7508*case when attribute_1 in('C') then 1 else 0 end
++     -2.5295*case when attribute_1 in('A') then 1 else 0 end
++     -1.2526*case when attribute_1 in('G') then 1 else 0 end
++     -1.0043*case when attribute_1 in('T') then 1 else 0 end
++     -0.2267*case when attribute_1 in('D') then 1 else 0 end
++      1.1552*case when attribute_2 in('C') then 1 else 0 end
++      4.7429*case when attribute_2 in('G') then 1 else 0 end
++     -1.7055*case when attribute_2 in('A') then 1 else 0 end
++     -3.889 *case when attribute_2 in('T') then 1 else 0 end
++    -86.3338*case when attribute_2 in('D') then 1 else 0 end
++      2.0742*case when attribute_3 in('A') then 1 else 0 end
++      2.8419*case when attribute_3 in('G') then 1 else 0 end
++     -5.9221*case when attribute_3 in('T') then 1 else 0 end
++      0.9255*case when attribute_3 in('C') then 1 else 0 end
++      3.0158*case when attribute_4 in('G') then 1 else 0 end
++     -8.3918*case when attribute_4 in('C') then 1 else 0 end
++      0.9084*case when attribute_4 in('A') then 1 else 0 end
++      4.5164*case when attribute_4 in('T') then 1 else 0 end
++      1.721 *case when attribute_5 in('C') then 1 else 0 end
++      0.366 *case when attribute_5 in('T') then 1 else 0 end
++     -2.5997*case when attribute_5 in('A') then 1 else 0 end
++      0.2637*case when attribute_5 in('G') then 1 else 0 end
++      1.8763*case when attribute_6 in('T') then 1 else 0 end
++     -0.1721*case when attribute_6 in('C') then 1 else 0 end
++      1.0241*case when attribute_6 in('G') then 1 else 0 end
++     -3.1573*case when attribute_6 in('A') then 1 else 0 end
++     -0.13  *case when attribute_7 in('G') then 1 else 0 end
++     -0.9699*case when attribute_7 in('A') then 1 else 0 end
++      6.168 *case when attribute_7 in('C') then 1 else 0 end
++     -5.1197*case when attribute_7 in('T') then 1 else 0 end
++     -1.3405*case when attribute_8 in('C') then 1 else 0 end
++     -4.9451*case when attribute_8 in('A') then 1 else 0 end
++      0.7278*case when attribute_8 in('G') then 1 else 0 end
++      5.5377*case when attribute_8 in('T') then 1 else 0 end
++      5.7442*case when attribute_9 in('A') then 1 else 0 end
++     -5.4335*case when attribute_9 in('C') then 1 else 0 end
++      3.3128*case when attribute_9 in('G') then 1 else 0 end
++     -2.8375*case when attribute_9 in('T') then 1 else 0 end
++     -5.1769*case when attribute_10 in('T') then 1 else 0 end
++      6.6224*case when attribute_10 in('G') then 1 else 0 end
++     -0.7821*case when attribute_10 in('C') then 1 else 0 end
++     -0.1612*case when attribute_10 in('A') then 1 else 0 end
++     -0.9683*case when attribute_11 in('C') then 1 else 0 end
++     -3.4794*case when attribute_11 in('G') then 1 else 0 end
++      7.597 *case when attribute_11 in('A') then 1 else 0 end
++     -3.446 *case when attribute_11 in('T') then 1 else 0 end
++     -3.8559*case when attribute_12 in('A') then 1 else 0 end
++      7.618 *case when attribute_12 in('G') then 1 else 0 end
++     -4.4803*case when attribute_12 in('C') then 1 else 0 end
++      0.2739*case when attribute_12 in('T') then 1 else 0 end
++     -2.2424*case when attribute_13 in('C') then 1 else 0 end
++      2.854 *case when attribute_13 in('A') then 1 else 0 end
++     -0.0332*case when attribute_13 in('G') then 1 else 0 end
++     -0.3982*case when attribute_13 in('T') then 1 else 0 end
++      1.1945*case when attribute_14 in('A') then 1 else 0 end
++      7.4715*case when attribute_14 in('G') then 1 else 0 end
++     -2.4448*case when attribute_14 in('T') then 1 else 0 end
++     -5.0569*case when attribute_14 in('C') then 1 else 0 end
++      0     *case when attribute_14 in('N') then 1 else 0 end
++      4.2294*case when attribute_15 in('G') then 1 else 0 end
++      4.5264*case when attribute_15 in('C') then 1 else 0 end
++     -7.5301*case when attribute_15 in('T') then 1 else 0 end
++     -2.123 *case when attribute_15 in('A') then 1 else 0 end
++      3.7325*case when attribute_16 in('G') then 1 else 0 end
++      2.1968*case when attribute_16 in('C') then 1 else 0 end
++     -0.8863*case when attribute_16 in('T') then 1 else 0 end
++     -5.7474*case when attribute_16 in('A') then 1 else 0 end
++      4.0032*case when attribute_17 in('A') then 1 else 0 end
++      5.9789*case when attribute_17 in('G') then 1 else 0 end
++     -2.8581*case when attribute_17 in('T') then 1 else 0 end
++     -5.2274*case when attribute_17 in('C') then 1 else 0 end
++     -0.1407*case when attribute_18 in('G') then 1 else 0 end
++     -0.8157*case when attribute_18 in('T') then 1 else 0 end
++     -5.818 *case when attribute_18 in('A') then 1 else 0 end
++      5.8437*case when attribute_18 in('C') then 1 else 0 end
++      0.8628*case when attribute_19 in('G') then 1 else 0 end
++      8.739 *case when attribute_19 in('A') then 1 else 0 end
++     -6.6724*case when attribute_19 in('C') then 1 else 0 end
++     -0.7579*case when attribute_19 in('T') then 1 else 0 end
++      0     *case when attribute_19 in('N') then 1 else 0 end
++      0.9185*case when attribute_20 in('C') then 1 else 0 end
++     -0.7977*case when attribute_20 in('G') then 1 else 0 end
++      4.9047*case when attribute_20 in('A') then 1 else 0 end
++     -4.0084*case when attribute_20 in('T') then 1 else 0 end
++      0     *case when attribute_20 in('N') then 1 else 0 end
++     -0.4774*case when attribute_21 in('C') then 1 else 0 end
++      7.4736*case when attribute_21 in('G') then 1 else 0 end
++     -7.0479*case when attribute_21 in('T') then 1 else 0 end
++      2.3034*case when attribute_21 in('A') then 1 else 0 end
++      0     *case when attribute_21 in('N') then 1 else 0 end
++      6.828 *case when attribute_22 in('A') then 1 else 0 end
++     -1.0789*case when attribute_22 in('C') then 1 else 0 end
++     -7.5551*case when attribute_22 in('T') then 1 else 0 end
++      3.8295*case when attribute_22 in('G') then 1 else 0 end
++      0     *case when attribute_22 in('N') then 1 else 0 end
++      5.2748*case when attribute_23 in('G') then 1 else 0 end
++      1.2298*case when attribute_23 in('C') then 1 else 0 end
++     -5.1219*case when attribute_23 in('A') then 1 else 0 end
++     -1.807 *case when attribute_23 in('T') then 1 else 0 end
++      0     *case when attribute_23 in('N') then 1 else 0 end
++     -5.7679*case when attribute_24 in('C') then 1 else 0 end
++     -1.2151*case when attribute_24 in('G') then 1 else 0 end
++     12.7493*case when attribute_24 in('A') then 1 else 0 end
++     -2.2665*case when attribute_24 in('T') then 1 else 0 end
++      0     *case when attribute_24 in('N') then 1 else 0 end
++      3.9131*case when attribute_25 in('G') then 1 else 0 end
++     -0.3874*case when attribute_25 in('T') then 1 else 0 end
++      1.0472*case when attribute_25 in('A') then 1 else 0 end
++     -3.6926*case when attribute_25 in('C') then 1 else 0 end
++      0     *case when attribute_25 in('N') then 1 else 0 end
++      6.3044*case when attribute_26 in('A') then 1 else 0 end
++      5.199 *case when attribute_26 in('G') then 1 else 0 end
++     -2.9907*case when attribute_26 in('C') then 1 else 0 end
++     -6.6606*case when attribute_26 in('T') then 1 else 0 end
++      0     *case when attribute_26 in('N') then 1 else 0 end
++     -5.4754*case when attribute_27 in('G') then 1 else 0 end
++      1.2472*case when attribute_27 in('C') then 1 else 0 end
++      0.9138*case when attribute_27 in('T') then 1 else 0 end
++      4.4171*case when attribute_27 in('A') then 1 else 0 end
++      0     *case when attribute_27 in('N') then 1 else 0 end
++     -5.6675*case when attribute_28 in('C') then 1 else 0 end
++      1.581 *case when attribute_28 in('A') then 1 else 0 end
++     18.8343*case when attribute_28 in('G') then 1 else 0 end
++    -10.6122*case when attribute_28 in('T') then 1 else 0 end
++      0     *case when attribute_28 in('N') then 1 else 0 end
++    -16.9659*case when attribute_29 in('A') then 1 else 0 end
++     12.854 *case when attribute_29 in('G') then 1 else 0 end
++     -3.7333*case when attribute_29 in('C') then 1 else 0 end
++     20.4698*case when attribute_29 in('T') then 1 else 0 end
++      0     *case when attribute_29 in('N') then 1 else 0 end
++    -25.1262*case when attribute_30 in('G') then 1 else 0 end
++      6.1426*case when attribute_30 in('C') then 1 else 0 end
++     21.1761*case when attribute_30 in('A') then 1 else 0 end
++     23.2427*case when attribute_30 in('T') then 1 else 0 end
++      0     *case when attribute_30 in('N') then 1 else 0 end
++    -11.2171*case when attribute_31 in('G') then 1 else 0 end
++      0     *case when attribute_31 in('N') then 1 else 0 end
++      7.9017*case when attribute_31 in('C') then 1 else 0 end
++     11.751 *case when attribute_31 in('T') then 1 else 0 end
++      0.489 *case when attribute_31 in('A') then 1 else 0 end
++    -21.9773*case when attribute_32 in('T') then 1 else 0 end
++      0     *case when attribute_32 in('N') then 1 else 0 end
++     11.2435*case when attribute_32 in('C') then 1 else 0 end
++     14.0706*case when attribute_32 in('G') then 1 else 0 end
++     10.2488*case when attribute_32 in('A') then 1 else 0 end
++     18.341 *case when attribute_33 in('C') then 1 else 0 end
++      3.5756*case when attribute_33 in('G') then 1 else 0 end
++    -17.4695*case when attribute_33 in('A') then 1 else 0 end
++      0     *case when attribute_33 in('N') then 1 else 0 end
++     -2.5155*case when attribute_33 in('T') then 1 else 0 end
++     10.8296*case when attribute_34 in('T') then 1 else 0 end
++    -12.3527*case when attribute_34 in('A') then 1 else 0 end
++      3.7192*case when attribute_34 in('C') then 1 else 0 end
++      2.7782*case when attribute_34 in('G') then 1 else 0 end
++      0     *case when attribute_34 in('N') then 1 else 0 end
++    -14.9665*case when attribute_35 in('G') then 1 else 0 end
++      2.1307*case when attribute_35 in('T') then 1 else 0 end
++      8.1153*case when attribute_35 in('A') then 1 else 0 end
++      9.6952*case when attribute_35 in('C') then 1 else 0 end
++      0     *case when attribute_35 in('N') then 1 else 0 end
++      0     *case when attribute_35 in('R') then 1 else 0 end
++     -9.635 *case when attribute_36 in('T') then 1 else 0 end
++     -3.6209*case when attribute_36 in('C') then 1 else 0 end
++      3.6479*case when attribute_36 in('A') then 1 else 0 end
++     11.2094*case when attribute_36 in('G') then 1 else 0 end
++      0     *case when attribute_36 in('N') then 1 else 0 end
++      0     *case when attribute_36 in('S') then 1 else 0 end
++      5.2363*case when attribute_37 in('T') then 1 else 0 end
++      1.2232*case when attribute_37 in('C') then 1 else 0 end
++     -2.7938*case when attribute_37 in('A') then 1 else 0 end
++     -1.6139*case when attribute_37 in('G') then 1 else 0 end
++    -88.7141*case when attribute_37 in('N') then 1 else 0 end
++      0.5466*case when attribute_38 in('C') then 1 else 0 end
++    -10.0681*case when attribute_38 in('G') then 1 else 0 end
++      4.3194*case when attribute_38 in('T') then 1 else 0 end
++      6.0229*case when attribute_38 in('A') then 1 else 0 end
++    -25.9885*case when attribute_38 in('N') then 1 else 0 end
++     -4.0026*case when attribute_39 in('C') then 1 else 0 end
++     -4.8199*case when attribute_39 in('G') then 1 else 0 end
++      6.5985*case when attribute_39 in('T') then 1 else 0 end
++      3.6402*case when attribute_39 in('A') then 1 else 0 end
++      0     *case when attribute_39 in('N') then 1 else 0 end
++      7.8548*case when attribute_40 in('A') then 1 else 0 end
++     -3.0165*case when attribute_40 in('G') then 1 else 0 end
++      1.2637*case when attribute_40 in('C') then 1 else 0 end
++     -5.184 *case when attribute_40 in('T') then 1 else 0 end
++      0     *case when attribute_40 in('N') then 1 else 0 end
++      4.824 *case when attribute_41 in('A') then 1 else 0 end
++     -2.2394*case when attribute_41 in('C') then 1 else 0 end
++     -8.5504*case when attribute_41 in('G') then 1 else 0 end
++      7.2767*case when attribute_41 in('T') then 1 else 0 end
++      0     *case when attribute_41 in('N') then 1 else 0 end
++     -7.4315*case when attribute_42 in('G') then 1 else 0 end
++     -0.2431*case when attribute_42 in('C') then 1 else 0 end
++      9.4393*case when attribute_42 in('A') then 1 else 0 end
++     -1.2786*case when attribute_42 in('T') then 1 else 0 end
++      0     *case when attribute_42 in('N') then 1 else 0 end
++     -4.1732*case when attribute_43 in('G') then 1 else 0 end
++      2.4387*case when attribute_43 in('A') then 1 else 0 end
++      3.7735*case when attribute_43 in('C') then 1 else 0 end
++     -1.8514*case when attribute_43 in('T') then 1 else 0 end
++      0     *case when attribute_43 in('N') then 1 else 0 end
++     -3.2495*case when attribute_44 in('G') then 1 else 0 end
++     -8.1306*case when attribute_44 in('C') then 1 else 0 end
++      1.5083*case when attribute_44 in('T') then 1 else 0 end
++     10.4203*case when attribute_44 in('A') then 1 else 0 end
++      0     *case when attribute_44 in('N') then 1 else 0 end
++     -7.2003*case when attribute_45 in('C') then 1 else 0 end
++      2.8789*case when attribute_45 in('T') then 1 else 0 end
++      9.1455*case when attribute_45 in('A') then 1 else 0 end
++     -4.1866*case when attribute_45 in('G') then 1 else 0 end
++      0     *case when attribute_45 in('N') then 1 else 0 end
++     -5.7387*case when attribute_46 in('C') then 1 else 0 end
++     -4.4848*case when attribute_46 in('G') then 1 else 0 end
++      3.7209*case when attribute_46 in('T') then 1 else 0 end
++      7.8825*case when attribute_46 in('A') then 1 else 0 end
++      0     *case when attribute_46 in('N') then 1 else 0 end
++      0.0373*case when attribute_47 in('T') then 1 else 0 end
++      3.8337*case when attribute_47 in('C') then 1 else 0 end
++      5.3781*case when attribute_47 in('G') then 1 else 0 end
++     -9.2084*case when attribute_47 in('A') then 1 else 0 end
++      0     *case when attribute_47 in('N') then 1 else 0 end
++      7.1928*case when attribute_48 in('T') then 1 else 0 end
++      0.7421*case when attribute_48 in('G') then 1 else 0 end
++     -5.648 *case when attribute_48 in('C') then 1 else 0 end
++     -1.8275*case when attribute_48 in('A') then 1 else 0 end
++      0     *case when attribute_48 in('N') then 1 else 0 end
++     -7.1656*case when attribute_49 in('C') then 1 else 0 end
++     -2.815 *case when attribute_49 in('G') then 1 else 0 end
++      4.2493*case when attribute_49 in('T') then 1 else 0 end
++      7.057 *case when attribute_49 in('A') then 1 else 0 end
++      0     *case when attribute_49 in('N') then 1 else 0 end
++     -2.074 *case when attribute_50 in('G') then 1 else 0 end
++     -2.8873*case when attribute_50 in('C') then 1 else 0 end
++      7.1417*case when attribute_50 in('A') then 1 else 0 end
++     -1.877 *case when attribute_50 in('T') then 1 else 0 end
++      0     *case when attribute_50 in('N') then 1 else 0 end
++     -7.3728*case when attribute_51 in('A') then 1 else 0 end
++      1.0449*case when attribute_51 in('G') then 1 else 0 end
++      3.1764*case when attribute_51 in('C') then 1 else 0 end
++      2.474 *case when attribute_51 in('T') then 1 else 0 end
++      0     *case when attribute_51 in('N') then 1 else 0 end
++      4.3118*case when attribute_52 in('G') then 1 else 0 end
++     -0.1039*case when attribute_52 in('T') then 1 else 0 end
++     -0.7409*case when attribute_52 in('A') then 1 else 0 end
++     -4.0877*case when attribute_52 in('C') then 1 else 0 end
++      0     *case when attribute_52 in('N') then 1 else 0 end
++     -4.1469*case when attribute_53 in('C') then 1 else 0 end
++      4.1435*case when attribute_53 in('G') then 1 else 0 end
++      0.3209*case when attribute_53 in('T') then 1 else 0 end
++     -0.7082*case when attribute_53 in('A') then 1 else 0 end
++      0     *case when attribute_53 in('N') then 1 else 0 end
++      1.9613*case when attribute_54 in('C') then 1 else 0 end
++      0.2862*case when attribute_54 in('G') then 1 else 0 end
++     -4.2784*case when attribute_54 in('T') then 1 else 0 end
++      2.2465*case when attribute_54 in('A') then 1 else 0 end
++      0     *case when attribute_54 in('N') then 1 else 0 end
++     -5.8747*case when attribute_55 in('A') then 1 else 0 end
++     -1.0787*case when attribute_55 in('C') then 1 else 0 end
++      4.6135*case when attribute_55 in('G') then 1 else 0 end
++      2.1197*case when attribute_55 in('T') then 1 else 0 end
++      0     *case when attribute_55 in('N') then 1 else 0 end
++     -5.8417*case when attribute_56 in('G') then 1 else 0 end
++      1.4077*case when attribute_56 in('C') then 1 else 0 end
++      2.7022*case when attribute_56 in('T') then 1 else 0 end
++      2.4573*case when attribute_56 in('A') then 1 else 0 end
++    -25.9885*case when attribute_56 in('N') then 1 else 0 end
++      2.4338*case when attribute_57 in('T') then 1 else 0 end
++      3.154 *case when attribute_57 in('C') then 1 else 0 end
++     -0.3389*case when attribute_57 in('G') then 1 else 0 end
++     -5.6509*case when attribute_57 in('A') then 1 else 0 end
++      0     *case when attribute_57 in('N') then 1 else 0 end
++      1.433 *case when attribute_58 in('C') then 1 else 0 end
++     -4.6061*case when attribute_58 in('A') then 1 else 0 end
++      6.4571*case when attribute_58 in('G') then 1 else 0 end
++     -3.4381*case when attribute_58 in('T') then 1 else 0 end
++      0     *case when attribute_58 in('N') then 1 else 0 end
++     -2.1969*case when attribute_59 in('T') then 1 else 0 end
++     -2.9351*case when attribute_59 in('G') then 1 else 0 end
++     10.4043*case when attribute_59 in('C') then 1 else 0 end
++     -7.33  *case when attribute_59 in('A') then 1 else 0 end
++      0     *case when attribute_59 in('N') then 1 else 0 end
++     -0.2519*case when attribute_60 in('G') then 1 else 0 end
++     -1.2534*case when attribute_60 in('C') then 1 else 0 end
++     -6.5076*case when attribute_60 in('T') then 1 else 0 end
++      7.8136*case when attribute_60 in('A') then 1 else 0 end
++      0     *case when attribute_60 in('N') then 1 else 0 end
++    28.7046))
+
+Odds Ratios...
+Variable         O.R.
+       1     115.6801
+       2       0.0797
+       3       0.2858
+       4       0.3663
+       5       0.7971
+       6       3.1745
+       7     114.7652
+       8       0.1817
+       9       0.0205
+      10       0     
+      11       7.9579
+      12      17.1475
+      13       0.0027
+      14       2.523 
+      15      20.4046
+      16       0.0002
+      17       2.4805
+      18      91.5071
+      19       5.5902
+      20       1.442 
+      21       0.0743
+      22       1.3018
+      23       6.5291
+      24       0.8419
+      25       2.7846
+      26       0.0425
+      27       0.8781
+      28       0.3791
+      29     477.2129
+      30       0.006 
+      31       0.2617
+      32       0.0071
+      33       2.0705
+      34     254.0844
+      35     312.388 
+      36       0.0044
+      37      27.4628
+      38       0.0586
+      39       0.0056
+      40     751.7227
+      41       0.4575
+      42       0.8511
+      43       0.3797
+      44       0.0308
+      45    1992.2224
+      46       0.0319
+      47       0.0212
+      48    2034.5106
+      49       0.0113
+      50       1.3151
+      51       0.1062
+      52      17.3567
+      53       0.9673
+      54       0.6715
+      55       3.302 
+      56    1757.2443
+      57       0.0867
+      58       0.0064
+      59       1     
+      60      68.6758
+      61      92.4215
+      62       0.0005
+      63       0.1197
+      64      41.7826
+      65       8.996 
+      66       0.4122
+      67       0.0032
+      68      54.7709
+      69     395.0247
+      70       0.0574
+      71       0.0054
+      72       0.8688
+      73       0.4423
+      74       0.003 
+      75     345.0413
+      76       2.3698
+      77    6241.6131
+      78       0.0013
+      79       0.4686
+      80       1     
+      81       2.5056
+      82       0.4504
+      83     134.9281
+      84       0.0182
+      85       1     
+      86       0.6204
+      87    1760.8733
+      88       0.0009
+      89      10.0084
+      90       1     
+      91     923.3804
+      92       0.34  
+      93       0.0005
+      94      46.0413
+      95       1     
+      96     195.3609
+      97       3.4207
+      98       0.006 
+      99       0.1641
+     100       1     
+     101       0.0031
+     102       0.2967
+     103  344326.8249
+     104       0.1037
+     105       1     
+     106      50.0533
+     107       0.6788
+     108       2.8495
+     109       0.0249
+     110       1     
+     111     546.9639
+     112     181.0986
+     113       0.0503
+     114       0.0013
+     115       1     
+     116       0.0042
+     117       3.4806
+     118       2.4938
+     119      82.8521
+     120       1     
+     121       0.0035
+     122       4.8596
+     123 151224676.4858
+     124       0     
+     125       1     
+     126       0     
+     127  382320.2854
+     128       0.0239
+     129 776079497.1409
+     130       1     
+     131       0     
+     132     465.2667
+     133 1572769971.5681
+     134 1.2421110550127985E10
+     135       1     
+     136       0     
+     137       1     
+     138    2701.7487
+     139  126875.606 
+     140       1.6307
+     141       0     
+     142       1     
+     143   76385.4374
+     144 1290545.8409
+     145   28247.6846
+     146 92338028.4376
+     147      35.7176
+     148       0     
+     149       1     
+     150       0.0808
+     151   50491.5457
+     152       0     
+     153      41.2301
+     154      16.0899
+     155       1     
+     156       0     
+     157       8.4211
+     158    3345.1946
+     159   16238.9605
+     160       1     
+     161       1     
+     162       0.0001
+     163       0.0268
+     164      38.3945
+     165   73824.5781
+     166       1     
+     167       1     
+     168     187.9657
+     169       3.3979
+     170       0.0612
+     171       0.1991
+     172       0     
+     173       1.7273
+     174       0     
+     175      75.1401
+     176     412.7603
+     177       0     
+     178       0.0183
+     179       0.0081
+     180     733.9999
+     181      38.1001
+     182       1     
+     183    2578.0229
+     184       0.049 
+     185       3.5385
+     186       0.0056
+     187       1     
+     188     124.4645
+     189       0.1065
+     190       0.0002
+     191    1446.2537
+     192       1     
+     193       0.0006
+     194       0.7842
+     195   12573.3039
+     196       0.2784
+     197       1     
+     198       0.0154
+     199      11.4578
+     200      43.5319
+     201       0.157 
+     202       1     
+     203       0.0388
+     204       0.0003
+     205       4.5191
+     206   33533.7621
+     207       1     
+     208       0.0007
+     209      17.7946
+     210    9371.892 
+     211       0.0152
+     212       1     
+     213       0.0032
+     214       0.0113
+     215      41.3019
+     216    2650.6136
+     217       1     
+     218       1.038 
+     219      46.2314
+     220     216.6015
+     221       0.0001
+     222       1     
+     223    1329.7959
+     224       2.1003
+     225       0.0035
+     226       0.1608
+     227       1     
+     228       0.0008
+     229       0.0599
+     230      70.0554
+     231    1161.0089
+     232       1     
+     233       0.1257
+     234       0.0557
+     235    1263.6365
+     236       0.1531
+     237       1     
+     238       0.0006
+     239       2.8431
+     240      23.9608
+     241      11.8702
+     242       1     
+     243      74.5739
+     244       0.9014
+     245       0.4767
+     246       0.0168
+     247       1     
+     248       0.0158
+     249      63.0207
+     250       1.3784
+     251       0.4925
+     252       1     
+     253       7.1086
+     254       1.3313
+     255       0.0139
+     256       9.4547
+     257       1     
+     258       0.0028
+     259       0.34  
+     260     100.8389
+     261       8.3286
+     262       1     
+     263       0.0029
+     264       4.0867
+     265      14.9124
+     266      11.6729
+     267       0     
+     268      11.4016
+     269      23.4299
+     270       0.7126
+     271       0.0035
+     272       1     
+     273       4.1912
+     274       0.01  
+     275     637.219 
+     276       0.0321
+     277       1     
+     278       0.1111
+     279       0.0531
+     280   32999.8408
+     281       0.0007
+     282       1     
+     283       0.7773
+     284       0.2855
+     285       0.0015
+     286    2474.0114
+     287       1     
+
+
+Time taken to build model: 1.59 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              701     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.738 
+Mean absolute error                      0.1353
+Root mean squared error                  0.3602
+Relative absolute error                 27.1428 %
+Root relative squared error             72.0738 %
+Total Number of Instances              701     
+

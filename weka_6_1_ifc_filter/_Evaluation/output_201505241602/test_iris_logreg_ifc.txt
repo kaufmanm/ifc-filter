@@ -1,0 +1,62 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation iris-weka.filters.unsupervised.attribute.NominalToBinary-R5-weka.filters.unsupervised.attribute.Remove-R6-7-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute sepallength numeric
+@attribute sepalwidth numeric
+@attribute petallength numeric
+@attribute petalwidth numeric
+@attribute iris-setosa numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=    0     ;  df=4;  p=      0   
+
+SQL:
+
+1-1/(1+exp(     -0.8095*sepallength
++      0.4109*sepalwidth
++     14.0302*petallength
++     23.424 *petalwidth
++   -17.9032))
+
+Odds Ratios...
+Variable         O.R.
+       1       0.4451
+       2       1.5082
+       3 1239499.0766
+       4 1.4890105906545319E10
+
+
+Time taken to build model: 0.08 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              150     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0.0003
+Root mean squared error                  0.0037
+Relative absolute error                  0.0695 %
+Root relative squared error              0.7817 %
+Total Number of Instances              150     
+

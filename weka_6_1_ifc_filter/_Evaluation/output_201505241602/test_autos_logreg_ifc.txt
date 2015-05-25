@@ -1,0 +1,125 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'autos-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R26-weka.filters.unsupervised.attribute.Remove-R26-28,30-32-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute normalized-losses numeric
+@attribute make numeric
+@attribute fuel-type numeric
+@attribute aspiration numeric
+@attribute num-of-doors numeric
+@attribute body-style numeric
+@attribute drive-wheels numeric
+@attribute engine-location numeric
+@attribute wheel-base numeric
+@attribute length numeric
+@attribute width numeric
+@attribute height numeric
+@attribute curb-weight numeric
+@attribute engine-type numeric
+@attribute num-of-cylinders numeric
+@attribute engine-size numeric
+@attribute fuel-system numeric
+@attribute bore numeric
+@attribute stroke numeric
+@attribute compression-ratio numeric
+@attribute horsepower numeric
+@attribute peak-rpm numeric
+@attribute city-mpg numeric
+@attribute highway-mpg numeric
+@attribute price numeric
+@attribute symboling=0 numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=   -0.0024;  df=25;  p=      0   
+
+SQL:
+
+1-1/(1+exp(    525.278 *normalized-losses
++    920.1008*make
++   2018.833 *fuel-type
++   5557.3308*aspiration
++    700.2279*num-of-doors
++   -945.7302*body-style
++   1410.9906*drive-wheels
++   -518.0217*engine-location
++    506.6091*wheel-base
++    343.0266*length
++    100.3154*width
++    908.8349*height
++    -15.5268*curb-weight
++    315.8449*engine-type
++   2249.8627*num-of-cylinders
++   -664.9511*engine-size
++   -817.4291*fuel-system
++    393.8443*bore
++   -858.4722*stroke
++   -613.9404*compression-ratio
++    822.3695*horsepower
++   -424.6295*peak-rpm
++    106.0045*city-mpg
++    -52.2066*highway-mpg
++    646.3578*price
++ -6290.893 ))
+
+Odds Ratios...
+Variable         O.R.
+       1 1.3344959290586052E228
+       2 Infinity
+       3 Infinity
+       4 Infinity
+       5 1.27384149619734E304
+       6       0     
+       7 Infinity
+       8       0     
+       9 1.041198822276477E220
+      10 9.430831973753868E148
+      11 3.6847348452647137E43
+      12 Infinity
+      13       0     
+      14 1.4780729056710665E137
+      15 Infinity
+      16       0     
+      17       0     
+      18 1.1076060263245668E171
+      19       0     
+      20       0     
+      21 Infinity
+      22       0     
+      23 1.0893578817333093E46
+      24       0     
+      25 5.124110253670499E280
+
+
+Time taken to build model: 0.14 seconds
+Time taken to test model on training data: 0.5 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0.0013 %
+Root relative squared error              0.0045 %
+Total Number of Instances              205     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6144
+Mean absolute error                      0.1789
+Root mean squared error                  0.4086
+Relative absolute error                 40.4257 %
+Root relative squared error             86.6095 %
+Total Number of Instances              205     
+

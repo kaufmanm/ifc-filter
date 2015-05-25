@@ -1,0 +1,164 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'anneal-weka.filters.unsupervised.attribute.NominalToBinary-A-R39-weka.filters.unsupervised.attribute.Remove-R39,41-44-weka.filters.unsupervised.instance.Resample-S1-Z77.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute family numeric
+@attribute product-type numeric
+@attribute steel numeric
+@attribute carbon numeric
+@attribute hardness numeric
+@attribute temper_rolling numeric
+@attribute condition numeric
+@attribute formability numeric
+@attribute strength numeric
+@attribute non-ageing numeric
+@attribute surface-finish numeric
+@attribute surface-quality numeric
+@attribute enamelability numeric
+@attribute bc numeric
+@attribute bf numeric
+@attribute bt numeric
+@attribute bw/me numeric
+@attribute bl numeric
+@attribute m numeric
+@attribute chrom numeric
+@attribute phos numeric
+@attribute cbond numeric
+@attribute marvi numeric
+@attribute exptl numeric
+@attribute ferro numeric
+@attribute corr numeric
+@attribute blue/bright/varn/clean numeric
+@attribute lustre numeric
+@attribute jurofm numeric
+@attribute s numeric
+@attribute p numeric
+@attribute shape numeric
+@attribute thick numeric
+@attribute width numeric
+@attribute len numeric
+@attribute oil numeric
+@attribute bore numeric
+@attribute packing numeric
+@attribute class=2 numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=   -0.0001;  df=38;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      3.7441*family
++    -16.8683*product-type
++    234.7434*steel
++    -69.108 *carbon
++   -211.9865*hardness
++     31.7044*temper_rolling
++    268.5469*condition
++      1.7852*formability
++     38.7369*strength
++   -194.385 *non-ageing
++    533.0275*surface-finish
++     35.0306*surface-quality
++    142.4507*enamelability
++   -330.097 *bc
++      5.4515*bf
++     -0.0933*bt
++      4.2245*bw/me
++      6.6048*bl
++    -16.8683*m
++   -173.5184*chrom
++   -183.5566*phos
++     95.3631*cbond
++    -16.8683*marvi
++    -65.513 *exptl
++   -170.501 *ferro
++    -16.8683*corr
++   -354.0561*blue/bright/varn/clean
++      3.1403*lustre
++    -16.8683*jurofm
++    -16.8683*s
++    -16.8683*p
++     -2.5247*shape
++      4.4193*thick
++      0.7321*width
++      5.4822*len
++     -0.8935*oil
++     -7.2189*bore
++      3.9741*packing
++   193.2541))
+
+Odds Ratios...
+Variable         O.R.
+       1      42.2692
+       2       0     
+       3 8.866977996773157E101
+       4       0     
+       5       0     
+       6 5.875441947246763E13
+       7 4.250433397245381E116
+       8       5.961 
+       9 6.655841397395176E16
+      10       0     
+      11 3.0968547199471558E231
+      12 1.6352719250058025E15
+      13 7.337570393251208E61
+      14       0     
+      15     233.116 
+      16       0.911 
+      17      68.3371
+      18     738.6226
+      19       0     
+      20       0     
+      21       0     
+      22 2.604178218416038E41
+      23       0     
+      24       0     
+      25       0     
+      26       0     
+      27       0     
+      28      23.1097
+      29       0     
+      30       0     
+      31       0     
+      32       0.0801
+      33      83.0399
+      34       2.0794
+      35     240.3692
+      36       0.4092
+      37       0.0007
+      38      53.201 
+
+
+Time taken to build model: 0.33 seconds
+Time taken to test model on training data: 3.76 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0.0001 %
+Root relative squared error              0.0001 %
+Total Number of Instances              691     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9854
+Mean absolute error                      0.003 
+Root mean squared error                  0.0539
+Relative absolute error                  1.5483 %
+Root relative squared error             17.2106 %
+Total Number of Instances              691     
+

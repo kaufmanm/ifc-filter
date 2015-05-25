@@ -1,0 +1,105 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -111.0528;  df=34;  p=      0   
+
+SQL:
+
+1-1/(1+exp(    -34.4758*a01
++      0     *a02
++     -1.8357*a03
++      1.1178*a04
++     -4.8173*a05
++     -3.9149*a06
++     -0.9312*a07
++     -4.3506*a08
++     -3.5439*a09
++     -0.9877*a10
++      4.6451*a11
++      1.7674*a12
++      1.0779*a13
++      0.1445*a14
++     -4.0731*a15
++      4.456 *a16
++     -0.8496*a17
++     -2.8796*a18
++      5.6927*a19
++     -0.2709*a20
++     -0.4546*a21
++      3.2944*a22
++     -3.0187*a23
++     -2.001 *a24
++     -2.4041*a25
++      0.643 *a26
++      6.5064*a27
++     -0.0366*a28
++     -2.7937*a29
++     -4.9449*a30
++     -1.5828*a31
++     -0.5749*a32
++     -0.1354*a33
++      4.0282*a34
++    37.6539))
+
+Odds Ratios...
+Variable         O.R.
+       1       0     
+       2       1     
+       3       0.1595
+       4       3.0582
+       5       0.0081
+       6       0.0199
+       7       0.3941
+       8       0.0129
+       9       0.0289
+      10       0.3724
+      11     104.0706
+      12       5.8556
+      13       2.9384
+      14       1.1555
+      15       0.017 
+      16      86.1424
+      17       0.4276
+      18       0.0562
+      19     296.6828
+      20       0.7627
+      21       0.6347
+      22      26.9599
+      23       0.0489
+      24       0.1352
+      25       0.0903
+      26       1.9023
+      27     669.4322
+      28       0.9641
+      29       0.0612
+      30       0.0071
+      31       0.2054
+      32       0.5627
+      33       0.8734
+      34      56.1575
+
+
+Time taken to build model: 0.08 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8914
+Mean absolute error                      0.0946
+Root mean squared error                  0.2174
+Relative absolute error                 20.5548 %
+Root relative squared error             45.3245 %
+Total Number of Instances              351     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7593
+Mean absolute error                      0.1379
+Root mean squared error                  0.3207
+Relative absolute error                 29.7668 %
+Root relative squared error             66.3852 %
+Total Number of Instances              351     
+

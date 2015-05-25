@@ -1,0 +1,101 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation zoo-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R19-24-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute animal numeric
+@attribute hair numeric
+@attribute feathers numeric
+@attribute eggs numeric
+@attribute milk numeric
+@attribute airborne numeric
+@attribute aquatic numeric
+@attribute predator numeric
+@attribute toothed numeric
+@attribute backbone numeric
+@attribute breathes numeric
+@attribute venomous numeric
+@attribute fins numeric
+@attribute legs numeric
+@attribute tail numeric
+@attribute domestic numeric
+@attribute catsize numeric
+@attribute type=mammal numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=    0     ;  df=17;  p=      0   
+
+SQL:
+
+1-1/(1+exp(     16.8464*animal
++      1.0766*hair
++      0.6132*feathers
++      1.7038*eggs
++     16.8464*milk
++      0.3016*airborne
++     -0.21  *aquatic
++     -2.8316*predator
++     -0.5318*toothed
++      0.9222*backbone
++      0.4283*breathes
++      1.2477*venomous
++     -1.233 *fins
++      0.2479*legs
++     -0.5344*tail
++      0.3491*domestic
++      0.2288*catsize
++   -17.4384))
+
+Odds Ratios...
+Variable         O.R.
+       1 20716014.953
+       2       2.9347
+       3       1.8463
+       4       5.4949
+       5 20716014.953
+       6       1.352 
+       7       0.8106
+       8       0.0589
+       9       0.5875
+      10       2.5149
+      11       1.5346
+      12       3.4822
+      13       0.2914
+      14       1.2814
+      15       0.586 
+      16       1.4178
+      17       1.2571
+
+
+Time taken to build model: 0.13 seconds
+Time taken to test model on training data: 0.16 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              101     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0.0002
+Root mean squared error                  0.0005
+Relative absolute error                  0.0346 %
+Root relative squared error              0.0966 %
+Total Number of Instances              101     
+

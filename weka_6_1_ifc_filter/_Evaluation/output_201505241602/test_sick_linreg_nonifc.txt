@@ -1,0 +1,41 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+Class=negative =
+
+      0.1013 * sick=f +
+     -0.1126 * pregnant=t +
+      0.0452 * T3 measured=f +
+      0.1132 * T3 +
+     -0.0008 * TT4 +
+      0.1258 * T4U +
+      0.0353 * referral source=SVHD,SVHC,other,STMW +
+      0.0367 * referral source=SVHC,other,STMW +
+      0.5184
+
+Time taken to build model: 0.11 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.4413
+Mean absolute error                      0.1177
+Root mean squared error                  0.2096
+Relative absolute error                107.9297 %
+Root relative squared error             89.7359 %
+Total Number of Instances              829     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4034
+Mean absolute error                      0.1205
+Root mean squared error                  0.214 
+Relative absolute error                110.3875 %
+Root relative squared error             91.5243 %
+Total Number of Instances              829     
+

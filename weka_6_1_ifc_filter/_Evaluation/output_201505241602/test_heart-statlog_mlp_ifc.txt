@@ -1,0 +1,177 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.MultilayerPerceptron 
+
+FilteredClassifier using weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation heart-statlog-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R15-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute age numeric
+@attribute sex numeric
+@attribute chest numeric
+@attribute resting_blood_pressure numeric
+@attribute serum_cholestoral numeric
+@attribute fasting_blood_sugar numeric
+@attribute resting_electrocardiographic_results numeric
+@attribute maximum_heart_rate_achieved numeric
+@attribute exercise_induced_angina numeric
+@attribute oldpeak numeric
+@attribute slope numeric
+@attribute number_of_major_vessels numeric
+@attribute thal numeric
+@attribute class=absent numeric
+
+@data
+
+
+Classifier Model
+Linear Node 0
+    Inputs    Weights
+    Threshold    0.7360834926181783
+    Node 1    -1.6101079821349205
+    Node 2    2.573779359163009
+    Node 3    2.9095896679841227
+    Node 4    -2.1372327418477215
+    Node 5    2.3986235313240356
+    Node 6    -2.6439553247944554
+    Node 7    0.3742560470030806
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    2.6968740518595777
+    Attrib age    4.82509343144836
+    Attrib sex    -4.977829357763619
+    Attrib chest    -14.456244956300708
+    Attrib resting_blood_pressure    -3.143739325006217
+    Attrib serum_cholestoral    -7.695895111015602
+    Attrib fasting_blood_sugar    1.1733101712990783
+    Attrib resting_electrocardiographic_results    0.21344864862346027
+    Attrib maximum_heart_rate_achieved    -1.122677793737313
+    Attrib exercise_induced_angina    2.1125066344009578
+    Attrib oldpeak    -10.866118531228489
+    Attrib slope    -1.9199110880334866
+    Attrib number_of_major_vessels    -19.94474064337816
+    Attrib thal    -9.450258104847636
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -8.732072474209025
+    Attrib age    0.21717528015518614
+    Attrib sex    2.78424378799706
+    Attrib chest    -3.77676930104362
+    Attrib resting_blood_pressure    1.6465336381458353
+    Attrib serum_cholestoral    -3.7717725419587076
+    Attrib fasting_blood_sugar    4.194710680254553
+    Attrib resting_electrocardiographic_results    2.4039745395383565
+    Attrib maximum_heart_rate_achieved    0.47097804135273585
+    Attrib exercise_induced_angina    1.8879887929716084
+    Attrib oldpeak    -3.7853317118665455
+    Attrib slope    2.2196684881755013
+    Attrib number_of_major_vessels    -3.933849533245536
+    Attrib thal    2.0573867205912757
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -8.41246076785174
+    Attrib age    -4.386001482415292
+    Attrib sex    0.07348616427856952
+    Attrib chest    0.9172960170310487
+    Attrib resting_blood_pressure    -3.5083022442817513
+    Attrib serum_cholestoral    -0.9354861437503399
+    Attrib fasting_blood_sugar    1.90760137884656
+    Attrib resting_electrocardiographic_results    1.0039912210358797
+    Attrib maximum_heart_rate_achieved    1.1549745783329248
+    Attrib exercise_induced_angina    -2.562742527583262
+    Attrib oldpeak    -0.44820047793815265
+    Attrib slope    1.5637847824288758
+    Attrib number_of_major_vessels    0.3342776187575078
+    Attrib thal    2.2636137350291143
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -8.284512076586044
+    Attrib age    -5.757834792965004
+    Attrib sex    4.3058294258924725
+    Attrib chest    3.3136054698628574
+    Attrib resting_blood_pressure    -6.5205325550897655
+    Attrib serum_cholestoral    -1.168613391343173
+    Attrib fasting_blood_sugar    5.0273567630755105
+    Attrib resting_electrocardiographic_results    2.3518447599317924
+    Attrib maximum_heart_rate_achieved    6.012624184168009
+    Attrib exercise_induced_angina    -5.624077615813322
+    Attrib oldpeak    -1.9755772546571997
+    Attrib slope    -2.9061708949447334
+    Attrib number_of_major_vessels    1.4046075436863725
+    Attrib thal    -2.218008752837485
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -8.530530564815908
+    Attrib age    0.7341731032921514
+    Attrib sex    1.4423517282953113
+    Attrib chest    -1.1382044728583367
+    Attrib resting_blood_pressure    0.7574954269115941
+    Attrib serum_cholestoral    -8.634237323759994
+    Attrib fasting_blood_sugar    1.6911943887687115
+    Attrib resting_electrocardiographic_results    2.2288959442367977
+    Attrib maximum_heart_rate_achieved    -0.3494495895350104
+    Attrib exercise_induced_angina    2.867096889922948
+    Attrib oldpeak    -8.002671464740782
+    Attrib slope    3.282892501907188
+    Attrib number_of_major_vessels    4.127563282357753
+    Attrib thal    -2.365650822453949
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -19.727399987747656
+    Attrib age    -14.282913325629858
+    Attrib sex    -0.5128624998212757
+    Attrib chest    -0.9668646956587573
+    Attrib resting_blood_pressure    -1.7077384018026613
+    Attrib serum_cholestoral    -7.149019546662756
+    Attrib fasting_blood_sugar    3.871302048656226
+    Attrib resting_electrocardiographic_results    -1.7657344340461036
+    Attrib maximum_heart_rate_achieved    1.6313053384186427
+    Attrib exercise_induced_angina    4.655752507973377
+    Attrib oldpeak    -6.965783421470925
+    Attrib slope    2.4449672427838225
+    Attrib number_of_major_vessels    0.06873536601337951
+    Attrib thal    4.712357189698301
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    1.898188787515523
+    Attrib age    9.737890242547234
+    Attrib sex    6.897654979755217
+    Attrib chest    2.044376776811458
+    Attrib resting_blood_pressure    7.426864986334119
+    Attrib serum_cholestoral    3.430129380071739
+    Attrib fasting_blood_sugar    2.6306820833280145
+    Attrib resting_electrocardiographic_results    -5.43414097288206
+    Attrib maximum_heart_rate_achieved    9.2946185772476
+    Attrib exercise_induced_angina    -1.1390019445972412
+    Attrib oldpeak    0.7971637186159216
+    Attrib slope    0.05399347621171204
+    Attrib number_of_major_vessels    1.1771963983348412
+    Attrib thal    2.0451821566068196
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 0.83 seconds
+Time taken to test model on training data: 0.2 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9177
+Mean absolute error                      0.0924
+Root mean squared error                  0.2068
+Relative absolute error                 18.7013 %
+Root relative squared error             41.6256 %
+Total Number of Instances              270     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5435
+Mean absolute error                      0.2654
+Root mean squared error                  0.4548
+Relative absolute error                 53.517  %
+Root relative squared error             91.1163 %
+Total Number of Instances              270     
+

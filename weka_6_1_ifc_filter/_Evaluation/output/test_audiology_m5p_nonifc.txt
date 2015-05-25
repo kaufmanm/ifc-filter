@@ -1,0 +1,117 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+age_gt_60=t <= 0.5 : LM1 (134/0%)
+age_gt_60=t >  0.5 : 
+|   history_noise=f <= 0.5 : LM2 (27/58.086%)
+|   history_noise=f >  0.5 : 
+|   |   bone=?,unmeasured <= 0.5 : 
+|   |   |   o_ar_c=?,normal <= 0.5 : LM3 (11/60.126%)
+|   |   |   o_ar_c=?,normal >  0.5 : 
+|   |   |   |   speech=poor,?,very_good,good,unmeasured <= 0.5 : LM4 (11/0%)
+|   |   |   |   speech=poor,?,very_good,good,unmeasured >  0.5 : LM5 (25/0%)
+|   |   bone=?,unmeasured >  0.5 : LM6 (18/0%)
+
+LM num: 1
+class=cochlear_age = 
+	0.0567 * age_gt_60=t 
+	+ 0.0178 * history_dizziness=f 
+	+ 0.0267 * history_noise=f 
+	+ 0.025 * notch_4k=f 
+	+ 0.019 * o_ar_c=?,normal 
+	+ 0.0227 * speech=normal,poor,?,very_good,good,unmeasured 
+	+ 0.0055 * speech=poor,?,very_good,good,unmeasured 
+	+ 0.0132 * tymp=ad,a 
+	- 0.102
+
+LM num: 2
+class=cochlear_age = 
+	0.079 * age_gt_60=t 
+	- 0.0996 * air=mild 
+	+ 0.1857 * history_dizziness=f 
+	+ 0.2159 * history_noise=f 
+	+ 0.2578 * notch_4k=f 
+	+ 0.2009 * o_ar_c=?,normal 
+	+ 0.2383 * speech=normal,poor,?,very_good,good,unmeasured 
+	+ 0.0076 * speech=poor,?,very_good,good,unmeasured 
+	+ 0.1937 * tymp=ad,a 
+	- 0.6876
+
+LM num: 3
+class=cochlear_age = 
+	0.079 * age_gt_60=t 
+	+ 0.0726 * air=mild 
+	+ 0.3705 * history_dizziness=f 
+	+ 0.131 * history_noise=f 
+	+ 0.0809 * notch_4k=f 
+	+ 0.1697 * o_ar_c=?,normal 
+	+ 0.0582 * speech=normal,poor,?,very_good,good,unmeasured 
+	+ 0.0076 * speech=poor,?,very_good,good,unmeasured 
+	+ 0.6292 * tymp=ad,a 
+	- 0.6585
+
+LM num: 4
+class=cochlear_age = 
+	0.079 * age_gt_60=t 
+	+ 0.0478 * air=mild 
+	+ 0.5635 * history_dizziness=f 
+	+ 0.131 * history_noise=f 
+	+ 0.0809 * notch_4k=f 
+	+ 0.1375 * o_ar_c=?,normal 
+	+ 0.0582 * speech=normal,poor,?,very_good,good,unmeasured 
+	+ 0.0439 * speech=poor,?,very_good,good,unmeasured 
+	+ 0.3506 * tymp=ad,a 
+	- 0.494
+
+LM num: 5
+class=cochlear_age = 
+	0.079 * age_gt_60=t 
+	+ 0.0478 * air=mild 
+	+ 0.3644 * history_dizziness=f 
+	+ 0.131 * history_noise=f 
+	+ 0.0809 * notch_4k=f 
+	+ 0.1375 * o_ar_c=?,normal 
+	+ 0.0582 * speech=normal,poor,?,very_good,good,unmeasured 
+	+ 0.0312 * speech=poor,?,very_good,good,unmeasured 
+	+ 0.3506 * tymp=ad,a 
+	- 0.2855
+
+LM num: 6
+class=cochlear_age = 
+	0.079 * age_gt_60=t 
+	+ 0.0416 * air=mild 
+	+ 0.285 * history_dizziness=f 
+	+ 0.131 * history_noise=f 
+	+ 0.0809 * notch_4k=f 
+	+ 0.1361 * o_ar_c=?,normal 
+	+ 0.0582 * speech=normal,poor,?,very_good,good,unmeasured 
+	+ 0.0076 * speech=poor,?,very_good,good,unmeasured 
+	+ 0.3456 * tymp=ad,a 
+	- 0.1787
+
+Number of Rules : 6
+
+Time taken to build model: 0.27 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9609
+Mean absolute error                      0.0557
+Root mean squared error                  0.1212
+Relative absolute error                 14.7744 %
+Root relative squared error             27.9082 %
+Total Number of Instances              226     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8914
+Mean absolute error                      0.0849
+Root mean squared error                  0.1971
+Relative absolute error                 22.3804 %
+Root relative squared error             45.1418 %
+Total Number of Instances              226     
+

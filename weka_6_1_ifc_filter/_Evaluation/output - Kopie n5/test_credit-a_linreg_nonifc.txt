@@ -1,0 +1,51 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+class =
+
+      0.0637 * A5=g,gg +
+      0.4225 * A6=d,i,k,j,aa,m,c,w,e,q,r,cc,x +
+     -0.3149 * A6=j,aa,m,c,w,e,q,r,cc,x +
+      0.3015 * A6=aa,m,c,w,e,q,r,cc,x +
+      0.0852 * A6=m,c,w,e,q,r,cc,x +
+     -0.1622 * A6=r,cc,x +
+      0.2942 * A6=cc,x +
+     -0.3108 * A7=dd,j,bb,v,o,n,h,z +
+      0.3639 * A7=j,bb,v,o,n,h,z +
+     -0.3874 * A7=bb,v,o,n,h,z +
+      0.2789 * A7=n,h,z +
+     -0.2397 * A7=h,z +
+      0.5851 * A9=t +
+      0.1243 * A10=t +
+      0.0076 * A11 +
+      0.4919 * A13=p +
+     -0.0002 * A14 +
+      0      * A15 +
+     -0.1122
+
+Time taken to build model: 0.11 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7789
+Mean absolute error                      0.2153
+Root mean squared error                  0.3117
+Relative absolute error                 43.5949 %
+Root relative squared error             62.7148 %
+Total Number of Instances              690     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7417
+Mean absolute error                      0.2291
+Root mean squared error                  0.3349
+Relative absolute error                 46.2671 %
+Root relative squared error             67.2265 %
+Total Number of Instances              690     
+

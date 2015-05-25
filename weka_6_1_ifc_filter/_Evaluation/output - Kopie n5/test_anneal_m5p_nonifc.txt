@@ -1,0 +1,112 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+steel=?,U,R,V,M <= 0.5 : LM1 (398/0%)
+steel=?,U,R,V,M >  0.5 : 
+|   surface-quality=F,D,G,? <= 0.5 : LM2 (125/0%)
+|   surface-quality=F,D,G,? >  0.5 : 
+|   |   thick <= 0.8 : LM3 (56/0%)
+|   |   thick >  0.8 : 
+|   |   |   condition=X,S <= 0.5 : 
+|   |   |   |   strength <= 425 : LM4 (30/0%)
+|   |   |   |   strength >  425 : LM5 (22/0%)
+|   |   |   condition=X,S >  0.5 : LM6 (60/38.202%)
+
+LM num: 1
+class=2 = 
+	0.0014 * steel=?,U,R,V,M 
+	+ 0.0095 * steel=U,R,V,M 
+	+ 0.0026 * steel=V,M 
+	+ 0.0056 * condition=X,S 
+	+ 0 * strength 
+	+ 0.0104 * surface-quality=F,D,G,? 
+	+ 0.0006 * thick 
+	+ 0 * len 
+	- 0.0118
+
+LM num: 2
+class=2 = 
+	0.0019 * steel=?,U,R,V,M 
+	+ 0.0474 * steel=U,R,V,M 
+	- 0.0221 * steel=V,M 
+	+ 0.0704 * condition=X,S 
+	+ 0.0002 * strength 
+	+ 0.1001 * surface-quality=F,D,G,? 
+	+ 0.0059 * thick 
+	+ 0 * len 
+	- 0.1205
+
+LM num: 3
+class=2 = 
+	0.0019 * steel=?,U,R,V,M 
+	+ 0.099 * steel=U,R,V,M 
+	- 0.0567 * steel=V,M 
+	+ 0.1678 * condition=X,S 
+	+ 0.0003 * strength 
+	+ 0.0799 * surface-quality=F,D,G,? 
+	+ 0.0404 * thick 
+	+ 0 * len 
+	- 0.1537
+
+LM num: 4
+class=2 = 
+	0.0019 * steel=?,U,R,V,M 
+	- 0.0641 * steel=U,R,V,M 
+	- 0.0056 * steel=V,M 
+	+ 0.3332 * condition=X,S 
+	+ 0.0008 * strength 
+	+ 0.0799 * surface-quality=F,D,G,? 
+	+ 0.0246 * thick 
+	+ 0 * len 
+	- 0.1099
+
+LM num: 5
+class=2 = 
+	0.0019 * steel=?,U,R,V,M 
+	- 0.4367 * steel=U,R,V,M 
+	+ 0.357 * steel=V,M 
+	+ 0.3332 * condition=X,S 
+	+ 0.0009 * strength 
+	+ 0.0799 * surface-quality=F,D,G,? 
+	+ 0.0246 * thick 
+	+ 0 * len 
+	+ 0.2483
+
+LM num: 6
+class=2 = 
+	0.0019 * steel=?,U,R,V,M 
+	+ 0.0213 * steel=U,R,V,M 
+	- 0.1268 * steel=V,M 
+	+ 0.3103 * condition=X,S 
+	+ 0.0005 * strength 
+	+ 0.0799 * surface-quality=F,D,G,? 
+	+ 0.0246 * thick 
+	+ 0 * len 
+	+ 0.4928
+
+Number of Rules : 6
+
+Time taken to build model: 0.25 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9785
+Mean absolute error                      0.028 
+Root mean squared error                  0.0674
+Relative absolute error                 14.3106 %
+Root relative squared error             21.5546 %
+Total Number of Instances              691     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9717
+Mean absolute error                      0.0316
+Root mean squared error                  0.0764
+Relative absolute error                 16.1383 %
+Root relative squared error             24.3844 %
+Total Number of Instances              691     
+

@@ -1,0 +1,66 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+Class =
+
+      3.7081 * attribute_1 +
+     -4.963  * attribute_3 +
+      3.4111 * attribute_4 +
+      1.1711 * attribute_6 +
+     -1.6085 * attribute_7 +
+     -0.6876 * attribute_8 +
+      0.858  * attribute_9 +
+      0.8376 * attribute_12 +
+      0.7886 * attribute_13 +
+     -0.513  * attribute_14 +
+      0.3723 * attribute_15 +
+     -0.3165 * attribute_16 +
+     -0.6996 * attribute_17 +
+      0.5968 * attribute_18 +
+     -0.3236 * attribute_21 +
+      0.5367 * attribute_22 +
+     -0.4106 * attribute_23 +
+      1.1386 * attribute_24 +
+     -0.7626 * attribute_25 +
+      0.3299 * attribute_27 +
+     -0.7743 * attribute_29 +
+      1.7662 * attribute_30 +
+     -2.0333 * attribute_31 +
+      0.9674 * attribute_32 +
+     -0.7825 * attribute_34 +
+      1.2208 * attribute_35 +
+     -1.0143 * attribute_36 +
+      0.577  * attribute_39 +
+     -0.6072 * attribute_40 +
+      1.3204 * attribute_47 +
+      5.7493 * attribute_49 +
+    -10.2294 * attribute_50 +
+      7.6521 * attribute_53 +
+     -0.1671
+
+Time taken to build model: 0.14 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7705
+Mean absolute error                      0.2672
+Root mean squared error                  0.318 
+Relative absolute error                 53.6865 %
+Root relative squared error             63.7466 %
+Total Number of Instances              208     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4894
+Mean absolute error                      0.3902
+Root mean squared error                  0.4892
+Relative absolute error                 77.9978 %
+Root relative squared error             97.523  %
+Total Number of Instances              208     
+

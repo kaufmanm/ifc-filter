@@ -1,0 +1,59 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation iris-weka.filters.unsupervised.attribute.NominalToBinary-R5-weka.filters.unsupervised.attribute.Remove-R6-7-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute sepallength numeric
+@attribute sepalwidth numeric
+@attribute petallength numeric
+@attribute petalwidth numeric
+@attribute iris-setosa numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+petallength <= 0.663 : LM1 (100/0%)
+petallength >  0.663 : LM2 (50/0%)
+
+LM num: 1
+iris-setosa = 
+	0.1316 * petallength 
+	- 0.0014
+
+LM num: 2
+iris-setosa = 
+	0.2329 * petallength 
+	+ 0.7667
+
+Number of Rules : 2
+
+Time taken to build model: 0.16 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9999
+Mean absolute error                      0.0018
+Root mean squared error                  0.0071
+Relative absolute error                  0.4153 %
+Root relative squared error              1.4976 %
+Total Number of Instances              150     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.972 
+Mean absolute error                      0.0177
+Root mean squared error                  0.1112
+Relative absolute error                  3.9476 %
+Root relative squared error             23.3594 %
+Total Number of Instances              150     
+

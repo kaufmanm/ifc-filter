@@ -1,0 +1,81 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'segment-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R20,22-26-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z33.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute region-centroid-col numeric
+@attribute region-centroid-row numeric
+@attribute region-pixel-count numeric
+@attribute short-line-density-5 numeric
+@attribute short-line-density-2 numeric
+@attribute vedge-mean numeric
+@attribute vegde-sd numeric
+@attribute hedge-mean numeric
+@attribute hedge-sd numeric
+@attribute intensity-mean numeric
+@attribute rawred-mean numeric
+@attribute rawblue-mean numeric
+@attribute rawgreen-mean numeric
+@attribute exred-mean numeric
+@attribute exblue-mean numeric
+@attribute exgreen-mean numeric
+@attribute value-mean numeric
+@attribute saturation-mean numeric
+@attribute hue-mean numeric
+@attribute class=sky numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+intensity-mean <= 0.031 : LM1 (609/0%)
+intensity-mean >  0.031 : 
+|   intensity-mean <= 0.371 : LM2 (52/0%)
+|   intensity-mean >  0.371 : LM3 (101/0%)
+
+LM num: 1
+class=sky = 
+	0.0253 * intensity-mean 
+	- 0.0001
+
+LM num: 2
+class=sky = 
+	0.3213 * intensity-mean 
+	- 0.0129
+
+LM num: 3
+class=sky = 
+	0.2253 * intensity-mean 
+	+ 0.7853
+
+Number of Rules : 3
+
+Time taken to build model: 0.62 seconds
+Time taken to test model on training data: 1.08 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9995
+Mean absolute error                      0.0026
+Root mean squared error                  0.0111
+Relative absolute error                  1.113  %
+Root relative squared error              3.2821 %
+Total Number of Instances              762     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.3234
+Mean absolute error                      0.132 
+Root mean squared error                  0.336 
+Relative absolute error                 57.3442 %
+Root relative squared error             99.0255 %
+Total Number of Instances              762     
+

@@ -1,0 +1,77 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'Glass-weka.filters.unsupervised.attribute.NominalToBinary-R10-weka.filters.unsupervised.attribute.Remove-R10,12-16-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute RI numeric
+@attribute Na numeric
+@attribute Mg numeric
+@attribute Al numeric
+@attribute Si numeric
+@attribute K numeric
+@attribute Ca numeric
+@attribute Ba numeric
+@attribute Fe numeric
+@attribute 'Type=build wind non-float' numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -122.0089;  df=9;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      5.0192*RI
++     -1.0768*Na
++     -0.4789*Mg
++      3.1218*Al
++      3.0684*Si
++      1.8605*K
++      3.281 *Ca
++      5.441 *Ba
++      5.107 *Fe
++   -13.1783))
+
+Odds Ratios...
+Variable         O.R.
+       1     151.2832
+       2       0.3407
+       3       0.6195
+       4      22.6863
+       5      21.5083
+       6       6.427 
+       7      26.6027
+       8     230.6671
+       9     165.1733
+
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0.16 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7997
+Mean absolute error                      0.1681
+Root mean squared error                  0.2874
+Relative absolute error                 36.7062 %
+Root relative squared error             60.0482 %
+Total Number of Instances              214     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4698
+Mean absolute error                      0.3218
+Root mean squared error                  0.4276
+Relative absolute error                 69.7892 %
+Root relative squared error             88.7393 %
+Total Number of Instances              214     
+

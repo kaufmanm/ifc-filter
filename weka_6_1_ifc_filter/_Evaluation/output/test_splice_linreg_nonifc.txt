@@ -1,0 +1,106 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+Class=N =
+
+      0.423  * attribute_1=C,T,G,A +
+      0.045  * attribute_4=G,A +
+     -0.0597 * attribute_6=A +
+      0.0519 * attribute_7=C,A,G +
+      0.0585 * attribute_8=T +
+      0.048  * attribute_9=A,G +
+     -0.0478 * attribute_9=G +
+     -0.0457 * attribute_11=T,A +
+      0.0972 * attribute_11=A +
+      0.0453 * attribute_14=N,G,A +
+      0.0453 * attribute_14=G,A +
+     -0.0821 * attribute_14=A +
+      0.0534 * attribute_15=T,A,G +
+     -0.0407 * attribute_16=A +
+      0.0797 * attribute_17=G,A +
+      0.0373 * attribute_18=A,G +
+      0.0408 * attribute_20=G,A +
+      0.0454 * attribute_21=C,N,G,A +
+      0.0428 * attribute_21=A +
+      0.0411 * attribute_22=C,N,G,A +
+      0.0494 * attribute_22=G,A +
+      0.0592 * attribute_25=G,A +
+     -0.0519 * attribute_25=A +
+      0.0337 * attribute_26=A,G +
+      0.0544 * attribute_28=N,A,G +
+      0.0544 * attribute_28=A,G +
+      0.0787 * attribute_28=G +
+      0.0826 * attribute_29=N,C,G,T +
+      0.0826 * attribute_29=C,G,T +
+      0.0768 * attribute_29=G,T +
+      0.0713 * attribute_29=T +
+      0.1925 * attribute_30=N,A,T,C +
+      0.1925 * attribute_30=A,T,C +
+     -0.0755 * attribute_30=C +
+      0.039  * attribute_31=N,A,C,T +
+      0.039  * attribute_31=A,C,T +
+      0.0807 * attribute_31=C,T +
+      0.0988 * attribute_32=N,C,A,G +
+      0.0988 * attribute_32=C,A,G +
+     -0.0902 * attribute_33=A,N,T,C +
+      0.0406 * attribute_33=T,C +
+      0.103  * attribute_33=C +
+      0.0554 * attribute_34=N,G,C,T +
+      0.0554 * attribute_34=G,C,T +
+     -0.04   * attribute_34=C,T +
+      0.0876 * attribute_34=T +
+      0.051  * attribute_35=R,N,C,T,A +
+      0.051  * attribute_35=N,C,T,A +
+      0.051  * attribute_35=C,T,A +
+      0.0472 * attribute_36=N,C,A,G +
+      0.0472 * attribute_36=C,A,G +
+     -0.0601 * attribute_37=A,C,T,N +
+      0.0492 * attribute_37=C,T,N +
+      0.0539 * attribute_38=T,C,A,N +
+      0.0377 * attribute_39=N,A,T +
+      0.0377 * attribute_39=A,T +
+      0.0566 * attribute_40=C,A +
+      0.0554 * attribute_41=N,A,T +
+      0.0551 * attribute_42=A +
+      0.041  * attribute_43=T,N,A +
+      0.0446 * attribute_44=A +
+      0.056  * attribute_45=A,N,G,T +
+      0.0704 * attribute_46=A +
+      0.0371 * attribute_49=N,G,A,T +
+      0.0371 * attribute_49=G,A,T +
+      0.0443 * attribute_50=A +
+      0.0491 * attribute_51=N,C,T,G +
+      0.0385 * attribute_55=T,A +
+     -0.0425 * attribute_55=A +
+      0.0511 * attribute_56=C,T,A,N +
+      0.0679 * attribute_57=G,N,T,C +
+      0.0459 * attribute_58=G,A +
+     -0.0495 * attribute_58=A +
+     -1.3472
+
+Time taken to build model: 8.42 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.877 
+Mean absolute error                      0.1904
+Root mean squared error                  0.2397
+Relative absolute error                 38.2712 %
+Root relative squared error             48.0526 %
+Total Number of Instances              701     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7981
+Mean absolute error                      0.2412
+Root mean squared error                  0.3037
+Relative absolute error                 48.3839 %
+Root relative squared error             60.7791 %
+Total Number of Instances              701     
+

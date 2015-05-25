@@ -1,0 +1,161 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+TSH <= 4.55 : LM1 (980/0%)
+TSH >  4.55 : 
+|   TSH measured=f <= 0.5 : 
+|   |   FTI <= 64.5 : LM2 (37/59.616%)
+|   |   FTI >  64.5 : 
+|   |   |   TSH <= 6.1 : LM3 (28/0%)
+|   |   |   TSH >  6.1 : 
+|   |   |   |   on thyroxine=t <= 0.5 : 
+|   |   |   |   |   T3 <= 2.022 : LM4 (26/0%)
+|   |   |   |   |   T3 >  2.022 : 
+|   |   |   |   |   |   FTI <= 85 : LM5 (8/0%)
+|   |   |   |   |   |   FTI >  85 : 
+|   |   |   |   |   |   |   TT4 <= 133 : LM6 (22/0%)
+|   |   |   |   |   |   |   TT4 >  133 : 
+|   |   |   |   |   |   |   |   T3 <= 2.35 : LM7 (2/0%)
+|   |   |   |   |   |   |   |   T3 >  2.35 : LM8 (4/0%)
+|   |   |   |   on thyroxine=t >  0.5 : LM9 (19/0%)
+|   TSH measured=f >  0.5 : LM10 (118/0%)
+
+LM num: 1
+Class=negative = 
+	0.0012 * TSH measured=f 
+	- 0 * TSH 
+	+ 0.0002 * T3 
+	+ 0 * FTI 
+	+ 0.9949
+
+LM num: 2
+Class=negative = 
+	-0.0006 * age 
+	+ 0.1617 * on thyroxine=t 
+	+ 0.209 * thyroid surgery=t 
+	+ 0.054 * TSH measured=f 
+	- 0.0002 * TSH 
+	+ 0.0238 * T3 
+	+ 0.0015 * FTI 
+	+ 0.0161
+
+LM num: 3
+Class=negative = 
+	0.0004 * age 
+	+ 0.2642 * on thyroxine=t 
+	+ 0.2995 * thyroid surgery=t 
+	+ 0.054 * TSH measured=f 
+	- 0.0002 * TSH 
+	+ 0.0334 * T3 
+	+ 0.0019 * FTI 
+	+ 0.4245
+
+LM num: 4
+Class=negative = 
+	0.0004 * age 
+	+ 0.2848 * on thyroxine=t 
+	+ 0.5141 * thyroid surgery=t 
+	+ 0.054 * TSH measured=f 
+	+ 0 * TSH 
+	+ 0.0358 * T3 
+	+ 0.0015 * TT4 
+	+ 0.0013 * FTI 
+	- 0.1998
+
+LM num: 5
+Class=negative = 
+	0.0004 * age 
+	+ 0.2848 * on thyroxine=t 
+	+ 0.7322 * thyroid surgery=t 
+	+ 0.054 * TSH measured=f 
+	+ 0.0017 * TSH 
+	+ 0.0548 * T3 
+	+ 0.0024 * TT4 
+	+ 0.0022 * FTI 
+	- 0.4321
+
+LM num: 6
+Class=negative = 
+	0.0004 * age 
+	+ 0.2848 * on thyroxine=t 
+	+ 0.8599 * thyroid surgery=t 
+	+ 0.054 * TSH measured=f 
+	+ 0.0009 * TSH 
+	+ 0.0617 * T3 
+	+ 0.0024 * TT4 
+	+ 0.0018 * FTI 
+	- 0.4038
+
+LM num: 7
+Class=negative = 
+	0.0004 * age 
+	+ 0.2848 * on thyroxine=t 
+	+ 0.8009 * thyroid surgery=t 
+	+ 0.054 * TSH measured=f 
+	+ 0.0009 * TSH 
+	+ 0.0936 * T3 
+	+ 0.0028 * TT4 
+	+ 0.0018 * FTI 
+	- 0.4962
+
+LM num: 8
+Class=negative = 
+	0.0004 * age 
+	+ 0.2848 * on thyroxine=t 
+	+ 0.8009 * thyroid surgery=t 
+	+ 0.054 * TSH measured=f 
+	+ 0.0009 * TSH 
+	+ 0.0916 * T3 
+	+ 0.0028 * TT4 
+	+ 0.0018 * FTI 
+	- 0.4794
+
+LM num: 9
+Class=negative = 
+	0.0004 * age 
+	+ 0.435 * on thyroxine=t 
+	+ 0.4819 * thyroid surgery=t 
+	+ 0.054 * TSH measured=f 
+	+ 0.0003 * TSH 
+	+ 0.0354 * T3 
+	+ 0.0013 * TT4 
+	+ 0.0013 * FTI 
+	+ 0.1757
+
+LM num: 10
+Class=negative = 
+	0.0002 * age 
+	+ 0.0386 * on thyroxine=t 
+	+ 0.0596 * thyroid surgery=t 
+	+ 0.0644 * TSH measured=f 
+	- 0.0002 * TSH 
+	+ 0.0057 * T3 
+	+ 0.0004 * FTI 
+	+ 0.8651
+
+Number of Rules : 10
+
+Time taken to build model: 0.23 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9699
+Mean absolute error                      0.0203
+Root mean squared error                  0.067 
+Relative absolute error                 14.8381 %
+Root relative squared error             25.5905 %
+Total Number of Instances             1244     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9299
+Mean absolute error                      0.0269
+Root mean squared error                  0.0967
+Relative absolute error                 19.5968 %
+Root relative squared error             36.8974 %
+Total Number of Instances             1244     
+

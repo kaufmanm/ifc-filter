@@ -1,0 +1,150 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'audiology-weka.filters.unsupervised.attribute.NominalToBinary-R70-weka.filters.unsupervised.attribute.NominalToBinary-R70-weka.filters.unsupervised.attribute.Remove-R70-71,73-93-weka.filters.unsupervised.attribute.AddValues-C4-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C5-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C6-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C8-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C59-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C60-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C64-L\'?\'-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute age_gt_60 numeric
+@attribute air numeric
+@attribute airBoneGap numeric
+@attribute ar_c numeric
+@attribute ar_u numeric
+@attribute bone numeric
+@attribute boneAbnormal numeric
+@attribute bser numeric
+@attribute history_buzzing numeric
+@attribute history_dizziness numeric
+@attribute history_fluctuating numeric
+@attribute history_fullness numeric
+@attribute history_heredity numeric
+@attribute history_nausea numeric
+@attribute history_noise numeric
+@attribute history_recruitment numeric
+@attribute history_ringing numeric
+@attribute history_roaring numeric
+@attribute history_vomiting numeric
+@attribute late_wave_poor numeric
+@attribute m_at_2k numeric
+@attribute m_cond_lt_1k numeric
+@attribute m_gt_1k numeric
+@attribute m_m_gt_2k numeric
+@attribute m_m_sn numeric
+@attribute m_m_sn_gt_1k numeric
+@attribute m_m_sn_gt_2k numeric
+@attribute m_m_sn_gt_500 numeric
+@attribute m_p_sn_gt_2k numeric
+@attribute m_s_gt_500 numeric
+@attribute m_s_sn numeric
+@attribute m_s_sn_gt_1k numeric
+@attribute m_s_sn_gt_2k numeric
+@attribute m_s_sn_gt_3k numeric
+@attribute m_s_sn_gt_4k numeric
+@attribute m_sn_2_3k numeric
+@attribute m_sn_gt_1k numeric
+@attribute m_sn_gt_2k numeric
+@attribute m_sn_gt_3k numeric
+@attribute m_sn_gt_4k numeric
+@attribute m_sn_gt_500 numeric
+@attribute m_sn_gt_6k numeric
+@attribute m_sn_lt_1k numeric
+@attribute m_sn_lt_2k numeric
+@attribute m_sn_lt_3k numeric
+@attribute middle_wave_poor numeric
+@attribute mod_gt_4k numeric
+@attribute mod_mixed numeric
+@attribute mod_s_mixed numeric
+@attribute mod_s_sn_gt_500 numeric
+@attribute mod_sn numeric
+@attribute mod_sn_gt_1k numeric
+@attribute mod_sn_gt_2k numeric
+@attribute mod_sn_gt_3k numeric
+@attribute mod_sn_gt_4k numeric
+@attribute mod_sn_gt_500 numeric
+@attribute notch_4k numeric
+@attribute notch_at_4k numeric
+@attribute o_ar_c numeric
+@attribute o_ar_u numeric
+@attribute s_sn_gt_1k numeric
+@attribute s_sn_gt_2k numeric
+@attribute s_sn_gt_4k numeric
+@attribute speech numeric
+@attribute static_normal numeric
+@attribute tymp numeric
+@attribute viith_nerve_signs numeric
+@attribute wave_V_delayed numeric
+@attribute waveform_ItoV_prolonged numeric
+@attribute class=cochlear_age numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+class=cochlear_age =
+
+      0.5983 * age_gt_60 +
+      0.2596 * air +
+      0.2005 * airBoneGap +
+      0.2462 * ar_c +
+     -0.308  * ar_u +
+     -0.7241 * boneAbnormal +
+      0.5967 * history_dizziness +
+      0.4304 * history_fluctuating +
+      0.6472 * history_nausea +
+      0.6456 * history_noise +
+     -0.4942 * history_recruitment +
+     -0.3241 * history_ringing +
+     -0.4443 * history_roaring +
+      0.6494 * m_m_sn_gt_1k +
+      0.6757 * m_m_sn_gt_2k +
+      0.4459 * m_p_sn_gt_2k +
+      0.8334 * m_s_sn +
+      0.6792 * m_s_sn_gt_1k +
+      1.5534 * m_s_sn_gt_2k +
+      0.8106 * m_s_sn_gt_3k +
+      1.1253 * m_s_sn_gt_4k +
+      0.5825 * m_sn_gt_1k +
+      0.9982 * m_sn_gt_2k +
+      0.4787 * m_sn_gt_4k +
+      0.6141 * m_sn_lt_2k +
+      0.6141 * m_sn_lt_3k +
+      1.0401 * mod_s_mixed +
+      0.6885 * mod_s_sn_gt_500 +
+      0.9844 * mod_sn_gt_1k +
+      0.7752 * mod_sn_gt_2k +
+      0.3978 * mod_sn_gt_3k +
+      0.4271 * mod_sn_gt_500 +
+      0.4724 * notch_4k +
+      0.3724 * o_ar_c +
+      0.5163 * s_sn_gt_1k +
+      0.2631 * speech +
+      0.5214 * wave_V_delayed +
+     -8.465 
+
+Time taken to build model: 0.73 seconds
+Time taken to test model on training data: 3.74 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9416
+Mean absolute error                      0.0976
+Root mean squared error                  0.1571
+Relative absolute error                 25.8875 %
+Root relative squared error             36.1782 %
+Total Number of Instances              226     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8605
+Mean absolute error                      0.144 
+Root mean squared error                  0.2283
+Relative absolute error                 37.9837 %
+Root relative squared error             52.2941 %
+Total Number of Instances              226     
+

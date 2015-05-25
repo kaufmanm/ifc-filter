@@ -1,0 +1,60 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'Glass-weka.filters.unsupervised.attribute.NominalToBinary-R10-weka.filters.unsupervised.attribute.Remove-R10,12-16-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute RI numeric
+@attribute Na numeric
+@attribute Mg numeric
+@attribute Al numeric
+@attribute Si numeric
+@attribute K numeric
+@attribute Ca numeric
+@attribute Ba numeric
+@attribute Fe numeric
+@attribute 'Type=build wind non-float' numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+Type=build wind non-float =
+
+      0.6724 * RI +
+      0.7328 * Mg +
+      0.4033 * Al +
+      0.3452 * Si +
+      0.5021 * Ca +
+      0.3185 * Ba +
+      0.6304 * Fe +
+     -1.3454
+
+Time taken to build model: 0.13 seconds
+Time taken to test model on training data: 0.09 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7907
+Mean absolute error                      0.1993
+Root mean squared error                  0.295 
+Relative absolute error                 43.5179 %
+Root relative squared error             61.6411 %
+Total Number of Instances              214     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4591
+Mean absolute error                      0.367 
+Root mean squared error                  0.4253
+Relative absolute error                 79.5947 %
+Root relative squared error             88.2631 %
+Total Number of Instances              214     
+

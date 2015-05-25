@@ -1,0 +1,162 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation wisconsin-breast-cancer-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R11-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute Clump_Thickness numeric
+@attribute Cell_Size_Uniformity numeric
+@attribute Cell_Shape_Uniformity numeric
+@attribute Marginal_Adhesion numeric
+@attribute Single_Epi_Cell_Size numeric
+@attribute Bare_Nuclei numeric
+@attribute Bland_Chromatin numeric
+@attribute Normal_Nucleoli numeric
+@attribute Mitoses numeric
+@attribute Class=benign numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+Cell_Size_Uniformity <= 0.826 : 
+|   Clump_Thickness <= 0.058 : LM1 (81/0%)
+|   Clump_Thickness >  0.058 : LM2 (234/56.049%)
+Cell_Size_Uniformity >  0.826 : 
+|   Clump_Thickness <= 0.777 : 
+|   |   Bland_Chromatin <= 0.949 : 
+|   |   |   Bland_Chromatin <= 0.788 : 
+|   |   |   |   Normal_Nucleoli <= 0.781 : 
+|   |   |   |   |   Clump_Thickness <= 0.409 : LM3 (3/0%)
+|   |   |   |   |   Clump_Thickness >  0.409 : LM4 (8/0%)
+|   |   |   |   Normal_Nucleoli >  0.781 : LM5 (32/0%)
+|   |   |   Bland_Chromatin >  0.788 : LM6 (48/27.771%)
+|   |   Bland_Chromatin >  0.949 : LM7 (41/0%)
+|   Clump_Thickness >  0.777 : LM8 (252/0%)
+
+LM num: 1
+Class=benign = 
+	0.0517 * Clump_Thickness 
+	+ 0.0096 * Cell_Size_Uniformity 
+	+ 0.0546 * Cell_Shape_Uniformity 
+	+ 0.0025 * Marginal_Adhesion 
+	+ 0.032 * Single_Epi_Cell_Size 
+	+ 0.0667 * Bare_Nuclei 
+	+ 0.0442 * Bland_Chromatin 
+	+ 0.004 * Normal_Nucleoli 
+	- 0.0374
+
+LM num: 2
+Class=benign = 
+	0.2164 * Clump_Thickness 
+	+ 0.0096 * Cell_Size_Uniformity 
+	+ 0.2601 * Cell_Shape_Uniformity 
+	+ 0.1031 * Marginal_Adhesion 
+	+ 0.191 * Single_Epi_Cell_Size 
+	+ 0.3682 * Bare_Nuclei 
+	+ 0.265 * Bland_Chromatin 
+	+ 0.004 * Normal_Nucleoli 
+	- 0.2023
+
+LM num: 3
+Class=benign = 
+	0.463 * Clump_Thickness 
+	+ 0.008 * Cell_Size_Uniformity 
+	+ 0.0065 * Cell_Shape_Uniformity 
+	+ 0.048 * Marginal_Adhesion 
+	+ 0.0036 * Single_Epi_Cell_Size 
+	+ 0.0122 * Bare_Nuclei 
+	+ 0.1009 * Bland_Chromatin 
+	+ 0.5279 * Normal_Nucleoli 
+	+ 0.077
+
+LM num: 4
+Class=benign = 
+	0.4004 * Clump_Thickness 
+	+ 0.008 * Cell_Size_Uniformity 
+	+ 0.0065 * Cell_Shape_Uniformity 
+	+ 0.048 * Marginal_Adhesion 
+	+ 0.0036 * Single_Epi_Cell_Size 
+	+ 0.0122 * Bare_Nuclei 
+	+ 0.1009 * Bland_Chromatin 
+	+ 0.5279 * Normal_Nucleoli 
+	+ 0.1576
+
+LM num: 5
+Class=benign = 
+	0.1043 * Clump_Thickness 
+	+ 0.008 * Cell_Size_Uniformity 
+	+ 0.0065 * Cell_Shape_Uniformity 
+	+ 0.048 * Marginal_Adhesion 
+	+ 0.0036 * Single_Epi_Cell_Size 
+	+ 0.0122 * Bare_Nuclei 
+	+ 0.1009 * Bland_Chromatin 
+	+ 0.4118 * Normal_Nucleoli 
+	+ 0.4447
+
+LM num: 6
+Class=benign = 
+	0.0162 * Clump_Thickness 
+	+ 0.008 * Cell_Size_Uniformity 
+	+ 0.0065 * Cell_Shape_Uniformity 
+	+ 0.1902 * Marginal_Adhesion 
+	- 0.1304 * Single_Epi_Cell_Size 
+	+ 0.0122 * Bare_Nuclei 
+	+ 0.0962 * Bland_Chromatin 
+	+ 0.2581 * Normal_Nucleoli 
+	+ 0.6132
+
+LM num: 7
+Class=benign = 
+	0.0162 * Clump_Thickness 
+	+ 0.008 * Cell_Size_Uniformity 
+	+ 0.0065 * Cell_Shape_Uniformity 
+	+ 0.0287 * Marginal_Adhesion 
+	+ 0.0036 * Single_Epi_Cell_Size 
+	+ 0.0122 * Bare_Nuclei 
+	+ 0.0678 * Bland_Chromatin 
+	+ 0.2183 * Normal_Nucleoli 
+	+ 0.6961
+
+LM num: 8
+Class=benign = 
+	0.0127 * Clump_Thickness 
+	+ 0.008 * Cell_Size_Uniformity 
+	+ 0.0065 * Cell_Shape_Uniformity 
+	+ 0.002 * Marginal_Adhesion 
+	+ 0.0036 * Single_Epi_Cell_Size 
+	+ 0.0122 * Bare_Nuclei 
+	+ 0.0107 * Bland_Chromatin 
+	+ 0.0327 * Normal_Nucleoli 
+	+ 0.9241
+
+Number of Rules : 8
+
+Time taken to build model: 0.45 seconds
+Time taken to test model on training data: 0.48 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9439
+Mean absolute error                      0.0635
+Root mean squared error                  0.158 
+Relative absolute error                 14.0484 %
+Root relative squared error             33.2402 %
+Total Number of Instances              699     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9254
+Mean absolute error                      0.0656
+Root mean squared error                  0.1802
+Relative absolute error                 14.5049 %
+Root relative squared error             37.8576 %
+Total Number of Instances              699     
+

@@ -1,0 +1,58 @@
+10
+
+dir
+6042
+https://svn.scms.waikato.ac.nz/svn/weka/trunk/weka/src/main/java/weka
+https://svn.scms.waikato.ac.nz/svn/weka
+
+
+
+2009-10-23T23:12:17.734782Z
+6042
+remco
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+e0a1b77d-ad91-4216-81b1-defd5f83fa92
+
+associations
+dir
+
+experiment
+dir
+
+datagenerators
+dir
+
+gui
+dir
+
+classifiers
+dir
+
+core
+dir
+
+filters
+dir
+
+attributeSelection
+dir
+
+estimators
+dir
+
+clusterers
+dir
+

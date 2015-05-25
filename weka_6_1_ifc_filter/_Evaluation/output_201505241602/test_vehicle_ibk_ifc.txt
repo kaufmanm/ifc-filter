@@ -1,0 +1,59 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.lazy.IBk 
+
+FilteredClassifier using weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'vehicle-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R19,21-22-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute COMPACTNESS numeric
+@attribute CIRCULARITY numeric
+@attribute 'DISTANCE CIRCULARITY' numeric
+@attribute 'RADIUS RATIO' numeric
+@attribute 'PR.AXIS ASPECT RATIO' numeric
+@attribute 'MAX.LENGTH ASPECT RATIO' numeric
+@attribute 'SCATTER RATIO' numeric
+@attribute ELONGATEDNESS numeric
+@attribute 'PR.AXIS RECTANGULARITY' numeric
+@attribute 'MAX.LENGTH RECTANGULARITY' numeric
+@attribute 'SCALED VARIANCE_MAJOR' numeric
+@attribute 'SCALED VARIANCE_MINOR' numeric
+@attribute 'SCALED RADIUS OF GYRATION' numeric
+@attribute 'SKEWNESS ABOUT_MAJOR' numeric
+@attribute 'SKEWNESS ABOUT_MINOR' numeric
+@attribute 'KURTOSIS ABOUT_MAJOR' numeric
+@attribute 'KURTOSIS ABOUT_MINOR' numeric
+@attribute 'HOLLOWS RATIO' numeric
+@attribute Class=saab numeric
+
+@data
+
+
+Classifier Model
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.27 seconds
+Time taken to test model on training data: 0.86 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              846     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.2911
+Mean absolute error                      0.2648
+Root mean squared error                  0.5146
+Relative absolute error                 69.3178 %
+Root relative squared error            117.6502 %
+Total Number of Instances              846     
+

@@ -1,0 +1,37 @@
+
+SMOreg
+
+weights (not support vectors):
+ -       0.0282 * (normalized) sepallength
+ +       0.648  * (normalized) sepalwidth
+ -       1.0068 * (normalized) petallength
+ -       0.2598 * (normalized) petalwidth
+ +       0.6714
+
+
+
+Number of kernel evaluations: 11325 (91.93% cached)
+
+Time taken to build model: 0.09 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9512
+Mean absolute error                      0.1185
+Root mean squared error                  0.147 
+Relative absolute error                 26.662  %
+Root relative squared error             31.1746 %
+Total Number of Instances              150     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.946 
+Mean absolute error                      0.1258
+Root mean squared error                  0.1544
+Relative absolute error                 28.0454 %
+Root relative squared error             32.434  %
+Total Number of Instances              150     
+

@@ -1,0 +1,67 @@
+
+SMOreg
+
+weights (not support vectors):
+ -       0.3588 * (normalized) a01
+ +       0      * (normalized) a02
+ -       0.5951 * (normalized) a03
+ -       0.1759 * (normalized) a04
+ -       0.6079 * (normalized) a05
+ -       0.0081 * (normalized) a06
+ -       0.0423 * (normalized) a07
+ -       0.383  * (normalized) a08
+ -       0.1665 * (normalized) a09
+ -       0.163  * (normalized) a10
+ +       0.2115 * (normalized) a11
+ +       0.057  * (normalized) a12
+ +       0.2005 * (normalized) a13
+ +       0.0324 * (normalized) a14
+ -       0.1027 * (normalized) a15
+ +       0.1162 * (normalized) a16
+ -       0.275  * (normalized) a17
+ -       0.0166 * (normalized) a18
+ +       0.0991 * (normalized) a19
+ -       0.141  * (normalized) a20
+ -       0.1258 * (normalized) a21
+ +       0.4242 * (normalized) a22
+ -       0.1842 * (normalized) a23
+ -       0.0841 * (normalized) a24
+ +       0.0936 * (normalized) a25
+ -       0.2799 * (normalized) a26
+ +       0.5104 * (normalized) a27
+ +       0.1225 * (normalized) a28
+ -       0.1716 * (normalized) a29
+ -       0.1377 * (normalized) a30
+ -       0.2367 * (normalized) a31
+ -       0.0361 * (normalized) a32
+ +       0.0371 * (normalized) a33
+ +       0.183  * (normalized) a34
+ +       1.9236
+
+
+
+Number of kernel evaluations: 61776 (98.398% cached)
+
+Time taken to build model: 0.37 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7709
+Mean absolute error                      0.1971
+Root mean squared error                  0.3119
+Relative absolute error                 42.8238 %
+Root relative squared error             65.0293 %
+Total Number of Instances              351     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6727
+Mean absolute error                      0.2489
+Root mean squared error                  0.3776
+Relative absolute error                 53.7326 %
+Root relative squared error             78.1697 %
+Total Number of Instances              351     
+

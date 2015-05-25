@@ -1,0 +1,197 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'audiology-weka.filters.unsupervised.attribute.NominalToBinary-R70-weka.filters.unsupervised.attribute.NominalToBinary-R70-weka.filters.unsupervised.attribute.Remove-R70-71,73-93-weka.filters.unsupervised.attribute.AddValues-C4-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C5-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C6-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C8-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C59-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C60-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C64-L\'?\'-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute age_gt_60 numeric
+@attribute air numeric
+@attribute airBoneGap numeric
+@attribute ar_c numeric
+@attribute ar_u numeric
+@attribute bone numeric
+@attribute boneAbnormal numeric
+@attribute bser numeric
+@attribute history_buzzing numeric
+@attribute history_dizziness numeric
+@attribute history_fluctuating numeric
+@attribute history_fullness numeric
+@attribute history_heredity numeric
+@attribute history_nausea numeric
+@attribute history_noise numeric
+@attribute history_recruitment numeric
+@attribute history_ringing numeric
+@attribute history_roaring numeric
+@attribute history_vomiting numeric
+@attribute late_wave_poor numeric
+@attribute m_at_2k numeric
+@attribute m_cond_lt_1k numeric
+@attribute m_gt_1k numeric
+@attribute m_m_gt_2k numeric
+@attribute m_m_sn numeric
+@attribute m_m_sn_gt_1k numeric
+@attribute m_m_sn_gt_2k numeric
+@attribute m_m_sn_gt_500 numeric
+@attribute m_p_sn_gt_2k numeric
+@attribute m_s_gt_500 numeric
+@attribute m_s_sn numeric
+@attribute m_s_sn_gt_1k numeric
+@attribute m_s_sn_gt_2k numeric
+@attribute m_s_sn_gt_3k numeric
+@attribute m_s_sn_gt_4k numeric
+@attribute m_sn_2_3k numeric
+@attribute m_sn_gt_1k numeric
+@attribute m_sn_gt_2k numeric
+@attribute m_sn_gt_3k numeric
+@attribute m_sn_gt_4k numeric
+@attribute m_sn_gt_500 numeric
+@attribute m_sn_gt_6k numeric
+@attribute m_sn_lt_1k numeric
+@attribute m_sn_lt_2k numeric
+@attribute m_sn_lt_3k numeric
+@attribute middle_wave_poor numeric
+@attribute mod_gt_4k numeric
+@attribute mod_mixed numeric
+@attribute mod_s_mixed numeric
+@attribute mod_s_sn_gt_500 numeric
+@attribute mod_sn numeric
+@attribute mod_sn_gt_1k numeric
+@attribute mod_sn_gt_2k numeric
+@attribute mod_sn_gt_3k numeric
+@attribute mod_sn_gt_4k numeric
+@attribute mod_sn_gt_500 numeric
+@attribute notch_4k numeric
+@attribute notch_at_4k numeric
+@attribute o_ar_c numeric
+@attribute o_ar_u numeric
+@attribute s_sn_gt_1k numeric
+@attribute s_sn_gt_2k numeric
+@attribute s_sn_gt_4k numeric
+@attribute speech numeric
+@attribute static_normal numeric
+@attribute tymp numeric
+@attribute viith_nerve_signs numeric
+@attribute wave_V_delayed numeric
+@attribute waveform_ItoV_prolonged numeric
+@attribute class=cochlear_age numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+age_gt_60 <= 0.414 : LM1 (134/0%)
+age_gt_60 >  0.414 : 
+|   history_noise <= 0.362 : LM2 (27/63.989%)
+|   history_noise >  0.362 : 
+|   |   bone <= 0.597 : 
+|   |   |   o_ar_c <= 0.418 : LM3 (11/60.126%)
+|   |   |   o_ar_c >  0.418 : 
+|   |   |   |   speech <= 0.366 : LM4 (11/0%)
+|   |   |   |   speech >  0.366 : LM5 (25/0%)
+|   |   bone >  0.597 : LM6 (18/0%)
+
+LM num: 1
+class=cochlear_age = 
+	0.0622 * age_gt_60 
+	+ 0.0182 * bone 
+	+ 0.0605 * history_dizziness 
+	+ 0.0644 * history_noise 
+	+ 0.0561 * notch_4k 
+	+ 0.0402 * o_ar_c 
+	+ 0.0297 * speech 
+	- 0.1228
+
+LM num: 2
+class=cochlear_age = 
+	0.0866 * age_gt_60 
+	+ 0.1223 * bone 
+	+ 0.6356 * history_dizziness 
+	+ 0.5199 * history_noise 
+	+ 0.6315 * notch_4k 
+	+ 0.3424 * o_ar_c 
+	+ 0.3542 * speech 
+	+ 0.2937 * tymp 
+	- 1.1146
+
+LM num: 3
+class=cochlear_age = 
+	0.0866 * age_gt_60 
+	+ 0.2349 * air 
+	+ 0.1225 * bone 
+	+ 1.227 * history_dizziness 
+	+ 0.3156 * history_noise 
+	+ 0.173 * notch_4k 
+	+ 0.2902 * o_ar_c 
+	+ 0.0778 * speech 
+	+ 1.045 * tymp 
+	- 1.0934
+
+LM num: 4
+class=cochlear_age = 
+	0.0866 * age_gt_60 
+	+ 0.1513 * air 
+	+ 0.1225 * bone 
+	+ 1.97 * history_dizziness 
+	+ 0.3156 * history_noise 
+	+ 0.173 * notch_4k 
+	+ 0.2296 * o_ar_c 
+	+ 0.1715 * speech 
+	+ 0.5606 * tymp 
+	- 1.1179
+
+LM num: 5
+class=cochlear_age = 
+	0.0866 * age_gt_60 
+	+ 0.1513 * air 
+	+ 0.1225 * bone 
+	+ 1.2344 * history_dizziness 
+	+ 0.3156 * history_noise 
+	+ 0.173 * notch_4k 
+	+ 0.2296 * o_ar_c 
+	+ 0.1387 * speech 
+	+ 0.5606 * tymp 
+	- 0.7176
+
+LM num: 6
+class=cochlear_age = 
+	0.0866 * age_gt_60 
+	+ 0.121 * air 
+	+ 0.1631 * bone 
+	+ 0.9172 * history_dizziness 
+	+ 0.3156 * history_noise 
+	+ 0.173 * notch_4k 
+	+ 0.2107 * o_ar_c 
+	+ 0.0778 * speech 
+	+ 0.5562 * tymp 
+	- 0.511
+
+Number of Rules : 6
+
+Time taken to build model: 0.28 seconds
+Time taken to test model on training data: 3.31 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9589
+Mean absolute error                      0.0503
+Root mean squared error                  0.125 
+Relative absolute error                 13.3399 %
+Root relative squared error             28.7766 %
+Total Number of Instances              226     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8934
+Mean absolute error                      0.0813
+Root mean squared error                  0.1952
+Relative absolute error                 21.4385 %
+Root relative squared error             44.7109 %
+Total Number of Instances              226     
+

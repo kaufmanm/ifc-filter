@@ -1,0 +1,137 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation sick-weka.filters.unsupervised.instance.Resample-S1-Z22.0-no-replacement-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R31-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute age numeric
+@attribute sex numeric
+@attribute 'on thyroxine' numeric
+@attribute 'query on thyroxine' numeric
+@attribute 'on antithyroid medication' numeric
+@attribute sick numeric
+@attribute pregnant numeric
+@attribute 'thyroid surgery' numeric
+@attribute 'I131 treatment' numeric
+@attribute 'query hypothyroid' numeric
+@attribute 'query hyperthyroid' numeric
+@attribute lithium numeric
+@attribute goitre numeric
+@attribute tumor numeric
+@attribute hypopituitary numeric
+@attribute psych numeric
+@attribute 'TSH measured' numeric
+@attribute TSH numeric
+@attribute 'T3 measured' numeric
+@attribute T3 numeric
+@attribute 'TT4 measured' numeric
+@attribute TT4 numeric
+@attribute 'T4U measured' numeric
+@attribute T4U numeric
+@attribute 'FTI measured' numeric
+@attribute FTI numeric
+@attribute 'TBG measured' numeric
+@attribute TBG numeric
+@attribute 'referral source' numeric
+@attribute Class=negative numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -126.8575;  df=29;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      1.7524*age
++     -7.2807*sex
++      0.877 *on thyroxine
++    -20.9753*query on thyroxine
++     24.0015*on antithyroid medication
++      2.3874*sick
++     20.4181*pregnant
++     34.0884*thyroid surgery
++     28.9353*I131 treatment
++     -2.8828*query hypothyroid
++     29.1682*query hyperthyroid
++     26.4022*lithium
++     22.6792*goitre
++     -1.7171*tumor
++      3.0635*hypopituitary
++     -6.4588*psych
++     27.6634*TSH measured
++      0.9592*TSH
++     -4.4229*T3 measured
++      7.5194*T3
++     24.5151*TT4 measured
++     -0.9157*TT4
++      0.6867*T4U measured
++      2.0971*T4U
++      0.6867*FTI measured
++     -4.0989*FTI
++      3.0635*TBG measured
++      0     *TBG
++      1.5335*referral source
++  -101.972 ))
+
+Odds Ratios...
+Variable         O.R.
+       1       5.7683
+       2       0.0007
+       3       2.4038
+       4       0     
+       5 2.652812031303189E10
+       6      10.8851
+       7 736984614.2965
+       8 6.373641316197518E14
+       9 3.685072714512849E12
+      10       0.056 
+      11 4.651469342148923E12
+      12 2.92638335944376E11
+      13 7070832870.1651
+      14       0.1796
+      15      21.4023
+      16       0.0016
+      17 1.0329105045347981E12
+      18       2.6095
+      19       0.012 
+      20    1843.4903
+      21 4.433622469024116E10
+      22       0.4002
+      23       1.9871
+      24       8.1422
+      25       1.9871
+      26       0.0166
+      27      21.4023
+      28       1     
+      29       4.6343
+
+
+Time taken to build model: 0.37 seconds
+Time taken to test model on training data: 2.56 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8436
+Mean absolute error                      0.0376
+Root mean squared error                  0.1264
+Relative absolute error                 34.4314 %
+Root relative squared error             54.1095 %
+Total Number of Instances              829     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6724
+Mean absolute error                      0.0522
+Root mean squared error                  0.1758
+Relative absolute error                 47.7803 %
+Root relative squared error             75.1796 %
+Total Number of Instances              829     
+

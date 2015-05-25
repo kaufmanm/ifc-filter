@@ -1,0 +1,407 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation ionosphere-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R36-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute a01 numeric
+@attribute a02 numeric
+@attribute a03 numeric
+@attribute a04 numeric
+@attribute a05 numeric
+@attribute a06 numeric
+@attribute a07 numeric
+@attribute a08 numeric
+@attribute a09 numeric
+@attribute a10 numeric
+@attribute a11 numeric
+@attribute a12 numeric
+@attribute a13 numeric
+@attribute a14 numeric
+@attribute a15 numeric
+@attribute a16 numeric
+@attribute a17 numeric
+@attribute a18 numeric
+@attribute a19 numeric
+@attribute a20 numeric
+@attribute a21 numeric
+@attribute a22 numeric
+@attribute a23 numeric
+@attribute a24 numeric
+@attribute a25 numeric
+@attribute a26 numeric
+@attribute a27 numeric
+@attribute a28 numeric
+@attribute a29 numeric
+@attribute a30 numeric
+@attribute a31 numeric
+@attribute a32 numeric
+@attribute a33 numeric
+@attribute a34 numeric
+@attribute class=b numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+a05 <= 0.585 : 
+|   a21 <= 0.214 : LM1 (102/0%)
+|   a21 >  0.214 : 
+|   |   a26 <= 0.243 : LM2 (43/0%)
+|   |   a26 >  0.243 : 
+|   |   |   a27 <= 0.861 : 
+|   |   |   |   a03 <= 0.248 : LM3 (27/0%)
+|   |   |   |   a03 >  0.248 : 
+|   |   |   |   |   a14 <= 0.22 : LM4 (13/0%)
+|   |   |   |   |   a14 >  0.22 : 
+|   |   |   |   |   |   a14 <= 0.368 : 
+|   |   |   |   |   |   |   a13 <= 0.147 : 
+|   |   |   |   |   |   |   |   a07 <= 0.308 : LM5 (3/0%)
+|   |   |   |   |   |   |   |   a07 >  0.308 : LM6 (2/0%)
+|   |   |   |   |   |   |   a13 >  0.147 : LM7 (15/0%)
+|   |   |   |   |   |   a14 >  0.368 : 
+|   |   |   |   |   |   |   a32 <= 0.268 : LM8 (8/68.943%)
+|   |   |   |   |   |   |   a32 >  0.268 : 
+|   |   |   |   |   |   |   |   a22 <= 0.362 : LM9 (9/0%)
+|   |   |   |   |   |   |   |   a22 >  0.362 : 
+|   |   |   |   |   |   |   |   |   a27 <= 0.327 : LM10 (5/83.386%)
+|   |   |   |   |   |   |   |   |   a27 >  0.327 : LM11 (5/0%)
+|   |   |   a27 >  0.861 : 
+|   |   |   |   a20 <= 0.674 : 
+|   |   |   |   |   a30 <= 0.869 : 
+|   |   |   |   |   |   a09 <= 0.551 : 
+|   |   |   |   |   |   |   a09 <= 0.101 : LM12 (2/0%)
+|   |   |   |   |   |   |   a09 >  0.101 : LM13 (6/0%)
+|   |   |   |   |   |   a09 >  0.551 : LM14 (5/0%)
+|   |   |   |   |   a30 >  0.869 : LM15 (10/0%)
+|   |   |   |   a20 >  0.674 : LM16 (24/0%)
+a05 >  0.585 : 
+|   a04 <= 0.346 : 
+|   |   a05 <= 0.69 : 
+|   |   |   a03 <= 0.851 : LM17 (2/0%)
+|   |   |   a03 >  0.851 : LM18 (2/0%)
+|   |   a05 >  0.69 : LM19 (11/0%)
+|   a04 >  0.346 : LM20 (57/0%)
+
+LM num: 1
+class=b = 
+	0.0526 * a03 
+	+ 0.0483 * a04 
+	+ 0.0267 * a05 
+	+ 0.0064 * a07 
+	+ 0.0659 * a14 
+	+ 0.0297 * a20 
+	+ 0.0332 * a21 
+	- 0.0068 * a22 
+	+ 0.0153 * a26 
+	+ 0.0365 * a27 
+	- 0.0872
+
+LM num: 2
+class=b = 
+	0.1391 * a03 
+	+ 0.0945 * a04 
+	+ 0.0267 * a05 
+	+ 0.0064 * a07 
+	+ 0.1708 * a14 
+	+ 0.0848 * a20 
+	+ 0.0262 * a21 
+	- 0.0068 * a22 
+	+ 0.0093 * a26 
+	+ 0.0753 * a27 
+	- 0.172
+
+LM num: 3
+class=b = 
+	0.3002 * a03 
+	+ 0.0965 * a04 
+	+ 0.0267 * a05 
+	+ 0.0064 * a07 
+	- 0.0717 * a13 
+	+ 0.3755 * a14 
+	+ 0.0757 * a20 
+	+ 0.0262 * a21 
+	- 0.0392 * a22 
+	+ 0.0093 * a26 
+	+ 0.0781 * a27 
+	- 0.2196
+
+LM num: 4
+class=b = 
+	0.2272 * a03 
+	+ 0.0965 * a04 
+	+ 0.0267 * a05 
+	+ 0.1293 * a07 
+	- 0.1342 * a13 
+	+ 0.5945 * a14 
+	+ 0.0757 * a20 
+	+ 0.0262 * a21 
+	- 0.0392 * a22 
+	+ 0.0093 * a26 
+	+ 0.0781 * a27 
+	- 0.2453
+
+LM num: 5
+class=b = 
+	0.2272 * a03 
+	+ 0.0965 * a04 
+	+ 0.0267 * a05 
+	+ 0.2549 * a07 
+	- 0.2072 * a13 
+	+ 0.5766 * a14 
+	+ 0.0757 * a20 
+	+ 0.0262 * a21 
+	- 0.0392 * a22 
+	+ 0.0093 * a26 
+	+ 0.0781 * a27 
+	- 0.202
+
+LM num: 6
+class=b = 
+	0.2272 * a03 
+	+ 0.0965 * a04 
+	+ 0.0267 * a05 
+	+ 0.2617 * a07 
+	- 0.2072 * a13 
+	+ 0.5766 * a14 
+	+ 0.0757 * a20 
+	+ 0.0262 * a21 
+	- 0.0392 * a22 
+	+ 0.0093 * a26 
+	+ 0.0781 * a27 
+	- 0.196
+
+LM num: 7
+class=b = 
+	0.2272 * a03 
+	+ 0.0965 * a04 
+	+ 0.0267 * a05 
+	+ 0.1133 * a07 
+	- 0.1657 * a13 
+	+ 0.5766 * a14 
+	+ 0.0757 * a20 
+	+ 0.0262 * a21 
+	- 0.0392 * a22 
+	+ 0.0093 * a26 
+	+ 0.0781 * a27 
+	- 0.201
+
+LM num: 8
+class=b = 
+	0.2272 * a03 
+	+ 0.0965 * a04 
+	+ 0.0267 * a05 
+	+ 0.0619 * a07 
+	- 0.0826 * a13 
+	+ 0.5509 * a14 
+	+ 0.0757 * a20 
+	+ 0.0262 * a21 
+	- 0.0392 * a22 
+	+ 0.0093 * a26 
+	+ 0.0781 * a27 
+	- 0.1249
+
+LM num: 9
+class=b = 
+	0.2272 * a03 
+	+ 0.0965 * a04 
+	+ 0.0267 * a05 
+	+ 0.0619 * a07 
+	- 0.0826 * a13 
+	+ 0.5509 * a14 
+	+ 0.0757 * a20 
+	+ 0.0262 * a21 
+	- 0.1592 * a22 
+	+ 0.0093 * a26 
+	- 0.0163 * a27 
+	+ 0.0424
+
+LM num: 10
+class=b = 
+	0.2272 * a03 
+	+ 0.0965 * a04 
+	+ 0.0267 * a05 
+	+ 0.0619 * a07 
+	- 0.0826 * a13 
+	+ 0.5509 * a14 
+	+ 0.0757 * a20 
+	+ 0.0262 * a21 
+	- 0.1544 * a22 
+	+ 0.0093 * a26 
+	- 0.0714 * a27 
+	+ 0.0312
+
+LM num: 11
+class=b = 
+	0.2272 * a03 
+	+ 0.0965 * a04 
+	+ 0.0267 * a05 
+	+ 0.0619 * a07 
+	- 0.0826 * a13 
+	+ 0.5509 * a14 
+	+ 0.0757 * a20 
+	+ 0.0262 * a21 
+	- 0.1544 * a22 
+	+ 0.0093 * a26 
+	- 0.0714 * a27 
+	+ 0.0195
+
+LM num: 12
+class=b = 
+	0.1713 * a03 
+	+ 0.1211 * a04 
+	+ 0.0267 * a05 
+	+ 0.0064 * a07 
+	+ 0.0751 * a09 
+	+ 0.2026 * a14 
+	+ 0.2288 * a20 
+	+ 0.0262 * a21 
+	- 0.0601 * a22 
+	+ 0.0093 * a26 
+	+ 0.0999 * a27 
+	+ 0.2602 * a30 
+	- 0.0372
+
+LM num: 13
+class=b = 
+	0.1713 * a03 
+	+ 0.1211 * a04 
+	+ 0.0267 * a05 
+	+ 0.0064 * a07 
+	+ 0.0608 * a09 
+	+ 0.2026 * a14 
+	+ 0.2288 * a20 
+	+ 0.0262 * a21 
+	- 0.0601 * a22 
+	+ 0.0093 * a26 
+	+ 0.0999 * a27 
+	+ 0.2602 * a30 
+	- 0.024
+
+LM num: 14
+class=b = 
+	0.1713 * a03 
+	+ 0.1211 * a04 
+	+ 0.0267 * a05 
+	+ 0.0064 * a07 
+	+ 0.2026 * a14 
+	+ 0.2288 * a20 
+	+ 0.0262 * a21 
+	- 0.0601 * a22 
+	+ 0.0093 * a26 
+	+ 0.0999 * a27 
+	+ 0.2602 * a30 
+	- 0.0479
+
+LM num: 15
+class=b = 
+	0.1713 * a03 
+	+ 0.1211 * a04 
+	+ 0.0267 * a05 
+	+ 0.0064 * a07 
+	+ 0.2026 * a14 
+	+ 0.2288 * a20 
+	+ 0.0262 * a21 
+	- 0.0601 * a22 
+	+ 0.0093 * a26 
+	+ 0.0999 * a27 
+	+ 0.2796 * a30 
+	+ 0.0432
+
+LM num: 16
+class=b = 
+	0.1713 * a03 
+	+ 0.1211 * a04 
+	+ 0.0267 * a05 
+	+ 0.0064 * a07 
+	+ 0.2026 * a14 
+	+ 0.2253 * a20 
+	+ 0.0262 * a21 
+	- 0.0601 * a22 
+	+ 0.0093 * a26 
+	+ 0.0999 * a27 
+	+ 0.096 * a30 
+	+ 0.221
+
+LM num: 17
+class=b = 
+	0.1606 * a03 
+	+ 0.1254 * a04 
+	+ 0.0903 * a05 
+	+ 0.0216 * a07 
+	+ 0.0575 * a14 
+	+ 0.0248 * a20 
+	+ 0.0511 * a21 
+	- 0.0231 * a22 
+	+ 0.0188 * a27 
+	+ 0.4991
+
+LM num: 18
+class=b = 
+	0.1606 * a03 
+	+ 0.1254 * a04 
+	+ 0.0903 * a05 
+	+ 0.0216 * a07 
+	+ 0.0575 * a14 
+	+ 0.0248 * a20 
+	+ 0.0511 * a21 
+	- 0.0231 * a22 
+	+ 0.0188 * a27 
+	+ 0.5093
+
+LM num: 19
+class=b = 
+	0.0475 * a03 
+	+ 0.1254 * a04 
+	+ 0.0903 * a05 
+	+ 0.0216 * a07 
+	+ 0.0575 * a14 
+	+ 0.0248 * a20 
+	+ 0.0511 * a21 
+	- 0.0231 * a22 
+	+ 0.0188 * a27 
+	+ 0.6448
+
+LM num: 20
+class=b = 
+	0.0475 * a03 
+	+ 0.0819 * a04 
+	+ 0.0903 * a05 
+	+ 0.0216 * a07 
+	+ 0.0575 * a14 
+	+ 0.0248 * a20 
+	+ 0.0511 * a21 
+	- 0.0231 * a22 
+	+ 0.0188 * a27 
+	+ 0.7111
+
+Number of Rules : 20
+
+Time taken to build model: 0.36 seconds
+Time taken to test model on training data: 0.87 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9248
+Mean absolute error                      0.0922
+Root mean squared error                  0.1846
+Relative absolute error                 20.0337 %
+Root relative squared error             38.482  %
+Total Number of Instances              351     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7342
+Mean absolute error                      0.3299
+Root mean squared error                  0.383 
+Relative absolute error                 71.2164 %
+Root relative squared error             79.2879 %
+Total Number of Instances              351     
+

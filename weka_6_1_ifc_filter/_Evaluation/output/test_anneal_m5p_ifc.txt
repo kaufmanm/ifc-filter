@@ -1,0 +1,163 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'anneal-weka.filters.unsupervised.attribute.NominalToBinary-A-R39-weka.filters.unsupervised.attribute.Remove-R39,41-44-weka.filters.unsupervised.instance.Resample-S1-Z77.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute family numeric
+@attribute product-type numeric
+@attribute steel numeric
+@attribute carbon numeric
+@attribute hardness numeric
+@attribute temper_rolling numeric
+@attribute condition numeric
+@attribute formability numeric
+@attribute strength numeric
+@attribute non-ageing numeric
+@attribute surface-finish numeric
+@attribute surface-quality numeric
+@attribute enamelability numeric
+@attribute bc numeric
+@attribute bf numeric
+@attribute bt numeric
+@attribute bw/me numeric
+@attribute bl numeric
+@attribute m numeric
+@attribute chrom numeric
+@attribute phos numeric
+@attribute cbond numeric
+@attribute marvi numeric
+@attribute exptl numeric
+@attribute ferro numeric
+@attribute corr numeric
+@attribute blue/bright/varn/clean numeric
+@attribute lustre numeric
+@attribute jurofm numeric
+@attribute s numeric
+@attribute p numeric
+@attribute shape numeric
+@attribute thick numeric
+@attribute width numeric
+@attribute len numeric
+@attribute oil numeric
+@attribute bore numeric
+@attribute packing numeric
+@attribute class=2 numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+steel <= 0.228 : LM1 (398/0%)
+steel >  0.228 : 
+|   thick <= 0.37 : LM2 (142/0%)
+|   thick >  0.37 : 
+|   |   surface-quality <= 0.167 : LM3 (40/0%)
+|   |   surface-quality >  0.167 : 
+|   |   |   condition <= 0.477 : 
+|   |   |   |   strength <= 0.796 : LM4 (29/0%)
+|   |   |   |   strength >  0.796 : 
+|   |   |   |   |   steel <= 0.836 : LM5 (11/0%)
+|   |   |   |   |   steel >  0.836 : LM6 (11/0%)
+|   |   |   condition >  0.477 : LM7 (60/36.655%)
+
+LM num: 1
+class=2 = 
+	0.0094 * steel 
+	+ 0.0277 * condition 
+	+ 0.0194 * strength 
+	+ 0.0161 * surface-quality 
+	+ 0.0082 * shape 
+	+ 0.0058 * thick 
+	- 0.0317
+
+LM num: 2
+class=2 = 
+	0.0455 * steel 
+	+ 0.0977 * condition 
+	+ 0.0757 * strength 
+	+ 0.0859 * surface-quality 
+	+ 0.0415 * shape 
+	+ 0.0317 * thick 
+	- 0.1418
+
+LM num: 3
+class=2 = 
+	0.0437 * steel 
+	+ 0.503 * condition 
+	+ 0.2905 * strength 
+	+ 0.3162 * surface-quality 
+	+ 0.132 * shape 
+	+ 0.0304 * thick 
+	- 0.5001
+
+LM num: 4
+class=2 = 
+	-0.1638 * steel 
+	+ 0.6026 * condition 
+	+ 0.668 * strength 
+	+ 0.1845 * surface-quality 
+	+ 0.2244 * shape 
+	+ 0.0304 * thick 
+	- 0.516
+
+LM num: 5
+class=2 = 
+	-0.7025 * steel 
+	+ 0.6026 * condition 
+	+ 0.7477 * strength 
+	+ 0.1845 * surface-quality 
+	+ 0.2244 * shape 
+	+ 0.0304 * thick 
+	- 0.0021
+
+LM num: 6
+class=2 = 
+	-0.1899 * steel 
+	+ 0.6026 * condition 
+	+ 0.7477 * strength 
+	+ 0.1845 * surface-quality 
+	+ 0.2244 * shape 
+	+ 0.0304 * thick 
+	- 0.2357
+
+LM num: 7
+class=2 = 
+	-0.5008 * steel 
+	+ 0.5631 * condition 
+	+ 0.2372 * strength 
+	+ 0.1845 * surface-quality 
+	+ 0.3627 * shape 
+	+ 0.0304 * thick 
+	+ 0.503
+
+Number of Rules : 7
+
+Time taken to build model: 0.52 seconds
+Time taken to test model on training data: 2.85 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9674
+Mean absolute error                      0.0269
+Root mean squared error                  0.0815
+Relative absolute error                 13.7251 %
+Root relative squared error             26.0568 %
+Total Number of Instances              691     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9626
+Mean absolute error                      0.0272
+Root mean squared error                  0.0861
+Relative absolute error                 13.8573 %
+Root relative squared error             27.4823 %
+Total Number of Instances              691     
+

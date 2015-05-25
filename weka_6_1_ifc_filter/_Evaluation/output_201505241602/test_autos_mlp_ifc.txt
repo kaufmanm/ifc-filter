@@ -1,0 +1,447 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.MultilayerPerceptron 
+
+FilteredClassifier using weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'autos-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R26-weka.filters.unsupervised.attribute.Remove-R26-28,30-32-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute normalized-losses numeric
+@attribute make numeric
+@attribute fuel-type numeric
+@attribute aspiration numeric
+@attribute num-of-doors numeric
+@attribute body-style numeric
+@attribute drive-wheels numeric
+@attribute engine-location numeric
+@attribute wheel-base numeric
+@attribute length numeric
+@attribute width numeric
+@attribute height numeric
+@attribute curb-weight numeric
+@attribute engine-type numeric
+@attribute num-of-cylinders numeric
+@attribute engine-size numeric
+@attribute fuel-system numeric
+@attribute bore numeric
+@attribute stroke numeric
+@attribute compression-ratio numeric
+@attribute horsepower numeric
+@attribute peak-rpm numeric
+@attribute city-mpg numeric
+@attribute highway-mpg numeric
+@attribute price numeric
+@attribute symboling=0 numeric
+
+@data
+
+
+Classifier Model
+Linear Node 0
+    Inputs    Weights
+    Threshold    1.3751764690567918
+    Node 1    -0.43725948190431696
+    Node 2    -0.15257654428083964
+    Node 3    -0.43788667173092743
+    Node 4    -2.531941339980052
+    Node 5    -2.344785833287008
+    Node 6    1.080863339066133
+    Node 7    -2.0235841212846615
+    Node 8    1.0838758679461107
+    Node 9    -0.09244699132317909
+    Node 10    2.965742388150217
+    Node 11    -0.7607135987767962
+    Node 12    0.4062242215053942
+    Node 13    0.04450130765362856
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.7818624579914762
+    Attrib normalized-losses    -0.007200681192566784
+    Attrib make    -0.09560184043771747
+    Attrib fuel-type    0.5243265626006977
+    Attrib aspiration    -0.432644717591784
+    Attrib num-of-doors    -0.36970840016628703
+    Attrib body-style    -0.3470457369859913
+    Attrib drive-wheels    0.7591874572077629
+    Attrib engine-location    -0.6693394630339919
+    Attrib wheel-base    -0.077316928425964
+    Attrib length    0.06932616146246946
+    Attrib width    -0.0712610902803022
+    Attrib height    0.10027765744688544
+    Attrib curb-weight    -0.24875109080509436
+    Attrib engine-type    -0.08832632518565198
+    Attrib num-of-cylinders    -0.06679172278086114
+    Attrib engine-size    0.3857736641183224
+    Attrib fuel-system    -0.09039350803652951
+    Attrib bore    -0.20476918966166405
+    Attrib stroke    0.10343097811249123
+    Attrib compression-ratio    -0.09605151299895782
+    Attrib horsepower    -0.48315324482497085
+    Attrib peak-rpm    0.02368210727244716
+    Attrib city-mpg    0.12604174962639283
+    Attrib highway-mpg    -0.03464567826892895
+    Attrib price    -0.04784000289787284
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.9257880476286099
+    Attrib normalized-losses    0.1101518360895817
+    Attrib make    0.01133200846431903
+    Attrib fuel-type    0.47327704961112527
+    Attrib aspiration    -0.5055825373516959
+    Attrib num-of-doors    -0.1465860089435347
+    Attrib body-style    -0.2822421409896765
+    Attrib drive-wheels    0.8790311996935594
+    Attrib engine-location    -0.8502750151634522
+    Attrib wheel-base    -0.16347234335504807
+    Attrib length    -0.09602953906411951
+    Attrib width    -0.09454807263692151
+    Attrib height    0.1893628688865221
+    Attrib curb-weight    -0.38621904805767326
+    Attrib engine-type    -0.046116564490131455
+    Attrib num-of-cylinders    -0.17102886319223648
+    Attrib engine-size    0.36448647335833056
+    Attrib fuel-system    -0.31161849658831237
+    Attrib bore    -0.10505050765115423
+    Attrib stroke    0.34690919649545954
+    Attrib compression-ratio    0.02510588781028897
+    Attrib horsepower    -0.23928949540773867
+    Attrib peak-rpm    0.08254075232334437
+    Attrib city-mpg    0.2787345978154326
+    Attrib highway-mpg    0.018142195112682148
+    Attrib price    -0.040484653104587945
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.8180968171211758
+    Attrib normalized-losses    0.2253521637062413
+    Attrib make    2.055312906376479
+    Attrib fuel-type    0.11063547806170639
+    Attrib aspiration    0.4489886986863641
+    Attrib num-of-doors    1.264620701247959
+    Attrib body-style    0.192442572701111
+    Attrib drive-wheels    0.22871134386188136
+    Attrib engine-location    -0.6620583564951025
+    Attrib wheel-base    1.0509018128432948
+    Attrib length    -0.72819785763408
+    Attrib width    0.6271987758368223
+    Attrib height    0.8574376663438282
+    Attrib curb-weight    0.26409392539719495
+    Attrib engine-type    0.37630569982119255
+    Attrib num-of-cylinders    0.5939591876635373
+    Attrib engine-size    -0.13785613427998508
+    Attrib fuel-system    -0.2495755760277958
+    Attrib bore    0.33186118468895337
+    Attrib stroke    -0.42226144587148573
+    Attrib compression-ratio    0.06185734492208525
+    Attrib horsepower    1.2249521305064752
+    Attrib peak-rpm    -0.9647749910426019
+    Attrib city-mpg    0.48699962593250534
+    Attrib highway-mpg    0.11953783520942614
+    Attrib price    0.2395145704601043
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.6480599129522755
+    Attrib normalized-losses    1.1587286778695338
+    Attrib make    2.037338379748429
+    Attrib fuel-type    1.369474156271049
+    Attrib aspiration    -0.6993721751648077
+    Attrib num-of-doors    -1.89369292724837
+    Attrib body-style    0.7439153845613328
+    Attrib drive-wheels    0.5280627278494516
+    Attrib engine-location    -1.6496067750007157
+    Attrib wheel-base    1.2854012315249748
+    Attrib length    -0.8952034932892705
+    Attrib width    0.6863627670818709
+    Attrib height    1.2863811170145094
+    Attrib curb-weight    -1.4371030613132831
+    Attrib engine-type    -0.6070606220539759
+    Attrib num-of-cylinders    -0.11347705608550922
+    Attrib engine-size    0.5834680758994829
+    Attrib fuel-system    -0.8955195772434434
+    Attrib bore    -1.5956094919147157
+    Attrib stroke    1.1292412242596146
+    Attrib compression-ratio    -0.559966375661936
+    Attrib horsepower    0.19672802193860225
+    Attrib peak-rpm    -1.397636235412454
+    Attrib city-mpg    -0.30857769558767634
+    Attrib highway-mpg    -0.8282563948067809
+    Attrib price    0.8287019253667365
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    2.5009437110315718
+    Attrib normalized-losses    -3.5284601016468606
+    Attrib make    -9.693462993151421
+    Attrib fuel-type    -3.6446483312389284
+    Attrib aspiration    -4.6877711295909155
+    Attrib num-of-doors    -4.469996917548029
+    Attrib body-style    -1.4132561627691176
+    Attrib drive-wheels    0.4938384218436668
+    Attrib engine-location    2.3860810986188117
+    Attrib wheel-base    -3.2798262601109327
+    Attrib length    3.1418844529048853
+    Attrib width    -3.4201691796530933
+    Attrib height    -5.508186256612398
+    Attrib curb-weight    0.47716361951454395
+    Attrib engine-type    -1.5863621680540634
+    Attrib num-of-cylinders    -6.087066222288094
+    Attrib engine-size    -0.17752240590325843
+    Attrib fuel-system    1.8724789698295297
+    Attrib bore    1.2806458688707847
+    Attrib stroke    -0.361526868004008
+    Attrib compression-ratio    -2.7392882177852615
+    Attrib horsepower    -6.515877660363113
+    Attrib peak-rpm    5.914428671938179
+    Attrib city-mpg    -0.9373417255483069
+    Attrib highway-mpg    -0.20426546315378563
+    Attrib price    -1.7522981494038095
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -1.4916134028686536
+    Attrib normalized-losses    0.9425398679016899
+    Attrib make    1.8189362091901111
+    Attrib fuel-type    -0.05603523332406119
+    Attrib aspiration    -0.7819070123244336
+    Attrib num-of-doors    0.9233160170374503
+    Attrib body-style    -0.2821445883220341
+    Attrib drive-wheels    0.9707295930343965
+    Attrib engine-location    -1.1787348365467414
+    Attrib wheel-base    0.08568888135871125
+    Attrib length    -0.07985534643757493
+    Attrib width    0.5140805079159334
+    Attrib height    0.6413665710595181
+    Attrib curb-weight    -0.48943971025355004
+    Attrib engine-type    -0.13824147667772202
+    Attrib num-of-cylinders    0.6681030457986448
+    Attrib engine-size    0.015935859193237447
+    Attrib fuel-system    -0.47778090504241005
+    Attrib bore    -0.11004879744570217
+    Attrib stroke    0.012192733033796286
+    Attrib compression-ratio    -0.4430108152929616
+    Attrib horsepower    -0.7166621980644339
+    Attrib peak-rpm    -1.2381114575897894
+    Attrib city-mpg    1.6071688210305284
+    Attrib highway-mpg    -0.22898405764641946
+    Attrib price    -0.4366454307715801
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -1.2487471838060864
+    Attrib normalized-losses    1.0351002979712536
+    Attrib make    1.1539142952194488
+    Attrib fuel-type    1.3844236920396407
+    Attrib aspiration    -1.018348247694934
+    Attrib num-of-doors    -1.4528266453568104
+    Attrib body-style    0.6230129841512574
+    Attrib drive-wheels    0.5830483083777246
+    Attrib engine-location    -1.230526412865366
+    Attrib wheel-base    1.295610553776595
+    Attrib length    -0.1702821226602618
+    Attrib width    0.9984009779571503
+    Attrib height    1.0085517142425695
+    Attrib curb-weight    -0.23969397120080496
+    Attrib engine-type    -0.6344359402221501
+    Attrib num-of-cylinders    -0.2633734124158466
+    Attrib engine-size    1.0320625092301219
+    Attrib fuel-system    -0.868830006696003
+    Attrib bore    -0.6674925135413541
+    Attrib stroke    0.9626754086373651
+    Attrib compression-ratio    0.028091506601361796
+    Attrib horsepower    -0.7312821439690224
+    Attrib peak-rpm    -0.9797790445159803
+    Attrib city-mpg    -0.22346561272197155
+    Attrib highway-mpg    -0.3662470331360331
+    Attrib price    -1.2149348132716409
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -1.3631229498217798
+    Attrib normalized-losses    0.30649268163362553
+    Attrib make    0.5938284794253574
+    Attrib fuel-type    0.8978602153432131
+    Attrib aspiration    -0.45730203487552074
+    Attrib num-of-doors    -1.2411168436685331
+    Attrib body-style    0.06035703757863401
+    Attrib drive-wheels    0.8436526153832878
+    Attrib engine-location    -1.1740865069938105
+    Attrib wheel-base    0.736992675730203
+    Attrib length    0.1075855342192431
+    Attrib width    0.19409404624483437
+    Attrib height    0.6219632707140019
+    Attrib curb-weight    -0.1609296987745914
+    Attrib engine-type    -0.20094139650973733
+    Attrib num-of-cylinders    0.7083135008569162
+    Attrib engine-size    -0.45611668890651946
+    Attrib fuel-system    -0.13126516401819288
+    Attrib bore    -0.5218334104780123
+    Attrib stroke    0.4391839795470193
+    Attrib compression-ratio    -0.19947849230866352
+    Attrib horsepower    0.15567335271422297
+    Attrib peak-rpm    0.5230017765091662
+    Attrib city-mpg    -0.6362931984824912
+    Attrib highway-mpg    0.43209389986534863
+    Attrib price    -0.15257848333581756
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -1.5450580015541207
+    Attrib normalized-losses    0.5464790055106002
+    Attrib make    1.2910104266955003
+    Attrib fuel-type    0.5967785246886007
+    Attrib aspiration    -0.1501169250813684
+    Attrib num-of-doors    1.7223901725796236
+    Attrib body-style    -0.10159742007139284
+    Attrib drive-wheels    1.0696147736733617
+    Attrib engine-location    -1.2516176915358652
+    Attrib wheel-base    0.33650539119402806
+    Attrib length    -0.8297397675334139
+    Attrib width    0.46586172145630744
+    Attrib height    0.40106404099175486
+    Attrib curb-weight    -0.6951465026899396
+    Attrib engine-type    -0.3143856199122336
+    Attrib num-of-cylinders    1.019282752702659
+    Attrib engine-size    -0.21847915179397892
+    Attrib fuel-system    -0.7686027195519152
+    Attrib bore    -0.04865675936254024
+    Attrib stroke    0.6181730781005488
+    Attrib compression-ratio    -0.0789966102277375
+    Attrib horsepower    0.2618490159905324
+    Attrib peak-rpm    -1.4135044603352678
+    Attrib city-mpg    1.2650636302438376
+    Attrib highway-mpg    -0.5960321136816881
+    Attrib price    0.25741598154754736
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -1.8853044953859786
+    Attrib normalized-losses    0.1812709882333936
+    Attrib make    1.032228838706658
+    Attrib fuel-type    1.475989565327113
+    Attrib aspiration    -2.0214748287957907
+    Attrib num-of-doors    -1.7559447157655454
+    Attrib body-style    -1.0256298414527807
+    Attrib drive-wheels    1.6590018708114667
+    Attrib engine-location    -1.2857861649631857
+    Attrib wheel-base    0.7376649421882625
+    Attrib length    -0.3099120572908681
+    Attrib width    0.6275473802995835
+    Attrib height    0.9012838826696212
+    Attrib curb-weight    0.23084729928651834
+    Attrib engine-type    -0.13012543399087528
+    Attrib num-of-cylinders    0.4473032004289251
+    Attrib engine-size    -0.4516864954301583
+    Attrib fuel-system    -0.46662420865353027
+    Attrib bore    -1.046628136972551
+    Attrib stroke    0.5091056231983986
+    Attrib compression-ratio    -0.07167037017151791
+    Attrib horsepower    -1.6536977168291642
+    Attrib peak-rpm    0.860586428785066
+    Attrib city-mpg    1.4252544032520862
+    Attrib highway-mpg    -0.7177385865294996
+    Attrib price    0.9458376433809299
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -0.9807893396796683
+    Attrib normalized-losses    0.3482923690357521
+    Attrib make    0.07705849946503593
+    Attrib fuel-type    0.9470065084583051
+    Attrib aspiration    -1.0051599857685096
+    Attrib num-of-doors    0.11702603535844586
+    Attrib body-style    0.3309954191913697
+    Attrib drive-wheels    0.8892063453261315
+    Attrib engine-location    -0.9632646643701438
+    Attrib wheel-base    -0.18190213132755498
+    Attrib length    -0.25369879935953427
+    Attrib width    0.43910017948111546
+    Attrib height    0.5411216725090171
+    Attrib curb-weight    -0.03761364069672963
+    Attrib engine-type    0.16532308817099062
+    Attrib num-of-cylinders    -0.11356081249969967
+    Attrib engine-size    0.3386344341065929
+    Attrib fuel-system    -0.6522710203196296
+    Attrib bore    0.05528627196337916
+    Attrib stroke    0.655608218766484
+    Attrib compression-ratio    -0.23548429283299524
+    Attrib horsepower    0.11378384715365805
+    Attrib peak-rpm    0.341551631154814
+    Attrib city-mpg    0.6566924020450118
+    Attrib highway-mpg    0.11511056702079189
+    Attrib price    -0.46058596906542176
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -0.7771590061775833
+    Attrib normalized-losses    0.14225940851642266
+    Attrib make    -0.078712282775691
+    Attrib fuel-type    0.3710350052895287
+    Attrib aspiration    -0.16409741558089588
+    Attrib num-of-doors    -0.015557409848222062
+    Attrib body-style    -0.029202596395932447
+    Attrib drive-wheels    0.40235316886350553
+    Attrib engine-location    -0.788627681687392
+    Attrib wheel-base    0.1261844120588165
+    Attrib length    -0.08002666715323153
+    Attrib width    0.18839768945733484
+    Attrib height    0.30571286448349483
+    Attrib curb-weight    -0.046566803440148304
+    Attrib engine-type    -0.2000359083618352
+    Attrib num-of-cylinders    -0.11042578588480792
+    Attrib engine-size    0.02415854274127642
+    Attrib fuel-system    -0.2912281057316714
+    Attrib bore    0.04835999524689404
+    Attrib stroke    0.5686457708249789
+    Attrib compression-ratio    0.09219286476640022
+    Attrib horsepower    0.10403694896749816
+    Attrib peak-rpm    0.11514909960509208
+    Attrib city-mpg    -0.07465355842834209
+    Attrib highway-mpg    0.1448372330115371
+    Attrib price    -0.14961882490930228
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -0.8683014000369859
+    Attrib normalized-losses    0.17556451394240813
+    Attrib make    -0.06187062134530202
+    Attrib fuel-type    0.4497927824023443
+    Attrib aspiration    -0.26526866282599026
+    Attrib num-of-doors    -0.14799754503797863
+    Attrib body-style    -0.2893057167754574
+    Attrib drive-wheels    0.6504906943122153
+    Attrib engine-location    -0.7614608364840666
+    Attrib wheel-base    0.08478384822817443
+    Attrib length    -0.14856288306624138
+    Attrib width    0.16127844903871102
+    Attrib height    0.14520492773394464
+    Attrib curb-weight    -0.05235497362638398
+    Attrib engine-type    -0.0848611942927713
+    Attrib num-of-cylinders    0.07129921994634984
+    Attrib engine-size    0.10179461484238066
+    Attrib fuel-system    -0.3678137075751743
+    Attrib bore    -0.038826885069387244
+    Attrib stroke    0.45654692278977177
+    Attrib compression-ratio    -0.047229199448218545
+    Attrib horsepower    0.05438243797551315
+    Attrib peak-rpm    0.12070862092244448
+    Attrib city-mpg    -0.04943705759068492
+    Attrib highway-mpg    -0.009037496463788394
+    Attrib price    -0.11957868128697811
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 1.76 seconds
+Time taken to test model on training data: 0.37 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9999
+Mean absolute error                      0.0043
+Root mean squared error                  0.0068
+Relative absolute error                  0.9766 %
+Root relative squared error              1.443  %
+Total Number of Instances              205     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7107
+Mean absolute error                      0.1455
+Root mean squared error                  0.3459
+Relative absolute error                 32.8935 %
+Root relative squared error             73.3313 %
+Total Number of Instances              205     
+

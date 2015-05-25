@@ -1,0 +1,81 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation german_credit-weka.filters.unsupervised.instance.Resample-S1-Z66.0-no-replacement-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R22-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute checking_status numeric
+@attribute duration numeric
+@attribute credit_history numeric
+@attribute purpose numeric
+@attribute credit_amount numeric
+@attribute savings_status numeric
+@attribute employment numeric
+@attribute installment_commitment numeric
+@attribute personal_status numeric
+@attribute other_parties numeric
+@attribute residence_since numeric
+@attribute property_magnitude numeric
+@attribute age numeric
+@attribute other_payment_plans numeric
+@attribute housing numeric
+@attribute existing_credits numeric
+@attribute job numeric
+@attribute num_dependents numeric
+@attribute own_telephone numeric
+@attribute foreign_worker numeric
+@attribute class=good numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+class=good =
+
+      0.5632 * checking_status +
+      0.5296 * duration +
+      0.5641 * credit_history +
+      0.7212 * purpose +
+      0.6744 * credit_amount +
+      0.3123 * savings_status +
+      0.6465 * employment +
+      0.8978 * installment_commitment +
+      0.8091 * other_parties +
+      1.0139 * residence_since +
+      0.3194 * property_magnitude +
+      0.5434 * age +
+      0.4732 * other_payment_plans +
+      0.2878 * housing +
+     -0.6745 * existing_credits +
+      1.0536 * own_telephone +
+      0.5573 * foreign_worker +
+     -4.0165
+
+Time taken to build model: 0.28 seconds
+Time taken to test model on training data: 1.09 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5886
+Mean absolute error                      0.3011
+Root mean squared error                  0.3759
+Relative absolute error                 70.1317 %
+Root relative squared error             81.1293 %
+Total Number of Instances              660     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.464 
+Mean absolute error                      0.3331
+Root mean squared error                  0.4111
+Relative absolute error                 77.5204 %
+Root relative squared error             88.6592 %
+Total Number of Instances              660     
+

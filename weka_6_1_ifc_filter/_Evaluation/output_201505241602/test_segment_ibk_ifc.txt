@@ -1,0 +1,60 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.lazy.IBk 
+
+FilteredClassifier using weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'segment-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R20,22-26-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z33.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute region-centroid-col numeric
+@attribute region-centroid-row numeric
+@attribute region-pixel-count numeric
+@attribute short-line-density-5 numeric
+@attribute short-line-density-2 numeric
+@attribute vedge-mean numeric
+@attribute vegde-sd numeric
+@attribute hedge-mean numeric
+@attribute hedge-sd numeric
+@attribute intensity-mean numeric
+@attribute rawred-mean numeric
+@attribute rawblue-mean numeric
+@attribute rawgreen-mean numeric
+@attribute exred-mean numeric
+@attribute exblue-mean numeric
+@attribute exgreen-mean numeric
+@attribute value-mean numeric
+@attribute saturation-mean numeric
+@attribute hue-mean numeric
+@attribute class=sky numeric
+
+@data
+
+
+Classifier Model
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.28 seconds
+Time taken to test model on training data: 1.31 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              762     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7806
+Mean absolute error                      0.0577
+Root mean squared error                  0.2403
+Relative absolute error                 25.0925 %
+Root relative squared error             70.8133 %
+Total Number of Instances              762     
+

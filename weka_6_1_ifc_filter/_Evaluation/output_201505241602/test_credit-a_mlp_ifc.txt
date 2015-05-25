@@ -1,0 +1,212 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.MultilayerPerceptron 
+
+FilteredClassifier using weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation credit-rating-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R16-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute A1 numeric
+@attribute A2 numeric
+@attribute A3 numeric
+@attribute A4 numeric
+@attribute A5 numeric
+@attribute A6 numeric
+@attribute A7 numeric
+@attribute A8 numeric
+@attribute A9 numeric
+@attribute A10 numeric
+@attribute A11 numeric
+@attribute A12 numeric
+@attribute A13 numeric
+@attribute A14 numeric
+@attribute A15 numeric
+@attribute class numeric
+
+@data
+
+
+Classifier Model
+Linear Node 0
+    Inputs    Weights
+    Threshold    -0.9631675074285335
+    Node 1    -0.3636815767151135
+    Node 2    1.974899717268248
+    Node 3    -3.5172809133692198
+    Node 4    1.9422428934395075
+    Node 5    2.0600239509393914
+    Node 6    -3.1770366187299683
+    Node 7    2.4604213282878242
+    Node 8    2.663234461266159
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -3.241752408038265
+    Attrib A1    1.603752851479187
+    Attrib A2    1.5993008355045475
+    Attrib A3    -2.399621842038921
+    Attrib A4    2.587816837140208
+    Attrib A5    2.5749885875390977
+    Attrib A6    -1.7468806453846408
+    Attrib A7    2.562568165444238
+    Attrib A8    -1.3239147817966814
+    Attrib A9    0.5301937203169593
+    Attrib A10    0.30516425055785434
+    Attrib A11    -0.9695554462283571
+    Attrib A12    0.026686338686100652
+    Attrib A13    -2.4615306569133395
+    Attrib A14    -1.9525326606956648
+    Attrib A15    -2.814887731945931
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -15.512965836457415
+    Attrib A1    2.2898308975310213
+    Attrib A2    1.9962682827074516
+    Attrib A3    -6.191242828787387
+    Attrib A4    8.62459190419817
+    Attrib A5    8.655245001524396
+    Attrib A6    12.17938008706437
+    Attrib A7    -2.1152279274952095
+    Attrib A8    -10.568536149652584
+    Attrib A9    4.355857094825047
+    Attrib A10    -6.677716602885362
+    Attrib A11    6.188183820030049
+    Attrib A12    -3.0689532291628723
+    Attrib A13    12.941889772157491
+    Attrib A14    -8.954780227002235
+    Attrib A15    -10.06821974310301
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -19.92314549382806
+    Attrib A1    3.2450732537980196
+    Attrib A2    3.7148949497098434
+    Attrib A3    -5.782960444188448
+    Attrib A4    4.099021450207238
+    Attrib A5    4.114547700802841
+    Attrib A6    -3.229597016387185
+    Attrib A7    8.764464635225412
+    Attrib A8    7.679778952212421
+    Attrib A9    0.15950008395823834
+    Attrib A10    1.1968549746811972
+    Attrib A11    0.1742473416202526
+    Attrib A12    -2.5601235640175593
+    Attrib A13    -8.542228520102597
+    Attrib A14    2.8057864217115394
+    Attrib A15    -7.018655536978428
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -11.280468448858414
+    Attrib A1    0.2438934047049269
+    Attrib A2    0.6043763461126953
+    Attrib A3    13.553823838154948
+    Attrib A4    2.713663370921094
+    Attrib A5    2.7954790486199927
+    Attrib A6    -1.3950460923638577
+    Attrib A7    18.72529584856609
+    Attrib A8    4.489089664988592
+    Attrib A9    20.44821503857874
+    Attrib A10    4.782114626481286
+    Attrib A11    6.647746498024238
+    Attrib A12    -4.846097045755601
+    Attrib A13    -6.900992401162844
+    Attrib A14    19.541255657321777
+    Attrib A15    15.20927099597688
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -17.353133874710167
+    Attrib A1    -4.9168192742225365
+    Attrib A2    2.4399263487207503
+    Attrib A3    -8.762115771044515
+    Attrib A4    7.785811481091647
+    Attrib A5    7.861615386268438
+    Attrib A6    -5.236820509560799
+    Attrib A7    -4.5922332800491645
+    Attrib A8    -3.8023090199591625
+    Attrib A9    7.76132570514531
+    Attrib A10    -3.9983129524863
+    Attrib A11    3.9795856963501377
+    Attrib A12    3.8974620743204818
+    Attrib A13    5.910123000322578
+    Attrib A14    -2.541541331054319
+    Attrib A15    2.31295993605329
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -13.635323001317792
+    Attrib A1    -3.239256417140529
+    Attrib A2    -4.22609022470809
+    Attrib A3    2.1498757191004088
+    Attrib A4    8.490859349635512
+    Attrib A5    8.490810545638071
+    Attrib A6    -2.1736518816081665
+    Attrib A7    -0.33910593036401226
+    Attrib A8    -10.253700437704287
+    Attrib A9    8.41782849761856
+    Attrib A10    4.209937494798129
+    Attrib A11    0.23570780501208452
+    Attrib A12    0.6576738673712378
+    Attrib A13    0.1610275249565431
+    Attrib A14    -5.490912808270754
+    Attrib A15    -8.795527840298956
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -11.549600191382305
+    Attrib A1    5.3618201461511115
+    Attrib A2    2.962015018514655
+    Attrib A3    10.827485263343137
+    Attrib A4    7.240876501510446
+    Attrib A5    7.225309694673397
+    Attrib A6    -3.528914230932781
+    Attrib A7    0.252200635842716
+    Attrib A8    -2.179356622310844
+    Attrib A9    6.630572607280008
+    Attrib A10    2.408154439225331
+    Attrib A11    -4.283120340138157
+    Attrib A12    0.01740618007995172
+    Attrib A13    -8.680516934963283
+    Attrib A14    -5.606553268083135
+    Attrib A15    -1.9376999961601769
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -17.871273562169943
+    Attrib A1    -3.4026293165119132
+    Attrib A2    -5.966191509736985
+    Attrib A3    6.94650878828107
+    Attrib A4    -4.41337555359683
+    Attrib A5    -4.446063378869714
+    Attrib A6    3.989936791765479
+    Attrib A7    -4.64768380247597
+    Attrib A8    -1.3485902443053297
+    Attrib A9    4.021369677155741
+    Attrib A10    -2.52189941748575
+    Attrib A11    2.79418209373079
+    Attrib A12    2.2567651174013292
+    Attrib A13    -1.707425562099076
+    Attrib A14    -10.145474020003878
+    Attrib A15    -5.582647420878548
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 2.81 seconds
+Time taken to test model on training data: 0.62 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.894 
+Mean absolute error                      0.0731
+Root mean squared error                  0.2247
+Relative absolute error                 14.8021 %
+Root relative squared error             45.2067 %
+Total Number of Instances              690     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6343
+Mean absolute error                      0.2413
+Root mean squared error                  0.3948
+Relative absolute error                 48.7315 %
+Root relative squared error             79.2435 %
+Total Number of Instances              690     
+

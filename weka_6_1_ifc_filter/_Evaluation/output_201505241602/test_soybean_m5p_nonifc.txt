@@ -1,0 +1,161 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+leafspot-size=gt-1/8 <= 0.5 : LM1 (156/0%)
+leafspot-size=gt-1/8 >  0.5 : 
+|   date=july,september,october,august <= 0.5 : LM2 (57/0%)
+|   date=july,september,october,august >  0.5 : 
+|   |   fruit-spots=distort,colored <= 0.5 : 
+|   |   |   severity=minor <= 0.5 : 
+|   |   |   |   stem=abnorm <= 0.5 : LM3 (37/100.631%)
+|   |   |   |   stem=abnorm >  0.5 : LM4 (46/0%)
+|   |   |   severity=minor >  0.5 : LM5 (44/103.339%)
+|   |   fruit-spots=distort,colored >  0.5 : 
+|   |   |   germination=90-100 <= 0.5 : LM6 (17/0%)
+|   |   |   germination=90-100 >  0.5 : LM7 (18/0%)
+
+LM num: 1
+class=frog-eye-leaf-spot = 
+	0.0039 * date=october,august 
+	+ 0.0051 * plant-stand=normal 
+	+ 0.0053 * area-damaged=scattered,upper-areas 
+	+ 0.0057 * seed-tmt=fungicide 
+	+ 0.0082 * germination=90-100 
+	+ 0.0119 * leafspot-size=gt-1/8 
+	+ 0.0103 * leaf-shread=absent 
+	- 0.0063 * stem=abnorm 
+	+ 0.0138 * canker-lesion=dk-brown-blk 
+	+ 0.0506 * fruit-spots=distort,colored 
+	+ 0.0116 * seed=norm 
+	- 0.0298
+
+LM num: 2
+class=frog-eye-leaf-spot = 
+	0.0184 * date=october,august 
+	+ 0.0037 * plant-stand=normal 
+	- 0.0114 * temp=gt-norm 
+	+ 0.0183 * area-damaged=scattered,upper-areas 
+	+ 0.0254 * seed-tmt=fungicide 
+	+ 0.0365 * germination=90-100 
+	+ 0.0087 * leafspot-size=gt-1/8 
+	+ 0.0328 * leaf-shread=absent 
+	- 0.022 * stem=abnorm 
+	+ 0.0411 * canker-lesion=dk-brown-blk 
+	+ 0.1697 * fruit-spots=distort,colored 
+	+ 0.0085 * seed=norm 
+	- 0.042
+
+LM num: 3
+class=frog-eye-leaf-spot = 
+	0.0204 * date=october,august 
+	+ 0.0113 * plant-stand=normal 
+	- 0.0182 * temp=gt-norm 
+	+ 0.0111 * crop-hist=same-lst-sev-yrs,same-lst-yr 
+	+ 0.0198 * area-damaged=scattered,upper-areas 
+	+ 0.137 * area-damaged=upper-areas 
+	+ 0.0232 * severity=minor 
+	+ 0.024 * seed-tmt=fungicide 
+	+ 0.0505 * germination=90-100 
+	+ 0.0087 * leafspot-size=gt-1/8 
+	+ 0.0646 * leaf-shread=absent 
+	- 0.0517 * stem=abnorm 
+	+ 0.0448 * canker-lesion=dk-brown-blk 
+	+ 0.1437 * fruit-spots=distort,colored 
+	+ 0.1513 * seed=norm 
+	- 0.1122
+
+LM num: 4
+class=frog-eye-leaf-spot = 
+	0.0204 * date=october,august 
+	+ 0.0113 * plant-stand=normal 
+	- 0.0182 * temp=gt-norm 
+	+ 0.0111 * crop-hist=same-lst-sev-yrs,same-lst-yr 
+	+ 0.0198 * area-damaged=scattered,upper-areas 
+	+ 0.0199 * area-damaged=upper-areas 
+	+ 0.0232 * severity=minor 
+	+ 0.024 * seed-tmt=fungicide 
+	+ 0.0505 * germination=90-100 
+	+ 0.0087 * leafspot-size=gt-1/8 
+	+ 0.0646 * leaf-shread=absent 
+	- 0.0472 * stem=abnorm 
+	+ 0.0448 * canker-lesion=dk-brown-blk 
+	+ 0.1437 * fruit-spots=distort,colored 
+	+ 0.0365 * seed=norm 
+	- 0.0793
+
+LM num: 5
+class=frog-eye-leaf-spot = 
+	0.1569 * date=october,august 
+	+ 0.0113 * plant-stand=normal 
+	- 0.0272 * temp=gt-norm 
+	+ 0.0185 * crop-hist=same-lst-sev-yrs,same-lst-yr 
+	+ 0.0198 * area-damaged=scattered,upper-areas 
+	+ 0.0386 * severity=minor 
+	+ 0.024 * seed-tmt=fungicide 
+	+ 0.2838 * germination=90-100 
+	+ 0.0087 * leafspot-size=gt-1/8 
+	+ 0.2462 * leaf-shread=absent 
+	- 0.0213 * stem=abnorm 
+	+ 0.0448 * canker-lesion=dk-brown-blk 
+	+ 0.1437 * fruit-spots=distort,colored 
+	+ 0.0175 * seed=norm 
+	- 0.2472
+
+LM num: 6
+class=frog-eye-leaf-spot = 
+	0.0092 * date=october,august 
+	+ 0.0252 * plant-stand=normal 
+	- 0.0046 * temp=gt-norm 
+	+ 0.0384 * area-damaged=scattered,upper-areas 
+	+ 0.0445 * seed-tmt=fungicide 
+	+ 0.091 * germination=90-100 
+	+ 0.0087 * leafspot-size=gt-1/8 
+	+ 0.0651 * leaf-shread=absent 
+	- 0.039 * stem=abnorm 
+	+ 0.5204 * canker-lesion=dk-brown-blk 
+	+ 0.2408 * fruit-spots=distort,colored 
+	+ 0.0341 * seed=norm 
+	+ 0.0458
+
+LM num: 7
+class=frog-eye-leaf-spot = 
+	0.0092 * date=october,august 
+	+ 0.0252 * plant-stand=normal 
+	- 0.0046 * temp=gt-norm 
+	+ 0.0384 * area-damaged=scattered,upper-areas 
+	+ 0.0445 * seed-tmt=fungicide 
+	+ 0.0898 * germination=90-100 
+	+ 0.0087 * leafspot-size=gt-1/8 
+	+ 0.0651 * leaf-shread=absent 
+	- 0.039 * stem=abnorm 
+	+ 0.1983 * canker-lesion=dk-brown-blk 
+	+ 0.2408 * fruit-spots=distort,colored 
+	+ 0.0341 * seed=norm 
+	+ 0.3684
+
+Number of Rules : 7
+
+Time taken to build model: 0.27 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.873 
+Mean absolute error                      0.073 
+Root mean squared error                  0.1648
+Relative absolute error                 32.1542 %
+Root relative squared error             48.9054 %
+Total Number of Instances              375     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8067
+Mean absolute error                      0.0905
+Root mean squared error                  0.1993
+Relative absolute error                 39.7313 %
+Root relative squared error             58.9771 %
+Total Number of Instances              375     
+

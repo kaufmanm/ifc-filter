@@ -1,0 +1,84 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation hepatitis-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R20-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute AGE numeric
+@attribute SEX numeric
+@attribute STEROID numeric
+@attribute ANTIVIRALS numeric
+@attribute FATIGUE numeric
+@attribute MALAISE numeric
+@attribute ANOREXIA numeric
+@attribute LIVER_BIG numeric
+@attribute LIVER_FIRM numeric
+@attribute SPLEEN_PALPABLE numeric
+@attribute SPIDERS numeric
+@attribute ASCITES numeric
+@attribute VARICES numeric
+@attribute BILIRUBIN numeric
+@attribute ALK_PHOSPHATE numeric
+@attribute SGOT numeric
+@attribute ALBUMIN numeric
+@attribute PROTIME numeric
+@attribute HISTOLOGY numeric
+@attribute Class=LIVE numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ +       0.0004 * (normalized) AGE
+ +       0.0005 * (normalized) SEX
+ +       0.0005 * (normalized) STEROID
+ -       0      * (normalized) ANTIVIRALS
+ +       0.0005 * (normalized) FATIGUE
+ +       0.0009 * (normalized) MALAISE
+ -       0.0013 * (normalized) ANOREXIA
+ +       0.0004 * (normalized) LIVER_BIG
+ -       0.0005 * (normalized) LIVER_FIRM
+ +       0.0005 * (normalized) SPLEEN_PALPABLE
+ +       0.0009 * (normalized) SPIDERS
+ +       0.9959 * (normalized) ASCITES
+ +       0.0008 * (normalized) VARICES
+ +       0.0018 * (normalized) BILIRUBIN
+ +       0.0006 * (normalized) ALK_PHOSPHATE
+ -       0.0007 * (normalized) SGOT
+ +       0.0009 * (normalized) ALBUMIN
+ +       0.0008 * (normalized) PROTIME
+ +       0.0002 * (normalized) HISTOLOGY
+ -       0.0008
+
+
+
+Number of kernel evaluations: 11910 (99.066% cached)
+
+Time taken to build model: 0.22 seconds
+Time taken to test model on training data: 0.23 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.4712
+Mean absolute error                      0.155 
+Root mean squared error                  0.3925
+Relative absolute error                 47.2974 %
+Root relative squared error             96.9633 %
+Total Number of Instances              155     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.47  
+Mean absolute error                      0.1554
+Root mean squared error                  0.3927
+Relative absolute error                 47.0567 %
+Root relative squared error             96.1741 %
+Total Number of Instances              155     
+

@@ -1,0 +1,239 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=    0     ;  df=101;  p=      0   
+
+SQL:
+
+1-1/(1+exp(     36.2945*age_gt_60
++      1.3913*case when air in('mild') then 1 else 0 end
++      5.4067*case when air in('moderate') then 1 else 0 end
++     -1.3061*case when air in('normal') then 1 else 0 end
++     -1.3138*case when air in('profound') then 1 else 0 end
++    -14.4742*case when air in('severe') then 1 else 0 end
++    -11.6731*airBoneGap
++     -5.6277*case when ar_c in('absent') then 1 else 0 end
++      3.1705*case when ar_c in('elevated') then 1 else 0 end
++      2.8884*case when ar_c in('normal') then 1 else 0 end
++      0     *case when ar_c in('?') then 1 else 0 end
++     17.1398*case when ar_u in('absent') then 1 else 0 end
++     -4.2643*case when ar_u in('elevated') then 1 else 0 end
++     -9.9116*case when ar_u in('normal') then 1 else 0 end
++      0     *case when ar_u in('?') then 1 else 0 end
++     -2.8168*case when bone in('mild') then 1 else 0 end
++     24.6489*case when bone in('moderate') then 1 else 0 end
++     -0.9628*case when bone in('normal') then 1 else 0 end
++      2.4177*case when bone in('unmeasured') then 1 else 0 end
++      0     *case when bone in('?') then 1 else 0 end
++     -2.6387*boneAbnormal
++      0.601 *case when bser in('degraded') then 1 else 0 end
++     -0.601 *case when bser in('normal') then 1 else 0 end
++      0     *case when bser in('?') then 1 else 0 end
++     -6.8979*history_buzzing
++     -5.8524*history_dizziness
++    -22.2837*history_fluctuating
++     -6.8979*history_fullness
++     24.5782*history_heredity
++    -27.5842*history_nausea
++    -24.8931*history_noise
++     27.3101*history_recruitment
++     19.8608*history_ringing
++      9.8666*history_roaring
++    -21.8895*history_vomiting
++     -0.601 *late_wave_poor
++     26.227 *m_at_2k
++     22.6581*m_cond_lt_1k
++      4.5549*m_gt_1k
++     20.6746*m_m_gt_2k
++     -1.3772*m_m_sn
++      1.598 *m_m_sn_gt_1k
++     29.9152*m_m_sn_gt_2k
++     -3.9169*m_m_sn_gt_500
++     17.1232*m_p_sn_gt_2k
++      2.4756*m_s_gt_500
++     -4.4466*m_s_sn
++     27.5628*m_s_sn_gt_1k
++     -3.8452*m_s_sn_gt_2k
++     22.1496*m_s_sn_gt_3k
++     25.6518*m_s_sn_gt_4k
++     -3.6468*m_sn_2_3k
++    -10.3442*m_sn_gt_1k
++     -0.3476*m_sn_gt_2k
++     20.0581*m_sn_gt_3k
++     21.2444*m_sn_gt_4k
++      8.5431*m_sn_gt_500
++      5.2205*m_sn_gt_6k
++     17.3898*m_sn_lt_1k
++     -0.7404*m_sn_lt_2k
++     -0.7404*m_sn_lt_3k
++     -0.601 *middle_wave_poor
++     25.8853*mod_gt_4k
++      8.5431*mod_mixed
++    -51.7758*mod_s_mixed
++     -3.5967*mod_s_sn_gt_500
++     26.4323*mod_sn
++    -12.2992*mod_sn_gt_1k
++     -0.6879*mod_sn_gt_2k
++    -15.7233*mod_sn_gt_3k
++     20.3687*mod_sn_gt_4k
++     -3.2108*mod_sn_gt_500
++    -11.4431*notch_4k
++      2.241 *notch_at_4k
++     -7.0324*case when o_ar_c in('absent') then 1 else 0 end
++    -14.5785*case when o_ar_c in('elevated') then 1 else 0 end
++     12.564 *case when o_ar_c in('normal') then 1 else 0 end
++      0     *case when o_ar_c in('?') then 1 else 0 end
++      0.0928*case when o_ar_u in('absent') then 1 else 0 end
++      2.8512*case when o_ar_u in('elevated') then 1 else 0 end
++     -1.7747*case when o_ar_u in('normal') then 1 else 0 end
++      0     *case when o_ar_u in('?') then 1 else 0 end
++      3.6689*s_sn_gt_1k
++     -6.8274*s_sn_gt_2k
++     26.3082*s_sn_gt_4k
++      3.8981*case when speech in('good') then 1 else 0 end
++      0.0949*case when speech in('normal') then 1 else 0 end
++      3.0367*case when speech in('poor') then 1 else 0 end
++     -6.2757*case when speech in('unmeasured') then 1 else 0 end
++      1.2338*case when speech in('very_good') then 1 else 0 end
++    -12.6179*case when speech in('very_poor') then 1 else 0 end
++      0     *case when speech in('?') then 1 else 0 end
++    -10.6272*static_normal
++     13.8227*case when tymp in('a') then 1 else 0 end
++     12.7176*case when tymp in('ad') then 1 else 0 end
++     -6.77  *case when tymp in('as') then 1 else 0 end
++    -22.8007*case when tymp in('b') then 1 else 0 end
++    -27.9477*case when tymp in('c') then 1 else 0 end
++      0.3038*viith_nerve_signs
++    -26.1416*wave_V_delayed
++     14.6556*waveform_ItoV_prolonged
++   -24.8839))
+
+Odds Ratios...
+Variable         O.R.
+       1 5.78758201224137E15
+       2       4.0199
+       3     222.8921
+       4       0.2709
+       5       0.2688
+       6       0     
+       7       0     
+       8       0.0036
+       9      23.8186
+      10      17.965 
+      11       1     
+      12 27778167.3384
+      13       0.0141
+      14       0     
+      15       1     
+      16       0.0598
+      17 5.06828418690751E10
+      18       0.3818
+      19      11.2202
+      20       1     
+      21       0.0715
+      22       1.8239
+      23       0.5483
+      24       1     
+      25       0.001 
+      26       0.0029
+      27       0     
+      28       0.001 
+      29 4.722646835257591E10
+      30       0     
+      31       0     
+      32 7.254659684603562E11
+      33 422106600.1937
+      34   19276.155 
+      35       0     
+      36       0.5483
+      37 2.45606393337395E11
+      38 6922672679.7727
+      39      95.0998
+      40 952543265.2579
+      41       0.2523
+      42       4.9433
+      43 9.81735427986861E12
+      44       0.0199
+      45 27322309.6542
+      46      11.8893
+      47       0.0117
+      48 9.340388055559078E11
+      49       0.0214
+      50 4163224152.0292
+      51 1.3818322481534277E11
+      52       0.0261
+      53       0     
+      54       0.7064
+      55 514203997.2294
+      56 1683875759.8343
+      57    5131.3686
+      58     185.0279
+      59 35670308.4841
+      60       0.4769
+      61       0.4769
+      62       0.5483
+      63 1.7451110863617453E11
+      64    5131.3686
+      65       0     
+      66       0.0274
+      67 3.015746089741152E11
+      68       0     
+      69       0.5026
+      70       0     
+      71 701501027.6931
+      72       0.0403
+      73       0     
+      74       9.4028
+      75       0.0009
+      76       0     
+      77  286063.6201
+      78       1     
+      79       1.0972
+      80      17.3083
+      81       0.1695
+      82       1     
+      83      39.207 
+      84       0.0011
+      85 2.6638827679441333E11
+      86      49.3091
+      87       1.0995
+      88      20.837 
+      89       0.0019
+      90       3.4343
+      91       0     
+      92       1     
+      93       0     
+      94 1007217.7966
+      95  333551.1991
+      96       0.0011
+      97       0     
+      98       0     
+      99       1.355 
+     100       0     
+     101 2316670.4063
+
+
+Time taken to build model: 0.11 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              226     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6766
+Mean absolute error                      0.1392
+Root mean squared error                  0.3643
+Relative absolute error                 36.7099 %
+Root relative squared error             83.4379 %
+Total Number of Instances              226     
+

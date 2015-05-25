@@ -1,0 +1,41 @@
+
+SMOreg
+
+weights (not support vectors):
+ -       0.371  * (normalized) preg
+ -       1.5429 * (normalized) plas
+ +       0.2817 * (normalized) pres
+ -       0.0005 * (normalized) skin
+ +       0.0723 * (normalized) insu
+ -       0.657  * (normalized) mass
+ -       0.304  * (normalized) pedi
+ -       0.233  * (normalized) age
+ +       1.9751
+
+
+
+Number of kernel evaluations: 295296 (91.303% cached)
+
+Time taken to build model: 0.41 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5428
+Mean absolute error                      0.3175
+Root mean squared error                  0.4077
+Relative absolute error                 69.8726 %
+Root relative squared error             85.5369 %
+Total Number of Instances              768     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5265
+Mean absolute error                      0.3249
+Root mean squared error                  0.4144
+Relative absolute error                 71.4302 %
+Root relative squared error             86.848  %
+Total Number of Instances              768     
+

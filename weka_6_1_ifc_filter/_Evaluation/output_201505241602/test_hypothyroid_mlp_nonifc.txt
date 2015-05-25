@@ -1,0 +1,661 @@
+
+Linear Node 0
+    Inputs    Weights
+    Threshold    0.7708921558865683
+    Node 1    0.5090882542728042
+    Node 2    0.9867336645134217
+    Node 3    0.4786713678932434
+    Node 4    0.43936853468769743
+    Node 5    0.451276307500086
+    Node 6    0.5860541234619083
+    Node 7    -1.8417695969694872
+    Node 8    -2.6124050156452228
+    Node 9    0.36443292186709786
+    Node 10    4.588793113427842E-4
+    Node 11    0.561482169498185
+    Node 12    0.10201549437814135
+    Node 13    0.4304668933069278
+    Node 14    0.6441795903425565
+    Node 15    -2.32706397557287
+    Node 16    0.29772331163088045
+    Node 17    0.6504636392736016
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -5.527191359622569
+    Attrib age    -2.071169934807875
+    Attrib sex    -2.999449776623827
+    Attrib on thyroxine    -0.7819078512574689
+    Attrib query on thyroxine    -0.27113688606097247
+    Attrib on antithyroid medication    0.3230158653662683
+    Attrib sick    -0.087031972273077
+    Attrib pregnant    3.535768411862202
+    Attrib thyroid surgery    0.8846348541129293
+    Attrib I131 treatment    -1.6755619130613715
+    Attrib query hypothyroid    -0.2331998044617362
+    Attrib query hyperthyroid    -2.075227144030705
+    Attrib lithium    2.9539410791392524
+    Attrib goitre    2.5402370581777993
+    Attrib tumor    -1.235794320830252
+    Attrib hypopituitary    -0.003287160591166828
+    Attrib psych    -2.5772543464179494
+    Attrib TSH measured    -2.726902706747087
+    Attrib TSH    -3.6848334261795053
+    Attrib T3 measured    -1.704383224777685
+    Attrib T3    -2.5542123334999935
+    Attrib TT4 measured    1.5893792971428098
+    Attrib TT4    -0.22965352567851585
+    Attrib T4U measured    -1.6688552446526044
+    Attrib T4U    -9.415761355557352
+    Attrib FTI measured    0.4168098521443111
+    Attrib FTI    4.241582436523975
+    Attrib TBG measured    -0.03426549844603586
+    Attrib TBG    0.04359778172133992
+    Attrib referral source=SVHC    3.8017878928153204
+    Attrib referral source=other    4.452377554014942
+    Attrib referral source=SVI    1.4423059206339737
+    Attrib referral source=STMW    3.624620827751156
+    Attrib referral source=SVHD    3.301557987343585
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -1.4152639157840141
+    Attrib age    -0.26158065165082384
+    Attrib sex    0.7470457883876608
+    Attrib on thyroxine    -0.44339011275379325
+    Attrib query on thyroxine    -0.5785336158592836
+    Attrib on antithyroid medication    1.7567132949647921
+    Attrib sick    -0.5885755254663674
+    Attrib pregnant    1.1340606431011286
+    Attrib thyroid surgery    0.952614983225462
+    Attrib I131 treatment    0.8555797989300593
+    Attrib query hypothyroid    0.060160879594665186
+    Attrib query hyperthyroid    -0.7436868660336222
+    Attrib lithium    -0.8663772236985959
+    Attrib goitre    0.8565625554592688
+    Attrib tumor    0.8612195670712204
+    Attrib hypopituitary    0.004437730652897785
+    Attrib psych    -0.2613110060659969
+    Attrib TSH measured    -1.2174449322169294
+    Attrib TSH    -1.7327089135607723
+    Attrib T3 measured    1.0879390816033352
+    Attrib T3    2.3486141525001036
+    Attrib TT4 measured    -0.5421502865888933
+    Attrib TT4    1.4613454313916034
+    Attrib T4U measured    0.12833918236328454
+    Attrib T4U    -1.2165671795384099
+    Attrib FTI measured    0.09458519984539619
+    Attrib FTI    0.5192032718887979
+    Attrib TBG measured    -0.001921065078757181
+    Attrib TBG    -0.029257500978742204
+    Attrib referral source=SVHC    1.7531016173666076
+    Attrib referral source=other    -0.6690829198664665
+    Attrib referral source=SVI    1.7944042235530102
+    Attrib referral source=STMW    0.04113268049373036
+    Attrib referral source=SVHD    1.3039803276945465
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -1.9231250322838618
+    Attrib age    -5.048572838043078
+    Attrib sex    -1.8326324120010051
+    Attrib on thyroxine    4.227920090142502
+    Attrib query on thyroxine    -0.2802512576578392
+    Attrib on antithyroid medication    2.140126293740102
+    Attrib sick    2.830061957552017
+    Attrib pregnant    0.07199228555035002
+    Attrib thyroid surgery    -0.10034069422183244
+    Attrib I131 treatment    -0.04412220966715518
+    Attrib query hypothyroid    1.2293632108883656
+    Attrib query hyperthyroid    -0.6864406708328111
+    Attrib lithium    -1.5806981523884647
+    Attrib goitre    1.1093332615857427
+    Attrib tumor    -1.3878455363735036
+    Attrib hypopituitary    0.0068521869340712055
+    Attrib psych    3.482152413644606
+    Attrib TSH measured    -2.2597798926329884
+    Attrib TSH    -1.8151264644251144
+    Attrib T3 measured    5.825586044406726
+    Attrib T3    -1.894805760139607
+    Attrib TT4 measured    -0.15212347704545623
+    Attrib TT4    -0.0952707201719571
+    Attrib T4U measured    -0.977844773547678
+    Attrib T4U    1.7884149784784305
+    Attrib FTI measured    -0.969251258280891
+    Attrib FTI    -2.0951898155703055
+    Attrib TBG measured    0.014739827836220909
+    Attrib TBG    0.0072895883077025575
+    Attrib referral source=SVHC    3.254125242044232
+    Attrib referral source=other    0.14466885211730482
+    Attrib referral source=SVI    -0.5950433090288141
+    Attrib referral source=STMW    1.363676518961086
+    Attrib referral source=SVHD    1.6325609745399117
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.8180591167457378
+    Attrib age    0.799078563204581
+    Attrib sex    -1.1762433471908404
+    Attrib on thyroxine    -1.6739923725252799
+    Attrib query on thyroxine    0.7025255075037657
+    Attrib on antithyroid medication    -0.6028347408153483
+    Attrib sick    -0.9838395253928937
+    Attrib pregnant    -0.2936559492464797
+    Attrib thyroid surgery    1.5229983613047362
+    Attrib I131 treatment    1.46515975237222
+    Attrib query hypothyroid    -0.2883891500466434
+    Attrib query hyperthyroid    1.6704968833697735
+    Attrib lithium    0.6960728741151032
+    Attrib goitre    0.2587642463088715
+    Attrib tumor    -0.2794511946623265
+    Attrib hypopituitary    0.02943831681153479
+    Attrib psych    -0.053885716105630185
+    Attrib TSH measured    -0.5138172893799957
+    Attrib TSH    -1.9211096073070093
+    Attrib T3 measured    1.022933902501153
+    Attrib T3    -0.008031159330720737
+    Attrib TT4 measured    1.080371657258824
+    Attrib TT4    1.1796107375454734
+    Attrib T4U measured    -0.5328017669803854
+    Attrib T4U    0.7225653779480635
+    Attrib FTI measured    -0.4807345645107123
+    Attrib FTI    0.6171259095929856
+    Attrib TBG measured    -0.04567092447900681
+    Attrib TBG    0.023651247391144256
+    Attrib referral source=SVHC    0.5808706368053291
+    Attrib referral source=other    1.0146522258455588
+    Attrib referral source=SVI    2.07017913920978
+    Attrib referral source=STMW    0.7274951695436811
+    Attrib referral source=SVHD    1.0375280980020112
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -2.342355253183764
+    Attrib age    2.294608543624465
+    Attrib sex    0.8364301596509497
+    Attrib on thyroxine    -0.5581606106077892
+    Attrib query on thyroxine    -0.7825278454637397
+    Attrib on antithyroid medication    0.27038658545227795
+    Attrib sick    0.849266998214835
+    Attrib pregnant    0.36281087937742396
+    Attrib thyroid surgery    2.0520816717043013
+    Attrib I131 treatment    0.2947699129549098
+    Attrib query hypothyroid    -1.1811031747880878
+    Attrib query hyperthyroid    -0.6088765284540733
+    Attrib lithium    0.9583349524958332
+    Attrib goitre    1.0896533803351696
+    Attrib tumor    -0.3342169023666818
+    Attrib hypopituitary    0.012797801219528754
+    Attrib psych    1.744396168111811
+    Attrib TSH measured    0.5358058692045894
+    Attrib TSH    -4.0868643991054405
+    Attrib T3 measured    -1.4335675579506328
+    Attrib T3    1.9439884440856785
+    Attrib TT4 measured    -0.5538842510625326
+    Attrib TT4    0.06498620402078255
+    Attrib T4U measured    0.26455579498689197
+    Attrib T4U    -1.105260504841018
+    Attrib FTI measured    0.33244468489119616
+    Attrib FTI    -0.24667265215833103
+    Attrib TBG measured    -0.043159223843183304
+    Attrib TBG    0.011048506868429356
+    Attrib referral source=SVHC    1.386892180764346
+    Attrib referral source=other    1.1905103077196033
+    Attrib referral source=SVI    2.6076985084069815
+    Attrib referral source=STMW    1.2640386731985482
+    Attrib referral source=SVHD    0.6395019714454973
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -2.4103975961007817
+    Attrib age    0.9914907291495245
+    Attrib sex    0.24235460381766025
+    Attrib on thyroxine    0.1979824088833475
+    Attrib query on thyroxine    -0.38249233225679635
+    Attrib on antithyroid medication    0.2989735766335919
+    Attrib sick    -0.5244351255414198
+    Attrib pregnant    0.25072437293467226
+    Attrib thyroid surgery    0.13960564747327422
+    Attrib I131 treatment    0.4010501419720115
+    Attrib query hypothyroid    -0.8622382013413751
+    Attrib query hyperthyroid    -0.197095726773654
+    Attrib lithium    0.6546053291788781
+    Attrib goitre    0.01817130912709559
+    Attrib tumor    -0.209773178727702
+    Attrib hypopituitary    -0.03241894270128794
+    Attrib psych    0.24927182813894624
+    Attrib TSH measured    1.016050707525079
+    Attrib TSH    -3.4484559908274663
+    Attrib T3 measured    -0.23190515880914028
+    Attrib T3    0.4447507818058745
+    Attrib TT4 measured    -0.7773343329440926
+    Attrib TT4    0.6324978636442129
+    Attrib T4U measured    0.07538665897073672
+    Attrib T4U    -0.11775785533438946
+    Attrib FTI measured    0.04735511152036864
+    Attrib FTI    0.09737389967233233
+    Attrib TBG measured    0.029008293516645967
+    Attrib TBG    0.0028404951680139692
+    Attrib referral source=SVHC    1.789336950972189
+    Attrib referral source=other    1.7154332670794474
+    Attrib referral source=SVI    1.8119599985242654
+    Attrib referral source=STMW    0.7906221328272717
+    Attrib referral source=SVHD    1.1211331169513286
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -3.7260877162467896
+    Attrib age    0.8620950563111779
+    Attrib sex    -4.076810833016931
+    Attrib on thyroxine    -9.979322527491803
+    Attrib query on thyroxine    8.442390999795457
+    Attrib on antithyroid medication    0.6935708977235562
+    Attrib sick    -3.738531863849444
+    Attrib pregnant    -0.1256796221072465
+    Attrib thyroid surgery    -11.781712502963073
+    Attrib I131 treatment    0.15921525891897143
+    Attrib query hypothyroid    3.00776482836102
+    Attrib query hyperthyroid    -3.5374803309239384
+    Attrib lithium    2.858245588066697
+    Attrib goitre    -1.1607182600922945
+    Attrib tumor    3.251932139716582
+    Attrib hypopituitary    -0.0015620443514733906
+    Attrib psych    -2.1196087782256128
+    Attrib TSH measured    -5.086486004562275
+    Attrib TSH    47.32183680499583
+    Attrib T3 measured    -0.6224281392205504
+    Attrib T3    -22.15395740797695
+    Attrib TT4 measured    3.070100944717778
+    Attrib TT4    -12.777141694966854
+    Attrib T4U measured    0.2866832679465214
+    Attrib T4U    15.161840370346932
+    Attrib FTI measured    0.8718409438330049
+    Attrib FTI    -27.879241589087208
+    Attrib TBG measured    -0.025593217521908386
+    Attrib TBG    0.02480142551908135
+    Attrib referral source=SVHC    2.9598170620352118
+    Attrib referral source=other    3.356745630359058
+    Attrib referral source=SVI    4.022711542894636
+    Attrib referral source=STMW    -1.4046672722288114
+    Attrib referral source=SVHD    2.2204390986036056
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.7337454876285588
+    Attrib age    -2.283382883292222
+    Attrib sex    1.3795756454369332
+    Attrib on thyroxine    0.23601893452086617
+    Attrib query on thyroxine    0.02360330250783859
+    Attrib on antithyroid medication    0.26488807248791035
+    Attrib sick    2.896412479913828
+    Attrib pregnant    0.8980133581051657
+    Attrib thyroid surgery    2.370527836039785
+    Attrib I131 treatment    1.8960889210309262
+    Attrib query hypothyroid    0.3549171951726117
+    Attrib query hyperthyroid    -0.6255838788922446
+    Attrib lithium    -0.17609801064357908
+    Attrib goitre    0.8952154474253161
+    Attrib tumor    -1.63879928517756
+    Attrib hypopituitary    0.039495398131183745
+    Attrib psych    -1.6600878497117768
+    Attrib TSH measured    -2.5240345895624134
+    Attrib TSH    -2.1937456897488614
+    Attrib T3 measured    -3.1209110999523304
+    Attrib T3    2.2669511689019224
+    Attrib TT4 measured    4.07177850573848
+    Attrib TT4    3.2174618319138704
+    Attrib T4U measured    1.9523635192104054
+    Attrib T4U    2.214056562502758
+    Attrib FTI measured    1.6013443369157545
+    Attrib FTI    2.580206206726991
+    Attrib TBG measured    -0.015373173482457557
+    Attrib TBG    0.02227168312561663
+    Attrib referral source=SVHC    1.1153818855458382
+    Attrib referral source=other    -1.8552781546939348
+    Attrib referral source=SVI    -0.8839194711639393
+    Attrib referral source=STMW    2.7785977835731517
+    Attrib referral source=SVHD    1.0578805347501161
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -1.1087672081354065
+    Attrib age    4.651799653214335
+    Attrib sex    -2.2866891257259696
+    Attrib on thyroxine    2.137620189442727
+    Attrib query on thyroxine    -1.2018414535288415
+    Attrib on antithyroid medication    0.4716837382626475
+    Attrib sick    1.5755220533114522
+    Attrib pregnant    -0.41122253763140393
+    Attrib thyroid surgery    0.17633307999553965
+    Attrib I131 treatment    0.4304967109079144
+    Attrib query hypothyroid    1.3107558881026347
+    Attrib query hyperthyroid    -2.026596980441567
+    Attrib lithium    0.38570647192440083
+    Attrib goitre    0.001090629251176387
+    Attrib tumor    -0.45093575923054596
+    Attrib hypopituitary    0.03852180598513401
+    Attrib psych    3.078228712463484
+    Attrib TSH measured    1.1414629953312798
+    Attrib TSH    -2.4176961601414697
+    Attrib T3 measured    -0.8999093481144338
+    Attrib T3    2.1280997189059563
+    Attrib TT4 measured    3.659409256521266
+    Attrib TT4    0.7459774396009673
+    Attrib T4U measured    -0.3493568141167909
+    Attrib T4U    2.2755253908168958
+    Attrib FTI measured    -0.14319472466055091
+    Attrib FTI    0.758747342879137
+    Attrib TBG measured    -0.027609799179068795
+    Attrib TBG    0.007927272721644264
+    Attrib referral source=SVHC    -1.9270802992839777
+    Attrib referral source=other    0.25130702293464957
+    Attrib referral source=SVI    2.6817143428395642
+    Attrib referral source=STMW    2.9019992180366425
+    Attrib referral source=SVHD    -0.6425068457941139
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -3.501280584216008
+    Attrib age    -3.2817810035020525
+    Attrib sex    -0.28328738411323184
+    Attrib on thyroxine    -1.8360103761271747
+    Attrib query on thyroxine    1.577052246117436
+    Attrib on antithyroid medication    1.0608806815109229
+    Attrib sick    -0.8743514385976423
+    Attrib pregnant    2.634526982289076
+    Attrib thyroid surgery    2.081914355081656
+    Attrib I131 treatment    1.4501626213517138
+    Attrib query hypothyroid    -0.8195891342536263
+    Attrib query hyperthyroid    -0.15291708407817364
+    Attrib lithium    0.7430354602541093
+    Attrib goitre    -0.272004398504369
+    Attrib tumor    -1.1093327743410493
+    Attrib hypopituitary    -0.02119204535287246
+    Attrib psych    -1.571557554988726
+    Attrib TSH measured    -0.03239201185962584
+    Attrib TSH    -3.392056822453606
+    Attrib T3 measured    -1.6887263777408699
+    Attrib T3    0.2596575537524036
+    Attrib TT4 measured    1.1858782258017886
+    Attrib TT4    -1.4513851720230309
+    Attrib T4U measured    -0.45760046410162486
+    Attrib T4U    -2.7224809580575116
+    Attrib FTI measured    -0.5268785946367593
+    Attrib FTI    -2.0022643259837714
+    Attrib TBG measured    0.037858741065485355
+    Attrib TBG    3.50538795712875E-4
+    Attrib referral source=SVHC    3.2200522911825886
+    Attrib referral source=other    0.2573679992561725
+    Attrib referral source=SVI    4.027992652093015
+    Attrib referral source=STMW    0.4988074069085967
+    Attrib referral source=SVHD    2.5031935933702747
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -2.3183125987269366
+    Attrib age    -0.3741115429923646
+    Attrib sex    0.23169182539137786
+    Attrib on thyroxine    0.8382761930333156
+    Attrib query on thyroxine    0.3364535381555174
+    Attrib on antithyroid medication    1.14344611457431
+    Attrib sick    -0.5965003456515112
+    Attrib pregnant    -0.7683068913418705
+    Attrib thyroid surgery    -0.08410543827394215
+    Attrib I131 treatment    0.46757681645843
+    Attrib query hypothyroid    -0.7820944533354015
+    Attrib query hyperthyroid    0.3686175641180331
+    Attrib lithium    0.07685711014181965
+    Attrib goitre    0.19586910791205012
+    Attrib tumor    0.9098105047562182
+    Attrib hypopituitary    0.0314603233999594
+    Attrib psych    -0.19992322599502427
+    Attrib TSH measured    0.07776740041928115
+    Attrib TSH    -4.300527240787634
+    Attrib T3 measured    -1.1606394337662544
+    Attrib T3    -0.1601043342767771
+    Attrib TT4 measured    -0.12976043547375615
+    Attrib TT4    1.4031482394916985
+    Attrib T4U measured    0.04093503980919666
+    Attrib T4U    0.4150301245151211
+    Attrib FTI measured    0.10455367115319389
+    Attrib FTI    0.5093424841808498
+    Attrib TBG measured    -0.006351880964734637
+    Attrib TBG    0.029650355673559114
+    Attrib referral source=SVHC    2.0104304439033314
+    Attrib referral source=other    1.431275951724182
+    Attrib referral source=SVI    1.544167000838641
+    Attrib referral source=STMW    0.01618808567434366
+    Attrib referral source=SVHD    2.1073678932660456
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -2.8122161924758307
+    Attrib age    -1.8286142787742714
+    Attrib sex    -1.5018880181658671
+    Attrib on thyroxine    -1.961523685677771
+    Attrib query on thyroxine    1.2308294477941666
+    Attrib on antithyroid medication    0.19980827773606957
+    Attrib sick    -0.17754051963090453
+    Attrib pregnant    -0.7670018375938671
+    Attrib thyroid surgery    0.0034974810607025938
+    Attrib I131 treatment    2.3266665911480593
+    Attrib query hypothyroid    -1.6310437734598886
+    Attrib query hyperthyroid    -0.09093881034879403
+    Attrib lithium    -0.38464626212553893
+    Attrib goitre    -2.1340399792140357
+    Attrib tumor    -2.5110896188631266
+    Attrib hypopituitary    0.04954590696856635
+    Attrib psych    -0.2992442086999204
+    Attrib TSH measured    2.5305465895910055
+    Attrib TSH    -2.6685021286201325
+    Attrib T3 measured    0.06133442588539086
+    Attrib T3    -4.28718252341627
+    Attrib TT4 measured    2.3437468904533176
+    Attrib TT4    3.013616521291437
+    Attrib T4U measured    -0.21418805941453486
+    Attrib T4U    2.642943617252191
+    Attrib FTI measured    1.4048742274874835
+    Attrib FTI    1.642121877917641
+    Attrib TBG measured    0.0263598814859856
+    Attrib TBG    -0.027994315625845312
+    Attrib referral source=SVHC    2.881580560481956
+    Attrib referral source=other    2.162485595713199
+    Attrib referral source=SVI    -0.846642995409975
+    Attrib referral source=STMW    2.4844529187295348
+    Attrib referral source=SVHD    1.5851946449166356
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -3.0400131529356167
+    Attrib age    -0.8521731987502001
+    Attrib sex    2.4144739232298416
+    Attrib on thyroxine    -0.09036936800938751
+    Attrib query on thyroxine    0.33292839818652026
+    Attrib on antithyroid medication    0.3772887881898546
+    Attrib sick    0.5828783658887676
+    Attrib pregnant    1.4789692086999893
+    Attrib thyroid surgery    1.7719273243150802
+    Attrib I131 treatment    0.4480057248232917
+    Attrib query hypothyroid    -0.2834340308794348
+    Attrib query hyperthyroid    -0.7787119708278163
+    Attrib lithium    0.7569999781580593
+    Attrib goitre    -0.4609997062127636
+    Attrib tumor    -2.7823278310670365
+    Attrib hypopituitary    -0.01298450150430358
+    Attrib psych    -1.236758380170257
+    Attrib TSH measured    0.6682646546563172
+    Attrib TSH    -5.126307318310787
+    Attrib T3 measured    0.2529704884150387
+    Attrib T3    1.4580440611980543
+    Attrib TT4 measured    -1.447929311981401
+    Attrib TT4    -1.2735513784798933
+    Attrib T4U measured    0.37052704527019786
+    Attrib T4U    1.1867730051517105
+    Attrib FTI measured    0.23981436674604362
+    Attrib FTI    -2.67937380034238
+    Attrib TBG measured    -0.02237904852441234
+    Attrib TBG    -0.03542775917809299
+    Attrib referral source=SVHC    1.228621681802937
+    Attrib referral source=other    0.9079256421298864
+    Attrib referral source=SVI    0.49753500373975806
+    Attrib referral source=STMW    4.826456174455305
+    Attrib referral source=SVHD    1.7256824870826344
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -1.0342329835344677
+    Attrib age    -4.384865202635736
+    Attrib sex    0.9087254585472132
+    Attrib on thyroxine    -0.3237206928589205
+    Attrib query on thyroxine    2.2830382076639686
+    Attrib on antithyroid medication    0.05364249021883982
+    Attrib sick    -0.23423732567595948
+    Attrib pregnant    1.2783445736632943
+    Attrib thyroid surgery    2.9690286296825765
+    Attrib I131 treatment    0.6370307101744507
+    Attrib query hypothyroid    3.8394978816602223
+    Attrib query hyperthyroid    2.6674098849466157
+    Attrib lithium    0.4117909986079516
+    Attrib goitre    -0.18799290292999
+    Attrib tumor    -0.3895226848747869
+    Attrib hypopituitary    0.03768090568179154
+    Attrib psych    -0.5794162499073807
+    Attrib TSH measured    -0.9823663108167451
+    Attrib TSH    -4.483229730490013
+    Attrib T3 measured    0.22800726128336277
+    Attrib T3    0.3039689499552342
+    Attrib TT4 measured    -1.2036724700681256
+    Attrib TT4    -1.5770596851043748
+    Attrib T4U measured    0.21178191133165317
+    Attrib T4U    1.9808408582232462
+    Attrib FTI measured    0.1832527075813605
+    Attrib FTI    -1.5411158379083993
+    Attrib TBG measured    0.01828932873058868
+    Attrib TBG    0.01691638980185943
+    Attrib referral source=SVHC    -0.5503008444062849
+    Attrib referral source=other    1.0159157992667962
+    Attrib referral source=SVI    -0.6726183952841166
+    Attrib referral source=STMW    0.6755520505247019
+    Attrib referral source=SVHD    2.791071941713447
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -0.7384457913151519
+    Attrib age    3.8536578179382817
+    Attrib sex    -3.675470853731695
+    Attrib on thyroxine    -1.0345770721372916
+    Attrib query on thyroxine    1.2171585439002222
+    Attrib on antithyroid medication    0.33758802269082533
+    Attrib sick    0.3178354492173665
+    Attrib pregnant    0.700431690178504
+    Attrib thyroid surgery    4.782150507095207
+    Attrib I131 treatment    0.4527595853460246
+    Attrib query hypothyroid    -0.5299783743686018
+    Attrib query hyperthyroid    4.864933654514147
+    Attrib lithium    3.3348755365374827
+    Attrib goitre    2.644266813637136
+    Attrib tumor    0.08688693881726904
+    Attrib hypopituitary    -0.029712134168190255
+    Attrib psych    -0.5571970188757913
+    Attrib TSH measured    0.02613935691509986
+    Attrib TSH    1.7178478911819755
+    Attrib T3 measured    0.7637948311216443
+    Attrib T3    -1.0303894010444663
+    Attrib TT4 measured    0.3648107138475855
+    Attrib TT4    -2.6658073192770804
+    Attrib T4U measured    -0.15707489524092108
+    Attrib T4U    -2.3988504703556695
+    Attrib FTI measured    -0.12102527800675432
+    Attrib FTI    -4.4932064990228975
+    Attrib TBG measured    -0.004209962927678147
+    Attrib TBG    -0.027444975730439247
+    Attrib referral source=SVHC    2.57673128323065
+    Attrib referral source=other    -2.656252962460849
+    Attrib referral source=SVI    2.6715956298870833
+    Attrib referral source=STMW    -0.6035369359989912
+    Attrib referral source=SVHD    0.2702671982225355
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    -3.9295335231962727
+    Attrib age    1.4244336909023665
+    Attrib sex    0.5503189981310405
+    Attrib on thyroxine    -0.1263349035165988
+    Attrib query on thyroxine    -0.5994238947786864
+    Attrib on antithyroid medication    -0.19504557883864834
+    Attrib sick    -0.5577707013526886
+    Attrib pregnant    -0.25584766575828743
+    Attrib thyroid surgery    0.18684228982358445
+    Attrib I131 treatment    -0.347614397172278
+    Attrib query hypothyroid    -0.9267204439752869
+    Attrib query hyperthyroid    0.0027038732367264504
+    Attrib lithium    1.2314727895541906
+    Attrib goitre    1.21970890883284
+    Attrib tumor    0.4719634536108688
+    Attrib hypopituitary    0.024546930862944752
+    Attrib psych    0.05485884699848844
+    Attrib TSH measured    -0.08330295847483131
+    Attrib TSH    -7.101780262300107
+    Attrib T3 measured    -0.6617849541946689
+    Attrib T3    0.3486338887120022
+    Attrib TT4 measured    -0.6287521356942405
+    Attrib TT4    1.2281846495441309
+    Attrib T4U measured    -0.2154251088527713
+    Attrib T4U    0.05539142908049224
+    Attrib FTI measured    0.10477231556541472
+    Attrib FTI    0.02089799195446405
+    Attrib TBG measured    -0.015281730489383638
+    Attrib TBG    0.006011702329614753
+    Attrib referral source=SVHC    2.687599729695454
+    Attrib referral source=other    2.826077561858874
+    Attrib referral source=SVI    2.6774310480012975
+    Attrib referral source=STMW    0.7078888541108452
+    Attrib referral source=SVHD    2.9364260521592227
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    -3.690201748580753
+    Attrib age    0.5703307028062331
+    Attrib sex    0.8330778511821769
+    Attrib on thyroxine    0.6522571423257852
+    Attrib query on thyroxine    0.8939192504613588
+    Attrib on antithyroid medication    -0.14597706012818606
+    Attrib sick    0.0935189983129146
+    Attrib pregnant    0.12868396743047622
+    Attrib thyroid surgery    -0.46798344068721043
+    Attrib I131 treatment    -0.13591391808853026
+    Attrib query hypothyroid    0.20027001303765762
+    Attrib query hyperthyroid    -0.13812629613350616
+    Attrib lithium    0.8575245164607803
+    Attrib goitre    -0.14226514412497332
+    Attrib tumor    -1.0474243071574496
+    Attrib hypopituitary    -0.03831547200024343
+    Attrib psych    -0.04160722707081938
+    Attrib TSH measured    -0.21741894913875454
+    Attrib TSH    -4.927906549337902
+    Attrib T3 measured    -1.282558023185074
+    Attrib T3    0.8551949889958622
+    Attrib TT4 measured    -0.7484337259782896
+    Attrib TT4    0.5098653441775324
+    Attrib T4U measured    0.08175636667484583
+    Attrib T4U    0.016283622073016986
+    Attrib FTI measured    0.41554133672869104
+    Attrib FTI    -0.4222059482542571
+    Attrib TBG measured    0.003936236055046317
+    Attrib TBG    -0.03128699202000643
+    Attrib referral source=SVHC    2.6268800185895222
+    Attrib referral source=other    2.5556145365318788
+    Attrib referral source=SVI    0.9873707789777593
+    Attrib referral source=STMW    2.3872632265011497
+    Attrib referral source=SVHD    2.3666770170982154
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 12.36 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7021
+Mean absolute error                      0.0893
+Root mean squared error                  0.19  
+Relative absolute error                 65.1724 %
+Root relative squared error             72.5853 %
+Total Number of Instances             1244     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.392 
+Mean absolute error                      0.1459
+Root mean squared error                  0.2892
+Relative absolute error                106.4252 %
+Root relative squared error            110.4117 %
+Total Number of Instances             1244     
+

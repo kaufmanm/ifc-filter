@@ -1,0 +1,52 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+class=won =
+
+      0.1216 * bkblk=t +
+      0.0879 * bkon8=f +
+     -0.0619 * bkona=t +
+      0.0817 * bkxbq=t +
+      0.0647 * bkxwp=f +
+      0.4428 * bxqsq=f +
+      0.0874 * cntxt=t +
+      0.4589 * hdchk=f +
+      0.1147 * katri=n,w +
+      0.1344 * katri=w +
+      0.1296 * mulch=f +
+     -0.0904 * qxmsq=f +
+      0.6653 * rimmx=t +
+     -0.0659 * rkxwp=t +
+      0.1915 * rxmsq=f +
+      0.2852 * stlmt=f +
+      0.1452 * wkna8=f +
+      0.3813 * wknck=f +
+      0.1839 * wkpos=t +
+     -1.7024
+
+Time taken to build model: 0.25 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7938
+Mean absolute error                      0.2646
+Root mean squared error                  0.3039
+Relative absolute error                 52.9822 %
+Root relative squared error             60.8229 %
+Total Number of Instances             1054     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7787
+Mean absolute error                      0.2731
+Root mean squared error                  0.3136
+Relative absolute error                 54.6148 %
+Root relative squared error             62.662  %
+Total Number of Instances             1054     
+

@@ -1,0 +1,199 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'soybean-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R36-49,51-54-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z55.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute date numeric
+@attribute plant-stand numeric
+@attribute precip numeric
+@attribute temp numeric
+@attribute hail numeric
+@attribute crop-hist numeric
+@attribute area-damaged numeric
+@attribute severity numeric
+@attribute seed-tmt numeric
+@attribute germination numeric
+@attribute plant-growth numeric
+@attribute leaves numeric
+@attribute leafspots-halo numeric
+@attribute leafspots-marg numeric
+@attribute leafspot-size numeric
+@attribute leaf-shread numeric
+@attribute leaf-malf numeric
+@attribute leaf-mild numeric
+@attribute stem numeric
+@attribute lodging numeric
+@attribute stem-cankers numeric
+@attribute canker-lesion numeric
+@attribute fruiting-bodies numeric
+@attribute external-decay numeric
+@attribute mycelium numeric
+@attribute int-discolor numeric
+@attribute sclerotia numeric
+@attribute fruit-pods numeric
+@attribute fruit-spots numeric
+@attribute seed numeric
+@attribute mold-growth numeric
+@attribute seed-discolor numeric
+@attribute seed-size numeric
+@attribute shriveling numeric
+@attribute roots numeric
+@attribute class=frog-eye-leaf-spot numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+leafspot-size <= 0.329 : LM1 (156/0%)
+leafspot-size >  0.329 : 
+|   date <= 0.218 : LM2 (57/0%)
+|   date >  0.218 : 
+|   |   fruit-spots <= 0.628 : 
+|   |   |   severity <= 0.549 : LM3 (83/71.562%)
+|   |   |   severity >  0.549 : 
+|   |   |   |   leaf-shread <= 0.271 : LM4 (10/0%)
+|   |   |   |   leaf-shread >  0.271 : LM5 (34/112.682%)
+|   |   fruit-spots >  0.628 : 
+|   |   |   germination <= 0.579 : LM6 (17/0%)
+|   |   |   germination >  0.579 : LM7 (18/0%)
+
+LM num: 1
+class=frog-eye-leaf-spot = 
+	0.0098 * date 
+	+ 0.0256 * plant-stand 
+	- 0.0124 * temp 
+	+ 0.0233 * area-damaged 
+	+ 0.0428 * seed-tmt 
+	+ 0.027 * germination 
+	+ 0.0137 * leafspot-size 
+	+ 0.022 * leaf-shread 
+	+ 0.0308 * canker-lesion 
+	+ 0.0573 * fruit-spots 
+	+ 0.0381 * seed 
+	- 0.1086
+
+LM num: 2
+class=frog-eye-leaf-spot = 
+	0.0434 * date 
+	+ 0.0187 * plant-stand 
+	- 0.0091 * temp 
+	+ 0.1285 * area-damaged 
+	+ 0.1459 * seed-tmt 
+	+ 0.0975 * germination 
+	+ 0.01 * leafspot-size 
+	+ 0.0624 * leaf-shread 
+	+ 0.0936 * canker-lesion 
+	+ 0.2027 * fruit-spots 
+	+ 0.0777 * seed 
+	- 0.3361
+
+LM num: 3
+class=frog-eye-leaf-spot = 
+	0.0219 * date 
+	+ 0.068 * plant-stand 
+	- 0.0091 * temp 
+	+ 0.1239 * area-damaged 
+	+ 0.0586 * severity 
+	+ 0.1507 * seed-tmt 
+	+ 0.13 * germination 
+	+ 0.01 * leafspot-size 
+	+ 0.126 * leaf-shread 
+	- 0.7464 * stem 
+	+ 0.0906 * canker-lesion 
+	+ 0.176 * fruit-spots 
+	+ 0.339 * seed 
+	- 0.1168
+
+LM num: 4
+class=frog-eye-leaf-spot = 
+	0.6165 * date 
+	+ 0.1007 * plant-stand 
+	- 0.0091 * temp 
+	+ 0.1239 * area-damaged 
+	+ 0.0973 * severity 
+	+ 0.1507 * seed-tmt 
+	+ 0.5272 * germination 
+	+ 0.01 * leafspot-size 
+	+ 0.3748 * leaf-shread 
+	+ 0.0906 * canker-lesion 
+	+ 0.176 * fruit-spots 
+	+ 0.3726 * seed 
+	- 1.1426
+
+LM num: 5
+class=frog-eye-leaf-spot = 
+	0.3253 * date 
+	+ 0.6756 * plant-stand 
+	- 0.0091 * temp 
+	+ 0.1239 * area-damaged 
+	+ 0.0973 * severity 
+	+ 0.1507 * seed-tmt 
+	+ 0.7646 * germination 
+	+ 0.01 * leafspot-size 
+	+ 0.2697 * leaf-shread 
+	+ 0.0906 * canker-lesion 
+	+ 0.176 * fruit-spots 
+	+ 0.265 * seed 
+	- 1.1961
+
+LM num: 6
+class=frog-eye-leaf-spot = 
+	0.0219 * date 
+	+ 0.0187 * plant-stand 
+	- 0.0091 * temp 
+	+ 0.2371 * area-damaged 
+	+ 0.2847 * seed-tmt 
+	+ 0.2684 * germination 
+	+ 0.01 * leafspot-size 
+	+ 0.1469 * leaf-shread 
+	+ 1.3113 * canker-lesion 
+	+ 0.3026 * fruit-spots 
+	+ 0.1349 * seed 
+	- 0.8964
+
+LM num: 7
+class=frog-eye-leaf-spot = 
+	0.0219 * date 
+	+ 0.0187 * plant-stand 
+	- 0.0091 * temp 
+	+ 0.2371 * area-damaged 
+	+ 0.2847 * seed-tmt 
+	+ 0.2653 * germination 
+	+ 0.01 * leafspot-size 
+	+ 0.1469 * leaf-shread 
+	+ 0.46 * canker-lesion 
+	+ 0.3026 * fruit-spots 
+	+ 0.1349 * seed 
+	- 0.2562
+
+Number of Rules : 7
+
+Time taken to build model: 0.23 seconds
+Time taken to test model on training data: 1.19 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8737
+Mean absolute error                      0.0687
+Root mean squared error                  0.1653
+Relative absolute error                 30.221  %
+Root relative squared error             49.0348 %
+Total Number of Instances              375     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8175
+Mean absolute error                      0.0799
+Root mean squared error                  0.1944
+Relative absolute error                 35.0714 %
+Root relative squared error             57.5177 %
+Total Number of Instances              375     
+

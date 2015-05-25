@@ -1,0 +1,65 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.MultilayerPerceptron 
+
+FilteredClassifier using weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation iris-weka.filters.unsupervised.attribute.NominalToBinary-R5-weka.filters.unsupervised.attribute.Remove-R6-7-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute sepallength numeric
+@attribute sepalwidth numeric
+@attribute petallength numeric
+@attribute petalwidth numeric
+@attribute iris-setosa numeric
+
+@data
+
+
+Classifier Model
+Linear Node 0
+    Inputs    Weights
+    Threshold    -1.0713552894041267
+    Node 1    0.6510707097849874
+    Node 2    1.546082034093907
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.24671877068047862
+    Attrib sepallength    -0.15244433318902406
+    Attrib sepalwidth    -0.14721523414724952
+    Attrib petallength    0.9422963362315124
+    Attrib petalwidth    1.3518234966262312
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.3910123394211696
+    Attrib sepallength    0.28542376180373047
+    Attrib sepalwidth    0.44004474671762245
+    Attrib petallength    1.66178266308957
+    Attrib petalwidth    2.0756154810861296
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0.08 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0.0011
+Root mean squared error                  0.0028
+Relative absolute error                  0.2555 %
+Root relative squared error              0.5921 %
+Total Number of Instances              150     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9975
+Mean absolute error                      0.0101
+Root mean squared error                  0.0347
+Relative absolute error                  2.2588 %
+Root relative squared error              7.2881 %
+Total Number of Instances              150     
+

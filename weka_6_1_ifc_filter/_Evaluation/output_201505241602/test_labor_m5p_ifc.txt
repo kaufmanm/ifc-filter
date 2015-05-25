@@ -1,0 +1,116 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation labor-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R17-weka.filters.unsupervised.attribute.NominalToBinary-R17-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute duration numeric
+@attribute wage-increase-first-year numeric
+@attribute wage-increase-second-year numeric
+@attribute wage-increase-third-year numeric
+@attribute cost-of-living-adjustment numeric
+@attribute working-hours numeric
+@attribute pension numeric
+@attribute standby-pay numeric
+@attribute shift-differential numeric
+@attribute education-allowance numeric
+@attribute statutory-holidays numeric
+@attribute vacation numeric
+@attribute longterm-disability-assistance numeric
+@attribute contribution-to-dental-plan numeric
+@attribute bereavement-assistance numeric
+@attribute contribution-to-health-plan numeric
+@attribute class numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+wage-increase-first-year <= 0.851 : 
+|   pension <= 0.175 : LM1 (11/0%)
+|   pension >  0.175 : 
+|   |   wage-increase-second-year <= 0.669 : 
+|   |   |   working-hours <= 0.682 : LM2 (15/60.514%)
+|   |   |   working-hours >  0.682 : LM3 (7/0%)
+|   |   wage-increase-second-year >  0.669 : LM4 (9/0%)
+wage-increase-first-year >  0.851 : LM5 (15/0%)
+
+LM num: 1
+class = 
+	0.1271 * wage-increase-first-year 
+	+ 0.3637 * wage-increase-second-year 
+	+ 0.4247 * working-hours 
+	+ 0.3085 * pension 
+	+ 0.2022 * shift-differential 
+	+ 0.2314 * contribution-to-dental-plan 
+	- 0.4604
+
+LM num: 2
+class = 
+	0.1271 * wage-increase-first-year 
+	+ 0.7683 * wage-increase-second-year 
+	+ 0.6773 * working-hours 
+	+ 0.2301 * pension 
+	+ 0.5161 * shift-differential 
+	+ 0.3469 * contribution-to-dental-plan 
+	- 0.764
+
+LM num: 3
+class = 
+	0.1271 * wage-increase-first-year 
+	+ 0.5597 * wage-increase-second-year 
+	+ 0.7473 * working-hours 
+	+ 0.2301 * pension 
+	+ 0.2209 * shift-differential 
+	+ 0.3912 * contribution-to-dental-plan 
+	- 0.553
+
+LM num: 4
+class = 
+	0.1271 * wage-increase-first-year 
+	+ 0.5002 * wage-increase-second-year 
+	+ 0.5839 * working-hours 
+	+ 0.2301 * pension 
+	+ 0.2786 * shift-differential 
+	+ 0.2619 * contribution-to-dental-plan 
+	- 0.3527
+
+LM num: 5
+class = 
+	0.2416 * wage-increase-first-year 
+	+ 0.1473 * wage-increase-second-year 
+	+ 0.2725 * working-hours 
+	+ 0.2433 * pension 
+	+ 0.1126 * contribution-to-dental-plan 
+	+ 0.2648
+
+Number of Rules : 5
+
+Time taken to build model: 0.23 seconds
+Time taken to test model on training data: 0.09 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9202
+Mean absolute error                      0.1241
+Root mean squared error                  0.1961
+Relative absolute error                 27.2478 %
+Root relative squared error             41.082  %
+Total Number of Instances               57     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6465
+Mean absolute error                      0.2543
+Root mean squared error                  0.3653
+Relative absolute error                 54.8633 %
+Root relative squared error             75.163  %
+Total Number of Instances               57     
+

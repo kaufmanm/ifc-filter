@@ -1,0 +1,53 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -723.4454;  df=8;  p=      0   
+
+SQL:
+
+1-1/(1+exp(     -0.1232*preg
++     -0.0352*plas
++      0.0133*pres
++     -0.0006*skin
++      0.0012*insu
++     -0.0897*mass
++     -0.9452*pedi
++     -0.0149*age
++     8.4047))
+
+Odds Ratios...
+Variable         O.R.
+       1       0.8841
+       2       0.9654
+       3       1.0134
+       4       0.9994
+       5       1.0012
+       6       0.9142
+       7       0.3886
+       8       0.9852
+
+
+Time taken to build model: 0.05 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5725
+Mean absolute error                      0.3063
+Root mean squared error                  0.3908
+Relative absolute error                 67.4103 %
+Root relative squared error             81.9908 %
+Total Number of Instances              768     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5571
+Mean absolute error                      0.3101
+Root mean squared error                  0.3959
+Relative absolute error                 68.1749 %
+Root relative squared error             82.973  %
+Total Number of Instances              768     
+

@@ -1,0 +1,208 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+left-weight <= 2.5 : 
+|   left-distance <= 2.5 : 
+|   |   right-weight <= 3.5 : 
+|   |   |   right-distance <= 3.5 : LM1 (36/57.103%)
+|   |   |   right-distance >  3.5 : LM2 (24/0%)
+|   |   right-weight >  3.5 : LM3 (40/0%)
+|   left-distance >  2.5 : 
+|   |   right-weight <= 2.5 : LM4 (60/58.585%)
+|   |   right-weight >  2.5 : 
+|   |   |   right-distance <= 3.5 : 
+|   |   |   |   right-distance <= 1.5 : 
+|   |   |   |   |   left-weight <= 1.5 : LM5 (9/54.601%)
+|   |   |   |   |   left-weight >  1.5 : LM6 (9/0%)
+|   |   |   |   right-distance >  1.5 : 
+|   |   |   |   |   left-weight <= 1.5 : LM7 (18/0%)
+|   |   |   |   |   left-weight >  1.5 : LM8 (18/60.02%)
+|   |   |   right-distance >  3.5 : LM9 (36/0%)
+left-weight >  2.5 : 
+|   left-distance <= 2.5 : 
+|   |   right-weight <= 2.5 : LM10 (60/58.585%)
+|   |   right-weight >  2.5 : 
+|   |   |   right-distance <= 3.5 : 
+|   |   |   |   right-distance <= 1.5 : 
+|   |   |   |   |   left-distance <= 1.5 : LM11 (9/54.601%)
+|   |   |   |   |   left-distance >  1.5 : LM12 (9/0%)
+|   |   |   |   right-distance >  1.5 : 
+|   |   |   |   |   left-distance <= 1.5 : LM13 (18/0%)
+|   |   |   |   |   left-distance >  1.5 : LM14 (18/60.02%)
+|   |   |   right-distance >  3.5 : LM15 (36/0%)
+|   left-distance >  2.5 : 
+|   |   right-weight <= 2.5 : LM16 (90/20.792%)
+|   |   right-weight >  2.5 : 
+|   |   |   right-distance <= 2.5 : LM17 (54/27.047%)
+|   |   |   right-distance >  2.5 : LM18 (81/59.132%)
+
+LM num: 1
+class=L = 
+	0.2108 * left-weight 
+	+ 0.1988 * left-distance 
+	- 0.1284 * right-weight 
+	- 0.1268 * right-distance 
+	+ 0.1128
+
+LM num: 2
+class=L = 
+	0.092 * left-weight 
+	+ 0.08 * left-distance 
+	- 0.0571 * right-weight 
+	- 0.055 * right-distance 
+	+ 0.1054
+
+LM num: 3
+class=L = 
+	0.0559 * left-weight 
+	+ 0.0439 * left-distance 
+	- 0.0352 * right-weight 
+	- 0.0352 * right-distance 
+	+ 0.0882
+
+LM num: 4
+class=L = 
+	0.3254 * left-weight 
+	+ 0.1203 * left-distance 
+	- 0.2985 * right-weight 
+	- 0.1784 * right-distance 
+	+ 0.6196
+
+LM num: 5
+class=L = 
+	0.3232 * left-weight 
+	+ 0.1512 * left-distance 
+	- 0.1603 * right-weight 
+	- 0.1426 * right-distance 
+	+ 0.2318
+
+LM num: 6
+class=L = 
+	0.3232 * left-weight 
+	+ 0.112 * left-distance 
+	- 0.121 * right-weight 
+	- 0.1426 * right-distance 
+	+ 0.3103
+
+LM num: 7
+class=L = 
+	0.1993 * left-weight 
+	+ 0.0895 * left-distance 
+	- 0.0986 * right-weight 
+	- 0.1144 * right-distance 
+	+ 0.1845
+
+LM num: 8
+class=L = 
+	0.1993 * left-weight 
+	+ 0.1449 * left-distance 
+	- 0.154 * right-weight 
+	- 0.1144 * right-distance 
+	+ 0.2337
+
+LM num: 9
+class=L = 
+	0.1082 * left-weight 
+	+ 0.0477 * left-distance 
+	- 0.0567 * right-weight 
+	- 0.0711 * right-distance 
+	+ 0.1826
+
+LM num: 10
+class=L = 
+	0.1191 * left-weight 
+	+ 0.3249 * left-distance 
+	- 0.3039 * right-weight 
+	- 0.1815 * right-distance 
+	+ 0.6483
+
+LM num: 11
+class=L = 
+	0.1505 * left-weight 
+	+ 0.3227 * left-distance 
+	- 0.1631 * right-weight 
+	- 0.1451 * right-distance 
+	+ 0.2531
+
+LM num: 12
+class=L = 
+	0.1106 * left-weight 
+	+ 0.3227 * left-distance 
+	- 0.1231 * right-weight 
+	- 0.1451 * right-distance 
+	+ 0.333
+
+LM num: 13
+class=L = 
+	0.0877 * left-weight 
+	+ 0.1964 * left-distance 
+	- 0.1002 * right-weight 
+	- 0.1163 * right-distance 
+	+ 0.2048
+
+LM num: 14
+class=L = 
+	0.1441 * left-weight 
+	+ 0.1964 * left-distance 
+	- 0.1567 * right-weight 
+	- 0.1163 * right-distance 
+	+ 0.255
+
+LM num: 15
+class=L = 
+	0.045 * left-weight 
+	+ 0.1035 * left-distance 
+	- 0.0576 * right-weight 
+	- 0.0722 * right-distance 
+	+ 0.2029
+
+LM num: 16
+class=L = 
+	0.0243 * left-weight 
+	+ 0.028 * left-distance 
+	- 0.032 * right-weight 
+	- 0.0406 * right-distance 
+	+ 0.9479
+
+LM num: 17
+class=L = 
+	0.0479 * left-weight 
+	+ 0.0516 * left-distance 
+	- 0.0542 * right-weight 
+	- 0.0659 * right-distance 
+	+ 0.8703
+
+LM num: 18
+class=L = 
+	0.205 * left-weight 
+	+ 0.2086 * left-distance 
+	- 0.2112 * right-weight 
+	- 0.2197 * right-distance 
+	+ 0.4922
+
+Number of Rules : 18
+
+Time taken to build model: 0.2 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8941
+Mean absolute error                      0.1664
+Root mean squared error                  0.2243
+Relative absolute error                 33.4942 %
+Root relative squared error             45.0014 %
+Total Number of Instances              625     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8303
+Mean absolute error                      0.207 
+Root mean squared error                  0.2784
+Relative absolute error                 41.5836 %
+Root relative squared error             55.7668 %
+Total Number of Instances              625     
+

@@ -1,0 +1,97 @@
+
+Linear Node 0
+    Inputs    Weights
+    Threshold    -0.12072736928738752
+    Node 1    -0.8470263982112721
+    Node 2    1.3095375599068106
+    Node 3    1.1990751674856988
+    Node 4    -0.47064333094726
+    Node 5    -0.8680033120643122
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -4.308140128648242
+    Attrib Clump_Thickness    8.503838743141134
+    Attrib Cell_Size_Uniformity    -3.2986073723941036
+    Attrib Cell_Shape_Uniformity    -1.21107059127811
+    Attrib Marginal_Adhesion    -4.567997816210485
+    Attrib Single_Epi_Cell_Size    3.09127689119594
+    Attrib Bare_Nuclei    4.071627401447874
+    Attrib Bland_Chromatin    2.814632103970715
+    Attrib Normal_Nucleoli    -3.278501533691183
+    Attrib Mitoses    3.4688413035380865
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -8.25553558454796
+    Attrib Clump_Thickness    -2.0624050172756725
+    Attrib Cell_Size_Uniformity    2.4863662358879974
+    Attrib Cell_Shape_Uniformity    0.12029315480132277
+    Attrib Marginal_Adhesion    1.4886565899077233
+    Attrib Single_Epi_Cell_Size    1.1226530827222698
+    Attrib Bare_Nuclei    -1.3229521889272478
+    Attrib Bland_Chromatin    -1.077719589593741
+    Attrib Normal_Nucleoli    2.374030673541601
+    Attrib Mitoses    -4.159021427168587
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -19.775459103722714
+    Attrib Clump_Thickness    -7.148547401673207
+    Attrib Cell_Size_Uniformity    -3.2554661518399
+    Attrib Cell_Shape_Uniformity    -1.0701410559807205
+    Attrib Marginal_Adhesion    -4.738023446253955
+    Attrib Single_Epi_Cell_Size    0.428016757577851
+    Attrib Bare_Nuclei    -6.191280097057513
+    Attrib Bland_Chromatin    -3.435257830748037
+    Attrib Normal_Nucleoli    -3.175150949531097
+    Attrib Mitoses    -6.497688727010175
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -4.7731825420745615
+    Attrib Clump_Thickness    -7.19775199329709
+    Attrib Cell_Size_Uniformity    -0.33817762047320155
+    Attrib Cell_Shape_Uniformity    5.0192318899255435
+    Attrib Marginal_Adhesion    4.14118913439745
+    Attrib Single_Epi_Cell_Size    -4.7522626606571885
+    Attrib Bare_Nuclei    3.97825793842228
+    Attrib Bland_Chromatin    0.6857284177196912
+    Attrib Normal_Nucleoli    3.2845819758427526
+    Attrib Mitoses    -2.0688389219761008
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -7.735015436669597
+    Attrib Clump_Thickness    3.4244453079410158
+    Attrib Cell_Size_Uniformity    6.656171479420784
+    Attrib Cell_Shape_Uniformity    -2.1933794730930862
+    Attrib Marginal_Adhesion    0.3122609674522695
+    Attrib Single_Epi_Cell_Size    1.5045980338142626
+    Attrib Bare_Nuclei    -4.88395060731233
+    Attrib Bland_Chromatin    -0.9304328805006769
+    Attrib Normal_Nucleoli    0.9587136954419277
+    Attrib Mitoses    -1.70331575904206
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 0.78 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9517
+Mean absolute error                      0.0969
+Root mean squared error                  0.1625
+Relative absolute error                 21.4552 %
+Root relative squared error             34.1869 %
+Total Number of Instances              699     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8641
+Mean absolute error                      0.1367
+Root mean squared error                  0.2487
+Relative absolute error                 30.2173 %
+Root relative squared error             52.2275 %
+Total Number of Instances              699     
+

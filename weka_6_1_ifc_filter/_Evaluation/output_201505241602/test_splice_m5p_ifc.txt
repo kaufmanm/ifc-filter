@@ -1,0 +1,823 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'splice-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R1,62-63-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z22.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute attribute_1 numeric
+@attribute attribute_2 numeric
+@attribute attribute_3 numeric
+@attribute attribute_4 numeric
+@attribute attribute_5 numeric
+@attribute attribute_6 numeric
+@attribute attribute_7 numeric
+@attribute attribute_8 numeric
+@attribute attribute_9 numeric
+@attribute attribute_10 numeric
+@attribute attribute_11 numeric
+@attribute attribute_12 numeric
+@attribute attribute_13 numeric
+@attribute attribute_14 numeric
+@attribute attribute_15 numeric
+@attribute attribute_16 numeric
+@attribute attribute_17 numeric
+@attribute attribute_18 numeric
+@attribute attribute_19 numeric
+@attribute attribute_20 numeric
+@attribute attribute_21 numeric
+@attribute attribute_22 numeric
+@attribute attribute_23 numeric
+@attribute attribute_24 numeric
+@attribute attribute_25 numeric
+@attribute attribute_26 numeric
+@attribute attribute_27 numeric
+@attribute attribute_28 numeric
+@attribute attribute_29 numeric
+@attribute attribute_30 numeric
+@attribute attribute_31 numeric
+@attribute attribute_32 numeric
+@attribute attribute_33 numeric
+@attribute attribute_34 numeric
+@attribute attribute_35 numeric
+@attribute attribute_36 numeric
+@attribute attribute_37 numeric
+@attribute attribute_38 numeric
+@attribute attribute_39 numeric
+@attribute attribute_40 numeric
+@attribute attribute_41 numeric
+@attribute attribute_42 numeric
+@attribute attribute_43 numeric
+@attribute attribute_44 numeric
+@attribute attribute_45 numeric
+@attribute attribute_46 numeric
+@attribute attribute_47 numeric
+@attribute attribute_48 numeric
+@attribute attribute_49 numeric
+@attribute attribute_50 numeric
+@attribute attribute_51 numeric
+@attribute attribute_52 numeric
+@attribute attribute_53 numeric
+@attribute attribute_54 numeric
+@attribute attribute_55 numeric
+@attribute attribute_56 numeric
+@attribute attribute_57 numeric
+@attribute attribute_58 numeric
+@attribute attribute_59 numeric
+@attribute attribute_60 numeric
+@attribute Class=N numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+attribute_30 <= 0.541 : 
+|   attribute_29 <= 0.751 : 
+|   |   attribute_28 <= 0.562 : 
+|   |   |   attribute_32 <= 0.472 : LM1 (110/0%)
+|   |   |   attribute_32 >  0.472 : 
+|   |   |   |   attribute_24 <= 0.509 : 
+|   |   |   |   |   attribute_42 <= 0.525 : LM2 (63/0%)
+|   |   |   |   |   attribute_42 >  0.525 : 
+|   |   |   |   |   |   attribute_7 <= 0.489 : LM3 (17/0%)
+|   |   |   |   |   |   attribute_7 >  0.489 : 
+|   |   |   |   |   |   |   attribute_36 <= 0.524 : LM4 (9/0%)
+|   |   |   |   |   |   |   attribute_36 >  0.524 : LM5 (4/86.815%)
+|   |   |   |   attribute_24 >  0.509 : 
+|   |   |   |   |   attribute_26 <= 0.409 : LM6 (13/0%)
+|   |   |   |   |   attribute_26 >  0.409 : LM7 (18/73.284%)
+|   |   attribute_28 >  0.562 : 
+|   |   |   attribute_32 <= 0.472 : 
+|   |   |   |   attribute_40 <= 0.498 : LM8 (23/0%)
+|   |   |   |   attribute_40 >  0.498 : 
+|   |   |   |   |   attribute_25 <= 0.611 : 
+|   |   |   |   |   |   attribute_16 <= 0.501 : LM9 (3/0%)
+|   |   |   |   |   |   attribute_16 >  0.501 : LM10 (6/0%)
+|   |   |   |   |   attribute_25 >  0.611 : LM11 (8/0%)
+|   |   |   attribute_32 >  0.472 : 
+|   |   |   |   attribute_21 <= 0.45 : LM12 (5/0%)
+|   |   |   |   attribute_21 >  0.45 : LM13 (15/0%)
+|   attribute_29 >  0.751 : 
+|   |   attribute_31 <= 0.439 : 
+|   |   |   attribute_32 <= 0.472 : 
+|   |   |   |   attribute_34 <= 0.457 : LM14 (32/0%)
+|   |   |   |   attribute_34 >  0.457 : 
+|   |   |   |   |   attribute_58 <= 0.5 : LM15 (7/0%)
+|   |   |   |   |   attribute_58 >  0.5 : LM16 (5/0%)
+|   |   |   attribute_32 >  0.472 : LM17 (19/36.347%)
+|   |   attribute_31 >  0.439 : LM18 (40/0%)
+attribute_30 >  0.541 : 
+|   attribute_34 <= 0.564 : 
+|   |   attribute_35 <= 0.627 : 
+|   |   |   attribute_32 <= 0.472 : 
+|   |   |   |   attribute_31 <= 0.439 : 
+|   |   |   |   |   attribute_19 <= 0.419 : LM19 (13/0%)
+|   |   |   |   |   attribute_19 >  0.419 : 
+|   |   |   |   |   |   attribute_35 <= 0.441 : LM20 (14/0%)
+|   |   |   |   |   |   attribute_35 >  0.441 : LM21 (6/0%)
+|   |   |   |   attribute_31 >  0.439 : LM22 (23/0%)
+|   |   |   attribute_32 >  0.472 : 
+|   |   |   |   attribute_27 <= 0.535 : LM23 (54/0%)
+|   |   |   |   attribute_27 >  0.535 : 
+|   |   |   |   |   attribute_59 <= 0.538 : LM24 (11/0%)
+|   |   |   |   |   attribute_59 >  0.538 : 
+|   |   |   |   |   |   attribute_12 <= 0.514 : LM25 (2/0%)
+|   |   |   |   |   |   attribute_12 >  0.514 : LM26 (2/0%)
+|   |   attribute_35 >  0.627 : LM27 (36/0%)
+|   attribute_34 >  0.564 : LM28 (143/0%)
+
+LM num: 1
+Class=N = 
+	0.019 * attribute_3 
+	+ 0.1121 * attribute_7 
+	+ 0.0361 * attribute_10 
+	+ 0.039 * attribute_11 
+	+ 0.0501 * attribute_12 
+	+ 0.0338 * attribute_18 
+	+ 0.0118 * attribute_19 
+	+ 0.1056 * attribute_21 
+	+ 0.1556 * attribute_24 
+	+ 0.0098 * attribute_25 
+	+ 0.1151 * attribute_26 
+	+ 0.0742 * attribute_28 
+	+ 0.0471 * attribute_29 
+	+ 0.0182 * attribute_30 
+	+ 0.0347 * attribute_31 
+	+ 0.1238 * attribute_32 
+	+ 0.0332 * attribute_34 
+	+ 0.0193 * attribute_35 
+	+ 0.0498 * attribute_36 
+	- 0.4828
+
+LM num: 2
+Class=N = 
+	0.019 * attribute_3 
+	+ 0.3239 * attribute_7 
+	+ 0.0361 * attribute_10 
+	+ 0.039 * attribute_11 
+	+ 0.045 * attribute_12 
+	+ 0.0338 * attribute_18 
+	+ 0.0118 * attribute_19 
+	+ 0.1853 * attribute_21 
+	+ 0.302 * attribute_24 
+	+ 0.0098 * attribute_25 
+	+ 0.195 * attribute_26 
+	+ 0.0742 * attribute_28 
+	+ 0.0471 * attribute_29 
+	+ 0.0182 * attribute_30 
+	+ 0.0347 * attribute_31 
+	+ 0.1201 * attribute_32 
+	+ 0.0332 * attribute_34 
+	+ 0.0193 * attribute_35 
+	+ 0.0498 * attribute_36 
+	+ 0.1351 * attribute_42 
+	- 0.7772
+
+LM num: 3
+Class=N = 
+	-1.0026 * attribute_1 
+	+ 0.019 * attribute_3 
+	+ 1.3717 * attribute_7 
+	+ 0.0361 * attribute_10 
+	+ 0.039 * attribute_11 
+	+ 0.045 * attribute_12 
+	+ 0.0338 * attribute_18 
+	+ 0.0118 * attribute_19 
+	+ 0.1853 * attribute_21 
+	+ 0.302 * attribute_24 
+	+ 0.0098 * attribute_25 
+	+ 0.195 * attribute_26 
+	+ 0.0742 * attribute_28 
+	+ 0.0471 * attribute_29 
+	+ 0.0182 * attribute_30 
+	+ 0.0347 * attribute_31 
+	+ 0.1201 * attribute_32 
+	+ 0.0332 * attribute_34 
+	+ 0.0193 * attribute_35 
+	+ 0.5203 * attribute_36 
+	+ 0.2342 * attribute_42 
+	- 1.0564
+
+LM num: 4
+Class=N = 
+	-2.8672 * attribute_1 
+	+ 0.019 * attribute_3 
+	+ 1.4992 * attribute_7 
+	+ 0.0361 * attribute_10 
+	+ 0.039 * attribute_11 
+	+ 0.045 * attribute_12 
+	+ 0.0338 * attribute_18 
+	+ 0.0118 * attribute_19 
+	+ 0.1853 * attribute_21 
+	+ 0.302 * attribute_24 
+	+ 0.0098 * attribute_25 
+	+ 0.195 * attribute_26 
+	+ 0.0742 * attribute_28 
+	+ 0.0471 * attribute_29 
+	+ 0.0182 * attribute_30 
+	+ 0.0347 * attribute_31 
+	+ 0.1201 * attribute_32 
+	+ 0.0332 * attribute_34 
+	+ 0.0193 * attribute_35 
+	+ 1.1562 * attribute_36 
+	+ 0.2342 * attribute_42 
+	- 0.4646
+
+LM num: 5
+Class=N = 
+	-3.3202 * attribute_1 
+	+ 0.019 * attribute_3 
+	+ 1.4992 * attribute_7 
+	+ 0.0361 * attribute_10 
+	+ 0.039 * attribute_11 
+	+ 0.045 * attribute_12 
+	+ 0.0338 * attribute_18 
+	+ 0.0118 * attribute_19 
+	+ 0.1853 * attribute_21 
+	+ 0.302 * attribute_24 
+	+ 0.0098 * attribute_25 
+	+ 0.195 * attribute_26 
+	+ 0.0742 * attribute_28 
+	+ 0.0471 * attribute_29 
+	+ 0.0182 * attribute_30 
+	+ 0.0347 * attribute_31 
+	+ 0.1201 * attribute_32 
+	+ 0.0332 * attribute_34 
+	+ 0.0193 * attribute_35 
+	+ 1.3059 * attribute_36 
+	+ 0.2342 * attribute_42 
+	- 0.2706
+
+LM num: 6
+Class=N = 
+	0.019 * attribute_3 
+	+ 0.1121 * attribute_7 
+	+ 0.0361 * attribute_10 
+	+ 0.039 * attribute_11 
+	+ 0.045 * attribute_12 
+	+ 0.0338 * attribute_18 
+	+ 0.0118 * attribute_19 
+	+ 0.9409 * attribute_21 
+	+ 0.5102 * attribute_24 
+	+ 0.0098 * attribute_25 
+	+ 0.8638 * attribute_26 
+	+ 0.0742 * attribute_28 
+	+ 0.0471 * attribute_29 
+	+ 0.0182 * attribute_30 
+	+ 0.0347 * attribute_31 
+	+ 0.1201 * attribute_32 
+	+ 0.0332 * attribute_34 
+	+ 0.0193 * attribute_35 
+	+ 0.0498 * attribute_36 
+	- 1.275
+
+LM num: 7
+Class=N = 
+	0.019 * attribute_3 
+	+ 0.1121 * attribute_7 
+	+ 0.0361 * attribute_10 
+	+ 0.039 * attribute_11 
+	+ 1.5143 * attribute_12 
+	+ 0.0338 * attribute_18 
+	+ 0.0118 * attribute_19 
+	+ 1.627 * attribute_21 
+	+ 0.5102 * attribute_24 
+	+ 0.0098 * attribute_25 
+	+ 0.7796 * attribute_26 
+	+ 0.0742 * attribute_28 
+	+ 0.0471 * attribute_29 
+	+ 0.0182 * attribute_30 
+	+ 0.0347 * attribute_31 
+	+ 0.1201 * attribute_32 
+	+ 0.0332 * attribute_34 
+	+ 0.0193 * attribute_35 
+	+ 0.0498 * attribute_36 
+	- 2.1631
+
+LM num: 8
+Class=N = 
+	0.019 * attribute_3 
+	+ 0.2199 * attribute_7 
+	+ 0.0361 * attribute_10 
+	+ 0.039 * attribute_11 
+	+ 0.5651 * attribute_16 
+	+ 0.0338 * attribute_18 
+	+ 0.0118 * attribute_19 
+	+ 0.1385 * attribute_21 
+	+ 0.1719 * attribute_24 
+	+ 0.0098 * attribute_25 
+	+ 0.1652 * attribute_26 
+	+ 0.1597 * attribute_28 
+	+ 0.0471 * attribute_29 
+	+ 0.0182 * attribute_30 
+	+ 0.0347 * attribute_31 
+	+ 0.5389 * attribute_32 
+	+ 0.0332 * attribute_34 
+	+ 0.0193 * attribute_35 
+	+ 0.0498 * attribute_36 
+	+ 0.6818 * attribute_40 
+	- 1.2882
+
+LM num: 9
+Class=N = 
+	0.019 * attribute_3 
+	+ 0.2199 * attribute_7 
+	+ 0.0361 * attribute_10 
+	+ 0.039 * attribute_11 
+	+ 2.0694 * attribute_16 
+	+ 0.0338 * attribute_18 
+	+ 0.0118 * attribute_19 
+	+ 0.1385 * attribute_21 
+	+ 0.1719 * attribute_24 
+	- 0.2811 * attribute_25 
+	+ 0.1652 * attribute_26 
+	+ 0.1597 * attribute_28 
+	+ 0.0471 * attribute_29 
+	+ 0.0182 * attribute_30 
+	+ 0.0347 * attribute_31 
+	+ 0.5389 * attribute_32 
+	+ 0.0332 * attribute_34 
+	+ 0.0193 * attribute_35 
+	+ 0.0498 * attribute_36 
+	+ 0.8096 * attribute_40 
+	- 1.8468
+
+LM num: 10
+Class=N = 
+	0.019 * attribute_3 
+	+ 0.2199 * attribute_7 
+	+ 0.0361 * attribute_10 
+	+ 0.039 * attribute_11 
+	+ 1.9708 * attribute_16 
+	+ 0.0338 * attribute_18 
+	+ 0.0118 * attribute_19 
+	+ 0.1385 * attribute_21 
+	+ 0.1719 * attribute_24 
+	- 0.2811 * attribute_25 
+	+ 0.1652 * attribute_26 
+	+ 0.1597 * attribute_28 
+	+ 0.0471 * attribute_29 
+	+ 0.0182 * attribute_30 
+	+ 0.0347 * attribute_31 
+	+ 0.5389 * attribute_32 
+	+ 0.0332 * attribute_34 
+	+ 0.0193 * attribute_35 
+	+ 0.0498 * attribute_36 
+	+ 0.8096 * attribute_40 
+	- 1.7732
+
+LM num: 11
+Class=N = 
+	0.019 * attribute_3 
+	+ 0.2199 * attribute_7 
+	+ 0.0361 * attribute_10 
+	+ 0.039 * attribute_11 
+	+ 1.4119 * attribute_16 
+	+ 0.0338 * attribute_18 
+	+ 0.0118 * attribute_19 
+	+ 0.1385 * attribute_21 
+	+ 0.1719 * attribute_24 
+	- 0.2937 * attribute_25 
+	+ 0.1652 * attribute_26 
+	+ 0.1597 * attribute_28 
+	+ 0.0471 * attribute_29 
+	+ 0.0182 * attribute_30 
+	+ 0.0347 * attribute_31 
+	+ 0.5389 * attribute_32 
+	+ 0.0332 * attribute_34 
+	+ 0.0193 * attribute_35 
+	+ 0.0498 * attribute_36 
+	+ 0.8096 * attribute_40 
+	- 1.551
+
+LM num: 12
+Class=N = 
+	0.019 * attribute_3 
+	+ 0.2199 * attribute_7 
+	+ 0.0361 * attribute_10 
+	+ 1.7826 * attribute_11 
+	+ 0.3765 * attribute_16 
+	+ 0.0338 * attribute_18 
+	+ 0.0118 * attribute_19 
+	+ 0.7825 * attribute_21 
+	+ 0.1719 * attribute_24 
+	+ 0.0098 * attribute_25 
+	+ 0.1652 * attribute_26 
+	+ 0.1597 * attribute_28 
+	+ 0.0471 * attribute_29 
+	+ 0.0182 * attribute_30 
+	+ 0.0347 * attribute_31 
+	+ 0.7531 * attribute_32 
+	+ 0.0332 * attribute_34 
+	+ 0.0193 * attribute_35 
+	+ 0.0498 * attribute_36 
+	- 1.8898
+
+LM num: 13
+Class=N = 
+	0.019 * attribute_3 
+	+ 0.2199 * attribute_7 
+	+ 0.0361 * attribute_10 
+	+ 0.039 * attribute_11 
+	+ 0.3765 * attribute_16 
+	+ 0.0338 * attribute_18 
+	+ 0.0118 * attribute_19 
+	+ 0.5678 * attribute_21 
+	+ 0.1719 * attribute_24 
+	+ 0.0098 * attribute_25 
+	+ 0.1652 * attribute_26 
+	+ 0.1597 * attribute_28 
+	+ 0.0471 * attribute_29 
+	+ 0.0182 * attribute_30 
+	+ 0.0347 * attribute_31 
+	+ 0.7531 * attribute_32 
+	+ 0.0332 * attribute_34 
+	+ 0.0193 * attribute_35 
+	+ 0.0498 * attribute_36 
+	- 0.7581
+
+LM num: 14
+Class=N = 
+	0.019 * attribute_3 
+	+ 0.1466 * attribute_7 
+	- 0.0526 * attribute_10 
+	+ 0.08 * attribute_11 
+	+ 0.0701 * attribute_18 
+	+ 0.0118 * attribute_19 
+	+ 0.0804 * attribute_21 
+	+ 0.073 * attribute_24 
+	+ 0.0098 * attribute_25 
+	+ 0.0855 * attribute_26 
+	+ 0.0743 * attribute_28 
+	+ 0.0967 * attribute_29 
+	+ 0.0182 * attribute_30 
+	+ 0.1625 * attribute_31 
+	+ 0.6679 * attribute_32 
+	+ 0.6088 * attribute_34 
+	+ 0.0193 * attribute_35 
+	+ 0.0922 * attribute_36 
+	+ 1.3086 * attribute_58 
+	- 1.4547
+
+LM num: 15
+Class=N = 
+	0.019 * attribute_3 
+	+ 0.1466 * attribute_7 
+	- 0.0526 * attribute_10 
+	+ 0.08 * attribute_11 
+	+ 0.0701 * attribute_18 
+	+ 0.0118 * attribute_19 
+	+ 0.0804 * attribute_21 
+	+ 0.073 * attribute_24 
+	+ 0.0098 * attribute_25 
+	+ 0.0855 * attribute_26 
+	+ 0.0743 * attribute_28 
+	+ 0.0967 * attribute_29 
+	+ 0.0182 * attribute_30 
+	+ 0.1625 * attribute_31 
+	+ 0.6679 * attribute_32 
+	+ 0.7919 * attribute_34 
+	+ 0.0193 * attribute_35 
+	+ 0.0922 * attribute_36 
+	+ 5.2962 * attribute_58 
+	- 3.4351
+
+LM num: 16
+Class=N = 
+	0.019 * attribute_3 
+	+ 0.1466 * attribute_7 
+	- 0.0526 * attribute_10 
+	+ 0.08 * attribute_11 
+	+ 0.0701 * attribute_18 
+	+ 0.0118 * attribute_19 
+	+ 0.0804 * attribute_21 
+	+ 0.073 * attribute_24 
+	+ 0.0098 * attribute_25 
+	+ 0.0855 * attribute_26 
+	+ 0.0743 * attribute_28 
+	+ 0.0967 * attribute_29 
+	+ 0.0182 * attribute_30 
+	+ 0.1625 * attribute_31 
+	+ 0.6679 * attribute_32 
+	+ 0.7919 * attribute_34 
+	+ 0.0193 * attribute_35 
+	+ 0.0922 * attribute_36 
+	+ 5.6385 * attribute_58 
+	- 3.5427
+
+LM num: 17
+Class=N = 
+	-2.6074 * attribute_1 
+	+ 0.019 * attribute_3 
+	+ 0.1466 * attribute_7 
+	+ 1.0365 * attribute_10 
+	+ 0.08 * attribute_11 
+	+ 0.0701 * attribute_18 
+	+ 0.0118 * attribute_19 
+	+ 0.0804 * attribute_21 
+	+ 0.073 * attribute_24 
+	+ 0.0098 * attribute_25 
+	+ 0.0855 * attribute_26 
+	+ 0.0743 * attribute_28 
+	+ 0.0967 * attribute_29 
+	+ 0.0182 * attribute_30 
+	+ 0.1625 * attribute_31 
+	+ 0.9118 * attribute_32 
+	+ 0.4675 * attribute_34 
+	+ 0.0193 * attribute_35 
+	+ 0.0922 * attribute_36 
+	+ 0.9474 * attribute_58 
+	- 0.1867
+
+LM num: 18
+Class=N = 
+	0.019 * attribute_3 
+	+ 0.1466 * attribute_7 
+	- 0.1053 * attribute_10 
+	+ 0.08 * attribute_11 
+	+ 0.0701 * attribute_18 
+	+ 0.0118 * attribute_19 
+	+ 0.0804 * attribute_21 
+	+ 0.073 * attribute_24 
+	+ 0.0098 * attribute_25 
+	+ 0.0855 * attribute_26 
+	+ 0.0743 * attribute_28 
+	+ 0.0967 * attribute_29 
+	+ 0.0182 * attribute_30 
+	+ 0.202 * attribute_31 
+	+ 0.4308 * attribute_32 
+	+ 0.2829 * attribute_34 
+	+ 0.0193 * attribute_35 
+	+ 0.0922 * attribute_36 
+	- 0.0051
+
+LM num: 19
+Class=N = 
+	0.0245 * attribute_3 
+	+ 0.0203 * attribute_7 
+	+ 0.0168 * attribute_10 
+	+ 0.0176 * attribute_11 
+	- 0.0783 * attribute_12 
+	+ 0.0146 * attribute_18 
+	+ 0.1445 * attribute_19 
+	+ 0.0165 * attribute_21 
+	+ 0.0126 * attribute_24 
+	+ 0.0127 * attribute_25 
+	+ 0.012 * attribute_26 
+	- 0.2834 * attribute_27 
+	+ 0.0186 * attribute_28 
+	+ 0.0213 * attribute_29 
+	+ 0.0235 * attribute_30 
+	+ 0.4205 * attribute_31 
+	+ 0.2625 * attribute_32 
+	+ 0.0787 * attribute_34 
+	+ 1.5 * attribute_35 
+	+ 0.0305 * attribute_36 
+	- 0.5516
+
+LM num: 20
+Class=N = 
+	0.0245 * attribute_3 
+	+ 0.0203 * attribute_7 
+	+ 0.0168 * attribute_10 
+	+ 0.0176 * attribute_11 
+	- 0.0783 * attribute_12 
+	+ 0.0146 * attribute_18 
+	+ 0.1481 * attribute_19 
+	+ 0.0165 * attribute_21 
+	+ 0.0126 * attribute_24 
+	+ 0.0127 * attribute_25 
+	+ 0.012 * attribute_26 
+	- 0.2834 * attribute_27 
+	+ 0.0186 * attribute_28 
+	+ 0.0213 * attribute_29 
+	+ 0.0235 * attribute_30 
+	+ 0.4205 * attribute_31 
+	+ 0.2625 * attribute_32 
+	+ 0.0787 * attribute_34 
+	+ 1.7949 * attribute_35 
+	+ 0.0305 * attribute_36 
+	- 0.6448
+
+LM num: 21
+Class=N = 
+	0.0245 * attribute_3 
+	+ 0.0203 * attribute_7 
+	+ 0.0168 * attribute_10 
+	+ 0.0176 * attribute_11 
+	- 0.0783 * attribute_12 
+	+ 0.0146 * attribute_18 
+	+ 0.1481 * attribute_19 
+	+ 0.0165 * attribute_21 
+	+ 0.0126 * attribute_24 
+	+ 0.0127 * attribute_25 
+	+ 0.012 * attribute_26 
+	- 0.2834 * attribute_27 
+	+ 0.0186 * attribute_28 
+	+ 0.0213 * attribute_29 
+	+ 0.0235 * attribute_30 
+	+ 0.4205 * attribute_31 
+	+ 0.2625 * attribute_32 
+	+ 0.0787 * attribute_34 
+	+ 1.9713 * attribute_35 
+	+ 0.0305 * attribute_36 
+	- 0.6306
+
+LM num: 22
+Class=N = 
+	0.0245 * attribute_3 
+	+ 0.0203 * attribute_7 
+	+ 0.0168 * attribute_10 
+	+ 0.0176 * attribute_11 
+	- 0.0783 * attribute_12 
+	+ 0.0146 * attribute_18 
+	+ 0.1626 * attribute_19 
+	+ 0.0165 * attribute_21 
+	+ 0.0126 * attribute_24 
+	+ 0.0127 * attribute_25 
+	+ 0.012 * attribute_26 
+	- 0.2834 * attribute_27 
+	+ 0.0186 * attribute_28 
+	+ 0.0213 * attribute_29 
+	+ 0.0235 * attribute_30 
+	+ 0.4796 * attribute_31 
+	+ 0.2625 * attribute_32 
+	+ 0.0787 * attribute_34 
+	+ 0.7531 * attribute_35 
+	+ 0.0305 * attribute_36 
+	+ 0.0315
+
+LM num: 23
+Class=N = 
+	0.0245 * attribute_3 
+	+ 0.0203 * attribute_7 
+	+ 0.0168 * attribute_10 
+	+ 0.0176 * attribute_11 
+	- 0.0783 * attribute_12 
+	+ 0.0146 * attribute_18 
+	+ 0.1491 * attribute_19 
+	+ 0.0165 * attribute_21 
+	+ 0.0126 * attribute_24 
+	+ 0.0127 * attribute_25 
+	+ 0.012 * attribute_26 
+	- 0.4212 * attribute_27 
+	+ 0.0186 * attribute_28 
+	+ 0.0213 * attribute_29 
+	+ 0.0235 * attribute_30 
+	+ 0.1796 * attribute_31 
+	+ 0.2419 * attribute_32 
+	+ 0.0787 * attribute_34 
+	+ 0.2776 * attribute_35 
+	+ 0.0305 * attribute_36 
+	- 0.134 * attribute_59 
+	+ 0.6441
+
+LM num: 24
+Class=N = 
+	0.0245 * attribute_3 
+	+ 0.0203 * attribute_7 
+	+ 0.0168 * attribute_10 
+	+ 0.0176 * attribute_11 
+	- 0.0783 * attribute_12 
+	+ 0.0146 * attribute_18 
+	+ 0.1491 * attribute_19 
+	+ 0.0165 * attribute_21 
+	+ 0.0126 * attribute_24 
+	+ 0.0127 * attribute_25 
+	+ 0.012 * attribute_26 
+	- 0.6573 * attribute_27 
+	+ 0.0186 * attribute_28 
+	+ 0.0213 * attribute_29 
+	+ 0.0235 * attribute_30 
+	+ 0.1796 * attribute_31 
+	+ 0.2419 * attribute_32 
+	+ 0.0787 * attribute_34 
+	+ 0.2776 * attribute_35 
+	+ 0.0305 * attribute_36 
+	- 1.2094 * attribute_59 
+	+ 1.2657
+
+LM num: 25
+Class=N = 
+	0.0245 * attribute_3 
+	+ 0.0203 * attribute_7 
+	+ 0.0168 * attribute_10 
+	+ 0.0176 * attribute_11 
+	+ 1.4689 * attribute_12 
+	+ 0.0146 * attribute_18 
+	+ 0.1491 * attribute_19 
+	+ 0.0165 * attribute_21 
+	+ 0.0126 * attribute_24 
+	+ 0.0127 * attribute_25 
+	+ 0.012 * attribute_26 
+	- 0.6573 * attribute_27 
+	+ 0.0186 * attribute_28 
+	+ 0.0213 * attribute_29 
+	+ 0.0235 * attribute_30 
+	+ 0.1796 * attribute_31 
+	+ 0.2419 * attribute_32 
+	+ 0.0787 * attribute_34 
+	+ 0.2776 * attribute_35 
+	+ 0.0305 * attribute_36 
+	- 1.5415 * attribute_59 
+	+ 0.5772
+
+LM num: 26
+Class=N = 
+	0.0245 * attribute_3 
+	+ 0.0203 * attribute_7 
+	+ 0.0168 * attribute_10 
+	+ 0.0176 * attribute_11 
+	+ 1.4689 * attribute_12 
+	+ 0.0146 * attribute_18 
+	+ 0.1491 * attribute_19 
+	+ 0.0165 * attribute_21 
+	+ 0.0126 * attribute_24 
+	+ 0.0127 * attribute_25 
+	+ 0.012 * attribute_26 
+	- 0.6573 * attribute_27 
+	+ 0.0186 * attribute_28 
+	+ 0.0213 * attribute_29 
+	+ 0.0235 * attribute_30 
+	+ 0.1796 * attribute_31 
+	+ 0.2419 * attribute_32 
+	+ 0.0787 * attribute_34 
+	+ 0.2776 * attribute_35 
+	+ 0.0305 * attribute_36 
+	- 1.5415 * attribute_59 
+	+ 0.5851
+
+LM num: 27
+Class=N = 
+	0.0245 * attribute_3 
+	+ 0.0203 * attribute_7 
+	+ 0.0168 * attribute_10 
+	+ 0.0176 * attribute_11 
+	- 0.2149 * attribute_12 
+	+ 0.0146 * attribute_18 
+	+ 0.149 * attribute_19 
+	+ 0.0165 * attribute_21 
+	+ 0.0126 * attribute_24 
+	+ 0.0127 * attribute_25 
+	+ 0.012 * attribute_26 
+	+ 0.0186 * attribute_28 
+	+ 0.0213 * attribute_29 
+	+ 0.0235 * attribute_30 
+	+ 0.1716 * attribute_31 
+	+ 0.2487 * attribute_32 
+	+ 0.0787 * attribute_34 
+	+ 0.3048 * attribute_35 
+	+ 0.0305 * attribute_36 
+	+ 0.4208
+
+LM num: 28
+Class=N = 
+	0.0245 * attribute_3 
+	+ 0.0203 * attribute_7 
+	+ 0.0168 * attribute_10 
+	+ 0.0176 * attribute_11 
+	+ 0.0146 * attribute_18 
+	+ 0.0349 * attribute_19 
+	+ 0.0165 * attribute_21 
+	+ 0.0126 * attribute_24 
+	+ 0.0127 * attribute_25 
+	+ 0.012 * attribute_26 
+	+ 0.0186 * attribute_28 
+	+ 0.0213 * attribute_29 
+	+ 0.0235 * attribute_30 
+	+ 0.0451 * attribute_31 
+	+ 0.0646 * attribute_32 
+	+ 0.0854 * attribute_34 
+	+ 0.0846 * attribute_35 
+	+ 0.0305 * attribute_36 
+	+ 0.6842
+
+Number of Rules : 28
+
+Time taken to build model: 0.55 seconds
+Time taken to test model on training data: 5.65 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9554
+Mean absolute error                      0.0773
+Root mean squared error                  0.1516
+Relative absolute error                 15.5363 %
+Root relative squared error             30.3855 %
+Total Number of Instances              701     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8791
+Mean absolute error                      0.1156
+Root mean squared error                  0.2383
+Relative absolute error                 23.1885 %
+Root relative squared error             47.6767 %
+Total Number of Instances              701     
+

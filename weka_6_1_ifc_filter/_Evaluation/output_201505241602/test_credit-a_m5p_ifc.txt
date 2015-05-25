@@ -1,0 +1,71 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation credit-rating-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R16-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute A1 numeric
+@attribute A2 numeric
+@attribute A3 numeric
+@attribute A4 numeric
+@attribute A5 numeric
+@attribute A6 numeric
+@attribute A7 numeric
+@attribute A8 numeric
+@attribute A9 numeric
+@attribute A10 numeric
+@attribute A11 numeric
+@attribute A12 numeric
+@attribute A13 numeric
+@attribute A14 numeric
+@attribute A15 numeric
+@attribute class numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+LM1 (690/61.248%)
+
+LM num: 1
+class = 
+	0.2445 * A3 
+	+ 0.2926 * A4 
+	+ 0.36 * A6 
+	+ 0.1977 * A8 
+	+ 0.6376 * A9 
+	+ 0.2923 * A11 
+	+ 0.3614 * A13 
+	+ 0.2621 * A14 
+	+ 0.3253 * A15 
+	- 1.0003
+
+Number of Rules : 1
+
+Time taken to build model: 0.44 seconds
+Time taken to test model on training data: 0.62 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7981
+Mean absolute error                      0.2001
+Root mean squared error                  0.3005
+Relative absolute error                 40.5196 %
+Root relative squared error             60.4755 %
+Total Number of Instances              690     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7656
+Mean absolute error                      0.2148
+Root mean squared error                  0.3211
+Relative absolute error                 43.3854 %
+Root relative squared error             64.4415 %
+Total Number of Instances              690     
+

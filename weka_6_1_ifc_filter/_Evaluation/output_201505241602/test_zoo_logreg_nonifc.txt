@@ -1,0 +1,269 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=    0     ;  df=116;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      4.1792*case when animal in('aardvark') then 1 else 0 end
++      3.3329*case when animal in('antelope') then 1 else 0 end
++     -2.9642*case when animal in('bass') then 1 else 0 end
++      4.1792*case when animal in('bear') then 1 else 0 end
++      3.2828*case when animal in('boar') then 1 else 0 end
++      3.3329*case when animal in('buffalo') then 1 else 0 end
++      2.4151*case when animal in('calf') then 1 else 0 end
++     -3.8374*case when animal in('carp') then 1 else 0 end
++     -2.9642*case when animal in('catfish') then 1 else 0 end
++      6.4093*case when animal in('cavy') then 1 else 0 end
++      3.2828*case when animal in('cheetah') then 1 else 0 end
++     -1.966 *case when animal in('chicken') then 1 else 0 end
++     -2.9642*case when animal in('chub') then 1 else 0 end
++      1.2995*case when animal in('clam') then 1 else 0 end
++      1.9239*case when animal in('crab') then 1 else 0 end
++      1.5878*case when animal in('crayfish') then 1 else 0 end
++     -1.0929*case when animal in('crow') then 1 else 0 end
++      3.3329*case when animal in('deer') then 1 else 0 end
++     -6.0809*case when animal in('dogfish') then 1 else 0 end
++     12.181 *case when animal in('dolphin') then 1 else 0 end
++     -1.966 *case when animal in('dove') then 1 else 0 end
++      0.2543*case when animal in('duck') then 1 else 0 end
++      3.3329*case when animal in('elephant') then 1 else 0 end
++     -4.1591*case when animal in('flamingo') then 1 else 0 end
++     -2.7088*case when animal in('flea') then 1 else 0 end
++     -6.4535*case when animal in('frog') then 1 else 0 end
++      8.6018*case when animal in('fruitbat') then 1 else 0 end
++      3.3329*case when animal in('giraffe') then 1 else 0 end
++      3.5954*case when animal in('girl') then 1 else 0 end
++     -0.8615*case when animal in('gnat') then 1 else 0 end
++      2.4151*case when animal in('goat') then 1 else 0 end
++      4.5635*case when animal in('gorilla') then 1 else 0 end
++      0.204 *case when animal in('gull') then 1 else 0 end
++     -2.9138*case when animal in('haddock') then 1 else 0 end
++      5.5128*case when animal in('hamster') then 1 else 0 end
++      6.4309*case when animal in('hare') then 1 else 0 end
++     -1.0929*case when animal in('hawk') then 1 else 0 end
++     -2.9642*case when animal in('herring') then 1 else 0 end
++     -7.1702*case when animal in('honeybee') then 1 else 0 end
++     -6.8836*case when animal in('housefly') then 1 else 0 end
++     -2.9401*case when animal in('kiwi') then 1 else 0 end
++     -0.9119*case when animal in('ladybird') then 1 else 0 end
++     -1.0425*case when animal in('lark') then 1 else 0 end
++      3.2828*case when animal in('leopard') then 1 else 0 end
++      3.2828*case when animal in('lion') then 1 else 0 end
++      1.5878*case when animal in('lobster') then 1 else 0 end
++      3.2828*case when animal in('lynx') then 1 else 0 end
++      4.5719*case when animal in('mink') then 1 else 0 end
++      6.3808*case when animal in('mole') then 1 else 0 end
++      3.2828*case when animal in('mongoose') then 1 else 0 end
++     -6.8836*case when animal in('moth') then 1 else 0 end
++     -7.6454*case when animal in('newt') then 1 else 0 end
++     -1.8648*case when animal in('octopus') then 1 else 0 end
++      6.3808*case when animal in('opossum') then 1 else 0 end
++      3.3329*case when animal in('oryx') then 1 else 0 end
++     -6.0065*case when animal in('ostrich') then 1 else 0 end
++     -1.966 *case when animal in('parakeet') then 1 else 0 end
++     -4.7599*case when animal in('penguin') then 1 else 0 end
++     -1.0425*case when animal in('pheasant') then 1 else 0 end
++     -6.0809*case when animal in('pike') then 1 else 0 end
++     -2.9642*case when animal in('piranha') then 1 else 0 end
++     -7.6329*case when animal in('pitviper') then 1 else 0 end
++     14.3295*case when animal in('platypus') then 1 else 0 end
++      3.2828*case when animal in('polecat') then 1 else 0 end
++      2.4151*case when animal in('pony') then 1 else 0 end
++     12.181 *case when animal in('porpoise') then 1 else 0 end
++      3.2828*case when animal in('puma') then 1 else 0 end
++      2.365 *case when animal in('pussycat') then 1 else 0 end
++      3.2828*case when animal in('raccoon') then 1 else 0 end
++      2.4151*case when animal in('reindeer') then 1 else 0 end
++     -6.0569*case when animal in('rhea') then 1 else 0 end
++    -10.1063*case when animal in('scorpion') then 1 else 0 end
++     -2.9138*case when animal in('seahorse') then 1 else 0 end
++      7.0895*case when animal in('seal') then 1 else 0 end
++      5.8586*case when animal in('sealion') then 1 else 0 end
++    -10.0315*case when animal in('seasnake') then 1 else 0 end
++      3.2332*case when animal in('seawasp') then 1 else 0 end
++      0.204 *case when animal in('skimmer') then 1 else 0 end
++      0.204 *case when animal in('skua') then 1 else 0 end
++     -8.2699*case when animal in('slowworm') then 1 else 0 end
++     -1.7002*case when animal in('slug') then 1 else 0 end
++     -2.9138*case when animal in('sole') then 1 else 0 end
++     -1.0425*case when animal in('sparrow') then 1 else 0 end
++      6.7651*case when animal in('squirrel') then 1 else 0 end
++      1.7559*case when animal in('starfish') then 1 else 0 end
++     -5.444 *case when animal in('stingray') then 1 else 0 end
++     -2.8622*case when animal in('swan') then 1 else 0 end
++     -2.7088*case when animal in('termite') then 1 else 0 end
++     -6.693 *case when animal in('toad') then 1 else 0 end
++     -8.9415*case when animal in('tortoise') then 1 else 0 end
++     -8.9424*case when animal in('tuatara') then 1 else 0 end
++     -6.0809*case when animal in('tuna') then 1 else 0 end
++      8.6018*case when animal in('vampire') then 1 else 0 end
++      6.4309*case when animal in('vole') then 1 else 0 end
++     -4.2095*case when animal in('vulture') then 1 else 0 end
++      3.6671*case when animal in('wallaby') then 1 else 0 end
++     -6.2466*case when animal in('wasp') then 1 else 0 end
++      3.2828*case when animal in('wolf') then 1 else 0 end
++     -1.7002*case when animal in('worm') then 1 else 0 end
++     -1.0425*case when animal in('wren') then 1 else 0 end
++      6.0631*hair
++     -2.6161*feathers
++     -6.7915*eggs
++      8.2423*milk
++     -1.8599*airborne
++     -1.3058*aquatic
++      0.0507*predator
++      3.0882*toothed
++      2.5675*backbone
++      3.0711*breathes
++     -0.6403*venomous
++     -0.9647*fins
++      0.1692*legs
++      0.908 *tail
++      0.9298*domestic
++      3.1379*catsize
++   -12.5069))
+
+Odds Ratios...
+Variable         O.R.
+       1      65.3137
+       2      28.02  
+       3       0.0516
+       4      65.3137
+       5      26.6511
+       6      28.02  
+       7      11.1904
+       8       0.0216
+       9       0.0516
+      10     607.4692
+      11      26.6511
+      12       0.14  
+      13       0.0516
+      14       3.6675
+      15       6.8479
+      16       4.8929
+      17       0.3353
+      18      28.02  
+      19       0.0023
+      20  195038.2531
+      21       0.14  
+      22       1.2896
+      23      28.02  
+      24       0.0156
+      25       0.0666
+      26       0.0016
+      27    5441.4882
+      28      28.02  
+      29      36.4308
+      30       0.4225
+      31      11.1904
+      32      95.9159
+      33       1.2263
+      34       0.0543
+      35     247.8336
+      36     620.7133
+      37       0.3353
+      38       0.0516
+      39       0.0008
+      40       0.001 
+      41       0.0529
+      42       0.4018
+      43       0.3526
+      44      26.6511
+      45      26.6511
+      46       4.8929
+      47      26.6511
+      48      96.7252
+      49     590.3813
+      50      26.6511
+      51       0.001 
+      52       0.0005
+      53       0.1549
+      54     590.3813
+      55      28.02  
+      56       0.0025
+      57       0.14  
+      58       0.0086
+      59       0.3526
+      60       0.0023
+      61       0.0516
+      62       0.0005
+      63 1671959.1918
+      64      26.6511
+      65      11.1904
+      66  195038.2531
+      67      26.6511
+      68      10.6437
+      69      26.6511
+      70      11.1904
+      71       0.0023
+      72       0     
+      73       0.0543
+      74    1199.2526
+      75     350.2459
+      76       0     
+      77      25.3595
+      78       1.2263
+      79       1.2263
+      80       0.0003
+      81       0.1827
+      82       0.0543
+      83       0.3526
+      84     867.061 
+      85       5.7885
+      86       0.0043
+      87       0.0571
+      88       0.0666
+      89       0.0012
+      90       0.0001
+      91       0.0001
+      92       0.0023
+      93    5441.4882
+      94     620.7133
+      95       0.0149
+      96      39.1371
+      97       0.0019
+      98      26.6511
+      99       0.1827
+     100       0.3526
+     101     429.7256
+     102       0.0731
+     103       0.0011
+     104    3798.2979
+     105       0.1557
+     106       0.271 
+     107       1.052 
+     108      21.9371
+     109      13.033 
+     110      21.5661
+     111       0.5272
+     112       0.3811
+     113       1.1844
+     114       2.4795
+     115       2.534 
+     116      23.0565
+
+
+Time taken to build model: 0.11 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              101     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9999
+Mean absolute error                      0.0007
+Root mean squared error                  0.0057
+Relative absolute error                  0.1494 %
+Root relative squared error              1.155  %
+Total Number of Instances              101     
+

@@ -1,0 +1,151 @@
+
+Linear Node 0
+    Inputs    Weights
+    Threshold    0.580380809026913
+    Node 1    -4.144664780030349
+    Node 2    -3.1452645396562717
+    Node 3    0.7702338024119302
+    Node 4    -1.4330668546863516
+    Node 5    -1.1525468554204543
+    Node 6    -1.4104688045896883
+    Node 7    -1.2039425800230257
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -5.4209164354927095
+    Attrib age    1.7230023521463569
+    Attrib sex    1.845492790481093
+    Attrib chest    -4.931399441886591
+    Attrib resting_blood_pressure    -2.1394081547862065
+    Attrib serum_cholestoral    4.40867003485107
+    Attrib fasting_blood_sugar    3.1951920860061263
+    Attrib resting_electrocardiographic_results    -2.1757561620559733
+    Attrib maximum_heart_rate_achieved    1.4950149387594311
+    Attrib exercise_induced_angina    0.04827072661853356
+    Attrib oldpeak    6.291510739394669
+    Attrib slope    2.0426832250034965
+    Attrib number_of_major_vessels    2.9745884063110117
+    Attrib thal    -1.4308022727133922
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -10.194283106585749
+    Attrib age    3.0939403663546012
+    Attrib sex    5.799825248091231
+    Attrib chest    -1.6792766727263169
+    Attrib resting_blood_pressure    3.2687497873959908
+    Attrib serum_cholestoral    14.345322803011003
+    Attrib fasting_blood_sugar    -0.4936002646970983
+    Attrib resting_electrocardiographic_results    0.0545905591244974
+    Attrib maximum_heart_rate_achieved    -5.379263929805875
+    Attrib exercise_induced_angina    -1.3356844684139977
+    Attrib oldpeak    13.06310862921119
+    Attrib slope    -2.4751721706215606
+    Attrib number_of_major_vessels    -6.088612807241175
+    Attrib thal    -8.5556864321049
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    1.33054300311531
+    Attrib age    -8.352862947314783
+    Attrib sex    -4.270280817946837
+    Attrib chest    -5.448516903393301
+    Attrib resting_blood_pressure    6.570305784099695
+    Attrib serum_cholestoral    -7.0525591318865
+    Attrib fasting_blood_sugar    3.6333818884838958
+    Attrib resting_electrocardiographic_results    -0.18758234678031127
+    Attrib maximum_heart_rate_achieved    2.293937189016205
+    Attrib exercise_induced_angina    -1.1631109942062792
+    Attrib oldpeak    3.587372960696826
+    Attrib slope    -0.9423846279480788
+    Attrib number_of_major_vessels    -0.07979110814425364
+    Attrib thal    -3.118828653938732
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    3.4806505043990517
+    Attrib age    -10.97828443678854
+    Attrib sex    3.003773503871816
+    Attrib chest    12.152483565264252
+    Attrib resting_blood_pressure    6.676051990933732
+    Attrib serum_cholestoral    -3.8015127876503234
+    Attrib fasting_blood_sugar    5.754168385218636
+    Attrib resting_electrocardiographic_results    5.645570120822109
+    Attrib maximum_heart_rate_achieved    -11.121654581928821
+    Attrib exercise_induced_angina    0.6397315613635319
+    Attrib oldpeak    -6.315788273040461
+    Attrib slope    1.7962619065880097
+    Attrib number_of_major_vessels    20.451145324602813
+    Attrib thal    7.529771939752166
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -8.663923283737109
+    Attrib age    1.4653920838076826
+    Attrib sex    -3.3910782742738403
+    Attrib chest    0.021735665392588085
+    Attrib resting_blood_pressure    5.188604805695256
+    Attrib serum_cholestoral    2.300386779842277
+    Attrib fasting_blood_sugar    0.10233776129024047
+    Attrib resting_electrocardiographic_results    0.05365097938535801
+    Attrib maximum_heart_rate_achieved    6.470212836434816
+    Attrib exercise_induced_angina    -1.805645313388064
+    Attrib oldpeak    0.724846647455727
+    Attrib slope    -0.6759942703500399
+    Attrib number_of_major_vessels    2.4298435691993543
+    Attrib thal    -2.405118799003535
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -9.82265156421879
+    Attrib age    4.229279794866621
+    Attrib sex    -8.49564231512193
+    Attrib chest    1.9971985520052669
+    Attrib resting_blood_pressure    3.3920670898592915
+    Attrib serum_cholestoral    1.7629012055118454
+    Attrib fasting_blood_sugar    0.5802542365825399
+    Attrib resting_electrocardiographic_results    -6.9204399438572395
+    Attrib maximum_heart_rate_achieved    1.0711133096194194
+    Attrib exercise_induced_angina    4.906618938103992
+    Attrib oldpeak    3.8851687187404336
+    Attrib slope    7.096942273103654
+    Attrib number_of_major_vessels    2.2193445310160094
+    Attrib thal    5.155485315353846
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -9.797474531447925
+    Attrib age    -12.375418707159566
+    Attrib sex    1.5120270938308384
+    Attrib chest    2.0422648076866947
+    Attrib resting_blood_pressure    3.0169276377436907
+    Attrib serum_cholestoral    5.140174432219181
+    Attrib fasting_blood_sugar    -1.8679372545036692
+    Attrib resting_electrocardiographic_results    0.10524952965364769
+    Attrib maximum_heart_rate_achieved    1.3681015064064201
+    Attrib exercise_induced_angina    -0.41501298194320685
+    Attrib oldpeak    6.074771713263547
+    Attrib slope    -2.6057010239667946
+    Attrib number_of_major_vessels    -1.9848026059434263
+    Attrib thal    4.021366014619939
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 0.62 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8616
+Mean absolute error                      0.1865
+Root mean squared error                  0.2589
+Relative absolute error                 37.7694 %
+Root relative squared error             52.109  %
+Total Number of Instances              270     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5238
+Mean absolute error                      0.3635
+Root mean squared error                  0.5565
+Relative absolute error                 73.2938 %
+Root relative squared error            111.4945 %
+Total Number of Instances              270     
+

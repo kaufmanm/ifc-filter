@@ -1,0 +1,40 @@
+10
+
+dir
+6042
+https://svn.scms.waikato.ac.nz/svn/weka/trunk/weka/src/main/java/weka/clusterers/forOPTICSAndDBScan
+https://svn.scms.waikato.ac.nz/svn/weka
+
+
+
+2009-09-24T22:44:39.828611Z
+5987
+eibe
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+e0a1b77d-ad91-4216-81b1-defd5f83fa92
+
+Utils
+dir
+
+DataObjects
+dir
+
+OPTICS_GUI
+dir
+
+Databases
+dir
+

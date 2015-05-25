@@ -1,0 +1,64 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'Glass-weka.filters.unsupervised.attribute.NominalToBinary-R10-weka.filters.unsupervised.attribute.Remove-R10,12-16-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute RI numeric
+@attribute Na numeric
+@attribute Mg numeric
+@attribute Al numeric
+@attribute Si numeric
+@attribute K numeric
+@attribute Ca numeric
+@attribute Ba numeric
+@attribute Fe numeric
+@attribute 'Type=build wind non-float' numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ +       0.7531 * (normalized) RI
+ +       0.0452 * (normalized) Na
+ +       0.4792 * (normalized) Mg
+ +       0.2963 * (normalized) Al
+ +       0.263  * (normalized) Si
+ +       0.1382 * (normalized) K
+ +       0.5224 * (normalized) Ca
+ +       0.1518 * (normalized) Ba
+ +       0.2916 * (normalized) Fe
+ -       0.931 
+
+
+
+Number of kernel evaluations: 23005 (93.309% cached)
+
+Time taken to build model: 0.17 seconds
+Time taken to test model on training data: 0.14 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.799 
+Mean absolute error                      0.183 
+Root mean squared error                  0.2893
+Relative absolute error                 39.9528 %
+Root relative squared error             60.4454 %
+Total Number of Instances              214     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4391
+Mean absolute error                      0.3611
+Root mean squared error                  0.4303
+Relative absolute error                 78.3161 %
+Root relative squared error             89.3173 %
+Total Number of Instances              214     
+

@@ -1,0 +1,81 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -191.666 ;  df=22;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      0.0149*age
++     -1.6648*sex
++      1.1014*case when cp in('typ_angina') then 1 else 0 end
++     -0.9914*case when cp in('asympt') then 1 else 0 end
++      0.8794*case when cp in('non_anginal') then 1 else 0 end
++     -0.0738*case when cp in('atyp_angina') then 1 else 0 end
++     -0.0219*trestbps
++     -0.0043*chol
++     -0.376 *fbs
++     -0.2023*case when restecg in('left_vent_hyper') then 1 else 0 end
++      0.2373*case when restecg in('normal') then 1 else 0 end
++     -0.6758*case when restecg in('st_t_wave_abnormality') then 1 else 0 end
++      0.017 *thalach
++     -0.842 *exang
++     -0.3909*oldpeak
++      0.5921*case when slope in('up') then 1 else 0 end
++     -0.612 *case when slope in('flat') then 1 else 0 end
++      0.0727*case when slope in('down') then 1 else 0 end
++     -1.3082*ca
++      0.6753*case when thal in('fixed_defect') then 1 else 0 end
++      0.5653*case when thal in('normal') then 1 else 0 end
++     -0.7484*case when thal in('reversable_defect') then 1 else 0 end
++     3.7745))
+
+Odds Ratios...
+Variable         O.R.
+       1       1.015 
+       2       0.1892
+       3       3.0083
+       4       0.371 
+       5       2.4094
+       6       0.9288
+       7       0.9783
+       8       0.9957
+       9       0.6866
+      10       0.8168
+      11       1.2679
+      12       0.5087
+      13       1.0171
+      14       0.4308
+      15       0.6765
+      16       1.8077
+      17       0.5423
+      18       1.0754
+      19       0.2703
+      20       1.9647
+      21       1.76  
+      22       0.4731
+
+
+Time taken to build model: 0.06 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7844
+Mean absolute error                      0.1937
+Root mean squared error                  0.3089
+Relative absolute error                 39.043  %
+Root relative squared error             62.0296 %
+Total Number of Instances              303     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7162
+Mean absolute error                      0.2185
+Root mean squared error                  0.3491
+Relative absolute error                 43.98   %
+Root relative squared error             69.9679 %
+Total Number of Instances              303     
+

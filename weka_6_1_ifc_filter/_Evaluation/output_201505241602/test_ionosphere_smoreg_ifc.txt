@@ -1,0 +1,114 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation ionosphere-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R36-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute a01 numeric
+@attribute a02 numeric
+@attribute a03 numeric
+@attribute a04 numeric
+@attribute a05 numeric
+@attribute a06 numeric
+@attribute a07 numeric
+@attribute a08 numeric
+@attribute a09 numeric
+@attribute a10 numeric
+@attribute a11 numeric
+@attribute a12 numeric
+@attribute a13 numeric
+@attribute a14 numeric
+@attribute a15 numeric
+@attribute a16 numeric
+@attribute a17 numeric
+@attribute a18 numeric
+@attribute a19 numeric
+@attribute a20 numeric
+@attribute a21 numeric
+@attribute a22 numeric
+@attribute a23 numeric
+@attribute a24 numeric
+@attribute a25 numeric
+@attribute a26 numeric
+@attribute a27 numeric
+@attribute a28 numeric
+@attribute a29 numeric
+@attribute a30 numeric
+@attribute a31 numeric
+@attribute a32 numeric
+@attribute a33 numeric
+@attribute a34 numeric
+@attribute class=b numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ -       0.1173 * (normalized) a01
+ +       0      * (normalized) a02
+ +       0.1125 * (normalized) a03
+ +       0.1748 * (normalized) a04
+ +       0.1974 * (normalized) a05
+ +       0.0449 * (normalized) a06
+ +       0.1105 * (normalized) a07
+ +       0.1215 * (normalized) a08
+ +       0.0432 * (normalized) a09
+ +       0.0204 * (normalized) a10
+ -       0.0411 * (normalized) a11
+ +       0.0173 * (normalized) a12
+ +       0.0447 * (normalized) a13
+ +       0.1535 * (normalized) a14
+ +       0.0567 * (normalized) a15
+ +       0.129  * (normalized) a16
+ -       0.0479 * (normalized) a17
+ +       0.054  * (normalized) a18
+ +       0.0028 * (normalized) a19
+ +       0.0448 * (normalized) a20
+ +       0.0382 * (normalized) a21
+ +       0.0766 * (normalized) a22
+ -       0.0027 * (normalized) a23
+ +       0.0808 * (normalized) a24
+ +       0.0445 * (normalized) a25
+ -       0.0346 * (normalized) a26
+ +       0.0275 * (normalized) a27
+ +       0.0493 * (normalized) a28
+ +       0.0308 * (normalized) a29
+ +       0.0062 * (normalized) a30
+ +       0.0226 * (normalized) a31
+ +       0.0643 * (normalized) a32
+ -       0.063  * (normalized) a33
+ +       0.2846 * (normalized) a34
+ -       0.47  
+
+
+
+Number of kernel evaluations: 61776 (98.281% cached)
+
+Time taken to build model: 0.47 seconds
+Time taken to test model on training data: 0.84 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8456
+Mean absolute error                      0.1397
+Root mean squared error                  0.259 
+Relative absolute error                 30.3481 %
+Root relative squared error             53.9987 %
+Total Number of Instances              351     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7362
+Mean absolute error                      0.3239
+Root mean squared error                  0.3698
+Relative absolute error                 69.9118 %
+Root relative squared error             76.5544 %
+Total Number of Instances              351     
+

@@ -1,0 +1,125 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation balance-scale-weka.filters.unsupervised.attribute.NominalToBinary-R5-weka.filters.unsupervised.attribute.Remove-R6-7-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute left-weight numeric
+@attribute left-distance numeric
+@attribute right-weight numeric
+@attribute right-distance numeric
+@attribute class=L numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+left-weight <= 0.462 : 
+|   left-distance <= 0.462 : 
+|   |   right-weight <= 0.4 : LM1 (40/0%)
+|   |   right-weight >  0.4 : 
+|   |   |   right-distance <= 0.4 : LM2 (24/0%)
+|   |   |   right-distance >  0.4 : LM3 (36/55.68%)
+|   left-distance >  0.462 : LM4 (150/57.383%)
+left-weight >  0.462 : 
+|   left-distance <= 0.462 : LM5 (150/57.383%)
+|   left-distance >  0.462 : 
+|   |   right-weight <= 0.534 : 
+|   |   |   right-distance <= 0.534 : LM6 (81/58.29%)
+|   |   |   right-distance >  0.534 : LM7 (54/27.047%)
+|   |   right-weight >  0.534 : LM8 (90/21.029%)
+
+LM num: 1
+class=L = 
+	0.2688 * left-weight 
+	+ 0.2461 * left-distance 
+	+ 0.2643 * right-weight 
+	+ 0.2643 * right-distance 
+	- 0.3732
+
+LM num: 2
+class=L = 
+	0.4294 * left-weight 
+	+ 0.4067 * left-distance 
+	+ 0.3915 * right-weight 
+	+ 0.4175 * right-distance 
+	- 0.5926
+
+LM num: 3
+class=L = 
+	0.958 * left-weight 
+	+ 0.9353 * left-distance 
+	+ 0.8221 * right-weight 
+	+ 0.842 * right-distance 
+	- 1.3336
+
+LM num: 4
+class=L = 
+	1.2033 * left-weight 
+	+ 0.9966 * left-distance 
+	+ 1.1999 * right-weight 
+	+ 1.1999 * right-distance 
+	- 1.7939
+
+LM num: 5
+class=L = 
+	1.023 * left-weight 
+	+ 1.226 * left-distance 
+	+ 1.217 * right-weight 
+	+ 1.217 * right-distance 
+	- 1.8343
+
+LM num: 6
+class=L = 
+	2.1204 * left-weight 
+	+ 2.1262 * left-distance 
+	+ 1.9474 * right-weight 
+	+ 1.9552 * right-distance 
+	- 3.6801
+
+LM num: 7
+class=L = 
+	0.4815 * left-weight 
+	+ 0.4874 * left-distance 
+	+ 0.4487 * right-weight 
+	+ 0.4596 * right-distance 
+	- 0.1536
+
+LM num: 8
+class=L = 
+	0.235 * left-weight 
+	+ 0.2409 * left-distance 
+	+ 0.2251 * right-weight 
+	+ 0.2251 * right-distance 
+	+ 0.4114
+
+Number of Rules : 8
+
+Time taken to build model: 0.33 seconds
+Time taken to test model on training data: 0.11 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8966
+Mean absolute error                      0.1581
+Root mean squared error                  0.231 
+Relative absolute error                 31.8154 %
+Root relative squared error             46.3464 %
+Total Number of Instances              625     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8519
+Mean absolute error                      0.1727
+Root mean squared error                  0.2645
+Relative absolute error                 34.6896 %
+Root relative squared error             52.9707 %
+Total Number of Instances              625     
+

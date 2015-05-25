@@ -1,0 +1,519 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation kr-vs-kp-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R38-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z33.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute bkblk numeric
+@attribute bknwy numeric
+@attribute bkon8 numeric
+@attribute bkona numeric
+@attribute bkspr numeric
+@attribute bkxbq numeric
+@attribute bkxcr numeric
+@attribute bkxwp numeric
+@attribute blxwp numeric
+@attribute bxqsq numeric
+@attribute cntxt numeric
+@attribute dsopp numeric
+@attribute dwipd numeric
+@attribute hdchk numeric
+@attribute katri numeric
+@attribute mulch numeric
+@attribute qxmsq numeric
+@attribute r2ar8 numeric
+@attribute reskd numeric
+@attribute reskr numeric
+@attribute rimmx numeric
+@attribute rkxwp numeric
+@attribute rxmsq numeric
+@attribute simpl numeric
+@attribute skach numeric
+@attribute skewr numeric
+@attribute skrxp numeric
+@attribute spcop numeric
+@attribute stlmt numeric
+@attribute thrsk numeric
+@attribute wkcti numeric
+@attribute wkna8 numeric
+@attribute wknck numeric
+@attribute wkovl numeric
+@attribute wkpos numeric
+@attribute wtoeg numeric
+@attribute class=won numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+bxqsq <= 0.414 : LM1 (315/0%)
+bxqsq >  0.414 : 
+|   wknck <= 0.464 : 
+|   |   rimmx <= 0.7 : 
+|   |   |   wkovl <= 0.503 : LM2 (90/0%)
+|   |   |   wkovl >  0.503 : 
+|   |   |   |   bkxcr <= 0.474 : LM3 (44/0%)
+|   |   |   |   bkxcr >  0.474 : 
+|   |   |   |   |   skrxp <= 0.379 : LM4 (17/0%)
+|   |   |   |   |   skrxp >  0.379 : 
+|   |   |   |   |   |   bkona <= 0.506 : LM5 (30/54.208%)
+|   |   |   |   |   |   bkona >  0.506 : LM6 (8/0%)
+|   |   rimmx >  0.7 : LM7 (67/0%)
+|   wknck >  0.464 : 
+|   |   bkxbq <= 0.504 : 
+|   |   |   wkpos <= 0.465 : 
+|   |   |   |   cntxt <= 0.506 : 
+|   |   |   |   |   bkspr <= 0.496 : LM8 (8/0%)
+|   |   |   |   |   bkspr >  0.496 : LM9 (29/0%)
+|   |   |   |   cntxt >  0.506 : 
+|   |   |   |   |   katri <= 0.621 : 
+|   |   |   |   |   |   bkblk <= 0.515 : 
+|   |   |   |   |   |   |   r2ar8 <= 0.533 : LM10 (26/0%)
+|   |   |   |   |   |   |   r2ar8 >  0.533 : LM11 (11/66.101%)
+|   |   |   |   |   |   bkblk >  0.515 : LM12 (19/0%)
+|   |   |   |   |   katri >  0.621 : LM13 (25/0%)
+|   |   |   wkpos >  0.465 : 
+|   |   |   |   r2ar8 <= 0.533 : LM14 (103/46.453%)
+|   |   |   |   r2ar8 >  0.533 : LM15 (45/0%)
+|   |   bkxbq >  0.504 : LM16 (217/0%)
+
+LM num: 1
+class=won = 
+	0.0889 * bkblk 
+	- 0.1885 * bkona 
+	+ 0.0388 * bkxbq 
+	+ 0.0076 * bkxcr 
+	+ 0.0343 * blxwp 
+	+ 0.0457 * bxqsq 
+	+ 0.0752 * cntxt 
+	+ 0.0432 * hdchk 
+	+ 0.0208 * katri 
+	+ 0.0151 * mulch 
+	- 0.0408 * qxmsq 
+	+ 1.6392 * rimmx 
+	+ 0.047 * rxmsq 
+	+ 0.082 * skewr 
+	+ 0.0131 * skrxp 
+	+ 0.0473 * wknck 
+	+ 0.0736 * wkpos 
+	- 0.8382
+
+LM num: 2
+class=won = 
+	0.147 * bkblk 
+	- 2.7037 * bkona 
+	+ 0.1058 * bkxbq 
+	+ 0.2441 * bkxcr 
+	+ 0.015 * blxwp 
+	+ 0.02 * bxqsq 
+	+ 0.145 * cntxt 
+	+ 0.0636 * hdchk 
+	+ 0.0212 * katri 
+	+ 0.1257 * mulch 
+	- 0.1043 * qxmsq 
+	+ 0.0287 * r2ar8 
+	+ 0.1565 * rimmx 
+	+ 0.0981 * rxmsq 
+	+ 0.146 * skewr 
+	+ 0.1347 * skrxp 
+	+ 0.1094 * wknck 
+	+ 2.1831 * wkovl 
+	+ 0.1474 * wkpos 
+	- 0.0219 * wtoeg 
+	- 0.4575
+
+LM num: 3
+class=won = 
+	0.147 * bkblk 
+	- 5.7951 * bkona 
+	+ 0.1058 * bkxbq 
+	+ 0.6817 * bkxcr 
+	+ 0.015 * blxwp 
+	+ 0.02 * bxqsq 
+	+ 0.145 * cntxt 
+	+ 0.0636 * hdchk 
+	+ 0.0212 * katri 
+	+ 0.2219 * mulch 
+	- 0.1043 * qxmsq 
+	+ 0.0287 * r2ar8 
+	+ 0.1565 * rimmx 
+	+ 0.0981 * rxmsq 
+	+ 0.146 * skewr 
+	+ 0.3235 * skrxp 
+	+ 0.1094 * wknck 
+	+ 2.0614 * wkovl 
+	+ 0.1474 * wkpos 
+	- 1.0819 * wtoeg 
+	+ 1.3812
+
+LM num: 4
+class=won = 
+	0.147 * bkblk 
+	- 12.3737 * bkona 
+	+ 0.1058 * bkxbq 
+	+ 0.6112 * bkxcr 
+	+ 1.3897 * blxwp 
+	+ 0.02 * bxqsq 
+	+ 0.145 * cntxt 
+	+ 0.0636 * hdchk 
+	+ 0.0212 * katri 
+	+ 0.4582 * mulch 
+	- 0.1043 * qxmsq 
+	+ 0.0287 * r2ar8 
+	+ 0.1565 * rimmx 
+	+ 0.0981 * rxmsq 
+	- 0.5568 * simpl 
+	+ 0.146 * skewr 
+	+ 0.5106 * skrxp 
+	+ 0.1094 * wknck 
+	+ 2.0614 * wkovl 
+	+ 0.1474 * wkpos 
+	- 3.2844 * wtoeg 
+	+ 5.3049
+
+LM num: 5
+class=won = 
+	0.147 * bkblk 
+	- 17.1252 * bkona 
+	+ 0.1058 * bkxbq 
+	+ 0.6112 * bkxcr 
+	+ 5.8697 * blxwp 
+	+ 0.02 * bxqsq 
+	+ 0.145 * cntxt 
+	+ 0.0636 * hdchk 
+	+ 0.0212 * katri 
+	+ 1.2287 * mulch 
+	- 0.1043 * qxmsq 
+	+ 0.0287 * r2ar8 
+	+ 0.1565 * rimmx 
+	+ 0.0981 * rxmsq 
+	- 1.2958 * simpl 
+	+ 0.8942 * skewr 
+	+ 0.4243 * skrxp 
+	+ 0.1094 * wknck 
+	+ 2.0614 * wkovl 
+	+ 0.1474 * wkpos 
+	- 3.2746 * wtoeg 
+	+ 5.225
+
+LM num: 6
+class=won = 
+	0.147 * bkblk 
+	- 24.3541 * bkona 
+	+ 0.1058 * bkxbq 
+	+ 0.6112 * bkxcr 
+	+ 4.0044 * blxwp 
+	+ 0.02 * bxqsq 
+	+ 0.145 * cntxt 
+	+ 0.0636 * hdchk 
+	+ 0.0212 * katri 
+	+ 0.8831 * mulch 
+	- 0.1043 * qxmsq 
+	+ 0.0287 * r2ar8 
+	+ 0.1565 * rimmx 
+	+ 0.0981 * rxmsq 
+	- 0.9659 * simpl 
+	+ 1.6099 * skewr 
+	+ 0.4243 * skrxp 
+	+ 0.1094 * wknck 
+	+ 2.0614 * wkovl 
+	+ 0.1474 * wkpos 
+	- 4.1631 * wtoeg 
+	+ 9.7842
+
+LM num: 7
+class=won = 
+	0.147 * bkblk 
+	- 2.3427 * bkona 
+	+ 0.1058 * bkxbq 
+	+ 0.2092 * bkxcr 
+	+ 0.015 * blxwp 
+	+ 0.02 * bxqsq 
+	+ 0.145 * cntxt 
+	+ 0.0636 * hdchk 
+	+ 0.0212 * katri 
+	+ 0.1055 * mulch 
+	- 0.1043 * qxmsq 
+	+ 0.0287 * r2ar8 
+	+ 0.2907 * rimmx 
+	+ 0.0981 * rxmsq 
+	+ 0.146 * skewr 
+	+ 0.1049 * skrxp 
+	+ 0.1094 * wknck 
+	+ 1.5978 * wkovl 
+	+ 0.1474 * wkpos 
+	- 0.2107 * wtoeg 
+	+ 0.4931
+
+LM num: 8
+class=won = 
+	4.5149 * bkblk 
+	- 7.4704 * bknwy 
+	- 0.3718 * bkona 
+	- 4.1821 * bkspr 
+	+ 0.1602 * bkxbq 
+	+ 0.0786 * bkxcr 
+	+ 0.015 * blxwp 
+	+ 0.02 * bxqsq 
+	+ 1.3067 * cntxt 
+	+ 128.8168 * dsopp 
+	- 0.3146 * dwipd 
+	+ 0.5327 * hdchk 
+	+ 0.5894 * katri 
+	+ 0.0189 * mulch 
+	- 0.5305 * qxmsq 
+	+ 0.2792 * r2ar8 
+	+ 0.046 * rimmx 
+	+ 0.3486 * rxmsq 
+	+ 0.0958 * skewr 
+	+ 0.0167 * skrxp 
+	+ 0.2127 * wkcti 
+	+ 0.069 * wknck 
+	+ 0.6381 * wkpos 
+	+ 1.0081 * wtoeg 
+	- 62.7386
+
+LM num: 9
+class=won = 
+	4.5149 * bkblk 
+	- 2.0771 * bknwy 
+	- 0.3718 * bkona 
+	- 2.6868 * bkspr 
+	+ 0.1602 * bkxbq 
+	+ 0.0786 * bkxcr 
+	+ 0.015 * blxwp 
+	+ 0.02 * bxqsq 
+	+ 1.3067 * cntxt 
+	+ 128.8168 * dsopp 
+	- 0.3146 * dwipd 
+	+ 0.5327 * hdchk 
+	+ 0.5894 * katri 
+	+ 0.0189 * mulch 
+	- 0.5305 * qxmsq 
+	+ 0.2792 * r2ar8 
+	+ 0.046 * rimmx 
+	+ 0.3486 * rxmsq 
+	+ 0.0958 * skewr 
+	+ 0.0167 * skrxp 
+	+ 0.2127 * wkcti 
+	+ 0.069 * wknck 
+	+ 0.6381 * wkpos 
+	+ 1.0081 * wtoeg 
+	- 66.2068
+
+LM num: 10
+class=won = 
+	9.9381 * bkblk 
+	- 0.3487 * bknwy 
+	- 0.3718 * bkona 
+	- 0.5683 * bkspr 
+	+ 0.1602 * bkxbq 
+	+ 0.0786 * bkxcr 
+	+ 0.015 * blxwp 
+	+ 0.02 * bxqsq 
+	+ 0.8188 * cntxt 
+	+ 128.8168 * dsopp 
+	- 0.1704 * dwipd 
+	+ 0.9267 * hdchk 
+	+ 0.7375 * katri 
+	+ 0.0189 * mulch 
+	- 0.5305 * qxmsq 
+	+ 0.5839 * r2ar8 
+	+ 0.046 * rimmx 
+	+ 0.3486 * rxmsq 
+	+ 0.0958 * skewr 
+	+ 0.0167 * skrxp 
+	+ 0.2937 * wkcti 
+	+ 0.069 * wknck 
+	+ 0.6381 * wkpos 
+	+ 1.0081 * wtoeg 
+	- 71.0871
+
+LM num: 11
+class=won = 
+	9.9381 * bkblk 
+	- 0.3487 * bknwy 
+	- 0.3718 * bkona 
+	- 0.5683 * bkspr 
+	+ 0.1602 * bkxbq 
+	+ 0.0786 * bkxcr 
+	+ 0.015 * blxwp 
+	+ 0.02 * bxqsq 
+	+ 0.8188 * cntxt 
+	+ 128.8168 * dsopp 
+	- 0.1704 * dwipd 
+	+ 0.9267 * hdchk 
+	+ 0.7375 * katri 
+	+ 0.0189 * mulch 
+	- 0.5305 * qxmsq 
+	+ 0.6613 * r2ar8 
+	+ 0.046 * rimmx 
+	+ 0.3486 * rxmsq 
+	+ 0.0958 * skewr 
+	+ 0.0167 * skrxp 
+	+ 0.6896 * wkcti 
+	+ 0.069 * wknck 
+	+ 0.6381 * wkpos 
+	+ 1.0081 * wtoeg 
+	- 71.3092
+
+LM num: 12
+class=won = 
+	11.9237 * bkblk 
+	- 0.3487 * bknwy 
+	- 0.3718 * bkona 
+	- 0.5683 * bkspr 
+	+ 0.1602 * bkxbq 
+	+ 0.0786 * bkxcr 
+	+ 0.015 * blxwp 
+	+ 0.02 * bxqsq 
+	+ 0.8188 * cntxt 
+	+ 128.8168 * dsopp 
+	- 0.1704 * dwipd 
+	+ 1.6704 * hdchk 
+	+ 0.7375 * katri 
+	+ 0.0189 * mulch 
+	- 0.5305 * qxmsq 
+	+ 0.515 * r2ar8 
+	+ 0.046 * rimmx 
+	+ 0.3486 * rxmsq 
+	+ 0.0958 * skewr 
+	+ 0.0167 * skrxp 
+	+ 0.2449 * wkcti 
+	+ 0.069 * wknck 
+	+ 0.6381 * wkpos 
+	+ 1.0081 * wtoeg 
+	- 72.0898
+
+LM num: 13
+class=won = 
+	8.6743 * bkblk 
+	- 0.3487 * bknwy 
+	- 0.3718 * bkona 
+	- 0.5683 * bkspr 
+	+ 0.1602 * bkxbq 
+	+ 0.0786 * bkxcr 
+	+ 0.015 * blxwp 
+	+ 0.02 * bxqsq 
+	+ 0.8188 * cntxt 
+	+ 128.8168 * dsopp 
+	- 0.1704 * dwipd 
+	+ 0.8347 * hdchk 
+	+ 1.0051 * katri 
+	+ 0.0189 * mulch 
+	- 0.5305 * qxmsq 
+	+ 0.4256 * r2ar8 
+	+ 0.046 * rimmx 
+	+ 0.3486 * rxmsq 
+	+ 0.0958 * skewr 
+	+ 0.0167 * skrxp 
+	+ 0.1152 * wkcti 
+	+ 0.069 * wknck 
+	+ 0.6381 * wkpos 
+	+ 1.0081 * wtoeg 
+	- 69.9466
+
+LM num: 14
+class=won = 
+	1.003 * bkblk 
+	- 0.3718 * bkona 
+	+ 0.1602 * bkxbq 
+	+ 0.1108 * bkxcr 
+	- 0.0354 * bkxwp 
+	+ 0.015 * blxwp 
+	+ 0.02 * bxqsq 
+	- 1.0785 * cntxt 
+	+ 622.0299 * dsopp 
+	+ 0.1937 * hdchk 
+	+ 0.9767 * katri 
+	+ 0.0189 * mulch 
+	- 6.3983 * qxmsq 
+	+ 0.0912 * r2ar8 
+	+ 0.046 * rimmx 
+	+ 3.4593 * rxmsq 
+	+ 0.0958 * skewr 
+	+ 0.0167 * skrxp 
+	+ 0.069 * wknck 
+	+ 0.564 * wkpos 
+	+ 0.8758 * wtoeg 
+	- 310.0552
+
+LM num: 15
+class=won = 
+	1.003 * bkblk 
+	- 0.3718 * bkona 
+	+ 0.1602 * bkxbq 
+	+ 0.1501 * bkxcr 
+	- 0.0696 * bkxwp 
+	+ 0.015 * blxwp 
+	+ 0.02 * bxqsq 
+	- 0.0801 * cntxt 
+	+ 211.7095 * dsopp 
+	+ 0.1937 * hdchk 
+	+ 0.2986 * katri 
+	+ 0.0189 * mulch 
+	- 1.9653 * qxmsq 
+	+ 0.0912 * r2ar8 
+	+ 0.046 * rimmx 
+	+ 1.1138 * rxmsq 
+	+ 0.0958 * skewr 
+	+ 0.0167 * skrxp 
+	+ 0.069 * wknck 
+	+ 0.564 * wkpos 
+	+ 0.8758 * wtoeg 
+	- 106.0428
+
+LM num: 16
+class=won = 
+	0.3355 * bkblk 
+	- 0.3718 * bkona 
+	+ 0.1802 * bkxbq 
+	+ 0.036 * bkxcr 
+	+ 0.015 * blxwp 
+	+ 0.02 * bxqsq 
+	+ 0.1441 * cntxt 
+	+ 37.3015 * dsopp 
+	+ 0.1119 * hdchk 
+	+ 0.0554 * katri 
+	+ 0.0189 * mulch 
+	- 0.198 * qxmsq 
+	+ 0.0372 * r2ar8 
+	+ 0.046 * rimmx 
+	+ 0.1623 * rxmsq 
+	+ 0.0958 * skewr 
+	+ 0.0167 * skrxp 
+	+ 0.069 * wknck 
+	+ 0.265 * wkpos 
+	+ 0.3384 * wtoeg 
+	- 18.3701
+
+Number of Rules : 16
+
+Time taken to build model: 0.55 seconds
+Time taken to test model on training data: 4.66 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9782
+Mean absolute error                      0.0481
+Root mean squared error                  0.1074
+Relative absolute error                  9.6382 %
+Root relative squared error             21.484  %
+Total Number of Instances             1054     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9632
+Mean absolute error                      0.0586
+Root mean squared error                  0.1363
+Relative absolute error                 11.7227 %
+Root relative squared error             27.2332 %
+Total Number of Instances             1054     
+

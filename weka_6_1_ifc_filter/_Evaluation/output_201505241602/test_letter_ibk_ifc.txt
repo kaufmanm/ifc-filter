@@ -1,0 +1,57 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.lazy.IBk 
+
+FilteredClassifier using weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'letter-weka.filters.unsupervised.instance.Resample-S1-Z11.0-no-replacement-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R17-26,28-42-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute x-box numeric
+@attribute y-box numeric
+@attribute width numeric
+@attribute high numeric
+@attribute onpix numeric
+@attribute x-bar numeric
+@attribute y-bar numeric
+@attribute x2bar numeric
+@attribute y2bar numeric
+@attribute xybar numeric
+@attribute x2ybr numeric
+@attribute xy2br numeric
+@attribute x-ege numeric
+@attribute xegvy numeric
+@attribute y-ege numeric
+@attribute yegvx numeric
+@attribute class=K numeric
+
+@data
+
+
+Classifier Model
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.72 seconds
+Time taken to test model on training data: 2.7 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances             2200     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6147
+Mean absolute error                      0.0314
+Root mean squared error                  0.1771
+Relative absolute error                 37.9369 %
+Root relative squared error             87.0829 %
+Total Number of Instances             2200     
+

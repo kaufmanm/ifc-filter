@@ -1,0 +1,41 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+Class=LIVE =
+
+      0.1925 * SEX=male +
+      0.1721 * MALAISE=no +
+     -0.1892 * ANOREXIA=no +
+      0.1032 * LIVER_BIG=no +
+      0.2008 * SPIDERS=no +
+      0.2046 * ASCITES=no +
+     -0.0892 * BILIRUBIN +
+      0.1151 * ALBUMIN +
+      0.1779
+
+Time taken to build model: 0.05 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.6696
+Mean absolute error                      0.2133
+Root mean squared error                  0.3006
+Relative absolute error                 65.1021 %
+Root relative squared error             74.2693 %
+Total Number of Instances              155     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4691
+Mean absolute error                      0.2606
+Root mean squared error                  0.3681
+Relative absolute error                 78.884  %
+Root relative squared error             90.147  %
+Total Number of Instances              155     
+

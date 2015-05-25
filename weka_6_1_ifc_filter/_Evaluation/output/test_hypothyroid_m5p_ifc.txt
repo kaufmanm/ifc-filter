@@ -1,0 +1,234 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation hypothyroid-weka.filters.unsupervised.instance.Resample-S1-Z33.0-no-replacement-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R31-33-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute age numeric
+@attribute sex numeric
+@attribute 'on thyroxine' numeric
+@attribute 'query on thyroxine' numeric
+@attribute 'on antithyroid medication' numeric
+@attribute sick numeric
+@attribute pregnant numeric
+@attribute 'thyroid surgery' numeric
+@attribute 'I131 treatment' numeric
+@attribute 'query hypothyroid' numeric
+@attribute 'query hyperthyroid' numeric
+@attribute lithium numeric
+@attribute goitre numeric
+@attribute tumor numeric
+@attribute hypopituitary numeric
+@attribute psych numeric
+@attribute 'TSH measured' numeric
+@attribute TSH numeric
+@attribute 'T3 measured' numeric
+@attribute T3 numeric
+@attribute 'TT4 measured' numeric
+@attribute TT4 numeric
+@attribute 'T4U measured' numeric
+@attribute T4U numeric
+@attribute 'FTI measured' numeric
+@attribute FTI numeric
+@attribute 'TBG measured' numeric
+@attribute TBG numeric
+@attribute 'referral source' numeric
+@attribute Class=negative numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+TSH <= 0.846 : 
+|   TSH measured <= 0.737 : 
+|   |   FTI <= 0.146 : LM1 (37/61.965%)
+|   |   FTI >  0.146 : 
+|   |   |   TSH <= 0.764 : 
+|   |   |   |   on thyroxine <= 0.599 : 
+|   |   |   |   |   T3 <= 0.567 : LM2 (23/0%)
+|   |   |   |   |   T3 >  0.567 : 
+|   |   |   |   |   |   FTI <= 0.431 : LM3 (10/0%)
+|   |   |   |   |   |   FTI >  0.431 : 
+|   |   |   |   |   |   |   TSH <= 0.694 : 
+|   |   |   |   |   |   |   |   sex <= 0.544 : 
+|   |   |   |   |   |   |   |   |   TT4 <= 0.784 : LM4 (14/0%)
+|   |   |   |   |   |   |   |   |   TT4 >  0.784 : LM5 (4/0%)
+|   |   |   |   |   |   |   |   sex >  0.544 : LM6 (5/0%)
+|   |   |   |   |   |   |   TSH >  0.694 : LM7 (6/0%)
+|   |   |   |   on thyroxine >  0.599 : LM8 (19/0%)
+|   |   |   TSH >  0.764 : LM9 (28/0%)
+|   TSH measured >  0.737 : LM10 (118/0%)
+TSH >  0.846 : LM11 (980/0%)
+
+LM num: 1
+Class=negative = 
+	0.2596 * age 
+	+ 0.0064 * sex 
+	+ 0.7241 * on thyroxine 
+	+ 24.018 * thyroid surgery 
+	+ 0.0933 * TSH measured 
+	+ 0.1888 * TSH 
+	+ 0.1137 * T3 
+	- 0.0905 * TT4 
+	+ 0.1777 * FTI 
+	- 12.5696
+
+LM num: 2
+Class=negative = 
+	0.1467 * age 
+	- 0.2153 * sex 
+	+ 1.2179 * on thyroxine 
+	+ 55.5267 * thyroid surgery 
+	+ 0.0933 * TSH measured 
+	+ 0.1357 * TSH 
+	+ 0.1415 * T3 
+	+ 0.1274 * TT4 
+	+ 0.2104 * FTI 
+	- 28.5273
+
+LM num: 3
+Class=negative = 
+	0.1467 * age 
+	- 0.1496 * sex 
+	+ 1.2179 * on thyroxine 
+	+ 71.3078 * thyroid surgery 
+	+ 0.0933 * TSH measured 
+	+ 0.0767 * TSH 
+	+ 0.1194 * T3 
+	+ 0.3455 * TT4 
+	+ 0.1773 * FTI 
+	- 36.4926
+
+LM num: 4
+Class=negative = 
+	0.1467 * age 
+	- 0.1496 * sex 
+	+ 1.2179 * on thyroxine 
+	+ 87.2771 * thyroid surgery 
+	+ 0.0933 * TSH measured 
+	+ 0.0635 * TSH 
+	+ 0.1194 * T3 
+	+ 0.5581 * TT4 
+	+ 0.1773 * FTI 
+	- 44.5826
+
+LM num: 5
+Class=negative = 
+	0.1467 * age 
+	- 0.1496 * sex 
+	+ 1.2179 * on thyroxine 
+	+ 85.7267 * thyroid surgery 
+	+ 0.0933 * TSH measured 
+	+ 0.0635 * TSH 
+	+ 0.1194 * T3 
+	+ 0.606 * TT4 
+	+ 0.1773 * FTI 
+	- 43.8175
+
+LM num: 6
+Class=negative = 
+	0.1467 * age 
+	- 0.1496 * sex 
+	+ 1.2179 * on thyroxine 
+	+ 82.8614 * thyroid surgery 
+	+ 0.0933 * TSH measured 
+	+ 0.0635 * TSH 
+	+ 0.1194 * T3 
+	+ 0.5339 * TT4 
+	+ 0.1773 * FTI 
+	- 42.3578
+
+LM num: 7
+Class=negative = 
+	0.1467 * age 
+	- 0.1496 * sex 
+	+ 1.2179 * on thyroxine 
+	+ 78.9027 * thyroid surgery 
+	+ 0.0933 * TSH measured 
+	+ 0.0269 * TSH 
+	+ 0.1194 * T3 
+	+ 0.4649 * TT4 
+	+ 0.1773 * FTI 
+	- 40.3233
+
+LM num: 8
+Class=negative = 
+	0.1467 * age 
+	+ 0.0064 * sex 
+	+ 1.8034 * on thyroxine 
+	+ 51.9536 * thyroid surgery 
+	+ 0.0933 * TSH measured 
+	+ 0.1593 * TSH 
+	+ 0.0669 * T3 
+	+ 0.1538 * TT4 
+	+ 0.0986 * FTI 
+	- 26.7056
+
+LM num: 9
+Class=negative = 
+	0.1467 * age 
+	+ 0.0064 * sex 
+	+ 1.2002 * on thyroxine 
+	+ 35.2966 * thyroid surgery 
+	+ 0.0933 * TSH measured 
+	+ 0.3004 * TSH 
+	+ 0.0669 * T3 
+	- 0.0494 * TT4 
+	+ 0.0986 * FTI 
+	- 17.889
+
+LM num: 10
+Class=negative = 
+	0.0771 * age 
+	+ 0.0064 * sex 
+	+ 0.1842 * on thyroxine 
+	+ 7.8044 * thyroid surgery 
+	+ 0.1083 * TSH measured 
+	+ 0.0954 * TSH 
+	+ 0.039 * T3 
+	- 0.024 * TT4 
+	+ 0.0497 * FTI 
+	- 3.258
+
+LM num: 11
+Class=negative = 
+	0.0025 * age 
+	+ 0.0018 * sex 
+	+ 0.0048 * on thyroxine 
+	+ 0.2333 * thyroid surgery 
+	+ 0.0062 * TSH measured 
+	+ 0.0141 * TSH 
+	+ 0.0015 * T3 
+	+ 0.0006 * FTI 
+	+ 0.8604
+
+Number of Rules : 11
+
+Time taken to build model: 0.64 seconds
+Time taken to test model on training data: 3.07 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9713
+Mean absolute error                      0.017 
+Root mean squared error                  0.0643
+Relative absolute error                 12.3961 %
+Root relative squared error             24.5765 %
+Total Number of Instances             1244     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.657 
+Mean absolute error                      0.0504
+Root mean squared error                  0.2001
+Relative absolute error                 36.7414 %
+Root relative squared error             76.3903 %
+Total Number of Instances             1244     
+

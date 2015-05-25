@@ -1,0 +1,119 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.MultilayerPerceptron 
+
+FilteredClassifier using weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation wisconsin-breast-cancer-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R11-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute Clump_Thickness numeric
+@attribute Cell_Size_Uniformity numeric
+@attribute Cell_Shape_Uniformity numeric
+@attribute Marginal_Adhesion numeric
+@attribute Single_Epi_Cell_Size numeric
+@attribute Bare_Nuclei numeric
+@attribute Bland_Chromatin numeric
+@attribute Normal_Nucleoli numeric
+@attribute Mitoses numeric
+@attribute Class=benign numeric
+
+@data
+
+
+Classifier Model
+Linear Node 0
+    Inputs    Weights
+    Threshold    0.0949157181993787
+    Node 1    -0.20354310624424463
+    Node 2    -1.1708459505127795
+    Node 3    -0.9154101026713916
+    Node 4    -0.7672027338616892
+    Node 5    0.9086328396951616
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -9.825518241860744
+    Attrib Clump_Thickness    -2.2267700459275206
+    Attrib Cell_Size_Uniformity    -3.266524420274547
+    Attrib Cell_Shape_Uniformity    -4.786084048889256
+    Attrib Marginal_Adhesion    -3.3208936654855172
+    Attrib Single_Epi_Cell_Size    -5.077885330482208
+    Attrib Bare_Nuclei    4.133839577961463
+    Attrib Bland_Chromatin    6.02489564837968
+    Attrib Normal_Nucleoli    0.18237221874516168
+    Attrib Mitoses    -0.10607389449100127
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -9.423690602874201
+    Attrib Clump_Thickness    1.5238732805581785
+    Attrib Cell_Size_Uniformity    -3.0494978000873956
+    Attrib Cell_Shape_Uniformity    4.648631662009015
+    Attrib Marginal_Adhesion    3.5448228044166683
+    Attrib Single_Epi_Cell_Size    -9.912447296846743
+    Attrib Bare_Nuclei    -4.23560738034361
+    Attrib Bland_Chromatin    -5.904654089839163
+    Attrib Normal_Nucleoli    5.137659216010232
+    Attrib Mitoses    -4.779104180242991
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -8.114454781090592
+    Attrib Clump_Thickness    -5.216434669443758
+    Attrib Cell_Size_Uniformity    5.419625724830285
+    Attrib Cell_Shape_Uniformity    -3.6971853026934474
+    Attrib Marginal_Adhesion    4.166152084292039
+    Attrib Single_Epi_Cell_Size    -1.7949053843822267
+    Attrib Bare_Nuclei    -0.35244764557573477
+    Attrib Bland_Chromatin    3.6963094999542907
+    Attrib Normal_Nucleoli    -2.7817690515094062
+    Attrib Mitoses    -2.7361364711731553
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -9.584994067297425
+    Attrib Clump_Thickness    -0.13106098342886466
+    Attrib Cell_Size_Uniformity    -0.985777934109888
+    Attrib Cell_Shape_Uniformity    -2.9839093328946196
+    Attrib Marginal_Adhesion    -3.9076764182621266
+    Attrib Single_Epi_Cell_Size    13.069467393751323
+    Attrib Bare_Nuclei    -8.305083597535905
+    Attrib Bland_Chromatin    -2.4794450668435597
+    Attrib Normal_Nucleoli    -4.332353489015115
+    Attrib Mitoses    5.149305848010872
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -9.94956591162444
+    Attrib Clump_Thickness    7.930403125617652
+    Attrib Cell_Size_Uniformity    5.667905924373643
+    Attrib Cell_Shape_Uniformity    6.029768126789915
+    Attrib Marginal_Adhesion    6.1443878022043075
+    Attrib Single_Epi_Cell_Size    2.542175696689216
+    Attrib Bare_Nuclei    9.623767983479704
+    Attrib Bland_Chromatin    6.292369279415813
+    Attrib Normal_Nucleoli    2.4230216969635996
+    Attrib Mitoses    4.761519161543469
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 1.25 seconds
+Time taken to test model on training data: 0.33 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9604
+Mean absolute error                      0.0629
+Root mean squared error                  0.1436
+Relative absolute error                 13.9207 %
+Root relative squared error             30.2053 %
+Total Number of Instances              699     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8995
+Mean absolute error                      0.0833
+Root mean squared error                  0.2088
+Relative absolute error                 18.4113 %
+Root relative squared error             43.8546 %
+Total Number of Instances              699     
+

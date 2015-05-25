@@ -1,0 +1,63 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -179.5978;  df=13;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      0.0175*age
++     -1.5421*sex
++     -0.7009*chest
++     -0.0252*resting_blood_pressure
++     -0.0072*serum_cholestoral
++      0.7948*fasting_blood_sugar
++     -0.3017*resting_electrocardiographic_results
++      0.021 *maximum_heart_rate_achieved
++     -0.8294*exercise_induced_angina
++     -0.3437*oldpeak
++     -0.4423*slope
++     -1.1653*number_of_major_vessels
++     -0.3414*thal
++     8.4464))
+
+Odds Ratios...
+Variable         O.R.
+       1       1.0176
+       2       0.2139
+       3       0.4961
+       4       0.9751
+       5       0.9928
+       6       2.214 
+       7       0.7396
+       8       1.0213
+       9       0.4363
+      10       0.7091
+      11       0.6426
+      12       0.3118
+      13       0.7108
+
+
+Time taken to build model: 0.03 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7626
+Mean absolute error                      0.206 
+Root mean squared error                  0.3214
+Relative absolute error                 41.7236 %
+Root relative squared error             64.6876 %
+Total Number of Instances              270     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7043
+Mean absolute error                      0.2258
+Root mean squared error                  0.3543
+Relative absolute error                 45.5427 %
+Root relative squared error             70.9826 %
+Total Number of Instances              270     
+

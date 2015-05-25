@@ -1,0 +1,126 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'waveform-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R41,43-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z22.0-no-replacement-weka.filters.unsupervised.instance.Resample-S1-Z44.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute x1 numeric
+@attribute x2 numeric
+@attribute x3 numeric
+@attribute x4 numeric
+@attribute x5 numeric
+@attribute x6 numeric
+@attribute x7 numeric
+@attribute x8 numeric
+@attribute x9 numeric
+@attribute x10 numeric
+@attribute x11 numeric
+@attribute x12 numeric
+@attribute x13 numeric
+@attribute x14 numeric
+@attribute x15 numeric
+@attribute x16 numeric
+@attribute x17 numeric
+@attribute x18 numeric
+@attribute x19 numeric
+@attribute x20 numeric
+@attribute x21 numeric
+@attribute x22 numeric
+@attribute x23 numeric
+@attribute x24 numeric
+@attribute x25 numeric
+@attribute x26 numeric
+@attribute x27 numeric
+@attribute x28 numeric
+@attribute x29 numeric
+@attribute x30 numeric
+@attribute x31 numeric
+@attribute x32 numeric
+@attribute x33 numeric
+@attribute x34 numeric
+@attribute x35 numeric
+@attribute x36 numeric
+@attribute x37 numeric
+@attribute x38 numeric
+@attribute x39 numeric
+@attribute x40 numeric
+@attribute class=1 numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ +       0.1986 * (normalized) x1
+ +       0.1289 * (normalized) x2
+ +       0.2056 * (normalized) x3
+ -       0.0096 * (normalized) x4
+ +       0.2415 * (normalized) x5
+ +       0.0642 * (normalized) x6
+ +       0.1106 * (normalized) x7
+ +       0.1276 * (normalized) x8
+ +       0.0402 * (normalized) x9
+ +       0.1712 * (normalized) x10
+ +       0.2718 * (normalized) x11
+ +       0.0059 * (normalized) x12
+ -       0.0292 * (normalized) x13
+ -       0.1313 * (normalized) x14
+ +       0.2557 * (normalized) x15
+ +       0.2661 * (normalized) x16
+ +       0.0843 * (normalized) x17
+ -       0.0771 * (normalized) x18
+ -       0.0725 * (normalized) x19
+ +       0.0743 * (normalized) x20
+ +       0.0818 * (normalized) x21
+ +       0.0356 * (normalized) x22
+ +       0.2165 * (normalized) x23
+ +       0.1044 * (normalized) x24
+ +       0.1704 * (normalized) x25
+ +       0.2606 * (normalized) x26
+ -       0.0126 * (normalized) x27
+ +       0.2913 * (normalized) x28
+ +       0.0884 * (normalized) x29
+ +       0.2059 * (normalized) x30
+ +       0.0971 * (normalized) x31
+ +       0.2298 * (normalized) x32
+ -       0.1101 * (normalized) x33
+ +       0.2081 * (normalized) x34
+ +       0.1776 * (normalized) x35
+ +       0.1499 * (normalized) x36
+ +       0.0695 * (normalized) x37
+ +       0.0081 * (normalized) x38
+ +       0.1448 * (normalized) x39
+ +       0.1964 * (normalized) x40
+ -       1.8523
+
+
+
+Number of kernel evaluations: 117370 (97.283% cached)
+
+Time taken to build model: 0.58 seconds
+Time taken to test model on training data: 1.58 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.826 
+Mean absolute error                      0.1831
+Root mean squared error                  0.2716
+Relative absolute error                 42.0455 %
+Root relative squared error             58.2117 %
+Total Number of Instances              484     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.2787
+Mean absolute error                      0.4051
+Root mean squared error                  0.453 
+Relative absolute error                 92.6786 %
+Root relative squared error             96.7007 %
+Total Number of Instances              484     
+

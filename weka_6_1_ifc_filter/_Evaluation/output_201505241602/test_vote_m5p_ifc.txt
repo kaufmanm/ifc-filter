@@ -1,0 +1,139 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation vote-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R17-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute handicapped-infants numeric
+@attribute water-project-cost-sharing numeric
+@attribute adoption-of-the-budget-resolution numeric
+@attribute physician-fee-freeze numeric
+@attribute el-salvador-aid numeric
+@attribute religious-groups-in-schools numeric
+@attribute anti-satellite-test-ban numeric
+@attribute aid-to-nicaraguan-contras numeric
+@attribute mx-missile numeric
+@attribute immigration numeric
+@attribute synfuels-corporation-cutback numeric
+@attribute education-spending numeric
+@attribute superfund-right-to-sue numeric
+@attribute crime numeric
+@attribute duty-free-exports numeric
+@attribute export-administration-act-south-africa numeric
+@attribute Class numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+physician-fee-freeze <= 0.51 : 
+|   immigration <= 0.502 : 
+|   |   adoption-of-the-budget-resolution <= 0.483 : LM1 (74/0%)
+|   |   adoption-of-the-budget-resolution >  0.483 : 
+|   |   |   synfuels-corporation-cutback <= 0.583 : LM2 (15/0%)
+|   |   |   synfuels-corporation-cutback >  0.583 : LM3 (6/0%)
+|   immigration >  0.502 : LM4 (82/54.264%)
+physician-fee-freeze >  0.51 : 
+|   synfuels-corporation-cutback <= 0.583 : LM5 (140/36.131%)
+|   synfuels-corporation-cutback >  0.583 : LM6 (118/0%)
+
+LM num: 1
+Class = 
+	0.0721 * adoption-of-the-budget-resolution 
+	+ 0.0611 * physician-fee-freeze 
+	- 0.0692 * anti-satellite-test-ban 
+	+ 0.0395 * mx-missile 
+	+ 0.1948 * immigration 
+	+ 0.1573 * synfuels-corporation-cutback 
+	+ 0.0215 * education-spending 
+	- 0.1605
+
+LM num: 2
+Class = 
+	0.1106 * adoption-of-the-budget-resolution 
+	+ 0.0611 * physician-fee-freeze 
+	- 0.2347 * anti-satellite-test-ban 
+	+ 0.0395 * mx-missile 
+	+ 0.1948 * immigration 
+	+ 0.4966 * synfuels-corporation-cutback 
+	+ 0.0215 * education-spending 
+	- 0.2121
+
+LM num: 3
+Class = 
+	0.1106 * adoption-of-the-budget-resolution 
+	+ 0.0611 * physician-fee-freeze 
+	- 0.5509 * anti-satellite-test-ban 
+	+ 0.0395 * mx-missile 
+	+ 0.1948 * immigration 
+	+ 0.6073 * synfuels-corporation-cutback 
+	+ 0.0215 * education-spending 
+	- 0.0296
+
+LM num: 4
+Class = 
+	0.0501 * adoption-of-the-budget-resolution 
+	+ 0.0611 * physician-fee-freeze 
+	- 0.3087 * anti-satellite-test-ban 
+	+ 0.5649 * mx-missile 
+	+ 0.2147 * immigration 
+	+ 0.7255 * synfuels-corporation-cutback 
+	+ 0.2066 * education-spending 
+	- 0.4385
+
+LM num: 5
+Class = 
+	0.1002 * handicapped-infants 
+	+ 0.1778 * adoption-of-the-budget-resolution 
+	+ 0.043 * physician-fee-freeze 
+	+ 0.0924 * el-salvador-aid 
+	- 0.0064 * anti-satellite-test-ban 
+	+ 0.0061 * mx-missile 
+	+ 0.0326 * immigration 
+	+ 0.0256 * synfuels-corporation-cutback 
+	+ 0.0041 * education-spending 
+	+ 0.6136
+
+LM num: 6
+Class = 
+	0.0073 * handicapped-infants 
+	+ 0.0184 * adoption-of-the-budget-resolution 
+	+ 0.043 * physician-fee-freeze 
+	+ 0.0054 * el-salvador-aid 
+	- 0.0064 * anti-satellite-test-ban 
+	+ 0.0061 * mx-missile 
+	+ 0.0326 * immigration 
+	+ 0.0272 * synfuels-corporation-cutback 
+	+ 0.0041 * education-spending 
+	+ 0.8973
+
+Number of Rules : 6
+
+Time taken to build model: 0.16 seconds
+Time taken to test model on training data: 0.27 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9464
+Mean absolute error                      0.0584
+Root mean squared error                  0.1577
+Relative absolute error                 12.3229 %
+Root relative squared error             32.3836 %
+Total Number of Instances              435     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9149
+Mean absolute error                      0.0706
+Root mean squared error                  0.1967
+Relative absolute error                 14.8669 %
+Root relative squared error             40.3077 %
+Total Number of Instances              435     
+

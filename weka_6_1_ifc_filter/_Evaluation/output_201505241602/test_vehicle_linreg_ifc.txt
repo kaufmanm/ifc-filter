@@ -1,0 +1,73 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'vehicle-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R19,21-22-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute COMPACTNESS numeric
+@attribute CIRCULARITY numeric
+@attribute 'DISTANCE CIRCULARITY' numeric
+@attribute 'RADIUS RATIO' numeric
+@attribute 'PR.AXIS ASPECT RATIO' numeric
+@attribute 'MAX.LENGTH ASPECT RATIO' numeric
+@attribute 'SCATTER RATIO' numeric
+@attribute ELONGATEDNESS numeric
+@attribute 'PR.AXIS RECTANGULARITY' numeric
+@attribute 'MAX.LENGTH RECTANGULARITY' numeric
+@attribute 'SCALED VARIANCE_MAJOR' numeric
+@attribute 'SCALED VARIANCE_MINOR' numeric
+@attribute 'SCALED RADIUS OF GYRATION' numeric
+@attribute 'SKEWNESS ABOUT_MAJOR' numeric
+@attribute 'SKEWNESS ABOUT_MINOR' numeric
+@attribute 'KURTOSIS ABOUT_MAJOR' numeric
+@attribute 'KURTOSIS ABOUT_MINOR' numeric
+@attribute 'HOLLOWS RATIO' numeric
+@attribute Class=saab numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+Class=saab =
+
+      0.2941 * COMPACTNESS +
+      0.1842 * CIRCULARITY +
+      0.1756 * DISTANCE CIRCULARITY +
+      0.5053 * PR.AXIS ASPECT RATIO +
+      0.3871 * ELONGATEDNESS +
+     -0.4699 * PR.AXIS RECTANGULARITY +
+      0.2416 * MAX.LENGTH RECTANGULARITY +
+      0.2771 * SCALED VARIANCE_MAJOR +
+      0.4808 * SKEWNESS ABOUT_MINOR +
+      0.2858 * KURTOSIS ABOUT_MAJOR +
+      0.2766 * HOLLOWS RATIO +
+     -1.0009
+
+Time taken to build model: 0.3 seconds
+Time taken to test model on training data: 0.86 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5262
+Mean absolute error                      0.2942
+Root mean squared error                  0.3725
+Relative absolute error                 77.1453 %
+Root relative squared error             85.3037 %
+Total Number of Instances              846     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.3889
+Mean absolute error                      0.3212
+Root mean squared error                  0.4055
+Relative absolute error                 84.0912 %
+Root relative squared error             92.7227 %
+Total Number of Instances              846     
+

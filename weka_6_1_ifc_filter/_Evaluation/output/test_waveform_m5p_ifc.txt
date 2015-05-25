@@ -1,0 +1,485 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'waveform-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R41,43-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z22.0-no-replacement-weka.filters.unsupervised.instance.Resample-S1-Z44.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute x1 numeric
+@attribute x2 numeric
+@attribute x3 numeric
+@attribute x4 numeric
+@attribute x5 numeric
+@attribute x6 numeric
+@attribute x7 numeric
+@attribute x8 numeric
+@attribute x9 numeric
+@attribute x10 numeric
+@attribute x11 numeric
+@attribute x12 numeric
+@attribute x13 numeric
+@attribute x14 numeric
+@attribute x15 numeric
+@attribute x16 numeric
+@attribute x17 numeric
+@attribute x18 numeric
+@attribute x19 numeric
+@attribute x20 numeric
+@attribute x21 numeric
+@attribute x22 numeric
+@attribute x23 numeric
+@attribute x24 numeric
+@attribute x25 numeric
+@attribute x26 numeric
+@attribute x27 numeric
+@attribute x28 numeric
+@attribute x29 numeric
+@attribute x30 numeric
+@attribute x31 numeric
+@attribute x32 numeric
+@attribute x33 numeric
+@attribute x34 numeric
+@attribute x35 numeric
+@attribute x36 numeric
+@attribute x37 numeric
+@attribute x38 numeric
+@attribute x39 numeric
+@attribute x40 numeric
+@attribute class=1 numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+x17 <= 0.195 : LM1 (181/0%)
+x17 >  0.195 : 
+|   x15 <= 0.453 : 
+|   |   x9 <= 0.685 : LM2 (59/0%)
+|   |   x9 >  0.685 : 
+|   |   |   x38 <= 0.474 : LM3 (9/0%)
+|   |   |   x38 >  0.474 : 
+|   |   |   |   x19 <= 0.586 : LM4 (5/0%)
+|   |   |   |   x19 >  0.586 : 
+|   |   |   |   |   x17 <= 0.843 : LM5 (4/0%)
+|   |   |   |   |   x17 >  0.843 : LM6 (2/0%)
+|   x15 >  0.453 : 
+|   |   x11 <= 0.376 : 
+|   |   |   x15 <= 0.762 : LM7 (19/0%)
+|   |   |   x15 >  0.762 : 
+|   |   |   |   x10 <= 0.447 : 
+|   |   |   |   |   x6 <= 0.729 : LM8 (15/0%)
+|   |   |   |   |   x6 >  0.729 : 
+|   |   |   |   |   |   x5 <= 0.451 : LM9 (2/0%)
+|   |   |   |   |   |   x5 >  0.451 : LM10 (5/0%)
+|   |   |   |   x10 >  0.447 : 
+|   |   |   |   |   x19 <= 0.584 : LM11 (13/0%)
+|   |   |   |   |   x19 >  0.584 : 
+|   |   |   |   |   |   x15 <= 0.867 : 
+|   |   |   |   |   |   |   x25 <= 0.495 : LM12 (6/0%)
+|   |   |   |   |   |   |   x25 >  0.495 : LM13 (11/22.71%)
+|   |   |   |   |   |   x15 >  0.867 : LM14 (6/0%)
+|   |   x11 >  0.376 : 
+|   |   |   x8 <= 0.7 : LM15 (72/81.453%)
+|   |   |   x8 >  0.7 : 
+|   |   |   |   x17 <= 0.694 : 
+|   |   |   |   |   x29 <= 0.513 : 
+|   |   |   |   |   |   x18 <= 0.747 : LM16 (9/78.083%)
+|   |   |   |   |   |   x18 >  0.747 : LM17 (7/0%)
+|   |   |   |   |   x29 >  0.513 : LM18 (15/0%)
+|   |   |   |   x17 >  0.694 : LM19 (44/0%)
+
+LM num: 1
+class=1 = 
+	0.0343 * x1 
+	+ 0.0282 * x3 
+	+ 0.0243 * x5 
+	+ 0.0086 * x8 
+	+ 0.0089 * x10 
+	+ 0.0488 * x11 
+	+ 0.0235 * x15 
+	+ 0.0196 * x16 
+	+ 0.0136 * x17 
+	+ 0.0339 * x25 
+	+ 0.0371 * x29 
+	+ 0.0308 * x39 
+	- 0.123
+
+LM num: 2
+class=1 = 
+	0.1142 * x1 
+	+ 0.0749 * x3 
+	+ 0.0832 * x5 
+	+ 0.0306 * x8 
+	+ 0.0758 * x9 
+	+ 0.0602 * x10 
+	+ 0.2056 * x11 
+	+ 0.0504 * x14 
+	+ 0.072 * x15 
+	+ 0.0663 * x16 
+	+ 0.0431 * x17 
+	+ 0.0209 * x25 
+	+ 0.1858 * x29 
+	+ 0.173 * x38 
+	+ 0.0946 * x39 
+	- 0.5825
+
+LM num: 3
+class=1 = 
+	0.1142 * x1 
+	+ 0.0749 * x3 
+	+ 0.0832 * x5 
+	+ 0.0306 * x8 
+	+ 0.1602 * x9 
+	+ 0.0602 * x10 
+	+ 0.2056 * x11 
+	+ 0.0504 * x14 
+	+ 0.072 * x15 
+	+ 0.0663 * x16 
+	+ 0.0431 * x17 
+	+ 0.0209 * x25 
+	+ 0.1858 * x29 
+	+ 1.7942 * x38 
+	+ 0.0946 * x39 
+	- 1.3065
+
+LM num: 4
+class=1 = 
+	0.1142 * x1 
+	+ 0.0749 * x3 
+	+ 0.0832 * x5 
+	+ 0.0306 * x8 
+	+ 0.1602 * x9 
+	+ 0.0602 * x10 
+	+ 0.2056 * x11 
+	+ 0.0504 * x14 
+	+ 0.072 * x15 
+	+ 0.0663 * x16 
+	+ 0.0431 * x17 
+	- 0.2843 * x19 
+	+ 0.0209 * x25 
+	+ 0.1858 * x29 
+	+ 1.6844 * x38 
+	+ 0.0946 * x39 
+	- 0.9495
+
+LM num: 5
+class=1 = 
+	0.1142 * x1 
+	+ 0.0749 * x3 
+	+ 0.0832 * x5 
+	+ 0.0306 * x8 
+	+ 0.1602 * x9 
+	+ 0.0602 * x10 
+	+ 0.2056 * x11 
+	+ 0.0504 * x14 
+	+ 0.072 * x15 
+	+ 0.0663 * x16 
+	+ 0.1468 * x17 
+	- 0.2708 * x19 
+	+ 0.0209 * x25 
+	+ 0.1858 * x29 
+	+ 1.6844 * x38 
+	+ 0.0946 * x39 
+	- 1.0719
+
+LM num: 6
+class=1 = 
+	0.1142 * x1 
+	+ 0.0749 * x3 
+	+ 0.0832 * x5 
+	+ 0.0306 * x8 
+	+ 0.1602 * x9 
+	+ 0.0602 * x10 
+	+ 0.2056 * x11 
+	+ 0.0504 * x14 
+	+ 0.072 * x15 
+	+ 0.0663 * x16 
+	+ 0.159 * x17 
+	- 0.2708 * x19 
+	+ 0.0209 * x25 
+	+ 0.1858 * x29 
+	+ 1.6844 * x38 
+	+ 0.0946 * x39 
+	- 1.0726
+
+LM num: 7
+class=1 = 
+	0.0577 * x1 
+	+ 0.0911 * x3 
+	+ 0.3441 * x5 
+	+ 0.0426 * x6 
+	+ 0.0432 * x8 
+	+ 0.362 * x10 
+	+ 0.3209 * x11 
+	+ 0.0856 * x14 
+	+ 0.7408 * x15 
+	+ 0.1001 * x16 
+	+ 0.0524 * x17 
+	- 0.1655 * x19 
+	+ 0.6515 * x25 
+	+ 0.2526 * x29 
+	+ 0.1161 * x39 
+	- 1.5042
+
+LM num: 8
+class=1 = 
+	0.0577 * x1 
+	+ 0.0911 * x3 
+	+ 0.9633 * x5 
+	+ 0.6609 * x6 
+	+ 0.2057 * x8 
+	+ 0.5289 * x10 
+	+ 0.3209 * x11 
+	+ 0.0856 * x14 
+	+ 1.0767 * x15 
+	+ 0.1001 * x16 
+	+ 0.0524 * x17 
+	- 0.261 * x19 
+	+ 0.8532 * x25 
+	+ 0.2526 * x29 
+	+ 0.1161 * x39 
+	- 2.7312
+
+LM num: 9
+class=1 = 
+	0.0577 * x1 
+	+ 0.0911 * x3 
+	+ 1.3665 * x5 
+	+ 0.8857 * x6 
+	+ 0.2057 * x8 
+	+ 0.5289 * x10 
+	+ 0.3209 * x11 
+	+ 0.0856 * x14 
+	+ 1.0767 * x15 
+	+ 0.1001 * x16 
+	+ 0.0524 * x17 
+	- 0.261 * x19 
+	+ 0.8532 * x25 
+	+ 0.2526 * x29 
+	+ 0.1161 * x39 
+	- 3.0333
+
+LM num: 10
+class=1 = 
+	0.0577 * x1 
+	+ 0.0911 * x3 
+	+ 1.3315 * x5 
+	+ 0.8857 * x6 
+	+ 0.2057 * x8 
+	+ 0.5289 * x10 
+	+ 0.3209 * x11 
+	+ 0.0856 * x14 
+	+ 1.0767 * x15 
+	+ 0.1001 * x16 
+	+ 0.0524 * x17 
+	- 0.261 * x19 
+	+ 0.8532 * x25 
+	+ 0.2526 * x29 
+	+ 0.1161 * x39 
+	- 2.9955
+
+LM num: 11
+class=1 = 
+	0.0577 * x1 
+	+ 0.0911 * x3 
+	+ 0.4192 * x5 
+	+ 0.0426 * x6 
+	+ 0.2814 * x8 
+	+ 0.4455 * x10 
+	+ 0.3209 * x11 
+	+ 0.0856 * x14 
+	+ 1.7006 * x15 
+	+ 0.1001 * x16 
+	+ 0.0524 * x17 
+	- 0.4749 * x19 
+	+ 1.6091 * x25 
+	+ 0.2526 * x29 
+	+ 0.1161 * x39 
+	- 2.4856
+
+LM num: 12
+class=1 = 
+	0.0577 * x1 
+	+ 0.0911 * x3 
+	+ 0.4192 * x5 
+	+ 0.0426 * x6 
+	+ 0.5105 * x8 
+	+ 0.4455 * x10 
+	+ 0.3209 * x11 
+	+ 0.0856 * x14 
+	+ 2.2787 * x15 
+	+ 0.1001 * x16 
+	+ 0.0524 * x17 
+	- 0.4037 * x19 
+	+ 2.6905 * x25 
+	+ 0.2526 * x29 
+	+ 0.1161 * x39 
+	- 3.853
+
+LM num: 13
+class=1 = 
+	0.0577 * x1 
+	+ 0.0911 * x3 
+	+ 0.4192 * x5 
+	+ 0.0426 * x6 
+	+ 0.5711 * x8 
+	+ 0.4455 * x10 
+	+ 0.3209 * x11 
+	+ 0.0856 * x14 
+	+ 2.2787 * x15 
+	+ 0.1001 * x16 
+	+ 0.0524 * x17 
+	- 0.4037 * x19 
+	+ 2.5203 * x25 
+	+ 0.2526 * x29 
+	+ 0.1161 * x39 
+	- 3.7707
+
+LM num: 14
+class=1 = 
+	0.0577 * x1 
+	+ 0.0911 * x3 
+	+ 0.4192 * x5 
+	+ 0.0426 * x6 
+	+ 0.2498 * x8 
+	+ 0.4455 * x10 
+	+ 0.3209 * x11 
+	+ 0.0856 * x14 
+	+ 2.6933 * x15 
+	+ 0.1001 * x16 
+	+ 0.0524 * x17 
+	- 0.4037 * x19 
+	+ 2.0333 * x25 
+	+ 0.2526 * x29 
+	+ 0.1161 * x39 
+	- 3.6044
+
+LM num: 15
+class=1 = 
+	0.1393 * x1 
+	+ 0.069 * x3 
+	+ 0.4762 * x5 
+	+ 0.0242 * x6 
+	+ 0.0673 * x8 
+	+ 0.0719 * x10 
+	+ 0.225 * x11 
+	+ 0.4368 * x14 
+	+ 0.0685 * x15 
+	+ 0.6192 * x16 
+	+ 0.0393 * x17 
+	+ 0.0395 * x18 
+	+ 0.0238 * x19 
+	+ 0.0209 * x25 
+	+ 0.3973 * x29 
+	+ 0.1651 * x39 
+	- 0.8983
+
+LM num: 16
+class=1 = 
+	0.5345 * x1 
+	+ 0.069 * x3 
+	+ 0.1293 * x5 
+	+ 0.0242 * x6 
+	+ 0.0661 * x8 
+	+ 0.0719 * x10 
+	+ 0.225 * x11 
+	+ 0.1131 * x14 
+	+ 0.0685 * x15 
+	+ 0.1226 * x16 
+	+ 0.1052 * x17 
+	+ 0.4784 * x18 
+	+ 0.0238 * x19 
+	+ 0.0209 * x25 
+	+ 0.7432 * x29 
+	+ 1.4849 * x39 
+	- 1.5297
+
+LM num: 17
+class=1 = 
+	0.5587 * x1 
+	+ 0.069 * x3 
+	+ 0.1293 * x5 
+	+ 0.0242 * x6 
+	+ 0.0661 * x8 
+	+ 0.0719 * x10 
+	+ 0.225 * x11 
+	+ 0.1131 * x14 
+	+ 0.0685 * x15 
+	+ 0.1226 * x16 
+	+ 0.1052 * x17 
+	+ 0.4957 * x18 
+	+ 0.0238 * x19 
+	+ 0.0209 * x25 
+	+ 0.7432 * x29 
+	+ 1.2029 * x39 
+	- 1.3687
+
+LM num: 18
+class=1 = 
+	0.2676 * x1 
+	+ 0.069 * x3 
+	+ 0.1293 * x5 
+	+ 0.0242 * x6 
+	+ 0.0661 * x8 
+	+ 0.0719 * x10 
+	+ 0.225 * x11 
+	+ 0.1131 * x14 
+	+ 0.0685 * x15 
+	+ 0.1226 * x16 
+	+ 0.1052 * x17 
+	+ 0.2944 * x18 
+	+ 0.0238 * x19 
+	+ 0.0209 * x25 
+	+ 0.7549 * x29 
+	+ 0.7685 * x39 
+	- 0.8491
+
+LM num: 19
+class=1 = 
+	0.2387 * x1 
+	+ 0.069 * x3 
+	+ 0.1293 * x5 
+	+ 0.0242 * x6 
+	+ 0.0661 * x8 
+	+ 0.0719 * x10 
+	+ 0.225 * x11 
+	+ 0.1131 * x14 
+	+ 0.0685 * x15 
+	+ 0.1226 * x16 
+	+ 0.0907 * x17 
+	+ 0.0898 * x18 
+	+ 0.0238 * x19 
+	+ 0.0209 * x25 
+	+ 0.3901 * x29 
+	+ 0.2542 * x39 
+	- 0.2066
+
+Number of Rules : 19
+
+Time taken to build model: 0.5 seconds
+Time taken to test model on training data: 1.9 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9086
+Mean absolute error                      0.1101
+Root mean squared error                  0.1987
+Relative absolute error                 25.2852 %
+Root relative squared error             42.5883 %
+Total Number of Instances              484     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4046
+Mean absolute error                      0.2984
+Root mean squared error                  0.4471
+Relative absolute error                 68.2712 %
+Root relative squared error             95.4314 %
+Total Number of Instances              484     
+

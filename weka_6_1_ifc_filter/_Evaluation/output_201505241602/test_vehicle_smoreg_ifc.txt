@@ -1,0 +1,82 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'vehicle-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R19,21-22-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute COMPACTNESS numeric
+@attribute CIRCULARITY numeric
+@attribute 'DISTANCE CIRCULARITY' numeric
+@attribute 'RADIUS RATIO' numeric
+@attribute 'PR.AXIS ASPECT RATIO' numeric
+@attribute 'MAX.LENGTH ASPECT RATIO' numeric
+@attribute 'SCATTER RATIO' numeric
+@attribute ELONGATEDNESS numeric
+@attribute 'PR.AXIS RECTANGULARITY' numeric
+@attribute 'MAX.LENGTH RECTANGULARITY' numeric
+@attribute 'SCALED VARIANCE_MAJOR' numeric
+@attribute 'SCALED VARIANCE_MINOR' numeric
+@attribute 'SCALED RADIUS OF GYRATION' numeric
+@attribute 'SKEWNESS ABOUT_MAJOR' numeric
+@attribute 'SKEWNESS ABOUT_MINOR' numeric
+@attribute 'KURTOSIS ABOUT_MAJOR' numeric
+@attribute 'KURTOSIS ABOUT_MINOR' numeric
+@attribute 'HOLLOWS RATIO' numeric
+@attribute Class=saab numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ +       0.0049 * (normalized) COMPACTNESS
+ +       0.0012 * (normalized) CIRCULARITY
+ -       0.0011 * (normalized) DISTANCE CIRCULARITY
+ -       0.0008 * (normalized) RADIUS RATIO
+ +       0.0017 * (normalized) PR.AXIS ASPECT RATIO
+ -       0.0002 * (normalized) MAX.LENGTH ASPECT RATIO
+ +       0.0008 * (normalized) SCATTER RATIO
+ +       0.0018 * (normalized) ELONGATEDNESS
+ -       0.0006 * (normalized) PR.AXIS RECTANGULARITY
+ +       0.0004 * (normalized) MAX.LENGTH RECTANGULARITY
+ +       0.0014 * (normalized) SCALED VARIANCE_MAJOR
+ -       0.0017 * (normalized) SCALED VARIANCE_MINOR
+ -       0      * (normalized) SCALED RADIUS OF GYRATION
+ +       0.0003 * (normalized) SKEWNESS ABOUT_MAJOR
+ +       0.0019 * (normalized) SKEWNESS ABOUT_MINOR
+ +       0.0005 * (normalized) KURTOSIS ABOUT_MAJOR
+ -       0.0003 * (normalized) KURTOSIS ABOUT_MINOR
+ +       0.0011 * (normalized) HOLLOWS RATIO
+ -       0.0037
+
+
+
+Number of kernel evaluations: 358126 (97.752% cached)
+
+Time taken to build model: 1.7 seconds
+Time taken to test model on training data: 0.84 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.4718
+Mean absolute error                      0.2566
+Root mean squared error                  0.5053
+Relative absolute error                 67.2648 %
+Root relative squared error            115.7112 %
+Total Number of Instances              846     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.3351
+Mean absolute error                      0.2567
+Root mean squared error                  0.5052
+Relative absolute error                 67.2138 %
+Root relative squared error            115.5087 %
+Total Number of Instances              846     
+

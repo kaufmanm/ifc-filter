@@ -1,0 +1,104 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'vehicle-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R19,21-22-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute COMPACTNESS numeric
+@attribute CIRCULARITY numeric
+@attribute 'DISTANCE CIRCULARITY' numeric
+@attribute 'RADIUS RATIO' numeric
+@attribute 'PR.AXIS ASPECT RATIO' numeric
+@attribute 'MAX.LENGTH ASPECT RATIO' numeric
+@attribute 'SCATTER RATIO' numeric
+@attribute ELONGATEDNESS numeric
+@attribute 'PR.AXIS RECTANGULARITY' numeric
+@attribute 'MAX.LENGTH RECTANGULARITY' numeric
+@attribute 'SCALED VARIANCE_MAJOR' numeric
+@attribute 'SCALED VARIANCE_MINOR' numeric
+@attribute 'SCALED RADIUS OF GYRATION' numeric
+@attribute 'SKEWNESS ABOUT_MAJOR' numeric
+@attribute 'SKEWNESS ABOUT_MINOR' numeric
+@attribute 'KURTOSIS ABOUT_MAJOR' numeric
+@attribute 'KURTOSIS ABOUT_MINOR' numeric
+@attribute 'HOLLOWS RATIO' numeric
+@attribute Class=saab numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -700.6914;  df=18;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      0.7957*COMPACTNESS
++     -0.1852*CIRCULARITY
++      3.3397*DISTANCE CIRCULARITY
++      0.7814*RADIUS RATIO
++      4.4732*PR.AXIS ASPECT RATIO
++     -3.2588*MAX.LENGTH ASPECT RATIO
++      1.8162*SCATTER RATIO
++      2.6677*ELONGATEDNESS
++     -5.6748*PR.AXIS RECTANGULARITY
++      3.8681*MAX.LENGTH RECTANGULARITY
++      1.9449*SCALED VARIANCE_MAJOR
++     -0.9828*SCALED VARIANCE_MINOR
++     -0.0469*SCALED RADIUS OF GYRATION
++      2.1999*SKEWNESS ABOUT_MAJOR
++      2.8456*SKEWNESS ABOUT_MINOR
++      1.232 *KURTOSIS ABOUT_MAJOR
++      0.1097*KURTOSIS ABOUT_MINOR
++      1.9131*HOLLOWS RATIO
++   -10.1938))
+
+Odds Ratios...
+Variable         O.R.
+       1       2.2159
+       2       0.8309
+       3      28.2103
+       4       2.1846
+       5      87.6338
+       6       0.0384
+       7       6.1483
+       8      14.4061
+       9       0.0034
+      10      47.8528
+      11       6.9927
+      12       0.3743
+      13       0.9542
+      14       9.0243
+      15      17.2118
+      16       3.4279
+      17       1.1159
+      18       6.7739
+
+
+Time taken to build model: 0.28 seconds
+Time taken to test model on training data: 1.01 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5399
+Mean absolute error                      0.2697
+Root mean squared error                  0.3676
+Relative absolute error                 70.7178 %
+Root relative squared error             84.1723 %
+Total Number of Instances              846     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4041
+Mean absolute error                      0.2983
+Root mean squared error                  0.4052
+Relative absolute error                 78.0847 %
+Root relative squared error             92.6423 %
+Total Number of Instances              846     
+

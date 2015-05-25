@@ -1,0 +1,64 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation wisconsin-breast-cancer-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R11-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute Clump_Thickness numeric
+@attribute Cell_Size_Uniformity numeric
+@attribute Cell_Shape_Uniformity numeric
+@attribute Marginal_Adhesion numeric
+@attribute Single_Epi_Cell_Size numeric
+@attribute Bare_Nuclei numeric
+@attribute Bland_Chromatin numeric
+@attribute Normal_Nucleoli numeric
+@attribute Mitoses numeric
+@attribute Class=benign numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ +       0.0141 * (normalized) Clump_Thickness
+ +       0.8109 * (normalized) Cell_Size_Uniformity
+ +       0.0174 * (normalized) Cell_Shape_Uniformity
+ +       0.0023 * (normalized) Marginal_Adhesion
+ +       0.0084 * (normalized) Single_Epi_Cell_Size
+ +       0.1741 * (normalized) Bare_Nuclei
+ +       0.0192 * (normalized) Bland_Chromatin
+ +       0.0468 * (normalized) Normal_Nucleoli
+ +       0.0162 * (normalized) Mitoses
+ -       0.1013
+
+
+
+Number of kernel evaluations: 244650 (98.422% cached)
+
+Time taken to build model: 1.19 seconds
+Time taken to test model on training data: 0.23 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9042
+Mean absolute error                      0.093 
+Root mean squared error                  0.2038
+Relative absolute error                 20.594  %
+Root relative squared error             42.8867 %
+Total Number of Instances              699     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9008
+Mean absolute error                      0.0952
+Root mean squared error                  0.2071
+Relative absolute error                 21.0467 %
+Root relative squared error             43.5041 %
+Total Number of Instances              699     
+

@@ -1,0 +1,333 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+attribute_11 <= 0.171 : 
+|   attribute_46 <= 0.074 : LM1 (31/0%)
+|   attribute_46 >  0.074 : 
+|   |   attribute_34 <= 0.591 : 
+|   |   |   attribute_18 <= 0.686 : 
+|   |   |   |   attribute_44 <= 0.193 : LM2 (11/0%)
+|   |   |   |   attribute_44 >  0.193 : 
+|   |   |   |   |   attribute_8 <= 0.123 : LM3 (6/0%)
+|   |   |   |   |   attribute_8 >  0.123 : LM4 (5/80.182%)
+|   |   |   attribute_18 >  0.686 : LM5 (7/0%)
+|   |   attribute_34 >  0.591 : LM6 (14/0%)
+attribute_11 >  0.171 : 
+|   attribute_45 <= 0.264 : 
+|   |   attribute_36 <= 0.474 : 
+|   |   |   attribute_16 <= 0.202 : LM7 (17/0%)
+|   |   |   attribute_16 >  0.202 : 
+|   |   |   |   attribute_24 <= 0.922 : 
+|   |   |   |   |   attribute_54 <= 0.015 : 
+|   |   |   |   |   |   attribute_52 <= 0.009 : 
+|   |   |   |   |   |   |   attribute_23 <= 0.702 : LM8 (12/0%)
+|   |   |   |   |   |   |   attribute_23 >  0.702 : LM9 (4/86.799%)
+|   |   |   |   |   |   attribute_52 >  0.009 : 
+|   |   |   |   |   |   |   attribute_1 <= 0.027 : 
+|   |   |   |   |   |   |   |   attribute_5 <= 0.054 : LM10 (4/0%)
+|   |   |   |   |   |   |   |   attribute_5 >  0.054 : LM11 (6/74.705%)
+|   |   |   |   |   |   |   attribute_1 >  0.027 : LM12 (10/0%)
+|   |   |   |   |   attribute_54 >  0.015 : LM13 (10/0%)
+|   |   |   |   attribute_24 >  0.922 : LM14 (16/0%)
+|   |   attribute_36 >  0.474 : 
+|   |   |   attribute_13 <= 0.367 : LM15 (16/0%)
+|   |   |   attribute_13 >  0.367 : 
+|   |   |   |   attribute_4 <= 0.056 : LM16 (3/0%)
+|   |   |   |   attribute_4 >  0.056 : LM17 (2/0%)
+|   attribute_45 >  0.264 : LM18 (34/0%)
+
+LM num: 1
+Class = 
+	2.8116 * attribute_1 
+	+ 0.2679 * attribute_4 
+	+ 0.2113 * attribute_11 
+	- 0.1034 * attribute_16 
+	+ 0.2002 * attribute_18 
+	+ 0.0381 * attribute_23 
+	- 0.0975 * attribute_36 
+	+ 0.1316 * attribute_45 
+	+ 0.3968 * attribute_46 
+	+ 1.3907 * attribute_54 
+	- 0.1054
+
+LM num: 2
+Class = 
+	10.2092 * attribute_1 
+	+ 0.2679 * attribute_4 
+	+ 0.2113 * attribute_11 
+	- 0.1034 * attribute_16 
+	+ 0.4215 * attribute_18 
+	+ 0.0381 * attribute_23 
+	- 0.1578 * attribute_34 
+	- 0.0975 * attribute_36 
+	+ 0.1516 * attribute_44 
+	+ 0.1316 * attribute_45 
+	+ 0.3312 * attribute_46 
+	+ 1.3907 * attribute_54 
+	- 0.1475
+
+LM num: 3
+Class = 
+	10.2092 * attribute_1 
+	+ 0.2679 * attribute_4 
+	- 0.2515 * attribute_8 
+	+ 0.2113 * attribute_11 
+	- 0.1034 * attribute_16 
+	+ 0.4215 * attribute_18 
+	+ 0.0381 * attribute_23 
+	- 0.1578 * attribute_34 
+	- 0.0975 * attribute_36 
+	+ 0.1516 * attribute_44 
+	+ 0.1316 * attribute_45 
+	+ 0.3312 * attribute_46 
+	+ 1.3907 * attribute_54 
+	- 0.0407
+
+LM num: 4
+Class = 
+	10.2092 * attribute_1 
+	+ 0.2679 * attribute_4 
+	- 0.2641 * attribute_8 
+	+ 0.2113 * attribute_11 
+	- 0.1034 * attribute_16 
+	+ 0.4215 * attribute_18 
+	+ 0.0381 * attribute_23 
+	- 0.1578 * attribute_34 
+	- 0.0975 * attribute_36 
+	+ 0.1516 * attribute_44 
+	+ 0.1316 * attribute_45 
+	+ 0.3312 * attribute_46 
+	+ 1.3907 * attribute_54 
+	- 0.0609
+
+LM num: 5
+Class = 
+	9.0265 * attribute_1 
+	+ 0.2679 * attribute_4 
+	+ 0.2113 * attribute_11 
+	- 0.1034 * attribute_16 
+	+ 0.4933 * attribute_18 
+	+ 0.0381 * attribute_23 
+	- 0.1578 * attribute_34 
+	- 0.0975 * attribute_36 
+	+ 0.1516 * attribute_44 
+	+ 0.1316 * attribute_45 
+	+ 0.3312 * attribute_46 
+	+ 1.3907 * attribute_54 
+	- 0.0181
+
+LM num: 6
+Class = 
+	6.2502 * attribute_1 
+	+ 0.2679 * attribute_4 
+	+ 0.2113 * attribute_11 
+	- 0.1034 * attribute_16 
+	+ 0.3929 * attribute_18 
+	+ 0.0381 * attribute_23 
+	- 0.2394 * attribute_34 
+	- 0.0975 * attribute_36 
+	+ 0.2299 * attribute_44 
+	+ 0.1316 * attribute_45 
+	+ 0.3312 * attribute_46 
+	+ 1.3907 * attribute_54 
+	- 0.1053
+
+LM num: 7
+Class = 
+	0.16 * attribute_4 
+	+ 0.1262 * attribute_11 
+	- 0.367 * attribute_16 
+	+ 0.027 * attribute_18 
+	+ 0.1704 * attribute_23 
+	- 0.2885 * attribute_36 
+	+ 0.1665 * attribute_45 
+	+ 0.0475 * attribute_46 
+	+ 3.7747 * attribute_52 
+	+ 7.8303 * attribute_54 
+	+ 0.7121
+
+LM num: 8
+Class = 
+	0.16 * attribute_4 
+	+ 0.1262 * attribute_11 
+	- 0.2706 * attribute_16 
+	+ 0.027 * attribute_18 
+	+ 0.3206 * attribute_23 
+	- 0.2885 * attribute_36 
+	+ 0.1665 * attribute_45 
+	+ 0.0475 * attribute_46 
+	+ 7.5069 * attribute_52 
+	+ 8.2369 * attribute_54 
+	+ 0.276
+
+LM num: 9
+Class = 
+	0.16 * attribute_4 
+	+ 0.1262 * attribute_11 
+	- 0.2706 * attribute_16 
+	+ 0.027 * attribute_18 
+	+ 0.3747 * attribute_23 
+	- 0.2885 * attribute_36 
+	+ 0.1665 * attribute_45 
+	+ 0.0475 * attribute_46 
+	+ 7.5069 * attribute_52 
+	+ 8.2369 * attribute_54 
+	+ 0.2714
+
+LM num: 10
+Class = 
+	1.154 * attribute_1 
+	+ 0.16 * attribute_4 
+	+ 0.1262 * attribute_11 
+	- 0.2706 * attribute_16 
+	+ 0.027 * attribute_18 
+	+ 0.1921 * attribute_23 
+	- 0.2885 * attribute_36 
+	+ 0.1665 * attribute_45 
+	+ 0.0475 * attribute_46 
+	+ 7.2686 * attribute_52 
+	+ 8.2369 * attribute_54 
+	+ 0.4132
+
+LM num: 11
+Class = 
+	1.154 * attribute_1 
+	+ 0.16 * attribute_4 
+	+ 0.1262 * attribute_11 
+	- 0.2706 * attribute_16 
+	+ 0.027 * attribute_18 
+	+ 0.1921 * attribute_23 
+	- 0.2885 * attribute_36 
+	+ 0.1665 * attribute_45 
+	+ 0.0475 * attribute_46 
+	+ 7.2686 * attribute_52 
+	+ 8.2369 * attribute_54 
+	+ 0.4003
+
+LM num: 12
+Class = 
+	1.154 * attribute_1 
+	+ 0.16 * attribute_4 
+	+ 0.1262 * attribute_11 
+	- 0.2706 * attribute_16 
+	+ 0.027 * attribute_18 
+	+ 0.1921 * attribute_23 
+	- 0.2885 * attribute_36 
+	+ 0.1665 * attribute_45 
+	+ 0.0475 * attribute_46 
+	+ 7.2686 * attribute_52 
+	+ 8.2369 * attribute_54 
+	+ 0.4386
+
+LM num: 13
+Class = 
+	0.16 * attribute_4 
+	+ 0.1262 * attribute_11 
+	- 0.2706 * attribute_16 
+	+ 0.027 * attribute_18 
+	+ 0.1921 * attribute_23 
+	- 0.2885 * attribute_36 
+	+ 0.1665 * attribute_45 
+	+ 0.0475 * attribute_46 
+	+ 7.0339 * attribute_52 
+	+ 10.7627 * attribute_54 
+	+ 0.4837
+
+LM num: 14
+Class = 
+	0.16 * attribute_4 
+	+ 0.1262 * attribute_11 
+	- 0.2706 * attribute_16 
+	+ 0.027 * attribute_18 
+	+ 0.2737 * attribute_23 
+	- 0.2885 * attribute_36 
+	+ 0.1665 * attribute_45 
+	+ 0.0475 * attribute_46 
+	+ 5.495 * attribute_52 
+	+ 5.8083 * attribute_54 
+	+ 0.5576
+
+LM num: 15
+Class = 
+	0.16 * attribute_4 
+	+ 0.1262 * attribute_11 
+	+ 0.1808 * attribute_13 
+	- 0.2988 * attribute_16 
+	+ 0.027 * attribute_18 
+	+ 0.128 * attribute_23 
+	- 0.535 * attribute_36 
+	+ 0.1665 * attribute_45 
+	+ 0.0475 * attribute_46 
+	+ 2.8031 * attribute_52 
+	+ 7.3179 * attribute_54 
+	+ 0.3137
+
+LM num: 16
+Class = 
+	1.6057 * attribute_4 
+	+ 0.1262 * attribute_11 
+	+ 0.2803 * attribute_13 
+	- 0.2988 * attribute_16 
+	+ 0.027 * attribute_18 
+	+ 0.128 * attribute_23 
+	- 0.535 * attribute_36 
+	+ 0.1665 * attribute_45 
+	+ 0.0475 * attribute_46 
+	+ 2.8031 * attribute_52 
+	+ 7.3179 * attribute_54 
+	+ 0.257
+
+LM num: 17
+Class = 
+	1.6908 * attribute_4 
+	+ 0.1262 * attribute_11 
+	+ 0.2803 * attribute_13 
+	- 0.2988 * attribute_16 
+	+ 0.027 * attribute_18 
+	+ 0.128 * attribute_23 
+	- 0.535 * attribute_36 
+	+ 0.1665 * attribute_45 
+	+ 0.0475 * attribute_46 
+	+ 2.8031 * attribute_52 
+	+ 7.3179 * attribute_54 
+	+ 0.268
+
+LM num: 18
+Class = 
+	0.16 * attribute_4 
+	+ 0.1262 * attribute_11 
+	- 0.2498 * attribute_16 
+	+ 0.027 * attribute_18 
+	+ 0.0228 * attribute_23 
+	- 0.2394 * attribute_36 
+	+ 0.2848 * attribute_45 
+	+ 0.0475 * attribute_46 
+	+ 4.8448 * attribute_54 
+	+ 0.878
+
+Number of Rules : 18
+
+Time taken to build model: 0.27 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8713
+Mean absolute error                      0.1907
+Root mean squared error                  0.2532
+Relative absolute error                 38.309  %
+Root relative squared error             50.7641 %
+Total Number of Instances              208     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6416
+Mean absolute error                      0.2827
+Root mean squared error                  0.3886
+Relative absolute error                 56.5007 %
+Root relative squared error             77.4684 %
+Total Number of Instances              208     
+

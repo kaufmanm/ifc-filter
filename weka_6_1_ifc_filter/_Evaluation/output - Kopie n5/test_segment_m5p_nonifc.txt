@@ -1,0 +1,49 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+intensity-mean <= 58.204 : LM1 (609/0%)
+intensity-mean >  58.204 : 
+|   intensity-mean <= 78.333 : LM2 (52/0%)
+|   intensity-mean >  78.333 : LM3 (101/0%)
+
+LM num: 1
+class=sky = 
+	0.0002 * intensity-mean 
+	- 0.0037
+
+LM num: 2
+class=sky = 
+	0.0038 * intensity-mean 
+	- 0.187
+
+LM num: 3
+class=sky = 
+	0.0025 * intensity-mean 
+	+ 0.6792
+
+Number of Rules : 3
+
+Time taken to build model: 0.17 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9987
+Mean absolute error                      0.0096
+Root mean squared error                  0.0198
+Relative absolute error                  4.1815 %
+Root relative squared error              5.8414 %
+Total Number of Instances              762     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9984
+Mean absolute error                      0.0106
+Root mean squared error                  0.0217
+Relative absolute error                  4.6186 %
+Root relative squared error              6.4047 %
+Total Number of Instances              762     
+

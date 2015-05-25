@@ -1,0 +1,43 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+class=sky =
+
+     -0.0012 * region-centroid-row +
+     -0.2131 * short-line-density-5 +
+     -0.0149 * vedge-mean +
+      0.0004 * vegde-sd +
+     -0.0114 * hedge-mean +
+      0.0004 * hedge-sd +
+      0.0129 * exgreen-mean +
+      0.0081 * value-mean +
+      0.1393 * saturation-mean +
+     -0.0322 * hue-mean +
+     -0.0098
+
+Time taken to build model: 0.27 seconds
+Time taken to test model on training data: 0.06 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9331
+Mean absolute error                      0.0877
+Root mean squared error                  0.122 
+Relative absolute error                 38.1394 %
+Root relative squared error             35.9714 %
+Total Number of Instances              762     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9297
+Mean absolute error                      0.0899
+Root mean squared error                  0.1249
+Relative absolute error                 39.0633 %
+Root relative squared error             36.8211 %
+Total Number of Instances              762     
+

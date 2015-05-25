@@ -1,0 +1,221 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.MultilayerPerceptron 
+
+FilteredClassifier using weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation labor-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R17-weka.filters.unsupervised.attribute.NominalToBinary-R17-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute duration numeric
+@attribute wage-increase-first-year numeric
+@attribute wage-increase-second-year numeric
+@attribute wage-increase-third-year numeric
+@attribute cost-of-living-adjustment numeric
+@attribute working-hours numeric
+@attribute pension numeric
+@attribute standby-pay numeric
+@attribute shift-differential numeric
+@attribute education-allowance numeric
+@attribute statutory-holidays numeric
+@attribute vacation numeric
+@attribute longterm-disability-assistance numeric
+@attribute contribution-to-dental-plan numeric
+@attribute bereavement-assistance numeric
+@attribute contribution-to-health-plan numeric
+@attribute class numeric
+
+@data
+
+
+Classifier Model
+Linear Node 0
+    Inputs    Weights
+    Threshold    -0.9341721409319238
+    Node 1    -0.1435447721373872
+    Node 2    -0.23644040998418256
+    Node 3    -0.2319859019798287
+    Node 4    0.36704179920123786
+    Node 5    2.3421274325726174
+    Node 6    -0.1790159989951685
+    Node 7    0.364312137715922
+    Node 8    -0.4501895716059547
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.6832670542588036
+    Attrib duration    0.32700597962153627
+    Attrib wage-increase-first-year    -0.22392354396708056
+    Attrib wage-increase-second-year    -0.3001618942491486
+    Attrib wage-increase-third-year    -0.14273761381220693
+    Attrib cost-of-living-adjustment    -0.006477334554543485
+    Attrib working-hours    0.26125650762064073
+    Attrib pension    -0.2942338668916103
+    Attrib standby-pay    -0.18367720402180257
+    Attrib shift-differential    0.08858363555524422
+    Attrib education-allowance    0.009246209953885148
+    Attrib statutory-holidays    -0.30185488600458743
+    Attrib vacation    0.33895992180717227
+    Attrib longterm-disability-assistance    -0.22708407347682286
+    Attrib contribution-to-dental-plan    0.1098322076049465
+    Attrib bereavement-assistance    -0.18097475028067272
+    Attrib contribution-to-health-plan    -0.18393103991415446
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.6885358760328304
+    Attrib duration    0.42247287648764337
+    Attrib wage-increase-first-year    -0.4748316928978867
+    Attrib wage-increase-second-year    -0.4729616404452289
+    Attrib wage-increase-third-year    -0.21609621123820696
+    Attrib cost-of-living-adjustment    -0.016888188149528877
+    Attrib working-hours    0.2709255474999014
+    Attrib pension    -0.1536681364823999
+    Attrib standby-pay    -0.24671136421818088
+    Attrib shift-differential    0.1708518545083268
+    Attrib education-allowance    0.08004620986033081
+    Attrib statutory-holidays    -0.3085185946356653
+    Attrib vacation    0.6193289462519377
+    Attrib longterm-disability-assistance    -0.25054636475791126
+    Attrib contribution-to-dental-plan    0.02912817927682592
+    Attrib bereavement-assistance    -0.18084462269439713
+    Attrib contribution-to-health-plan    0.028195867186356607
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.593979126546321
+    Attrib duration    0.34362049497499103
+    Attrib wage-increase-first-year    -0.17201185287951556
+    Attrib wage-increase-second-year    -0.1003944579901611
+    Attrib wage-increase-third-year    -0.059495607318996176
+    Attrib cost-of-living-adjustment    -0.06810710502301326
+    Attrib working-hours    0.12572882073829092
+    Attrib pension    -0.390094173115578
+    Attrib standby-pay    -0.10429387488518758
+    Attrib shift-differential    0.08618759574487452
+    Attrib education-allowance    0.018756990756702327
+    Attrib statutory-holidays    -0.266481248534378
+    Attrib vacation    0.24525686330756935
+    Attrib longterm-disability-assistance    -0.15573437857859096
+    Attrib contribution-to-dental-plan    0.10223456782369544
+    Attrib bereavement-assistance    -0.2698673324765392
+    Attrib contribution-to-health-plan    -0.3520587582889506
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.6250714409140841
+    Attrib duration    0.4296140132694037
+    Attrib wage-increase-first-year    -0.06120683454293241
+    Attrib wage-increase-second-year    0.13084682384913407
+    Attrib wage-increase-third-year    -0.1553242569355873
+    Attrib cost-of-living-adjustment    -0.06869765281729878
+    Attrib working-hours    0.17342321806404867
+    Attrib pension    0.023616549926646715
+    Attrib standby-pay    0.02458482712818447
+    Attrib shift-differential    -0.024637501097694543
+    Attrib education-allowance    -0.07065458427464465
+    Attrib statutory-holidays    -0.23124908976601166
+    Attrib vacation    0.6111359655970983
+    Attrib longterm-disability-assistance    -0.19684369494833923
+    Attrib contribution-to-dental-plan    0.12986713330962243
+    Attrib bereavement-assistance    -0.30965327657788977
+    Attrib contribution-to-health-plan    -0.22676379783437184
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.21828430831845305
+    Attrib duration    1.170249436392766
+    Attrib wage-increase-first-year    4.231417249471396
+    Attrib wage-increase-second-year    2.8716604816525675
+    Attrib wage-increase-third-year    2.183886990560975
+    Attrib cost-of-living-adjustment    0.6974496260650939
+    Attrib working-hours    2.5321124076530905
+    Attrib pension    1.501651093792607
+    Attrib standby-pay    0.9101459217711081
+    Attrib shift-differential    1.6976554000186366
+    Attrib education-allowance    0.5706043471735385
+    Attrib statutory-holidays    1.4787907129707416
+    Attrib vacation    -0.7502211950942106
+    Attrib longterm-disability-assistance    3.4580557228762006
+    Attrib contribution-to-dental-plan    3.181803269567225
+    Attrib bereavement-assistance    0.04333632459376256
+    Attrib contribution-to-health-plan    1.4838011380817737
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.5870298161145002
+    Attrib duration    0.28400458179468374
+    Attrib wage-increase-first-year    -0.20490887987006637
+    Attrib wage-increase-second-year    -0.11205148814762066
+    Attrib wage-increase-third-year    -0.06735802847238812
+    Attrib cost-of-living-adjustment    -0.08245272226627237
+    Attrib working-hours    -2.4242248153586923E-4
+    Attrib pension    -0.31304302833257924
+    Attrib standby-pay    0.05783777684838579
+    Attrib shift-differential    0.08751225237559103
+    Attrib education-allowance    -0.041158757746910454
+    Attrib statutory-holidays    -0.17987333328427194
+    Attrib vacation    0.2694569318151101
+    Attrib longterm-disability-assistance    -0.06362423582327707
+    Attrib contribution-to-dental-plan    0.09857508503303378
+    Attrib bereavement-assistance    -0.38095769111209127
+    Attrib contribution-to-health-plan    -0.3611440931669235
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.7838529878736885
+    Attrib duration    0.3315046657526456
+    Attrib wage-increase-first-year    -0.3830604965260673
+    Attrib wage-increase-second-year    -0.5931196369657014
+    Attrib wage-increase-third-year    -0.6122672819439432
+    Attrib cost-of-living-adjustment    0.2885086871045655
+    Attrib working-hours    -0.15660527716353004
+    Attrib pension    -0.5573065061947723
+    Attrib standby-pay    0.08205393042288153
+    Attrib shift-differential    -0.0170531999862545
+    Attrib education-allowance    -0.06680618209672458
+    Attrib statutory-holidays    -0.05605924249472728
+    Attrib vacation    0.08122612580434102
+    Attrib longterm-disability-assistance    0.11709634481403096
+    Attrib contribution-to-dental-plan    0.13292927981527844
+    Attrib bereavement-assistance    -0.5994509897203945
+    Attrib contribution-to-health-plan    -0.3796790725254594
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.11442054137420457
+    Attrib duration    0.10061981952489496
+    Attrib wage-increase-first-year    1.1554973810786628
+    Attrib wage-increase-second-year    0.4487259710850231
+    Attrib wage-increase-third-year    -0.14032093858685696
+    Attrib cost-of-living-adjustment    0.6211769465284939
+    Attrib working-hours    0.11299352248416106
+    Attrib pension    0.5056003615596378
+    Attrib standby-pay    0.15272991399388108
+    Attrib shift-differential    0.28061494038709656
+    Attrib education-allowance    -0.07455527625508111
+    Attrib statutory-holidays    0.6684695239359659
+    Attrib vacation    0.17142013312695642
+    Attrib longterm-disability-assistance    0.854553467571101
+    Attrib contribution-to-dental-plan    0.3559628752213853
+    Attrib bereavement-assistance    -0.3211722760249898
+    Attrib contribution-to-health-plan    0.25595767319796686
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 0.25 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9999
+Mean absolute error                      0.0046
+Root mean squared error                  0.0076
+Relative absolute error                  1.0192 %
+Root relative squared error              1.5901 %
+Total Number of Instances               57     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8212
+Mean absolute error                      0.1248
+Root mean squared error                  0.2741
+Relative absolute error                 26.9289 %
+Root relative squared error             56.3954 %
+Total Number of Instances               57     
+

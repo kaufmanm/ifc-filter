@@ -1,0 +1,42 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+LM1 (303/67.683%)
+
+LM num: 1
+num=<50 = 
+	0.1266 * sex=female 
+	+ 0.2163 * cp=typ_angina,non_anginal,atyp_angina 
+	+ 0.0649 * restecg=normal 
+	+ 0.0024 * thalach 
+	+ 0.1348 * exang=no 
+	- 0.0548 * oldpeak 
+	- 0.1288 * ca 
+	+ 0.2252 * thal=normal 
+	- 0.0688
+
+Number of Rules : 1
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7361
+Mean absolute error                      0.2569
+Root mean squared error                  0.3371
+Relative absolute error                 51.8007 %
+Root relative squared error             67.6825 %
+Total Number of Instances              303     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6624
+Mean absolute error                      0.2764
+Root mean squared error                  0.3756
+Relative absolute error                 55.6246 %
+Root relative squared error             75.2778 %
+Total Number of Instances              303     
+

@@ -1,0 +1,80 @@
+
+Linear Node 0
+    Inputs    Weights
+    Threshold    0.2582263894735159
+    Node 1    -3.1026115841001363
+    Node 2    -1.5710158110220314
+    Node 3    -0.6943315494164861
+    Node 4    -1.7661251430257576
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -13.45605131426017
+    Attrib preg    0.42047361108373077
+    Attrib plas    7.996815476014814
+    Attrib pres    -13.468008960515965
+    Attrib skin    10.289646256127241
+    Attrib insu    3.0458925862792174
+    Attrib mass    7.820868248319074
+    Attrib pedi    -1.9731577825374413
+    Attrib age    -7.142336932041885
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -6.772803543368844
+    Attrib preg    -15.3600139166804
+    Attrib plas    23.468001355785574
+    Attrib pres    -2.650439453034269
+    Attrib skin    1.332124340781584
+    Attrib insu    0.10757967487225756
+    Attrib mass    9.001675416843257
+    Attrib pedi    1.0133394918557668
+    Attrib age    14.435607730022673
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -4.383044196949017
+    Attrib preg    18.570541826225533
+    Attrib plas    13.626247119215373
+    Attrib pres    -3.3110784282989836
+    Attrib skin    4.078691779412455
+    Attrib insu    -11.491566922359924
+    Attrib mass    6.351755620844521
+    Attrib pedi    11.25066915554448
+    Attrib age    -10.774720020808182
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -9.89726583976471
+    Attrib preg    17.479512190847455
+    Attrib plas    11.811647521125744
+    Attrib pres    4.037538158962862
+    Attrib skin    2.453251735103566
+    Attrib insu    10.134493280066861
+    Attrib mass    -16.79355165322049
+    Attrib pedi    -5.861457602176364
+    Attrib age    -4.517561299391703
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 0.8 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5583
+Mean absolute error                      0.486 
+Root mean squared error                  0.5635
+Relative absolute error                106.9555 %
+Root relative squared error            118.2164 %
+Total Number of Instances              768     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.3965
+Mean absolute error                      0.3625
+Root mean squared error                  0.4794
+Relative absolute error                 79.6968 %
+Root relative squared error            100.4874 %
+Total Number of Instances              768     
+

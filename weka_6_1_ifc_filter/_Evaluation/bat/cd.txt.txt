@@ -1,0 +1,7 @@
+cd Y:\SkyDrive\Research\_Projects\2013-09-01_TKDD\2014-07 Resubmission\Submission\weka_6_1\_Evaluation\bat
+
+y:
+
+Exchange:
+Filename
+dataset name

@@ -1,0 +1,64 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation breast-cancer-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R11-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute age numeric
+@attribute menopause numeric
+@attribute tumor-size numeric
+@attribute inv-nodes numeric
+@attribute node-caps numeric
+@attribute deg-malig numeric
+@attribute breast numeric
+@attribute breast-quad numeric
+@attribute irradiat numeric
+@attribute Class=no-recurrence-events numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ +       0.001  * (normalized) age
+ -       0.0003 * (normalized) menopause
+ +       0.0007 * (normalized) tumor-size
+ +       0.005  * (normalized) inv-nodes
+ +       0.9941 * (normalized) node-caps
+ +       0.0013 * (normalized) deg-malig
+ +       0.0004 * (normalized) breast
+ +       0.0016 * (normalized) breast-quad
+ -       0.0005 * (normalized) irradiat
+ -       0.0014
+
+
+
+Number of kernel evaluations: 41041 (98.361% cached)
+
+Time taken to build model: 0.39 seconds
+Time taken to test model on training data: 0.48 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.2777
+Mean absolute error                      0.2764
+Root mean squared error                  0.5245
+Relative absolute error                 66.1662 %
+Root relative squared error            114.7609 %
+Total Number of Instances              286     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.2266
+Mean absolute error                      0.3026
+Root mean squared error                  0.5329
+Relative absolute error                 72.1934 %
+Root relative squared error            116.1687 %
+Total Number of Instances              286     
+

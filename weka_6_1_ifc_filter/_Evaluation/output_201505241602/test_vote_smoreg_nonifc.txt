@@ -1,0 +1,49 @@
+
+SMOreg
+
+weights (not support vectors):
+ -       0.0002 * (normalized) handicapped-infants
+ -       0.0001 * (normalized) water-project-cost-sharing
+ +       0.0009 * (normalized) adoption-of-the-budget-resolution
+ -       0.9981 * (normalized) physician-fee-freeze
+ -       0.0004 * (normalized) el-salvador-aid
+ +       0.0004 * (normalized) religious-groups-in-schools
+ -       0.0005 * (normalized) anti-satellite-test-ban
+ -       0.0002 * (normalized) aid-to-nicaraguan-contras
+ +       0.0006 * (normalized) mx-missile
+ -       0.0005 * (normalized) immigration
+ +       0.0009 * (normalized) synfuels-corporation-cutback
+ -       0.0003 * (normalized) education-spending
+ -       0.0002 * (normalized) superfund-right-to-sue
+ +       0.0001 * (normalized) crime
+ +       0.0001 * (normalized) duty-free-exports
+ -       0.0003 * (normalized) export-administration-act-south-africa
+ +       0.9993
+
+
+
+Number of kernel evaluations: 94153 (99.571% cached)
+
+Time taken to build model: 1.44 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9098
+Mean absolute error                      0.0441
+Root mean squared error                  0.2087
+Relative absolute error                  9.3033 %
+Root relative squared error             42.8563 %
+Total Number of Instances              435     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9098
+Mean absolute error                      0.0442
+Root mean squared error                  0.2087
+Relative absolute error                  9.2948 %
+Root relative squared error             42.7725 %
+Total Number of Instances              435     
+

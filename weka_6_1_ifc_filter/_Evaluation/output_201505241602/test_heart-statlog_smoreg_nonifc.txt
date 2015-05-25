@@ -1,0 +1,46 @@
+
+SMOreg
+
+weights (not support vectors):
+ +       0.0005 * (normalized) age
+ -       0.0018 * (normalized) sex
+ -       0.0025 * (normalized) chest
+ -       0.0003 * (normalized) resting_blood_pressure
+ -       0.0012 * (normalized) serum_cholestoral
+ +       0.0017 * (normalized) fasting_blood_sugar
+ -       0.001  * (normalized) resting_electrocardiographic_results
+ +       0.0069 * (normalized) maximum_heart_rate_achieved
+ -       0.002  * (normalized) exercise_induced_angina
+ -       0.0022 * (normalized) oldpeak
+ -       0.0005 * (normalized) slope
+ -       0.0052 * (normalized) number_of_major_vessels
+ -       0.9922 * (normalized) thal
+ +       0.9985
+
+
+
+Number of kernel evaluations: 36585 (97.414% cached)
+
+Time taken to build model: 0.11 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5284
+Mean absolute error                      0.239 
+Root mean squared error                  0.4761
+Relative absolute error                 48.4044 %
+Root relative squared error             95.8041 %
+Total Number of Instances              270     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5259
+Mean absolute error                      0.2612
+Root mean squared error                  0.4662
+Relative absolute error                 52.6724 %
+Root relative squared error             93.41   %
+Total Number of Instances              270     
+

@@ -1,0 +1,74 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'letter-weka.filters.unsupervised.instance.Resample-S1-Z11.0-no-replacement-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R17-26,28-42-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute x-box numeric
+@attribute y-box numeric
+@attribute width numeric
+@attribute high numeric
+@attribute onpix numeric
+@attribute x-bar numeric
+@attribute y-bar numeric
+@attribute x2bar numeric
+@attribute y2bar numeric
+@attribute xybar numeric
+@attribute x2ybr numeric
+@attribute xy2br numeric
+@attribute x-ege numeric
+@attribute xegvy numeric
+@attribute y-ege numeric
+@attribute yegvx numeric
+@attribute class=K numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+class=K =
+
+     -0.428  * x-box +
+      0.2084 * width +
+      0.1166 * high +
+      0.2454 * x-bar +
+      0.0697 * y-bar +
+      0.2386 * x2bar +
+      0.1348 * y2bar +
+      0.0532 * xybar +
+      0.1233 * x2ybr +
+      0.2277 * xy2br +
+      0.1399 * x-ege +
+      0.092  * xegvy +
+      0.0378 * y-ege +
+      0.1141 * yegvx +
+     -0.535 
+
+Time taken to build model: 0.87 seconds
+Time taken to test model on training data: 2.4 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5782
+Mean absolute error                      0.0806
+Root mean squared error                  0.1708
+Relative absolute error                 97.5451 %
+Root relative squared error             84.036  %
+Total Number of Instances             2200     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.493 
+Mean absolute error                      0.0834
+Root mean squared error                  0.1794
+Relative absolute error                100.8361 %
+Root relative squared error             88.2329 %
+Total Number of Instances             2200     
+

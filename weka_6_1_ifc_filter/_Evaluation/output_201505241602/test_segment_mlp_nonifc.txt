@@ -1,0 +1,262 @@
+
+Linear Node 0
+    Inputs    Weights
+    Threshold    1.3144342398267046
+    Node 1    -0.049867221420333896
+    Node 2    -0.09602135588261423
+    Node 3    0.25331092260285565
+    Node 4    0.18556156608954455
+    Node 5    -2.311697873253516
+    Node 6    0.11004738591945787
+    Node 7    -0.4977198847628788
+    Node 8    -0.1208461929124686
+    Node 9    -0.06200639429006201
+    Node 10    -0.004853435616492758
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.25722013166918434
+    Attrib region-centroid-col    -0.012001090090720085
+    Attrib region-centroid-row    0.11828119617158583
+    Attrib region-pixel-count    0.00874478293950727
+    Attrib short-line-density-5    0.2000380660640758
+    Attrib short-line-density-2    0.216817737740535
+    Attrib vedge-mean    0.30886721008216683
+    Attrib vegde-sd    0.28061118317113315
+    Attrib hedge-mean    0.29077861654968146
+    Attrib hedge-sd    0.16231463328292212
+    Attrib intensity-mean    0.19036831119913938
+    Attrib rawred-mean    0.17450868431491656
+    Attrib rawblue-mean    0.15944031816708198
+    Attrib rawgreen-mean    0.12082750751787284
+    Attrib exred-mean    0.014929979079688429
+    Attrib exblue-mean    0.1363489185515478
+    Attrib exgreen-mean    -0.2912096628366125
+    Attrib value-mean    0.1009289919424612
+    Attrib saturation-mean    -0.15006266033386395
+    Attrib hue-mean    -0.06048667845921704
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.2924500251266359
+    Attrib region-centroid-col    -0.01782862556513303
+    Attrib region-centroid-row    0.06790351987180514
+    Attrib region-pixel-count    0.034166587483641694
+    Attrib short-line-density-5    0.25532763046231227
+    Attrib short-line-density-2    0.23358886062067954
+    Attrib vedge-mean    0.3323358658402928
+    Attrib vegde-sd    0.34515084103688426
+    Attrib hedge-mean    0.30695879781279056
+    Attrib hedge-sd    0.25656065673087775
+    Attrib intensity-mean    0.07986537559761411
+    Attrib rawred-mean    0.022551128840842826
+    Attrib rawblue-mean    0.007487993488625722
+    Attrib rawgreen-mean    0.040248557966813765
+    Attrib exred-mean    -0.060868235774398906
+    Attrib exblue-mean    0.1586009103293469
+    Attrib exgreen-mean    -0.06964065007595413
+    Attrib value-mean    0.08054534139418
+    Attrib saturation-mean    -0.02031806200659634
+    Attrib hue-mean    0.07512837255224725
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.40459807108755225
+    Attrib region-centroid-col    0.16424718266027835
+    Attrib region-centroid-row    -0.2520816882642693
+    Attrib region-pixel-count    -0.04354140096663305
+    Attrib short-line-density-5    0.20459656270640345
+    Attrib short-line-density-2    0.3541010849756994
+    Attrib vedge-mean    0.2054796718430172
+    Attrib vegde-sd    0.3840003873054071
+    Attrib hedge-mean    0.251186340263961
+    Attrib hedge-sd    0.315675465320713
+    Attrib intensity-mean    0.3900645161737766
+    Attrib rawred-mean    0.391770737718803
+    Attrib rawblue-mean    0.35639976328318534
+    Attrib rawgreen-mean    0.40276923434051076
+    Attrib exred-mean    -0.33537962667553844
+    Attrib exblue-mean    0.20317783050568977
+    Attrib exgreen-mean    0.16511345857595433
+    Attrib value-mean    0.32624129222578613
+    Attrib saturation-mean    0.165050104071435
+    Attrib hue-mean    0.1479759301332845
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.23783046735206212
+    Attrib region-centroid-col    -0.07892257779930452
+    Attrib region-centroid-row    0.0457729738368355
+    Attrib region-pixel-count    0.027440183495305692
+    Attrib short-line-density-5    0.21450351034966533
+    Attrib short-line-density-2    0.2671645957933895
+    Attrib vedge-mean    0.31216141073087034
+    Attrib vegde-sd    0.26853241216220336
+    Attrib hedge-mean    0.27160220813748814
+    Attrib hedge-sd    0.2613735068435215
+    Attrib intensity-mean    0.19413365336178176
+    Attrib rawred-mean    0.1587878123886571
+    Attrib rawblue-mean    0.26713330804090246
+    Attrib rawgreen-mean    0.11406890984936315
+    Attrib exred-mean    -0.1628855735264009
+    Attrib exblue-mean    0.35139749309813845
+    Attrib exgreen-mean    -0.3592064967151167
+    Attrib value-mean    0.22598720228866884
+    Attrib saturation-mean    -0.2776013859547549
+    Attrib hue-mean    -0.048132648642549326
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    0.8666658224445888
+    Attrib region-centroid-col    -1.1916129754930953
+    Attrib region-centroid-row    0.08568548286966442
+    Attrib region-pixel-count    0.02873514478557615
+    Attrib short-line-density-5    0.028806192343064724
+    Attrib short-line-density-2    -0.47534210240306735
+    Attrib vedge-mean    -0.29065762094617975
+    Attrib vegde-sd    -0.8100431019142487
+    Attrib hedge-mean    -0.3665962089450891
+    Attrib hedge-sd    -0.9933924066952203
+    Attrib intensity-mean    -2.460137984533058
+    Attrib rawred-mean    -2.3475703554441067
+    Attrib rawblue-mean    -2.5110342867013307
+    Attrib rawgreen-mean    -2.5617706677703933
+    Attrib exred-mean    2.0838758770173067
+    Attrib exblue-mean    -1.237133104328308
+    Attrib exgreen-mean    -0.26177901869915843
+    Attrib value-mean    -2.5017620406331877
+    Attrib saturation-mean    0.017322797445116382
+    Attrib hue-mean    -0.4761958807839773
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.23512668673475215
+    Attrib region-centroid-col    0.009408907695851917
+    Attrib region-centroid-row    0.02549076131097324
+    Attrib region-pixel-count    0.018593051647210423
+    Attrib short-line-density-5    0.2703202735708023
+    Attrib short-line-density-2    0.26895089818751267
+    Attrib vedge-mean    0.27235577583499343
+    Attrib vegde-sd    0.28592824772314024
+    Attrib hedge-mean    0.27714633938557676
+    Attrib hedge-sd    0.3303805819491084
+    Attrib intensity-mean    0.04358139264203381
+    Attrib rawred-mean    0.03602395820581424
+    Attrib rawblue-mean    0.061848019345477234
+    Attrib rawgreen-mean    0.09336116284977047
+    Attrib exred-mean    -0.023344514803064407
+    Attrib exblue-mean    -0.002662018070783982
+    Attrib exgreen-mean    0.09040768194521444
+    Attrib value-mean    0.03860735682692675
+    Attrib saturation-mean    0.13134400601105212
+    Attrib hue-mean    0.14271136014303692
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.4042230402913896
+    Attrib region-centroid-col    0.236292304147306
+    Attrib region-centroid-row    -0.3711261497162014
+    Attrib region-pixel-count    -0.044819185601476456
+    Attrib short-line-density-5    0.09720689525947555
+    Attrib short-line-density-2    0.36280260921379026
+    Attrib vedge-mean    0.042469259507782776
+    Attrib vegde-sd    0.37820807770413595
+    Attrib hedge-mean    0.21542475107423875
+    Attrib hedge-sd    0.4292391952232283
+    Attrib intensity-mean    0.8159385892945971
+    Attrib rawred-mean    0.803868900854653
+    Attrib rawblue-mean    0.8108818839404793
+    Attrib rawgreen-mean    0.8270927195387756
+    Attrib exred-mean    -0.9417404490561291
+    Attrib exblue-mean    0.5255173846750477
+    Attrib exgreen-mean    0.15369214837537673
+    Attrib value-mean    0.8174175372702126
+    Attrib saturation-mean    0.14804210590499833
+    Attrib hue-mean    0.13737707108964495
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.25481476676221576
+    Attrib region-centroid-col    -0.006626752278422256
+    Attrib region-centroid-row    0.0827540224198864
+    Attrib region-pixel-count    0.032971038076208284
+    Attrib short-line-density-5    0.2222823717558531
+    Attrib short-line-density-2    0.2727197138426368
+    Attrib vedge-mean    0.3020573411933555
+    Attrib vegde-sd    0.35490487283958083
+    Attrib hedge-mean    0.29914367117425494
+    Attrib hedge-sd    0.24243623195176012
+    Attrib intensity-mean    0.0767376031458049
+    Attrib rawred-mean    0.12977945184015893
+    Attrib rawblue-mean    0.06526105978369763
+    Attrib rawgreen-mean    0.12212193387048019
+    Attrib exred-mean    -0.055221262902439686
+    Attrib exblue-mean    0.1746877140160651
+    Attrib exgreen-mean    -0.14133275549800992
+    Attrib value-mean    0.05033554778967289
+    Attrib saturation-mean    -0.08794808573190804
+    Attrib hue-mean    0.05443657338750983
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -0.26335398686061784
+    Attrib region-centroid-col    0.027446118327414927
+    Attrib region-centroid-row    0.08496168546169147
+    Attrib region-pixel-count    -0.01632549501038697
+    Attrib short-line-density-5    0.2901215040984838
+    Attrib short-line-density-2    0.2970564113925895
+    Attrib vedge-mean    0.3072185500473106
+    Attrib vegde-sd    0.28438311501580993
+    Attrib hedge-mean    0.25274822301680844
+    Attrib hedge-sd    0.2952198135924368
+    Attrib intensity-mean    0.0019522785020172338
+    Attrib rawred-mean    0.035357801134219824
+    Attrib rawblue-mean    0.06202013603355912
+    Attrib rawgreen-mean    0.06567252829872533
+    Attrib exred-mean    -0.02012156087470995
+    Attrib exblue-mean    0.1491311942315751
+    Attrib exgreen-mean    -0.09319859127069413
+    Attrib value-mean    0.05287987704104498
+    Attrib saturation-mean    0.016425996975889035
+    Attrib hue-mean    0.10097788327850182
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -0.29610761749452336
+    Attrib region-centroid-col    -0.011637598270369752
+    Attrib region-centroid-row    0.022573916681982623
+    Attrib region-pixel-count    0.03765577890544096
+    Attrib short-line-density-5    0.30042572580204874
+    Attrib short-line-density-2    0.2646705146687141
+    Attrib vedge-mean    0.27860330823455615
+    Attrib vegde-sd    0.29519252075471586
+    Attrib hedge-mean    0.27057034027547494
+    Attrib hedge-sd    0.31333763542649007
+    Attrib intensity-mean    0.09364984028152128
+    Attrib rawred-mean    0.041047814537730515
+    Attrib rawblue-mean    0.004975767592495686
+    Attrib rawgreen-mean    0.010325662229053827
+    Attrib exred-mean    -0.0487843489178119
+    Attrib exblue-mean    0.08719918314752804
+    Attrib exgreen-mean    -0.017455780158534138
+    Attrib value-mean    0.01211362556490427
+    Attrib saturation-mean    -0.0010394473579726016
+    Attrib hue-mean    0.14807884519216102
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 3.84 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0.0011
+Root mean squared error                  0.0015
+Relative absolute error                  0.4583 %
+Root relative squared error              0.438  %
+Total Number of Instances              762     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0.0013
+Root mean squared error                  0.0033
+Relative absolute error                  0.5547 %
+Root relative squared error              0.9759 %
+Total Number of Instances              762     
+

@@ -1,0 +1,227 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation sick-weka.filters.unsupervised.instance.Resample-S1-Z22.0-no-replacement-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R31-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute age numeric
+@attribute sex numeric
+@attribute 'on thyroxine' numeric
+@attribute 'query on thyroxine' numeric
+@attribute 'on antithyroid medication' numeric
+@attribute sick numeric
+@attribute pregnant numeric
+@attribute 'thyroid surgery' numeric
+@attribute 'I131 treatment' numeric
+@attribute 'query hypothyroid' numeric
+@attribute 'query hyperthyroid' numeric
+@attribute lithium numeric
+@attribute goitre numeric
+@attribute tumor numeric
+@attribute hypopituitary numeric
+@attribute psych numeric
+@attribute 'TSH measured' numeric
+@attribute TSH numeric
+@attribute 'T3 measured' numeric
+@attribute T3 numeric
+@attribute 'TT4 measured' numeric
+@attribute TT4 numeric
+@attribute 'T4U measured' numeric
+@attribute T4U numeric
+@attribute 'FTI measured' numeric
+@attribute FTI numeric
+@attribute 'TBG measured' numeric
+@attribute TBG numeric
+@attribute 'referral source' numeric
+@attribute Class=negative numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+TT4 <= 0.715 : 
+|   T3 <= 0.822 : 
+|   |   T3 <= 0.428 : 
+|   |   |   TT4 <= 0.095 : 
+|   |   |   |   FTI <= 0.301 : 
+|   |   |   |   |   age <= 0.486 : LM1 (2/0%)
+|   |   |   |   |   age >  0.486 : LM2 (2/0%)
+|   |   |   |   FTI >  0.301 : LM3 (11/0%)
+|   |   |   TT4 >  0.095 : 
+|   |   |   |   referral source <= 0.724 : 
+|   |   |   |   |   TT4 <= 0.398 : LM4 (14/0%)
+|   |   |   |   |   TT4 >  0.398 : 
+|   |   |   |   |   |   TT4 <= 0.66 : 
+|   |   |   |   |   |   |   TSH <= 0.289 : LM5 (4/122.187%)
+|   |   |   |   |   |   |   TSH >  0.289 : LM6 (13/0%)
+|   |   |   |   |   |   TT4 >  0.66 : 
+|   |   |   |   |   |   |   FTI <= 0.533 : LM7 (4/0%)
+|   |   |   |   |   |   |   FTI >  0.533 : LM8 (2/0%)
+|   |   |   |   referral source >  0.724 : 
+|   |   |   |   |   age <= 0.34 : LM9 (5/0%)
+|   |   |   |   |   age >  0.34 : LM10 (7/136.541%)
+|   |   T3 >  0.428 : LM11 (67/51.917%)
+|   T3 >  0.822 : LM12 (465/39.335%)
+TT4 >  0.715 : LM13 (233/0%)
+
+LM num: 1
+Class=negative = 
+	-0.5013 * age 
+	+ 0.2558 * T3 
+	- 0.376 * TT4 
+	+ 0.0139 * T4U 
+	+ 0.9903 * FTI 
+	+ 0.2667 * referral source 
+	+ 0.4011
+
+LM num: 2
+Class=negative = 
+	-0.5013 * age 
+	+ 0.2558 * T3 
+	- 0.376 * TT4 
+	+ 0.0139 * T4U 
+	+ 0.9903 * FTI 
+	+ 0.2667 * referral source 
+	+ 0.3923
+
+LM num: 3
+Class=negative = 
+	-0.2434 * age 
+	+ 0.2558 * T3 
+	- 0.376 * TT4 
+	+ 0.0139 * T4U 
+	+ 0.727 * FTI 
+	+ 0.2667 * referral source 
+	+ 0.4083
+
+LM num: 4
+Class=negative = 
+	0.0774 * age 
+	+ 0.2558 * T3 
+	- 0.0954 * TT4 
+	+ 0.0139 * T4U 
+	+ 0.0124 * FTI 
+	+ 0.2547 * referral source 
+	+ 0.058
+
+LM num: 5
+Class=negative = 
+	0.0011 * age 
+	- 0.061 * TSH 
+	+ 0.2558 * T3 
+	- 0.1145 * TT4 
+	+ 0.0139 * T4U 
+	+ 0.0124 * FTI 
+	+ 0.2547 * referral source 
+	+ 0.1516
+
+LM num: 6
+Class=negative = 
+	0.0774 * age 
+	- 0.0414 * TSH 
+	+ 0.2558 * T3 
+	- 0.1145 * TT4 
+	+ 0.0139 * T4U 
+	+ 0.0124 * FTI 
+	+ 0.2547 * referral source 
+	+ 0.0988
+
+LM num: 7
+Class=negative = 
+	0.0774 * age 
+	+ 0.2558 * T3 
+	- 0.1145 * TT4 
+	+ 0.0139 * T4U 
+	+ 0.2138 * FTI 
+	+ 0.2547 * referral source 
+	+ 0.0069
+
+LM num: 8
+Class=negative = 
+	0.0774 * age 
+	+ 0.2558 * T3 
+	- 0.1145 * TT4 
+	+ 0.0139 * T4U 
+	+ 0.2375 * FTI 
+	+ 0.2547 * referral source 
+	+ 0.0056
+
+LM num: 9
+Class=negative = 
+	0.3871 * age 
+	+ 0.3749 * TSH 
+	+ 0.2558 * T3 
+	- 0.1099 * TT4 
+	+ 0.0139 * T4U 
+	+ 0.0124 * FTI 
+	+ 0.3463 * referral source 
+	- 0.2182
+
+LM num: 10
+Class=negative = 
+	0.3655 * age 
+	+ 0.6811 * TSH 
+	+ 0.2558 * T3 
+	- 0.1099 * TT4 
+	+ 0.0139 * T4U 
+	+ 0.0124 * FTI 
+	+ 0.3463 * referral source 
+	- 0.3335
+
+LM num: 11
+Class=negative = 
+	0.2497 * T3 
+	- 0.1298 * TT4 
+	+ 0.0139 * T4U 
+	+ 0.0124 * FTI 
+	+ 0.056 * referral source 
+	+ 0.8047
+
+LM num: 12
+Class=negative = 
+	0.1742 * T3 
+	- 0.0119 * TT4 
+	+ 0.0058 * T4U 
+	+ 0.0465 * FTI 
+	+ 0.0036 * referral source 
+	+ 0.8082
+
+LM num: 13
+Class=negative = 
+	0.0427 * T3 
+	- 0.0097 * TT4 
+	+ 0.0056 * T4U 
+	+ 0.0042 * FTI 
+	+ 0.0032 * referral source 
+	+ 0.9594
+
+Number of Rules : 13
+
+Time taken to build model: 0.47 seconds
+Time taken to test model on training data: 2.11 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8654
+Mean absolute error                      0.0356
+Root mean squared error                  0.1179
+Relative absolute error                 32.6614 %
+Root relative squared error             50.4791 %
+Total Number of Instances              829     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7403
+Mean absolute error                      0.044 
+Root mean squared error                  0.1592
+Relative absolute error                 40.2961 %
+Root relative squared error             68.1028 %
+Total Number of Instances              829     
+

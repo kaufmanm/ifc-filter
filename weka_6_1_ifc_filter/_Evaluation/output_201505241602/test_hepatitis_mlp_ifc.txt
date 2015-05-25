@@ -1,0 +1,294 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.MultilayerPerceptron 
+
+FilteredClassifier using weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation hepatitis-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R20-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute AGE numeric
+@attribute SEX numeric
+@attribute STEROID numeric
+@attribute ANTIVIRALS numeric
+@attribute FATIGUE numeric
+@attribute MALAISE numeric
+@attribute ANOREXIA numeric
+@attribute LIVER_BIG numeric
+@attribute LIVER_FIRM numeric
+@attribute SPLEEN_PALPABLE numeric
+@attribute SPIDERS numeric
+@attribute ASCITES numeric
+@attribute VARICES numeric
+@attribute BILIRUBIN numeric
+@attribute ALK_PHOSPHATE numeric
+@attribute SGOT numeric
+@attribute ALBUMIN numeric
+@attribute PROTIME numeric
+@attribute HISTOLOGY numeric
+@attribute Class=LIVE numeric
+
+@data
+
+
+Classifier Model
+Linear Node 0
+    Inputs    Weights
+    Threshold    1.008810017835385
+    Node 1    -2.0835126774230956
+    Node 2    -1.579712450627741
+    Node 3    2.4334568838431694
+    Node 4    -0.9758344916445648
+    Node 5    0.46565160331959854
+    Node 6    2.528567205853728
+    Node 7    -2.452122528092221
+    Node 8    -2.30904101363671
+    Node 9    2.1214595245506507
+    Node 10    2.4387063548658126
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -2.645356502679961
+    Attrib AGE    -0.12482708737183736
+    Attrib SEX    -2.5054212068392934
+    Attrib STEROID    -2.82116020787645
+    Attrib ANTIVIRALS    -1.231828009749783
+    Attrib FATIGUE    -0.9089435992987835
+    Attrib MALAISE    -5.408576639992295
+    Attrib ANOREXIA    3.0235737173278476
+    Attrib LIVER_BIG    1.7575928622006067
+    Attrib LIVER_FIRM    0.9049859557722124
+    Attrib SPLEEN_PALPABLE    -0.11696706800777479
+    Attrib SPIDERS    -1.8975892164187744
+    Attrib ASCITES    -0.3168545732077738
+    Attrib VARICES    -5.73625600235771
+    Attrib BILIRUBIN    -5.991478270357243
+    Attrib ALK_PHOSPHATE    -2.730615658677216
+    Attrib SGOT    1.312073093027429
+    Attrib ALBUMIN    -0.43735076174393644
+    Attrib PROTIME    -8.178604934854988
+    Attrib HISTOLOGY    3.7296116550004332
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -3.0268497262538663
+    Attrib AGE    0.7105552441527793
+    Attrib SEX    0.5972279394212968
+    Attrib STEROID    -0.6346670583834746
+    Attrib ANTIVIRALS    1.5516680539689538
+    Attrib FATIGUE    0.19898494825661042
+    Attrib MALAISE    -0.022666958596471522
+    Attrib ANOREXIA    0.8627916254174337
+    Attrib LIVER_BIG    0.9548995143540426
+    Attrib LIVER_FIRM    0.8761588401230196
+    Attrib SPLEEN_PALPABLE    -2.2608888350355842
+    Attrib SPIDERS    -1.5625429214547304
+    Attrib ASCITES    -1.4336356955506748
+    Attrib VARICES    0.4563815341357722
+    Attrib BILIRUBIN    -3.2012325950639084
+    Attrib ALK_PHOSPHATE    -0.14821426882151031
+    Attrib SGOT    0.3082170894454249
+    Attrib ALBUMIN    1.0298611664694555
+    Attrib PROTIME    -0.13184223064069986
+    Attrib HISTOLOGY    2.379681916234651
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -4.608872341337135
+    Attrib AGE    -1.9728923903527356
+    Attrib SEX    0.4777067605845355
+    Attrib STEROID    -0.2030874769301866
+    Attrib ANTIVIRALS    -0.3697493631491494
+    Attrib FATIGUE    -0.3769643380078712
+    Attrib MALAISE    -0.5679561254360368
+    Attrib ANOREXIA    0.5641066806855038
+    Attrib LIVER_BIG    1.2241822947467982
+    Attrib LIVER_FIRM    2.766482573122028
+    Attrib SPLEEN_PALPABLE    -0.012736641201294903
+    Attrib SPIDERS    0.017999675719758617
+    Attrib ASCITES    0.3366609864824783
+    Attrib VARICES    -1.9976792138459225
+    Attrib BILIRUBIN    -4.6071069057342795
+    Attrib ALK_PHOSPHATE    1.9623913790013106
+    Attrib SGOT    -0.19365025289551355
+    Attrib ALBUMIN    -2.3145653823887615
+    Attrib PROTIME    -1.4904488443675992
+    Attrib HISTOLOGY    2.5949027788275054
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -2.681926859630177
+    Attrib AGE    0.7320973972812537
+    Attrib SEX    2.420225221637106
+    Attrib STEROID    -1.4967527782962848
+    Attrib ANTIVIRALS    1.3529514965647067
+    Attrib FATIGUE    0.6466717563932137
+    Attrib MALAISE    -0.8504835108703295
+    Attrib ANOREXIA    -1.5084701582932354
+    Attrib LIVER_BIG    0.6672475503094772
+    Attrib LIVER_FIRM    -0.021279358742399966
+    Attrib SPLEEN_PALPABLE    -1.4386675775074853
+    Attrib SPIDERS    0.7659968065904372
+    Attrib ASCITES    0.5531853492334855
+    Attrib VARICES    -0.14754538898428546
+    Attrib BILIRUBIN    -0.3753807141909089
+    Attrib ALK_PHOSPHATE    -0.5954414231085146
+    Attrib SGOT    0.4661951240654877
+    Attrib ALBUMIN    -2.681529866032812
+    Attrib PROTIME    -2.381721093097581
+    Attrib HISTOLOGY    -0.6804862170028517
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -1.9366075652139896
+    Attrib AGE    0.7017453540643397
+    Attrib SEX    -9.760469222351677E-5
+    Attrib STEROID    0.04161282595797164
+    Attrib ANTIVIRALS    0.8419902425062712
+    Attrib FATIGUE    0.1807489351935191
+    Attrib MALAISE    -0.3367510424692683
+    Attrib ANOREXIA    -0.8421425837245852
+    Attrib LIVER_BIG    0.9030507053224675
+    Attrib LIVER_FIRM    1.162169222854298
+    Attrib SPLEEN_PALPABLE    -0.4366417566028362
+    Attrib SPIDERS    -1.0679774924807073
+    Attrib ASCITES    -1.1169887068165665
+    Attrib VARICES    -1.5567598454158216
+    Attrib BILIRUBIN    0.11955901429933234
+    Attrib ALK_PHOSPHATE    0.21686287127940296
+    Attrib SGOT    -0.0010979022168610263
+    Attrib ALBUMIN    -0.8286947822176848
+    Attrib PROTIME    -1.524722335088676
+    Attrib HISTOLOGY    0.44959264312907365
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -3.1622884694454694
+    Attrib AGE    0.22905189337167695
+    Attrib SEX    0.42620053254157775
+    Attrib STEROID    -0.37893757611584405
+    Attrib ANTIVIRALS    1.392178342560596
+    Attrib FATIGUE    1.541594388010056
+    Attrib MALAISE    -1.2868006197470732
+    Attrib ANOREXIA    1.2922286480050287
+    Attrib LIVER_BIG    2.8389084156838837
+    Attrib LIVER_FIRM    0.5913189422257936
+    Attrib SPLEEN_PALPABLE    -0.08048912521175439
+    Attrib SPIDERS    -0.698278361722736
+    Attrib ASCITES    -0.011002900306035904
+    Attrib VARICES    -0.29731339702469844
+    Attrib BILIRUBIN    -1.18544372441673
+    Attrib ALK_PHOSPHATE    -1.3137986457671094E-4
+    Attrib SGOT    -0.340704535609905
+    Attrib ALBUMIN    -2.9399314510648624
+    Attrib PROTIME    0.1379456337604026
+    Attrib HISTOLOGY    -0.9999993849521388
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -2.813070436962349
+    Attrib AGE    -0.1423321413712085
+    Attrib SEX    1.7972119836761609
+    Attrib STEROID    -1.7994391724232695
+    Attrib ANTIVIRALS    0.9942327100610475
+    Attrib FATIGUE    2.9992897118754542
+    Attrib MALAISE    0.5129602190695932
+    Attrib ANOREXIA    0.3188621206533154
+    Attrib LIVER_BIG    0.30559797115424336
+    Attrib LIVER_FIRM    -2.0925907675815862
+    Attrib SPLEEN_PALPABLE    0.5489653827838531
+    Attrib SPIDERS    0.5294083286970541
+    Attrib ASCITES    -1.6875165488726696
+    Attrib VARICES    -0.9361014194845332
+    Attrib BILIRUBIN    -1.5129167708466615
+    Attrib ALK_PHOSPHATE    1.3055646072272746
+    Attrib SGOT    1.121670531339999
+    Attrib ALBUMIN    -0.35841448397828046
+    Attrib PROTIME    0.9770116036548482
+    Attrib HISTOLOGY    -0.9197212258247057
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -4.197532206720481
+    Attrib AGE    -1.199060115161331
+    Attrib SEX    0.24095203303244783
+    Attrib STEROID    0.6899286699264843
+    Attrib ANTIVIRALS    -0.190051309660489
+    Attrib FATIGUE    -0.9193663814650406
+    Attrib MALAISE    1.0848133751486218
+    Attrib ANOREXIA    0.2385261327025458
+    Attrib LIVER_BIG    0.7564285354682384
+    Attrib LIVER_FIRM    4.432100559825564
+    Attrib SPLEEN_PALPABLE    0.23920465397797833
+    Attrib SPIDERS    -3.2358052420216943
+    Attrib ASCITES    -1.7685673644836126
+    Attrib VARICES    -2.4000684792294495
+    Attrib BILIRUBIN    -2.5540189258294768
+    Attrib ALK_PHOSPHATE    1.176239874404088
+    Attrib SGOT    -0.3236929124117463
+    Attrib ALBUMIN    -0.06607393714574349
+    Attrib PROTIME    -0.8459831080686826
+    Attrib HISTOLOGY    1.715813867940969
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -2.4025367981127097
+    Attrib AGE    2.215398613067935
+    Attrib SEX    0.17331502808797555
+    Attrib STEROID    0.07640909967381312
+    Attrib ANTIVIRALS    1.5638973361477164
+    Attrib FATIGUE    0.5507069173468349
+    Attrib MALAISE    -0.5348076995213481
+    Attrib ANOREXIA    -1.5462895901839269
+    Attrib LIVER_BIG    2.1132573735848994
+    Attrib LIVER_FIRM    1.2401315762692908
+    Attrib SPLEEN_PALPABLE    -1.242981972204854
+    Attrib SPIDERS    -2.0361097445630825
+    Attrib ASCITES    -1.04919858735105
+    Attrib VARICES    -0.8696134743697206
+    Attrib BILIRUBIN    0.7763319977959163
+    Attrib ALK_PHOSPHATE    0.08165173462082514
+    Attrib SGOT    -0.3477581772646679
+    Attrib ALBUMIN    -0.5280052991550841
+    Attrib PROTIME    -2.673369604135484
+    Attrib HISTOLOGY    1.2350674876622574
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -2.176474652611062
+    Attrib AGE    1.7907109720579424
+    Attrib SEX    2.314076998430666
+    Attrib STEROID    -1.8129493436425563
+    Attrib ANTIVIRALS    2.2823565188178407
+    Attrib FATIGUE    2.491879697517796
+    Attrib MALAISE    0.5817317148659291
+    Attrib ANOREXIA    -1.3145079585202992
+    Attrib LIVER_BIG    0.142753418467848
+    Attrib LIVER_FIRM    -2.160388668579774
+    Attrib SPLEEN_PALPABLE    -1.458807253833483
+    Attrib SPIDERS    -1.212596652800843
+    Attrib ASCITES    1.950598441101056
+    Attrib VARICES    -3.495987309897953
+    Attrib BILIRUBIN    -0.4653429283761544
+    Attrib ALK_PHOSPHATE    0.6644963227021627
+    Attrib SGOT    0.6884325504040012
+    Attrib ALBUMIN    1.2382743269953354
+    Attrib PROTIME    1.4137322729985722
+    Attrib HISTOLOGY    1.4804527741157274
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 0.94 seconds
+Time taken to test model on training data: 0.2 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9999
+Mean absolute error                      0.0024
+Root mean squared error                  0.0064
+Relative absolute error                  0.7331 %
+Root relative squared error              1.592  %
+Total Number of Instances              155     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.2413
+Mean absolute error                      0.2777
+Root mean squared error                  0.4724
+Relative absolute error                 84.0673 %
+Root relative squared error            115.6864 %
+Total Number of Instances              155     
+

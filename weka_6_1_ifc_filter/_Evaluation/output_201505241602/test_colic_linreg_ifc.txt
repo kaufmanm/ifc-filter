@@ -1,0 +1,74 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'horse-colic-weka.filters.unsupervised.attribute.AddValues-C22-L\'?\'-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R22-weka.filters.unsupervised.attribute.Remove-R23-25-weka.filters.unsupervised.attribute.Remove-R23-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute surgery numeric
+@attribute Age numeric
+@attribute rectal_temperature numeric
+@attribute pulse numeric
+@attribute respiratory_rate numeric
+@attribute temp_extremities numeric
+@attribute peripheral_pulse numeric
+@attribute mucous_membranes numeric
+@attribute capillary_refill_time numeric
+@attribute pain numeric
+@attribute peristalsis numeric
+@attribute abdominal_distension numeric
+@attribute nasogastric_tube numeric
+@attribute nasogastric_reflux numeric
+@attribute nasogastric_reflux_PH numeric
+@attribute rectal_examination numeric
+@attribute abdomen numeric
+@attribute packed_cell_volume numeric
+@attribute total_protein numeric
+@attribute abdominocentesis_appearance numeric
+@attribute abdomcentesis_total_protein numeric
+@attribute outcome=lived numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+outcome=lived =
+
+      0.3963 * rectal_temperature +
+      0.4174 * pulse +
+      0.2628 * temp_extremities +
+      0.2083 * mucous_membranes +
+      0.3205 * pain +
+      0.2164 * abdominal_distension +
+      0.9287 * nasogastric_tube +
+      0.3136 * packed_cell_volume +
+      0.4941 * total_protein +
+     -1.2098
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0.53 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.64  
+Mean absolute error                      0.2938
+Root mean squared error                  0.3742
+Relative absolute error                 62.1512 %
+Root relative squared error             76.9716 %
+Total Number of Instances              368     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5214
+Mean absolute error                      0.3329
+Root mean squared error                  0.4154
+Relative absolute error                 70.26   %
+Root relative squared error             85.2548 %
+Total Number of Instances              368     
+

@@ -1,0 +1,118 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation kr-vs-kp-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R38-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z33.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute bkblk numeric
+@attribute bknwy numeric
+@attribute bkon8 numeric
+@attribute bkona numeric
+@attribute bkspr numeric
+@attribute bkxbq numeric
+@attribute bkxcr numeric
+@attribute bkxwp numeric
+@attribute blxwp numeric
+@attribute bxqsq numeric
+@attribute cntxt numeric
+@attribute dsopp numeric
+@attribute dwipd numeric
+@attribute hdchk numeric
+@attribute katri numeric
+@attribute mulch numeric
+@attribute qxmsq numeric
+@attribute r2ar8 numeric
+@attribute reskd numeric
+@attribute reskr numeric
+@attribute rimmx numeric
+@attribute rkxwp numeric
+@attribute rxmsq numeric
+@attribute simpl numeric
+@attribute skach numeric
+@attribute skewr numeric
+@attribute skrxp numeric
+@attribute spcop numeric
+@attribute stlmt numeric
+@attribute thrsk numeric
+@attribute wkcti numeric
+@attribute wkna8 numeric
+@attribute wknck numeric
+@attribute wkovl numeric
+@attribute wkpos numeric
+@attribute wtoeg numeric
+@attribute class=won numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ +       0.0009 * (normalized) bkblk
+ -       0.0005 * (normalized) bknwy
+ +       0.0048 * (normalized) bkon8
+ -       0.0006 * (normalized) bkona
+ +       0      * (normalized) bkspr
+ +       0.0011 * (normalized) bkxbq
+ +       0.0003 * (normalized) bkxcr
+ +       0.4944 * (normalized) bkxwp
+ -       0.4942 * (normalized) blxwp
+ +       0.4997 * (normalized) bxqsq
+ +       0.0017 * (normalized) cntxt
+ +       0.0004 * (normalized) dsopp
+ -       0.0002 * (normalized) dwipd
+ +       0.4962 * (normalized) hdchk
+ +       0.0018 * (normalized) katri
+ +       0.496  * (normalized) mulch
+ -       0.0013 * (normalized) qxmsq
+ +       0.0002 * (normalized) r2ar8
+ -       0.0016 * (normalized) reskd
+ +       0.0006 * (normalized) reskr
+ +       0.5027 * (normalized) rimmx
+ -       0.4947 * (normalized) rkxwp
+ +       0.4951 * (normalized) rxmsq
+ +       0.0003 * (normalized) simpl
+ +       0.0022 * (normalized) skach
+ +       0.0003 * (normalized) skewr
+ -       0      * (normalized) skrxp
+ +       0      * (normalized) spcop
+ +       0.0017 * (normalized) stlmt
+ +       0.0003 * (normalized) thrsk
+ -       0.0002 * (normalized) wkcti
+ +       0.4999 * (normalized) wkna8
+ +       0.5    * (normalized) wknck
+ -       0.0004 * (normalized) wkovl
+ +       0.0019 * (normalized) wkpos
+ -       0.0002 * (normalized) wtoeg
+ -       1.9998
+
+
+
+Number of kernel evaluations: 660553 (99.39% cached)
+
+Time taken to build model: 13.42 seconds
+Time taken to test model on training data: 2.51 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7569
+Mean absolute error                      0.2081
+Root mean squared error                  0.3459
+Relative absolute error                 41.6684 %
+Root relative squared error             69.226  %
+Total Number of Instances             1054     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7451
+Mean absolute error                      0.2167
+Root mean squared error                  0.3551
+Relative absolute error                 43.3202 %
+Root relative squared error             70.946  %
+Total Number of Instances             1054     
+

@@ -1,0 +1,72 @@
+mydata=read.csv(/Users/micha/Dropbox/Science/Projects/_Ongoing/2014-10-04 ESWA/Revision201505/weka_6_1_nlr/_Evaluation2/analysis/data.csv)
+mydata=read.csv("/Users/micha/Dropbox/Science/Projects/_Ongoing/2014-10-04 ESWA/Revision201505/weka_6_1_nlr/_Evaluation2/analysis/data.csv")
+library(MASS)
+wilcox.test(mydata$nonifc.rmse, mydata$ifc.rmse, alternative="greater", paired=TRUE)
+mydata
+mydata=read.csv("/Users/micha/Dropbox/Science/Projects/_Ongoing/2014-10-04 ESWA/Revision201505/weka_6_1_nlr/_Evaluation2/analysis/data.csv")
+mydata
+mydata[ifc="ifc"]
+mydata[ifc="ifc",]
+mydata
+mydata[mydata[3]=="ifc",]
+mydata[mydata[3]=="ifc",]
+mydata[mydata[3]=="nonifc",]
+ifc <- mydata[mydata[3]=="ifc",]
+ifc
+nonifc <- mydata[mydata[3]=="nonifc",]
+mydata$test <- mydata$dataset + mydata$classifier
+mydata$test <- mydata$dataset + mydata$classifier
+comparison <- merge(ifc, nonifc, c("dataset","classifier"))
+comparison
+wilcox.test(mydata$nonifc.rmse, mydata$ifc.rmse, alternative="greater", paired=TRUE)
+colnames( mydata )
+colnames(comparison)
+wilcox.test(comparison$rmse.x, comparison$rmse.y, alternative="greater", paired=TRUE)
+wilcox.test(comparison$rmse.x, comparison$rmse.y, alternative="greater", paired=TRUE)
+wilcox.test(comparison$rmse.x, comparison$rmse.y, alternative="greater", paired=FALSE)
+wilcox.test(comparison$rmse.x, comparison$rmse.y, alternative="greater", paired=TRUE)
+mediam(comparison$rmse.x)
+median(comparison$rmse.x)
+median(comparison$rmse.y)
+mean(comparison$rmse.x)
+mean(comparison$rmse.y)
+mydata[mydata$ifc=="ifc" & mydata$classifier="linreg",]
+ifc <- mydata[mydata$ifc=="ifc" & mydata$classifier=="linreg",]
+ifc
+ifc <- mydata[mydata$ifc=="ifc" & mydata$classifier=="linreg",]#
+nonifc <- mydata[mydata$ifc=="nonifc" & mydata$classifier=="linreg",]#
+comparison <- merge(ifc, nonifc, c("dataset","classifier"))#
+wilcox.test(comparison$rmse.x, comparison$rmse.y, alternative="greater", paired=TRUE)#
+mean(comparison$rmse.x)#
+mean(comparison$rmse.y)
+comparison
+ifc <- mydata[mydata$ifc=="ifc" & mydata$classifier=="linreg",]#
+nonifc <- mydata[mydata$ifc=="nonifc" & mydata$classifier=="linreg",]#
+comparison <- merge(ifc, nonifc, c("dataset","classifier"))#
+wilcox.test(comparison$rmse.x, comparison$rmse.y, alternative="smaller", paired=TRUE)#
+mean(comparison$rmse.x)#
+mean(comparison$rmse.y)
+ifc <- mydata[mydata$ifc=="ifc" & mydata$classifier=="linreg",]#
+nonifc <- mydata[mydata$ifc=="nonifc" & mydata$classifier=="linreg",]#
+comparison <- merge(ifc, nonifc, c("dataset","classifier"))#
+wilcox.test(comparison$rmse.x, comparison$rmse.y, alternative="less", paired=TRUE)#
+mean(comparison$rmse.x)#
+mean(comparison$rmse.y)
+ifc <- mydata[mydata$ifc=="ifc" & mydata$classifier=="logreg",]#
+nonifc <- mydata[mydata$ifc=="nonifc" & mydata$classifier=="logreg",]#
+comparison <- merge(ifc, nonifc, c("dataset","classifier"))#
+wilcox.test(comparison$rmse.x, comparison$rmse.y, alternative="less", paired=TRUE)#
+mean(comparison$rmse.x)#
+mean(comparison$rmse.y)
+cdata <- ddply(ifc, c("dataset"), summarise,#
+               median = median(dataset, na.rm=TRUE),#
+               sd   = sd(dataset, na.rm=TRUE),
+;
+cdata <- ddply(ifc, c("dataset"), summarise,#
+               median = median(dataset, na.rm=TRUE),#
+               sd   = sd(dataset, na.rm=TRUE)
+)
+library(plyr)
+help aggregate
+help
+help(aggregate)

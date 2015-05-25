@@ -1,0 +1,42 @@
+
+SMOreg
+
+weights (not support vectors):
+ -       0.0209 * (normalized) Clump_Thickness
+ -       0.4093 * (normalized) Cell_Size_Uniformity
+ -       0.0409 * (normalized) Cell_Shape_Uniformity
+ +       0.0042 * (normalized) Marginal_Adhesion
+ -       0.0199 * (normalized) Single_Epi_Cell_Size
+ -       0.5963 * (normalized) Bare_Nuclei
+ -       0.0344 * (normalized) Bland_Chromatin
+ -       0.2243 * (normalized) Normal_Nucleoli
+ -       0.0106 * (normalized) Mitoses
+ +       1.0111
+
+
+
+Number of kernel evaluations: 244650 (97.186% cached)
+
+Time taken to build model: 1.33 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9002
+Mean absolute error                      0.1158
+Root mean squared error                  0.2073
+Relative absolute error                 25.6397 %
+Root relative squared error             43.6254 %
+Total Number of Instances              699     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8942
+Mean absolute error                      0.1198
+Root mean squared error                  0.2133
+Relative absolute error                 26.4811 %
+Root relative squared error             44.8089 %
+Total Number of Instances              699     
+

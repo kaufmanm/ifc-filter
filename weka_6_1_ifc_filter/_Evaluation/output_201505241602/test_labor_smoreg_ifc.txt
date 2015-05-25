@@ -1,0 +1,78 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation labor-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R17-weka.filters.unsupervised.attribute.NominalToBinary-R17-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute duration numeric
+@attribute wage-increase-first-year numeric
+@attribute wage-increase-second-year numeric
+@attribute wage-increase-third-year numeric
+@attribute cost-of-living-adjustment numeric
+@attribute working-hours numeric
+@attribute pension numeric
+@attribute standby-pay numeric
+@attribute shift-differential numeric
+@attribute education-allowance numeric
+@attribute statutory-holidays numeric
+@attribute vacation numeric
+@attribute longterm-disability-assistance numeric
+@attribute contribution-to-dental-plan numeric
+@attribute bereavement-assistance numeric
+@attribute contribution-to-health-plan numeric
+@attribute class numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ +       0.1147 * (normalized) duration
+ +       0.3727 * (normalized) wage-increase-first-year
+ +       0.1904 * (normalized) wage-increase-second-year
+ +       0.0412 * (normalized) wage-increase-third-year
+ +       0.0672 * (normalized) cost-of-living-adjustment
+ -       0.0056 * (normalized) working-hours
+ +       0.3978 * (normalized) pension
+ +       0.0645 * (normalized) standby-pay
+ -       0.1543 * (normalized) shift-differential
+ +       0.2154 * (normalized) education-allowance
+ +       0.1925 * (normalized) statutory-holidays
+ +       0.0551 * (normalized) vacation
+ -       0.0284 * (normalized) longterm-disability-assistance
+ +       0.159  * (normalized) contribution-to-dental-plan
+ +       0.1678 * (normalized) bereavement-assistance
+ +       0.1799 * (normalized) contribution-to-health-plan
+ -       0.4979
+
+
+
+Number of kernel evaluations: 1653 (97.59% cached)
+
+Time taken to build model: 0.13 seconds
+Time taken to test model on training data: 0.06 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8861
+Mean absolute error                      0.1134
+Root mean squared error                  0.2245
+Relative absolute error                 24.8987 %
+Root relative squared error             47.0366 %
+Total Number of Instances               57     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6165
+Mean absolute error                      0.2468
+Root mean squared error                  0.3817
+Relative absolute error                 53.2605 %
+Root relative squared error             78.5537 %
+Total Number of Instances               57     
+

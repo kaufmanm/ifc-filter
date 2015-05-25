@@ -1,0 +1,122 @@
+
+Linear Node 0
+    Inputs    Weights
+    Threshold    0.7231458518110426
+    Node 1    -1.7466683659729545
+    Node 2    -1.6068796662622067
+    Node 3    -1.7091910528180807
+    Node 4    -3.332017283803175
+    Node 5    -2.076607540344817
+    Node 6    -1.717344614518389
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -3.411694515473277
+    Attrib Sex    2.5837347421204013
+    Attrib Feature 0    -2.3590760807154987
+    Attrib Feature 1    30.075698623970712
+    Attrib Feature 2    1.8416609967245214
+    Attrib Feature 3    -6.0065351180058535
+    Attrib Feature 4    -19.460370909658497
+    Attrib Feature 5    3.964038142371219
+    Attrib Feature 6    14.465526858951382
+    Attrib Feature 7    9.429641674341532
+    Attrib Feature 8    6.53982518958067
+    Attrib Feature 9    6.262647558117082
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -8.50486071663229
+    Attrib Sex    -3.83699599576563
+    Attrib Feature 0    -0.16505338437010603
+    Attrib Feature 1    1.7235781921746598
+    Attrib Feature 2    -5.4365229725521
+    Attrib Feature 3    5.04538344682899
+    Attrib Feature 4    5.172088761696891
+    Attrib Feature 5    -2.294490943649022
+    Attrib Feature 6    -1.8022368287193056
+    Attrib Feature 7    -1.533597782532584
+    Attrib Feature 8    -0.404530226462715
+    Attrib Feature 9    1.4199802648150115
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -9.491819099739951
+    Attrib Sex    4.9284746078662955
+    Attrib Feature 0    -4.285166286303133
+    Attrib Feature 1    -24.303408987748522
+    Attrib Feature 2    13.25152607123185
+    Attrib Feature 3    22.44583597468934
+    Attrib Feature 4    15.56506829246301
+    Attrib Feature 5    6.996926065398093
+    Attrib Feature 6    -5.336408395973457
+    Attrib Feature 7    2.2411554822860746
+    Attrib Feature 8    -1.1391376523624355
+    Attrib Feature 9    3.69256385529303
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -9.222195999435254
+    Attrib Sex    -0.8866497498735745
+    Attrib Feature 0    1.191272344235469
+    Attrib Feature 1    -2.0890062109694028
+    Attrib Feature 2    2.474141753581893
+    Attrib Feature 3    -8.331924011977943
+    Attrib Feature 4    10.150784307716814
+    Attrib Feature 5    6.71227945378763
+    Attrib Feature 6    -5.110808961246523
+    Attrib Feature 7    2.990600229309114
+    Attrib Feature 8    0.7301096353065669
+    Attrib Feature 9    3.146490655183104
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -9.138992341389843
+    Attrib Sex    0.302762210668146
+    Attrib Feature 0    -9.050607814400104
+    Attrib Feature 1    -8.538349710171506
+    Attrib Feature 2    -5.576928374387433
+    Attrib Feature 3    -1.5875956094383066
+    Attrib Feature 4    -2.4537330193069615
+    Attrib Feature 5    0.08681766917237045
+    Attrib Feature 6    -2.9153695435778255
+    Attrib Feature 7    6.92099530624409
+    Attrib Feature 8    -1.3156061980624396
+    Attrib Feature 9    4.880956807904704
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -8.663573125028703
+    Attrib Sex    -1.015422696695899
+    Attrib Feature 0    20.696961666965176
+    Attrib Feature 1    -6.7685762706429955
+    Attrib Feature 2    -7.087657398158115
+    Attrib Feature 3    -0.2729192033391665
+    Attrib Feature 4    1.4325022372196732
+    Attrib Feature 5    -10.771887734773937
+    Attrib Feature 6    -4.734321025543893
+    Attrib Feature 7    -6.981320495275412
+    Attrib Feature 8    1.3454460053111046
+    Attrib Feature 9    -5.314652623613099
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 1.55 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.802 
+Mean absolute error                      0.0972
+Root mean squared error                  0.1841
+Relative absolute error                 58.8235 %
+Root relative squared error             64.048  %
+Total Number of Instances              990     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6004
+Mean absolute error                      0.1553
+Root mean squared error                  0.2513
+Relative absolute error                 93.9016 %
+Root relative squared error             87.3293 %
+Total Number of Instances              990     
+

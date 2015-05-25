@@ -1,0 +1,74 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'letter-weka.filters.unsupervised.instance.Resample-S1-Z11.0-no-replacement-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R17-26,28-42-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute x-box numeric
+@attribute y-box numeric
+@attribute width numeric
+@attribute high numeric
+@attribute onpix numeric
+@attribute x-bar numeric
+@attribute y-bar numeric
+@attribute x2bar numeric
+@attribute y2bar numeric
+@attribute xybar numeric
+@attribute x2ybr numeric
+@attribute xy2br numeric
+@attribute x-ege numeric
+@attribute xegvy numeric
+@attribute y-ege numeric
+@attribute yegvx numeric
+@attribute class=K numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+class=K =
+
+     -0.5332 * x-box +
+      0.2385 * width +
+      0.0879 * high +
+      0.2422 * x-bar +
+      0.0614 * y-bar +
+      0.304  * x2bar +
+      0.1706 * y2bar +
+      0.0561 * xybar +
+      0.3047 * x2ybr +
+      0.1774 * xy2br +
+      0.1745 * x-ege +
+      0.0313 * xegvy +
+      0.0434 * y-ege +
+      0.0949 * yegvx +
+     -0.5813
+
+Time taken to build model: 0.77 seconds
+Time taken to test model on training data: 2.25 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5397
+Mean absolute error                      0.0825
+Root mean squared error                  0.1757
+Relative absolute error                 99.8906 %
+Root relative squared error             86.4583 %
+Total Number of Instances             2200     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4909
+Mean absolute error                      0.0836
+Root mean squared error                  0.1801
+Relative absolute error                101.1322 %
+Root relative squared error             88.5375 %
+Total Number of Instances             2200     
+

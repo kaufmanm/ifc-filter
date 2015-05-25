@@ -1,0 +1,104 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation german_credit-weka.filters.unsupervised.instance.Resample-S1-Z66.0-no-replacement-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R22-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute checking_status numeric
+@attribute duration numeric
+@attribute credit_history numeric
+@attribute purpose numeric
+@attribute credit_amount numeric
+@attribute savings_status numeric
+@attribute employment numeric
+@attribute installment_commitment numeric
+@attribute personal_status numeric
+@attribute other_parties numeric
+@attribute residence_since numeric
+@attribute property_magnitude numeric
+@attribute age numeric
+@attribute other_payment_plans numeric
+@attribute housing numeric
+@attribute existing_credits numeric
+@attribute job numeric
+@attribute num_dependents numeric
+@attribute own_telephone numeric
+@attribute foreign_worker numeric
+@attribute class=good numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+checking_status <= 0.547 : LM1 (365/91.825%)
+checking_status >  0.547 : LM2 (295/62.129%)
+
+LM num: 1
+class=good = 
+	0.0221 * checking_status 
+	+ 0.8371 * duration 
+	+ 0.5734 * credit_history 
+	+ 0.7601 * purpose 
+	+ 0.027 * credit_amount 
+	+ 0.7325 * savings_status 
+	+ 0.4977 * employment 
+	+ 1.4798 * installment_commitment 
+	+ 0.9196 * personal_status 
+	+ 0.7356 * other_parties 
+	+ 1.8819 * residence_since 
+	+ 0.7249 * property_magnitude 
+	+ 0.8414 * age 
+	+ 0.0204 * other_payment_plans 
+	+ 0.0376 * own_telephone 
+	- 4.5025
+
+LM num: 2
+class=good = 
+	0.0271 * checking_status 
+	+ 0.026 * duration 
+	+ 0.571 * credit_history 
+	+ 0.5678 * purpose 
+	+ 0.9862 * credit_amount 
+	+ 0.0157 * savings_status 
+	+ 0.5341 * employment 
+	+ 0.0408 * installment_commitment 
+	+ 0.0367 * other_parties 
+	+ 0.0607 * residence_since 
+	+ 0.0213 * property_magnitude 
+	+ 0.0285 * age 
+	+ 0.025 * other_payment_plans 
+	+ 0.326 * housing 
+	- 1.0306 * existing_credits 
+	+ 0.0461 * own_telephone 
+	- 0.3066
+
+Number of Rules : 2
+
+Time taken to build model: 0.38 seconds
+Time taken to test model on training data: 0.75 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.6062
+Mean absolute error                      0.2822
+Root mean squared error                  0.3689
+Relative absolute error                 65.7082 %
+Root relative squared error             79.6048 %
+Total Number of Instances              660     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4436
+Mean absolute error                      0.3304
+Root mean squared error                  0.4173
+Relative absolute error                 76.892  %
+Root relative squared error             89.9878 %
+Total Number of Instances              660     
+

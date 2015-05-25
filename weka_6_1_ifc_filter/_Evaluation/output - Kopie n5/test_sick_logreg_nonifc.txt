@@ -1,0 +1,103 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -140.6975;  df=33;  p=      0   
+
+SQL:
+
+1-1/(1+exp(     -0.0149*age
++     -0.0425*sex
++      0.6579*on thyroxine
++      1.4353*query on thyroxine
++     11.9745*on antithyroid medication
++     -1.3886*sick
++      1.1269*pregnant
++     16.043 *thyroid surgery
++     13.4155*I131 treatment
++      0.0034*query hypothyroid
++     15.5018*query hyperthyroid
++     12.057 *lithium
++     10.2274*goitre
++     -1.0544*tumor
++      0     *hypopituitary
++     -0.5914*psych
++     13.6814*TSH measured
++     -0.002 *TSH
++     -1.2436*T3 measured
++      5.2842*T3
++     11.5014*TT4 measured
++     -0.0401*TT4
++     -0.1011*T4U measured
++      5.6498*T4U
++     -0.1011*FTI measured
++      0.0024*FTI
++      0     *TBG measured
++      0     *TBG
++     -0.4552*case when referral source in('SVHC') then 1 else 0 end
++     -0.3261*case when referral source in('other') then 1 else 0 end
++     -1.0629*case when referral source in('SVI') then 1 else 0 end
++     10.9927*case when referral source in('STMW') then 1 else 0 end
++     -2.0688*case when referral source in('SVHD') then 1 else 0 end
++    -4.5795))
+
+Odds Ratios...
+Variable         O.R.
+       1       0.9852
+       2       0.9583
+       3       1.9307
+       4       4.2008
+       5  158651.6672
+       6       0.2494
+       7       3.0862
+       8 9276543.4961
+       9  670328.5547
+      10       1.0034
+      11 5399517.8951
+      12  172309.5051
+      13   27649.951 
+      14       0.3484
+      15       1     
+      16       0.5535
+      17  874521.2347
+      18       0.998 
+      19       0.2884
+      20     197.205 
+      21   98849.4391
+      22       0.9607
+      23       0.9038
+      24     284.2273
+      25       0.9038
+      26       1.0024
+      27       1     
+      28       1     
+      29       0.6343
+      30       0.7217
+      31       0.3454
+      32   59437.1129
+      33       0.1263
+
+
+Time taken to build model: 0.09 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7792
+Mean absolute error                      0.0459
+Root mean squared error                  0.1466
+Relative absolute error                 42.0362 %
+Root relative squared error             62.7755 %
+Total Number of Instances              829     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6366
+Mean absolute error                      0.0562
+Root mean squared error                  0.1811
+Relative absolute error                 51.4527 %
+Root relative squared error             77.4762 %
+Total Number of Instances              829     
+

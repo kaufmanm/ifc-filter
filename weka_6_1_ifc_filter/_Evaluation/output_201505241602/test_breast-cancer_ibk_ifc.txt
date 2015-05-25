@@ -1,0 +1,50 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.lazy.IBk 
+
+FilteredClassifier using weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation breast-cancer-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R11-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute age numeric
+@attribute menopause numeric
+@attribute tumor-size numeric
+@attribute inv-nodes numeric
+@attribute node-caps numeric
+@attribute deg-malig numeric
+@attribute breast numeric
+@attribute breast-quad numeric
+@attribute irradiat numeric
+@attribute Class=no-recurrence-events numeric
+
+@data
+
+
+Classifier Model
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.05 seconds
+Time taken to test model on training data: 0.16 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9688
+Mean absolute error                      0.0256
+Root mean squared error                  0.1132
+Relative absolute error                  6.1379 %
+Root relative squared error             24.7749 %
+Total Number of Instances              286     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.1765
+Mean absolute error                      0.3537
+Root mean squared error                  0.5889
+Relative absolute error                 84.3786 %
+Root relative squared error            128.3935 %
+Total Number of Instances              286     
+

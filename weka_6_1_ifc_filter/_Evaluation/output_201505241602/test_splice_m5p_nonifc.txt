@@ -1,0 +1,581 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+attribute_30=N,A,T,C <= 0.5 : 
+|   attribute_29=G,T <= 0.5 : 
+|   |   attribute_28=N,A,G <= 0.5 : 
+|   |   |   attribute_32=N,C,A,G <= 0.5 : LM1 (110/0%)
+|   |   |   attribute_32=N,C,A,G >  0.5 : 
+|   |   |   |   attribute_24=N,G,A <= 0.5 : 
+|   |   |   |   |   attribute_42=A <= 0.5 : LM2 (63/0%)
+|   |   |   |   |   attribute_42=A >  0.5 : 
+|   |   |   |   |   |   attribute_7=A,G <= 0.5 : LM3 (17/0%)
+|   |   |   |   |   |   attribute_7=A,G >  0.5 : LM4 (13/48.156%)
+|   |   |   |   attribute_24=N,G,A >  0.5 : 
+|   |   |   |   |   attribute_26=C,N,A,G <= 0.5 : LM5 (13/0%)
+|   |   |   |   |   attribute_26=C,N,A,G >  0.5 : LM6 (18/53.114%)
+|   |   attribute_28=N,A,G >  0.5 : 
+|   |   |   attribute_32=N,C,A,G <= 0.5 : 
+|   |   |   |   attribute_40=N,C,A <= 0.5 : LM7 (23/0%)
+|   |   |   |   attribute_40=N,C,A >  0.5 : 
+|   |   |   |   |   attribute_25=A <= 0.5 : LM8 (9/0%)
+|   |   |   |   |   attribute_25=A >  0.5 : LM9 (8/0%)
+|   |   |   attribute_32=N,C,A,G >  0.5 : 
+|   |   |   |   attribute_21=C,N,G,A <= 0.5 : LM10 (5/0%)
+|   |   |   |   attribute_21=C,N,G,A >  0.5 : LM11 (15/0%)
+|   attribute_29=G,T >  0.5 : 
+|   |   attribute_31=N,A,C,T <= 0.5 : 
+|   |   |   attribute_32=N,C,A,G <= 0.5 : 
+|   |   |   |   attribute_34=N,G,C,T <= 0.5 : LM12 (32/0%)
+|   |   |   |   attribute_34=N,G,C,T >  0.5 : LM13 (12/0%)
+|   |   |   attribute_32=N,C,A,G >  0.5 : LM14 (19/36.237%)
+|   |   attribute_31=N,A,C,T >  0.5 : LM15 (40/0%)
+attribute_30=N,A,T,C >  0.5 : 
+|   attribute_34=C,T <= 0.5 : 
+|   |   attribute_35=A <= 0.5 : 
+|   |   |   attribute_32=N,C,A,G <= 0.5 : 
+|   |   |   |   attribute_31=N,A,C,T <= 0.5 : LM16 (33/0%)
+|   |   |   |   attribute_31=N,A,C,T >  0.5 : LM17 (23/0%)
+|   |   |   attribute_32=N,C,A,G >  0.5 : 
+|   |   |   |   attribute_27=T <= 0.5 : LM18 (54/0%)
+|   |   |   |   attribute_27=T >  0.5 : 
+|   |   |   |   |   attribute_59=G <= 0.5 : LM19 (11/0%)
+|   |   |   |   |   attribute_59=G >  0.5 : LM20 (4/0%)
+|   |   attribute_35=A >  0.5 : LM21 (36/0%)
+|   attribute_34=C,T >  0.5 : LM22 (143/0%)
+
+LM num: 1
+Class=N = 
+	0.0026 * attribute_7=A,G 
+	+ 0.0017 * attribute_10=C,A,G 
+	+ 0.0075 * attribute_11=A 
+	+ 0.0046 * attribute_12=T,G 
+	+ 0.0017 * attribute_19=T,N,G,A 
+	+ 0.0095 * attribute_21=C,N,G,A 
+	+ 0.0049 * attribute_21=A 
+	+ 0.0358 * attribute_24=N,G,A 
+	+ 0.0176 * attribute_26=C,N,A,G 
+	+ 0.0353 * attribute_28=N,A,G 
+	+ 0.0261 * attribute_29=G,T 
+	+ 0.016 * attribute_30=N,A,T,C 
+	+ 0.0142 * attribute_31=N,A,C,T 
+	+ 0.0494 * attribute_32=N,C,A,G 
+	+ 0.0076 * attribute_34=N,G,C,T 
+	+ 0.0049 * attribute_35=R,N,C,T,A 
+	+ 0.0118 * attribute_36=A,G 
+	+ 0.0071 * attribute_40=N,C,A 
+	+ 0.0033 * attribute_42=A 
+	- 0.0658
+
+LM num: 2
+Class=N = 
+	0.0128 * attribute_7=A,G 
+	+ 0.0017 * attribute_10=C,A,G 
+	+ 0.0075 * attribute_11=A 
+	+ 0.0121 * attribute_12=T,G 
+	+ 0.0017 * attribute_19=T,N,G,A 
+	+ 0.0095 * attribute_21=C,N,G,A 
+	+ 0.0214 * attribute_21=A 
+	+ 0.065 * attribute_24=N,G,A 
+	+ 0.0303 * attribute_26=C,N,A,G 
+	+ 0.0353 * attribute_28=N,A,G 
+	+ 0.0261 * attribute_29=G,T 
+	+ 0.016 * attribute_30=N,A,T,C 
+	+ 0.0142 * attribute_31=N,A,C,T 
+	+ 0.0479 * attribute_32=N,C,A,G 
+	+ 0.0076 * attribute_34=N,G,C,T 
+	+ 0.0049 * attribute_35=R,N,C,T,A 
+	+ 0.0352 * attribute_36=A,G 
+	+ 0.0071 * attribute_40=N,C,A 
+	+ 0.0146 * attribute_42=A 
+	- 0.0852
+
+LM num: 3
+Class=N = 
+	0.0816 * attribute_7=A,G 
+	+ 0.0017 * attribute_10=C,A,G 
+	+ 0.0075 * attribute_11=A 
+	+ 0.0121 * attribute_12=T,G 
+	+ 0.0017 * attribute_19=T,N,G,A 
+	+ 0.0095 * attribute_21=C,N,G,A 
+	+ 0.0214 * attribute_21=A 
+	+ 0.065 * attribute_24=N,G,A 
+	+ 0.0303 * attribute_26=C,N,A,G 
+	+ 0.0353 * attribute_28=N,A,G 
+	+ 0.0261 * attribute_29=G,T 
+	+ 0.016 * attribute_30=N,A,T,C 
+	+ 0.0142 * attribute_31=N,A,C,T 
+	+ 0.0479 * attribute_32=N,C,A,G 
+	+ 0.0076 * attribute_34=N,G,C,T 
+	+ 0.0049 * attribute_35=R,N,C,T,A 
+	+ 0.1042 * attribute_36=A,G 
+	+ 0.0071 * attribute_40=N,C,A 
+	+ 0.0229 * attribute_42=A 
+	- 0.1232
+
+LM num: 4
+Class=N = 
+	0.0904 * attribute_7=A,G 
+	+ 0.0017 * attribute_10=C,A,G 
+	+ 0.0075 * attribute_11=A 
+	+ 0.0121 * attribute_12=T,G 
+	+ 0.0017 * attribute_19=T,N,G,A 
+	+ 0.0095 * attribute_21=C,N,G,A 
+	+ 0.0214 * attribute_21=A 
+	+ 0.065 * attribute_24=N,G,A 
+	+ 0.0303 * attribute_26=C,N,A,G 
+	+ 0.0353 * attribute_28=N,A,G 
+	+ 0.0261 * attribute_29=G,T 
+	+ 0.016 * attribute_30=N,A,T,C 
+	+ 0.0142 * attribute_31=N,A,C,T 
+	+ 0.0479 * attribute_32=N,C,A,G 
+	+ 0.0076 * attribute_34=N,G,C,T 
+	+ 0.0049 * attribute_35=R,N,C,T,A 
+	+ 0.2666 * attribute_36=A,G 
+	+ 0.0071 * attribute_40=N,C,A 
+	+ 0.0229 * attribute_42=A 
+	- 0.1279
+
+LM num: 5
+Class=N = 
+	0.0026 * attribute_7=A,G 
+	+ 0.0017 * attribute_10=C,A,G 
+	+ 0.0075 * attribute_11=A 
+	+ 0.1193 * attribute_12=T,G 
+	+ 0.0844 * attribute_18=T,A,G 
+	+ 0.0017 * attribute_19=T,N,G,A 
+	+ 0.0095 * attribute_21=C,N,G,A 
+	+ 0.1556 * attribute_21=A 
+	+ 0.1065 * attribute_24=N,G,A 
+	+ 0.2152 * attribute_26=C,N,A,G 
+	+ 0.0353 * attribute_28=N,A,G 
+	+ 0.0261 * attribute_29=G,T 
+	+ 0.016 * attribute_30=N,A,T,C 
+	+ 0.0142 * attribute_31=N,A,C,T 
+	+ 0.0479 * attribute_32=N,C,A,G 
+	+ 0.0076 * attribute_34=N,G,C,T 
+	+ 0.0049 * attribute_35=R,N,C,T,A 
+	+ 0.0431 * attribute_36=A,G 
+	+ 0.0071 * attribute_40=N,C,A 
+	+ 0.0033 * attribute_42=A 
+	- 0.2278
+
+LM num: 6
+Class=N = 
+	0.0026 * attribute_7=A,G 
+	+ 0.0017 * attribute_10=C,A,G 
+	+ 0.0075 * attribute_11=A 
+	+ 0.2559 * attribute_12=T,G 
+	+ 0.1985 * attribute_18=T,A,G 
+	+ 0.0017 * attribute_19=T,N,G,A 
+	+ 0.0095 * attribute_21=C,N,G,A 
+	+ 0.2693 * attribute_21=A 
+	+ 0.1065 * attribute_24=N,G,A 
+	+ 0.1899 * attribute_26=C,N,A,G 
+	+ 0.0353 * attribute_28=N,A,G 
+	+ 0.0261 * attribute_29=G,T 
+	+ 0.016 * attribute_30=N,A,T,C 
+	+ 0.0142 * attribute_31=N,A,C,T 
+	+ 0.0479 * attribute_32=N,C,A,G 
+	+ 0.0076 * attribute_34=N,G,C,T 
+	+ 0.0049 * attribute_35=R,N,C,T,A 
+	+ 0.0431 * attribute_36=A,G 
+	+ 0.0071 * attribute_40=N,C,A 
+	+ 0.0033 * attribute_42=A 
+	- 0.2328
+
+LM num: 7
+Class=N = 
+	0.0026 * attribute_7=A,G 
+	+ 0.0017 * attribute_10=C,A,G 
+	+ 0.0381 * attribute_11=A 
+	+ 0.111 * attribute_16=G,A 
+	+ 0.0017 * attribute_19=T,N,G,A 
+	+ 0.0499 * attribute_21=C,N,G,A 
+	+ 0.0049 * attribute_21=A 
+	+ 0.0415 * attribute_24=N,G,A 
+	- 0.1224 * attribute_25=A 
+	+ 0.0212 * attribute_26=C,N,A,G 
+	+ 0.0761 * attribute_28=N,A,G 
+	+ 0.0261 * attribute_29=G,T 
+	+ 0.016 * attribute_30=N,A,T,C 
+	+ 0.0142 * attribute_31=N,A,C,T 
+	+ 0.202 * attribute_32=N,C,A,G 
+	+ 0.0076 * attribute_34=N,G,C,T 
+	+ 0.0049 * attribute_35=R,N,C,T,A 
+	+ 0.0127 * attribute_36=A,G 
+	+ 0.1689 * attribute_40=N,C,A 
+	+ 0.0108 * attribute_42=A 
+	- 0.154
+
+LM num: 8
+Class=N = 
+	0.0026 * attribute_7=A,G 
+	+ 0.0017 * attribute_10=C,A,G 
+	+ 0.0381 * attribute_11=A 
+	+ 0.318 * attribute_16=G,A 
+	+ 0.0017 * attribute_19=T,N,G,A 
+	+ 0.0499 * attribute_21=C,N,G,A 
+	+ 0.0049 * attribute_21=A 
+	+ 0.0415 * attribute_24=N,G,A 
+	- 0.2406 * attribute_25=A 
+	+ 0.0212 * attribute_26=C,N,A,G 
+	+ 0.0761 * attribute_28=N,A,G 
+	+ 0.0261 * attribute_29=G,T 
+	+ 0.016 * attribute_30=N,A,T,C 
+	+ 0.0142 * attribute_31=N,A,C,T 
+	+ 0.202 * attribute_32=N,C,A,G 
+	+ 0.0076 * attribute_34=N,G,C,T 
+	+ 0.0049 * attribute_35=R,N,C,T,A 
+	+ 0.0127 * attribute_36=A,G 
+	+ 0.1879 * attribute_40=N,C,A 
+	+ 0.0108 * attribute_42=A 
+	- 0.1002
+
+LM num: 9
+Class=N = 
+	0.0026 * attribute_7=A,G 
+	+ 0.0017 * attribute_10=C,A,G 
+	+ 0.0381 * attribute_11=A 
+	+ 0.2156 * attribute_16=G,A 
+	+ 0.0017 * attribute_19=T,N,G,A 
+	+ 0.0499 * attribute_21=C,N,G,A 
+	+ 0.0049 * attribute_21=A 
+	+ 0.0415 * attribute_24=N,G,A 
+	- 0.2451 * attribute_25=A 
+	+ 0.0212 * attribute_26=C,N,A,G 
+	+ 0.0761 * attribute_28=N,A,G 
+	+ 0.0261 * attribute_29=G,T 
+	+ 0.016 * attribute_30=N,A,T,C 
+	+ 0.0142 * attribute_31=N,A,C,T 
+	+ 0.202 * attribute_32=N,C,A,G 
+	+ 0.0076 * attribute_34=N,G,C,T 
+	+ 0.0049 * attribute_35=R,N,C,T,A 
+	+ 0.0127 * attribute_36=A,G 
+	+ 0.1879 * attribute_40=N,C,A 
+	+ 0.0108 * attribute_42=A 
+	- 0.0976
+
+LM num: 10
+Class=N = 
+	0.0026 * attribute_7=A,G 
+	+ 0.0017 * attribute_10=C,A,G 
+	+ 0.239 * attribute_11=A 
+	+ 0.0721 * attribute_16=G,A 
+	+ 0.0017 * attribute_19=T,N,G,A 
+	+ 0.257 * attribute_21=C,N,G,A 
+	+ 0.0049 * attribute_21=A 
+	+ 0.0415 * attribute_24=N,G,A 
+	- 0.0674 * attribute_25=A 
+	+ 0.0212 * attribute_26=C,N,A,G 
+	+ 0.0761 * attribute_28=N,A,G 
+	+ 0.0261 * attribute_29=G,T 
+	+ 0.016 * attribute_30=N,A,T,C 
+	+ 0.0142 * attribute_31=N,A,C,T 
+	+ 0.2788 * attribute_32=N,C,A,G 
+	+ 0.0076 * attribute_34=N,G,C,T 
+	+ 0.0049 * attribute_35=R,N,C,T,A 
+	+ 0.0127 * attribute_36=A,G 
+	+ 0.0975 * attribute_40=N,C,A 
+	+ 0.0108 * attribute_42=A 
+	- 0.0542
+
+LM num: 11
+Class=N = 
+	0.0026 * attribute_7=A,G 
+	+ 0.0017 * attribute_10=C,A,G 
+	+ 0.108 * attribute_11=A 
+	+ 0.0721 * attribute_16=G,A 
+	+ 0.0017 * attribute_19=T,N,G,A 
+	+ 0.1941 * attribute_21=C,N,G,A 
+	+ 0.0049 * attribute_21=A 
+	+ 0.0415 * attribute_24=N,G,A 
+	- 0.0674 * attribute_25=A 
+	+ 0.0212 * attribute_26=C,N,A,G 
+	+ 0.0761 * attribute_28=N,A,G 
+	+ 0.0261 * attribute_29=G,T 
+	+ 0.016 * attribute_30=N,A,T,C 
+	+ 0.0142 * attribute_31=N,A,C,T 
+	+ 0.2788 * attribute_32=N,C,A,G 
+	+ 0.0076 * attribute_34=N,G,C,T 
+	+ 0.0049 * attribute_35=R,N,C,T,A 
+	+ 0.0127 * attribute_36=A,G 
+	+ 0.0975 * attribute_40=N,C,A 
+	+ 0.0108 * attribute_42=A 
+	+ 0.124
+
+LM num: 12
+Class=N = 
+	0.0067 * attribute_7=A,G 
+	- 0.0351 * attribute_10=C,A,G 
+	+ 0.0154 * attribute_11=A 
+	+ 0.0017 * attribute_19=T,N,G,A 
+	+ 0.0116 * attribute_21=C,N,G,A 
+	+ 0.0101 * attribute_21=A 
+	+ 0.0228 * attribute_24=N,G,A 
+	+ 0.0117 * attribute_26=C,N,A,G 
+	+ 0.0362 * attribute_28=N,A,G 
+	+ 0.0551 * attribute_29=G,T 
+	+ 0.016 * attribute_30=N,A,T,C 
+	+ 0.0732 * attribute_31=N,A,C,T 
+	+ 0.2579 * attribute_32=N,C,A,G 
+	+ 0.1556 * attribute_34=N,G,C,T 
+	+ 0.0049 * attribute_35=R,N,C,T,A 
+	+ 0.0018 * attribute_36=A,G 
+	+ 0.0075 * attribute_40=N,C,A 
+	+ 0.1083 * attribute_58=N,G,A 
+	- 0.0509
+
+LM num: 13
+Class=N = 
+	0.0067 * attribute_7=A,G 
+	- 0.0351 * attribute_10=C,A,G 
+	+ 0.0154 * attribute_11=A 
+	+ 0.0017 * attribute_19=T,N,G,A 
+	+ 0.0116 * attribute_21=C,N,G,A 
+	+ 0.0101 * attribute_21=A 
+	+ 0.0228 * attribute_24=N,G,A 
+	+ 0.0117 * attribute_26=C,N,A,G 
+	+ 0.0362 * attribute_28=N,A,G 
+	+ 0.0551 * attribute_29=G,T 
+	+ 0.016 * attribute_30=N,A,T,C 
+	+ 0.0732 * attribute_31=N,A,C,T 
+	+ 0.2579 * attribute_32=N,C,A,G 
+	+ 0.203 * attribute_34=N,G,C,T 
+	+ 0.0049 * attribute_35=R,N,C,T,A 
+	+ 0.0018 * attribute_36=A,G 
+	+ 0.0075 * attribute_40=N,C,A 
+	+ 0.3679 * attribute_58=N,G,A 
+	- 0.0627
+
+LM num: 14
+Class=N = 
+	-0.0982 * attribute_1=T,G,A 
+	+ 0.0067 * attribute_7=A,G 
+	+ 0.0867 * attribute_10=C,A,G 
+	+ 0.0154 * attribute_11=A 
+	+ 0.0017 * attribute_19=T,N,G,A 
+	+ 0.0116 * attribute_21=C,N,G,A 
+	+ 0.0101 * attribute_21=A 
+	+ 0.0228 * attribute_24=N,G,A 
+	+ 0.0117 * attribute_26=C,N,A,G 
+	+ 0.0362 * attribute_28=N,A,G 
+	+ 0.0551 * attribute_29=G,T 
+	+ 0.016 * attribute_30=N,A,T,C 
+	+ 0.0732 * attribute_31=N,A,C,T 
+	+ 0.3536 * attribute_32=N,C,A,G 
+	+ 0.1222 * attribute_34=N,G,C,T 
+	+ 0.0049 * attribute_35=R,N,C,T,A 
+	+ 0.0018 * attribute_36=A,G 
+	+ 0.0075 * attribute_40=N,C,A 
+	+ 0.0913 * attribute_58=N,G,A 
+	+ 0.3057
+
+LM num: 15
+Class=N = 
+	0.0067 * attribute_7=A,G 
+	- 0.0201 * attribute_10=C,A,G 
+	+ 0.0154 * attribute_11=A 
+	+ 0.0017 * attribute_19=T,N,G,A 
+	+ 0.0116 * attribute_21=C,N,G,A 
+	+ 0.0101 * attribute_21=A 
+	+ 0.0228 * attribute_24=N,G,A 
+	+ 0.0117 * attribute_26=C,N,A,G 
+	+ 0.0362 * attribute_28=N,A,G 
+	+ 0.0551 * attribute_29=G,T 
+	+ 0.016 * attribute_30=N,A,T,C 
+	+ 0.0922 * attribute_31=N,A,C,T 
+	+ 0.1635 * attribute_32=N,C,A,G 
+	+ 0.0651 * attribute_34=N,G,C,T 
+	+ 0.0049 * attribute_35=R,N,C,T,A 
+	+ 0.0018 * attribute_36=A,G 
+	+ 0.0075 * attribute_40=N,C,A 
+	+ 0.0305 * attribute_58=N,G,A 
+	+ 0.5773
+
+LM num: 16
+Class=N = 
+	0.0021 * attribute_10=C,A,G 
+	+ 0.0033 * attribute_11=A 
+	+ 0.0442 * attribute_19=T,N,G,A 
+	+ 0.0033 * attribute_21=C,N,G,A 
+	+ 0.0021 * attribute_21=A 
+	+ 0.0042 * attribute_24=N,G,A 
+	+ 0.0019 * attribute_26=C,N,A,G 
+	- 0.0432 * attribute_27=T 
+	+ 0.0081 * attribute_28=N,A,G 
+	+ 0.0106 * attribute_29=G,T 
+	+ 0.0206 * attribute_30=N,A,T,C 
+	+ 0.2063 * attribute_31=N,A,C,T 
+	+ 0.1031 * attribute_32=N,C,A,G 
+	+ 0.0047 * attribute_34=N,G,C,T 
+	+ 0.0062 * attribute_34=C,T 
+	+ 0.6052 * attribute_35=R,N,C,T,A 
+	+ 0.0023 * attribute_36=A,G 
+	+ 0.002 * attribute_40=N,C,A 
+	+ 0.0975
+
+LM num: 17
+Class=N = 
+	0.0021 * attribute_10=C,A,G 
+	+ 0.0033 * attribute_11=A 
+	+ 0.0442 * attribute_19=T,N,G,A 
+	+ 0.0033 * attribute_21=C,N,G,A 
+	+ 0.0021 * attribute_21=A 
+	+ 0.0042 * attribute_24=N,G,A 
+	+ 0.0019 * attribute_26=C,N,A,G 
+	- 0.0432 * attribute_27=T 
+	+ 0.0081 * attribute_28=N,A,G 
+	+ 0.0106 * attribute_29=G,T 
+	+ 0.0206 * attribute_30=N,A,T,C 
+	+ 0.2346 * attribute_31=N,A,C,T 
+	+ 0.1031 * attribute_32=N,C,A,G 
+	+ 0.0047 * attribute_34=N,G,C,T 
+	+ 0.0062 * attribute_34=C,T 
+	+ 0.2085 * attribute_35=R,N,C,T,A 
+	+ 0.0023 * attribute_36=A,G 
+	+ 0.002 * attribute_40=N,C,A 
+	+ 0.4737
+
+LM num: 18
+Class=N = 
+	0.0021 * attribute_10=C,A,G 
+	+ 0.0033 * attribute_11=A 
+	+ 0.0087 * attribute_12=T,G 
+	+ 0.0405 * attribute_19=T,N,G,A 
+	+ 0.0033 * attribute_21=C,N,G,A 
+	+ 0.0021 * attribute_21=A 
+	+ 0.0042 * attribute_24=N,G,A 
+	+ 0.0019 * attribute_26=C,N,A,G 
+	- 0.0575 * attribute_27=T 
+	+ 0.0081 * attribute_28=N,A,G 
+	+ 0.0106 * attribute_29=G,T 
+	+ 0.0206 * attribute_30=N,A,T,C 
+	+ 0.0905 * attribute_31=N,A,C,T 
+	+ 0.095 * attribute_32=N,C,A,G 
+	+ 0.0047 * attribute_34=N,G,C,T 
+	+ 0.0062 * attribute_34=C,T 
+	+ 0.0808 * attribute_35=R,N,C,T,A 
+	+ 0.0023 * attribute_36=A,G 
+	+ 0.002 * attribute_40=N,C,A 
+	- 0.0154 * attribute_59=G 
+	+ 0.7134
+
+LM num: 19
+Class=N = 
+	0.0021 * attribute_10=C,A,G 
+	+ 0.0033 * attribute_11=A 
+	+ 0.0695 * attribute_12=T,G 
+	+ 0.0405 * attribute_19=T,N,G,A 
+	+ 0.0033 * attribute_21=C,N,G,A 
+	+ 0.0021 * attribute_21=A 
+	+ 0.0042 * attribute_24=N,G,A 
+	+ 0.0019 * attribute_26=C,N,A,G 
+	- 0.082 * attribute_27=T 
+	+ 0.0081 * attribute_28=N,A,G 
+	+ 0.0106 * attribute_29=G,T 
+	+ 0.0206 * attribute_30=N,A,T,C 
+	+ 0.0905 * attribute_31=N,A,C,T 
+	+ 0.095 * attribute_32=N,C,A,G 
+	+ 0.0047 * attribute_34=N,G,C,T 
+	+ 0.0062 * attribute_34=C,T 
+	+ 0.0808 * attribute_35=R,N,C,T,A 
+	+ 0.0023 * attribute_36=A,G 
+	+ 0.002 * attribute_40=N,C,A 
+	- 0.1254 * attribute_59=G 
+	+ 0.6862
+
+LM num: 20
+Class=N = 
+	0.0021 * attribute_10=C,A,G 
+	+ 0.0033 * attribute_11=A 
+	+ 0.1551 * attribute_12=T,G 
+	+ 0.0405 * attribute_19=T,N,G,A 
+	+ 0.0033 * attribute_21=C,N,G,A 
+	+ 0.0021 * attribute_21=A 
+	+ 0.0042 * attribute_24=N,G,A 
+	+ 0.0019 * attribute_26=C,N,A,G 
+	- 0.082 * attribute_27=T 
+	+ 0.0081 * attribute_28=N,A,G 
+	+ 0.0106 * attribute_29=G,T 
+	+ 0.0206 * attribute_30=N,A,T,C 
+	+ 0.0905 * attribute_31=N,A,C,T 
+	+ 0.095 * attribute_32=N,C,A,G 
+	+ 0.0047 * attribute_34=N,G,C,T 
+	+ 0.0062 * attribute_34=C,T 
+	+ 0.0808 * attribute_35=R,N,C,T,A 
+	+ 0.0023 * attribute_36=A,G 
+	+ 0.002 * attribute_40=N,C,A 
+	- 0.1585 * attribute_59=G 
+	+ 0.6089
+
+LM num: 21
+Class=N = 
+	0.0021 * attribute_10=C,A,G 
+	+ 0.0033 * attribute_11=A 
+	+ 0.04 * attribute_19=T,N,G,A 
+	+ 0.0033 * attribute_21=C,N,G,A 
+	+ 0.0021 * attribute_21=A 
+	+ 0.0042 * attribute_24=N,G,A 
+	+ 0.0019 * attribute_26=C,N,A,G 
+	- 0.0303 * attribute_27=T 
+	+ 0.0081 * attribute_28=N,A,G 
+	+ 0.0106 * attribute_29=G,T 
+	+ 0.0206 * attribute_30=N,A,T,C 
+	+ 0.0864 * attribute_31=N,A,C,T 
+	+ 0.0967 * attribute_32=N,C,A,G 
+	+ 0.0047 * attribute_34=N,G,C,T 
+	+ 0.0062 * attribute_34=C,T 
+	+ 0.0914 * attribute_35=R,N,C,T,A 
+	+ 0.0023 * attribute_36=A,G 
+	+ 0.002 * attribute_40=N,C,A 
+	+ 0.7028
+
+LM num: 22
+Class=N = 
+	0.0021 * attribute_10=C,A,G 
+	+ 0.0033 * attribute_11=A 
+	+ 0.0093 * attribute_19=T,N,G,A 
+	+ 0.0033 * attribute_21=C,N,G,A 
+	+ 0.0021 * attribute_21=A 
+	+ 0.0042 * attribute_24=N,G,A 
+	+ 0.0019 * attribute_26=C,N,A,G 
+	- 0.0044 * attribute_27=T 
+	+ 0.0081 * attribute_28=N,A,G 
+	+ 0.0106 * attribute_29=G,T 
+	+ 0.0206 * attribute_30=N,A,T,C 
+	+ 0.0238 * attribute_31=N,A,C,T 
+	+ 0.0262 * attribute_32=N,C,A,G 
+	+ 0.0047 * attribute_34=N,G,C,T 
+	+ 0.0069 * attribute_34=C,T 
+	+ 0.0251 * attribute_35=R,N,C,T,A 
+	+ 0.0023 * attribute_36=A,G 
+	+ 0.002 * attribute_40=N,C,A 
+	+ 0.8829
+
+Number of Rules : 22
+
+Time taken to build model: 1.31 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9659
+Mean absolute error                      0.0765
+Root mean squared error                  0.1326
+Relative absolute error                 15.3706 %
+Root relative squared error             26.5775 %
+Total Number of Instances              701     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8759
+Mean absolute error                      0.1235
+Root mean squared error                  0.2415
+Relative absolute error                 24.7738 %
+Root relative squared error             48.3341 %
+Total Number of Instances              701     
+

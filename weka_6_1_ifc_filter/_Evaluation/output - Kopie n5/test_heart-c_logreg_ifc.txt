@@ -1,0 +1,89 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation cleveland-14-heart-disease-weka.filters.unsupervised.attribute.NominalToBinary-R14-weka.filters.unsupervised.attribute.NominalToBinary-R14-weka.filters.unsupervised.attribute.Remove-R15-18-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute age numeric
+@attribute sex numeric
+@attribute cp numeric
+@attribute trestbps numeric
+@attribute chol numeric
+@attribute fbs numeric
+@attribute restecg numeric
+@attribute thalach numeric
+@attribute exang numeric
+@attribute oldpeak numeric
+@attribute slope numeric
+@attribute ca numeric
+@attribute thal numeric
+@attribute num=<50 numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -182.2763;  df=13;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      1.8877*age
++      4.4385*sex
++      3.301 *cp
++      3.5212*trestbps
++      4.9006*chol
++    -19.9479*fbs
++      1.588 *restecg
++      0.8978*thalach
++      2.0412*exang
++      2.0539*oldpeak
++      2.2804*slope
++      4.2544*ca
++      2.1893*thal
++    -6.6101))
+
+Odds Ratios...
+Variable         O.R.
+       1       6.6039
+       2      84.6475
+       3      27.1393
+       4      33.824 
+       5     134.3754
+       6       0     
+       7       4.8938
+       8       2.4542
+       9       7.6999
+      10       7.7981
+      11       9.7806
+      12      70.4113
+      13       8.9292
+
+
+Time taken to build model: 0.11 seconds
+Time taken to test model on training data: 0.17 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7925
+Mean absolute error                      0.1849
+Root mean squared error                  0.3037
+Relative absolute error                 37.2677 %
+Root relative squared error             60.9831 %
+Total Number of Instances              303     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7059
+Mean absolute error                      0.2199
+Root mean squared error                  0.3551
+Relative absolute error                 44.2548 %
+Root relative squared error             71.1829 %
+Total Number of Instances              303     
+

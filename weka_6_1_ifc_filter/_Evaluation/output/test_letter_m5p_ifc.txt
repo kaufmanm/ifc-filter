@@ -1,0 +1,762 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'letter-weka.filters.unsupervised.instance.Resample-S1-Z11.0-no-replacement-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R17-26,28-42-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute x-box numeric
+@attribute y-box numeric
+@attribute width numeric
+@attribute high numeric
+@attribute onpix numeric
+@attribute x-bar numeric
+@attribute y-bar numeric
+@attribute x2bar numeric
+@attribute y2bar numeric
+@attribute xybar numeric
+@attribute x2ybr numeric
+@attribute xy2br numeric
+@attribute x-ege numeric
+@attribute xegvy numeric
+@attribute y-ege numeric
+@attribute yegvx numeric
+@attribute class=K numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+x-ege <= 0.088 : LM1 (571/0%)
+x-ege >  0.088 : 
+|   x-ege <= 0.547 : 
+|   |   high <= 0.483 : 
+|   |   |   high <= 0.392 : LM2 (73/0%)
+|   |   |   high >  0.392 : 
+|   |   |   |   yegvx <= 0.399 : LM3 (30/0%)
+|   |   |   |   yegvx >  0.399 : 
+|   |   |   |   |   y2bar <= 0.5 : LM4 (8/0%)
+|   |   |   |   |   y2bar >  0.5 : LM5 (3/0%)
+|   |   high >  0.483 : LM6 (380/0%)
+|   x-ege >  0.547 : 
+|   |   xegvy <= 0.296 : 
+|   |   |   y-box <= 0.51 : LM7 (285/0%)
+|   |   |   y-box >  0.51 : 
+|   |   |   |   x-ege <= 0.663 : 
+|   |   |   |   |   y-bar <= 0.421 : LM8 (32/0%)
+|   |   |   |   |   y-bar >  0.421 : 
+|   |   |   |   |   |   x2ybr <= 0.473 : 
+|   |   |   |   |   |   |   x-ege <= 0.608 : LM9 (10/0%)
+|   |   |   |   |   |   |   x-ege >  0.608 : 
+|   |   |   |   |   |   |   |   y2bar <= 0.509 : 
+|   |   |   |   |   |   |   |   |   xy2br <= 0.573 : LM10 (6/0%)
+|   |   |   |   |   |   |   |   |   xy2br >  0.573 : LM11 (2/0%)
+|   |   |   |   |   |   |   |   y2bar >  0.509 : LM12 (4/0%)
+|   |   |   |   |   |   x2ybr >  0.473 : LM13 (19/0%)
+|   |   |   |   x-ege >  0.663 : LM14 (76/0%)
+|   |   xegvy >  0.296 : 
+|   |   |   x-bar <= 0.419 : 
+|   |   |   |   x-ege <= 0.672 : 
+|   |   |   |   |   x2bar <= 0.333 : LM15 (54/0%)
+|   |   |   |   |   x2bar >  0.333 : 
+|   |   |   |   |   |   x2bar <= 0.514 : 
+|   |   |   |   |   |   |   y-ege <= 0.508 : 
+|   |   |   |   |   |   |   |   yegvx <= 0.475 : LM16 (27/0%)
+|   |   |   |   |   |   |   |   yegvx >  0.475 : 
+|   |   |   |   |   |   |   |   |   onpix <= 0.61 : 
+|   |   |   |   |   |   |   |   |   |   xegvy <= 0.999 : 
+|   |   |   |   |   |   |   |   |   |   |   x2bar <= 0.414 : 
+|   |   |   |   |   |   |   |   |   |   |   |   yegvx <= 0.83 : LM17 (2/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   yegvx >  0.83 : LM18 (5/0%)
+|   |   |   |   |   |   |   |   |   |   |   x2bar >  0.414 : LM19 (8/113.868%)
+|   |   |   |   |   |   |   |   |   |   xegvy >  0.999 : LM20 (4/0%)
+|   |   |   |   |   |   |   |   |   onpix >  0.61 : LM21 (9/0%)
+|   |   |   |   |   |   |   y-ege >  0.508 : LM22 (65/0%)
+|   |   |   |   |   |   x2bar >  0.514 : 
+|   |   |   |   |   |   |   y-ege <= 0.581 : LM23 (60/164.754%)
+|   |   |   |   |   |   |   y-ege >  0.581 : LM24 (24/73.111%)
+|   |   |   |   x-ege >  0.672 : 
+|   |   |   |   |   xybar <= 0.537 : LM25 (221/0%)
+|   |   |   |   |   xybar >  0.537 : 
+|   |   |   |   |   |   x2bar <= 0.568 : LM26 (44/0%)
+|   |   |   |   |   |   x2bar >  0.568 : 
+|   |   |   |   |   |   |   y2bar <= 0.508 : LM27 (8/0%)
+|   |   |   |   |   |   |   y2bar >  0.508 : LM28 (4/119.824%)
+|   |   |   x-bar >  0.419 : 
+|   |   |   |   xy2br <= 0.47 : 
+|   |   |   |   |   x2ybr <= 0.523 : LM29 (53/0%)
+|   |   |   |   |   x2ybr >  0.523 : 
+|   |   |   |   |   |   x2bar <= 0.469 : LM30 (24/0%)
+|   |   |   |   |   |   x2bar >  0.469 : 
+|   |   |   |   |   |   |   xybar <= 0.401 : LM31 (7/0%)
+|   |   |   |   |   |   |   xybar >  0.401 : LM32 (15/153.792%)
+|   |   |   |   xy2br >  0.47 : LM33 (67/155.884%)
+
+LM num: 1
+class=K = 
+	-0.0136 * x-box 
+	+ 0.0061 * width 
+	+ 0.0022 * high 
+	+ 0.0062 * x-bar 
+	+ 0.0016 * y-bar 
+	+ 0.0078 * x2bar 
+	+ 0.0044 * y2bar 
+	+ 0.0014 * xybar 
+	+ 0.0078 * x2ybr 
+	+ 0.0045 * xy2br 
+	+ 0.0045 * x-ege 
+	+ 0.0008 * xegvy 
+	+ 0.0011 * y-ege 
+	+ 0.0024 * yegvx 
+	- 0.0149
+
+LM num: 2
+class=K = 
+	-0.0202 * x-box 
+	+ 0.0097 * width 
+	+ 0.1016 * high 
+	- 0.0029 * onpix 
+	+ 0.0117 * x-bar 
+	+ 0.004 * y-bar 
+	+ 0.0126 * x2bar 
+	+ 0.0327 * y2bar 
+	+ 0.0038 * xybar 
+	+ 0.0131 * x2ybr 
+	+ 0.0107 * xy2br 
+	+ 0.0072 * x-ege 
+	+ 0.0015 * xegvy 
+	+ 0.0027 * y-ege 
+	+ 0.038 * yegvx 
+	- 0.0889
+
+LM num: 3
+class=K = 
+	-0.0202 * x-box 
+	+ 0.0097 * width 
+	+ 0.1576 * high 
+	- 0.0029 * onpix 
+	+ 0.0117 * x-bar 
+	+ 0.004 * y-bar 
+	+ 0.0126 * x2bar 
+	+ 0.1882 * y2bar 
+	+ 0.0038 * xybar 
+	+ 0.0131 * x2ybr 
+	+ 0.0107 * xy2br 
+	+ 0.0072 * x-ege 
+	+ 0.0015 * xegvy 
+	+ 0.0027 * y-ege 
+	+ 0.149 * yegvx 
+	- 0.2082
+
+LM num: 4
+class=K = 
+	-0.0202 * x-box 
+	+ 0.0097 * width 
+	+ 0.1576 * high 
+	- 0.0029 * onpix 
+	+ 0.0117 * x-bar 
+	+ 0.004 * y-bar 
+	+ 0.0126 * x2bar 
+	+ 0.9808 * y2bar 
+	+ 0.0038 * xybar 
+	+ 0.0131 * x2ybr 
+	+ 0.0107 * xy2br 
+	+ 0.0072 * x-ege 
+	+ 0.0015 * xegvy 
+	+ 0.0027 * y-ege 
+	+ 0.2181 * yegvx 
+	- 0.5343
+
+LM num: 5
+class=K = 
+	-0.0202 * x-box 
+	+ 0.0097 * width 
+	+ 0.1576 * high 
+	- 0.0029 * onpix 
+	+ 0.0117 * x-bar 
+	+ 0.004 * y-bar 
+	+ 0.0126 * x2bar 
+	+ 1.1722 * y2bar 
+	+ 0.0038 * xybar 
+	+ 0.0131 * x2ybr 
+	+ 0.0107 * xy2br 
+	+ 0.0072 * x-ege 
+	+ 0.0015 * xegvy 
+	+ 0.0027 * y-ege 
+	+ 0.2181 * yegvx 
+	- 0.5636
+
+LM num: 6
+class=K = 
+	-0.0202 * x-box 
+	+ 0.0097 * width 
+	+ 0.0036 * high 
+	- 0.0029 * onpix 
+	+ 0.0117 * x-bar 
+	+ 0.004 * y-bar 
+	+ 0.0126 * x2bar 
+	+ 0.0088 * y2bar 
+	+ 0.0038 * xybar 
+	+ 0.0131 * x2ybr 
+	+ 0.0107 * xy2br 
+	+ 0.0072 * x-ege 
+	+ 0.0015 * xegvy 
+	+ 0.0027 * y-ege 
+	+ 0.0056 * yegvx 
+	- 0.029
+
+LM num: 7
+class=K = 
+	-0.0233 * x-box 
+	+ 0.012 * y-box 
+	+ 0.0152 * width 
+	+ 0.002 * high 
+	- 0.0055 * onpix 
+	+ 0.0181 * x-bar 
+	+ 0.008 * y-bar 
+	+ 0.0192 * x2bar 
+	+ 0.0149 * y2bar 
+	+ 0.0087 * xybar 
+	+ 0.0202 * x2ybr 
+	+ 0.0264 * xy2br 
+	+ 0.0041 * x-ege 
+	+ 0.0021 * xegvy 
+	+ 0.0038 * y-ege 
+	+ 0.0069 * yegvx 
+	- 0.0532
+
+LM num: 8
+class=K = 
+	-0.0233 * x-box 
+	+ 0.0219 * y-box 
+	+ 0.0152 * width 
+	+ 0.002 * high 
+	- 0.0055 * onpix 
+	+ 0.0181 * x-bar 
+	+ 0.0596 * y-bar 
+	+ 0.0192 * x2bar 
+	+ 0.1212 * y2bar 
+	+ 0.0087 * xybar 
+	- 0.181 * x2ybr 
+	+ 0.2452 * xy2br 
+	+ 0.4679 * x-ege 
+	+ 0.0021 * xegvy 
+	+ 0.0038 * y-ege 
+	+ 0.0069 * yegvx 
+	- 0.363
+
+LM num: 9
+class=K = 
+	-0.0233 * x-box 
+	+ 0.0219 * y-box 
+	+ 0.0152 * width 
+	+ 0.002 * high 
+	- 0.0055 * onpix 
+	+ 0.0181 * x-bar 
+	+ 0.0513 * y-bar 
+	+ 0.0192 * x2bar 
+	+ 0.442 * y2bar 
+	+ 0.0087 * xybar 
+	- 0.4336 * x2ybr 
+	+ 0.5766 * xy2br 
+	+ 1.773 * x-ege 
+	+ 0.0021 * xegvy 
+	+ 0.0038 * y-ege 
+	+ 0.0069 * yegvx 
+	- 1.2331
+
+LM num: 10
+class=K = 
+	-0.0233 * x-box 
+	+ 0.0219 * y-box 
+	+ 0.0152 * width 
+	+ 0.002 * high 
+	- 0.0055 * onpix 
+	+ 0.0181 * x-bar 
+	+ 0.0513 * y-bar 
+	+ 0.0192 * x2bar 
+	+ 0.6171 * y2bar 
+	+ 0.0087 * xybar 
+	- 0.4336 * x2ybr 
+	+ 0.7394 * xy2br 
+	+ 1.7187 * x-ege 
+	+ 0.0021 * xegvy 
+	+ 0.0038 * y-ege 
+	+ 0.0069 * yegvx 
+	- 1.3058
+
+LM num: 11
+class=K = 
+	-0.0233 * x-box 
+	+ 0.0219 * y-box 
+	+ 0.0152 * width 
+	+ 0.002 * high 
+	- 0.0055 * onpix 
+	+ 0.0181 * x-bar 
+	+ 0.0513 * y-bar 
+	+ 0.0192 * x2bar 
+	+ 0.6171 * y2bar 
+	+ 0.0087 * xybar 
+	- 0.4336 * x2ybr 
+	+ 0.7519 * xy2br 
+	+ 1.7187 * x-ege 
+	+ 0.0021 * xegvy 
+	+ 0.0038 * y-ege 
+	+ 0.0069 * yegvx 
+	- 1.3038
+
+LM num: 12
+class=K = 
+	-0.0233 * x-box 
+	+ 0.0219 * y-box 
+	+ 0.0152 * width 
+	+ 0.002 * high 
+	- 0.0055 * onpix 
+	+ 0.0181 * x-bar 
+	+ 0.0513 * y-bar 
+	+ 0.0192 * x2bar 
+	+ 0.6572 * y2bar 
+	+ 0.0087 * xybar 
+	- 0.4336 * x2ybr 
+	+ 0.7119 * xy2br 
+	+ 1.7187 * x-ege 
+	+ 0.0021 * xegvy 
+	+ 0.0038 * y-ege 
+	+ 0.0069 * yegvx 
+	- 1.2819
+
+LM num: 13
+class=K = 
+	-0.0233 * x-box 
+	+ 0.0219 * y-box 
+	+ 0.0152 * width 
+	+ 0.002 * high 
+	- 0.0055 * onpix 
+	+ 0.0181 * x-bar 
+	+ 0.0513 * y-bar 
+	+ 0.0192 * x2bar 
+	+ 0.2443 * y2bar 
+	+ 0.0087 * xybar 
+	- 0.4587 * x2ybr 
+	+ 0.4298 * xy2br 
+	+ 1.0971 * x-ege 
+	+ 0.0021 * xegvy 
+	+ 0.0038 * y-ege 
+	+ 0.0069 * yegvx 
+	- 0.7056
+
+LM num: 14
+class=K = 
+	-0.0233 * x-box 
+	+ 0.0219 * y-box 
+	+ 0.0152 * width 
+	+ 0.002 * high 
+	- 0.0055 * onpix 
+	+ 0.0181 * x-bar 
+	+ 0.008 * y-bar 
+	+ 0.0192 * x2bar 
+	+ 0.0149 * y2bar 
+	+ 0.0087 * xybar 
+	+ 0.0202 * x2ybr 
+	+ 0.0882 * xy2br 
+	+ 0.0041 * x-ege 
+	+ 0.0021 * xegvy 
+	+ 0.0038 * y-ege 
+	+ 0.0069 * yegvx 
+	- 0.0712
+
+LM num: 15
+class=K = 
+	-0.032 * x-box 
+	+ 0.0183 * width 
+	+ 0.002 * high 
+	+ 0.0065 * onpix 
+	+ 0.0306 * x-bar 
+	+ 0.0058 * y-bar 
+	+ 0.1834 * x2bar 
+	+ 0.0692 * y2bar 
+	+ 0.0872 * xybar 
+	+ 0.0394 * x2ybr 
+	+ 0.0284 * xy2br 
+	- 0.0811 * x-ege 
+	- 0.0008 * xegvy 
+	- 0.0012 * y-ege 
+	+ 0.0742 * yegvx 
+	- 0.1482
+
+LM num: 16
+class=K = 
+	-0.032 * x-box 
+	+ 0.0183 * width 
+	+ 0.002 * high 
+	+ 0.0065 * onpix 
+	+ 0.0306 * x-bar 
+	+ 0.0058 * y-bar 
+	- 0.0755 * x2bar 
+	+ 0.0442 * y2bar 
+	+ 0.0755 * xybar 
+	+ 0.0394 * x2ybr 
+	+ 0.0284 * xy2br 
+	- 0.0811 * x-ege 
+	- 0.0008 * xegvy 
+	- 0.0012 * y-ege 
+	+ 0.2358 * yegvx 
+	- 0.0859
+
+LM num: 17
+class=K = 
+	0.8066 * x-box 
+	+ 0.0183 * width 
+	+ 0.002 * high 
+	+ 0.0065 * onpix 
+	+ 0.0306 * x-bar 
+	+ 0.0058 * y-bar 
+	- 0.5923 * x2bar 
+	+ 0.0442 * y2bar 
+	+ 0.0755 * xybar 
+	+ 0.0394 * x2ybr 
+	+ 0.0284 * xy2br 
+	- 0.0811 * x-ege 
+	- 0.0008 * xegvy 
+	- 0.0012 * y-ege 
+	+ 0.5403 * yegvx 
+	- 0.446
+
+LM num: 18
+class=K = 
+	0.8066 * x-box 
+	+ 0.0183 * width 
+	+ 0.002 * high 
+	+ 0.0065 * onpix 
+	+ 0.0306 * x-bar 
+	+ 0.0058 * y-bar 
+	- 0.5923 * x2bar 
+	+ 0.0442 * y2bar 
+	+ 0.0755 * xybar 
+	+ 0.0394 * x2ybr 
+	+ 0.0284 * xy2br 
+	- 0.0811 * x-ege 
+	- 0.0008 * xegvy 
+	- 0.0012 * y-ege 
+	+ 0.5263 * yegvx 
+	- 0.4282
+
+LM num: 19
+class=K = 
+	1.0248 * x-box 
+	+ 0.0183 * width 
+	+ 0.002 * high 
+	+ 0.0065 * onpix 
+	+ 0.0306 * x-bar 
+	+ 0.0058 * y-bar 
+	- 0.5805 * x2bar 
+	+ 0.0442 * y2bar 
+	+ 0.0755 * xybar 
+	+ 0.0394 * x2ybr 
+	+ 0.0284 * xy2br 
+	- 0.0811 * x-ege 
+	- 0.0008 * xegvy 
+	- 0.0012 * y-ege 
+	+ 0.447 * yegvx 
+	- 0.5012
+
+LM num: 20
+class=K = 
+	0.7425 * x-box 
+	+ 0.0183 * width 
+	+ 0.002 * high 
+	+ 0.0065 * onpix 
+	+ 0.0306 * x-bar 
+	+ 0.0058 * y-bar 
+	- 0.465 * x2bar 
+	+ 0.0442 * y2bar 
+	+ 0.0755 * xybar 
+	+ 0.0394 * x2ybr 
+	+ 0.0284 * xy2br 
+	- 0.0811 * x-ege 
+	- 0.0008 * xegvy 
+	- 0.0012 * y-ege 
+	+ 0.4881 * yegvx 
+	- 0.4397
+
+LM num: 21
+class=K = 
+	-0.032 * x-box 
+	+ 0.0183 * width 
+	+ 0.002 * high 
+	+ 0.0065 * onpix 
+	+ 0.0306 * x-bar 
+	+ 0.0058 * y-bar 
+	- 0.0712 * x2bar 
+	+ 0.0442 * y2bar 
+	+ 0.0755 * xybar 
+	+ 0.0394 * x2ybr 
+	+ 0.0284 * xy2br 
+	- 0.0811 * x-ege 
+	- 0.0008 * xegvy 
+	- 0.0012 * y-ege 
+	+ 0.4355 * yegvx 
+	- 0.1886
+
+LM num: 22
+class=K = 
+	-0.032 * x-box 
+	+ 0.0183 * width 
+	+ 0.002 * high 
+	+ 0.0065 * onpix 
+	+ 0.0306 * x-bar 
+	+ 0.0058 * y-bar 
+	+ 0.1165 * x2bar 
+	+ 0.0442 * y2bar 
+	+ 0.0755 * xybar 
+	+ 0.0394 * x2ybr 
+	+ 0.0284 * xy2br 
+	- 0.0811 * x-ege 
+	- 0.0008 * xegvy 
+	- 0.0012 * y-ege 
+	+ 0.1143 * yegvx 
+	- 0.1236
+
+LM num: 23
+class=K = 
+	-0.032 * x-box 
+	+ 0.0183 * width 
+	+ 0.002 * high 
+	+ 0.0065 * onpix 
+	+ 0.0306 * x-bar 
+	+ 0.0058 * y-bar 
+	+ 3.0276 * x2bar 
+	+ 0.1377 * y2bar 
+	+ 0.1744 * xybar 
+	+ 0.0394 * x2ybr 
+	+ 0.0284 * xy2br 
+	- 3.7894 * x-ege 
+	- 0.0008 * xegvy 
+	+ 0.6888 * y-ege 
+	+ 0.0823 * yegvx 
+	+ 0.4499
+
+LM num: 24
+class=K = 
+	-0.032 * x-box 
+	+ 0.0183 * width 
+	+ 0.002 * high 
+	+ 0.0065 * onpix 
+	+ 0.0306 * x-bar 
+	+ 0.0058 * y-bar 
+	+ 0.9083 * x2bar 
+	+ 0.7345 * y2bar 
+	+ 0.2549 * xybar 
+	+ 0.0394 * x2ybr 
+	+ 0.0284 * xy2br 
+	- 0.0811 * x-ege 
+	- 0.0008 * xegvy 
+	- 0.0012 * y-ege 
+	+ 0.0823 * yegvx 
+	- 0.8119
+
+LM num: 25
+class=K = 
+	-0.032 * x-box 
+	+ 0.0183 * width 
+	+ 0.002 * high 
+	+ 0.0058 * onpix 
+	+ 0.0306 * x-bar 
+	+ 0.0058 * y-bar 
+	+ 0.0617 * x2bar 
+	+ 0.039 * y2bar 
+	+ 0.0226 * xybar 
+	+ 0.0387 * x2ybr 
+	+ 0.0284 * xy2br 
+	- 0.0774 * x-ege 
+	- 0.0008 * xegvy 
+	- 0.0009 * y-ege 
+	+ 0.0164 * yegvx 
+	- 0.0439
+
+LM num: 26
+class=K = 
+	-0.032 * x-box 
+	+ 0.0183 * width 
+	+ 0.002 * high 
+	+ 0.0058 * onpix 
+	+ 0.0306 * x-bar 
+	+ 0.0058 * y-bar 
+	+ 0.2668 * x2bar 
+	+ 0.1346 * y2bar 
+	+ 0.0226 * xybar 
+	+ 0.0387 * x2ybr 
+	+ 0.0284 * xy2br 
+	- 0.0774 * x-ege 
+	- 0.0008 * xegvy 
+	- 0.0009 * y-ege 
+	+ 0.0164 * yegvx 
+	- 0.1814
+
+LM num: 27
+class=K = 
+	-0.032 * x-box 
+	+ 0.0183 * width 
+	+ 0.002 * high 
+	+ 0.0058 * onpix 
+	+ 0.0306 * x-bar 
+	+ 0.0058 * y-bar 
+	+ 0.4841 * x2bar 
+	+ 0.6344 * y2bar 
+	+ 0.0226 * xybar 
+	+ 0.0387 * x2ybr 
+	+ 0.0284 * xy2br 
+	- 0.0774 * x-ege 
+	- 0.0008 * xegvy 
+	- 0.0009 * y-ege 
+	+ 0.0164 * yegvx 
+	- 0.4558
+
+LM num: 28
+class=K = 
+	-0.4704 * x-box 
+	+ 0.0183 * width 
+	+ 0.002 * high 
+	+ 0.0058 * onpix 
+	+ 0.0306 * x-bar 
+	+ 0.0058 * y-bar 
+	+ 0.4841 * x2bar 
+	+ 0.7199 * y2bar 
+	+ 0.0226 * xybar 
+	+ 0.0387 * x2ybr 
+	+ 0.0284 * xy2br 
+	- 0.0774 * x-ege 
+	- 0.0008 * xegvy 
+	- 0.0009 * y-ege 
+	+ 0.0164 * yegvx 
+	- 0.2141
+
+LM num: 29
+class=K = 
+	-0.1932 * x-box 
+	+ 0.0696 * y-box 
+	+ 0.0319 * width 
+	+ 0.002 * high 
+	- 0.0039 * onpix 
+	+ 0.1422 * x-bar 
+	+ 0.0058 * y-bar 
+	+ 0.296 * x2bar 
+	+ 0.1907 * y2bar 
+	+ 0.093 * xybar 
+	+ 0.3845 * x2ybr 
+	+ 0.162 * xy2br 
+	- 0.0824 * x-ege 
+	- 0.0056 * xegvy 
+	+ 0.0029 * y-ege 
+	+ 0.0172 * yegvx 
+	- 0.455
+
+LM num: 30
+class=K = 
+	-0.1932 * x-box 
+	+ 0.0696 * y-box 
+	+ 0.0319 * width 
+	+ 0.002 * high 
+	- 0.0039 * onpix 
+	+ 0.1422 * x-bar 
+	+ 0.0058 * y-bar 
+	+ 0.7495 * x2bar 
+	+ 0.3466 * y2bar 
+	+ 0.3418 * xybar 
+	+ 0.4043 * x2ybr 
+	+ 0.162 * xy2br 
+	- 0.0824 * x-ege 
+	- 0.0056 * xegvy 
+	+ 0.0029 * y-ege 
+	+ 0.0172 * yegvx 
+	- 0.8324
+
+LM num: 31
+class=K = 
+	-0.1932 * x-box 
+	+ 0.0696 * y-box 
+	+ 0.0319 * width 
+	+ 0.002 * high 
+	- 0.0039 * onpix 
+	+ 0.1422 * x-bar 
+	+ 0.0058 * y-bar 
+	+ 0.7732 * x2bar 
+	+ 0.8055 * y2bar 
+	+ 0.5824 * xybar 
+	+ 0.4043 * x2ybr 
+	+ 0.162 * xy2br 
+	- 0.0824 * x-ege 
+	- 0.0056 * xegvy 
+	+ 0.0029 * y-ege 
+	- 0.1347 * yegvx 
+	- 1.0144
+
+LM num: 32
+class=K = 
+	-0.1932 * x-box 
+	+ 0.0696 * y-box 
+	+ 0.0319 * width 
+	+ 0.002 * high 
+	- 0.0039 * onpix 
+	+ 0.1422 * x-bar 
+	+ 0.0058 * y-bar 
+	+ 0.7732 * x2bar 
+	+ 1.129 * y2bar 
+	+ 0.5218 * xybar 
+	+ 0.4043 * x2ybr 
+	+ 0.162 * xy2br 
+	- 0.0824 * x-ege 
+	- 0.0056 * xegvy 
+	+ 0.0029 * y-ege 
+	- 0.2952 * yegvx 
+	- 1.0072
+
+LM num: 33
+class=K = 
+	-2.3084 * x-box 
+	+ 0.0967 * y-box 
+	+ 0.0319 * width 
+	+ 0.002 * high 
+	- 0.0039 * onpix 
+	+ 0.6183 * x-bar 
+	+ 0.0058 * y-bar 
+	+ 0.2274 * x2bar 
+	+ 1.1221 * y2bar 
+	+ 0.1173 * xybar 
+	+ 0.2735 * x2ybr 
+	+ 0.203 * xy2br 
+	- 0.0824 * x-ege 
+	- 0.0056 * xegvy 
+	+ 0.6744 * y-ege 
+	+ 0.0172 * yegvx 
+	- 0.046
+
+Number of Rules : 33
+
+Time taken to build model: 1.19 seconds
+Time taken to test model on training data: 2.11 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8579
+Mean absolute error                      0.0325
+Root mean squared error                  0.1075
+Relative absolute error                 39.3341 %
+Root relative squared error             52.8984 %
+Total Number of Instances             2200     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6943
+Mean absolute error                      0.0425
+Root mean squared error                  0.1463
+Relative absolute error                 51.4496 %
+Root relative squared error             71.9539 %
+Total Number of Instances             2200     
+

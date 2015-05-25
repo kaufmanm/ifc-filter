@@ -1,0 +1,113 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'horse-colic-weka.filters.unsupervised.attribute.AddValues-C22-L\'?\'-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R22-weka.filters.unsupervised.attribute.Remove-R23-25-weka.filters.unsupervised.attribute.Remove-R23-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute surgery numeric
+@attribute Age numeric
+@attribute rectal_temperature numeric
+@attribute pulse numeric
+@attribute respiratory_rate numeric
+@attribute temp_extremities numeric
+@attribute peripheral_pulse numeric
+@attribute mucous_membranes numeric
+@attribute capillary_refill_time numeric
+@attribute pain numeric
+@attribute peristalsis numeric
+@attribute abdominal_distension numeric
+@attribute nasogastric_tube numeric
+@attribute nasogastric_reflux numeric
+@attribute nasogastric_reflux_PH numeric
+@attribute rectal_examination numeric
+@attribute abdomen numeric
+@attribute packed_cell_volume numeric
+@attribute total_protein numeric
+@attribute abdominocentesis_appearance numeric
+@attribute abdomcentesis_total_protein numeric
+@attribute outcome=lived numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -311.6864;  df=21;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      0.6491*surgery
++      2.3498*Age
++      2.8421*rectal_temperature
++      2.52  *pulse
++      2.1429*respiratory_rate
++      2.3803*temp_extremities
++     -1.0332*peripheral_pulse
++      1.3107*mucous_membranes
++     -1.2825*capillary_refill_time
++      2.5829*pain
++     -0.4787*peristalsis
++      0.8983*abdominal_distension
++      7.1173*nasogastric_tube
++      1.5026*nasogastric_reflux
++      0.4618*nasogastric_reflux_PH
++      0.0692*rectal_examination
++      1.2507*abdomen
++      2.3123*packed_cell_volume
++      1.9764*total_protein
++      0.2204*abdominocentesis_appearance
++      1.8299*abdomcentesis_total_protein
++   -15.2029))
+
+Odds Ratios...
+Variable         O.R.
+       1       1.9138
+       2      10.4837
+       3      17.1511
+       4      12.4282
+       5       8.5241
+       6      10.8085
+       7       0.3559
+       8       3.7088
+       9       0.2773
+      10      13.2352
+      11       0.6196
+      12       2.4555
+      13    1233.0727
+      14       4.4934
+      15       1.5869
+      16       1.0716
+      17       3.4927
+      18      10.0977
+      19       7.2168
+      20       1.2466
+      21       6.2333
+
+
+Time taken to build model: 0.2 seconds
+Time taken to test model on training data: 0.67 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.6474
+Mean absolute error                      0.2737
+Root mean squared error                  0.3705
+Relative absolute error                 57.8962 %
+Root relative squared error             76.2137 %
+Total Number of Instances              368     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5211
+Mean absolute error                      0.3157
+Root mean squared error                  0.4182
+Relative absolute error                 66.6412 %
+Root relative squared error             85.8229 %
+Total Number of Instances              368     
+

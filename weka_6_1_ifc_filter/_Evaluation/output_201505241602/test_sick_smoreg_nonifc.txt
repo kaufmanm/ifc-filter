@@ -1,0 +1,66 @@
+
+SMOreg
+
+weights (not support vectors):
+ -       0      * (normalized) age
+ +       0      * (normalized) sex
+ +       0.0004 * (normalized) on thyroxine
+ +       0.0009 * (normalized) query on thyroxine
+ +       0.0006 * (normalized) on antithyroid medication
+ -       0.0002 * (normalized) sick
+ +       0.0002 * (normalized) pregnant
+ +       0.001  * (normalized) thyroid surgery
+ +       0.0006 * (normalized) I131 treatment
+ -       0      * (normalized) query hypothyroid
+ -       0      * (normalized) query hyperthyroid
+ +       0      * (normalized) lithium
+ +       0.0004 * (normalized) goitre
+ -       0.0002 * (normalized) tumor
+ +       0      * (normalized) hypopituitary
+ -       0.0002 * (normalized) psych
+ -       0.0002 * (normalized) TSH measured
+ +       0.0002 * (normalized) TSH
+ +       0.0003 * (normalized) T3 measured
+ +       0.0035 * (normalized) T3
+ +       0.0008 * (normalized) TT4 measured
+ -       0.0025 * (normalized) TT4
+ +       0      * (normalized) T4U measured
+ +       0.0025 * (normalized) T4U
+ +       0      * (normalized) FTI measured
+ +       0.0003 * (normalized) FTI
+ +       0      * (normalized) TBG measured
+ +       0      * (normalized) TBG
+ +       0.0003 * (normalized) referral source=SVHC
+ +       0.0001 * (normalized) referral source=other
+ +       0      * (normalized) referral source=SVI
+ -       0.0003 * (normalized) referral source=STMW
+ -       0.0002 * (normalized) referral source=SVHD
+ +       0.9982
+
+
+
+Number of kernel evaluations: 343028 (99.284% cached)
+
+Time taken to build model: 6.04 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.3784
+Mean absolute error                      0.0583
+Root mean squared error                  0.2403
+Relative absolute error                 53.4804 %
+Root relative squared error            102.8957 %
+Total Number of Instances              829     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.3646
+Mean absolute error                      0.0584
+Root mean squared error                  0.2403
+Relative absolute error                 53.4574 %
+Root relative squared error            102.7715 %
+Total Number of Instances              829     
+

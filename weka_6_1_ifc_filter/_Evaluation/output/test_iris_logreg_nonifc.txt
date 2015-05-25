@@ -1,0 +1,45 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=    0     ;  df=4;  p=      0   
+
+SQL:
+
+1-1/(1+exp(     -0.6423*sepallength
++     15.5186*sepalwidth
++     -7.8341*petallength
++    -22.3796*petalwidth
++    -1.6545))
+
+Odds Ratios...
+Variable         O.R.
+       1       0.5261
+       2 5490947.5749
+       3       0.0004
+       4       0     
+
+
+Time taken to build model: 0.06 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              150     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0.0003
+Root mean squared error                  0.0038
+Relative absolute error                  0.0701 %
+Root relative squared error              0.8086 %
+Total Number of Instances              150     
+

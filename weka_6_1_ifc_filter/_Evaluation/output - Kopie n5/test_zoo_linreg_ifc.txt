@@ -1,0 +1,63 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation zoo-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R19-24-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute animal numeric
+@attribute hair numeric
+@attribute feathers numeric
+@attribute eggs numeric
+@attribute milk numeric
+@attribute airborne numeric
+@attribute aquatic numeric
+@attribute predator numeric
+@attribute toothed numeric
+@attribute backbone numeric
+@attribute breathes numeric
+@attribute venomous numeric
+@attribute fins numeric
+@attribute legs numeric
+@attribute tail numeric
+@attribute domestic numeric
+@attribute catsize numeric
+@attribute type=mammal numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+type=mammal =
+
+      0.5    * animal +
+      0.5    * milk +
+      0     
+
+Time taken to build model: 0.11 seconds
+Time taken to test model on training data: 0.11 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              101     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9896
+Mean absolute error                      0.2392
+Root mean squared error                  0.2463
+Relative absolute error                 49.3588 %
+Root relative squared error             49.9123 %
+Total Number of Instances              101     
+

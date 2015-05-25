@@ -1,0 +1,179 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=   -0.0005;  df=71;  p=      0   
+
+SQL:
+
+1-1/(1+exp(     -0.1216*normalized-losses
++     -7.7665*case when make in('alfa-romero') then 1 else 0 end
++   -103.5616*case when make in('audi') then 1 else 0 end
++    105.4459*case when make in('bmw') then 1 else 0 end
++    118.591 *case when make in('chevrolet') then 1 else 0 end
++   -123.0731*case when make in('dodge') then 1 else 0 end
++     98.7653*case when make in('honda') then 1 else 0 end
++     89.1663*case when make in('isuzu') then 1 else 0 end
++     63.1445*case when make in('jaguar') then 1 else 0 end
++     84.4557*case when make in('mazda') then 1 else 0 end
++    -39.7915*case when make in('mercedes-benz') then 1 else 0 end
++      8.8044*case when make in('mercury') then 1 else 0 end
++    -72.3021*case when make in('mitsubishi') then 1 else 0 end
++     -3.6085*case when make in('nissan') then 1 else 0 end
++    178.2073*case when make in('peugot') then 1 else 0 end
++   -127.9043*case when make in('plymouth') then 1 else 0 end
++   -124.8616*case when make in('porsche') then 1 else 0 end
++     81.2656*case when make in('renault') then 1 else 0 end
++   -263.0633*case when make in('saab') then 1 else 0 end
++    -14.1921*case when make in('subaru') then 1 else 0 end
++     19.1012*case when make in('toyota') then 1 else 0 end
++     97.2157*case when make in('volkswagen') then 1 else 0 end
++   -159.6308*case when make in('volvo') then 1 else 0 end
++   -170.8225*fuel-type
++    -65.822 *aspiration
++    -53.5111*num-of-doors
++    127.7346*case when body-style in('hardtop') then 1 else 0 end
++     44.5345*case when body-style in('wagon') then 1 else 0 end
++    -14.4751*case when body-style in('sedan') then 1 else 0 end
++    -30.5821*case when body-style in('hatchback') then 1 else 0 end
++     32.4566*case when body-style in('convertible') then 1 else 0 end
++    158.1998*case when drive-wheels in('4wd') then 1 else 0 end
++    133.487 *case when drive-wheels in('fwd') then 1 else 0 end
++   -167.3431*case when drive-wheels in('rwd') then 1 else 0 end
++   -248.1386*engine-location
++      9.8991*wheel-base
++      3.9986*length
++    -79.9508*width
++    -16.815 *height
++      0.0939*curb-weight
++    -72.0815*case when engine-type in('dohc') then 1 else 0 end
++     62.5254*case when engine-type in('dohcv') then 1 else 0 end
++    164.9673*case when engine-type in('l') then 1 else 0 end
++     11.1106*case when engine-type in('ohc') then 1 else 0 end
++    -64.295 *case when engine-type in('ohcf') then 1 else 0 end
++    -90.1726*case when engine-type in('ohcv') then 1 else 0 end
++    107.8405*case when engine-type in('rotor') then 1 else 0 end
++   -327.1122*case when num-of-cylinders in('eight') then 1 else 0 end
++     62.6146*case when num-of-cylinders in('five') then 1 else 0 end
++     87.7533*case when num-of-cylinders in('four') then 1 else 0 end
++   -126.511 *case when num-of-cylinders in('six') then 1 else 0 end
++      8.6765*case when num-of-cylinders in('three') then 1 else 0 end
++     62.5254*case when num-of-cylinders in('twelve') then 1 else 0 end
++    107.8405*case when num-of-cylinders in('two') then 1 else 0 end
++      1.2359*engine-size
++    135.2309*case when fuel-system in('1bbl') then 1 else 0 end
++     -3.454 *case when fuel-system in('2bbl') then 1 else 0 end
++     93.4202*case when fuel-system in('4bbl') then 1 else 0 end
++    170.8225*case when fuel-system in('idi') then 1 else 0 end
++    -47.5879*case when fuel-system in('mfi') then 1 else 0 end
++    -68.6792*case when fuel-system in('mpfi') then 1 else 0 end
++   -131.646 *case when fuel-system in('spdi') then 1 else 0 end
++     63.6225*case when fuel-system in('spfi') then 1 else 0 end
++     30.5612*bore
++   -215.3444*stroke
++    -16.3588*compression-ratio
++      4.5967*horsepower
++     -0.0771*peak-rpm
++    -13.4949*city-mpg
++     12.1045*highway-mpg
++      0.0077*price
++  4734.0799))
+
+Odds Ratios...
+Variable         O.R.
+       1       0.8855
+       2       0.0004
+       3       0     
+       4 6.231434325578157E45
+       5 3.187178306892724E51
+       6       0     
+       7 7.820484892271273E42
+       8 5.302148290387254E38
+       9 2.6502580200051723E27
+      10 4.7714205864767585E36
+      11       0     
+      12    6663.5553
+      13       0     
+      14       0.0271
+      15 2.479911387821679E77
+      16       0     
+      17       0     
+      18 1.964337722871819E35
+      19       0     
+      20       0     
+      21 197496564.5085
+      22 1.660454619221696E42
+      23       0     
+      24       0     
+      25       0     
+      26       0     
+      27 2.9815569365545715E55
+      28 2.1932608187083407E19
+      29       0     
+      30       0     
+      31 1.2466481458252678E14
+      32 5.073513726997864E68
+      33 9.389900308711996E57
+      34       0     
+      35       0     
+      36   19911.5789
+      37      54.5241
+      38       0     
+      39       0     
+      40       1.0985
+      41       0     
+      42 1.427027660218855E27
+      43 4.409626403739149E71
+      44   66876.9085
+      45       0     
+      46       0     
+      47 6.831789915110173E46
+      48       0     
+      49 1.5602092543352918E27
+      50 1.2905226718916271E38
+      51       0     
+      52    5863.7498
+      53 1.4270276602189156E27
+      54 6.831789915110173E46
+      55       3.4415
+      56 5.370822612397879E58
+      57       0.0316
+      58 3.7313057998473304E40
+      59 1.5390365312492514E74
+      60       0     
+      61       0     
+      62       0     
+      63 4.2746367411259547E27
+      64 1.873048226777226E13
+      65       0     
+      66       0     
+      67      99.1535
+      68       0.9258
+      69       0     
+      70  180690.3169
+      71       1.0077
+
+
+Time taken to build model: 0.11 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0.0003 %
+Root relative squared error              0.0009 %
+Total Number of Instances              205     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6392
+Mean absolute error                      0.1675
+Root mean squared error                  0.4059
+Relative absolute error                 37.8524 %
+Root relative squared error             86.0388 %
+Total Number of Instances              205     
+

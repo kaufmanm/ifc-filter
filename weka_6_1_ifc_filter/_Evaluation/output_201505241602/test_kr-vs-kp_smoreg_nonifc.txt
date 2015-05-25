@@ -1,0 +1,73 @@
+
+SMOreg
+
+weights (not support vectors):
+ -       0.0012 * (normalized) bkblk
+ -       0.0007 * (normalized) bknwy
+ +       0.0051 * (normalized) bkon8
+ +       0.001  * (normalized) bkona
+ -       0.0002 * (normalized) bkspr
+ -       0.0011 * (normalized) bkxbq
+ +       0.0003 * (normalized) bkxcr
+ +       0.4935 * (normalized) bkxwp
+ -       0.4934 * (normalized) blxwp
+ +       0.4998 * (normalized) bxqsq
+ -       0.0019 * (normalized) cntxt
+ -       0.0006 * (normalized) dsopp
+ +       0.0001 * (normalized) dwipd
+ +       0.4968 * (normalized) hdchk
+ -       0.0011 * (normalized) katri=b
+ -       0      * (normalized) katri=n
+ +       0.0012 * (normalized) katri=w
+ +       0.4955 * (normalized) mulch
+ -       0.0018 * (normalized) qxmsq
+ +       0.0005 * (normalized) r2ar8
+ +       0.0015 * (normalized) reskd
+ -       0.0008 * (normalized) reskr
+ -       0.5029 * (normalized) rimmx
+ +       0.4944 * (normalized) rkxwp
+ +       0.4931 * (normalized) rxmsq
+ -       0.0005 * (normalized) simpl
+ +       0.0021 * (normalized) skach
+ +       0.0004 * (normalized) skewr
+ -       0.0001 * (normalized) skrxp
+ +       0      * (normalized) spcop
+ +       0.0009 * (normalized) stlmt
+ -       0.0004 * (normalized) thrsk
+ +       0.0004 * (normalized) wkcti
+ +       0.5015 * (normalized) wkna8
+ +       0.5    * (normalized) wknck
+ -       0.0006 * (normalized) wkovl
+ -       0.0023 * (normalized) wkpos
+ +       0.0001 * (normalized) wtoeg=n
+ -       0.0001 * (normalized) wtoeg=t
+ +       0      * (normalized) wtoeg=f
+ -       1.9839
+
+
+
+Number of kernel evaluations: 674078 (99.471% cached)
+
+Time taken to build model: 13.84 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7268
+Mean absolute error                      0.2458
+Root mean squared error                  0.3738
+Relative absolute error                 49.2296 %
+Root relative squared error             74.8112 %
+Total Number of Instances             1054     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7046
+Mean absolute error                      0.2603
+Root mean squared error                  0.3899
+Relative absolute error                 52.0523 %
+Root relative squared error             77.9066 %
+Total Number of Instances             1054     
+

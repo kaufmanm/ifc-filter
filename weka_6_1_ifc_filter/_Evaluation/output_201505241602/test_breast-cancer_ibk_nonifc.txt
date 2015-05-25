@@ -1,0 +1,28 @@
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.02 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9731
+Mean absolute error                      0.0221
+Root mean squared error                  0.1052
+Relative absolute error                  5.3009 %
+Root relative squared error             23.0238 %
+Total Number of Instances              286     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.2634
+Mean absolute error                      0.3202
+Root mean squared error                  0.5002
+Relative absolute error                 76.3799 %
+Root relative squared error            109.0415 %
+Total Number of Instances              286     
+

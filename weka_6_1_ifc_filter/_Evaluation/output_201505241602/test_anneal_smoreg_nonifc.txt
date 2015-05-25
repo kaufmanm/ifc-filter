@@ -1,0 +1,123 @@
+
+SMOreg
+
+weights (not support vectors):
+ +       0.3314 * (normalized) family=?
+ +       0      * (normalized) family=GB
+ +       0      * (normalized) family=GK
+ +       0      * (normalized) family=GS
+ -       0.6642 * (normalized) family=TN
+ +       0      * (normalized) family=ZA
+ +       0      * (normalized) family=ZF
+ +       0      * (normalized) family=ZH
+ +       0      * (normalized) family=ZM
+ +       0.3328 * (normalized) family=ZS
+ +       0      * (normalized) product-type=C
+ +       0      * (normalized) product-type=H
+ +       0      * (normalized) product-type=G
+ +       0.1611 * (normalized) steel=?
+ +       0.1601 * (normalized) steel=R
+ +       0.1599 * (normalized) steel=A
+ +       0      * (normalized) steel=U
+ -       0.8324 * (normalized) steel=K
+ +       1.1582 * (normalized) steel=M
+ -       0.8341 * (normalized) steel=S
+ +       0.1626 * (normalized) steel=W
+ -       0.1354 * (normalized) steel=V
+ +       0.0037 * (normalized) carbon
+ +       0.0076 * (normalized) hardness
+ +       0.0008 * (normalized) temper_rolling
+ -       0.0018 * (normalized) condition=?
+ +       0.0019 * (normalized) condition=S
+ -       0.0001 * (normalized) condition=A
+ +       0      * (normalized) condition=X
+ -       0.003  * (normalized) formability=?
+ -       0.0012 * (normalized) formability=1
+ +       0.0014 * (normalized) formability=2
+ +       0.0014 * (normalized) formability=3
+ +       0      * (normalized) formability=4
+ +       0.0014 * (normalized) formability=5
+ +       0.007  * (normalized) strength
+ -       0.0011 * (normalized) non-ageing
+ -       0.0005 * (normalized) surface-finish=?
+ +       0.0005 * (normalized) surface-finish=P
+ +       0      * (normalized) surface-finish=M
+ +       0.7985 * (normalized) surface-quality=?
+ -       0.1993 * (normalized) surface-quality=D
+ -       0.1999 * (normalized) surface-quality=E
+ -       0.2002 * (normalized) surface-quality=F
+ -       0.199  * (normalized) surface-quality=G
+ +       0.1354 * (normalized) enamelability=?
+ -       0.567  * (normalized) enamelability=1
+ +       0.4316 * (normalized) enamelability=2
+ +       0      * (normalized) enamelability=3
+ +       0      * (normalized) enamelability=4
+ +       0      * (normalized) enamelability=5
+ +       0      * (normalized) bc
+ -       0.0001 * (normalized) bf
+ -       0.0005 * (normalized) bt
+ +       0.0004 * (normalized) bw/me=?
+ +       0.0002 * (normalized) bw/me=B
+ -       0.0007 * (normalized) bw/me=M
+ +       0.0004 * (normalized) bl
+ +       0      * (normalized) m
+ +       0.0013 * (normalized) chrom
+ +       0.0013 * (normalized) phos
+ -       0.0005 * (normalized) cbond
+ +       0      * (normalized) marvi
+ -       0.9954 * (normalized) exptl
+ +       0.0011 * (normalized) ferro
+ +       0      * (normalized) corr
+ +       0      * (normalized) blue/bright/varn/clean=?
+ +       0      * (normalized) blue/bright/varn/clean=B
+ +       0      * (normalized) blue/bright/varn/clean=R
+ +       0      * (normalized) blue/bright/varn/clean=V
+ +       0      * (normalized) blue/bright/varn/clean=C
+ -       0.0005 * (normalized) lustre
+ +       0      * (normalized) jurofm
+ +       0      * (normalized) s
+ +       0      * (normalized) p
+ +       0.0001 * (normalized) shape
+ +       0.0003 * (normalized) thick
+ +       0.0002 * (normalized) width
+ +       0.0002 * (normalized) len
+ +       0.0007 * (normalized) oil=?
+ -       0.0003 * (normalized) oil=Y
+ -       0.0004 * (normalized) oil=N
+ -       0.0004 * (normalized) bore=0
+ +       0.0003 * (normalized) bore=500
+ +       0.0001 * (normalized) bore=600
+ +       0      * (normalized) bore=760
+ +       0.0006 * (normalized) packing=?
+ +       0      * (normalized) packing=1
+ +       0      * (normalized) packing=2
+ -       0.0006 * (normalized) packing=3
+ -       0.4307
+
+
+
+Number of kernel evaluations: 236812 (99.611% cached)
+
+Time taken to build model: 9.02 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.854 
+Mean absolute error                      0.0367
+Root mean squared error                  0.1891
+Relative absolute error                 18.7448 %
+Root relative squared error             60.4499 %
+Total Number of Instances              691     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8481
+Mean absolute error                      0.0395
+Root mean squared error                  0.1901
+Relative absolute error                 20.15   %
+Root relative squared error             60.665  %
+Total Number of Instances              691     
+

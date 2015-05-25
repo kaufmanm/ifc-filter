@@ -1,0 +1,66 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation cleveland-14-heart-disease-weka.filters.unsupervised.attribute.NominalToBinary-R14-weka.filters.unsupervised.attribute.NominalToBinary-R14-weka.filters.unsupervised.attribute.Remove-R15-18-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute age numeric
+@attribute sex numeric
+@attribute cp numeric
+@attribute trestbps numeric
+@attribute chol numeric
+@attribute fbs numeric
+@attribute restecg numeric
+@attribute thalach numeric
+@attribute exang numeric
+@attribute oldpeak numeric
+@attribute slope numeric
+@attribute ca numeric
+@attribute thal numeric
+@attribute num=<50 numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+num=<50 =
+
+      0.2666 * age +
+      0.4748 * sex +
+      0.4289 * cp +
+      0.5065 * chol +
+      0.2872 * exang +
+      0.211  * oldpeak +
+      0.3297 * slope +
+      0.5258 * ca +
+      0.3578 * thal +
+     -1.1719
+
+Time taken to build model: 0.2 seconds
+Time taken to test model on training data: 0.27 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7652
+Mean absolute error                      0.2317
+Root mean squared error                  0.3224
+Relative absolute error                 46.7033 %
+Root relative squared error             64.7452 %
+Total Number of Instances              303     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7124
+Mean absolute error                      0.2536
+Root mean squared error                  0.35  
+Relative absolute error                 51.0418 %
+Root relative squared error             70.1476 %
+Total Number of Instances              303     
+

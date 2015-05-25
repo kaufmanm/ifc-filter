@@ -1,0 +1,104 @@
+
+SMOreg
+
+weights (not support vectors):
+ +       0.342  * (normalized) normalized-losses
+ +       0.1482 * (normalized) make=alfa-romero
+ -       0.4956 * (normalized) make=audi
+ +       0.524  * (normalized) make=bmw
+ +       0.0883 * (normalized) make=chevrolet
+ -       0.3094 * (normalized) make=dodge
+ +       0.2425 * (normalized) make=honda
+ +       0.5372 * (normalized) make=isuzu
+ +       0.741  * (normalized) make=jaguar
+ +       0.0569 * (normalized) make=mazda
+ -       0.3759 * (normalized) make=mercedes-benz
+ -       0.0053 * (normalized) make=mercury
+ -       0.2473 * (normalized) make=mitsubishi
+ -       0.1124 * (normalized) make=nissan
+ +       0.2566 * (normalized) make=peugot
+ -       0.3181 * (normalized) make=plymouth
+ -       0.1148 * (normalized) make=porsche
+ +       0      * (normalized) make=renault
+ -       0.4709 * (normalized) make=saab
+ +       0.3438 * (normalized) make=subaru
+ +       0.1047 * (normalized) make=toyota
+ -       0.2348 * (normalized) make=volkswagen
+ -       0.3589 * (normalized) make=volvo
+ -       0.1621 * (normalized) fuel-type
+ +       0.0054 * (normalized) aspiration
+ -       0.2253 * (normalized) num-of-doors
+ -       0.0222 * (normalized) body-style=hardtop
+ +       0.0065 * (normalized) body-style=wagon
+ -       0.02   * (normalized) body-style=sedan
+ -       0.0309 * (normalized) body-style=hatchback
+ +       0.0666 * (normalized) body-style=convertible
+ +       0.1266 * (normalized) drive-wheels=4wd
+ +       0.1038 * (normalized) drive-wheels=fwd
+ -       0.2304 * (normalized) drive-wheels=rwd
+ -       0.2403 * (normalized) engine-location
+ +       0.0084 * (normalized) wheel-base
+ +       0.5627 * (normalized) length
+ -       0.472  * (normalized) width
+ +       0.05   * (normalized) height
+ +       0.4303 * (normalized) curb-weight
+ -       0.2601 * (normalized) engine-type=dohc
+ -       0.0523 * (normalized) engine-type=dohcv
+ +       0.231  * (normalized) engine-type=l
+ -       0.0216 * (normalized) engine-type=ohc
+ +       0.1035 * (normalized) engine-type=ohcf
+ +       0.0322 * (normalized) engine-type=ohcv
+ -       0.0327 * (normalized) engine-type=rotor
+ +       0.1245 * (normalized) num-of-cylinders=eight
+ -       0.0232 * (normalized) num-of-cylinders=five
+ +       0.0467 * (normalized) num-of-cylinders=four
+ +       0.0339 * (normalized) num-of-cylinders=six
+ -       0.0256 * (normalized) num-of-cylinders=three
+ -       0.1235 * (normalized) num-of-cylinders=twelve
+ -       0.0327 * (normalized) num-of-cylinders=two
+ +       0.2505 * (normalized) engine-size
+ +       0.2425 * (normalized) fuel-system=1bbl
+ +       0.0575 * (normalized) fuel-system=2bbl
+ +       0.0044 * (normalized) fuel-system=4bbl
+ +       0.1621 * (normalized) fuel-system=idi
+ +       0.03   * (normalized) fuel-system=mfi
+ -       0.0241 * (normalized) fuel-system=mpfi
+ -       0.0096 * (normalized) fuel-system=spdi
+ -       0.4628 * (normalized) fuel-system=spfi
+ +       0.2192 * (normalized) bore
+ -       0.3056 * (normalized) stroke
+ -       0.0309 * (normalized) compression-ratio
+ -       0.0808 * (normalized) horsepower
+ +       0.4037 * (normalized) peak-rpm
+ -       0.4495 * (normalized) city-mpg
+ +       0.085  * (normalized) highway-mpg
+ -       0.0062 * (normalized) price
+ +       0.1133
+
+
+
+Number of kernel evaluations: 21115 (99.202% cached)
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7653
+Mean absolute error                      0.192 
+Root mean squared error                  0.3071
+Relative absolute error                 43.6245 %
+Root relative squared error             65.4799 %
+Total Number of Instances              205     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.5294
+Mean absolute error                      0.3007
+Root mean squared error                  0.4282
+Relative absolute error                 67.959  %
+Root relative squared error             90.7667 %
+Total Number of Instances              205     
+

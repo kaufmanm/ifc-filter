@@ -1,0 +1,195 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+T3 <= 1.65 : 
+|   T3 <= 1.15 : 
+|   |   FTI <= 61.5 : 
+|   |   |   TSH <= 22.5 : 
+|   |   |   |   age <= 57.5 : LM1 (2/0%)
+|   |   |   |   age >  57.5 : LM2 (2/0%)
+|   |   |   TSH >  22.5 : LM3 (12/0%)
+|   |   FTI >  61.5 : LM4 (48/114.288%)
+|   T3 >  1.15 : LM5 (123/0%)
+T3 >  1.65 : 
+|   age <= 40.5 : LM6 (234/0%)
+|   age >  40.5 : 
+|   |   TSH <= 2.35 : 
+|   |   |   TT4 <= 138 : 
+|   |   |   |   TT4 <= 90.5 : 
+|   |   |   |   |   age <= 68.5 : LM7 (39/0%)
+|   |   |   |   |   age >  68.5 : LM8 (11/109.598%)
+|   |   |   |   TT4 >  90.5 : LM9 (182/0%)
+|   |   |   TT4 >  138 : 
+|   |   |   |   T4U <= 1.025 : 
+|   |   |   |   |   TT4 <= 159 : LM10 (12/0%)
+|   |   |   |   |   TT4 >  159 : 
+|   |   |   |   |   |   TT4 <= 193.5 : LM11 (6/201.838%)
+|   |   |   |   |   |   TT4 >  193.5 : LM12 (7/0%)
+|   |   |   |   T4U >  1.025 : LM13 (34/0%)
+|   |   TSH >  2.35 : LM14 (117/0%)
+
+LM num: 1
+Class=negative = 
+	0.0063 * age 
+	+ 0.0008 * TSH 
+	+ 0.1531 * T3 
+	- 0.0001 * TT4 
+	+ 0.0078 * T4U 
+	- 0.0022 * FTI 
+	+ 0.1336 * referral source=other,STMW 
+	+ 0.1989
+
+LM num: 2
+Class=negative = 
+	0.0063 * age 
+	+ 0.0008 * TSH 
+	+ 0.1531 * T3 
+	- 0.0001 * TT4 
+	+ 0.0078 * T4U 
+	- 0.0022 * FTI 
+	+ 0.1336 * referral source=other,STMW 
+	+ 0.2085
+
+LM num: 3
+Class=negative = 
+	0.0029 * age 
+	+ 0.0006 * TSH 
+	+ 0.1531 * T3 
+	- 0.0001 * TT4 
+	+ 0.0078 * T4U 
+	- 0.0022 * FTI 
+	+ 0.1336 * referral source=other,STMW 
+	+ 0.4531
+
+LM num: 4
+Class=negative = 
+	-0.0033 * age 
+	+ 0.0002 * TSH 
+	+ 0.1531 * T3 
+	- 0.0001 * TT4 
+	+ 0.0078 * T4U 
+	+ 0.0023 * FTI 
+	+ 0.3234 * referral source=other,STMW 
+	+ 0.0138
+
+LM num: 5
+Class=negative = 
+	0 * age 
+	+ 0.0001 * TSH 
+	+ 0.0912 * T3 
+	- 0.0001 * TT4 
+	+ 0.0078 * T4U 
+	- 0.0003 * FTI 
+	+ 0.0161 * referral source=other,STMW 
+	+ 0.8793
+
+LM num: 6
+Class=negative = 
+	0 * age 
+	+ 0.0026 * T3 
+	- 0 * TT4 
+	+ 0.0046 * T4U 
+	+ 0.0013 * referral source=other,STMW 
+	+ 0.9922
+
+LM num: 7
+Class=negative = 
+	0 * age 
+	- 0.0126 * TSH 
+	+ 0.0026 * T3 
+	+ 0.0001 * TT4 
+	+ 0.0037 * T4U 
+	+ 0.0013 * referral source=other,STMW 
+	+ 0.9922
+
+LM num: 8
+Class=negative = 
+	0 * age 
+	- 0.0785 * TSH 
+	+ 0.0026 * T3 
+	+ 0.0001 * TT4 
+	+ 0.0037 * T4U 
+	+ 0.0013 * referral source=other,STMW 
+	+ 1.0501
+
+LM num: 9
+Class=negative = 
+	0 * age 
+	- 0.0006 * TSH 
+	+ 0.0026 * T3 
+	- 0 * TT4 
+	+ 0.0037 * T4U 
+	+ 0.0013 * referral source=other,STMW 
+	+ 0.9914
+
+LM num: 10
+Class=negative = 
+	0 * age 
+	+ 0.0026 * T3 
+	- 0.0001 * TT4 
+	+ 0.0703 * T4U 
+	+ 0.0013 * referral source=other,STMW 
+	+ 0.8678
+
+LM num: 11
+Class=negative = 
+	0 * age 
+	+ 0.0026 * T3 
+	+ 0.0009 * TT4 
+	+ 0.0703 * T4U 
+	+ 0.0013 * referral source=other,STMW 
+	+ 0.5849
+
+LM num: 12
+Class=negative = 
+	0 * age 
+	+ 0.0026 * T3 
+	+ 0.0008 * TT4 
+	+ 0.0703 * T4U 
+	+ 0.0013 * referral source=other,STMW 
+	+ 0.6355
+
+LM num: 13
+Class=negative = 
+	0 * age 
+	+ 0.0026 * T3 
+	- 0.0001 * TT4 
+	+ 0.0581 * T4U 
+	+ 0.0013 * referral source=other,STMW 
+	+ 0.9243
+
+LM num: 14
+Class=negative = 
+	0 * age 
+	+ 0.0026 * T3 
+	- 0.0001 * TT4 
+	+ 0.0037 * T4U 
+	+ 0.0013 * referral source=other,STMW 
+	+ 0.9953
+
+Number of Rules : 14
+
+Time taken to build model: 0.56 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.897 
+Mean absolute error                      0.0333
+Root mean squared error                  0.1069
+Relative absolute error                 30.5429 %
+Root relative squared error             45.754  %
+Total Number of Instances              829     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7736
+Mean absolute error                      0.0467
+Root mean squared error                  0.1482
+Relative absolute error                 42.722  %
+Root relative squared error             63.3997 %
+Total Number of Instances              829     
+

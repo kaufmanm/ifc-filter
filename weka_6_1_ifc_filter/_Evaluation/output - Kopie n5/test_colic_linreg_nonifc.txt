@@ -1,0 +1,52 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+outcome=lived =
+
+      0.1391 * Age=adult +
+      0.0843 * rectal_temperature +
+     -0.0017 * pulse +
+      0.183  * temp_extremities=normal,warm +
+     -0.2368 * peripheral_pulse=increased,normal +
+      0.1874 * peripheral_pulse=normal +
+     -0.2066 * mucous_membranes=bright red,pale cyanotic,pale pink,bright pink,normal pink +
+      0.2901 * mucous_membranes=pale cyanotic,pale pink,bright pink,normal pink +
+     -0.2752 * capillary_refill_time=meaning unknown,<3 +
+      0.2381 * capillary_refill_time=<3 +
+      0.1885 * pain=depressed,intermittent mild pain,alert no pain +
+      0.1279 * pain=intermittent mild pain,alert no pain +
+      0.1273 * peristalsis=hypermotile,normal +
+      0.1092 * abdominal_distension=slight,none +
+      0.1952 * nasogastric_tube=significant,slight +
+     -0.098  * nasogastric_tube=slight +
+      0.1071 * rectal_examination=decreased +
+     -0.0075 * packed_cell_volume +
+     -0.029  * abdomcentesis_total_protein +
+     -2.6416
+
+Time taken to build model: 0.09 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.6171
+Mean absolute error                      0.3083
+Root mean squared error                  0.3825
+Relative absolute error                 65.2246 %
+Root relative squared error             78.6875 %
+Total Number of Instances              368     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4993
+Mean absolute error                      0.344 
+Root mean squared error                  0.4247
+Relative absolute error                 72.616  %
+Root relative squared error             87.1549 %
+Total Number of Instances              368     
+

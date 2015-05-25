@@ -1,0 +1,119 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.MultilayerPerceptron 
+
+FilteredClassifier using weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'Glass-weka.filters.unsupervised.attribute.NominalToBinary-R10-weka.filters.unsupervised.attribute.Remove-R10,12-16-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute RI numeric
+@attribute Na numeric
+@attribute Mg numeric
+@attribute Al numeric
+@attribute Si numeric
+@attribute K numeric
+@attribute Ca numeric
+@attribute Ba numeric
+@attribute Fe numeric
+@attribute 'Type=build wind non-float' numeric
+
+@data
+
+
+Classifier Model
+Linear Node 0
+    Inputs    Weights
+    Threshold    -0.8715524774299593
+    Node 1    -0.347207301775039
+    Node 2    2.445744007629927
+    Node 3    -2.5931013171953787
+    Node 4    1.691896765628858
+    Node 5    3.730348370326542
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    0.2196654030482332
+    Attrib RI    -6.047538286401785
+    Attrib Na    -0.9843419063024811
+    Attrib Mg    -6.611125926044031
+    Attrib Al    1.5829401252693336
+    Attrib Si    3.876475108113887
+    Attrib K    -4.819947725253678
+    Attrib Ca    -1.396501828865151
+    Attrib Ba    -3.196801144708255
+    Attrib Fe    0.1809524766648005
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -3.942185070935941
+    Attrib RI    0.4049649421974723
+    Attrib Na    2.6200429235394167
+    Attrib Mg    1.4058482941636616
+    Attrib Al    -5.77023954347662
+    Attrib Si    4.306365543417701
+    Attrib K    -6.239521837044564
+    Attrib Ca    9.557077841629907
+    Attrib Ba    -0.9540457817816443
+    Attrib Fe    8.389994562820839
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -7.970914380541567
+    Attrib RI    5.135924578873552
+    Attrib Na    4.7724909406165095
+    Attrib Mg    -3.705491165349595
+    Attrib Al    -0.5562244282529412
+    Attrib Si    2.4355532709642835
+    Attrib K    5.374920747291273
+    Attrib Ca    5.529351146220827
+    Attrib Ba    -4.149580253755631
+    Attrib Fe    12.39838870686201
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    8.65122360075354
+    Attrib RI    10.948050155079525
+    Attrib Na    -15.81764161193535
+    Attrib Mg    9.620877220056492
+    Attrib Al    9.38180412939539
+    Attrib Si    -1.868170824002719
+    Attrib K    12.100646487072481
+    Attrib Ca    10.20988834116021
+    Attrib Ba    2.2882560726482777
+    Attrib Fe    8.740346395421195
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -7.487189334640603
+    Attrib RI    -0.13715272740289505
+    Attrib Na    -1.505147999994097
+    Attrib Mg    -7.8193949363968
+    Attrib Al    5.8149788008335515
+    Attrib Si    1.5110065850529049
+    Attrib K    3.345544439676001
+    Attrib Ca    0.4354161169526861
+    Attrib Ba    -1.8814164293241828
+    Attrib Fe    4.864537276759544
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 0.39 seconds
+Time taken to test model on training data: 0.09 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9215
+Mean absolute error                      0.0765
+Root mean squared error                  0.192 
+Relative absolute error                 16.6965 %
+Root relative squared error             40.1295 %
+Total Number of Instances              214     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.266 
+Mean absolute error                      0.3701
+Root mean squared error                  0.5339
+Relative absolute error                 80.272  %
+Root relative squared error            110.8047 %
+Total Number of Instances              214     
+

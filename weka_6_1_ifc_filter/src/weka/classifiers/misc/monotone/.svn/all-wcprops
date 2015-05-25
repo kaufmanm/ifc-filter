@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weka/!svn/ver/5987/trunk/weka/src/main/java/weka/classifiers/misc/monotone
+END
+InstancesComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/weka/!svn/ver/5922/trunk/weka/src/main/java/weka/classifiers/misc/monotone/InstancesComparator.java
+END
+DistributionUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/weka/!svn/ver/5922/trunk/weka/src/main/java/weka/classifiers/misc/monotone/DistributionUtils.java
+END
+EnumerationIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/weka/!svn/ver/5922/trunk/weka/src/main/java/weka/classifiers/misc/monotone/EnumerationIterator.java
+END
+CumulativeDiscreteDistribution.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/weka/!svn/ver/5922/trunk/weka/src/main/java/weka/classifiers/misc/monotone/CumulativeDiscreteDistribution.java
+END
+DiscreteDistribution.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/weka/!svn/ver/5922/trunk/weka/src/main/java/weka/classifiers/misc/monotone/DiscreteDistribution.java
+END
+BitMatrix.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/weka/!svn/ver/5922/trunk/weka/src/main/java/weka/classifiers/misc/monotone/BitMatrix.java
+END
+BooleanBitMatrix.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/weka/!svn/ver/5922/trunk/weka/src/main/java/weka/classifiers/misc/monotone/BooleanBitMatrix.java
+END
+NominalLossFunction.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/weka/!svn/ver/5922/trunk/weka/src/main/java/weka/classifiers/misc/monotone/NominalLossFunction.java
+END
+AbsoluteLossFunction.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/weka/!svn/ver/5922/trunk/weka/src/main/java/weka/classifiers/misc/monotone/AbsoluteLossFunction.java
+END
+InstancesUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/weka/!svn/ver/5987/trunk/weka/src/main/java/weka/classifiers/misc/monotone/InstancesUtil.java
+END
+MultiDimensionalSort.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/weka/!svn/ver/5922/trunk/weka/src/main/java/weka/classifiers/misc/monotone/MultiDimensionalSort.java
+END
+ZeroOneLossFunction.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/weka/!svn/ver/5922/trunk/weka/src/main/java/weka/classifiers/misc/monotone/ZeroOneLossFunction.java
+END
+Coordinates.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/weka/!svn/ver/5922/trunk/weka/src/main/java/weka/classifiers/misc/monotone/Coordinates.java
+END
+OSDLCore.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/weka/!svn/ver/5987/trunk/weka/src/main/java/weka/classifiers/misc/monotone/OSDLCore.java
+END

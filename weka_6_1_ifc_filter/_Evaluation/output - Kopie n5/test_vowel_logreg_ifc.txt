@@ -1,0 +1,83 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'vowel-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R1-2,14-23-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute Sex numeric
+@attribute 'Feature 0' numeric
+@attribute 'Feature 1' numeric
+@attribute 'Feature 2' numeric
+@attribute 'Feature 3' numeric
+@attribute 'Feature 4' numeric
+@attribute 'Feature 5' numeric
+@attribute 'Feature 6' numeric
+@attribute 'Feature 7' numeric
+@attribute 'Feature 8' numeric
+@attribute 'Feature 9' numeric
+@attribute Class=hed numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -210.9268;  df=11;  p=      0   
+
+SQL:
+
+1-1/(1+exp(     -2.9106*Sex
++      6.7699*Feature 0
++      5.8854*Feature 1
++      4.7731*Feature 2
++      4.7155*Feature 3
++      5.768 *Feature 4
++      5.8924*Feature 5
++      7.6226*Feature 6
++      7.7495*Feature 7
++      3.6342*Feature 8
++      6.683 *Feature 9
++   -31.51  ))
+
+Odds Ratios...
+Variable         O.R.
+       1       0.0544
+       2     871.2643
+       3     359.7621
+       4     118.2832
+       5     111.663 
+       6     319.9119
+       7     362.2713
+       8    2043.9213
+       9    2320.3341
+      10      37.8731
+      11     798.7446
+
+
+Time taken to build model: 0.27 seconds
+Time taken to test model on training data: 0.56 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7736
+Mean absolute error                      0.0654
+Root mean squared error                  0.1822
+Relative absolute error                 39.5407 %
+Root relative squared error             63.3765 %
+Total Number of Instances              990     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.1623
+Mean absolute error                      0.0959
+Root mean squared error                  0.2949
+Relative absolute error                 57.9809 %
+Root relative squared error            102.4767 %
+Total Number of Instances              990     
+

@@ -1,0 +1,36 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+iris-setosa =
+
+      0.079  * sepallength +
+      0.228  * sepalwidth +
+     -0.2561 * petallength +
+      0.1382
+
+Time taken to build model: 0.06 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9522
+Mean absolute error                      0.1188
+Root mean squared error                  0.1439
+Relative absolute error                 26.727  %
+Root relative squared error             30.5354 %
+Total Number of Instances              150     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9456
+Mean absolute error                      0.1259
+Root mean squared error                  0.1535
+Relative absolute error                 28.0689 %
+Root relative squared error             32.242  %
+Total Number of Instances              150     
+

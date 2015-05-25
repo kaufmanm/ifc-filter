@@ -1,0 +1,230 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation sonar-weka.filters.unsupervised.attribute.NominalToBinary-R61-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute attribute_1 numeric
+@attribute attribute_2 numeric
+@attribute attribute_3 numeric
+@attribute attribute_4 numeric
+@attribute attribute_5 numeric
+@attribute attribute_6 numeric
+@attribute attribute_7 numeric
+@attribute attribute_8 numeric
+@attribute attribute_9 numeric
+@attribute attribute_10 numeric
+@attribute attribute_11 numeric
+@attribute attribute_12 numeric
+@attribute attribute_13 numeric
+@attribute attribute_14 numeric
+@attribute attribute_15 numeric
+@attribute attribute_16 numeric
+@attribute attribute_17 numeric
+@attribute attribute_18 numeric
+@attribute attribute_19 numeric
+@attribute attribute_20 numeric
+@attribute attribute_21 numeric
+@attribute attribute_22 numeric
+@attribute attribute_23 numeric
+@attribute attribute_24 numeric
+@attribute attribute_25 numeric
+@attribute attribute_26 numeric
+@attribute attribute_27 numeric
+@attribute attribute_28 numeric
+@attribute attribute_29 numeric
+@attribute attribute_30 numeric
+@attribute attribute_31 numeric
+@attribute attribute_32 numeric
+@attribute attribute_33 numeric
+@attribute attribute_34 numeric
+@attribute attribute_35 numeric
+@attribute attribute_36 numeric
+@attribute attribute_37 numeric
+@attribute attribute_38 numeric
+@attribute attribute_39 numeric
+@attribute attribute_40 numeric
+@attribute attribute_41 numeric
+@attribute attribute_42 numeric
+@attribute attribute_43 numeric
+@attribute attribute_44 numeric
+@attribute attribute_45 numeric
+@attribute attribute_46 numeric
+@attribute attribute_47 numeric
+@attribute attribute_48 numeric
+@attribute attribute_49 numeric
+@attribute attribute_50 numeric
+@attribute attribute_51 numeric
+@attribute attribute_52 numeric
+@attribute attribute_53 numeric
+@attribute attribute_54 numeric
+@attribute attribute_55 numeric
+@attribute attribute_56 numeric
+@attribute attribute_57 numeric
+@attribute attribute_58 numeric
+@attribute attribute_59 numeric
+@attribute attribute_60 numeric
+@attribute Class numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=    0     ;  df=60;  p=      0   
+
+SQL:
+
+1-1/(1+exp(     19.9181*attribute_1
++      9.6315*attribute_2
++     13.0189*attribute_3
++     10.3635*attribute_4
++     12.1811*attribute_5
++      7.7891*attribute_6
++     24.6006*attribute_7
++    -17.2003*attribute_8
++      6.4057*attribute_9
++      3.5711*attribute_10
++      5.3744*attribute_11
++     12.7133*attribute_12
++    -20.6796*attribute_13
++    -11.0645*attribute_14
++     41.4559*attribute_15
++     -2.7944*attribute_16
++     23.2414*attribute_17
++      9.45  *attribute_18
++     -4.9419*attribute_19
++      6.3956*attribute_20
++     28.9308*attribute_21
++     17.7334*attribute_22
++     28.7119*attribute_23
++    -15.8849*attribute_24
++    -28.5617*attribute_25
++     22.832 *attribute_26
++     55.3293*attribute_27
++     10.0789*attribute_28
++     33.0106*attribute_29
++     -3.4188*attribute_30
++     30.5611*attribute_31
++     25.8731*attribute_32
++      5.4242*attribute_33
++    -22.5237*attribute_34
++      2.4097*attribute_35
++     26.5446*attribute_36
++     35.6043*attribute_37
++      0.386 *attribute_38
++     15.8769*attribute_39
++     41.3841*attribute_40
++     12.8295*attribute_41
++     23.2993*attribute_42
++     31.9738*attribute_43
++    -28.4779*attribute_44
++     24.6971*attribute_45
++     27.1052*attribute_46
++     13.0651*attribute_47
++     26.9727*attribute_48
++     -2.6069*attribute_49
++    -18.2214*attribute_50
++    -14.1905*attribute_51
++      3.4861*attribute_52
++    -31.6339*attribute_53
++     19.6694*attribute_54
++     14.6309*attribute_55
++    -14.2063*attribute_56
++    -33.8926*attribute_57
++      6.1245*attribute_58
++     10.9892*attribute_59
++     38.5888*attribute_60
++  -284.3087))
+
+Odds Ratios...
+Variable         O.R.
+       1 447020201.0665
+       2   15237.228 
+       3  450835.3328
+       4   31681.8984
+       5  195075.4142
+       6    2414.1254
+       7 4.829353999300244E10
+       8       0     
+       9     605.3134
+      10      35.5541
+      11     215.8121
+      12  332129.5513
+      13       0     
+      14       0     
+      15 1.00940129320326554E18
+      16       0.0612
+      17 1.2405814347758408E10
+      18   12708.364 
+      19       0.0071
+      20     599.1811
+      21 3.668432034486464E12
+      22 50294183.1047
+      23 2.9472993304939414E12
+      24       0     
+      25       0     
+      26 8237464149.3955
+      27 1.0695704057976234E24
+      28   23834.841 
+      29 2.169237914216449E14
+      30       0.0328
+      31 1.8729669078140797E13
+      32 1.7239646342746646E11
+      33     226.8235
+      34       0     
+      35      11.1307
+      36 3.374218573805735E11
+      37 2.902243548737563E15
+      38       1.4711
+      39 7856571.2642
+      40 9.394925551648919E17
+      41  373046.7787
+      42 1.3145292827032183E10
+      43 7.692348759894334E13
+      44       0     
+      45 5.31892993489205E10
+      46 5.91089771902256E11
+      47  472195.103 
+      48 5.177127866677588E11
+      49       0.0738
+      50       0     
+      51       0     
+      52      32.6593
+      53       0     
+      54 348597741.8666
+      55 2260004.6073
+      56       0     
+      57       0     
+      58     456.8936
+      59   59231.3991
+      60 5.7400346450579712E16
+
+
+Time taken to build model: 0.23 seconds
+Time taken to test model on training data: 1.55 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              208     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.0125
+Mean absolute error                      0.4868
+Root mean squared error                  0.6595
+Relative absolute error                 97.295  %
+Root relative squared error            131.4893 %
+Total Number of Instances              208     
+

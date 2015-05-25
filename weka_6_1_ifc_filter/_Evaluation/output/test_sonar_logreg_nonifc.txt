@@ -1,0 +1,157 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=   -0.0013;  df=60;  p=      0   
+
+SQL:
+
+1-1/(1+exp(   2634.7441*attribute_1
++    595.9679*attribute_2
++  -1680.3154*attribute_3
++    159.0762*attribute_4
++   -123.4203*attribute_5
++    228.0184*attribute_6
++   -520.2808*attribute_7
++   -284.8275*attribute_8
++    516.1108*attribute_9
++   -114.1656*attribute_10
++   -114.6477*attribute_11
++    997.1232*attribute_12
++   -557.3185*attribute_13
++    181.2365*attribute_14
++    191.3221*attribute_15
++   -355.514 *attribute_16
++   -339.5119*attribute_17
++    382.1857*attribute_18
++    -83.0858*attribute_19
++    448.3103*attribute_20
++   -552.6433*attribute_21
++    726.479 *attribute_22
++   -396.841 *attribute_23
++    463.5415*attribute_24
++   -203.4128*attribute_25
++   -148.0653*attribute_26
++    399.5796*attribute_27
++   -194.1603*attribute_28
++    -56.838 *attribute_29
++    675.1972*attribute_30
++   -920.1673*attribute_31
++    335.4531*attribute_32
++    306.1365*attribute_33
++   -468.5798*attribute_34
++    307.4252*attribute_35
++    -33.3953*attribute_36
++   -488.4415*attribute_37
++    159.4724*attribute_38
++    307.9477*attribute_39
++   -629.6794*attribute_40
++    359.559 *attribute_41
++   -230.6206*attribute_42
++    313.3657*attribute_43
++    155.3432*attribute_44
++   -150.8561*attribute_45
++    755.0432*attribute_46
++   -465.5961*attribute_47
++   1532.8117*attribute_48
++    252.8144*attribute_49
++  -7811.1851*attribute_50
++   3502.0263*attribute_51
++   5660.0508*attribute_52
++   1128.7101*attribute_53
++    878.8627*attribute_54
++   -582.594 *attribute_55
++  -2327.1831*attribute_56
++   -388.3249*attribute_57
++   4037.1063*attribute_58
++   1932.6181*attribute_59
++  -2297.7683*attribute_60
++  -553.0364))
+
+Odds Ratios...
+Variable         O.R.
+       1 Infinity
+       2 6.692189524883888E258
+       3       0     
+       4 1.2187911393178912E69
+       5       0     
+       6 1.0644994932909934E99
+       7       0     
+       8       0     
+       9 1.3933613070485928E224
+      10       0     
+      11       0     
+      12 Infinity
+      13       0     
+      14 5.128513117372297E78
+      15 1.2306194258764684E83
+      16       0     
+      17       0     
+      18 9.574722019830448E165
+      19       0     
+      20 4.9966633105772725E194
+      21       0     
+      22 Infinity
+      23       0     
+      24 2.0582941534312353E201
+      25       0     
+      26       0     
+      27 3.4295186948600215E173
+      28       0     
+      29       0     
+      30 1.715576045025492E293
+      31       0     
+      32 4.846528657097391E145
+      33 8.982785668396358E132
+      34       0     
+      35 3.2588602873675665E133
+      36       0     
+      37       0     
+      38 1.8112134271136546E69
+      39 5.495240797808148E133
+      40       0     
+      41 1.4272072090370324E156
+      42       0     
+      43 1.2388244249857414E136
+      44 2.915503519445439E67
+      45       0     
+      46 Infinity
+      47       0     
+      48 Infinity
+      49 6.25025027064761E109
+      50       0     
+      51 Infinity
+      52 Infinity
+      53 Infinity
+      54 Infinity
+      55       0     
+      56       0     
+      57       0     
+      58 Infinity
+      59 Infinity
+      60       0     
+
+
+Time taken to build model: 0.11 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0.0006 %
+Root relative squared error              0.0015 %
+Total Number of Instances              208     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4353
+Mean absolute error                      0.2816
+Root mean squared error                  0.5285
+Relative absolute error                 56.2781 %
+Root relative squared error            105.3698 %
+Total Number of Instances              208     
+

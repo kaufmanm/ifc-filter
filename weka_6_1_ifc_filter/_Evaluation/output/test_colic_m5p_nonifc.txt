@@ -1,0 +1,45 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+LM1 (368/80.582%)
+
+LM num: 1
+outcome=lived = 
+	0.0621 * rectal_temperature 
+	- 0.0024 * pulse 
+	+ 0.1699 * temp_extremities=normal,warm 
+	+ 0.1132 * mucous_membranes=pale pink,bright pink,normal pink 
+	+ 0.1498 * pain=depressed,intermittent mild pain,alert no pain 
+	+ 0.0992 * pain=intermittent mild pain,alert no pain 
+	+ 0.0737 * abdominal_distension=slight,none 
+	+ 0.0939 * nasogastric_tube=significant,slight 
+	+ 0.1188 * abdomen=firm feces in large intestine,other 
+	- 0.0073 * packed_cell_volume 
+	+ 0.0013 * total_protein 
+	- 1.7227
+
+Number of Rules : 1
+
+Time taken to build model: 0.3 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5922
+Mean absolute error                      0.3181
+Root mean squared error                  0.3918
+Relative absolute error                 67.2963 %
+Root relative squared error             80.5823 %
+Total Number of Instances              368     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4866
+Mean absolute error                      0.3458
+Root mean squared error                  0.4282
+Relative absolute error                 72.9873 %
+Root relative squared error             87.8816 %
+Total Number of Instances              368     
+

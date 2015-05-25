@@ -1,0 +1,48 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+Class=saab =
+
+      0.0169 * COMPACTNESS +
+     -0.0267 * CIRCULARITY +
+     -0.0066 * DISTANCE CIRCULARITY +
+      0.0162 * RADIUS RATIO +
+     -0.0433 * PR.AXIS ASPECT RATIO +
+      0.0117 * MAX.LENGTH ASPECT RATIO +
+     -0.0198 * SCATTER RATIO +
+     -0.0331 * ELONGATEDNESS +
+      0.1168 * PR.AXIS RECTANGULARITY +
+     -0.0164 * MAX.LENGTH RECTANGULARITY +
+     -0.0027 * SCALED VARIANCE_MAJOR +
+      0.0067 * SCALED RADIUS OF GYRATION +
+      0.0103 * SKEWNESS ABOUT_MINOR +
+     -0.0685 * KURTOSIS ABOUT_MINOR +
+      0.0431 * HOLLOWS RATIO +
+      8.7687
+
+Time taken to build model: 0.08 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5815
+Mean absolute error                      0.2832
+Root mean squared error                  0.3553
+Relative absolute error                 74.2423 %
+Root relative squared error             81.3559 %
+Total Number of Instances              846     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.553 
+Mean absolute error                      0.2917
+Root mean squared error                  0.3641
+Relative absolute error                 76.3729 %
+Root relative squared error             83.248  %
+Total Number of Instances              846     
+

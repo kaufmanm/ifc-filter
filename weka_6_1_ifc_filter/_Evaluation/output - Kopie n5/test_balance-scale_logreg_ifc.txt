@@ -1,0 +1,62 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation balance-scale-weka.filters.unsupervised.attribute.NominalToBinary-R5-weka.filters.unsupervised.attribute.Remove-R6-7-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute left-weight numeric
+@attribute left-distance numeric
+@attribute right-weight numeric
+@attribute right-distance numeric
+@attribute class=L numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=  -35.5202;  df=4;  p=      0   
+
+SQL:
+
+1-1/(1+exp(     91.3676*left-weight
++     91.3676*left-distance
++     93.0148*right-weight
++     93.0148*right-distance
++  -185.1965))
+
+Odds Ratios...
+Variable         O.R.
+       1 4.791378525529633E39
+       2 4.791378525529769E39
+       3 2.4878063619019357E40
+       4 2.4878063619019004E40
+
+
+Time taken to build model: 0.13 seconds
+Time taken to test model on training data: 0.09 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9823
+Mean absolute error                      0.0165
+Root mean squared error                  0.0933
+Relative absolute error                  3.3301 %
+Root relative squared error             18.7107 %
+Total Number of Instances              625     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.948 
+Mean absolute error                      0.0437
+Root mean squared error                  0.1588
+Relative absolute error                  8.7756 %
+Root relative squared error             31.8025 %
+Total Number of Instances              625     
+

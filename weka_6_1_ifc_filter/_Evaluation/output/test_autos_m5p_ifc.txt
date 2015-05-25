@@ -1,0 +1,270 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.trees.M5P 
+
+FilteredClassifier using weka.classifiers.trees.M5P -M 4.0 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'autos-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R26-weka.filters.unsupervised.attribute.Remove-R26-28,30-32-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute normalized-losses numeric
+@attribute make numeric
+@attribute fuel-type numeric
+@attribute aspiration numeric
+@attribute num-of-doors numeric
+@attribute body-style numeric
+@attribute drive-wheels numeric
+@attribute engine-location numeric
+@attribute wheel-base numeric
+@attribute length numeric
+@attribute width numeric
+@attribute height numeric
+@attribute curb-weight numeric
+@attribute engine-type numeric
+@attribute num-of-cylinders numeric
+@attribute engine-size numeric
+@attribute fuel-system numeric
+@attribute bore numeric
+@attribute stroke numeric
+@attribute compression-ratio numeric
+@attribute horsepower numeric
+@attribute peak-rpm numeric
+@attribute city-mpg numeric
+@attribute highway-mpg numeric
+@attribute price numeric
+@attribute symboling=0 numeric
+
+@data
+
+
+Classifier Model
+M5 pruned model tree:
+(using smoothed linear models)
+
+make <= 0.128 : LM1 (55/0%)
+make >  0.128 : 
+|   wheel-base <= 0.527 : 
+|   |   num-of-doors <= 0.419 : LM2 (34/0%)
+|   |   num-of-doors >  0.419 : LM3 (14/35.266%)
+|   wheel-base >  0.527 : 
+|   |   make <= 0.69 : 
+|   |   |   width <= 0.249 : LM4 (14/0%)
+|   |   |   width >  0.249 : 
+|   |   |   |   price <= 0.637 : 
+|   |   |   |   |   length <= 0.636 : 
+|   |   |   |   |   |   wheel-base <= 0.616 : LM5 (6/0%)
+|   |   |   |   |   |   wheel-base >  0.616 : 
+|   |   |   |   |   |   |   normalized-losses <= 0.455 : LM6 (5/0%)
+|   |   |   |   |   |   |   normalized-losses >  0.455 : 
+|   |   |   |   |   |   |   |   city-mpg <= 0.523 : 
+|   |   |   |   |   |   |   |   |   body-style <= 0.219 : LM7 (6/0%)
+|   |   |   |   |   |   |   |   |   body-style >  0.219 : LM8 (5/85.278%)
+|   |   |   |   |   |   |   |   city-mpg >  0.523 : LM9 (7/0%)
+|   |   |   |   |   length >  0.636 : LM10 (9/0%)
+|   |   |   |   price >  0.637 : LM11 (11/0%)
+|   |   make >  0.69 : 
+|   |   |   bore <= 0.547 : LM12 (13/77.956%)
+|   |   |   bore >  0.547 : LM13 (26/0%)
+
+LM num: 1
+symboling=0 = 
+	0.146 * make 
+	+ 0.1126 * num-of-doors 
+	+ 0.1167 * wheel-base 
+	- 0.1653 * length 
+	+ 0.1276 * width 
+	+ 0.0934 * city-mpg 
+	+ 0.0937 * price 
+	- 0.1636
+
+LM num: 2
+symboling=0 = 
+	0.1999 * make 
+	+ 0.2555 * num-of-doors 
+	+ 0.0584 * body-style 
+	+ 0.2161 * wheel-base 
+	- 0.3391 * length 
+	+ 0.2051 * width 
+	+ 0.1341 * bore 
+	+ 0.0439 * horsepower 
+	+ 0.1775 * city-mpg 
+	+ 0.1489 * price 
+	- 0.3741
+
+LM num: 3
+symboling=0 = 
+	-1.9791 * normalized-losses 
+	+ 0.1999 * make 
+	+ 0.3176 * num-of-doors 
+	+ 0.0584 * body-style 
+	+ 0.2161 * wheel-base 
+	- 0.3391 * length 
+	+ 0.2051 * width 
+	+ 0.1341 * bore 
+	+ 0.5547 * horsepower 
+	+ 0.1775 * city-mpg 
+	+ 0.1489 * price 
+	+ 0.704
+
+LM num: 4
+symboling=0 = 
+	0.2186 * make 
+	+ 0.2049 * num-of-doors 
+	+ 0.2829 * body-style 
+	+ 0.1392 * wheel-base 
+	- 0.9721 * length 
+	+ 0.6269 * width 
+	+ 0.2083 * bore 
+	+ 0.2111 * city-mpg 
+	+ 0.6552 * price 
+	- 0.392
+
+LM num: 5
+symboling=0 = 
+	0.3046 * normalized-losses 
+	+ 0.2186 * make 
+	+ 0.2049 * num-of-doors 
+	+ 0.4858 * body-style 
+	- 1.5231 * wheel-base 
+	- 1.0327 * length 
+	+ 0.425 * width 
+	+ 0.2083 * bore 
+	+ 0.6565 * city-mpg 
+	+ 0.6721 * price 
+	+ 0.4923
+
+LM num: 6
+symboling=0 = 
+	0.4092 * normalized-losses 
+	+ 0.2186 * make 
+	+ 0.2049 * num-of-doors 
+	+ 0.5263 * body-style 
+	- 1.0777 * wheel-base 
+	- 1.0327 * length 
+	+ 0.425 * width 
+	+ 0.2083 * bore 
+	+ 0.836 * city-mpg 
+	+ 0.6721 * price 
+	- 0.0129
+
+LM num: 7
+symboling=0 = 
+	0.368 * normalized-losses 
+	+ 0.2186 * make 
+	+ 0.2049 * num-of-doors 
+	+ 0.561 * body-style 
+	- 1.0777 * wheel-base 
+	- 1.0327 * length 
+	+ 0.425 * width 
+	+ 0.2083 * bore 
+	+ 0.8433 * city-mpg 
+	+ 0.6721 * price 
+	+ 0.008
+
+LM num: 8
+symboling=0 = 
+	0.368 * normalized-losses 
+	+ 0.2186 * make 
+	+ 0.2049 * num-of-doors 
+	+ 0.5626 * body-style 
+	- 1.0777 * wheel-base 
+	- 1.0327 * length 
+	+ 0.425 * width 
+	+ 0.2083 * bore 
+	+ 0.8433 * city-mpg 
+	+ 0.6721 * price 
+	+ 0.0143
+
+LM num: 9
+symboling=0 = 
+	0.368 * normalized-losses 
+	+ 0.2186 * make 
+	+ 0.2049 * num-of-doors 
+	+ 0.538 * body-style 
+	- 1.0777 * wheel-base 
+	- 1.0327 * length 
+	+ 0.425 * width 
+	+ 0.2083 * bore 
+	+ 0.8575 * city-mpg 
+	+ 0.6721 * price 
+	+ 0.0303
+
+LM num: 10
+symboling=0 = 
+	0.4086 * normalized-losses 
+	+ 0.2186 * make 
+	+ 0.2049 * num-of-doors 
+	+ 0.4119 * body-style 
+	- 0.5274 * wheel-base 
+	- 1.1367 * length 
+	+ 0.425 * width 
+	+ 0.2083 * bore 
+	+ 0.8881 * city-mpg 
+	+ 0.6721 * price 
+	- 0.3444
+
+LM num: 11
+symboling=0 = 
+	0.3664 * normalized-losses 
+	+ 0.2186 * make 
+	+ 0.2049 * num-of-doors 
+	+ 0.278 * body-style 
+	- 1.2197 * wheel-base 
+	- 1.1219 * length 
+	+ 0.425 * width 
+	+ 0.2083 * bore 
+	+ 0.5526 * city-mpg 
+	+ 0.9199 * price 
+	+ 0.4028
+
+LM num: 12
+symboling=0 = 
+	0.2552 * make 
+	+ 0.3915 * num-of-doors 
+	+ 0.1036 * body-style 
+	+ 0.1392 * wheel-base 
+	- 0.5943 * length 
+	+ 0.3121 * width 
+	+ 0.4819 * fuel-system 
+	+ 0.2688 * bore 
+	+ 0.2543 * city-mpg 
+	+ 0.3173 * price 
+	- 0.3053
+
+LM num: 13
+symboling=0 = 
+	0.2552 * make 
+	+ 0.3456 * num-of-doors 
+	+ 0.1036 * body-style 
+	+ 0.1392 * wheel-base 
+	- 0.5943 * length 
+	+ 0.3121 * width 
+	+ 0.2688 * bore 
+	+ 0.2543 * city-mpg 
+	+ 0.3173 * price 
+	+ 0.0737
+
+Number of Rules : 13
+
+Time taken to build model: 0.41 seconds
+Time taken to test model on training data: 0.45 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9203
+Mean absolute error                      0.114 
+Root mean squared error                  0.1904
+Relative absolute error                 25.9176 %
+Root relative squared error             40.5878 %
+Total Number of Instances              205     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7231
+Mean absolute error                      0.2002
+Root mean squared error                  0.3243
+Relative absolute error                 45.2577 %
+Root relative squared error             68.7471 %
+Total Number of Instances              205     
+

@@ -1,0 +1,72 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation 'vehicle-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R19,21-22-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5'
+
+@attribute COMPACTNESS numeric
+@attribute CIRCULARITY numeric
+@attribute 'DISTANCE CIRCULARITY' numeric
+@attribute 'RADIUS RATIO' numeric
+@attribute 'PR.AXIS ASPECT RATIO' numeric
+@attribute 'MAX.LENGTH ASPECT RATIO' numeric
+@attribute 'SCATTER RATIO' numeric
+@attribute ELONGATEDNESS numeric
+@attribute 'PR.AXIS RECTANGULARITY' numeric
+@attribute 'MAX.LENGTH RECTANGULARITY' numeric
+@attribute 'SCALED VARIANCE_MAJOR' numeric
+@attribute 'SCALED VARIANCE_MINOR' numeric
+@attribute 'SCALED RADIUS OF GYRATION' numeric
+@attribute 'SKEWNESS ABOUT_MAJOR' numeric
+@attribute 'SKEWNESS ABOUT_MINOR' numeric
+@attribute 'KURTOSIS ABOUT_MAJOR' numeric
+@attribute 'KURTOSIS ABOUT_MINOR' numeric
+@attribute 'HOLLOWS RATIO' numeric
+@attribute Class=saab numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+Class=saab =
+
+      0.3332 * COMPACTNESS +
+      0.254  * DISTANCE CIRCULARITY +
+      0.5147 * PR.AXIS ASPECT RATIO +
+      0.4774 * ELONGATEDNESS +
+     -0.7026 * PR.AXIS RECTANGULARITY +
+      0.374  * MAX.LENGTH RECTANGULARITY +
+      0.2671 * SCALED VARIANCE_MAJOR +
+      0.4518 * SKEWNESS ABOUT_MINOR +
+      0.2986 * KURTOSIS ABOUT_MAJOR +
+      0.1971 * HOLLOWS RATIO +
+     -0.9236
+
+Time taken to build model: 0.28 seconds
+Time taken to test model on training data: 0.91 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5175
+Mean absolute error                      0.2959
+Root mean squared error                  0.3746
+Relative absolute error                 77.5756 %
+Root relative squared error             85.7854 %
+Total Number of Instances              846     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.3728
+Mean absolute error                      0.3235
+Root mean squared error                  0.4084
+Relative absolute error                 84.687  %
+Root relative squared error             93.3793 %
+Total Number of Instances              846     
+

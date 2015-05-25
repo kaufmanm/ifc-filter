@@ -1,0 +1,93 @@
+
+SMOreg
+
+weights (not support vectors):
+ +       0.2803 * (normalized) attribute_1
+ +       0.1049 * (normalized) attribute_2
+ -       0.6263 * (normalized) attribute_3
+ +       0.5898 * (normalized) attribute_4
+ +       0.1615 * (normalized) attribute_5
+ +       0.3948 * (normalized) attribute_6
+ -       0.3918 * (normalized) attribute_7
+ -       0.4076 * (normalized) attribute_8
+ +       0.1126 * (normalized) attribute_9
+ +       0.0948 * (normalized) attribute_10
+ +       0.5355 * (normalized) attribute_11
+ +       0.627  * (normalized) attribute_12
+ +       0.3051 * (normalized) attribute_13
+ -       0.3263 * (normalized) attribute_14
+ +       0.1889 * (normalized) attribute_15
+ -       0.3262 * (normalized) attribute_16
+ -       0.3952 * (normalized) attribute_17
+ +       0.4308 * (normalized) attribute_18
+ -       0.1559 * (normalized) attribute_19
+ +       0.1571 * (normalized) attribute_20
+ -       0.002  * (normalized) attribute_21
+ +       0.1174 * (normalized) attribute_22
+ +       0.0895 * (normalized) attribute_23
+ +       0.1424 * (normalized) attribute_24
+ -       0.1354 * (normalized) attribute_25
+ +       0.0213 * (normalized) attribute_26
+ +       0.2079 * (normalized) attribute_27
+ +       0.1212 * (normalized) attribute_28
+ -       0.4118 * (normalized) attribute_29
+ +       0.9029 * (normalized) attribute_30
+ -       0.8234 * (normalized) attribute_31
+ +       0.1789 * (normalized) attribute_32
+ -       0.1648 * (normalized) attribute_33
+ -       0.089  * (normalized) attribute_34
+ +       0.5915 * (normalized) attribute_35
+ -       0.7158 * (normalized) attribute_36
+ -       0.2678 * (normalized) attribute_37
+ +       0.5246 * (normalized) attribute_38
+ +       0.2287 * (normalized) attribute_39
+ -       0.4154 * (normalized) attribute_40
+ +       0.3101 * (normalized) attribute_41
+ -       0.3545 * (normalized) attribute_42
+ +       0.0953 * (normalized) attribute_43
+ +       0.1862 * (normalized) attribute_44
+ -       0.0039 * (normalized) attribute_45
+ +       0.117  * (normalized) attribute_46
+ +       0.5095 * (normalized) attribute_47
+ -       0.1014 * (normalized) attribute_48
+ +       0.8712 * (normalized) attribute_49
+ -       0.5011 * (normalized) attribute_50
+ +       0.1649 * (normalized) attribute_51
+ +       0.3289 * (normalized) attribute_52
+ -       0.0319 * (normalized) attribute_53
+ +       0.1812 * (normalized) attribute_54
+ -       0.4508 * (normalized) attribute_55
+ +       0.0035 * (normalized) attribute_56
+ -       0.1747 * (normalized) attribute_57
+ +       0.3156 * (normalized) attribute_58
+ +       0.4018 * (normalized) attribute_59
+ -       0.3651 * (normalized) attribute_60
+ -       0.3257
+
+
+
+Number of kernel evaluations: 21736 (98.737% cached)
+
+Time taken to build model: 0.16 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.74  
+Mean absolute error                      0.2501
+Root mean squared error                  0.3382
+Relative absolute error                 50.2454 %
+Root relative squared error             67.7942 %
+Total Number of Instances              208     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4347
+Mean absolute error                      0.4188
+Root mean squared error                  0.5209
+Relative absolute error                 83.709  %
+Root relative squared error            103.8572 %
+Total Number of Instances              208     
+

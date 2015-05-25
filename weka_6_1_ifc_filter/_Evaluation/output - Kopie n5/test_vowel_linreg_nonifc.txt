@@ -1,0 +1,41 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+Class=hed =
+
+     -0.0501 * Feature 0 +
+     -0.0566 * Feature 1 +
+     -0.0486 * Feature 2 +
+     -0.0692 * Feature 3 +
+     -0.0507 * Feature 5 +
+     -0.0781 * Feature 6 +
+      0.0454 * Feature 7 +
+     -0.0302 * Feature 8 +
+      0.0551
+
+Time taken to build model: 0.06 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.1809
+Mean absolute error                      0.1612
+Root mean squared error                  0.2827
+Relative absolute error                 97.5536 %
+Root relative squared error             98.351  %
+Total Number of Instances              990     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.1224
+Mean absolute error                      0.1636
+Root mean squared error                  0.2859
+Relative absolute error                 98.8675 %
+Root relative squared error             99.3708 %
+Total Number of Instances              990     
+

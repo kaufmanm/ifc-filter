@@ -1,0 +1,166 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'splice-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R1,62-63-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Resample-S1-Z22.0-no-replacement-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute attribute_1 numeric
+@attribute attribute_2 numeric
+@attribute attribute_3 numeric
+@attribute attribute_4 numeric
+@attribute attribute_5 numeric
+@attribute attribute_6 numeric
+@attribute attribute_7 numeric
+@attribute attribute_8 numeric
+@attribute attribute_9 numeric
+@attribute attribute_10 numeric
+@attribute attribute_11 numeric
+@attribute attribute_12 numeric
+@attribute attribute_13 numeric
+@attribute attribute_14 numeric
+@attribute attribute_15 numeric
+@attribute attribute_16 numeric
+@attribute attribute_17 numeric
+@attribute attribute_18 numeric
+@attribute attribute_19 numeric
+@attribute attribute_20 numeric
+@attribute attribute_21 numeric
+@attribute attribute_22 numeric
+@attribute attribute_23 numeric
+@attribute attribute_24 numeric
+@attribute attribute_25 numeric
+@attribute attribute_26 numeric
+@attribute attribute_27 numeric
+@attribute attribute_28 numeric
+@attribute attribute_29 numeric
+@attribute attribute_30 numeric
+@attribute attribute_31 numeric
+@attribute attribute_32 numeric
+@attribute attribute_33 numeric
+@attribute attribute_34 numeric
+@attribute attribute_35 numeric
+@attribute attribute_36 numeric
+@attribute attribute_37 numeric
+@attribute attribute_38 numeric
+@attribute attribute_39 numeric
+@attribute attribute_40 numeric
+@attribute attribute_41 numeric
+@attribute attribute_42 numeric
+@attribute attribute_43 numeric
+@attribute attribute_44 numeric
+@attribute attribute_45 numeric
+@attribute attribute_46 numeric
+@attribute attribute_47 numeric
+@attribute attribute_48 numeric
+@attribute attribute_49 numeric
+@attribute attribute_50 numeric
+@attribute attribute_51 numeric
+@attribute attribute_52 numeric
+@attribute attribute_53 numeric
+@attribute attribute_54 numeric
+@attribute attribute_55 numeric
+@attribute attribute_56 numeric
+@attribute attribute_57 numeric
+@attribute attribute_58 numeric
+@attribute attribute_59 numeric
+@attribute attribute_60 numeric
+@attribute Class=N numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ +       0.1194 * (normalized) attribute_1
+ -       0.0097 * (normalized) attribute_2
+ +       0.0167 * (normalized) attribute_3
+ +       0.001  * (normalized) attribute_4
+ -       0.0066 * (normalized) attribute_5
+ -       0.0016 * (normalized) attribute_6
+ +       0.0122 * (normalized) attribute_7
+ -       0.0039 * (normalized) attribute_8
+ -       0.0034 * (normalized) attribute_9
+ +       0.0248 * (normalized) attribute_10
+ +       0.0085 * (normalized) attribute_11
+ -       0.0114 * (normalized) attribute_12
+ -       0.0105 * (normalized) attribute_13
+ +       0.0047 * (normalized) attribute_14
+ +       0.0278 * (normalized) attribute_15
+ +       0.0044 * (normalized) attribute_16
+ +       0.0305 * (normalized) attribute_17
+ +       0.0225 * (normalized) attribute_18
+ +       0.0101 * (normalized) attribute_19
+ +       0.0285 * (normalized) attribute_20
+ +       0.0176 * (normalized) attribute_21
+ +       0.0147 * (normalized) attribute_22
+ +       0.0164 * (normalized) attribute_23
+ +       0.0027 * (normalized) attribute_24
+ +       0.0077 * (normalized) attribute_25
+ +       0.0117 * (normalized) attribute_26
+ -       0.0028 * (normalized) attribute_27
+ +       0.0646 * (normalized) attribute_28
+ +       0.078  * (normalized) attribute_29
+ +       0.8278 * (normalized) attribute_30
+ +       0.0588 * (normalized) attribute_31
+ +       0.0529 * (normalized) attribute_32
+ +       0.0084 * (normalized) attribute_33
+ +       0.0312 * (normalized) attribute_34
+ +       0.05   * (normalized) attribute_35
+ +       0.0316 * (normalized) attribute_36
+ -       0.0149 * (normalized) attribute_37
+ -       0.0319 * (normalized) attribute_38
+ +       0.0135 * (normalized) attribute_39
+ +       0.0109 * (normalized) attribute_40
+ +       0.0262 * (normalized) attribute_41
+ -       0.001  * (normalized) attribute_42
+ +       0.0135 * (normalized) attribute_43
+ +       0.0084 * (normalized) attribute_44
+ +       0.0196 * (normalized) attribute_45
+ +       0.0185 * (normalized) attribute_46
+ -       0.0036 * (normalized) attribute_47
+ -       0.0089 * (normalized) attribute_48
+ +       0.0078 * (normalized) attribute_49
+ +       0.0141 * (normalized) attribute_50
+ -       0.0021 * (normalized) attribute_51
+ -       0.0155 * (normalized) attribute_52
+ -       0.006  * (normalized) attribute_53
+ -       0.0054 * (normalized) attribute_54
+ -       0.0021 * (normalized) attribute_55
+ +       0.0201 * (normalized) attribute_56
+ +       0.0082 * (normalized) attribute_57
+ -       0.0094 * (normalized) attribute_58
+ -       0.0056 * (normalized) attribute_59
+ +       0.0149 * (normalized) attribute_60
+ -       0.3366
+
+
+
+Number of kernel evaluations: 246051 (99.699% cached)
+
+Time taken to build model: 5.34 seconds
+Time taken to test model on training data: 4.67 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.736 
+Mean absolute error                      0.1783
+Root mean squared error                  0.3555
+Relative absolute error                 35.8262 %
+Root relative squared error             71.2708 %
+Total Number of Instances              701     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7163
+Mean absolute error                      0.1975
+Root mean squared error                  0.3636
+Relative absolute error                 39.6132 %
+Root relative squared error             72.7511 %
+Total Number of Instances              701     
+

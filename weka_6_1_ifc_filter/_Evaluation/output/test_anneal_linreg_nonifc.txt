@@ -1,0 +1,75 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+class=2 =
+
+      0.8326 * family=ZS,ZF,ZA,ZM,ZH,GS,GK,GB,? +
+     -0.032  * family=GS,GK,GB,? +
+     -0.032  * family=GK,GB,? +
+     -0.032  * family=GB,? +
+     -0.032  * family=? +
+      0.7194 * steel=W,A,?,U,R,V,M +
+     -0.2291 * steel=A,?,U,R,V,M +
+      0.0639 * steel=?,U,R,V,M +
+     -0.0444 * steel=U,R,V,M +
+     -0.0444 * steel=R,V,M +
+      0.1338 * steel=V,M +
+      0.6623 * steel=M +
+      0.0023 * carbon +
+      0.0071 * hardness +
+      0.1449 * temper_rolling=? +
+     -0.0652 * condition=?,X,S +
+      0.125  * condition=X,S +
+      0.125  * condition=S +
+      0.1444 * formability=5,?,4,2,3 +
+     -0.195  * formability=?,4,2,3 +
+      0.1196 * formability=4,2,3 +
+      0.1196 * formability=2,3 +
+      0.0564 * formability=3 +
+      0.0004 * strength +
+      0.1015 * non-ageing=? +
+      0.1039 * surface-finish=M,P +
+     -0.0265 * surface-quality=F,D,G,? +
+     -0.0769 * surface-quality=D,G,? +
+      0.2158 * surface-quality=G,? +
+      0.7484 * surface-quality=? +
+      0.9916 * enamelability=?,3,4,5,2 +
+     -0.0423 * bt=Y +
+      0.0609 * bw/me=B,? +
+     -0.119  * chrom=? +
+     -0.1225 * phos=? +
+      0.5962 * exptl=? +
+     -0.1177 * ferro=? +
+      0.1239 * blue/bright/varn/clean=R,B +
+      0.1239 * blue/bright/varn/clean=B +
+      0.0194 * shape=SHEET +
+      0.0368 * oil=? +
+     -0.0464 * bore=0 +
+     -3.0808
+
+Time taken to build model: 0.39 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.923 
+Mean absolute error                      0.0646
+Root mean squared error                  0.1204
+Relative absolute error                 32.9915 %
+Root relative squared error             38.4733 %
+Total Number of Instances              691     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9011
+Mean absolute error                      0.071 
+Root mean squared error                  0.1362
+Relative absolute error                 36.2053 %
+Root relative squared error             43.4655 %
+Total Number of Instances              691     
+

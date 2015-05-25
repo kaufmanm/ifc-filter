@@ -1,0 +1,98 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LogisticForIFC 
+
+FilteredClassifier using weka.classifiers.functions.LogisticForIFC  on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'letter-weka.filters.unsupervised.instance.Resample-S1-Z11.0-no-replacement-weka.filters.unsupervised.attribute.NominalToBinary-A-Rlast-weka.filters.unsupervised.attribute.Remove-R17-26,28-42-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute x-box numeric
+@attribute y-box numeric
+@attribute width numeric
+@attribute high numeric
+@attribute onpix numeric
+@attribute x-bar numeric
+@attribute y-bar numeric
+@attribute x2bar numeric
+@attribute y2bar numeric
+@attribute xybar numeric
+@attribute x2ybr numeric
+@attribute xy2br numeric
+@attribute x-ege numeric
+@attribute xegvy numeric
+@attribute y-ege numeric
+@attribute yegvx numeric
+@attribute class=K numeric
+
+@data
+
+
+Classifier Model
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -296.0836;  df=16;  p=      0   
+
+SQL:
+
+1-1/(1+exp(     -3.8186*x-box
++      1.915 *y-box
++      3.6327*width
++      2.6058*high
++      2.2038*onpix
++      4.5292*x-bar
++      6.0491*y-bar
++      8.0735*x2bar
++      3.3938*y2bar
++      3.929 *xybar
++      3.4546*x2ybr
++      4.0061*xy2br
++      5.3971*x-ege
++      3.605 *xegvy
++      2.3817*y-ege
++      3.9506*yegvx
++   -31.3766))
+
+Odds Ratios...
+Variable         O.R.
+       1       0.022 
+       2       6.7871
+       3      37.8151
+       4      13.5414
+       5       9.0592
+       6      92.6868
+       7     423.7125
+       8    3208.3765
+       9      29.7783
+      10      50.8584
+      11      31.6471
+      12      54.9343
+      13     220.7561
+      14      36.7808
+      15      10.8235
+      16      51.9662
+
+
+Time taken to build model: 0.83 seconds
+Time taken to test model on training data: 2.42 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7633
+Mean absolute error                      0.0356
+Root mean squared error                  0.1314
+Relative absolute error                 43.0867 %
+Root relative squared error             64.6297 %
+Total Number of Instances             2200     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6833
+Mean absolute error                      0.0408
+Root mean squared error                  0.1486
+Relative absolute error                 49.3803 %
+Root relative squared error             73.0472 %
+Total Number of Instances             2200     
+

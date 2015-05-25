@@ -1,0 +1,54 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation balance-scale-weka.filters.unsupervised.attribute.NominalToBinary-R5-weka.filters.unsupervised.attribute.Remove-R6-7-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary
+
+@attribute left-weight numeric
+@attribute left-distance numeric
+@attribute right-weight numeric
+@attribute right-distance numeric
+@attribute class=L numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ +       0.5658 * (normalized) left-weight
+ +       0.5658 * (normalized) left-distance
+ +       0.5793 * (normalized) right-weight
+ +       0.5764 * (normalized) right-distance
+ -       0.702 
+
+
+
+Number of kernel evaluations: 195625 (92.078% cached)
+
+Time taken to build model: 0.33 seconds
+Time taken to test model on training data: 0.11 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8592
+Mean absolute error                      0.2135
+Root mean squared error                  0.2729
+Relative absolute error                 42.9649 %
+Root relative squared error             54.7435 %
+Total Number of Instances              625     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8382
+Mean absolute error                      0.2248
+Root mean squared error                  0.2869
+Relative absolute error                 45.1555 %
+Root relative squared error             57.4662 %
+Total Number of Instances              625     
+

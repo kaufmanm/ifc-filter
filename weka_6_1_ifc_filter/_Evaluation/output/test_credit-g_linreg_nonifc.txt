@@ -1,0 +1,57 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+class=good =
+
+      0.0754 * checking_status=0<=X<200,>=200,no checking +
+      0.2445 * checking_status=>=200,no checking +
+     -0.0051 * duration +
+      0.1253 * credit_history=existing paid,delayed previously,critical/other existing credit +
+      0.1601 * credit_history=delayed previously,critical/other existing credit +
+      0.3285 * purpose=other,furniture/equipment,vacation,repairs,business,domestic appliance,radio/tv,used car,retraining +
+     -0.1615 * purpose=furniture/equipment,vacation,repairs,business,domestic appliance,radio/tv,used car,retraining +
+      0.1243 * purpose=used car,retraining +
+      0      * credit_amount +
+      0.1021 * savings_status=no known savings,>=1000 +
+      0.0929 * employment=1<=X<4,>=7,4<=X<7 +
+      0.0922 * employment=4<=X<7 +
+     -0.0282 * installment_commitment +
+      0.1925 * other_parties=guarantor +
+      0.0855 * property_magnitude=car,life insurance,real estate +
+      0.0612 * property_magnitude=real estate +
+      0.0721 * other_payment_plans=stores,none +
+     -0.0963 * housing=rent,own +
+      0.0971 * housing=own +
+     -0.0626 * existing_credits +
+      0.181  * job=unemp/unskilled non res,skilled,unskilled resident +
+     -0.1548 * job=skilled,unskilled resident +
+      0.0771 * own_telephone=yes +
+      0.2581 * foreign_worker=no +
+      0.2171
+
+Time taken to build model: 0.22 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5788
+Mean absolute error                      0.3118
+Root mean squared error                  0.3779
+Relative absolute error                 72.6102 %
+Root relative squared error             81.5492 %
+Total Number of Instances              660     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.472 
+Mean absolute error                      0.3389
+Root mean squared error                  0.4122
+Relative absolute error                 78.8612 %
+Root relative squared error             88.9002 %
+Total Number of Instances              660     
+

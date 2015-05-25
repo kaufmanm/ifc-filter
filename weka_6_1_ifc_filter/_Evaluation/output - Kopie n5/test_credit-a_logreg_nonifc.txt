@@ -1,0 +1,123 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square= -392.3716;  df=43;  p=      0   
+
+SQL:
+
+1-1/(1+exp(      0.0848*A1
++      0.0073*A2
++     -0.0208*A3
++      0.1547*case when A4 in('u') then 1 else 0 end
++     -0.2627*case when A4 in('y') then 1 else 0 end
++      6.6564*case when A4 in('l') then 1 else 0 end
++      0     *case when A4 in('t') then 1 else 0 end
++      0.1547*case when A5 in('g') then 1 else 0 end
++     -0.2627*case when A5 in('p') then 1 else 0 end
++      6.6564*case when A5 in('gg') then 1 else 0 end
++      0.1367*case when A6 in('c') then 1 else 0 end
++     -0.0027*case when A6 in('d') then 1 else 0 end
++      1.3253*case when A6 in('cc') then 1 else 0 end
++     -0.3301*case when A6 in('i') then 1 else 0 end
++     -4.2565*case when A6 in('j') then 1 else 0 end
++     -0.4158*case when A6 in('k') then 1 else 0 end
++      0.1086*case when A6 in('m') then 1 else 0 end
++     -1.7855*case when A6 in('r') then 1 else 0 end
++      0.311 *case when A6 in('q') then 1 else 0 end
++      0.7923*case when A6 in('w') then 1 else 0 end
++      2.6625*case when A6 in('x') then 1 else 0 end
++      1.8549*case when A6 in('e') then 1 else 0 end
++     -0.1761*case when A6 in('aa') then 1 else 0 end
++     -3.7805*case when A6 in('ff') then 1 else 0 end
++     -0.2232*case when A7 in('v') then 1 else 0 end
++      0.0645*case when A7 in('h') then 1 else 0 end
++     -0.642 *case when A7 in('bb') then 1 else 0 end
++      3.8769*case when A7 in('j') then 1 else 0 end
++      2.5247*case when A7 in('n') then 1 else 0 end
++     -3.5587*case when A7 in('z') then 1 else 0 end
++     -1.4378*case when A7 in('dd') then 1 else 0 end
++      1.7709*case when A7 in('ff') then 1 else 0 end
++    -15.9837*case when A7 in('o') then 1 else 0 end
++      0.0624*A8
++     -3.7573*A9
++     -0.5943*A10
++      0.1242*A11
++      0.2576*A12
++     -0.222 *case when A13 in('g') then 1 else 0 end
++      3.2117*case when A13 in('p') then 1 else 0 end
++     -0.2357*case when A13 in('s') then 1 else 0 end
++     -0.0025*A14
++      0.0006*A15
++     1.1043))
+
+Odds Ratios...
+Variable         O.R.
+       1       1.0885
+       2       1.0074
+       3       0.9794
+       4       1.1674
+       5       0.769 
+       6     777.713 
+       7       1     
+       8       1.1674
+       9       0.769 
+      10     777.713 
+      11       1.1465
+      12       0.9973
+      13       3.7634
+      14       0.7188
+      15       0.0142
+      16       0.6598
+      17       1.1147
+      18       0.1677
+      19       1.3648
+      20       2.2084
+      21      14.3315
+      22       6.3909
+      23       0.8385
+      24       0.0228
+      25       0.7999
+      26       1.0667
+      27       0.5262
+      28      48.2727
+      29      12.4875
+      30       0.0285
+      31       0.2374
+      32       5.8763
+      33       0     
+      34       1.0644
+      35       0.0233
+      36       0.5519
+      37       1.1322
+      38       1.2938
+      39       0.8009
+      40      24.8202
+      41       0.79  
+      42       0.9975
+      43       1.0006
+
+
+Time taken to build model: 0.09 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.8105
+Mean absolute error                      0.1717
+Root mean squared error                  0.2911
+Relative absolute error                 34.7655 %
+Root relative squared error             58.5748 %
+Total Number of Instances              690     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.7532
+Mean absolute error                      0.1917
+Root mean squared error                  0.3283
+Relative absolute error                 38.7207 %
+Root relative squared error             65.8883 %
+Total Number of Instances              690     
+

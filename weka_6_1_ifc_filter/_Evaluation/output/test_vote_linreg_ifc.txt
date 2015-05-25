@@ -1,0 +1,69 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.LinearRegression 
+
+FilteredClassifier using weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 5 -W false -P 4 -T binary -N 5
+
+Filtered Header
+@relation vote-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-R17-weka.filters.supervised.attribute.IFC_Filter-C5-Wfalse-P4-Tbinary-N5
+
+@attribute handicapped-infants numeric
+@attribute water-project-cost-sharing numeric
+@attribute adoption-of-the-budget-resolution numeric
+@attribute physician-fee-freeze numeric
+@attribute el-salvador-aid numeric
+@attribute religious-groups-in-schools numeric
+@attribute anti-satellite-test-ban numeric
+@attribute aid-to-nicaraguan-contras numeric
+@attribute mx-missile numeric
+@attribute immigration numeric
+@attribute synfuels-corporation-cutback numeric
+@attribute education-spending numeric
+@attribute superfund-right-to-sue numeric
+@attribute crime numeric
+@attribute duty-free-exports numeric
+@attribute export-administration-act-south-africa numeric
+@attribute Class numeric
+
+@data
+
+
+Classifier Model
+
+Linear Regression Model
+
+Class =
+
+      0.2013 * adoption-of-the-budget-resolution +
+      0.7696 * physician-fee-freeze +
+      0.0941 * el-salvador-aid +
+     -0.1028 * anti-satellite-test-ban +
+     -0.1129 * aid-to-nicaraguan-contras +
+      0.1001 * mx-missile +
+      0.5654 * immigration +
+      0.2839 * synfuels-corporation-cutback +
+      0.0767 * education-spending +
+     -0.4218
+
+Time taken to build model: 0.11 seconds
+Time taken to test model on training data: 0.45 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9311
+Mean absolute error                      0.0826
+Root mean squared error                  0.1789
+Relative absolute error                 17.4236 %
+Root relative squared error             36.7524 %
+Total Number of Instances              435     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9244
+Mean absolute error                      0.085 
+Root mean squared error                  0.1868
+Relative absolute error                 17.8947 %
+Root relative squared error             38.2851 %
+Total Number of Instances              435     
+

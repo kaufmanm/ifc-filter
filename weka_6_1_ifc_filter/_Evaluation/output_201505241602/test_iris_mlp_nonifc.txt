@@ -1,0 +1,48 @@
+
+Linear Node 0
+    Inputs    Weights
+    Threshold    0.9668547548331169
+    Node 1    -2.7599867599869263
+    Node 2    0.8161551965515742
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    4.08169068671601
+    Attrib sepallength    1.09932428765482
+    Attrib sepalwidth    -2.6640141040691305
+    Attrib petallength    4.726425579741881
+    Attrib petalwidth    4.116532350899732
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    2.5433073484855675
+    Attrib sepallength    0.9130713514440832
+    Attrib sepalwidth    -1.587334834880881
+    Attrib petallength    2.596294740899084
+    Attrib petalwidth    2.208551954746512
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 0.11 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  1     
+Mean absolute error                      0.0064
+Root mean squared error                  0.0077
+Relative absolute error                  1.4439 %
+Root relative squared error              1.6426 %
+Total Number of Instances              150     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9991
+Mean absolute error                      0.0068
+Root mean squared error                  0.0206
+Relative absolute error                  1.5083 %
+Root relative squared error              4.3337 %
+Total Number of Instances              150     
+

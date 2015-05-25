@@ -1,0 +1,184 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.SMOreg 
+
+FilteredClassifier using weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -L 0.0010 -W 1 -P 1.0E-12 -T 0.0010 -V" -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0" on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'audiology-weka.filters.unsupervised.attribute.NominalToBinary-R70-weka.filters.unsupervised.attribute.NominalToBinary-R70-weka.filters.unsupervised.attribute.Remove-R70-71,73-93-weka.filters.unsupervised.attribute.AddValues-C4-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C5-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C6-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C8-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C59-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C60-L\'?\'-weka.filters.unsupervised.attribute.AddValues-C64-L\'?\'-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute age_gt_60 numeric
+@attribute air numeric
+@attribute airBoneGap numeric
+@attribute ar_c numeric
+@attribute ar_u numeric
+@attribute bone numeric
+@attribute boneAbnormal numeric
+@attribute bser numeric
+@attribute history_buzzing numeric
+@attribute history_dizziness numeric
+@attribute history_fluctuating numeric
+@attribute history_fullness numeric
+@attribute history_heredity numeric
+@attribute history_nausea numeric
+@attribute history_noise numeric
+@attribute history_recruitment numeric
+@attribute history_ringing numeric
+@attribute history_roaring numeric
+@attribute history_vomiting numeric
+@attribute late_wave_poor numeric
+@attribute m_at_2k numeric
+@attribute m_cond_lt_1k numeric
+@attribute m_gt_1k numeric
+@attribute m_m_gt_2k numeric
+@attribute m_m_sn numeric
+@attribute m_m_sn_gt_1k numeric
+@attribute m_m_sn_gt_2k numeric
+@attribute m_m_sn_gt_500 numeric
+@attribute m_p_sn_gt_2k numeric
+@attribute m_s_gt_500 numeric
+@attribute m_s_sn numeric
+@attribute m_s_sn_gt_1k numeric
+@attribute m_s_sn_gt_2k numeric
+@attribute m_s_sn_gt_3k numeric
+@attribute m_s_sn_gt_4k numeric
+@attribute m_sn_2_3k numeric
+@attribute m_sn_gt_1k numeric
+@attribute m_sn_gt_2k numeric
+@attribute m_sn_gt_3k numeric
+@attribute m_sn_gt_4k numeric
+@attribute m_sn_gt_500 numeric
+@attribute m_sn_gt_6k numeric
+@attribute m_sn_lt_1k numeric
+@attribute m_sn_lt_2k numeric
+@attribute m_sn_lt_3k numeric
+@attribute middle_wave_poor numeric
+@attribute mod_gt_4k numeric
+@attribute mod_mixed numeric
+@attribute mod_s_mixed numeric
+@attribute mod_s_sn_gt_500 numeric
+@attribute mod_sn numeric
+@attribute mod_sn_gt_1k numeric
+@attribute mod_sn_gt_2k numeric
+@attribute mod_sn_gt_3k numeric
+@attribute mod_sn_gt_4k numeric
+@attribute mod_sn_gt_500 numeric
+@attribute notch_4k numeric
+@attribute notch_at_4k numeric
+@attribute o_ar_c numeric
+@attribute o_ar_u numeric
+@attribute s_sn_gt_1k numeric
+@attribute s_sn_gt_2k numeric
+@attribute s_sn_gt_4k numeric
+@attribute speech numeric
+@attribute static_normal numeric
+@attribute tymp numeric
+@attribute viith_nerve_signs numeric
+@attribute wave_V_delayed numeric
+@attribute waveform_ItoV_prolonged numeric
+@attribute class=cochlear_age numeric
+
+@data
+
+
+Classifier Model
+SMOreg
+
+weights (not support vectors):
+ +       0.5878 * (normalized) age_gt_60
+ +       0.1026 * (normalized) air
+ +       0.0511 * (normalized) airBoneGap
+ +       0.0567 * (normalized) ar_c
+ -       0.0078 * (normalized) ar_u
+ -       0.0013 * (normalized) bone
+ +       0.0032 * (normalized) boneAbnormal
+ +       0.0093 * (normalized) bser
+ -       0.0568 * (normalized) history_buzzing
+ +       0.2333 * (normalized) history_dizziness
+ +       0.2991 * (normalized) history_fluctuating
+ -       0.0568 * (normalized) history_fullness
+ +       0.1293 * (normalized) history_heredity
+ +       0.312  * (normalized) history_nausea
+ +       0.3933 * (normalized) history_noise
+ -       0.253  * (normalized) history_recruitment
+ -       0.1283 * (normalized) history_ringing
+ -       0.1858 * (normalized) history_roaring
+ +       0      * (normalized) history_vomiting
+ +       0.0093 * (normalized) late_wave_poor
+ -       0.0639 * (normalized) m_at_2k
+ +       0.1043 * (normalized) m_cond_lt_1k
+ -       0.3841 * (normalized) m_gt_1k
+ +       0.0651 * (normalized) m_m_gt_2k
+ +       0.0052 * (normalized) m_m_sn
+ +       0.3633 * (normalized) m_m_sn_gt_1k
+ +       0.0858 * (normalized) m_m_sn_gt_2k
+ +       0.3194 * (normalized) m_m_sn_gt_500
+ +       0.2608 * (normalized) m_p_sn_gt_2k
+ +       0.2039 * (normalized) m_s_gt_500
+ +       0.4497 * (normalized) m_s_sn
+ +       0.2825 * (normalized) m_s_sn_gt_1k
+ +       0.7562 * (normalized) m_s_sn_gt_2k
+ +       0.4162 * (normalized) m_s_sn_gt_3k
+ +       0.5216 * (normalized) m_s_sn_gt_4k
+ +       0.2845 * (normalized) m_sn_2_3k
+ +       0.0247 * (normalized) m_sn_gt_1k
+ +       0.052  * (normalized) m_sn_gt_2k
+ -       0.0775 * (normalized) m_sn_gt_3k
+ +       0.0856 * (normalized) m_sn_gt_4k
+ +       0.0647 * (normalized) m_sn_gt_500
+ +       0.0495 * (normalized) m_sn_gt_6k
+ -       0.2409 * (normalized) m_sn_lt_1k
+ +       0.3276 * (normalized) m_sn_lt_2k
+ +       0.3279 * (normalized) m_sn_lt_3k
+ +       0.0093 * (normalized) middle_wave_poor
+ -       0.0572 * (normalized) mod_gt_4k
+ +       0.0645 * (normalized) mod_mixed
+ +       0.6245 * (normalized) mod_s_mixed
+ +       0.3993 * (normalized) mod_s_sn_gt_500
+ -       0.1438 * (normalized) mod_sn
+ +       0.412  * (normalized) mod_sn_gt_1k
+ +       0.2096 * (normalized) mod_sn_gt_2k
+ +       0.1777 * (normalized) mod_sn_gt_3k
+ -       0.109  * (normalized) mod_sn_gt_4k
+ +       0.1002 * (normalized) mod_sn_gt_500
+ +       0.1512 * (normalized) notch_4k
+ -       0.0592 * (normalized) notch_at_4k
+ +       0.2825 * (normalized) o_ar_c
+ +       0.0023 * (normalized) o_ar_u
+ +       0.0251 * (normalized) s_sn_gt_1k
+ +       0.1786 * (normalized) s_sn_gt_2k
+ -       0.0603 * (normalized) s_sn_gt_4k
+ +       0.0917 * (normalized) speech
+ +       0.0235 * (normalized) static_normal
+ -       0.056  * (normalized) tymp
+ -       0.0022 * (normalized) viith_nerve_signs
+ +       0.326  * (normalized) wave_V_delayed
+ -       0.0988 * (normalized) waveform_ItoV_prolonged
+ -       5.5275
+
+
+
+Number of kernel evaluations: 25649 (98.971% cached)
+
+Time taken to build model: 0.5 seconds
+Time taken to test model on training data: 2.9 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9275
+Mean absolute error                      0.0831
+Root mean squared error                  0.1721
+Relative absolute error                 22.0208 %
+Root relative squared error             39.6271 %
+Total Number of Instances              226     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.8435
+Mean absolute error                      0.1506
+Root mean squared error                  0.2533
+Relative absolute error                 39.7336 %
+Root relative squared error             58.0151 %
+Total Number of Instances              226     
+

@@ -1,0 +1,205 @@
+
+Logistic Regression (2 classes)
+
+Overall Model Fit...
+  Chi Square=   -0.0014;  df=84;  p=      0   
+
+SQL:
+
+1-1/(1+exp(    -51.7095*case when date in('april') then 1 else 0 end
++   -244.7044*case when date in('may') then 1 else 0 end
++   -135.463 *case when date in('june') then 1 else 0 end
++     78.4072*case when date in('july') then 1 else 0 end
++     68.9396*case when date in('august') then 1 else 0 end
++    163.2996*case when date in('september') then 1 else 0 end
++    -76.45  *case when date in('october') then 1 else 0 end
++   -386.7384*plant-stand
++   -522.0758*case when precip in('lt-norm') then 1 else 0 end
++    221.0121*case when precip in('norm') then 1 else 0 end
++    103.0095*case when precip in('gt-norm') then 1 else 0 end
++     20.1126*case when temp in('lt-norm') then 1 else 0 end
++     91.4152*case when temp in('norm') then 1 else 0 end
++   -121.7139*case when temp in('gt-norm') then 1 else 0 end
++    184.4314*hail
++      5.5877*case when crop-hist in('diff-lst-year') then 1 else 0 end
++     54.5674*case when crop-hist in('same-lst-yr') then 1 else 0 end
++     24.0559*case when crop-hist in('same-lst-two-yrs') then 1 else 0 end
++    -75.8965*case when crop-hist in('same-lst-sev-yrs') then 1 else 0 end
++     62.0256*case when area-damaged in('scattered') then 1 else 0 end
++    -56.2878*case when area-damaged in('low-areas') then 1 else 0 end
++     43.8598*case when area-damaged in('upper-areas') then 1 else 0 end
++    -20.062 *case when area-damaged in('whole-field') then 1 else 0 end
++     41.229 *case when severity in('minor') then 1 else 0 end
++     30.4881*case when severity in('pot-severe') then 1 else 0 end
++   -220.2486*case when severity in('severe') then 1 else 0 end
++    -64.2688*case when seed-tmt in('none') then 1 else 0 end
++    122.4374*case when seed-tmt in('fungicide') then 1 else 0 end
++   -263.6147*case when seed-tmt in('other') then 1 else 0 end
++   -120.0267*case when germination in('90-100') then 1 else 0 end
++    -81.9302*case when germination in('80-89') then 1 else 0 end
++    209.2356*case when germination in('lt-80') then 1 else 0 end
++    129.4649*plant-growth
++    413.4975*leaves
++    -64.0411*case when leafspots-halo in('absent') then 1 else 0 end
++    253.786 *case when leafspots-halo in('yellow-halos') then 1 else 0 end
++     13.4104*case when leafspots-halo in('no-yellow-halos') then 1 else 0 end
++     61.7449*case when leafspots-marg in('w-s-marg') then 1 else 0 end
++      7.2084*case when leafspots-marg in('no-w-s-marg') then 1 else 0 end
++    -64.0411*case when leafspots-marg in('dna') then 1 else 0 end
++   -160.0483*case when leafspot-size in('lt-1/8') then 1 else 0 end
++     97.6845*case when leafspot-size in('gt-1/8') then 1 else 0 end
++    -67.7132*case when leafspot-size in('dna') then 1 else 0 end
++   -277.8813*leaf-shread
++     70.1184*leaf-malf
++    255.7839*case when leaf-mild in('absent') then 1 else 0 end
++     54.5006*case when leaf-mild in('upper-surf') then 1 else 0 end
++   -501.6862*case when leaf-mild in('lower-surf') then 1 else 0 end
++    192.6229*stem
++    -93.1103*lodging
++     45.397 *case when stem-cankers in('absent') then 1 else 0 end
++     95.9005*case when stem-cankers in('below-soil') then 1 else 0 end
++     44.7842*case when stem-cankers in('above-soil') then 1 else 0 end
++    -91.4242*case when stem-cankers in('above-sec-nde') then 1 else 0 end
++    -20.7398*case when canker-lesion in('dna') then 1 else 0 end
++     -1.9311*case when canker-lesion in('brown') then 1 else 0 end
++    106.9821*case when canker-lesion in('dk-brown-blk') then 1 else 0 end
++   -188.0029*case when canker-lesion in('tan') then 1 else 0 end
++   -163.3357*fruiting-bodies
++    -92.9014*case when external-decay in('absent') then 1 else 0 end
++     84.3274*case when external-decay in('firm-and-dry') then 1 else 0 end
++    188.4421*case when external-decay in('watery') then 1 else 0 end
++   -268.1616*mycelium
++   -186.1243*case when int-discolor in('none') then 1 else 0 end
++    174.4484*case when int-discolor in('brown') then 1 else 0 end
++    184.2391*case when int-discolor in('black') then 1 else 0 end
++    184.2391*sclerotia
++   -149.0533*case when fruit-pods in('norm') then 1 else 0 end
++    172.815 *case when fruit-pods in('diseased') then 1 else 0 end
++   -323.5889*case when fruit-pods in('few-present') then 1 else 0 end
++    108.9112*case when fruit-pods in('dna') then 1 else 0 end
++     84.0591*case when fruit-spots in('absent') then 1 else 0 end
++    -38.8241*case when fruit-spots in('colored') then 1 else 0 end
++   -110.3782*case when fruit-spots in('brown-w/blk-specks') then 1 else 0 end
++      0     *case when fruit-spots in('distort') then 1 else 0 end
++    -43.5711*case when fruit-spots in('dna') then 1 else 0 end
++    140.3212*seed
++     54.0247*mold-growth
++   -393.585 *seed-discolor
++    145.6057*seed-size
++    241.2408*shriveling
++      9.5552*case when roots in('norm') then 1 else 0 end
++     30.95  *case when roots in('rotted') then 1 else 0 end
++   -236.2757*case when roots in('galls-cysts') then 1 else 0 end
++  -767.8289))
+
+Odds Ratios...
+Variable         O.R.
+       1       0     
+       2       0     
+       3       0     
+       4 1.1267282911823323E34
+       5 8.711301759470542E29
+       6 8.319978276771028E70
+       7       0     
+       8       0     
+       9       0     
+      10 9.645577328203596E95
+      11 5.4505583648903935E44
+      12 543008923.3801
+      13 5.0246181450807706E39
+      14       0     
+      15 1.251812138017274E80
+      16     267.125 
+      17 4.992355116899532E23
+      18 2.8011002873313515E10
+      19       0     
+      20 8.657117271052331E26
+      21       0     
+      22 1.1170372910181042E19
+      23       0     
+      24 8.0454185069306842E17
+      25 1.7410250172923594E13
+      26       0     
+      27       0     
+      28 1.4923771990111136E53
+      29       0     
+      30       0     
+      31       0     
+      32 7.41080320612894E90
+      33 1.682326621866468E56
+      34 3.799198265643045E179
+      35       0     
+      36 1.651394280513951E110
+      37  666913.1931
+      38 6.538461592643461E26
+      39    1350.701 
+      40       0     
+      41       0     
+      42 2.6535744258728446E42
+      43       0     
+      44       0     
+      45 2.8315287083238867E30
+      46 1.2176803264620428E111
+      47 4.670020821025255E23
+      48       0     
+      49 4.519305684416229E83
+      50       0     
+      51 5.1959708994616975E19
+      52 4.457039198838447E41
+      53 2.815232914610299E19
+      54       0     
+      55       0     
+      56       0.145 
+      57 2.895614923135771E46
+      58       0     
+      59       0     
+      60       0     
+      61 4.1967244995629686E36
+      62 6.908097237978095E81
+      63       0     
+      64       0     
+      65 5.7805476839330374E75
+      66 1.032819246801153E80
+      67 1.0328192468008301E80
+      68       0     
+      69 1.1287219827270272E75
+      70       0     
+      71 1.9931033556623546E47
+      72 3.20918026368779E36
+      73       0     
+      74       0     
+      75       1     
+      76       0     
+      77 8.7243680002869E60
+      78 2.901506657173895E23
+      79       0     
+      80 1.7208484546548463E63
+      81 5.882119124238844E104
+      82   14118.2144
+      83 2.763199676537315E13
+      84       0     
+
+
+Time taken to build model: 0.37 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9884
+Mean absolute error                      0.0027
+Root mean squared error                  0.0516
+Relative absolute error                  1.1746 %
+Root relative squared error             15.3218 %
+Total Number of Instances              375     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4723
+Mean absolute error                      0.1592
+Root mean squared error                  0.3968
+Relative absolute error                 69.9159 %
+Root relative squared error            117.4191 %
+Total Number of Instances              375     
+

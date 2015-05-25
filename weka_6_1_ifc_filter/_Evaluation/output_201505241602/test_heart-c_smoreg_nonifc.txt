@@ -1,0 +1,55 @@
+
+SMOreg
+
+weights (not support vectors):
+ +       0.0014 * (normalized) age
+ -       0.0019 * (normalized) sex
+ +       0.0031 * (normalized) cp=typ_angina
+ -       0.003  * (normalized) cp=asympt
+ +       0.0001 * (normalized) cp=non_anginal
+ -       0.0001 * (normalized) cp=atyp_angina
+ -       0.0002 * (normalized) trestbps
+ -       0.0005 * (normalized) chol
+ -       0.0003 * (normalized) fbs
+ +       0.0001 * (normalized) restecg=left_vent_hyper
+ +       0.0004 * (normalized) restecg=normal
+ -       0.0005 * (normalized) restecg=st_t_wave_abnormality
+ +       0.0067 * (normalized) thalach
+ -       0.0025 * (normalized) exang
+ -       0.0039 * (normalized) oldpeak
+ +       0.0003 * (normalized) slope=up
+ -       0.001  * (normalized) slope=flat
+ +       0.0007 * (normalized) slope=down
+ -       0.0062 * (normalized) ca
+ -       0.3282 * (normalized) thal=fixed_defect
+ +       0.6587 * (normalized) thal=normal
+ -       0.3305 * (normalized) thal=reversable_defect
+ +       0.3376
+
+
+
+Number of kernel evaluations: 46056 (97.643% cached)
+
+Time taken to build model: 0.17 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.5314
+Mean absolute error                      0.2345
+Root mean squared error                  0.4803
+Relative absolute error                 47.2712 %
+Root relative squared error             96.4426 %
+Total Number of Instances              303     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4766
+Mean absolute error                      0.2683
+Root mean squared error                  0.5019
+Relative absolute error                 54.0013 %
+Root relative squared error            100.6065 %
+Total Number of Instances              303     
+

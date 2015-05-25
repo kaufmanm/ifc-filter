@@ -1,0 +1,109 @@
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+checking_status=>=200,no checking <= 0.5 : 
+|   duration <= 22.5 : LM1 (203/83.468%)
+|   duration >  22.5 : LM2 (162/92.567%)
+checking_status=>=200,no checking >  0.5 : LM3 (295/62.709%)
+
+LM num: 1
+class=good = 
+	0.0028 * checking_status=0<=X<200,>=200,no checking 
+	+ 0.0094 * checking_status=>=200,no checking 
+	- 0.0008 * duration 
+	+ 0.0159 * credit_history=existing paid,delayed previously,critical/other existing credit 
+	+ 0.262 * credit_history=delayed previously,critical/other existing credit 
+	+ 0.3415 * purpose=other,furniture/equipment,vacation,repairs,business,domestic appliance,radio/tv,used car,retraining 
+	- 0 * credit_amount 
+	+ 0.1433 * savings_status=500<=X<1000,no known savings,>=1000 
+	+ 0.0024 * employment=1<=X<4,>=7,4<=X<7 
+	+ 0.0129 * employment=4<=X<7 
+	- 0.0056 * installment_commitment 
+	+ 0.0093 * personal_status=male single 
+	+ 0.0204 * other_parties=guarantor 
+	- 0.0021 * residence_since 
+	+ 0.2614 * property_magnitude=car,life insurance,real estate 
+	+ 0.1633 * property_magnitude=real estate 
+	+ 0.0002 * age 
+	- 0.2104 * other_payment_plans=stores,none 
+	+ 0.3879 * other_payment_plans=none 
+	+ 0.003 * housing=own 
+	+ 0.2195 * job=unskilled resident 
+	+ 0.2082 * own_telephone=yes 
+	- 0.2712
+
+LM num: 2
+class=good = 
+	0.0028 * checking_status=0<=X<200,>=200,no checking 
+	+ 0.0094 * checking_status=>=200,no checking 
+	- 0.0062 * duration 
+	+ 0.0183 * credit_history=existing paid,delayed previously,critical/other existing credit 
+	+ 0.0154 * credit_history=delayed previously,critical/other existing credit 
+	+ 0.024 * purpose=other,furniture/equipment,vacation,repairs,business,domestic appliance,radio/tv,used car,retraining 
+	- 0 * credit_amount 
+	+ 0.3415 * savings_status=500<=X<1000,no known savings,>=1000 
+	+ 0.0024 * employment=1<=X<4,>=7,4<=X<7 
+	+ 0.1025 * employment=>=7,4<=X<7 
+	+ 0.0151 * employment=4<=X<7 
+	- 0.0968 * installment_commitment 
+	+ 0.011 * personal_status=male single 
+	+ 0.0234 * other_parties=guarantor 
+	- 0.1048 * residence_since 
+	+ 0.0111 * property_magnitude=car,life insurance,real estate 
+	+ 0.0108 * property_magnitude=real estate 
+	+ 0.0075 * age 
+	+ 0.0029 * other_payment_plans=stores,none 
+	+ 0.003 * housing=own 
+	+ 0.0026 * own_telephone=yes 
+	+ 0.7616
+
+LM num: 3
+class=good = 
+	0.0035 * checking_status=0<=X<200,>=200,no checking 
+	+ 0.0115 * checking_status=>=200,no checking 
+	- 0.0003 * duration 
+	+ 0.0072 * credit_history=existing paid,delayed previously,critical/other existing credit 
+	+ 0.1067 * credit_history=delayed previously,critical/other existing credit 
+	+ 0.0084 * purpose=other,furniture/equipment,vacation,repairs,business,domestic appliance,radio/tv,used car,retraining 
+	+ 0.1158 * purpose=domestic appliance,radio/tv,used car,retraining 
+	- 0 * credit_amount 
+	+ 0.0055 * savings_status=500<=X<1000,no known savings,>=1000 
+	+ 0.003 * employment=1<=X<4,>=7,4<=X<7 
+	+ 0.0606 * employment=>=7,4<=X<7 
+	+ 0.0042 * employment=4<=X<7 
+	- 0.0018 * installment_commitment 
+	+ 0.0025 * personal_status=male single 
+	+ 0.0089 * other_parties=guarantor 
+	+ 0.0036 * property_magnitude=real estate 
+	+ 0.0036 * other_payment_plans=stores,none 
+	+ 0.0948 * other_payment_plans=none 
+	+ 0.0036 * housing=own 
+	+ 0.0031 * own_telephone=yes 
+	+ 0.7084
+
+Number of Rules : 3
+
+Time taken to build model: 0.64 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.6367
+Mean absolute error                      0.2778
+Root mean squared error                  0.3574
+Relative absolute error                 64.6941 %
+Root relative squared error             77.1394 %
+Total Number of Instances              660     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.4742
+Mean absolute error                      0.3291
+Root mean squared error                  0.4108
+Relative absolute error                 76.5945 %
+Root relative squared error             88.5826 %
+Total Number of Instances              660     
+

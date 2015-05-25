@@ -1,0 +1,44 @@
+
+SMOreg
+
+weights (not support vectors):
+ -       0.0001 * (normalized) Sex
+ -       0.0012 * (normalized) Feature 0
+ -       0.0011 * (normalized) Feature 1
+ -       0.0013 * (normalized) Feature 2
+ -       0.0026 * (normalized) Feature 3
+ -       0.0007 * (normalized) Feature 4
+ -       0.0006 * (normalized) Feature 5
+ -       0.003  * (normalized) Feature 6
+ -       0.0007 * (normalized) Feature 7
+ -       0.0007 * (normalized) Feature 8
+ -       0.0005 * (normalized) Feature 9
+ +       0.007 
+
+
+
+Number of kernel evaluations: 484757 (98.644% cached)
+
+Time taken to build model: 3.76 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.1159
+Mean absolute error                      0.0915
+Root mean squared error                  0.3013
+Relative absolute error                 55.3441 %
+Root relative squared error            104.791  %
+Total Number of Instances              990     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.1195
+Mean absolute error                      0.0914
+Root mean squared error                  0.3013
+Relative absolute error                 55.2743 %
+Root relative squared error            104.6948 %
+Total Number of Instances              990     
+

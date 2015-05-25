@@ -1,0 +1,39 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+Type=build wind non-float =
+
+    -20.6671 * RI +
+     -0.1628 * Na +
+     -0.1029 * Si +
+     -0.0886 * K +
+     -0.1084 * Ba +
+      0.5028 * Fe +
+     41.4315
+
+Time taken to build model: 0.06 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.3324
+Mean absolute error                      0.4159
+Root mean squared error                  0.4513
+Relative absolute error                 90.8087 %
+Root relative squared error             94.3135 %
+Total Number of Instances              214     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.1903
+Mean absolute error                      0.4389
+Root mean squared error                  0.4751
+Relative absolute error                 95.1871 %
+Root relative squared error             98.596  %
+Total Number of Instances              214     
+

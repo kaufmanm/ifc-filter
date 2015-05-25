@@ -1,0 +1,146 @@
+
+Options: -F "weka.filters.supervised.attribute.IFC_Filter " -W weka.classifiers.functions.MultilayerPerceptron 
+
+FilteredClassifier using weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a on data filtered through weka.filters.supervised.attribute.IFC_Filter -C 1 -W false -P 4 -T binary
+
+Filtered Header
+@relation 'vowel-weka.filters.unsupervised.attribute.NominalToBinary-Rlast-weka.filters.unsupervised.attribute.Remove-R1-2,14-23-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.IFC_Filter-C1-Wfalse-P4-Tbinary'
+
+@attribute Sex numeric
+@attribute 'Feature 0' numeric
+@attribute 'Feature 1' numeric
+@attribute 'Feature 2' numeric
+@attribute 'Feature 3' numeric
+@attribute 'Feature 4' numeric
+@attribute 'Feature 5' numeric
+@attribute 'Feature 6' numeric
+@attribute 'Feature 7' numeric
+@attribute 'Feature 8' numeric
+@attribute 'Feature 9' numeric
+@attribute Class=hed numeric
+
+@data
+
+
+Classifier Model
+Linear Node 0
+    Inputs    Weights
+    Threshold    0.8224800046405113
+    Node 1    -3.913998809774278
+    Node 2    -3.3273585352223614
+    Node 3    -1.6754140091273115
+    Node 4    -1.5980995163766583
+    Node 5    -2.9079186728593256
+    Node 6    -3.3327371258954046
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -14.24562262868518
+    Attrib Sex    -0.0026793461407886993
+    Attrib Feature 0    0.8684775749029765
+    Attrib Feature 1    2.0461199080506023
+    Attrib Feature 2    4.1198927342984915
+    Attrib Feature 3    -4.0168032973888135
+    Attrib Feature 4    -2.2022623596551174
+    Attrib Feature 5    3.5370120722527494
+    Attrib Feature 6    -1.2051318943685863
+    Attrib Feature 7    -0.9877620207263305
+    Attrib Feature 8    0.15083075078155056
+    Attrib Feature 9    14.573567603843262
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -13.622471755588096
+    Attrib Sex    -0.03597123205737001
+    Attrib Feature 0    3.1599282174665086
+    Attrib Feature 1    -2.965578317710761
+    Attrib Feature 2    2.3835742464724707
+    Attrib Feature 3    2.2389168200278373
+    Attrib Feature 4    2.67160660552186
+    Attrib Feature 5    1.303156703026846
+    Attrib Feature 6    -3.6138323026217356
+    Attrib Feature 7    -0.4484936366792028
+    Attrib Feature 8    0.4857149472414041
+    Attrib Feature 9    -4.106786113623386
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -3.0995319469623976
+    Attrib Sex    0.009241069401754301
+    Attrib Feature 0    -0.3248770916641238
+    Attrib Feature 1    -0.27648928309058307
+    Attrib Feature 2    -0.47147084295842845
+    Attrib Feature 3    -0.3281559923522624
+    Attrib Feature 4    -0.29546739508062975
+    Attrib Feature 5    0.15892432512815016
+    Attrib Feature 6    0.11213992814859365
+    Attrib Feature 7    -0.31595188546912123
+    Attrib Feature 8    -0.1841046527836307
+    Attrib Feature 9    0.22418951047902663
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    21.669350685862426
+    Attrib Sex    0.03835386464147446
+    Attrib Feature 0    -7.327342828905011
+    Attrib Feature 1    -2.688390418119068
+    Attrib Feature 2    -4.599476333313171
+    Attrib Feature 3    -2.9178476371910143
+    Attrib Feature 4    -4.081691648894498
+    Attrib Feature 5    -7.135217436082592
+    Attrib Feature 6    -7.420497480578239
+    Attrib Feature 7    -7.4590380196658534
+    Attrib Feature 8    -4.114443857545108
+    Attrib Feature 9    -11.016207610897942
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -10.821724381803373
+    Attrib Sex    -0.022331064821682414
+    Attrib Feature 0    0.6271178195727415
+    Attrib Feature 1    -3.593472892434053
+    Attrib Feature 2    0.4671262830736904
+    Attrib Feature 3    1.8425159262372108
+    Attrib Feature 4    0.7980135811013184
+    Attrib Feature 5    0.20121221368774997
+    Attrib Feature 6    2.7558443003957978
+    Attrib Feature 7    3.9174575805756433
+    Attrib Feature 8    0.20951624373088817
+    Attrib Feature 9    0.058564317614871284
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -16.004498690307067
+    Attrib Sex    0.034736910378721675
+    Attrib Feature 0    2.660911106121873
+    Attrib Feature 1    4.426059176415589
+    Attrib Feature 2    0.6752443458674603
+    Attrib Feature 3    0.5037837952094226
+    Attrib Feature 4    -3.999513242723365
+    Attrib Feature 5    0.568335736711775
+    Attrib Feature 6    5.848792798574194
+    Attrib Feature 7    4.690137097196642
+    Attrib Feature 8    -0.996643794986831
+    Attrib Feature 9    -1.762214173129586
+Class 
+    Input
+    Node 0
+
+
+Time taken to build model: 2.06 seconds
+Time taken to test model on training data: 0.44 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7778
+Mean absolute error                      0.1114
+Root mean squared error                  0.1902
+Relative absolute error                 67.4013 %
+Root relative squared error             66.1462 %
+Total Number of Instances              990     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.0524
+Mean absolute error                      0.1089
+Root mean squared error                  0.2978
+Relative absolute error                 65.81   %
+Root relative squared error            103.5064 %
+Total Number of Instances              990     
+

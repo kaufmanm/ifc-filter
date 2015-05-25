@@ -1,0 +1,52 @@
+
+SMOreg
+
+weights (not support vectors):
+ -       0.0046 * (normalized) region-centroid-col
+ -       0.3147 * (normalized) region-centroid-row
+ +       0      * (normalized) region-pixel-count
+ -       0.0039 * (normalized) short-line-density-5
+ +       0.0208 * (normalized) short-line-density-2
+ -       0.3216 * (normalized) vedge-mean
+ +       0.1454 * (normalized) vegde-sd
+ -       0.2887 * (normalized) hedge-mean
+ +       0.1312 * (normalized) hedge-sd
+ +       0.4972 * (normalized) intensity-mean
+ +       0.509  * (normalized) rawred-mean
+ +       0.4185 * (normalized) rawblue-mean
+ +       0.5705 * (normalized) rawgreen-mean
+ -       0.0853 * (normalized) exred-mean
+ -       0.2466 * (normalized) exblue-mean
+ +       0.4929 * (normalized) exgreen-mean
+ -       0.758  * (normalized) value-mean
+ +       0.0591 * (normalized) saturation-mean
+ -       0.1913 * (normalized) hue-mean
+ -       0.0091
+
+
+
+Number of kernel evaluations: 290703 (95.177% cached)
+
+Time taken to build model: 1.05 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.9262
+Mean absolute error                      0.079 
+Root mean squared error                  0.1284
+Relative absolute error                 34.3439 %
+Root relative squared error             37.8588 %
+Total Number of Instances              762     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.9235
+Mean absolute error                      0.0815
+Root mean squared error                  0.1306
+Relative absolute error                 35.4317 %
+Root relative squared error             38.4722 %
+Total Number of Instances              762     
+
