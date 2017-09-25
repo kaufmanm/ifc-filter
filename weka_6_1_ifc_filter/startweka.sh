@@ -1,1 +1,1 @@
-java -Xmx1024m -cp ./build/classes:./lib/* weka.gui.GUIChooser
+java -Dfile.encoding=UTF-8 -Xmx2048m -classpath ./lib/java-cup.jar:./lib/JFlex.jar:./lib/junit.jar:./lib/ojdbc14.jar:./lib/matrix2.jar:./lib/commons-math3-3.5.jar:./build/classes weka.gui.GUIChooser
